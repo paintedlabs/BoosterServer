@@ -219,8 +219,8 @@ app.post('/products/:productCode/open', (req: Request, res: Response) => {
 
 // ---------- Server Startup ----------
 function main() {
-  const allPrintingsPath = process.argv[2] || 'AllPrintings.json';
-  const extendedDataPath = process.argv[3] || 'sealed_extended_data.json';
+  const allPrintingsPath = process.argv[2] || 'data/AllPrintings.json';
+  const extendedDataPath = process.argv[3] || 'data/sealed_extended_data.json';
 
   console.log(`Loading AllPrintings from: ${allPrintingsPath}`);
   allPrintings = loadAllPrintings(allPrintingsPath);
