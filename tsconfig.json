@@ -2,6 +2,8 @@
   "compilerOptions": {
     // ...
     // This can help avoid type conflicts if you have legacy libraries
+    "target": "ES2015",
+    "downlevelIteration": true, // ensures spread/rest operations on iterables like Set work **this was added by chatgpt. If this is insane, let me know.**
     "skipLibCheck": true,
     "moduleResolution": "node",
     "esModuleInterop": true,

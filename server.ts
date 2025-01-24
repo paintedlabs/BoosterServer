@@ -2,12 +2,17 @@
  * server.ts
  *
  * A Node.js + Express server that:
- *   1) Loads AllPrintings.json
- *   2) Loads sealed_extended_data.json (array of sealed products)
- *   3) Exposes these endpoints:
- *      GET /sets
- *      GET /sets/:setCode/products
- *      POST /products/:productCode/open
+ *   1) Ensures AllPrintings.json (zipped) is available locally, unzips if needed
+ *   2) Ensures sealed_extended_data.json is available locally
+ *   3) Ensures the Scryfall "all_cards" file is downloaded
+ *   4) Uses stream-json to parse only the needed Scryfall cards
+ *   5) Merges AllPrintings + Scryfall
+ *   6) Exposes:
+ *       GET /sets
+ *       GET /sets/:setCode/products
+ *       POST /products/:productCode/open
+ *
+ *   The /open endpoint returns merged data for each card.
  */
 
 import express, { Request, Response } from 'express';
@@ -16,27 +21,34 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as unzipper from 'unzipper';
 
-
 // If on Node < 18, import node-fetch:
+import fetch, { Response as FetchResponse } from 'node-fetch';
 
-// ... your other imports & interfaces ...
+// CHANGED: For streaming parse:
+import { pipeline } from 'stream/promises';
+import { chain } from 'stream-chain';
+import { parser } from 'stream-json';
+import { streamArray } from 'stream-json/streamers/StreamArray';
 
-// We'll define some URLs to fetch the files from if they're missing.
-// Replace these with your actual URLs:
+// -------------- CONFIG CONSTANTS --------------
+const PORT = process.env.PORT || 3000;
+
+// URLs to fetch if local files are missing
 const ALL_PRINTINGS_URL = 'https://mtgjson.com/api/v5/AllPrintings.json';
 const ALL_PRINTINGS_URL_ZIPPED = 'https://mtgjson.com/api/v5/AllPrintings.json.zip';
 const EXTENDED_DATA_URL = 'https://raw.githubusercontent.com/taw/magic-sealed-data/refs/heads/master/sealed_extended_data.json';
+const SCRYFALL_ALL_CARDS_URL = 'https://data.scryfall.io/all-cards/all-cards-20250124102227.json';
 
-// Minimal "Card" structure for final pack
-class Card {
-  constructor(public name: string, public rarity: string) { }
-}
+// Local file paths (adjust as desired)
+const ALL_PRINTINGS_PATH = 'data/AllPrintings.json';
+const EXTENDED_DATA_PATH = 'data/sealed_extended_data.json';
+const SCRYFALL_DATA_PATH = 'data/scryfall_all_cards.json';
 
-const app = express(); // <-- Create app directly
-const PORT = process.env.PORT || 3000;
+// -------------- EXPRESS APP --------------
+const app = express();
 app.use(bodyParser.json());
 
-// -- Data Structures --
+// -------------- INTERFACES --------------
 interface AllPrintings {
   meta: Meta;
   data: Record<string, MTGSet>;
@@ -52,33 +64,39 @@ interface MTGSet {
   name: string;
   releaseDate: string;
   cards: CardSet[];
-  // ... Additional fields omitted ...
 }
 
 interface CardSet {
   uuid: string;
   name: string;
   rarity: string;
-  // ... Additional fields omitted ...
+  // Real AllPrintings usually has `identifiers` with `scryfallId`:
+  identifiers?: {
+    scryfallId?: string;
+    [key: string]: any;
+  };
 }
 
 interface ExtendedSealedData {
-  name: string;    // "Foundations Collector Booster"
-  code: string;    // "fdn-collector"
-  set_code: string; // "FDN"
-  set_name: string; // "Foundations"
+  name: string;
+  code: string;
+  set_code: string;
+  set_name: string;
   boosters: ExtendedBooster[];
   sheets: Record<string, ExtendedSheet>;
-  source_set_codes: string[]; // e.g. ["FDN", "SPG"]
+  source_set_codes: string[];
 }
+
 interface ExtendedBooster {
   sheets: Record<string, number>;
   weight: number;
 }
+
 interface ExtendedSheet {
   total_weight: number;
   cards: ExtendedSheetCard[];
 }
+
 interface ExtendedSheetCard {
   set: string;
   number: string;
@@ -87,42 +105,105 @@ interface ExtendedSheetCard {
   uuid: string;
 }
 
-// Globals loaded at startup
+// Scryfall data shape (simplified)
+interface ScryfallCard {
+  id: string; // scryfallId
+  name: string;
+  image_uris?: {
+    normal?: string;
+    [key: string]: any;
+  };
+  mana_cost?: string;
+  oracle_text?: string;
+  prices?: {
+    usd?: string;
+    usd_foil?: string;
+    [key: string]: string | undefined;
+  };
+  // many more fields...
+}
+
+interface CombinedCard {
+  allPrintingsData: CardSet;
+  scryfallData?: ScryfallCard;
+}
+
+// -------------- GLOBALS --------------
 let allPrintings: AllPrintings | null = null;
 let extendedDataArray: ExtendedSealedData[] = [];
+// We store the merged data in combinedCards
+const combinedCards: Record<string, CombinedCard> = {};
 
-// You could build a global cardDatabase if you want...
-const cardDatabase: Record<string, CardSet> = {};
+// -------------- STARTUP: FILE ENSURE & LOAD --------------
+async function ensureAllPrintingsUnzipped(localJsonPath: string): Promise<void> {
+  if (fs.existsSync(localJsonPath)) {
+    console.log(`Found local file: ${localJsonPath}, no need to download zip.`);
+    return;
+  }
 
-// ------------------------------------
-// Check local files or fetch if missing
-// ------------------------------------
+  console.log(`File not found locally: ${localJsonPath}\nFetching zip from: ${ALL_PRINTINGS_URL_ZIPPED} ...`);
+  const response = await fetch(ALL_PRINTINGS_URL_ZIPPED);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch '${ALL_PRINTINGS_URL_ZIPPED}': ${response.status} ${response.statusText}`);
+  }
+
+  const arrayBuf = await response.arrayBuffer();
+  const zipBuffer = Buffer.from(arrayBuf);
+
+  const directory = await unzipper.Open.buffer(zipBuffer);
+  const zipEntry = directory.files.find(f => f.path === 'AllPrintings.json');
+  if (!zipEntry) {
+    throw new Error(`Could not find AllPrintings.json in the ZIP.`);
+  }
+  const unzippedData = await zipEntry.buffer();
+
+  fs.writeFileSync(localJsonPath, unzippedData);
+  console.log(`Saved unzipped file to: ${localJsonPath}`);
+}
+
 async function ensureFileExists(localPath: string, remoteUrl: string): Promise<void> {
   if (fs.existsSync(localPath)) {
     console.log(`Found local file: ${localPath}, skipping fetch.`);
     return;
   }
-  console.log(`File not found locally: ${localPath}\nFetching from: ${remoteUrl} ...`);
-
-  // Use fetch to get the file contents
-  const response = await fetch(remoteUrl);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch '${remoteUrl}' - ${response.status} ${response.statusText}`);
+  console.log(`File not found: ${localPath}\nFetching from: ${remoteUrl} ...`);
+  const resp = await fetch(remoteUrl);
+  if (!resp.ok) {
+    throw new Error(`Failed to fetch '${remoteUrl}': ${resp.status} ${resp.statusText}`);
   }
-  const textData = await response.text();
-
-  // Write the file locally
+  const textData = await resp.text();
   fs.writeFileSync(localPath, textData, 'utf-8');
   console.log(`Saved file to: ${localPath}`);
 }
 
-// 2) Load the JSON after confirming it exists
+// CHANGED: Stream the file download to avoid large Buffer
+async function ensureScryfallAllCards(localPath: string, remoteUrl: string): Promise<void> {
+  if (fs.existsSync(localPath)) {
+    console.log(`Scryfall all-cards file found locally: ${localPath}`);
+    return;
+  }
+  console.log(`Not found locally: ${localPath}\nDownloading from: ${remoteUrl}`);
+
+  const response = await fetch(remoteUrl);
+  if (!response.ok) {
+    throw new Error(`Scryfall bulk data fetch failed: ${response.status} ${response.statusText}`);
+  }
+
+  // Stream the file to disk
+  const fileStream = fs.createWriteStream(localPath);
+  // The Response body is a readable stream
+  await pipeline(response.body as any, fileStream);
+
+  console.log(`Wrote Scryfall data to ${localPath}`);
+}
+
+// -------------- LOAD INTO MEMORY --------------
 function loadAllPrintings(filePath: string): AllPrintings | null {
   try {
     const raw = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(raw) as AllPrintings;
   } catch (err) {
-    console.error('Failed to load AllPrintings:', err);
+    console.error(`Failed to load AllPrintings from ${filePath}`, err);
     return null;
   }
 }
@@ -132,11 +213,92 @@ function loadExtendedData(filePath: string): ExtendedSealedData[] {
     const raw = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(raw) as ExtendedSealedData[];
   } catch (err) {
-    console.error('Failed to load extended data:', err);
+    console.error(`Failed to load extended data from ${filePath}`, err);
     return [];
   }
 }
-// Weighted random pick from an array of boosters
+
+/**
+ * CHANGED: Stream-parse the giant Scryfall file to build a map
+ * of only the cards we actually need (from AllPrintings).
+ */
+async function loadScryfallAllCardsStreamed(
+  filePath: string,
+  neededIds: Set<string>
+): Promise<Record<string, ScryfallCard>> {
+  console.log(`Streaming parse of Scryfall from ${filePath}. Looking for ${neededIds.size} IDs.`);
+
+  const scryfallMap: Record<string, ScryfallCard> = {};
+
+  // Create the pipeline:
+  //  1) fs createReadStream
+  //  2) parser() to parse JSON tokens
+  //  3) streamArray() to handle the array of objects
+  //  4) we listen for each array element, check if it's in neededIds
+  //  5) store in scryfallMap if so
+
+  const pipelineStream = chain([
+    fs.createReadStream(filePath),
+    parser(),
+    streamArray() // handles each element in the top-level JSON array
+  ]);
+
+  // Each "data" event is { key, value } where value is one ScryfallCard
+  for await (const chunk of pipelineStream) {
+    // chunk.value is the actual card object
+    const card = chunk.value as ScryfallCard;
+    if (card.id && neededIds.has(card.id)) {
+      scryfallMap[card.id] = card;
+    }
+  }
+
+  console.log(`Found ${Object.keys(scryfallMap).length} matching Scryfall cards out of needed ${neededIds.size}.`);
+  return scryfallMap;
+}
+
+// -------------- MERGING --------------
+/**
+ * 1) Build a set of scryfallIds needed by AllPrintings
+ * 2) Load *only* those from the huge scryfall file
+ * 3) Build combinedCards
+ */
+async function buildCombinedCards(): Promise<void> {
+  if (!allPrintings) return;
+
+  // Step 1: gather needed scryfall IDs from all sets
+  const neededIds = new Set<string>();
+  for (const setCode of Object.keys(allPrintings.data)) {
+    const setObj = allPrintings.data[setCode];
+    for (const card of setObj.cards) {
+      const scryId = card.identifiers?.scryfallId;
+      if (scryId) {
+        neededIds.add(scryId);
+      }
+    }
+  }
+  console.log(`We need Scryfall data for ${neededIds.size} cards.`);
+
+  // Step 2: parse the Scryfall file in a streaming manner, picking only needed
+  const scryfallMap = await loadScryfallAllCardsStreamed(SCRYFALL_DATA_PATH, neededIds);
+
+  // Step 3: Build the combined data
+  let count = 0;
+  for (const setCode of Object.keys(allPrintings.data)) {
+    const setObj = allPrintings.data[setCode];
+    for (const card of setObj.cards) {
+      const scryId = card.identifiers?.scryfallId;
+      const scryData = scryId ? scryfallMap[scryId] : undefined;
+      combinedCards[card.uuid] = {
+        allPrintingsData: card,
+        scryfallData: scryData
+      };
+      count++;
+    }
+  }
+  console.log(`Built combined data for ${count} cards.`);
+}
+
+// -------------- BOOSTER SIM LOGIC --------------
 function pickBooster(boosters: ExtendedBooster[]): ExtendedBooster | null {
   if (!boosters || boosters.length === 0) return null;
   const total = boosters.reduce((acc, b) => acc + b.weight, 0);
@@ -153,7 +315,6 @@ function pickBooster(boosters: ExtendedBooster[]): ExtendedBooster | null {
   return null;
 }
 
-// Weighted random pick of a single card from a sheet
 function pickCardFromSheet(sheet: ExtendedSheet): string | null {
   if (!sheet.cards || sheet.cards.length === 0 || sheet.total_weight <= 0) return null;
   const rand = Math.floor(Math.random() * sheet.total_weight);
@@ -168,152 +329,101 @@ function pickCardFromSheet(sheet: ExtendedSheet): string | null {
 }
 
 // -------------- ENDPOINTS --------------
-
-// 1) GET /sets
-// Return an array of distinct set codes from extended data
 app.get('/sets', (req: Request, res: Response) => {
-  const uniqueSetCodes = new Set<string>();
-  extendedDataArray.forEach((prod) => {
-    // e.g. "FDN"
-    uniqueSetCodes.add(prod.set_code.toUpperCase());
-  });
-
-  const result = Array.from(uniqueSetCodes);
-  return res.json(result);
+  const uniqueCodes = new Set<string>();
+  for (const product of extendedDataArray) {
+    uniqueCodes.add(product.set_code.toUpperCase());
+  }
+  return res.json(Array.from(uniqueCodes));
 });
 
-// 2) GET /sets/:setCode/products
-// Return an array of all sealed products from extendedDataArray that match that set code
 app.get('/sets/:setCode/products', (req: Request, res: Response) => {
   const setCodeParam = req.params.setCode.toUpperCase();
-  const matching = extendedDataArray.filter(
-    (prod) => prod.set_code.toUpperCase() === setCodeParam
-  );
+  const matching = extendedDataArray.filter(p => p.set_code.toUpperCase() === setCodeParam);
   return res.json(matching);
 });
 
-// 3) POST /products/:productCode/open
-// Generate a booster pack for the given product code
 app.post('/products/:productCode/open', (req: Request, res: Response) => {
   const productCode = req.params.productCode.toLowerCase();
-  const product = extendedDataArray.find(
-    (p) => p.code.toLowerCase() === productCode
-  );
+  const product = extendedDataArray.find(p => p.code.toLowerCase() === productCode);
   if (!product) {
     return res.status(404).json({ error: 'Product not found' });
   }
 
-  // Build a local map of cards from the sets in source_set_codes
-  const localMap: Record<string, CardSet> = {};
-  for (let setCode of product.source_set_codes) {
-    setCode = setCode.toUpperCase();
-    const setObj = allPrintings?.data[setCode];
+  // For each set in source_set_codes, build a quick membership map
+  const localMap: Record<string, boolean> = {};
+  for (let code of product.source_set_codes) {
+    code = code.toUpperCase();
+    const setObj = allPrintings?.data[code];
     if (!setObj) {
-      console.warn(`Set code '${setCode}' not found in AllPrintings`);
+      console.warn(`Set code '${code}' not found in AllPrintings`);
       continue;
     }
-    setObj.cards.forEach((c) => {
-      localMap[c.uuid] = c;
-    });
+    for (const c of setObj.cards) {
+      localMap[c.uuid] = true;
+    }
   }
 
-  // Pick which booster
   const chosenBooster = pickBooster(product.boosters);
   if (!chosenBooster) {
     return res.json({ pack: [], warning: 'No booster found or zero weight' });
   }
 
-  // Fill the pack
-  const pack: Card[] = [];
+  const pack = [];
   for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
-    const sheetData = product.sheets[sheetName];
-    if (!sheetData) {
+    const sheet = product.sheets[sheetName];
+    if (!sheet) {
       console.log(`No sheet data for sheet '${sheetName}' in product '${product.code}'`);
       continue;
     }
     for (let i = 0; i < count; i++) {
-      const pickedUUID = pickCardFromSheet(sheetData);
+      const pickedUUID = pickCardFromSheet(sheet);
       if (!pickedUUID) continue;
 
-      const cardDef = localMap[pickedUUID];
-      if (cardDef) {
-        pack.push(new Card(cardDef.name, cardDef.rarity));
-      } else {
-        console.warn('Could not find card in local map for UUID:', pickedUUID);
+      // merged data
+      const combined = combinedCards[pickedUUID];
+      if (!combined) {
+        console.warn(`No combined data for card uuid=${pickedUUID}`);
+        continue;
       }
+      if (!localMap[pickedUUID]) {
+        console.warn(`Card uuid=${pickedUUID} not in source_set_codes?`);
+        continue;
+      }
+      pack.push(combined);
     }
   }
 
-  // Return the resulting pack
   return res.json({ pack });
 });
 
-// Example usage:
-// await ensureAllPrintingsUnzipped('AllPrintings.json', 'https://example.com/AllPrintings.zip', 'AllPrintings.json');
-// if the user doesn't have AllPrintings.json locally, we download the .zip, extract AllPrintings.json, and write it.
-
-export async function ensureAllPrintingsUnzipped(localJsonPath: string): Promise<void> {
-  if (fs.existsSync(localJsonPath)) {
-    console.log(`Found local file: ${localJsonPath}, no need to download zip.`);
-    return;
-  }
-
-  console.log(`File not found locally: ${localJsonPath}\nFetching zip from: ${ALL_PRINTINGS_URL_ZIPPED} ...`);
-  const response = await fetch(ALL_PRINTINGS_URL_ZIPPED);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch '${ALL_PRINTINGS_URL_ZIPPED}': ${response.status} ${response.statusText}`);
-  }
-
-  // Use arrayBuffer(), then convert to a Node.js Buffer.
-  const arrayBuf = await response.arrayBuffer();
-  const zipBuffer = Buffer.from(arrayBuf);
-
-  // Open the zip from the buffer using unzipper
-  const directory = await unzipper.Open.buffer(zipBuffer);
-
-  // 3) Find the entry matching zippedJsonFilename (e.g. 'AllPrintings.json')
-  const zipEntry = directory.files.find(f => f.path === 'AllPrintings.json');
-  if (!zipEntry) {
-    throw new Error(`Could not find AllPrintings.json inside the downloaded ZIP.`);
-  }
-
-  // 4) Extract that file entry into a buffer
-  const unzippedData = await zipEntry.buffer();
-
-  // 5) Write that unzipped JSON to localJsonPath
-  fs.writeFileSync(localJsonPath, unzippedData);
-  console.log(`Successfully saved unzipped file to ${localJsonPath}`);
-}
-
-// ------------------------------------
-// Main startup: check local files or fetch, then load data
-// ------------------------------------
+// -------------- MAIN STARTUP --------------
 async function main() {
-  const allPrintingsPath = process.argv[2] || 'data/AllPrintings.json';
-  const extendedDataPath = process.argv[3] || 'data/sealed_extended_data.json';
+  // 1) Ensure local resources
+  await ensureAllPrintingsUnzipped(ALL_PRINTINGS_PATH);
+  await ensureFileExists(ALL_PRINTINGS_PATH, ALL_PRINTINGS_URL);
+  await ensureFileExists(EXTENDED_DATA_PATH, EXTENDED_DATA_URL);
+  await ensureScryfallAllCards(SCRYFALL_DATA_PATH, SCRYFALL_ALL_CARDS_URL);
 
-  // 1) Ensure local files exist (fetch if missing)
-  await ensureAllPrintingsUnzipped(allPrintingsPath);
-  await ensureFileExists(allPrintingsPath, ALL_PRINTINGS_URL);
-  await ensureFileExists(extendedDataPath, EXTENDED_DATA_URL);
-
-  // 2) Load data from local disk
-  allPrintings = loadAllPrintings(allPrintingsPath);
+  // 2) Load AllPrintings & sealed_extended_data
+  allPrintings = loadAllPrintings(ALL_PRINTINGS_PATH);
   if (!allPrintings) {
-    console.error('AllPrintings data is unavailable, exiting.');
+    console.error('AllPrintings is null, exiting.');
     process.exit(1);
   }
-  extendedDataArray = loadExtendedData(extendedDataPath);
-  console.log(`Loaded ${extendedDataArray.length} products.`);
+  extendedDataArray = loadExtendedData(EXTENDED_DATA_PATH);
+  console.log(`Loaded ${extendedDataArray.length} sealed products.`);
 
-  // 3) Start the server
+  // 3) Build the merged data by streaming parse of scryfall
+  await buildCombinedCards();
+
+  // 4) Launch server
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
 }
 
-// We must call main as an async function:
-main().catch((err) => {
+main().catch(err => {
   console.error('Startup error:', err);
   process.exit(1);
 });
