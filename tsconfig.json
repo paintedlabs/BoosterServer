@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // ...
+    // This can help avoid type conflicts if you have legacy libraries
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*",
+    "server.ts"
+  ]
+}
