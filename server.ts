@@ -110,7 +110,12 @@ interface ScryfallCard {
   id: string; // scryfallId
   name: string;
   image_uris?: {
+    small?: string;
     normal?: string;
+    large?: string;
+    png?: string;
+    art_crop?: string;
+    border_crop?: string;
     [key: string]: any;
   };
   mana_cost?: string;
@@ -395,6 +400,66 @@ app.post('/products/:productCode/open', (req: Request, res: Response) => {
   }
 
   return res.json({ pack });
+});
+
+// A helper function to get the local file path for a card’s image
+function getLocalImagePath(scryfallId: string): string {
+  // e.g. cache/images/<scryfallId>.jpg
+  const cacheDir = path.join(__dirname, 'cache', 'images');
+  // Ensure the folder exists (only once at startup or on the fly):
+  if (!fs.existsSync(cacheDir)) {
+    fs.mkdirSync(cacheDir, { recursive: true });
+  }
+  return path.join(cacheDir, `${scryfallId}.jpg`);
+}
+
+// The route handler
+app.get('/cards/:scryfallId/image', async (req: Request, res: Response) => {
+  try {
+    const { scryfallId } = req.params;
+    const localPath = getLocalImagePath(scryfallId);
+
+    // 2a) If file is cached locally, serve it
+    if (fs.existsSync(localPath)) {
+      console.log(`Serving cached image for ${scryfallId}`);
+      return res.sendFile(localPath);
+    }
+
+    console.log(`Image not cached. Fetching from Scryfall for ${scryfallId}...`);
+
+    // 2b) We need to figure out the correct Scryfall "normal" image URI
+    // Option 1: If you have a pre-built map scryfallId->ScryfallCard
+    // Option 2: Fetch card data from scryfall again
+    // For simplicity, let's fetch the card data from Scryfall's API:
+    const cardApiUrl = `https://api.scryfall.com/cards/${scryfallId}`;
+    const cardResp = await fetch(cardApiUrl);
+    if (!cardResp.ok) {
+      return res.status(404).json({ error: 'Card not found on Scryfall' });
+    }
+    const cardData = await cardResp.json();
+    // We'll assume "image_uris.normal" exists
+    const imageUrl = cardData.image_uris?.border_crop;
+    if (!imageUrl) {
+      return res.status(400).json({ error: 'No normal image available' });
+    }
+
+    // 2c) Fetch the image
+    const imgResp = await fetch(imageUrl);
+    if (!imgResp.ok || !imgResp.body) {
+      return res.status(400).json({ error: 'Failed to fetch image' });
+    }
+
+    // 2d) Stream the image to our cache file
+    const fileStream = fs.createWriteStream(localPath);
+    await pipeline(imgResp.body as any, fileStream);
+
+    // 2e) Now serve it from the new local file
+    return res.sendFile(localPath);
+
+  } catch (err) {
+    console.error('Error fetching/saving image:', err);
+    return res.status(500).json({ error: 'Internal server error' });
+  }
 });
 
 // -------------- MAIN STARTUP --------------
