@@ -355,7 +355,7 @@ app.post('/products/:productCode/open', (req: Request, res: Response) => {
     return res.status(404).json({ error: 'Product not found' });
   }
 
-  // For each set in source_set_codes, build a quick membership map
+  // Build a local membership map for relevant sets
   const localMap: Record<string, boolean> = {};
   for (let code of product.source_set_codes) {
     code = code.toUpperCase();
@@ -369,23 +369,34 @@ app.post('/products/:productCode/open', (req: Request, res: Response) => {
     }
   }
 
+  // Pick which booster from product.boosters
   const chosenBooster = pickBooster(product.boosters);
   if (!chosenBooster) {
     return res.json({ pack: [], warning: 'No booster found or zero weight' });
   }
 
-  const pack = [];
+  /** 
+   * pack will be an array of objects, each containing:
+   *   - the combined card data (allPrintings + scryfall)
+   *   - the sheet name
+   */
+  const pack: Array<{
+    sheet: string;
+    allPrintingsData: CardSet;
+    scryfallData?: ScryfallCard;
+  }> = [];
+
   for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
     const sheet = product.sheets[sheetName];
     if (!sheet) {
       console.log(`No sheet data for sheet '${sheetName}' in product '${product.code}'`);
       continue;
     }
+
     for (let i = 0; i < count; i++) {
       const pickedUUID = pickCardFromSheet(sheet);
       if (!pickedUUID) continue;
 
-      // merged data
       const combined = combinedCards[pickedUUID];
       if (!combined) {
         console.warn(`No combined data for card uuid=${pickedUUID}`);
@@ -395,7 +406,13 @@ app.post('/products/:productCode/open', (req: Request, res: Response) => {
         console.warn(`Card uuid=${pickedUUID} not in source_set_codes?`);
         continue;
       }
-      pack.push(combined);
+
+      // PUSH AN OBJECT THAT INCLUDES THE SHEET NAME
+      pack.push({
+        sheet: sheetName,
+        allPrintingsData: combined.allPrintingsData,
+        scryfallData: combined.scryfallData,
+      });
     }
   }
 
