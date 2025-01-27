@@ -32,7 +32,7 @@ import { streamArray } from 'stream-json/streamers/StreamArray';
 import cors from 'cors';
 
 // -------------- CONFIG CONSTANTS --------------
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // URLs to fetch if local files are missing
 const ALL_PRINTINGS_URL = 'https://mtgjson.com/api/v5/AllPrintings.json';
@@ -50,7 +50,7 @@ const app = express();
 
 // -------------- CORS CONFIGURATION --------------
 // Define your frontend's origin
-const FRONTEND_ORIGIN = 'http://192.168.1.167:51937';
+const FRONTEND_ORIGIN = 'http://192.168.1.70:3000';
 
 // Apply CORS middleware before other middleware and routes
 app.use(cors({

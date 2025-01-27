@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "commonjs",
   "scripts": {
-    "start": "NODE_OPTIONS='--max-old-space-size=8192' ts-node server.ts"
+    "start": "NODE_OPTIONS='--max-old-space-size=12288' ts-node server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
