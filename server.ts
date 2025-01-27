@@ -50,7 +50,7 @@ const app = express();
 
 // -------------- CORS CONFIGURATION --------------
 // Define your frontend's origin
-const FRONTEND_ORIGIN = 'http://192.168.1.70:3000';
+const FRONTEND_ORIGIN = 'paintedlabs.github.io';
 
 // Apply CORS middleware before other middleware and routes
 app.use(cors({
@@ -507,7 +507,7 @@ async function main() {
 
     // 4) Launch server
     app.listen(PORT, () => {
-      console.log(`Server running on http://192.168.1.167:${PORT}`);
+      console.log(`Server running on http://192.168.1.70:${PORT}`);
     });
   } catch (err) {
     console.error('Startup error:', err);
