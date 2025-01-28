@@ -20,6 +20,7 @@ import bodyParser from 'body-parser';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as unzipper from 'unzipper';
+import os from 'os';
 
 // If on Node < 18, install node-fetch:
 import fetch, { Response as FetchResponse } from 'node-fetch';
@@ -115,6 +116,11 @@ interface ExtendedSheetCard {
   weight: number;
   foil?: boolean;
   uuid: string;
+}
+
+interface SetResponse {
+  code: string;
+  name: string;
 }
 
 // Scryfall data shape (simplified)
@@ -343,14 +349,25 @@ function pickCardFromSheet(sheet: ExtendedSheet): string | null {
 
 // -------------- ENDPOINTS --------------
 app.get('/sets', (req: Request, res: Response) => {
-  // Return unique set codes from extendedDataArray
   console.log('Received GET /sets request');
 
-  const uniqueCodes = new Set<string>();
+  const seenCodes = new Set<string>();
+  const setsArray: Array<{ code: string; name: string }> = [];
+
   for (const product of extendedDataArray) {
-    uniqueCodes.add(product.set_code.toUpperCase());
+    const setCode = product.set_code.toUpperCase();
+
+    // Add set if it hasn't been seen yet and exists in AllPrintings
+    if (!seenCodes.has(setCode) && allPrintings?.data[setCode]) {
+      seenCodes.add(setCode);
+      setsArray.push({
+        code: setCode,
+        name: allPrintings.data[setCode].name
+      });
+    }
   }
-  return res.json(Array.from(uniqueCodes));
+
+  return res.json(setsArray);
 });
 
 app.get('/sets/:setCode/products', (req: Request, res: Response) => {
@@ -358,7 +375,7 @@ app.get('/sets/:setCode/products', (req: Request, res: Response) => {
   const matching = extendedDataArray.filter(
     (p) => p.set_code.toUpperCase() === setCodeParam
   );
-  console.log(`Returning products for setCode=${setCodeParam}:`, matching);
+  // console.log(`Returning products for setCode=${setCodeParam}:`, matching);
   return res.json(matching);
 });
 
@@ -428,7 +445,8 @@ app.post('/products/:productCode/open', (req: Request, res: Response) => {
       });
     }
   }
-
+  console.log('Received POST /open request for product:', product.code);
+  console.log('pack contents: ', pack);
   return res.json({ pack });
 });
 
@@ -507,7 +525,26 @@ async function main() {
 
     // 4) Launch server
     app.listen(PORT, () => {
-      console.log(`Server running on http://192.168.1.70:${PORT}`);
+      const networkInterfaces = os.networkInterfaces();
+      const addresses: string[] = [];
+
+      for (const iface of Object.values(networkInterfaces)) {
+        if (iface) {
+          iface.forEach((details) => {
+            if (details.family === 'IPv4' && !details.internal) {
+              addresses.push(details.address); // Collect all external IPv4 addresses
+            }
+          });
+        }
+      }
+
+      // Log the addresses or fallback to localhost if no external IP is found
+      if (addresses.length > 0) {
+        console.log(`Server running on:`);
+        addresses.forEach((addr) => console.log(`  http://${addr}:${PORT}`));
+      } else {
+        console.log(`Server running on localhost:${PORT}`);
+      }
     });
   } catch (err) {
     console.error('Startup error:', err);
