@@ -1,3 +1,5 @@
+import * as status from '@tsnode-template/status';
+
 import * as binarySearch from './binarySearch';
 
 /**
@@ -9,6 +11,10 @@ export type StochasticSampler<T> = {
 
 export type CreateStochasticSamplerOptions<T> = {
   weights: Map<T, number>;
+
+  // By default, negative weights are discarded. However, when strict weights is
+  // enabled negative weights will cause sampler creation to fail.
+  strictWeights?: boolean;
 };
 
 /**
@@ -24,12 +30,13 @@ export type CreateStochasticSamplerOptions<T> = {
  */
 export const createStochasticSampler = <T>(
   options: CreateStochasticSamplerOptions<T>,
-): StochasticSampler<T> | null => {
-  const { weights } = options;
+): status.StatusOr<StochasticSampler<T>> => {
+  const optionsWithDefaults: Required<CreateStochasticSamplerOptions<T>> = {
+    strictWeights: false,
+    ...options,
+  };
 
-  if (weights.size === 0) {
-    return null;
-  }
+  const { weights, strictWeights } = optionsWithDefaults;
 
   // It's important that we store the values associated with each prefix sum
   // rather than relying on `weights` so that we safeguard this implementation
@@ -37,8 +44,24 @@ export const createStochasticSampler = <T>(
   let totalWeight = 0;
   const prefixSum: Array<[T, number]> = [];
   for (const [value, weight] of weights.entries()) {
+    if (strictWeights && weight < 0) {
+      return status.fromError(
+        'Negative weights are disallowed when strictWeights is enabled.',
+      );
+    }
+
+    // We can discard weights which cannot be sampled.
+    if (weight <= 0) {
+      continue;
+    }
+
     totalWeight += weight;
     prefixSum.push([value, totalWeight]);
+  }
+
+  // We cannot sample data when none is present.
+  if (totalWeight === 0) {
+    return status.fromError('There are no items to sample.');
   }
 
   const sample: StochasticSampler<T>['sample'] = () => {
@@ -67,5 +90,5 @@ export const createStochasticSampler = <T>(
     return prefixSum[result][0];
   };
 
-  return { sample };
+  return status.fromValue({ sample });
 };
