@@ -50,7 +50,7 @@ const app = express();
 
 // -------------- CORS CONFIGURATION --------------
 // Define your frontend's origin
-const FRONTEND_ORIGIN = 'paintedlabs.github.io';
+const FRONTEND_ORIGIN = 'https://paintedlabs.github.io';
 
 // Apply CORS middleware before other middleware and routes
 app.use(cors({
