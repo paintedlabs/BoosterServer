@@ -15,49 +15,54 @@
  *   The /open endpoint returns merged data for each card.
  */
 
-import express, { Request, Response } from 'express';
-import bodyParser from 'body-parser';
-import * as fs from 'fs';
-import * as path from 'path';
-import * as unzipper from 'unzipper';
-import os from 'os';
+import express, { Request, Response } from "express";
+import bodyParser from "body-parser";
+import * as fs from "fs";
+import * as path from "path";
+import * as unzipper from "unzipper";
+import os from "os";
 
 // If on Node < 18, install node-fetch:
-import fetch, { Response as FetchResponse } from 'node-fetch';
+import fetch, { Response as FetchResponse } from "node-fetch";
 
 // For streaming parse:
-import { pipeline } from 'stream/promises';
-import { chain } from 'stream-chain';
-import { parser } from 'stream-json';
-import { streamArray } from 'stream-json/streamers/StreamArray';
-import cors from 'cors';
+import { pipeline } from "stream/promises";
+import { chain } from "stream-chain";
+import { parser } from "stream-json";
+import { streamArray } from "stream-json/streamers/StreamArray";
+import cors from "cors";
+import * as ScryfallTypes from "./index";
 
 // -------------- CONFIG CONSTANTS --------------
 const PORT = process.env.PORT || 8080;
 
 // URLs to fetch if local files are missing
-const ALL_PRINTINGS_URL = 'https://mtgjson.com/api/v5/AllPrintings.json';
-const ALL_PRINTINGS_URL_ZIPPED = 'https://mtgjson.com/api/v5/AllPrintings.json.zip';
-const EXTENDED_DATA_URL = 'https://raw.githubusercontent.com/taw/magic-sealed-data/refs/heads/master/sealed_extended_data.json';
-const SCRYFALL_ALL_CARDS_URL = 'https://data.scryfall.io/all-cards/all-cards-20250124102227.json';
+const ALL_PRINTINGS_URL = "https://mtgjson.com/api/v5/AllPrintings.json";
+const ALL_PRINTINGS_URL_ZIPPED =
+  "https://mtgjson.com/api/v5/AllPrintings.json.zip";
+const EXTENDED_DATA_URL =
+  "https://raw.githubusercontent.com/taw/magic-sealed-data/refs/heads/master/sealed_extended_data.json";
+const SCRYFALL_ALL_CARDS_URL =
+  "https://data.scryfall.io/all-cards/all-cards-20250124102227.json";
 
 // Local file paths (adjust as desired)
-const ALL_PRINTINGS_PATH = 'data/AllPrintings.json';
-const EXTENDED_DATA_PATH = 'data/sealed_extended_data.json';
-const SCRYFALL_DATA_PATH = 'data/scryfall_all_cards.json';
+const ALL_PRINTINGS_PATH = "data/AllPrintings.json";
+const EXTENDED_DATA_PATH = "data/sealed_extended_data.json";
+const SCRYFALL_DATA_PATH = "data/scryfall_all_cards.json";
 
 // -------------- EXPRESS APP --------------
 const app = express();
 
 // -------------- CORS CONFIGURATION --------------
 // Define your frontend's origin
-const FRONTEND_ORIGIN = 'https://paintedlabs.github.io';
 
 // Apply CORS middleware before other middleware and routes
-app.use(cors({
-  origin: FRONTEND_ORIGIN, // Allow only this origin
-  methods: ['GET', 'POST'], // Allow only GET and POST methods
-}));
+app.use(
+  cors({
+    origin: "*", // Allow only this origin
+    methods: ["GET", "POST"], // Allow only GET and POST methods
+  })
+);
 
 // -------------- MIDDLEWARE --------------
 app.use(bodyParser.json());
@@ -123,41 +128,20 @@ interface SetResponse {
   name: string;
 }
 
-// Scryfall data shape (simplified)
-interface ScryfallCard {
-  id: string; // scryfallId
-  name: string;
-  image_uris?: {
-    small?: string;
-    normal?: string;
-    large?: string;
-    png?: string;
-    art_crop?: string;
-    border_crop?: string;
-    [key: string]: any;
-  };
-  mana_cost?: string;
-  oracle_text?: string;
-  prices?: {
-    usd?: string;
-    usd_foil?: string;
-    [key: string]: string | undefined;
-  };
-  // many more fields...
-}
-
 interface CombinedCard {
   allPrintingsData: CardSet;
-  scryfallData?: ScryfallCard;
+  scryfallData?: ScryfallTypes.IScryfallCard;
 }
 
 // -------------- GLOBALS --------------
 let allPrintings: AllPrintings | null = null;
 let extendedDataArray: ExtendedSealedData[] = [];
-const combinedCards: Record<string, CombinedCard> = {};
+const combinedCards: Record<string, CombinedCard> = {}; //MTGJson UUID -> CombinedCard
 
 // -------------- STARTUP: FILE ENSURE & LOAD --------------
-async function ensureAllPrintingsUnzipped(localJsonPath: string): Promise<void> {
+async function ensureAllPrintingsUnzipped(
+  localJsonPath: string
+): Promise<void> {
   if (fs.existsSync(localJsonPath)) {
     console.log(`Found local file: ${localJsonPath}, no need to download zip.`);
     return;
@@ -176,7 +160,7 @@ async function ensureAllPrintingsUnzipped(localJsonPath: string): Promise<void> 
   const zipBuffer = Buffer.from(arrayBuf);
 
   const directory = await unzipper.Open.buffer(zipBuffer);
-  const zipEntry = directory.files.find((f) => f.path === 'AllPrintings.json');
+  const zipEntry = directory.files.find((f) => f.path === "AllPrintings.json");
   if (!zipEntry) {
     throw new Error(`Could not find AllPrintings.json in the ZIP.`);
   }
@@ -186,7 +170,10 @@ async function ensureAllPrintingsUnzipped(localJsonPath: string): Promise<void> 
   console.log(`Saved unzipped file to: ${localJsonPath}`);
 }
 
-async function ensureFileExists(localPath: string, remoteUrl: string): Promise<void> {
+async function ensureFileExists(
+  localPath: string,
+  remoteUrl: string
+): Promise<void> {
   if (fs.existsSync(localPath)) {
     console.log(`Found local file: ${localPath}, skipping fetch.`);
     return;
@@ -195,15 +182,20 @@ async function ensureFileExists(localPath: string, remoteUrl: string): Promise<v
   console.log(`Fetching from: ${remoteUrl} ...`);
   const resp = await fetch(remoteUrl);
   if (!resp.ok) {
-    throw new Error(`Failed to fetch '${remoteUrl}': ${resp.status} ${resp.statusText}`);
+    throw new Error(
+      `Failed to fetch '${remoteUrl}': ${resp.status} ${resp.statusText}`
+    );
   }
   const textData = await resp.text();
-  fs.writeFileSync(localPath, textData, 'utf-8');
+  fs.writeFileSync(localPath, textData, "utf-8");
   console.log(`Saved file to: ${localPath}`);
 }
 
 // Stream the Scryfall all-cards download to avoid large memory usage
-async function ensureScryfallAllCards(localPath: string, remoteUrl: string): Promise<void> {
+async function ensureScryfallAllCards(
+  localPath: string,
+  remoteUrl: string
+): Promise<void> {
   if (fs.existsSync(localPath)) {
     console.log(`Scryfall all-cards file found locally: ${localPath}`);
     return;
@@ -213,7 +205,9 @@ async function ensureScryfallAllCards(localPath: string, remoteUrl: string): Pro
 
   const response = await fetch(remoteUrl);
   if (!response.ok) {
-    throw new Error(`Scryfall bulk data fetch failed: ${response.status} ${response.statusText}`);
+    throw new Error(
+      `Scryfall bulk data fetch failed: ${response.status} ${response.statusText}`
+    );
   }
 
   const fileStream = fs.createWriteStream(localPath);
@@ -225,7 +219,7 @@ async function ensureScryfallAllCards(localPath: string, remoteUrl: string): Pro
 // -------------- LOAD INTO MEMORY --------------
 function loadAllPrintings(filePath: string): AllPrintings | null {
   try {
-    const raw = fs.readFileSync(filePath, 'utf-8');
+    const raw = fs.readFileSync(filePath, "utf-8");
     return JSON.parse(raw) as AllPrintings;
   } catch (err) {
     console.error(`Failed to load AllPrintings from ${filePath}`, err);
@@ -235,7 +229,7 @@ function loadAllPrintings(filePath: string): AllPrintings | null {
 
 function loadExtendedData(filePath: string): ExtendedSealedData[] {
   try {
-    const raw = fs.readFileSync(filePath, 'utf-8');
+    const raw = fs.readFileSync(filePath, "utf-8");
     return JSON.parse(raw) as ExtendedSealedData[];
   } catch (err) {
     console.error(`Failed to load extended data from ${filePath}`, err);
@@ -250,10 +244,12 @@ function loadExtendedData(filePath: string): ExtendedSealedData[] {
 async function loadScryfallAllCardsStreamed(
   filePath: string,
   neededIds: Set<string>
-): Promise<Record<string, ScryfallCard>> {
-  console.log(`Streaming parse of Scryfall from ${filePath}. Looking for ${neededIds.size} IDs.`);
+): Promise<Record<string, ScryfallTypes.IScryfallCard>> {
+  console.log(
+    `Streaming parse of Scryfall from ${filePath}. Looking for ${neededIds.size} IDs.`
+  );
 
-  const scryfallMap: Record<string, ScryfallCard> = {};
+  const scryfallMap: Record<string, ScryfallTypes.IScryfallCard> = {};
 
   const pipelineStream = chain([
     fs.createReadStream(filePath),
@@ -263,14 +259,16 @@ async function loadScryfallAllCardsStreamed(
 
   // Each "data" event is { key, value } where value is one ScryfallCard
   for await (const chunk of pipelineStream) {
-    const card = chunk.value as ScryfallCard;
+    const card = chunk.value as ScryfallTypes.IScryfallCard;
     if (card.id && neededIds.has(card.id)) {
       scryfallMap[card.id] = card;
     }
   }
 
   console.log(
-    `Found ${Object.keys(scryfallMap).length} matching Scryfall cards out of needed ${neededIds.size}.`
+    `Found ${
+      Object.keys(scryfallMap).length
+    } matching Scryfall cards out of needed ${neededIds.size}.`
   );
   return scryfallMap;
 }
@@ -298,7 +296,10 @@ async function buildCombinedCards(): Promise<void> {
   console.log(`We need Scryfall data for ${neededIds.size} cards.`);
 
   // Stream-parse the Scryfall file, building a minimal map
-  const scryfallMap = await loadScryfallAllCardsStreamed(SCRYFALL_DATA_PATH, neededIds);
+  const scryfallMap = await loadScryfallAllCardsStreamed(
+    SCRYFALL_DATA_PATH,
+    neededIds
+  );
 
   // Build the combinedCards map
   let count = 0;
@@ -335,7 +336,8 @@ function pickBooster(boosters: ExtendedBooster[]): ExtendedBooster | null {
 }
 
 function pickCardFromSheet(sheet: ExtendedSheet): string | null {
-  if (!sheet.cards || sheet.cards.length === 0 || sheet.total_weight <= 0) return null;
+  if (!sheet.cards || sheet.cards.length === 0 || sheet.total_weight <= 0)
+    return null;
   const rand = Math.floor(Math.random() * sheet.total_weight);
   let cumulative = 0;
   for (const c of sheet.cards) {
@@ -348,8 +350,8 @@ function pickCardFromSheet(sheet: ExtendedSheet): string | null {
 }
 
 // -------------- ENDPOINTS --------------
-app.get('/sets', (req: Request, res: Response) => {
-  console.log('Received GET /sets request');
+app.get("/sets", (req: Request, res: Response) => {
+  console.log("Received GET /sets request");
 
   const seenCodes = new Set<string>();
   const setsArray: Array<{ code: string; name: string }> = [];
@@ -362,7 +364,7 @@ app.get('/sets', (req: Request, res: Response) => {
       seenCodes.add(setCode);
       setsArray.push({
         code: setCode,
-        name: allPrintings.data[setCode].name
+        name: allPrintings.data[setCode].name,
       });
     }
   }
@@ -370,7 +372,7 @@ app.get('/sets', (req: Request, res: Response) => {
   return res.json(setsArray);
 });
 
-app.get('/sets/:setCode/products', (req: Request, res: Response) => {
+app.get("/sets/:setCode/products", (req: Request, res: Response) => {
   const setCodeParam = req.params.setCode.toUpperCase();
   const matching = extendedDataArray.filter(
     (p) => p.set_code.toUpperCase() === setCodeParam
@@ -379,13 +381,13 @@ app.get('/sets/:setCode/products', (req: Request, res: Response) => {
   return res.json(matching);
 });
 
-app.post('/products/:productCode/open', (req: Request, res: Response) => {
+app.post("/products/:productCode/open", (req: Request, res: Response) => {
   const productCode = req.params.productCode.toLowerCase();
   const product = extendedDataArray.find(
     (p) => p.code.toLowerCase() === productCode
   );
   if (!product) {
-    return res.status(404).json({ error: 'Product not found' });
+    return res.status(404).json({ error: "Product not found" });
   }
 
   // Build a local membership map for the relevant sets in product.source_set_codes
@@ -405,14 +407,14 @@ app.post('/products/:productCode/open', (req: Request, res: Response) => {
   // Choose a booster from product.boosters
   const chosenBooster = pickBooster(product.boosters);
   if (!chosenBooster) {
-    return res.json({ pack: [], warning: 'No booster found or zero weight' });
+    return res.json({ pack: [], warning: "No booster found or zero weight" });
   }
 
   // Build the pack
   const pack: Array<{
     sheet: string;
     allPrintingsData: CardSet;
-    scryfallData?: ScryfallCard;
+    scryfallData?: ScryfallTypes.IScryfallCard;
   }> = [];
 
   for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
@@ -445,62 +447,94 @@ app.post('/products/:productCode/open', (req: Request, res: Response) => {
       });
     }
   }
-  console.log('Received POST /open request for product:', product.code);
-  console.log('pack contents: ', pack);
+  console.log(``);
+  console.log("Received POST /open request for product:", product.code);
+  console.log("Returning pack with", pack.length, "cards:");
+  for (const card of pack) {
+    console.log(
+      `${card.allPrintingsData.name} - ${card.sheet} - ${card.allPrintingsData.uuid}`
+    );
+  }
   return res.json({ pack });
 });
 
 // Example route to serve images via local caching:
 function getLocalImagePath(scryfallId: string): string {
   // e.g. cache/images/<scryfallId>.jpg
-  const cacheDir = path.join(__dirname, 'cache', 'images');
+  const cacheDir = path.join(__dirname, "cache", "images");
   if (!fs.existsSync(cacheDir)) {
     fs.mkdirSync(cacheDir, { recursive: true });
   }
   return path.join(cacheDir, `${scryfallId}.jpg`);
 }
 
-app.get('/cards/:scryfallId/image', async (req: Request, res: Response) => {
-  try {
-    const { scryfallId } = req.params;
-    const localPath = getLocalImagePath(scryfallId);
+app.get(
+  "/cards/:allPrintingsId/:cardFace/image",
+  async (req: Request, res: Response) => {
+    console.log(`\nReceived GET for card image: ${req.params.allPrintingsId}`);
+    try {
+      const { allPrintingsId, cardFace } = req.params;
 
-    // If file is cached locally, serve it
-    if (fs.existsSync(localPath)) {
-      console.log(`Serving cached image for ${scryfallId}`);
+      // Get card data first to determine effective face
+      const cardData = combinedCards[allPrintingsId];
+      if (!cardData?.scryfallData) {
+        return res.status(404).json({ error: "Card not found" });
+      }
+
+      // Validate and normalize card face
+      const normalizedFace = cardFace.toLowerCase();
+      const hasMultipleFaces = cardData.scryfallData.card_faces?.length > 1;
+      const effectiveFace =
+        normalizedFace === "back" && hasMultipleFaces ? "back" : "front";
+
+      // Generate face-specific cache path
+      const localPath = path.join(
+        __dirname,
+        "cache",
+        effectiveFace,
+        `${allPrintingsId}.jpg`
+      );
+
+      // Create cache directory if it doesn't exist
+      const cacheDir = path.dirname(localPath);
+      if (!fs.existsSync(cacheDir)) {
+        fs.mkdirSync(cacheDir, { recursive: true });
+      }
+
+      // Serve cached image if available
+      if (fs.existsSync(localPath)) {
+        console.log(
+          `Serving cached ${effectiveFace} image for ${allPrintingsId}`
+        );
+        return res.sendFile(localPath);
+      }
+
+      // Build Scryfall image URL
+      const scryfallId = cardData.scryfallData.id;
+      const [firstChar, secondChar] = scryfallId.slice(0, 2);
+      const imageUrl = `https://cards.scryfall.io/large/${effectiveFace}/${firstChar}/${secondChar}/${scryfallId}.jpg`;
+
+      console.log(
+        `Fetching and caching ${effectiveFace} image from: ${imageUrl}`
+      );
+
+      // Fetch and cache image
+      const imgResp = await fetch(imageUrl);
+      if (!imgResp.ok) {
+        console.error(`Scryfall image fetch failed: ${imgResp.status}`);
+        return res.status(404).json({ error: "Image not found" });
+      }
+
+      // Stream to face-specific cache location
+      const fileStream = fs.createWriteStream(localPath);
+      await pipeline(imgResp.body as any, fileStream);
       return res.sendFile(localPath);
+    } catch (err) {
+      console.error("Image handling error:", err);
+      return res.status(500).json({ error: "Internal server error" });
     }
-
-    console.log(`Image not cached. Fetching from Scryfall for ${scryfallId}...`);
-    const cardApiUrl = `https://api.scryfall.com/cards/${scryfallId}`;
-    const cardResp = await fetch(cardApiUrl);
-    if (!cardResp.ok) {
-      return res.status(404).json({ error: 'Card not found on Scryfall' });
-    }
-    const cardData = await cardResp.json();
-
-    // We'll assume "image_uris.border_crop" exists. Adjust if needed:
-    const imageUrl = cardData.image_uris?.border_crop;
-    if (!imageUrl) {
-      return res.status(400).json({ error: 'No border_crop image available' });
-    }
-
-    // Fetch the image itself
-    const imgResp = await fetch(imageUrl);
-    if (!imgResp.ok || !imgResp.body) {
-      return res.status(400).json({ error: 'Failed to fetch image' });
-    }
-
-    // Stream the image to our cache file, then serve it
-    const fileStream = fs.createWriteStream(localPath);
-    await pipeline(imgResp.body as any, fileStream);
-
-    return res.sendFile(localPath);
-  } catch (err) {
-    console.error('Error fetching/saving image:', err);
-    return res.status(500).json({ error: 'Internal server error' });
   }
-});
+);
 
 // -------------- MAIN STARTUP --------------
 async function main() {
@@ -514,7 +548,7 @@ async function main() {
     // 2) Load AllPrintings & sealed_extended_data
     allPrintings = loadAllPrintings(ALL_PRINTINGS_PATH);
     if (!allPrintings) {
-      console.error('AllPrintings is null, exiting.');
+      console.error("AllPrintings is null, exiting.");
       process.exit(1);
     }
     extendedDataArray = loadExtendedData(EXTENDED_DATA_PATH);
@@ -531,7 +565,7 @@ async function main() {
       for (const iface of Object.values(networkInterfaces)) {
         if (iface) {
           iface.forEach((details) => {
-            if (details.family === 'IPv4' && !details.internal) {
+            if (details.family === "IPv4" && !details.internal) {
               addresses.push(details.address); // Collect all external IPv4 addresses
             }
           });
@@ -547,12 +581,12 @@ async function main() {
       }
     });
   } catch (err) {
-    console.error('Startup error:', err);
+    console.error("Startup error:", err);
     process.exit(1);
   }
 }
 
 main().catch((err) => {
-  console.error('Unhandled error:', err);
+  console.error("Unhandled error:", err);
   process.exit(1);
 });
