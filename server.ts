@@ -258,7 +258,6 @@ async function loadScryfallAllCardsStreamed(
     streamArray(), // handles each element in the top-level JSON array
   ]);
 
-  // Each "data" event is { key, value } where value is one ScryfallCard
   for await (const chunk of pipelineStream) {
     const card = chunk.value as ScryfallTypes.IScryfallCard;
     if (card.id && neededIds.has(card.id)) {
@@ -283,7 +282,6 @@ async function loadScryfallAllCardsStreamed(
 async function buildCombinedCards(): Promise<void> {
   if (!allPrintings) return;
 
-  // Gather needed scryfall IDs
   const neededIds = new Set<string>();
   for (const setCode of Object.keys(allPrintings.data)) {
     const setObj = allPrintings.data[setCode];
@@ -296,13 +294,11 @@ async function buildCombinedCards(): Promise<void> {
   }
   console.log(`We need Scryfall data for ${neededIds.size} cards.`);
 
-  // Stream-parse the Scryfall file, building a minimal map
   const scryfallMap = await loadScryfallAllCardsStreamed(
     SCRYFALL_DATA_PATH,
     neededIds
   );
 
-  // Build the combinedCards map
   let count = 0;
   for (const setCode of Object.keys(allPrintings.data)) {
     const setObj = allPrintings.data[setCode];
@@ -360,7 +356,6 @@ app.get("/sets", (req: Request, res: Response) => {
   for (const product of extendedDataArray) {
     const setCode = product.set_code.toUpperCase();
 
-    // Add set if it hasn't been seen yet and exists in AllPrintings
     if (!seenCodes.has(setCode) && allPrintings?.data[setCode]) {
       seenCodes.add(setCode);
       setsArray.push({
@@ -378,7 +373,6 @@ app.get("/sets/:setCode/products", (req: Request, res: Response) => {
   const matching = extendedDataArray.filter(
     (p) => p.set_code.toUpperCase() === setCodeParam
   );
-  // console.log(`Returning products for setCode=${setCodeParam}:`, matching);
   return res.json(matching);
 });
 
@@ -391,7 +385,6 @@ app.post("/products/:productCode/open", (req: Request, res: Response) => {
     return res.status(404).json({ error: "Product not found" });
   }
 
-  // Build a local membership map for the relevant sets in product.source_set_codes
   const localMap: Record<string, boolean> = {};
   for (let code of product.source_set_codes) {
     code = code.toUpperCase();
@@ -405,7 +398,6 @@ app.post("/products/:productCode/open", (req: Request, res: Response) => {
     }
   }
 
-  // Choose a booster from product.boosters
   const chosenBooster = pickBooster(product.boosters);
   if (!chosenBooster) {
     return res.json({ pack: [], warning: "No booster found or zero weight" });
@@ -458,6 +450,95 @@ app.post("/products/:productCode/open", (req: Request, res: Response) => {
   return res.json({ pack });
 });
 
+app.post(
+  "/products/:productCode/open/:number",
+  (req: Request, res: Response) => {
+    const productCode = req.params.productCode.toLowerCase();
+    const product = extendedDataArray.find(
+      (p) => p.code.toLowerCase() === productCode
+    );
+    if (!product) {
+      return res.status(404).json({ error: "Product not found" });
+    }
+
+    const localMap: Record<string, boolean> = {};
+    for (let code of product.source_set_codes) {
+      code = code.toUpperCase();
+      const setObj = allPrintings?.data[code];
+      if (!setObj) {
+        console.warn(`Set code '${code}' not found in AllPrintings`);
+        continue;
+      }
+      for (const c of setObj.cards) {
+        localMap[c.uuid] = true;
+      }
+    }
+
+    const numPacks = parseInt(req.params.number, 10);
+    if (isNaN(numPacks) || numPacks <= 0) {
+      return res.status(400).json({ error: "Invalid number of packs" });
+    }
+
+    const packs: Array<{
+      pack: Array<{
+        sheet: string;
+        allPrintingsData: CardSet;
+        scryfallData?: ScryfallTypes.IScryfallCard;
+      }>;
+      warning?: string;
+    }> = [];
+
+    for (let i = 0; i < numPacks; i++) {
+      const chosenBooster = pickBooster(product.boosters);
+      if (!chosenBooster) {
+        packs.push({ pack: [], warning: "No booster found or zero weight" });
+        continue;
+      }
+
+      const pack: Array<{
+        sheet: string;
+        allPrintingsData: CardSet;
+        scryfallData?: ScryfallTypes.IScryfallCard;
+      }> = [];
+
+      for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
+        const sheet = product.sheets[sheetName];
+        if (!sheet) {
+          console.log(
+            `No sheet data for sheet '${sheetName}' in product '${product.code}'`
+          );
+          continue;
+        }
+
+        for (let j = 0; j < count; j++) {
+          const pickedUUID = pickCardFromSheet(sheet);
+          if (!pickedUUID) continue;
+
+          const combined = combinedCards[pickedUUID];
+          if (!combined) {
+            console.warn(`No combined data for card uuid=${pickedUUID}`);
+            continue;
+          }
+          if (!localMap[pickedUUID]) {
+            console.warn(`Card uuid=${pickedUUID} not in source_set_codes?`);
+            continue;
+          }
+
+          pack.push({
+            sheet: sheetName,
+            allPrintingsData: combined.allPrintingsData,
+            scryfallData: combined.scryfallData,
+          });
+        }
+      }
+      packs.push({ pack });
+    }
+
+    return res.json({ packs });
+  }
+);
+
+// Example route to serve images via local caching:
 function getLocalImagePath(scryfallId: string): string {
   const cacheDir = path.join(__dirname, "cache", "images");
   if (!fs.existsSync(cacheDir)) {
@@ -566,13 +647,11 @@ app.get("/setimages/:setCode", (req: Request, res: Response) => {
 // -------------- MAIN STARTUP --------------
 async function main() {
   try {
-    // 1) Ensure local resources
     await ensureAllPrintingsUnzipped(ALL_PRINTINGS_PATH);
     await ensureFileExists(ALL_PRINTINGS_PATH, ALL_PRINTINGS_URL);
     await ensureFileExists(EXTENDED_DATA_PATH, EXTENDED_DATA_URL);
     await ensureScryfallAllCards(SCRYFALL_DATA_PATH, SCRYFALL_ALL_CARDS_URL);
 
-    // 2) Load AllPrintings & sealed_extended_data
     allPrintings = loadAllPrintings(ALL_PRINTINGS_PATH);
     if (!allPrintings) {
       console.error("AllPrintings is null, exiting.");
@@ -581,11 +660,9 @@ async function main() {
     extendedDataArray = loadExtendedData(EXTENDED_DATA_PATH);
     console.log(`Loaded ${extendedDataArray.length} sealed products.`);
 
-    // 3) Build the merged data
     await buildCombinedCards();
     await ensureSetSvgsCached();
 
-    // 4) Launch server
     app.listen(PORT, () => {
       const networkInterfaces = os.networkInterfaces();
       const addresses: string[] = [];
@@ -594,13 +671,12 @@ async function main() {
         if (iface) {
           iface.forEach((details) => {
             if (details.family === "IPv4" && !details.internal) {
-              addresses.push(details.address); // Collect all external IPv4 addresses
+              addresses.push(details.address);
             }
           });
         }
       }
 
-      // Log the addresses or fallback to localhost if no external IP is found
       if (addresses.length > 0) {
         console.log(`Server running on:`);
         addresses.forEach((addr) => console.log(`  http://${addr}:${PORT}`));
