@@ -32,6 +32,7 @@ import { parser } from "stream-json";
 import { streamArray } from "stream-json/streamers/StreamArray";
 import cors from "cors";
 import * as ScryfallTypes from "./index";
+import sharp from "sharp";
 
 // -------------- CONFIG CONSTANTS --------------
 const PORT = process.env.PORT || 8080;
@@ -410,7 +411,6 @@ app.post("/products/:productCode/open", (req: Request, res: Response) => {
     return res.json({ pack: [], warning: "No booster found or zero weight" });
   }
 
-  // Build the pack
   const pack: Array<{
     sheet: string;
     allPrintingsData: CardSet;
@@ -458,9 +458,7 @@ app.post("/products/:productCode/open", (req: Request, res: Response) => {
   return res.json({ pack });
 });
 
-// Example route to serve images via local caching:
 function getLocalImagePath(scryfallId: string): string {
-  // e.g. cache/images/<scryfallId>.jpg
   const cacheDir = path.join(__dirname, "cache", "images");
   if (!fs.existsSync(cacheDir)) {
     fs.mkdirSync(cacheDir, { recursive: true });
@@ -474,20 +472,16 @@ app.get(
     console.log(`\nReceived GET for card image: ${req.params.allPrintingsId}`);
     try {
       const { allPrintingsId, cardFace } = req.params;
-
-      // Get card data first to determine effective face
       const cardData = combinedCards[allPrintingsId];
       if (!cardData?.scryfallData) {
         return res.status(404).json({ error: "Card not found" });
       }
 
-      // Validate and normalize card face
       const normalizedFace = cardFace.toLowerCase();
       const hasMultipleFaces = cardData.scryfallData.card_faces?.length > 1;
       const effectiveFace =
         normalizedFace === "back" && hasMultipleFaces ? "back" : "front";
 
-      // Generate face-specific cache path
       const localPath = path.join(
         __dirname,
         "cache",
@@ -495,13 +489,11 @@ app.get(
         `${allPrintingsId}.jpg`
       );
 
-      // Create cache directory if it doesn't exist
       const cacheDir = path.dirname(localPath);
       if (!fs.existsSync(cacheDir)) {
         fs.mkdirSync(cacheDir, { recursive: true });
       }
 
-      // Serve cached image if available
       if (fs.existsSync(localPath)) {
         console.log(
           `Serving cached ${effectiveFace} image for ${allPrintingsId}`
@@ -509,7 +501,6 @@ app.get(
         return res.sendFile(localPath);
       }
 
-      // Build Scryfall image URL
       const scryfallId = cardData.scryfallData.id;
       const [firstChar, secondChar] = scryfallId.slice(0, 2);
       const imageUrl = `https://cards.scryfall.io/large/${effectiveFace}/${firstChar}/${secondChar}/${scryfallId}.jpg`;
@@ -518,14 +509,12 @@ app.get(
         `Fetching and caching ${effectiveFace} image from: ${imageUrl}`
       );
 
-      // Fetch and cache image
       const imgResp = await fetch(imageUrl);
       if (!imgResp.ok) {
         console.error(`Scryfall image fetch failed: ${imgResp.status}`);
         return res.status(404).json({ error: "Image not found" });
       }
 
-      // Stream to face-specific cache location
       const fileStream = fs.createWriteStream(localPath);
       await pipeline(imgResp.body as any, fileStream);
       return res.sendFile(localPath);
@@ -535,6 +524,44 @@ app.get(
     }
   }
 );
+
+async function ensureSetSvgsCached() {
+  if (!allPrintings) return;
+  const setsDir = path.join(__dirname, "cache", "sets");
+  fs.mkdirSync(setsDir, { recursive: true });
+  const codes = Object.keys(allPrintings.data);
+  for (const code of codes) {
+    const localPng = path.join(setsDir, `${code.toLowerCase()}.png`);
+    if (fs.existsSync(localPng)) {
+      console.log(`Set image already cached for ${code}`);
+      continue;
+    }
+    const url = `https://svgs.scryfall.io/sets/${code.toLowerCase()}.svg`;
+    console.log(`Fetching set svg from: ${url}`);
+    try {
+      const resp = await fetch(url);
+      if (!resp.ok) {
+        console.error(`Failed to fetch SVG for set ${code}`);
+        continue;
+      }
+      const svgBuffer = await resp.buffer();
+      const pngBuffer = await sharp(svgBuffer).png().toBuffer();
+      fs.writeFileSync(localPng, pngBuffer);
+      console.log(`Cached set image for ${code}`);
+    } catch (err) {
+      console.error(`Error fetching/converting set ${code}`, err);
+    }
+  }
+}
+
+app.get("/setimages/:setCode", (req: Request, res: Response) => {
+  const setCode = req.params.setCode.toLowerCase();
+  const filePath = path.join(__dirname, "cache", "sets", `${setCode}.png`);
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).json({ error: "Set image not found" });
+  }
+  return res.sendFile(filePath);
+});
 
 // -------------- MAIN STARTUP --------------
 async function main() {
@@ -556,6 +583,7 @@ async function main() {
 
     // 3) Build the merged data
     await buildCombinedCards();
+    await ensureSetSvgsCached();
 
     // 4) Launch server
     app.listen(PORT, () => {
