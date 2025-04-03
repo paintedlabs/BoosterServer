@@ -1,32 +1,32 @@
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * Scryfall provides an overall categorization for each Set in the [set_type]{@link IScryfallSet.set_type} property.
  */
 export type ScryfallSetType =
-  | "core"
-  | "expansion"
-  | "masters"
-  | "alchemy"
-  | "masterpiece"
-  | "arsenal"
-  | "from_the_vault"
-  | "spellbook"
-  | "premium_deck"
-  | "duel_deck"
-  | "draft_innovation"
-  | "treasure_chest"
-  | "commander"
-  | "planechase"
-  | "archenemy"
-  | "vanguard"
-  | "funny"
-  | "starter"
-  | "box"
-  | "promo"
-  | "token"
-  | "memorabilia"
-  | "minigame";
+  | 'core'
+  | 'expansion'
+  | 'masters'
+  | 'alchemy'
+  | 'masterpiece'
+  | 'arsenal'
+  | 'from_the_vault'
+  | 'spellbook'
+  | 'premium_deck'
+  | 'duel_deck'
+  | 'draft_innovation'
+  | 'treasure_chest'
+  | 'commander'
+  | 'planechase'
+  | 'archenemy'
+  | 'vanguard'
+  | 'funny'
+  | 'starter'
+  | 'box'
+  | 'promo'
+  | 'token'
+  | 'memorabilia'
+  | 'minigame';
 
 /**
  * A Set object represents a group of related Magic cards. All Card objects on Scryfall belong to exactly one set.
@@ -43,7 +43,7 @@ export interface IScryfallSet extends IScryfallObject {
   /**
    * @inheritDoc
    */
-  object: "set";
+  object: 'set';
 
   /**
    * A unique ID for this set on Scryfall that will not change.

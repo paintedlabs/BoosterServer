@@ -1,5 +1,5 @@
-import { IScryfallColor } from "./IScryfallColor";
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallColor } from './IScryfallColor';
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * A Card Symbol object represents an illustrated symbol that may appear in card’s mana cost or Oracle text. Symbols are based on the notation used in the [Comprehensive Rules]{@link http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/rules}.
@@ -10,7 +10,7 @@ export interface IScryfallCardSymbol extends IScryfallObject {
   /**
    * @inheritDoc
    */
-  object: "card_symbol";
+  object: 'card_symbol';
 
   /**
    * The plaintext symbol. Often surrounded with curly braces `{}`. Note that not all symbols are ASCII text (for

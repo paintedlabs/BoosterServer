@@ -1,4 +1,4 @@
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * For the vast majority of Scryfall’s database, Magic card entries are
@@ -11,7 +11,7 @@ import { IScryfallObject } from "./IScryfallObject";
  * you may have synced or imported from Scryfall.
  */
 export interface IScryfallMigration extends IScryfallObject {
-  object: "migration";
+  object: 'migration';
 
   /**
    *  A link to the current object on Scryfall’s API.
@@ -40,7 +40,7 @@ export interface IScryfallMigration extends IScryfallObject {
    * migration exists to provide evidence that cards were removed from
    * Scryfall’s database.
    */
-  migration_strategy: "merge" | "delete" | string;
+  migration_strategy: 'merge' | 'delete' | string;
 
   /**
    * The `id` of the affected API Card object.

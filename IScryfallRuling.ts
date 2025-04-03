@@ -1,4 +1,4 @@
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * Rulings represent Oracle rulings, Wizards of the Coast set release notes, or Scryfall notes for a particular card.
@@ -15,7 +15,7 @@ export interface IScryfallRuling extends IScryfallObject {
   /**
    * @inheritDoc
    */
-  object: "ruling";
+  object: 'ruling';
 
   /**
    * A computer-readable string indicating which company produced this ruling, either `wotc` or `scryfall`.

@@ -9,8 +9,5 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "src/**/*",
-    "server.ts"
-  ]
+  "include": ["src/**/*", "server.ts"]
 }

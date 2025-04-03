@@ -1,7 +1,7 @@
-import { IScryfallCardFace } from "./IScryfallCardFace";
-import { IScryfallColor } from "./IScryfallColor";
-import { IScryfallObject } from "./IScryfallObject";
-import { IScryfallRelatedCard } from "./IScryfallRelatedCard";
+import { IScryfallCardFace } from './IScryfallCardFace';
+import { IScryfallColor } from './IScryfallColor';
+import { IScryfallObject } from './IScryfallObject';
+import { IScryfallRelatedCard } from './IScryfallRelatedCard';
 
 export interface IScryfallCardCoreFields {
   /**
@@ -151,7 +151,7 @@ export interface IScryfallCardGameplayFields {
    * An object describing the legality of this card across play formats.
    * Possible legalities are `legal`, `not_legal`, `restricted`, and `banned`.
    */
-  legalities: Record<string, "legal" | "not_legal" | "restricted" | "banned">;
+  legalities: Record<string, 'legal' | 'not_legal' | 'restricted' | 'banned'>;
 
   /**
    * This card's life modifier, if it is Vanguard card. This value will contain
@@ -243,7 +243,7 @@ export interface IScryfallCardPrintFields {
    * This card's border color: `black`, `white`, `borderless`, `silver`, or
    * `gold`.
    */
-  border_color: "black" | "white" | "borderless" | "silver" | "gold" | string;
+  border_color: 'black' | 'white' | 'borderless' | 'silver' | 'gold' | string;
 
   /**
    * The Scryfall ID for the card back design present on this card.
@@ -270,7 +270,7 @@ export interface IScryfallCardPrintFields {
    * An array of computer-readable flags that indicate if this card can come in
    * `foil`, `nonfoil`, `etched`, or `glossy` finishes.
    */
-  finishes: Array<"foil" | "nonfoil" | "etched" | "glossy" | string>;
+  finishes: Array<'foil' | 'nonfoil' | 'etched' | 'glossy' | string>;
 
   /**
    * The just-for-fun name printed on the card (such as for Godzilla series
@@ -302,7 +302,7 @@ export interface IScryfallCardPrintFields {
    * A list of games that this card print is available in, `paper`, `arena`,
    * and/or `mtgo`.
    */
-  games: Array<"paper" | "arena" | "mtgo" | string>;
+  games: Array<'paper' | 'arena' | 'mtgo' | string>;
 
   /**
    * True if this card's imagery is high resolution.
@@ -318,7 +318,7 @@ export interface IScryfallCardPrintFields {
   /**
    * A computer-readable indicator for the state of this card's image, one of `missing`, `placeholder`, `lowres`, or `highres_scan`.
    */
-  image_status: "missing" | "placeholder" | "lowres" | "highres_scan" | string;
+  image_status: 'missing' | 'placeholder' | 'lowres' | 'highres_scan' | string;
 
   /**
    * An object listing available imagery for this card.
@@ -366,7 +366,7 @@ export interface IScryfallCardPrintFields {
    * This card's rarity. One of `common`, `uncommon`, `rare`, `special`,
    * `mythic`, or `bonus`.
    */
-  rarity: "common" | "uncommon" | "rare" | "special" | "mythic" | "bonus";
+  rarity: 'common' | 'uncommon' | 'rare' | 'special' | 'mythic' | 'bonus';
 
   /**
    * An object providing URIs to this card's listing on other Magic: The
@@ -443,12 +443,12 @@ export interface IScryfallCardPrintFields {
    * The security stamp on this card, if any. One of `oval`, `triangle`, `acorn`, 'circle', `arena`, or 'heart'.
    */
   security_stamp?:
-    | "oval"
-    | "triangle"
-    | "acorn"
-    | "circle"
-    | "arena"
-    | "heart"
+    | 'oval'
+    | 'triangle'
+    | 'acorn'
+    | 'circle'
+    | 'arena'
+    | 'heart'
     | string
     | null;
 
@@ -484,5 +484,5 @@ export interface IScryfallCard
     IScryfallCardCoreFields,
     IScryfallCardGameplayFields,
     IScryfallCardPrintFields {
-  object: "card";
+  object: 'card';
 }

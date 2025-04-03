@@ -1,5 +1,5 @@
-import { IScryfallCard } from "./IScryfallCard";
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallCard } from './IScryfallCard';
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * Represents a requested sequence of other objects (Cards, Sets, etc). List objects may be paginated, and also include
@@ -10,7 +10,7 @@ export interface IScryfallList<T extends IScryfallObject>
   /**
    * @inheritDoc
    */
-  object: "list";
+  object: 'list';
 
   /**
    * An array of the requested objects, in a specific order.

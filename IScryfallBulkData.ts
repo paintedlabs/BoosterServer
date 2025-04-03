@@ -1,4 +1,4 @@
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * Scryfall provides daily exports of our card data in bulk files. Each of these files is represented as a `bulk_data`
@@ -8,7 +8,7 @@ export interface IScryfallBulkData extends IScryfallObject {
   /**
    * @inheritDoc
    */
-  object: "bulk_data";
+  object: 'bulk_data';
 
   /**
    * A unique ID for this bulk item.

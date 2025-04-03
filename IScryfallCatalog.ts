@@ -1,4 +1,4 @@
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * A Catalog object contains an array of Magic datapoints (words, card values, etc). Catalog objects are provided by the
@@ -10,7 +10,7 @@ export interface IScryfallCatalog extends IScryfallObject {
   /**
    * @inheritDoc
    */
-  object: "catalog";
+  object: 'catalog';
 
   /**
    * A link to the current catalog on Scryfall’s API.

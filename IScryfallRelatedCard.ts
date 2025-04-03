@@ -1,4 +1,4 @@
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * Cards that are closely related to other cards (because they call them by
@@ -9,7 +9,7 @@ export interface IScryfallRelatedCard extends IScryfallObject {
   /**
    * A content type for this object, always related_card.
    */
-  object: "related_card";
+  object: 'related_card';
 
   /**
    * An unique ID for this card in Scryfall’s database.
@@ -19,7 +19,7 @@ export interface IScryfallRelatedCard extends IScryfallObject {
   /**
    * A field explaining what role this card plays in this relationship.
    */
-  component: "token" | "meld_part" | "meld_result" | "combo_piece" | string;
+  component: 'token' | 'meld_part' | 'meld_result' | 'combo_piece' | string;
 
   /**
    * The name of this particular related card.

@@ -1,5 +1,5 @@
-import { IScryfallColor } from "./IScryfallColor";
-import { IScryfallObject } from "./IScryfallObject";
+import { IScryfallColor } from './IScryfallColor';
+import { IScryfallObject } from './IScryfallObject';
 
 /**
  * Multiface cards have a `card_faces` property containing at least two Card
@@ -73,7 +73,7 @@ export interface IScryfallCardFace extends IScryfallObject {
   /**
    * A content type for this object, always `card_face`.
    */
-  object: "card_face";
+  object: 'card_face';
 
   /**
    * The Oracle ID of this particular face, if the card is reversible.
