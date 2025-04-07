@@ -12,6 +12,7 @@ import * as ScryfallTypes from './index'; // Scryfall card type definitions
 export interface SetResponse {
   code: string;
   name: string;
+  releaseDate: string;
 }
 
 // Represents a single card within an opened pack response

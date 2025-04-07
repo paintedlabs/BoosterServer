@@ -6,17 +6,25 @@
 
 import { LoadedData, ExtendedSealedData } from '../dataLoader';
 import { generatePack } from '../boosterService';
-import { OpenedPackResponse, OpenedPacksResponse, OpenedCard, SetResponse } from '../types';
+import {
+  OpenedPackResponse,
+  OpenedPacksResponse,
+  OpenedCard,
+  SetResponse,
+} from '../types';
 import logger from '../logger';
 import { GraphQLError } from 'graphql'; // Import for throwing GraphQL-specific errors
 
 // Helper to get product or throw GraphQLError
-function findProductOrThrow(productCode: string, loadedData: LoadedData): ExtendedSealedData {
+function findProductOrThrow(
+  productCode: string,
+  loadedData: LoadedData
+): ExtendedSealedData {
   const product = loadedData.extendedDataArray?.find(
     (p) => p?.code?.toLowerCase() === productCode.toLowerCase()
   );
   if (!product) {
-    logger.warn({ productCode }, "GraphQL resolver: Product not found");
+    logger.warn({ productCode }, 'GraphQL resolver: Product not found');
     throw new GraphQLError('Product not found', {
       extensions: {
         code: 'NOT_FOUND',
@@ -31,14 +39,20 @@ function findProductOrThrow(productCode: string, loadedData: LoadedData): Extend
 export const resolvers = {
   Query: {
     // Resolver for the 'sets' query
-    sets: (_parent: any, _args: any, contextValue: { loadedData: LoadedData }): SetResponse[] => {
+    sets: (
+      _parent: any,
+      _args: any,
+      contextValue: { loadedData: LoadedData }
+    ): SetResponse[] => {
       const { loadedData } = contextValue;
       if (!loadedData?.allPrintings || !loadedData?.extendedDataArray) {
-        logger.error("GraphQL sets query called before data loaded.");
-        throw new GraphQLError('Server data not ready', { extensions: { code: 'DATA_NOT_READY' } });
+        logger.error('GraphQL sets query called before data loaded.');
+        throw new GraphQLError('Server data not ready', {
+          extensions: { code: 'DATA_NOT_READY' },
+        });
       }
 
-      logger.info("Resolving GraphQL query: sets");
+      logger.info('Resolving GraphQL query: sets');
       const seenCodes = new Set<string>();
       const setsArray: SetResponse[] = [];
 
@@ -51,64 +65,94 @@ export const resolvers = {
           setsArray.push({
             code: setCode,
             name: mtgSet.name,
+            releaseDate: mtgSet.releaseDate || '1970-01-01',
           });
         }
       }
-      setsArray.sort((a, b) => a.name.localeCompare(b.name));
-      return setsArray;
+      // Create a new array and sort it
+      const sortedSets = [...setsArray].sort(
+        (a, b) =>
+          new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime()
+      );
+      return sortedSets;
     },
 
     // Resolver for the 'products' query
-    products: (_parent: any, args: { setCode: string }, contextValue: { loadedData: LoadedData }) => {
+    products: (
+      _parent: any,
+      args: { setCode: string },
+      contextValue: { loadedData: LoadedData }
+    ) => {
       const { loadedData } = contextValue;
       const { setCode } = args;
 
       if (!loadedData?.extendedDataArray) {
-        logger.error("GraphQL products query called before data loaded.");
-        throw new GraphQLError('Server data not ready', { extensions: { code: 'DATA_NOT_READY' } });
+        logger.error('GraphQL products query called before data loaded.');
+        throw new GraphQLError('Server data not ready', {
+          extensions: { code: 'DATA_NOT_READY' },
+        });
       }
       if (!setCode) {
-        throw new GraphQLError('Missing required argument: setCode', { extensions: { code: 'BAD_USER_INPUT' } });
+        throw new GraphQLError('Missing required argument: setCode', {
+          extensions: { code: 'BAD_USER_INPUT' },
+        });
       }
 
-      logger.info({ setCode }, "Resolving GraphQL query: products");
+      logger.info({ setCode }, 'Resolving GraphQL query: products');
       const setCodeParam = setCode.toUpperCase();
       const matchingProducts = loadedData.extendedDataArray.filter(
         (p) => p?.set_code?.toUpperCase() === setCodeParam
       );
       matchingProducts.sort((a, b) => a.name.localeCompare(b.name));
       // Map to GraphQL Product type (currently just subset of fields)
-      return matchingProducts.map(p => ({
+      return matchingProducts.map((p) => ({
         code: p.code,
         name: p.name,
         set_code: p.set_code,
-        set_name: p.set_name
+        set_name: p.set_name,
       }));
     },
 
     // Resolver for the 'product' query
-    product: (_parent: any, args: { productCode: string }, contextValue: { loadedData: LoadedData }) => {
+    product: (
+      _parent: any,
+      args: { productCode: string },
+      contextValue: { loadedData: LoadedData }
+    ) => {
       const { loadedData } = contextValue;
       const { productCode } = args;
       if (!productCode) {
-        throw new GraphQLError('Missing required argument: productCode', { extensions: { code: 'BAD_USER_INPUT' } });
+        throw new GraphQLError('Missing required argument: productCode', {
+          extensions: { code: 'BAD_USER_INPUT' },
+        });
       }
-      logger.info({ productCode }, "Resolving GraphQL query: product");
+      logger.info({ productCode }, 'Resolving GraphQL query: product');
       const product = findProductOrThrow(productCode, loadedData);
       // Map to GraphQL Product type
-      return { code: product.code, name: product.name, set_code: product.set_code, set_name: product.set_name };
+      return {
+        code: product.code,
+        name: product.name,
+        set_code: product.set_code,
+        set_name: product.set_name,
+      };
     },
   },
 
   Mutation: {
     // Resolver for the 'openPack' mutation
-    openPack: (_parent: any, args: { productCode: string }, contextValue: { loadedData: LoadedData }): OpenedPackResponse => {
+    openPack: (
+      _parent: any,
+      args: { productCode: string },
+      contextValue: { loadedData: LoadedData }
+    ): OpenedPackResponse => {
       const { loadedData } = contextValue;
       const { productCode } = args;
       if (!productCode) {
-        throw new GraphQLError('Missing required argument: productCode', { extensions: { code: 'BAD_USER_INPUT' } });
+        throw new GraphQLError('Missing required argument: productCode', {
+          extensions: { code: 'BAD_USER_INPUT' },
+        });
       }
-      logger.info({ productCode }, "Resolving GraphQL mutation: openPack");
+      logger.info({ productCode }, 'Resolving GraphQL mutation: openPack');
 
       const product = findProductOrThrow(productCode, loadedData);
 
@@ -118,18 +162,30 @@ export const resolvers = {
     },
 
     // Resolver for the 'openPacks' mutation
-    openPacks: (_parent: any, args: { productCode: string, number: number }, contextValue: { loadedData: LoadedData }): OpenedPacksResponse => {
+    openPacks: (
+      _parent: any,
+      args: { productCode: string; number: number },
+      contextValue: { loadedData: LoadedData }
+    ): OpenedPacksResponse => {
       const { loadedData } = contextValue;
       const { productCode, number } = args;
 
       if (!productCode) {
-        throw new GraphQLError('Missing required argument: productCode', { extensions: { code: 'BAD_USER_INPUT' } });
+        throw new GraphQLError('Missing required argument: productCode', {
+          extensions: { code: 'BAD_USER_INPUT' },
+        });
       }
-      if (!number || number <= 0 || number > 100) { // Basic validation for number
-        throw new GraphQLError('Invalid number argument (must be 1-100)', { extensions: { code: 'BAD_USER_INPUT' } });
+      if (!number || number <= 0 || number > 100) {
+        // Basic validation for number
+        throw new GraphQLError('Invalid number argument (must be 1-100)', {
+          extensions: { code: 'BAD_USER_INPUT' },
+        });
       }
 
-      logger.info({ productCode, count: number }, "Resolving GraphQL mutation: openPacks");
+      logger.info(
+        { productCode, count: number },
+        'Resolving GraphQL mutation: openPacks'
+      );
       const product = findProductOrThrow(productCode, loadedData);
 
       let allOpenedCards: OpenedCard[] = []; // Flat array for all cards
@@ -145,9 +201,18 @@ export const resolvers = {
         }
       }
 
-      const combinedWarning = allWarnings.size > 0 ? Array.from(allWarnings).join(' ') : null;
+      const combinedWarning =
+        allWarnings.size > 0 ? Array.from(allWarnings).join(' ') : null;
 
-      logger.info({ productCode, number, openedCount: allOpenedCards.length, warnings: combinedWarning }, "Finished openPacks mutation");
+      logger.info(
+        {
+          productCode,
+          number,
+          openedCount: allOpenedCards.length,
+          warnings: combinedWarning,
+        },
+        'Finished openPacks mutation'
+      );
 
       return {
         warning: combinedWarning,
@@ -164,4 +229,4 @@ export const resolvers = {
   // OpenedCard: {
   //   imageUrl: (parent, _args, contextValue) => { ... logic to construct image URL ... }
   // }
-}; 
+};

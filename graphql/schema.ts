@@ -14,6 +14,7 @@ export const typeDefs = gql`
   type Set {
     code: String!
     name: String!
+    releaseDate: String!
     # Add other set fields if needed, e.g., releaseDate: String
   }
 
@@ -24,6 +25,13 @@ export const typeDefs = gql`
     rarity: String!
     # We might not expose scryfallId directly in GraphQL
     # identifiers: ??? # Could be a JSON String or a nested type
+  }
+
+  # Represents a face of a double-faced card
+  type CardFace {
+    name: String!
+    oracle_text: String
+    image_uris: ImageUris
   }
 
   # Represents Scryfall card data (simplified for now)
@@ -42,7 +50,7 @@ export const typeDefs = gql`
     type_line: String
     oracle_text: String
     colors: [String!] # Represent colors as strings for simplicity
-    color_identity: [String!] 
+    color_identity: [String!]
     keywords: [String!]
     legalities: String # Use JSON String for complex nested objects initially
     games: [String!]
@@ -79,22 +87,22 @@ export const typeDefs = gql`
     story_spotlight: Boolean
     edhrec_rank: Int
     penny_rank: Int
-    prices: Prices   # Now uses the structured Prices type
+    prices: Prices # Now uses the structured Prices type
     related_uris: String # Use JSON String
     purchase_uris: String # Use JSON String
-    # card_faces: ??? # Needs a CardFace type if we want to expose details
+    card_faces: [CardFace!] # Array of card faces for double-faced cards
     image_uris: ImageUris # Nested type for images
     # Add other relevant fields from IScryfallCard
   }
-  
+
   # Represents image URIs available for a Scryfall card
   type ImageUris {
-      small: String
-      normal: String
-      large: String
-      png: String
-      art_crop: String
-      border_crop: String
+    small: String
+    normal: String
+    large: String
+    png: String
+    art_crop: String
+    border_crop: String
   }
 
   # Type definition for Scryfall card prices
@@ -118,26 +126,26 @@ export const typeDefs = gql`
   # Response type for opening a SINGLE pack
   type OpenedPackResponse {
     warning: String
-    pack: [OpenedCard!] 
+    pack: [OpenedCard!]
   }
 
   # Response type for opening MULTIPLE packs
   type OpenedPacksResponse {
     warning: String
-    packs: [OpenedCard!]   # Correct: Flat array of all opened cards
-  }
-  
-  # Represents a specific product available for opening
-  type Product {
-      code: String! 
-      name: String! 
-      set_code: String! 
-      set_name: String! 
-      # We might not expose boosters/sheets directly, 
-      # just the ability to open the product.
+    packs: [OpenedCard!] # Correct: Flat array of all opened cards
   }
 
-  # --- Root Query Type --- 
+  # Represents a specific product available for opening
+  type Product {
+    code: String!
+    name: String!
+    set_code: String!
+    set_name: String!
+    # We might not expose boosters/sheets directly,
+    # just the ability to open the product.
+  }
+
+  # --- Root Query Type ---
   # Defines the available read operations
   type Query {
     # Get a list of all available sets that have products
@@ -145,15 +153,15 @@ export const typeDefs = gql`
 
     # Get a list of products for a given set code
     products(setCode: String!): [Product!]!
-    
+
     # Get details for a specific product (optional, could just use products query)
-    product(productCode: String!): Product 
-    
+    product(productCode: String!): Product
+
     # Potentially add queries for specific cards later if needed
     # card(uuid: String!): CombinedCard # Needs a CombinedCard type
   }
 
-  # --- Root Mutation Type --- 
+  # --- Root Mutation Type ---
   # Defines the available write/action operations
   type Mutation {
     # Open a single booster pack for a given product code
@@ -165,4 +173,4 @@ export const typeDefs = gql`
 `;
 
 // Note: We might need to install graphql-tag if not already present
-// npm install graphql-tag 
+// npm install graphql-tag
