@@ -67,6 +67,15 @@ app.use(
 // -------------- MIDDLEWARE --------------
 app.use(bodyParser.json());
 
+// ADD: Log request body immediately after parsing, before any routes
+app.use((req, res, next) => {
+  if (req.path === '/graphql' && req.method === 'POST') {
+    // Only log for GraphQL POSTs
+    logger.info({ body: req.body }, 'GraphQL request body after parsing:');
+  }
+  next();
+});
+
 // -------------- INTERFACES (Keep interfaces used by routes if not already in dataLoader/boosterService) --------------
 // Interfaces like AllPrintings, MTGSet, CardSet, Extended*, CombinedCard moved to dataLoader.ts
 // Keep interfaces specific to API responses if necessary.
@@ -128,8 +137,6 @@ async function main() {
     // Pass loadedData into the context for resolvers
     app.use(
       '/graphql',
-      cors<cors.CorsRequest>(), // Apply CORS specifically to GraphQL endpoint if needed
-      bodyParser.json(), // Ensure body is parsed for GraphQL requests
       expressMiddleware(server, {
         context: async () => ({
           loadedData: contextData.loadedData,
@@ -139,6 +146,23 @@ async function main() {
     );
 
     logger.info(`GraphQL endpoint ready at /graphql`);
+
+    // ADD: Generic Express Error Handler - MUST be last middleware
+    const genericErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
+      logger.error(
+        { err, path: req.path, method: req.method },
+        'Unhandled Express error caught by generic handler'
+      );
+      // Avoid sending stack trace in production
+      const errorMessage =
+        process.env.NODE_ENV === 'production'
+          ? 'Internal Server Error'
+          : err.stack;
+      res
+        .status(500)
+        .send({ error: 'Something failed!', details: errorMessage });
+    };
+    app.use(genericErrorHandler);
 
     // 4. Start the Express server
     // Use http.createServer for graceful shutdown compatibility with Apollo
@@ -150,22 +174,25 @@ async function main() {
       process.on('SIGINT', () => {
         logger.info('Received SIGINT. Shutting down gracefully...');
         // Gracefully shutdown Apollo Server first, then HTTP server
-        server.stop().then(() => {
-          logger.info('Apollo Server stopped.');
-          httpServer?.close((err?: Error) => {
-            if (err) {
-              logger.error({ err }, 'Error during HTTP server shutdown');
-              process.exit(1);
-            } else {
-              logger.info('HTTP server closed.');
-              process.exit(0);
-            }
+        server
+          .stop()
+          .then(() => {
+            logger.info('Apollo Server stopped.');
+            httpServer?.close((err?: Error) => {
+              if (err) {
+                logger.error({ err }, 'Error during HTTP server shutdown');
+                process.exit(1);
+              } else {
+                logger.info('HTTP server closed.');
+                process.exit(0);
+              }
+            });
+          })
+          .catch((err) => {
+            logger.error({ err }, 'Error stopping Apollo Server');
+            // Still try to close HTTP server
+            httpServer?.close(() => process.exit(1));
           });
-        }).catch(err => {
-          logger.error({ err }, 'Error stopping Apollo Server');
-          // Still try to close HTTP server
-          httpServer?.close(() => process.exit(1));
-        });
       });
     });
   } catch (err) {

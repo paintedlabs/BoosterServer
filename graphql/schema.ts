@@ -92,7 +92,8 @@ export const typeDefs = gql`
     purchase_uris: String # Use JSON String
     card_faces: [CardFace!] # Array of card faces for double-faced cards
     image_uris: ImageUris # Nested type for images
-    # Add other relevant fields from IScryfallCard
+    promo_types: [String!]
+    tcgplayer_id: String
   }
 
   # Represents image URIs available for a Scryfall card
