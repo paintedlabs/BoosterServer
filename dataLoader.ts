@@ -74,7 +74,7 @@ export interface CardSet {
 interface RawExtendedSheet {
   total_weight: number;
   // Cards are an array of objects, each containing uuid, weight, and potentially other info
-  cards: Array<{ uuid: string; weight: number;[key: string]: any }>;
+  cards: Array<{ uuid: string; weight: number; [key: string]: any }>;
 }
 
 // Represents the processed sheet card structure used for picking
@@ -86,8 +86,9 @@ export interface ExtendedSheetCard {
 
 // Represents the processed sheet structure used after loading
 export interface ExtendedSheet {
-  // Renamed from ProcessedSheet
   total_weight: number;
+  balance_colors: boolean;
+  foil: boolean;
   cards: ExtendedSheetCard[]; // Uses the processed card structure
 }
 
@@ -230,25 +231,38 @@ async function ensureScryfallAllCards(localPath: string): Promise<void> {
   // --- Fetch Scryfall Bulk Data Metadata ---
   let downloadUri = '';
   try {
-    logger.info(`Fetching Scryfall bulk data list from: ${SCRYFALL_METADATA_URL}...`);
+    logger.info(
+      `Fetching Scryfall bulk data list from: ${SCRYFALL_METADATA_URL}...`
+    );
     const metaResponse = await fetch(SCRYFALL_METADATA_URL);
     if (!metaResponse.ok) {
-      throw new Error(`Scryfall metadata fetch failed: ${metaResponse.status} ${metaResponse.statusText}`);
+      throw new Error(
+        `Scryfall metadata fetch failed: ${metaResponse.status} ${metaResponse.statusText}`
+      );
     }
     const metaData: any = await metaResponse.json(); // Use 'any' for now, or define a proper type
 
     // Find the entry for "all_cards"
-    const allCardsEntry = metaData?.data?.find((item: any) => item.type === 'all_cards');
+    const allCardsEntry = metaData?.data?.find(
+      (item: any) => item.type === 'all_cards'
+    );
     if (!allCardsEntry || !allCardsEntry.download_uri) {
-      logger.error({ metaData }, "Could not find 'all_cards' download URI in Scryfall metadata.");
-      throw new Error("Could not find 'all_cards' download URI in Scryfall metadata.");
+      logger.error(
+        { metaData },
+        "Could not find 'all_cards' download URI in Scryfall metadata."
+      );
+      throw new Error(
+        "Could not find 'all_cards' download URI in Scryfall metadata."
+      );
     }
 
     downloadUri = allCardsEntry.download_uri;
     logger.info(`Found Scryfall 'all_cards' download URI: ${downloadUri}`);
-
   } catch (error) {
-    logger.error({ err: error }, "Failed to fetch or parse Scryfall bulk data metadata.");
+    logger.error(
+      { err: error },
+      'Failed to fetch or parse Scryfall bulk data metadata.'
+    );
     throw error; // Re-throw
   }
 
@@ -345,8 +359,15 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
           // Use 'any' temporarily for the raw sheet to handle variability before validation
           const originalSheetData: any = product.sheets[sheetName];
           // Basic validation of the original sheet structure
-          if (!originalSheetData || !Array.isArray(originalSheetData.cards) || typeof originalSheetData.total_weight !== 'number') {
-            logger.warn({ productCode: product.code, sheetName }, `Skipping invalid raw sheet data structure`);
+          if (
+            !originalSheetData ||
+            !Array.isArray(originalSheetData.cards) ||
+            typeof originalSheetData.total_weight !== 'number'
+          ) {
+            logger.warn(
+              { productCode: product.code, sheetName },
+              `Skipping invalid raw sheet data structure`
+            );
             continue;
           }
           // Cast to RawExtendedSheet now that basic structure seems okay
@@ -357,8 +378,16 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
           // Iterate through the array of card objects
           for (const cardObject of originalSheet.cards) {
             // Validate the structure of the card object within the array
-            if (typeof cardObject !== 'object' || cardObject === null || typeof cardObject.uuid !== 'string' || typeof cardObject.weight !== 'number') {
-              logger.warn({ productCode: product.code, sheetName, cardObject }, `Skipping card object with invalid structure within sheet array`);
+            if (
+              typeof cardObject !== 'object' ||
+              cardObject === null ||
+              typeof cardObject.uuid !== 'string' ||
+              typeof cardObject.weight !== 'number'
+            ) {
+              logger.warn(
+                { productCode: product.code, sheetName, cardObject },
+                `Skipping card object with invalid structure within sheet array`
+              );
               continue;
             }
 
@@ -377,7 +406,12 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
             // Log mismatch only if calculated > 0; if 0, previous warnings cover it.
             if (calculatedTotalWeight > 0) {
               logger.warn(
-                { productCode: product.code, sheetName, expected: originalSheet.total_weight, calculated: calculatedTotalWeight },
+                {
+                  productCode: product.code,
+                  sheetName,
+                  expected: originalSheet.total_weight,
+                  calculated: calculatedTotalWeight,
+                },
                 `Mismatch in sheet total_weight. Using calculated weight.`
               );
             }
@@ -386,10 +420,20 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
           if (processedCards.length > 0 && calculatedTotalWeight > 0) {
             processedSheets[sheetName] = {
               total_weight: calculatedTotalWeight, // Use calculated weight for safety
+              balance_colors: false,
+              foil: false,
               cards: processedCards,
             };
           } else {
-            logger.warn({ productCode: product.code, sheetName, cardCount: processedCards.length, weight: calculatedTotalWeight }, `Sheet resulted in no cards or zero total weight after processing. Skipping sheet.`);
+            logger.warn(
+              {
+                productCode: product.code,
+                sheetName,
+                cardCount: processedCards.length,
+                weight: calculatedTotalWeight,
+              },
+              `Sheet resulted in no cards or zero total weight after processing. Skipping sheet.`
+            );
           }
         }
       }

@@ -48,10 +48,6 @@ interface AppContext {
 // Use environment variable for Port, provide a default
 const PORT = process.env.PORT || 8080;
 
-// Local file paths are now primarily managed in dataLoader.ts
-// We might still need paths for caching, etc.
-// Cache paths moved to imageCacheService.ts
-
 // -------------- EXPRESS APP --------------
 const app = express();
 const httpServer = http.createServer(app);
@@ -83,17 +79,6 @@ app.use((req, res, next) => {
 
 // -------------- GLOBALS (Populated by loadAllData) --------------
 let loadedData: LoadedData | null = null;
-
-// -------------- DATA LOADING (Moved to dataLoader.ts) --------------
-// The ensure*, load*, buildCombinedCards functions are removed.
-
-// -------------- BOOSTER SIMULATION LOGIC --------------
-// (Keep this logic here as it relates to the /open endpoint)
-
-// -------------- ENDPOINTS --------------
-// REST endpoints removed in favor of GraphQL
-
-// Image caching logic and routes moved to imageCacheService.ts
 
 // -------------- MAIN STARTUP --------------
 async function main() {

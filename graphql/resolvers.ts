@@ -4,8 +4,15 @@
  * Defines the resolver functions for the GraphQL schema.
  */
 
-import { LoadedData, ExtendedSealedData } from '../dataLoader';
-import { generatePack } from '../boosterService';
+import {
+  LoadedData,
+  ExtendedSealedData,
+  ExtendedBooster,
+  ExtendedSheet,
+  MTGSet,
+  ExtendedSheetCard,
+} from '../dataLoader';
+import { generatePack } from '../boosterService'; // Only import generatePack for now
 import {
   OpenedPackResponse,
   OpenedPacksResponse,
@@ -14,6 +21,8 @@ import {
 } from '../types';
 import logger from '../logger';
 import { GraphQLError } from 'graphql'; // Import for throwing GraphQL-specific errors
+import { AppContext } from 'graphql/context'; // Use path relative to baseUrl
+import * as ScryfallTypes from 'index'; // Import from root index.ts
 
 // Helper to get product or throw GraphQLError
 function findProductOrThrow(
@@ -65,7 +74,7 @@ export const resolvers = {
           setsArray.push({
             code: setCode,
             name: mtgSet.name,
-            releaseDate: mtgSet.releaseDate || '1970-01-01',
+            releaseDate: mtgSet.releaseDate,
           });
         }
       }
@@ -80,37 +89,26 @@ export const resolvers = {
     // Resolver for the 'products' query
     products: (
       _parent: any,
-      args: { setCode: string },
-      contextValue: { loadedData: LoadedData }
-    ) => {
-      const { loadedData } = contextValue;
-      const { setCode } = args;
-
+      { setCode }: { setCode: string },
+      { loadedData }: AppContext
+    ): ExtendedSealedData[] => {
+      const upperSetCode = setCode.toUpperCase();
+      logger.info({ setCode: upperSetCode }, `Resolving products for set`);
       if (!loadedData?.extendedDataArray) {
-        logger.error('GraphQL products query called before data loaded.');
-        throw new GraphQLError('Server data not ready', {
-          extensions: { code: 'DATA_NOT_READY' },
-        });
+        logger.warn(
+          'Extended data array not loaded, returning empty product list.'
+        );
+        return [];
       }
-      if (!setCode) {
-        throw new GraphQLError('Missing required argument: setCode', {
-          extensions: { code: 'BAD_USER_INPUT' },
-        });
-      }
-
-      logger.info({ setCode }, 'Resolving GraphQL query: products');
-      const setCodeParam = setCode.toUpperCase();
       const matchingProducts = loadedData.extendedDataArray.filter(
-        (p) => p?.set_code?.toUpperCase() === setCodeParam
+        (p) => p?.set_code?.toUpperCase() === upperSetCode
       );
+
+      // Sort products alphabetically by name
       matchingProducts.sort((a, b) => a.name.localeCompare(b.name));
-      // Map to GraphQL Product type (currently just subset of fields)
-      return matchingProducts.map((p) => ({
-        code: p.code,
-        name: p.name,
-        set_code: p.set_code,
-        set_name: p.set_name,
-      }));
+
+      // Return the data without transforming sheets here
+      return matchingProducts;
     },
 
     // Resolver for the 'product' query
@@ -221,12 +219,57 @@ export const resolvers = {
     },
   },
 
-  // Add resolvers for nested types if needed, e.g., for ImageUris within ScryfallCard
-  // ScryfallCard: {
-  //   prices: (parent) => JSON.stringify(parent.prices), // Example: Stringify complex fields
-  //   image_uris: (parent) => parent.image_uris, // Direct mapping if types match
-  // },
-  // OpenedCard: {
-  //   imageUrl: (parent, _args, contextValue) => { ... logic to construct image URL ... }
-  // }
+  // --- Resolvers for Nested/Object Types ---
+
+  // Add resolver for Product Type to handle transformations
+  Product: {
+    // Resolver for the 'sheets' field: transforms Record to Array
+    sheets: (parent: ExtendedSealedData) => {
+      return Object.entries(parent.sheets || {}).map(
+        ([sheetName, sheetData]: [string, ExtendedSheet]) => ({
+          name: sheetName,
+          balanceColors: sheetData.balance_colors,
+          cards: sheetData.cards.map((card: ExtendedSheetCard) => ({
+            // Map card data
+            uuid: card.uuid,
+            weight: card.weight,
+          })),
+          foil: sheetData.foil,
+          totalWeight: sheetData.total_weight,
+        })
+      );
+    },
+    // Resolver for the 'boosters' field (might need transformation if schema differs)
+    boosters: (parent: ExtendedSealedData) => {
+      // Assuming ExtendedBooster matches BoosterV2 schema enough for direct return
+      // Add transformations here if necessary (e.g., mapping contents)
+      return parent.boosters || [];
+    },
+    // Other fields like code, name, set_code, set_name usually resolve directly
+  },
+
+  ScryfallCard: {
+    // Optional: Resolver to stringify complex fields if needed by client
+    prices: (parent: ScryfallTypes.IScryfallCard) =>
+      parent.prices ? JSON.stringify(parent.prices) : null,
+    // Direct mapping usually works if schema matches TypeScript type
+    image_uris: (parent: ScryfallTypes.IScryfallCard) => parent.image_uris,
+    card_faces: (parent: ScryfallTypes.IScryfallCard) => parent.card_faces,
+    all_parts: (parent: ScryfallTypes.IScryfallCard) => parent.all_parts,
+    // Add resolvers for other complex fields like legalities, related_uris etc. if needed
+  },
+
+  // Resolver for BoosterV2 type (maps to ExtendedBooster)
+  BoosterV2: {
+    contents: (booster: ExtendedBooster) => {
+      return Object.entries(booster.sheets || {}).map(([sheetName, count]) => ({
+        sheetName,
+        count,
+      }));
+    },
+    totalWeight: (booster: ExtendedBooster) => booster.weight,
+  },
+
+  // Other type resolvers (SheetV2, SheetCardEntry, BoosterContentEntry) are likely not needed
+  // as the parent resolver (Product) handles the data transformation.
 };

@@ -29,13 +29,23 @@ export const typeDefs = gql`
 
   # Represents a face of a double-faced card
   type CardFace {
+    object: String!
     name: String!
+    mana_cost: String
+    type_line: String!
     oracle_text: String
+    colors: [String!]
+    color_identity: [String!]
+    power: String
+    toughness: String
+    flavor_text: String
+    artist: String
+    artist_id: String
+    illustration_id: String
     image_uris: ImageUris
   }
 
   # Represents Scryfall card data (simplified for now)
-  # We'll need to select which fields from IScryfallCard to expose
   type ScryfallCard {
     id: String! # Scryfall ID
     oracle_id: String
@@ -47,12 +57,12 @@ export const typeDefs = gql`
     layout: String
     mana_cost: String
     cmc: Float
-    type_line: String
+    type_line: String!
     oracle_text: String
-    colors: [String!] # Represent colors as strings for simplicity
+    colors: [String!]
     color_identity: [String!]
     keywords: [String!]
-    legalities: String # Use JSON String for complex nested objects initially
+    legalities: String # JSON string containing format legality
     games: [String!]
     reserved: Boolean
     foil: Boolean
@@ -87,16 +97,27 @@ export const typeDefs = gql`
     story_spotlight: Boolean
     edhrec_rank: Int
     penny_rank: Int
-    prices: Prices # Now uses the structured Prices type
-    related_uris: String # Use JSON String
-    purchase_uris: String # Use JSON String
-    card_faces: [CardFace!] # Array of card faces for double-faced cards
-    image_uris: ImageUris # Nested type for images
+    prices: Prices
+    related_uris: String # JSON string containing related cards
+    purchase_uris: String # JSON string containing purchase links
+    card_faces: [CardFace!]
+    image_uris: ImageUris
     promo_types: [String!]
     tcgplayer_id: String
+    all_parts: [RelatedCard!] # For tokens and related cards
   }
 
-  # Represents image URIs available for a Scryfall card
+  # Type for related cards (tokens, etc.)
+  type RelatedCard {
+    object: String!
+    id: String!
+    component: String!
+    name: String!
+    type_line: String!
+    uri: String!
+  }
+
+  # Type for image URIs
   type ImageUris {
     small: String
     normal: String
@@ -106,7 +127,7 @@ export const typeDefs = gql`
     border_crop: String
   }
 
-  # Type definition for Scryfall card prices
+  # Type for card prices
   type Prices {
     usd: String
     usd_foil: String
@@ -118,10 +139,9 @@ export const typeDefs = gql`
 
   # Represents a single card within an opened pack
   type OpenedCard {
-    sheet: String! # The sheet the card was pulled from
-    allPrintingsData: AllPrintingsCard! # MTGJSON data
-    scryfallData: ScryfallCard # Scryfall data (nullable if missing)
-    imageUrl: String # Direct URL to the cached image (if needed)
+    sheet: String!
+    allPrintingsData: AllPrintingsCard!
+    scryfallData: ScryfallCard
   }
 
   # Response type for opening a SINGLE pack
@@ -142,8 +162,35 @@ export const typeDefs = gql`
     name: String!
     set_code: String!
     set_name: String!
-    # We might not expose boosters/sheets directly,
-    # just the ability to open the product.
+    boosters: [BoosterV2!] # Expose booster configurations
+    sheets: [SheetV2!] # Expose sheet details
+  }
+
+  # Represents the structure of a booster pack configuration (based on BoosterV2 type)
+  type BoosterV2 {
+    contents: [BoosterContentEntry!]! # Key-value map of sheet names to counts
+    totalWeight: Int!
+  }
+
+  # Helper type for the key-value pairs in BoosterV2.contents
+  type BoosterContentEntry {
+    sheetName: String!
+    count: Int!
+  }
+
+  # Represents the structure of a printing sheet (based on SheetV2 type)
+  type SheetV2 {
+    name: String! # The name of the sheet (derived from the key)
+    balanceColors: Boolean!
+    cards: [SheetCardEntry!]! # Key-value map of card UUIDs to weights
+    foil: Boolean!
+    totalWeight: Int!
+  }
+
+  # Helper type for the key-value pairs in SheetV2.cards
+  type SheetCardEntry {
+    uuid: String! # Card UUID from AllPrintings
+    weight: Int! # Weight/frequency of the card on this sheet
   }
 
   # --- Root Query Type ---

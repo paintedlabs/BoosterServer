@@ -1,13 +1,22 @@
 {
   "compilerOptions": {
-    // ...
-    // This can help avoid type conflicts if you have legacy libraries
     "target": "ES2015",
-    "downlevelIteration": true, // ensures spread/rest operations on iterables like Set work **this was added by chatgpt. If this is insane, let me know.**
-    "skipLibCheck": true,
-    "moduleResolution": "node",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true
   },
-  "include": ["src/**/*", "server.ts"]
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
