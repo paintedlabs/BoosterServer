@@ -1,0 +1,20 @@
+{
+  "name": "@core/disk",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/core/disk/src",
+  "projectType": "library",
+  "tags": ["scope:core", "runtime:node"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/core/disk",
+        "tsConfig": "packages/core/disk/tsconfig.lib.json",
+        "packageJson": "packages/core/disk/package.json",
+        "main": "packages/core/disk/src/index.ts",
+        "assets": ["packages/core/disk/*.md"]
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@core/net",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/core/net/src",
+  "projectType": "library",
+  "tags": ["scope:core", "runtime:node", "runtime:browser"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/core/net",
+        "tsConfig": "packages/core/net/tsconfig.lib.json",
+        "packageJson": "packages/core/net/package.json",
+        "main": "packages/core/net/src/index.ts",
+        "assets": ["packages/core/net/*.md"]
+      }
+    }
+  }
+}

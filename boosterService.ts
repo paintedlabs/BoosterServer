@@ -10,8 +10,9 @@ import {
   ExtendedBooster,
   ExtendedSheet,
   LoadedData,
+  CombinedCard,
 } from './dataLoader';
-import { OpenedPackResponse } from './types'; // Import shared response type
+import { OpenedPackResponse, OpenedCard } from './types'; // Import OpenedCard as well
 import logger from './logger'; // Import the logger
 
 // -------------- INTERFACES (Specific to this service/response) --------------
@@ -55,7 +56,10 @@ function pickBooster(boosters: ExtendedBooster[]): ExtendedBooster | null {
 function pickCardFromSheet(sheet: ExtendedSheet): string | null {
   const totalWeight = sheet.total_weight;
   if (totalWeight <= 0 || sheet.cards.length === 0) {
-    logger.warn({ sheet }, "Cannot pick card from sheet with zero total weight or no cards");
+    logger.warn(
+      { sheet },
+      'Cannot pick card from sheet with zero total weight or no cards'
+    );
     return null; // Cannot pick from an empty or invalid sheet
   }
 
@@ -64,13 +68,19 @@ function pickCardFromSheet(sheet: ExtendedSheet): string | null {
     randomWeight -= card.weight;
     if (randomWeight <= 0) {
       const chosenUUID = card.uuid;
-      logger.debug({ chosenUUID, totalWeight, sheetName: "[SheetName Placeholder]" }, "Card chosen from sheet"); // Add sheet name if available
+      logger.debug(
+        { chosenUUID, totalWeight, sheetName: '[SheetName Placeholder]' },
+        'Card chosen from sheet'
+      ); // Add sheet name if available
       return chosenUUID;
     }
   }
 
   // Fallback in case of floating point issues or unexpected structure
-  logger.warn({ totalWeight, sheet }, "Failed to pick card using weighted random logic, falling back to last card");
+  logger.warn(
+    { totalWeight, sheet },
+    'Failed to pick card using weighted random logic, falling back to last card'
+  );
   return sheet.cards[sheet.cards.length - 1]?.uuid ?? null;
 }
 
@@ -128,14 +138,13 @@ export function generatePack(
     };
   }
 
-  const packContents: OpenedPackResponse['pack'] = [];
+  const packContents: OpenedCard[] = [];
   const warnings: string[] = [];
 
-  // product.sheets now directly matches Record<string, ExtendedSheet> due to dataLoader processing
   const sheets = product.sheets;
 
   for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
-    const sheet = sheets[sheetName]; // Now correctly typed as ExtendedSheet
+    const sheet = sheets[sheetName];
     if (!sheet) {
       logger.warn(
         { productCode: product.code, sheetName },
@@ -145,7 +154,7 @@ export function generatePack(
     }
 
     for (let i = 0; i < count; i++) {
-      const pickedUUID = pickCardFromSheet(sheet); // Use the updated picker
+      const pickedUUID = pickCardFromSheet(sheet);
       if (!pickedUUID) {
         logger.warn(
           { productCode: product.code, sheetName },
@@ -154,17 +163,18 @@ export function generatePack(
         continue; // Skip if card picking fails
       }
 
-      // Log the UUID chosen by pickCardFromSheet *before* attempting lookup
-      logger.debug({ cardUUID: pickedUUID, sheetName, productCode: product.code }, "Attempting to lookup chosen card UUID");
+      logger.debug(
+        { cardUUID: pickedUUID, sheetName, productCode: product.code },
+        'Attempting to lookup chosen card UUID'
+      );
 
       const combined = loadedData.combinedCards[pickedUUID];
-      if (!combined || !combined.allPrintingsData) {
-        // Ensure allPrintingsData exists
+      if (!combined) {
         logger.warn(
           { productCode: product.code, cardUUID: pickedUUID, sheetName },
-          `No combined data or AllPrintings data found for card`
+          `No combined data found for card UUID`
         );
-        continue; // Skip if data is missing for the picked UUID
+        continue;
       }
 
       // Optional validation: Check if the picked card belongs to the product's source sets
@@ -185,8 +195,7 @@ export function generatePack(
 
       packContents.push({
         sheet: sheetName,
-        allPrintingsData: combined.allPrintingsData, // This is CardSet
-        scryfallData: combined.scryfallData, // This is IScryfallCard | undefined
+        card: combined,
       });
     }
   }

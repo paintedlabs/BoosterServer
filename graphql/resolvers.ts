@@ -11,6 +11,7 @@ import {
   ExtendedSheet,
   MTGSet,
   ExtendedSheetCard,
+  CombinedCard,
 } from '../dataLoader';
 import { generatePack } from '../boosterService'; // Only import generatePack for now
 import {
@@ -21,8 +22,8 @@ import {
 } from '../types';
 import logger from '../logger';
 import { GraphQLError } from 'graphql'; // Import for throwing GraphQL-specific errors
-import { AppContext } from 'graphql/context'; // Use path relative to baseUrl
-import * as ScryfallTypes from 'index'; // Import from root index.ts
+import { AppContext } from './context'; // Corrected path relative to file
+import * as ScryfallTypes from '../index'; // Corrected path relative to file
 
 // Helper to get product or throw GraphQLError
 function findProductOrThrow(
@@ -116,7 +117,7 @@ export const resolvers = {
       _parent: any,
       args: { productCode: string },
       contextValue: { loadedData: LoadedData }
-    ) => {
+    ): ExtendedSealedData | null => {
       const { loadedData } = contextValue;
       const { productCode } = args;
       if (!productCode) {
@@ -125,14 +126,32 @@ export const resolvers = {
         });
       }
       logger.info({ productCode }, 'Resolving GraphQL query: product');
-      const product = findProductOrThrow(productCode, loadedData);
-      // Map to GraphQL Product type
-      return {
-        code: product.code,
-        name: product.name,
-        set_code: product.set_code,
-        set_name: product.set_name,
-      };
+      try {
+        const product = findProductOrThrow(productCode, loadedData);
+        return product;
+      } catch (error) {
+        return null;
+      }
+    },
+
+    // NEW: Resolver for the 'card' query
+    card: (
+      _parent: any,
+      { uuid }: { uuid: string },
+      { loadedData }: AppContext
+    ): CombinedCard | null => {
+      logger.info({ uuid }, 'Resolving card query');
+      if (!loadedData?.combinedCards) {
+        throw new GraphQLError('Card data not loaded', {
+          extensions: { code: 'DATA_NOT_READY' },
+        });
+      }
+      const cardData = loadedData.combinedCards[uuid];
+      if (!cardData) {
+        logger.warn({ uuid }, 'Card not found for UUID');
+        return null;
+      }
+      return cardData;
     },
   },
 
@@ -151,12 +170,15 @@ export const resolvers = {
         });
       }
       logger.info({ productCode }, 'Resolving GraphQL mutation: openPack');
-
       const product = findProductOrThrow(productCode, loadedData);
-
-      // generatePack returns OpenedPackResponse which matches our GraphQL type closely enough for now
       const result = generatePack(product, loadedData);
-      return result;
+      return {
+        warning: result.warning,
+        pack: result.pack.map((opened) => ({
+          sheet: opened.sheet,
+          card: opened.card,
+        })),
+      };
     },
 
     // Resolver for the 'openPacks' mutation
@@ -185,36 +207,37 @@ export const resolvers = {
         'Resolving GraphQL mutation: openPacks'
       );
       const product = findProductOrThrow(productCode, loadedData);
-
-      let allOpenedCards: OpenedCard[] = []; // Flat array for all cards
-      const allWarnings: Set<string> = new Set(); // Use Set to store unique warnings
+      let allOpenedCardsInternal: Array<{ sheet: string; card: CombinedCard }> =
+        [];
+      const allWarnings: Set<string> = new Set();
 
       for (let i = 0; i < number; i++) {
         const result = generatePack(product, loadedData);
         if (result.pack) {
-          allOpenedCards = allOpenedCards.concat(result.pack); // Add cards to the flat array
+          allOpenedCardsInternal = allOpenedCardsInternal.concat(result.pack);
         }
         if (result.warning) {
-          allWarnings.add(result.warning); // Add unique warnings
+          allWarnings.add(result.warning);
         }
       }
-
       const combinedWarning =
         allWarnings.size > 0 ? Array.from(allWarnings).join(' ') : null;
-
       logger.info(
         {
           productCode,
           number,
-          openedCount: allOpenedCards.length,
+          openedCount: allOpenedCardsInternal.length,
           warnings: combinedWarning,
         },
         'Finished openPacks mutation'
       );
-
+      const gqlOpenedCards = allOpenedCardsInternal.map((opened) => ({
+        sheet: opened.sheet,
+        card: opened.card,
+      }));
       return {
         warning: combinedWarning,
-        packs: allOpenedCards, // Correct: returns the flat array
+        packs: gqlOpenedCards,
       };
     },
   },
@@ -246,6 +269,9 @@ export const resolvers = {
       return parent.boosters || [];
     },
     // Other fields like code, name, set_code, set_name usually resolve directly
+    tcgMarketPrice: (parent: ExtendedSealedData): number | null => {
+      return parent.tcgMarketPrice ?? null;
+    },
   },
 
   ScryfallCard: {
@@ -272,4 +298,16 @@ export const resolvers = {
 
   // Other type resolvers (SheetV2, SheetCardEntry, BoosterContentEntry) are likely not needed
   // as the parent resolver (Product) handles the data transformation.
+
+  // NEW: Resolver for CombinedCard type (trivial resolvers)
+  CombinedCard: {
+    allPrintingsData: (parent: CombinedCard) => parent.allPrintingsData,
+    scryfallData: (parent: CombinedCard) => parent.scryfallData,
+    tcgNormalMarketPrice: (parent: CombinedCard) => parent.tcgNormalMarketPrice,
+    tcgFoilMarketPrice: (parent: CombinedCard) => parent.tcgFoilMarketPrice,
+  },
+
+  AllPrintingsCard: {
+    identifiers: (parent: any) => parent.identifiers,
+  },
 };

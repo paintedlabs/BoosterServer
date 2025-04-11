@@ -1,0 +1,9 @@
+{
+  "name": "@core/streams",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "web-streams-polyfill": "4.1.0",
+    "@core/status": "0.0.1"
+  }
+}

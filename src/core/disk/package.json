@@ -1,0 +1,10 @@
+{
+  "name": "@core/disk",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "uuid": "11.0.5",
+    "@core/status": "0.0.1",
+    "@core/typesafety": "0.0.1"
+  }
+}

@@ -5,12 +5,25 @@
     "outDir": "./dist",
     "rootDir": ".",
     "baseUrl": ".",
+    "paths": {
+      "@core/*": ["src/core/*/src"],
+      "@extensions/*": ["src/extensions/*/src"]
+    },
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "plugins": [
+      {
+        "transform": "typia/lib/transform"
+        /* Optionally specify transformer options here, e.g.,
+        "validate": "assert", // Default: assert
+        "stringify": "assert", // Default: assert
+        */
+      }
+    ]
   },
   "include": [
     "**/*.ts"

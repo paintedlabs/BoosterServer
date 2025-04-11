@@ -1,0 +1,20 @@
+{
+  "name": "@core/streams",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/core/streams/src",
+  "projectType": "library",
+  "tags": ["scope:core", "runtime:browser", "runtime:node"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/core/streams",
+        "tsConfig": "packages/core/streams/tsconfig.lib.json",
+        "packageJson": "packages/core/streams/package.json",
+        "main": "packages/core/streams/src/index.ts",
+        "assets": ["packages/core/streams/*.md"]
+      }
+    }
+  }
+}

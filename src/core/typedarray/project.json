@@ -1,0 +1,20 @@
+{
+  "name": "@core/typedarray",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/core/typedarray/src",
+  "projectType": "library",
+  "tags": ["runtime:browser", "runtime:node"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/core/typedarray",
+        "tsConfig": "packages/core/typedarray/tsconfig.lib.json",
+        "packageJson": "packages/core/typedarray/package.json",
+        "main": "packages/core/typedarray/src/index.ts",
+        "assets": ["packages/core/typedarray/*.md"]
+      }
+    }
+  }
+}

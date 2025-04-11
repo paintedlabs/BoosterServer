@@ -23,8 +23,14 @@ export const typeDefs = gql`
     uuid: String!
     name: String!
     rarity: String!
-    # We might not expose scryfallId directly in GraphQL
-    # identifiers: ??? # Could be a JSON String or a nested type
+    identifiers: Identifiers # Nested type for identifiers
+  }
+
+  # Nested type for identifiers
+  type Identifiers {
+    scryfallId: String
+    tcgplayerProductId: String
+    # Add other identifier fields if needed
   }
 
   # Represents a face of a double-faced card
@@ -127,7 +133,7 @@ export const typeDefs = gql`
     border_crop: String
   }
 
-  # Type for card prices
+  # Type for card prices from Scryfall
   type Prices {
     usd: String
     usd_foil: String
@@ -137,11 +143,21 @@ export const typeDefs = gql`
     tix: String
   }
 
+  # Represents the combined internal card data structure
+  type CombinedCard {
+    allPrintingsData: AllPrintingsCard! # Keep basic print data
+    scryfallData: ScryfallCard # Keep detailed Scryfall data
+    # Add our fetched TCG CSV prices
+    tcgNormalMarketPrice: Float # Nullable Float
+    tcgFoilMarketPrice: Float # Nullable Float
+  }
+
   # Represents a single card within an opened pack
   type OpenedCard {
     sheet: String!
-    allPrintingsData: AllPrintingsCard!
-    scryfallData: ScryfallCard
+    # Use the CombinedCard type to represent the card
+    card: CombinedCard! # Expose the full combined data
+    # Removed allPrintingsData and scryfallData as they are nested in card
   }
 
   # Response type for opening a SINGLE pack
@@ -153,7 +169,7 @@ export const typeDefs = gql`
   # Response type for opening MULTIPLE packs
   type OpenedPacksResponse {
     warning: String
-    packs: [OpenedCard!] # Correct: Flat array of all opened cards
+    packs: [OpenedCard!] # Flat array of all opened cards
   }
 
   # Represents a specific product available for opening
@@ -164,6 +180,7 @@ export const typeDefs = gql`
     set_name: String!
     boosters: [BoosterV2!] # Expose booster configurations
     sheets: [SheetV2!] # Expose sheet details
+    tcgMarketPrice: Float # Add our fetched market price (nullable Float)
   }
 
   # Represents the structure of a booster pack configuration (based on BoosterV2 type)
@@ -205,8 +222,8 @@ export const typeDefs = gql`
     # Get details for a specific product (optional, could just use products query)
     product(productCode: String!): Product
 
-    # Potentially add queries for specific cards later if needed
-    # card(uuid: String!): CombinedCard # Needs a CombinedCard type
+    # Add query for combined card data by UUID
+    card(uuid: String!): CombinedCard
   }
 
   # --- Root Mutation Type ---

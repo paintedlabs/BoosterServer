@@ -81,7 +81,7 @@ async function ensureSetSvgsCached() {
     const fetchPromise = async () => {
       activeFetches++;
       const url = `https://svgs.scryfall.io/sets/${code.toLowerCase()}.svg`;
-      logger.debug({ setCode: code, url }, `Fetching set SVG`);
+      // logger.debug({ setCode: code, url }, `Fetching set SVG`);
       try {
         const resp = await fetch(url);
         if (!resp.ok) {
@@ -277,17 +277,17 @@ function handleSetImageRequest(req: Request, res: Response) {
     return res.sendFile(filePath);
   } catch (error) {
     if (error instanceof ZodError) {
-      logger.warn({ errors: error.errors }, "Invalid setCode parameter");
+      logger.warn({ errors: error.errors }, 'Invalid setCode parameter');
       return res.status(400).json({
-        error: "Invalid request parameters",
-        details: error.errors
+        error: 'Invalid request parameters',
+        details: error.errors,
       });
     } else {
-      logger.error({ err: error }, "Unexpected error in /setimages/:setCode");
+      logger.error({ err: error }, 'Unexpected error in /setimages/:setCode');
       // Let centralized handler manage response (if async)
       // For sync handlers like this, re-throwing won't work unless using express-async-errors properly
       // Safest here is to return 500, or explicitly call next(error)
-      return res.status(500).json({ error: "Internal Server Error" });
+      return res.status(500).json({ error: 'Internal Server Error' });
       // next(error); // Alternative if express-async-errors isn't guaranteed for sync
     }
   }

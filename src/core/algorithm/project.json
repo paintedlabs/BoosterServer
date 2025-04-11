@@ -1,0 +1,20 @@
+{
+  "name": "@core/algorithm",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/core/algorithm/src",
+  "projectType": "library",
+  "tags": ["scope:core", "runtime:node", "runtime:browser"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/core/algorithm",
+        "tsConfig": "packages/core/algorithm/tsconfig.lib.json",
+        "packageJson": "packages/core/algorithm/package.json",
+        "main": "packages/core/algorithm/src/index.ts",
+        "assets": ["packages/core/algorithm/*.md"]
+      }
+    }
+  }
+}

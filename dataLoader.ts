@@ -17,6 +17,9 @@ import { parser } from 'stream-json';
 import { streamArray } from 'stream-json/streamers/StreamArray';
 import logger from './logger'; // Import the logger
 import * as ScryfallTypes from './index'; // Assuming index.ts defines Scryfall card types
+import * as TcgCsvService from './tcgCsvService';
+import * as TcgCsvTypes from './types';
+import { StatusOr, isOk } from './src/core/status/src'; // Import StatusOr helpers
 
 // -------------- CONFIG CONSTANTS --------------
 // Read configuration from environment variables with defaults
@@ -54,6 +57,7 @@ export interface MTGSet {
   name: string;
   releaseDate: string;
   cards: CardSet[];
+  tcgplayerGroupId?: number; // Added TCGPlayer Group ID
   // Add other MTGSet properties if needed
 }
 
@@ -63,6 +67,7 @@ export interface CardSet {
   rarity: string;
   identifiers?: {
     scryfallId?: string;
+    tcgplayerProductId?: string; // Explicitly add TCGPlayer ID
     [key: string]: any; // Keep other identifiers if necessary
   };
   // Add other CardSet properties if needed
@@ -102,6 +107,8 @@ export interface ExtendedSealedData {
   boosters: ExtendedBooster[];
   sheets: Record<string, ExtendedSheet>; // <-- Uses the processed ExtendedSheet type
   source_set_codes: string[];
+  tcgplayerProductId?: number; // Add TCGPlayer ID for sealed products
+  tcgMarketPrice?: number | null; // Ensure nullable
 }
 
 export interface ExtendedBooster {
@@ -111,10 +118,14 @@ export interface ExtendedBooster {
 
 // Removed ProcessedSheet and ProcessedSheetCard as they were renamed
 
-// Combined Card Data structure (AllPrintings + Scryfall)
+// Combined Card Data structure (AllPrintings + Scryfall + TCG CSV Price)
 export interface CombinedCard {
   allPrintingsData: CardSet;
   scryfallData?: ScryfallTypes.IScryfallCard; // Using interface from index.ts
+  // Replace generic price with specific Normal/Foil prices from TCG CSV
+  tcgNormalMarketPrice?: number | null;
+  tcgFoilMarketPrice?: number | null;
+  // tcgMarketPrice?: number; // Removed generic price field
 }
 
 // Structure returned by loadAllData
@@ -300,10 +311,9 @@ async function ensureScryfallAllCards(localPath: string): Promise<void> {
         fs.unlinkSync(localPath);
         logger.warn(`Deleted potentially partial Scryfall file: ${localPath}`);
       } catch (e) {
-        logger.error(
-          { err: e },
-          `Failed to delete partial Scryfall file: ${localPath}`
-        );
+        logger.error(`Failed to delete partial Scryfall file: ${localPath}`, {
+          err: e,
+        });
       }
     }
     throw error; // Re-throw after cleanup attempt
@@ -480,11 +490,12 @@ async function loadScryfallAllCardsStreamed(
 
   const pipelineStream = chain([
     fs.createReadStream(filePath),
-    parser({ jsonStreaming: true }), // Assuming top-level array
-    streamArray(), // Handles each element in the top-level JSON array
+    parser({ jsonStreaming: true }),
+    streamArray(),
   ]);
 
   try {
+    logger.debug('Starting Scryfall stream processing loop...'); // Log before loop
     for await (const chunk of pipelineStream) {
       processedCount++;
       const card = chunk.value as ScryfallTypes.IScryfallCard;
@@ -517,6 +528,7 @@ async function loadScryfallAllCardsStreamed(
         );
       }
     }
+    logger.debug('Finished Scryfall stream processing loop.'); // Log after loop
   } catch (streamError) {
     logger.error(
       { err: streamError },
@@ -544,6 +556,7 @@ async function loadScryfallAllCardsStreamed(
     // logger.warn({ missingIds: missingIds.slice(0, 10) }, "Sample missing Scryfall IDs"); // Log first few
   }
 
+  logger.info('loadScryfallAllCardsStreamed function finishing.'); // Log before return
   return scryfallMap;
 }
 
@@ -582,10 +595,12 @@ async function buildCombinedCards(
   );
 
   // 2. Load Scryfall data for needed IDs
+  logger.info('Calling loadScryfallAllCardsStreamed...'); // Log before await
   const scryfallMap = await loadScryfallAllCardsStreamed(
     scryfallFilePath,
     neededScryfallIds
   );
+  logger.info('Returned from loadScryfallAllCardsStreamed.'); // Log after await
 
   // 3. Merge AllPrintings and Scryfall data
   let mergedCount = 0;
@@ -607,6 +622,9 @@ async function buildCombinedCards(
         combinedCardsMap[card.uuid] = {
           allPrintingsData: card,
           scryfallData: scryData, // Will be undefined if scryId was missing or not found
+          // Initialize price fields to null - they will be populated later
+          tcgNormalMarketPrice: null,
+          tcgFoilMarketPrice: null,
         };
         mergedCount++;
       }
@@ -622,11 +640,183 @@ async function buildCombinedCards(
   return combinedCardsMap;
 }
 
+// -------------- HELPER FUNCTION: TCG CSV PRICE FETCHING --------------
+
+/**
+ * Fetches TCGPlayer group, product, and price data and applies market prices
+ * to the provided combinedCardsMap and extendedDataArray.
+ */
+async function fetchAndApplyTcgPrices(
+  allPrintings: AllPrintings,
+  combinedCardsMap: Record<string, CombinedCard>,
+  extendedDataArray: ExtendedSealedData[]
+): Promise<void> {
+  logger.info('--- Starting TCGPlayer Price Fetching and Application ---');
+
+  // 1. Fetch all MTG groups (sets) from TCG CSV
+  const groupsResult = await TcgCsvService.fetchGroups();
+  if (!isOk(groupsResult)) {
+    logger.error(
+      {
+        errorType: groupsResult.error.type,
+        details: groupsResult.error,
+      },
+      'Failed to fetch TCGPlayer groups. Skipping price fetching.'
+    );
+    return;
+  }
+  const tcgGroups = groupsResult.value;
+  const tcgGroupMap = new Map<number, TcgCsvTypes.TcgCsvGroup>(
+    tcgGroups.map((g) => [g.groupId, g])
+  );
+  logger.info(`Fetched ${tcgGroupMap.size} TCGPlayer groups.`);
+
+  // Create a consolidated price map across all groups for sealed lookup
+  const consolidatedPriceMap = new Map<
+    number,
+    { normal?: number | null; foil?: number | null }
+  >();
+
+  // 2. Iterate through AllPrintings sets to find corresponding TCG groups
+  let setsProcessedForPrices = 0;
+  for (const setCode of Object.keys(allPrintings.data)) {
+    const mtgSet = allPrintings.data[setCode];
+    const tcgGroupId = mtgSet.tcgplayerGroupId;
+
+    if (!tcgGroupId) {
+      continue;
+    }
+
+    if (!tcgGroupMap.has(tcgGroupId)) {
+      logger.warn(
+        { setCode, tcgplayerGroupId: tcgGroupId },
+        `TCGPlayer group data not found for groupId provided by MTGSet. Skipping.`
+      );
+      continue;
+    }
+
+    logger.info(
+      `Processing TCG prices for Set: ${setCode} (Group ID: ${tcgGroupId})`
+    );
+
+    // 3. Fetch Products and Prices for the group
+    const [productsResult, pricesResult] = await Promise.all([
+      TcgCsvService.fetchProducts(tcgGroupId),
+      TcgCsvService.fetchPrices(tcgGroupId),
+    ]);
+
+    if (!isOk(productsResult)) {
+      logger.error(
+        {
+          errorType: productsResult.error.type,
+          details: productsResult.error,
+          setCode,
+          tcgGroupId,
+        },
+        `Failed to fetch TCGPlayer products for group. Skipping prices for this set.`
+      );
+      continue;
+    }
+    const tcgProducts = productsResult.value;
+    const tcgProductMap = new Map<number, TcgCsvTypes.TcgCsvProduct>(
+      tcgProducts.map((p) => [p.productId, p])
+    );
+
+    if (!isOk(pricesResult)) {
+      logger.error(
+        {
+          errorType: pricesResult.error.type,
+          details: pricesResult.error,
+          setCode,
+          tcgGroupId,
+        },
+        `Failed to fetch TCGPlayer prices for group. Skipping prices for this set.`
+      );
+      continue;
+    }
+    const tcgPrices = pricesResult.value;
+
+    // 4. Build a temporary price map for *this group* and merge into consolidated map
+    const groupPriceMap = new Map<
+      number,
+      { normal?: number | null; foil?: number | null }
+    >();
+    for (const price of tcgPrices) {
+      if (!groupPriceMap.has(price.productId)) {
+        groupPriceMap.set(price.productId, {});
+      }
+      const entry = groupPriceMap.get(price.productId)!;
+      const marketPrice = price.marketPrice;
+
+      if (price.subTypeName === 'Normal') {
+        entry.normal = marketPrice;
+      } else if (price.subTypeName === 'Foil') {
+        entry.foil = marketPrice;
+      }
+      // Also add to consolidated map
+      if (!consolidatedPriceMap.has(price.productId)) {
+        consolidatedPriceMap.set(price.productId, {});
+      }
+      const consolidatedEntry = consolidatedPriceMap.get(price.productId)!;
+      if (price.subTypeName === 'Normal') {
+        consolidatedEntry.normal = marketPrice;
+      } else if (price.subTypeName === 'Foil') {
+        consolidatedEntry.foil = marketPrice;
+      }
+    }
+
+    // 5. Apply prices to CombinedCard map using the group-specific price map
+    let cardsUpdated = 0;
+    for (const card of mtgSet.cards) {
+      const combinedCard = combinedCardsMap[card.uuid];
+      if (!combinedCard) continue;
+
+      const tcgProductId =
+        combinedCard.allPrintingsData.identifiers?.tcgplayerProductId;
+      if (!tcgProductId) continue;
+
+      const prices = groupPriceMap.get(Number(tcgProductId));
+      if (prices) {
+        combinedCard.tcgNormalMarketPrice = prices.normal ?? null;
+        combinedCard.tcgFoilMarketPrice = prices.foil ?? null;
+        cardsUpdated++;
+      }
+    }
+    if (cardsUpdated > 0) {
+      logger.debug(`  Updated prices for ${cardsUpdated} cards in ${setCode}.`);
+    }
+
+    setsProcessedForPrices++;
+  } // End of set loop
+
+  // 6. Apply prices to ExtendedSealedData using the consolidated price map
+  let sealedProductsUpdated = 0;
+  for (const sealedProduct of extendedDataArray) {
+    const tcgProductId = sealedProduct.tcgplayerProductId;
+    if (!tcgProductId) continue;
+
+    const prices = consolidatedPriceMap.get(Number(tcgProductId)); // Use consolidated map here
+    if (prices) {
+      sealedProduct.tcgMarketPrice = prices.normal ?? prices.foil ?? null;
+      if (sealedProduct.tcgMarketPrice !== null) {
+        sealedProductsUpdated++;
+      }
+    }
+  }
+  if (sealedProductsUpdated > 0) {
+    logger.info(`Updated prices for ${sealedProductsUpdated} sealed products.`);
+  }
+
+  logger.info(
+    `--- Finished TCGPlayer Price Fetching. Processed ${setsProcessedForPrices} sets. ---`
+  );
+}
+
 // -------------- MAIN EXPORTED FUNCTION --------------
 
 /**
  * Ensures all necessary data files are present (downloading if needed),
- * loads them into memory, processes them, and returns the final data structures.
+ * loads them into memory, processes them, fetches prices, and returns the final data structures.
  */
 export async function loadAllData(): Promise<LoadedData> {
   logger.info('--- Starting Data Loading Process ---');
@@ -635,9 +825,7 @@ export async function loadAllData(): Promise<LoadedData> {
   await ensureDirectoryExists(ALL_PRINTINGS_PATH);
 
   // 1. Ensure and Load AllPrintings
-  // Try unzipped first, maybe fallback to non-zipped if needed (or just fail)
   await ensureAllPrintingsUnzipped(ALL_PRINTINGS_PATH);
-  // await ensureFileExists(ALL_PRINTINGS_PATH, ALL_PRINTINGS_URL); // Fallback?
   const allPrintingsData = loadAllPrintings(ALL_PRINTINGS_PATH);
   if (!allPrintingsData) {
     throw new Error('Failed to load AllPrintings.json. Server cannot start.');
@@ -650,17 +838,13 @@ export async function loadAllData(): Promise<LoadedData> {
     false
   );
   if (!extendedDataExists) {
-    // Or handle differently if this data is truly optional
     throw new Error(
       'Failed to load sealed_extended_data.json. Server cannot start.'
     );
   }
   const extendedDataArray = loadAndProcessExtendedData(EXTENDED_DATA_PATH);
   if (!extendedDataArray || extendedDataArray.length === 0) {
-    // Handle case where file exists but is empty or fails parsing
     logger.warn('Extended sealed data is empty or failed to load properly.');
-    // Decide if this is a fatal error
-    // throw new Error("Extended sealed data is empty.");
   }
 
   // 3. Ensure Scryfall Bulk Data
@@ -670,6 +854,13 @@ export async function loadAllData(): Promise<LoadedData> {
   const combinedCardsMap = await buildCombinedCards(
     allPrintingsData,
     SCRYFALL_DATA_PATH
+  );
+
+  // 5. Fetch and Apply TCGPlayer Prices
+  await fetchAndApplyTcgPrices(
+    allPrintingsData,
+    combinedCardsMap,
+    extendedDataArray // Pass the array to be potentially modified
   );
 
   logger.info('--- Data Loading Process Finished Successfully ---');

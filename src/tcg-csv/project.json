@@ -1,0 +1,20 @@
+{
+  "name": "@booster-tutor/tcg-csv",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/booster-tutor/backend/shared/tcg-csv/src",
+  "projectType": "library",
+  "tags": ["scope:booster-tutor", "runtime:node", "runtime:browser"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/booster-tutor/backend/shared/tcg-csv",
+        "tsConfig": "packages/booster-tutor/backend/shared/tcg-csv/tsconfig.lib.json",
+        "packageJson": "packages/booster-tutor/backend/shared/tcg-csv/package.json",
+        "main": "packages/booster-tutor/backend/shared/tcg-csv/src/index.ts",
+        "assets": ["packages/booster-tutor/backend/shared/tcg-csv/*.md"]
+      }
+    }
+  }
+}
