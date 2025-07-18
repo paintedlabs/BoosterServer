@@ -3,142 +3,292 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.pickBooster = pickBooster;
+exports.pickCardFromSheet = pickCardFromSheet;
 exports.generatePack = generatePack;
-const logger_1 = __importDefault(require("./logger")); // Import the logger
-// -------------- INTERFACES (Specific to this service/response) --------------
+const logger_1 = __importDefault(require("./logger"));
 // OpenedPackResponse moved to types.ts
 // -------------- BOOSTER SIMULATION LOGIC --------------
 /**
  * Selects a booster configuration based on weighted randomness.
  */
-function pickBooster(boosters) {
-    if (!boosters || boosters.length === 0)
-        return null;
-    const totalWeight = boosters.reduce((acc, b) => acc + b.weight, 0);
-    if (totalWeight <= 0) {
-        logger_1.default.warn('Total weight of boosters is zero or negative.');
-        return null; // Avoid division by zero or infinite loops
+function pickBooster(product) {
+    logger_1.default.debug({
+        productUuid: product.uuid,
+        productCode: product.code,
+        productName: product.name,
+        hasBooster: !!product.booster,
+        boosterDetails: product.booster
+            ? {
+                boostersCount: product.booster.boosters?.length,
+                boostersTotalWeight: product.booster.boostersTotalWeight,
+                sheetsCount: Object.keys(product.booster.sheets || {}).length,
+                sheetNames: Object.keys(product.booster.sheets || {}),
+            }
+            : null,
+    }, 'Attempting to pick booster configuration');
+    if (!product.booster) {
+        logger_1.default.warn({
+            productUuid: product.uuid,
+            productCode: product.code,
+            productName: product.name,
+        }, 'Product has no booster configuration');
+        throw new Error('Product is not configured as a booster pack');
     }
-    const rand = Math.random() * totalWeight; // Use Math.random() for float
-    let cumulativeWeight = 0;
-    for (const booster of boosters) {
-        cumulativeWeight += booster.weight;
-        if (rand < cumulativeWeight) {
+    if (!product.booster.boosters || product.booster.boosters.length === 0) {
+        logger_1.default.warn({
+            productUuid: product.uuid,
+            productCode: product.code,
+            productName: product.name,
+            boosterConfig: product.booster,
+        }, 'Product has empty boosters array');
+        throw new Error('Product has no booster configurations');
+    }
+    // Calculate total weight of all boosters
+    const totalWeight = product.booster.boosters.reduce((sum, booster) => sum + booster.weight, 0);
+    logger_1.default.debug({
+        productUuid: product.uuid,
+        productCode: product.code,
+        totalWeight,
+        boostersCount: product.booster.boosters.length,
+        boosterWeights: product.booster.boosters.map((b) => b.weight),
+    }, 'Calculated booster weights');
+    if (totalWeight <= 0) {
+        logger_1.default.warn({
+            productUuid: product.uuid,
+            productCode: product.code,
+            totalWeight,
+            boosters: product.booster.boosters,
+        }, 'Total booster weight is zero or negative');
+        throw new Error('Invalid booster configuration: total weight must be positive');
+    }
+    // Pick a random booster configuration based on weights
+    const random = Math.random() * totalWeight;
+    let currentWeight = 0;
+    for (const booster of product.booster.boosters) {
+        currentWeight += booster.weight;
+        if (random <= currentWeight) {
+            logger_1.default.debug({
+                productUuid: product.uuid,
+                productCode: product.code,
+                selectedBooster: {
+                    weight: booster.weight,
+                    contentsCount: booster.contents?.length || 0,
+                    contents: booster.contents?.map((c) => ({
+                        sheet: c.sheet,
+                        count: c.count,
+                    })),
+                },
+            }, 'Selected booster configuration');
             return booster;
         }
     }
-    // Fallback in case of floating point inaccuracies, return the last booster
-    logger_1.default.warn('pickBooster fallback: returning last booster due to potential float issue.');
-    return boosters[boosters.length - 1];
+    logger_1.default.warn({
+        productUuid: product.uuid,
+        productCode: product.code,
+        random,
+        totalWeight,
+        currentWeight,
+    }, 'Failed to select a booster configuration');
+    throw new Error('Failed to select a booster configuration');
 }
 /**
- * Selects a card UUID from a sheet based on weighted randomness.
- * Uses the processed ExtendedSheet structure from dataLoader.
+ * Picks a card from a sheet based on weighted randomness.
  */
-function pickCardFromSheet(sheet) {
-    var _a, _b;
-    const totalWeight = sheet.total_weight;
-    if (totalWeight <= 0 || sheet.cards.length === 0) {
-        logger_1.default.warn({ sheet }, 'Cannot pick card from sheet with zero total weight or no cards');
-        return null; // Cannot pick from an empty or invalid sheet
+function pickCardFromSheet(sheet, cards) {
+    logger_1.default.debug({
+        totalWeight: sheet.totalWeight,
+        cardCount: sheet.cards.length,
+        isFoil: sheet.foil,
+        isFixed: sheet.fixed,
+    }, 'Attempting to pick card from sheet');
+    if (!sheet.cards || sheet.cards.length === 0) {
+        logger_1.default.warn({
+            sheet,
+        }, 'Sheet has no cards');
+        throw new Error('Sheet has no cards');
     }
-    let randomWeight = Math.random() * totalWeight;
+    // Calculate total weight
+    const totalWeight = sheet.cards.reduce((sum, card) => sum + card.weight, 0);
+    logger_1.default.debug({
+        totalWeight,
+        cardCount: sheet.cards.length,
+        cardWeights: sheet.cards.map((c) => c.weight),
+    }, 'Calculated sheet weights');
+    if (totalWeight <= 0) {
+        logger_1.default.warn({
+            totalWeight,
+            cards: sheet.cards,
+        }, 'Total sheet weight is zero or negative');
+        throw new Error('Invalid sheet configuration: total weight must be positive');
+    }
+    // Pick a random card based on weights
+    const random = Math.random() * totalWeight;
+    let currentWeight = 0;
     for (const card of sheet.cards) {
-        randomWeight -= card.weight;
-        if (randomWeight <= 0) {
-            const chosenUUID = card.uuid;
-            logger_1.default.debug({ chosenUUID, totalWeight, sheetName: '[SheetName Placeholder]' }, 'Card chosen from sheet'); // Add sheet name if available
-            return chosenUUID;
+        currentWeight += card.weight;
+        if (random <= currentWeight) {
+            const selectedCard = cards[card.uuid];
+            if (!selectedCard) {
+                logger_1.default.warn({
+                    cardUuid: card.uuid,
+                    weight: card.weight,
+                }, 'Selected card not found in cards map');
+                throw new Error(`Card ${card.uuid} not found in cards map`);
+            }
+            logger_1.default.debug({
+                selectedCard: {
+                    uuid: selectedCard.uuid,
+                    name: selectedCard.name,
+                    weight: card.weight,
+                },
+            }, 'Selected card from sheet');
+            return selectedCard;
         }
     }
-    // Fallback in case of floating point issues or unexpected structure
-    logger_1.default.warn({ totalWeight, sheet }, 'Failed to pick card using weighted random logic, falling back to last card');
-    return (_b = (_a = sheet.cards[sheet.cards.length - 1]) === null || _a === void 0 ? void 0 : _a.uuid) !== null && _b !== void 0 ? _b : null;
+    logger_1.default.warn({
+        random,
+        totalWeight,
+        currentWeight,
+    }, 'Failed to select a card from sheet');
+    throw new Error('Failed to select a card from sheet');
 }
 /**
  * Generates the contents of a single booster pack for a given product.
- *
- * @param product The ExtendedSealedData definition for the product.
- * @param loadedData The container for all loaded AllPrintings, ExtendedData, and CombinedCard data.
- * @returns An OpenedPackResponse object containing the pack contents or a warning.
  */
 function generatePack(product, loadedData) {
     if (!loadedData || !loadedData.allPrintings || !loadedData.combinedCards) {
         logger_1.default.error('generatePack called with incomplete loadedData.');
-        // In a real service, might throw a specific internal error
         return { pack: [], warning: 'Server data is not fully loaded.' };
     }
+    logger_1.default.debug({
+        productUuid: product.uuid,
+        productName: product.name,
+        hasBooster: !!product.booster,
+        boosterName: product.booster?.name,
+        boosterCount: product.booster?.boosters?.length,
+        sheetCount: Object.keys(product.booster?.sheets || {}).length,
+    }, 'Starting pack generation');
     // Build a map of UUIDs allowed in this product's source sets for validation
-    // This can be potentially cached or precomputed if performance is critical
     const sourceSetUUIDs = new Set();
-    if (product.source_set_codes) {
-        for (let code of product.source_set_codes) {
-            code = code.toUpperCase();
-            const setObj = loadedData.allPrintings.data[code];
-            if (setObj === null || setObj === void 0 ? void 0 : setObj.cards) {
-                for (const c of setObj.cards) {
-                    if (c === null || c === void 0 ? void 0 : c.uuid)
-                        sourceSetUUIDs.add(c.uuid);
-                }
-            }
-            else {
-                logger_1.default.warn({ productCode: product.code, setCode: code }, `Source set code not found or has no cards in AllPrintings data.`);
-            }
+    if (product.contents?.card) {
+        for (const card of product.contents.card) {
+            if (card?.uuid)
+                sourceSetUUIDs.add(card.uuid);
         }
+        logger_1.default.debug({
+            productUuid: product.uuid,
+            sourceSetCardCount: sourceSetUUIDs.size,
+        }, 'Built source set UUID map');
     }
     else {
-        logger_1.default.warn({ productCode: product.code }, `Product is missing 'source_set_codes'. Cannot validate card origins.`);
+        logger_1.default.warn({ productCode: product.uuid }, `Product is missing card contents. Cannot validate card origins.`);
     }
-    const chosenBooster = pickBooster(product.boosters);
+    if (!product.booster?.boosters || product.booster.boosters.length === 0) {
+        logger_1.default.warn({
+            productCode: product.uuid,
+            boosterConfig: JSON.stringify(product.booster, null, 2),
+        }, `Product has no booster configurations.`);
+        return { pack: [], warning: 'Product has no booster configurations.' };
+    }
+    const chosenBooster = pickBooster(product);
     if (!chosenBooster) {
-        logger_1.default.warn({ productCode: product.code }, `No valid booster definition found or selected.`);
+        logger_1.default.warn({
+            productCode: product.uuid,
+            boosterConfig: JSON.stringify(product.booster, null, 2),
+        }, `No valid booster definition found or selected.`);
         return {
             pack: [],
             warning: 'No valid booster definition found or zero total weight.',
         };
     }
+    logger_1.default.debug({
+        productUuid: product.uuid,
+        boosterName: product.booster?.name,
+        boosterWeight: chosenBooster.weight,
+        contentsCount: chosenBooster.contents.length,
+        contents: JSON.stringify(chosenBooster.contents, null, 2),
+    }, 'Selected booster configuration');
     const packContents = [];
     const warnings = [];
-    const sheets = product.sheets;
-    for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
+    const sheets = product.booster?.sheets || {};
+    logger_1.default.debug({
+        productUuid: product.uuid,
+        sheetNames: Object.keys(sheets),
+        sheetDetails: Object.entries(sheets).map(([name, sheet]) => ({
+            name,
+            cardCount: sheet.cards.length,
+            totalWeight: sheet.totalWeight,
+        })),
+    }, 'Available sheets');
+    for (const content of chosenBooster.contents) {
+        const sheetName = content.sheet;
+        const count = content.count;
         const sheet = sheets[sheetName];
         if (!sheet) {
-            logger_1.default.warn({ productCode: product.code, sheetName }, `[${product.code}] Processed sheet data missing for sheet '${sheetName}'.`);
-            continue; // Skip this sheet if definition is missing
+            logger_1.default.warn({
+                productCode: product.uuid,
+                sheetName,
+                availableSheets: Object.keys(sheets),
+            }, `Processed sheet data missing for sheet '${sheetName}'.`);
+            continue;
         }
+        logger_1.default.debug({
+            productUuid: product.uuid,
+            sheetName,
+            cardCount: sheet.cards.length,
+            totalWeight: sheet.totalWeight,
+            sheetCards: sheet.cards.map((c) => ({
+                uuid: c.uuid,
+                weight: c.weight,
+            })),
+        }, 'Processing sheet');
         for (let i = 0; i < count; i++) {
-            const pickedUUID = pickCardFromSheet(sheet);
-            if (!pickedUUID) {
-                logger_1.default.warn({ productCode: product.code, sheetName }, `Failed to pick card from processed sheet`);
-                continue; // Skip if card picking fails
-            }
-            logger_1.default.debug({ cardUUID: pickedUUID, sheetName, productCode: product.code }, 'Attempting to lookup chosen card UUID');
-            const combined = loadedData.combinedCards[pickedUUID];
-            if (!combined) {
-                logger_1.default.warn({ productCode: product.code, cardUUID: pickedUUID, sheetName }, `No combined data found for card UUID`);
+            const pickedCard = pickCardFromSheet(sheet, loadedData.combinedCards);
+            if (!pickedCard) {
+                logger_1.default.warn({
+                    productCode: product.uuid,
+                    sheetName,
+                    sheetCardCount: sheet.cards.length,
+                    sheetTotalWeight: sheet.totalWeight,
+                }, `Failed to pick card from processed sheet`);
                 continue;
             }
-            // Optional validation: Check if the picked card belongs to the product's source sets
-            if (sourceSetUUIDs.size > 0 && !sourceSetUUIDs.has(pickedUUID)) {
-                // This might indicate an error in the sealed_extended_data.json
+            logger_1.default.debug({
+                cardUUID: pickedCard.uuid,
+                sheetName,
+                productCode: product.uuid,
+                attempt: i + 1,
+                totalAttempts: count,
+            }, 'Attempting to lookup chosen card UUID');
+            // Validate card belongs to the product's source sets
+            if (sourceSetUUIDs.size > 0 && !sourceSetUUIDs.has(pickedCard.uuid)) {
                 logger_1.default.warn({
-                    productCode: product.code,
-                    cardUUID: pickedUUID,
-                    cardName: combined.allPrintingsData.name,
+                    productCode: product.uuid,
+                    cardUUID: pickedCard.uuid,
+                    cardName: pickedCard.name,
                     sheetName,
-                }, `Picked card is NOT listed in source_set_codes. Including anyway.`);
-                // Decide whether to include it or skip it. Logging and including for now.
-                // continue;
+                    inSourceSet: false,
+                }, `Picked card is NOT listed in product contents. Including anyway.`);
             }
             packContents.push({
                 sheet: sheetName,
-                card: combined,
+                card: pickedCard,
             });
         }
     }
-    // logger.debug({ productCode: product.code, packSize: packContents.length }, "Generated pack");
+    logger_1.default.debug({
+        productUuid: product.uuid,
+        packSize: packContents.length,
+        warnings: warnings.length,
+        packContents: packContents.map((c) => ({
+            sheet: c.sheet,
+            cardName: c.card.name,
+            cardUUID: c.card.uuid,
+        })),
+    }, 'Generated pack contents');
     return {
         pack: packContents,
-        warning: warnings.length > 0 ? warnings.join(' ') : null, // Include warnings in the return
+        warning: warnings.length > 0 ? warnings.join(' ') : null,
     };
 }

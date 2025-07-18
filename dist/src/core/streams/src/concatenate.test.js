@@ -32,41 +32,32 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const status = __importStar(require("@core/status"));
 const webStreams = __importStar(require("web-streams-polyfill"));
 const streams = __importStar(require("./index"));
 describe('concatenate', () => {
-    it('returns empty array for no streams.', () => __awaiter(void 0, void 0, void 0, function* () {
-        expect(status.throwIfError(yield streams.toArray(streams.concatenate([])))).toStrictEqual([]);
-    }));
-    it('returns empty array for an empty stream.', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('returns empty array for no streams.', async () => {
+        expect(status.throwIfError(await streams.toArray(streams.concatenate([])))).toStrictEqual([]);
+    });
+    it('returns empty array for an empty stream.', async () => {
         const stream = new webStreams.ReadableStream({
             start(controller) {
                 controller.close();
             },
         });
-        expect(status.throwIfError(yield streams.toArray(streams.concatenate([stream])))).toStrictEqual([]);
-    }));
-    it('collects all values from a non-error state stream.', () => __awaiter(void 0, void 0, void 0, function* () {
+        expect(status.throwIfError(await streams.toArray(streams.concatenate([stream])))).toStrictEqual([]);
+    });
+    it('collects all values from a non-error state stream.', async () => {
         const stream = webStreams.ReadableStream.from([100, 200, 300]);
-        expect(status.throwIfError(yield streams.toArray(streams.concatenate([stream])))).toStrictEqual([100, 200, 300]);
-    }));
-    it('collects all values from two non-error state streams.', () => __awaiter(void 0, void 0, void 0, function* () {
+        expect(status.throwIfError(await streams.toArray(streams.concatenate([stream])))).toStrictEqual([100, 200, 300]);
+    });
+    it('collects all values from two non-error state streams.', async () => {
         const firstStream = webStreams.ReadableStream.from([100, 200, 300]);
         const secondStream = webStreams.ReadableStream.from([400, 500, 600]);
-        expect(status.throwIfError(yield streams.toArray(streams.concatenate([firstStream, secondStream])))).toStrictEqual([100, 200, 300, 400, 500, 600]);
-    }));
-    it('drains the streams in order.', () => __awaiter(void 0, void 0, void 0, function* () {
+        expect(status.throwIfError(await streams.toArray(streams.concatenate([firstStream, secondStream])))).toStrictEqual([100, 200, 300, 400, 500, 600]);
+    });
+    it('drains the streams in order.', async () => {
         let firstController;
         const firstStream = new webStreams.ReadableStream({
             start(controller) {
@@ -87,9 +78,9 @@ describe('concatenate', () => {
         firstController.enqueue(300);
         secondController.close();
         firstController.close();
-        expect(status.throwIfError(yield streams.toArray(streams.concatenate([firstStream, secondStream])))).toStrictEqual([100, 200, 300, 400, 500, 600]);
-    }));
-    it('returns an error when a stream errors.', () => __awaiter(void 0, void 0, void 0, function* () {
+        expect(status.throwIfError(await streams.toArray(streams.concatenate([firstStream, secondStream])))).toStrictEqual([100, 200, 300, 400, 500, 600]);
+    });
+    it('returns an error when a stream errors.', async () => {
         const firstStream = webStreams.ReadableStream.from([100, 200]);
         const secondStream = new webStreams.ReadableStream({
             start(controller) {
@@ -97,11 +88,11 @@ describe('concatenate', () => {
                 controller.error(status.fromError('Expected error.'));
             },
         });
-        expect(yield streams.toArray(streams.concatenate([firstStream, secondStream]))).toMatchObject({
+        expect(await streams.toArray(streams.concatenate([firstStream, secondStream]))).toMatchObject({
             error: 'Expected error.',
         });
-    }));
-    it('does not buffer data in the concat stream.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('does not buffer data in the concat stream.', async () => {
         const pull = jest.fn();
         const upstream = new webStreams.ReadableStream({ pull }, new webStreams.CountQueuingStrategy({ highWaterMark: 0 }));
         const merged = streams.concatenate([upstream]);
@@ -110,12 +101,12 @@ describe('concatenate', () => {
         pull.mockImplementationOnce((controller) => {
             controller.enqueue(100);
         });
-        yield mergedReader.read();
+        await mergedReader.read();
         expect(pull).toHaveBeenCalledTimes(1);
         pull.mockImplementationOnce((controller) => {
             controller.close();
         });
-        yield mergedReader.read();
+        await mergedReader.read();
         expect(pull).toHaveBeenCalledTimes(2);
-    }));
+    });
 });

@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.executeNativeSystemCall = void 0;
 const status = __importStar(require("@core/status"));
@@ -54,7 +45,7 @@ const errors = __importStar(require("./errors"));
  *
  * @returns The callback's response or an error if one occured.
  */
-const executeNativeSystemCall = (callback) => status.tryCatchAsync(() => __awaiter(void 0, void 0, void 0, function* () { return callback(); }), (error) => status.fromError(interpretNativeError(error)));
+const executeNativeSystemCall = (callback) => status.tryCatchAsync(async () => callback(), (error) => status.fromError(interpretNativeError(error)));
 exports.executeNativeSystemCall = executeNativeSystemCall;
 const interpretNativeError = (error) => {
     if (typeof error === 'object' &&

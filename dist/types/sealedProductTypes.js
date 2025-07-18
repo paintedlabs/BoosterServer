@@ -40,12 +40,25 @@ function fromExtendedData(product) {
  * Helper function to create a SealedProduct from TCGPlayer CSV data
  */
 function fromTcgCsv(product) {
+    // Safely parse marketPrice (could be string, number, or null)
+    let parsedMarketPrice = null;
+    if (typeof product.marketPrice === 'number') {
+        parsedMarketPrice = product.marketPrice;
+    }
+    else if (typeof product.marketPrice === 'string' &&
+        product.marketPrice !== '') {
+        const num = parseFloat(product.marketPrice.replace(/[^\d.-]/g, '')); // Remove currency symbols etc.
+        if (!isNaN(num)) {
+            parsedMarketPrice = num;
+        }
+    }
     return {
         tcgplayerProductId: product.productId,
         name: product.name,
-        identifiers: {
-            tcgplayerProductId: product.productId.toString(),
-        },
+        tcgMarketPrice: parsedMarketPrice, // Assign the parsed value
+        identifiers: Object.assign({}, (product.tcgplayerProductId && {
+            tcgplayerProductId: product.tcgplayerProductId,
+        })), // Use Partial as not all identifiers are in TcgCsvProduct
     };
 }
 /**

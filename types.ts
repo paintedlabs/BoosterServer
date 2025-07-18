@@ -5,7 +5,7 @@
  * particularly for API request/response structures.
  */
 
-import { CardSet, CombinedCard } from './dataLoader'; // Base card data from MTGJSON and CombinedCard
+import { UnifiedCard } from './src/types/unified/unifiedTypes';
 import * as ScryfallTypes from './index'; // Scryfall card type definitions
 
 // Response structure for the GET /sets endpoint
@@ -18,10 +18,7 @@ export interface SetResponse {
 // Represents a single card within an opened pack response
 export interface OpenedCard {
   sheet: string;
-  card: CombinedCard; // Use the CombinedCard type directly
-  // Removed allPrintingsData and scryfallData
-  // allPrintingsData: CardSet;
-  // scryfallData?: ScryfallTypes.IScryfallCard;
+  card: UnifiedCard;
 }
 
 // Interface for the response when opening a single pack
@@ -118,6 +115,41 @@ export type TcgCsvProduct = {
 
   // An ISO-formatted date string.
   modifiedOn: string;
+
+  // Price information
+  marketPrice: number | null | string;
+  directLowPrice: number | null;
+  avgPrice: number | null;
+  foilPrice: number | null;
+  normalPrice: number | null;
+  etchedPrice: number | null;
+
+  // Additional identifiers
+  tcgplayerProductId?: string;
+  tcgplayerEtchedProductId?: string;
+  cardKingdomId?: string;
+  cardKingdomFoilId?: string;
+  cardKingdomEtchedId?: string;
+  cardsphereId?: string;
+  cardsphereFoilId?: string;
+  cardtraderId?: string;
+  csiId?: string;
+  mcmId?: string;
+  mcmMetaId?: string;
+  miniaturemarketId?: string;
+  mtgArenaId?: string;
+  mtgjsonFoilVersionId?: string;
+  mtgjsonNonFoilVersionId?: string;
+  mtgjsonV4Id?: string;
+  mtgoFoilId?: string;
+  mtgoId?: string;
+  multiverseId?: string;
+  scgId?: string;
+  scryfallId?: string;
+  scryfallCardBackId?: string;
+  scryfallOracleId?: string;
+  scryfallIllustrationId?: string;
+  tntId?: string;
 };
 
 /**

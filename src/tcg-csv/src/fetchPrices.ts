@@ -1,9 +1,9 @@
-import * as net from '@core/net';
-import * as status from '@core/status';
-import * as typiaExtensions from '@extensions/typia';
-
+import * as net from '../../core/net/src';
+import * as status from '../../core/status/src';
+import typia from 'typia';
 import * as types from './types';
 import * as validation from './validation';
+import logger from '../../../logger';
 
 export type FetchPricesOptions = {
   // The category for which all prices will be fetched.
@@ -33,15 +33,15 @@ export const fetchPrices = async (
     | net.UnknownError
     | net.NoContentError
     | net.UnexpectedStatusError
-    | typiaExtensions.JsonParseError
-    | typiaExtensions.ValidationError
+    | SyntaxError
+    | typia.TypeGuardError
+    | Error
   >
 > => {
   const { categoryId, groupId } = options;
+  const url = `https://tcgcsv.com/tcgplayer/${categoryId}/groups/${groupId}/prices`;
 
-  const maybeBody = await net.fetchBody(
-    `https://tcgcsv.com/tcgplayer/${categoryId}/groups/${groupId}/prices`
-  );
+  const maybeBody = await net.fetchBody(url);
   if (!status.isOk(maybeBody)) {
     return maybeBody;
   }
@@ -51,12 +51,27 @@ export const fetchPrices = async (
     const pricesResponse = validation.parsePricesEndpointResponse(body);
     return status.fromValue(pricesResponse.results);
   } catch (e) {
-    if (
-      e instanceof typiaExtensions.JsonParseError ||
-      e instanceof typiaExtensions.ValidationError
-    ) {
+    if (e instanceof typia.TypeGuardError) {
+      logger.error(
+        { error: e },
+        `Typia validation/parse error during fetchPrices for URL: ${url}`
+      );
       return status.fromError(e);
     }
-    throw e;
+    if (e instanceof SyntaxError) {
+      logger.error(
+        { error: e },
+        `JSON Syntax error during fetchPrices for URL: ${url}`
+      );
+      return status.fromError(e);
+    }
+    const errorMessage =
+      e instanceof Error ? e.message : 'Unknown error during fetchPrices';
+    const unknownError = new Error(errorMessage);
+    logger.error(
+      { originalError: e, url },
+      `Unexpected error during fetchPrices`
+    );
+    return status.fromError(unknownError);
   }
 };

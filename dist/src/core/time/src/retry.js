@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.retryUntilSuccessful = exports.doWithRetry = void 0;
 const status = __importStar(require("@core/status"));
@@ -58,17 +49,23 @@ const sleep = __importStar(require("./sleep"));
  * @returns The operation response. It may be an error if `maxRetries` has been
  *   hit and the last recorded operation execution was an error.
  */
-const doWithRetry = (operation, options) => __awaiter(void 0, void 0, void 0, function* () {
-    const optionsWithDefaults = Object.assign({ maxRetries: Infinity, factor: 2, base: { milliseconds: 1000 }, maxTimeout: { milliseconds: Infinity } }, options);
-    let operationResult = yield operation();
+const doWithRetry = async (operation, options) => {
+    const optionsWithDefaults = {
+        maxRetries: Infinity,
+        factor: 2,
+        base: { milliseconds: 1000 },
+        maxTimeout: { milliseconds: Infinity },
+        ...options,
+    };
+    let operationResult = await operation();
     let retries = 0;
     while (!status.isOk(operationResult) &&
         retries < optionsWithDefaults.maxRetries) {
-        yield delay(retries++, optionsWithDefaults);
-        operationResult = yield operation();
+        await delay(retries++, optionsWithDefaults);
+        operationResult = await operation();
     }
     return operationResult;
-});
+};
 exports.doWithRetry = doWithRetry;
 /**
  * Executes the provided operation until it responds with a successful status.
@@ -81,11 +78,13 @@ exports.doWithRetry = doWithRetry;
  *
  * @returns The successful operation response.
  */
-const retryUntilSuccessful = (operation, options) => __awaiter(void 0, void 0, void 0, function* () {
-    // This "throwIfError" should NEVER throw an error because maxRetries is set
-    // to Infinity. We're using it here to forceably unwrap the StatusOr.
-    return status.throwIfError(yield (0, exports.doWithRetry)(operation, Object.assign({ maxRetries: Infinity }, options)));
-});
+const retryUntilSuccessful = async (operation, options) => 
+// This "throwIfError" should NEVER throw an error because maxRetries is set
+// to Infinity. We're using it here to forceably unwrap the StatusOr.
+status.throwIfError(await (0, exports.doWithRetry)(operation, {
+    maxRetries: Infinity,
+    ...options,
+}));
 exports.retryUntilSuccessful = retryUntilSuccessful;
 /**
  * Given a number of retries and retry options, returns a promise which will
@@ -100,9 +99,9 @@ exports.retryUntilSuccessful = retryUntilSuccessful;
  *
  * @returns A promise which will resolve after backoff has been applied.
  */
-const delay = (retries, options) => __awaiter(void 0, void 0, void 0, function* () {
+const delay = async (retries, options) => {
     const exponentialBackoff = duration.toMilliseconds(options.base) * Math.pow(options.factor, retries);
     const withCap = Math.min(duration.toMilliseconds(options.maxTimeout), exponentialBackoff);
     const withFullJitter = Math.random() * withCap;
-    yield sleep.sleep({ milliseconds: withFullJitter });
-});
+    await sleep.sleep({ milliseconds: withFullJitter });
+};

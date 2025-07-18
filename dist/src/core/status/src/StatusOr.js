@@ -18,7 +18,10 @@ const fromValue = (value) => ({
 });
 exports.fromValue = fromValue;
 const fromError = (error, options) => {
-    const optionsWithDefaults = Object.assign({ retriable: false }, (options !== null && options !== void 0 ? options : {}));
+    const optionsWithDefaults = {
+        retriable: false,
+        ...(options ?? {}),
+    };
     const tracebackGetter = createLazyTracebackGetter(exports.fromError);
     return {
         __typename: STATUS_OR_IDENTIFIER,
@@ -59,7 +62,7 @@ before) => {
         return () => error.stack;
     }
     const reader = {};
-    Error.captureStackTrace(reader, before !== null && before !== void 0 ? before : createLazyTracebackGetter);
+    Error.captureStackTrace(reader, before ?? createLazyTracebackGetter);
     return () => reader.stack;
 };
 // For most typeguards we'd just check if the unknown type has the same shape as

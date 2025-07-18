@@ -3,8 +3,8 @@ import {
   SealedProductContents,
   Identifiers,
   PurchaseUrls,
-} from './mtgjsonTypes';
-import { TcgCsvProduct } from './tcgCsvTypes';
+} from '../mtgjson/mtgjsonTypes';
+import { TcgCsvProduct } from '../tcgcsv/tcgCsvTypes';
 
 /**
  * Represents a comprehensive sealed product that combines data from:
@@ -56,12 +56,20 @@ export interface SealedProduct {
 export interface BoosterSheet {
   totalWeight: number;
   balanceColors?: boolean;
-  foil: boolean;
+  foil?: boolean;
   fixed?: boolean;
   cards: Array<{
     uuid: string;
     weight: number;
   }>;
+}
+
+export interface SealedProductCard {
+  uuid: string;
+  name: string;
+  number: string;
+  set: string;
+  foil: boolean;
 }
 
 /**
@@ -116,12 +124,31 @@ export function fromExtendedData(product: {
  * Helper function to create a SealedProduct from TCGPlayer CSV data
  */
 export function fromTcgCsv(product: TcgCsvProduct): Partial<SealedProduct> {
+  // Safely parse marketPrice (could be string, number, or null)
+  let parsedMarketPrice: number | null = null;
+  if (typeof product.marketPrice === 'number') {
+    parsedMarketPrice = product.marketPrice;
+  } else if (
+    typeof product.marketPrice === 'string' &&
+    product.marketPrice !== ''
+  ) {
+    const num = parseFloat(product.marketPrice.replace(/[^\d.-]/g, '')); // Remove currency symbols etc.
+    if (!isNaN(num)) {
+      parsedMarketPrice = num;
+    }
+  }
+
   return {
     tcgplayerProductId: product.productId,
     name: product.name,
+    tcgMarketPrice: parsedMarketPrice, // Assign the parsed value
     identifiers: {
-      tcgplayerProductId: product.productId.toString(),
-    },
+      // Assuming identifiers should only contain defined values from TCG CSV
+      ...(product.tcgplayerProductId && {
+        tcgplayerProductId: product.tcgplayerProductId,
+      }),
+      // Add other identifiers from TcgCsvProduct if needed
+    } as Partial<Identifiers>, // Use Partial as not all identifiers are in TcgCsvProduct
   };
 }
 

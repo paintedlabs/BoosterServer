@@ -13,7 +13,7 @@ export interface IScryfallCatalog extends IScryfallObject {
   object: 'catalog';
 
   /**
-   * A link to the current catalog on Scryfall’s API.
+   * A link to the current catalog on Scryfall's API.
    */
   uri: string;
 

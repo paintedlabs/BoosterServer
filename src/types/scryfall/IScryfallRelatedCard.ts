@@ -12,7 +12,7 @@ export interface IScryfallRelatedCard extends IScryfallObject {
   object: 'related_card';
 
   /**
-   * An unique ID for this card in Scryfall’s database.
+   * An unique ID for this card in Scryfall's database.
    */
   id: string;
 
@@ -33,7 +33,7 @@ export interface IScryfallRelatedCard extends IScryfallObject {
 
   /**
    * A URI where you can retrieve a full object describing this card on
-   * Scryfall’s API.
+   * Scryfall's API.
    */
   uri: string;
 }

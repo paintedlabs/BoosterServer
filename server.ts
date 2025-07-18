@@ -7,12 +7,6 @@
  *   3) Ensures the Scryfall "all_cards" file is downloaded
  *   4) Uses stream-json to parse only the needed Scryfall cards
  *   5) Merges AllPrintings + Scryfall
- *   6) Exposes:
- *       GET /sets
- *       GET /sets/:setCode/products
- *       POST /products/:productCode/open
- *
- *   The /open endpoint returns merged data for each card.
  */
 
 // Load environment variables first!
@@ -37,11 +31,34 @@ import { resolvers } from './graphql/resolvers'; // Import GraphQL resolvers
 import { loadAllData, LoadedData } from './dataLoader'; // Correct import
 import * as boosterService from './boosterService'; // Correct import
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
+import { UnifiedData } from './src/types/unified/unifiedTypes'; // Import UnifiedData
 
-// Define the context type for Apollo Server
+/// Hypothetical Data Source class/type (adjust if actual implementation differs)
+// Needs to be imported or defined
+class MtgJsonApiDataSource {
+  private loadedData: LoadedData;
+  constructor(data: LoadedData) {
+    // Ensure data is not null before assigning
+    if (!data || !data.allPrintings) {
+      throw new Error(
+        'Cannot initialize MtgJsonApiDataSource with null loadedData or allPrintings'
+      );
+    }
+    this.loadedData = data;
+  }
+  async getLoadedData(): Promise<LoadedData> {
+    return this.loadedData;
+  }
+  // Add other methods if your data source class has them
+}
+
+// Define the context type for Apollo Server including dataSources
 interface AppContext {
-  loadedData: LoadedData;
+  loadedData: LoadedData; // Keep direct access if needed elsewhere
   boosterService: typeof boosterService;
+  dataSources: {
+    mtgjsonAPI: MtgJsonApiDataSource;
+  };
 }
 
 // -------------- CONFIG CONSTANTS --------------
@@ -53,10 +70,12 @@ const app = express();
 const httpServer = http.createServer(app);
 
 // -------------- CORS CONFIGURATION --------------
+const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
 app.use(
   cors({
-    origin: '*', // TODO: Restrict in production
+    origin: FRONTEND_URL,
     methods: ['GET', 'POST'],
+    credentials: true,
   })
 );
 
@@ -90,18 +109,36 @@ async function main() {
     logger.info('Data loading complete.');
     if (
       !loadedData ||
-      !loadedData.allPrintings ||
-      !loadedData.extendedDataArray ||
-      !loadedData.combinedCards
+      !loadedData.allPrintings // Critical check before creating data source
+      // !loadedData.extendedDataArray || // Keep other checks if needed
+      // !loadedData.combinedCards
     ) {
-      logger.fatal('Essential data structures failed to load.');
-      throw new Error('Essential data structures failed to load.');
+      logger.fatal(
+        'Essential data structures (esp. allPrintings) failed to load.'
+      );
+      throw new Error(
+        'Essential data structures (esp. allPrintings) failed to load.'
+      );
     }
+
+    // At this point, loadedData and loadedData.allPrintings are guaranteed non-null
+    const nonNullLoadedData = loadedData as LoadedData & {
+      allPrintings: UnifiedData;
+    };
+
+    // Instantiate data sources AFTER data is loaded and verified
+    const mtgjsonAPI = new MtgJsonApiDataSource(nonNullLoadedData);
+
+    // Create context data object containing everything needed, use nonNull version for consistency?
+    const contextData = {
+      loadedData: nonNullLoadedData,
+      boosterService,
+      dataSources: { mtgjsonAPI },
+    };
 
     // 2. Initialize Image Cache Service (registers image routes)
     // Image routes remain RESTful for now, could be moved to GraphQL later if desired
-    const contextData = { loadedData, boosterService };
-    initializeImageCacheService(app, contextData.loadedData);
+    initializeImageCacheService(app, nonNullLoadedData);
 
     // 3. Mount API Routers
     // REST API routes removed, setting up GraphQL endpoint
@@ -118,15 +155,12 @@ async function main() {
     // GraphQL endpoint setup
     await server.start();
 
-    // Apply Apollo middleware to Express app at /graphql endpoint
-    // Pass loadedData into the context for resolvers
+    // Apply Apollo middleware, passing the full contextData
     app.use(
       '/graphql',
       expressMiddleware(server, {
-        context: async () => ({
-          loadedData: contextData.loadedData,
-          boosterService: contextData.boosterService,
-        }),
+        // Pass the contextData object which now holds nonNullLoadedData
+        context: async () => contextData,
       })
     );
 

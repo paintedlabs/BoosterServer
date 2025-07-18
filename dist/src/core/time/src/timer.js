@@ -38,7 +38,10 @@ const typesafety = __importStar(require("@core/typesafety"));
 const duration = __importStar(require("./duration"));
 const sleep = __importStar(require("./sleep"));
 const createTimer = (options) => {
-    const optionsWithDefaults = Object.assign({ autoStart: true }, options);
+    const optionsWithDefaults = {
+        autoStart: true,
+        ...options,
+    };
     const eventBus = typesafety.createEventBus();
     let cancelled = false;
     let state = {
@@ -89,7 +92,7 @@ const createTimer = (options) => {
             running: false,
             remaining: optionsWithDefaults.duration,
         };
-        if (autoStart !== null && autoStart !== void 0 ? autoStart : true) {
+        if (autoStart ?? true) {
             start();
         }
         eventBus.emitter.emit('reset');

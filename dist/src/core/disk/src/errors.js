@@ -22,5 +22,8 @@ var SystemErrorCode;
     SystemErrorCode["ENOTEMPTY"] = "ENOTEMPTY";
     SystemErrorCode["EPERM"] = "EPERM";
 })(SystemErrorCode || (exports.SystemErrorCode = SystemErrorCode = {}));
-const createSystemError = (details) => (Object.assign({ type: ErrorType.SYSTEM }, details));
+const createSystemError = (details) => ({
+    type: ErrorType.SYSTEM,
+    ...details,
+});
 exports.createSystemError = createSystemError;

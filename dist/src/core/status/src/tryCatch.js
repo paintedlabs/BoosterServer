@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fromNativeError = exports.toNativeError = exports.throwIfError = exports.tryCatchAsync = exports.tryCatch = void 0;
 const statusOr = __importStar(require("./StatusOr"));
@@ -87,14 +78,14 @@ exports.tryCatch = tryCatch;
  *
  * @returns The return type of the lambda wrapped as a StatusOr.
  */
-const tryCatchAsync = (wrapped, errorMessageFactory) => __awaiter(void 0, void 0, void 0, function* () {
+const tryCatchAsync = async (wrapped, errorMessageFactory) => {
     try {
-        return statusOr.fromValue(yield wrapped());
+        return statusOr.fromValue(await wrapped());
     }
     catch (errorObject) {
         return errorMessageFactory(errorObject);
     }
-});
+};
 exports.tryCatchAsync = tryCatchAsync;
 /**
  * Unwraps a StatusOr for an environment where StatusOr is not supported.
@@ -177,7 +168,7 @@ constructor) => {
     // 1. Influence the first few lines of the error reporting to correctly show
     //    where the error was created by eliding status internal methods.
     if (Error.captureStackTrace != null) {
-        Error.captureStackTrace(nativeError, constructor !== null && constructor !== void 0 ? constructor : exports.toNativeError);
+        Error.captureStackTrace(nativeError, constructor ?? exports.toNativeError);
     }
     // 2. Influence the remainder of error reporting to show the ErrorStatusOr's
     //    stacktrace.
@@ -187,14 +178,13 @@ constructor) => {
     // onto the native error.
     Object.defineProperty(nativeError, 'stack', {
         get() {
-            var _a;
             // Error logging in node specifically is slightly strange. While the
             // browser will source the error message from `Error.message`, node
             // sources that information from the stacktrace. Unfortunately, our
             // stacktraces are created without a message context as the message may be
             // rewritten. Therefore to accomodate node, we inject our message content
             // into the stacktrace dynamically.
-            return (_a = errorStatusOr.traceback) === null || _a === void 0 ? void 0 : _a.replace(/^Error\n/, `Error: ${nativeError.message}\n`);
+            return errorStatusOr.traceback?.replace(/^Error\n/, `Error: ${nativeError.message}\n`);
         },
         configurable: true,
         enumerable: true,

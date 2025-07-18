@@ -190,7 +190,7 @@ export interface IScryfallCardGameplayFields {
   oversized: boolean;
 
   /**
-   * This card’s rank/popularity on Penny Dreadful. Not all cards are ranked.
+   * This card's rank/popularity on Penny Dreadful. Not all cards are ranked.
    */
   penny_rank?: number | null;
 
@@ -476,13 +476,16 @@ export interface IScryfallCardPrintFields {
 }
 
 /**
- * Card objects represent individual Magic: The Gathering cards that players
- * could obtain and add to their collection (with a few minor exceptions).
+ * Represents a card object as returned by the Scryfall API.
+ * @see {@link https://scryfall.com/docs/api/cards}
  */
 export interface IScryfallCard
   extends IScryfallObject,
     IScryfallCardCoreFields,
     IScryfallCardGameplayFields,
     IScryfallCardPrintFields {
+  /**
+   * @inheritDoc
+   */
   object: 'card';
 }

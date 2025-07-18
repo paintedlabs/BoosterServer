@@ -20,12 +20,12 @@ export interface IScryfallCardFace extends IScryfallObject {
   cmc?: number | null;
 
   /**
-   * The colors in this face’s color indicator, if any.
+   * The colors in this face's color indicator, if any.
    */
   color_indicator?: Array<IScryfallColor> | null;
 
   /**
-   * This face’s colors, if the game defines colors for the individual face of
+   * This face's colors, if the game defines colors for the individual face of
    * this card.
    */
   colors?: Array<IScryfallColor> | null;

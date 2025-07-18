@@ -13,17 +13,58 @@ import * as unzipper from 'unzipper';
 import { pipeline } from 'stream/promises';
 import type * as stream from 'stream'; // For ReadableStream type
 import { chain } from 'stream-chain';
-import { parser } from 'stream-json';
+import { parser as jsonParser } from 'stream-json';
 import { streamArray } from 'stream-json/streamers/StreamArray';
 import logger from './logger'; // Import the logger
 import * as ScryfallTypes from './index'; // Assuming index.ts defines Scryfall card types
 import * as TcgCsvService from './tcgCsvService';
-import * as TcgCsvTypes from './types';
+import { TcgCsvProduct } from './types';
 import { StatusOr, isOk } from './src/core/status/src'; // Import StatusOr helpers
+import {
+  UnifiedCard,
+  UnifiedSet,
+  UnifiedSealedProduct,
+  UnifiedData,
+  UnifiedSealedProductCard,
+  UnifiedSealedProductContents,
+  BoosterConfig,
+  BoosterSheet,
+  PriceInfo,
+  TCGPlayerData,
+  PurchaseUrls,
+  Identifiers,
+  Legalities,
+  LeadershipSkills,
+  ImageUris,
+} from './src/types/unified/unifiedTypes';
+import {
+  SealedProductContents as MtgjsonSealedProductContents,
+  SealedProductCard as MtgjsonSealedProductCard,
+  SealedProduct as MtgjsonSealedProduct,
+  MTGSet,
+  BoosterConfig as MtgjsonBoosterConfig,
+  BoosterSheet as MtgjsonBoosterSheet,
+  CardAtomic,
+  CardSet,
+  Identifiers as MtgjsonIdentifiers,
+  PurchaseUrls as MtgjsonPurchaseUrls,
+} from './src/types/mtgjson/mtgjsonTypes';
+import {
+  ExtendedSealedData,
+  ExtendedBooster,
+  ExtendedSealedDataFile,
+  ExtendedSheet,
+  ExtendedSheetCard,
+} from './src/types/extendedsealed/extendedSealedTypes';
+import {
+  SealedProduct,
+  SealedProductCard,
+} from './src/types/sealed/sealedProductTypes';
+import { IScryfallCard } from './src/types/scryfall/IScryfallCard';
 
 // -------------- CONFIG CONSTANTS --------------
 // Read configuration from environment variables with defaults
-const DATA_DIR = process.env.DATA_DIR || 'data';
+const DATA_DIR = process.env.DATA_DIR || 'data'; // Data directory
 
 // URLs to fetch if local files are missing
 const ALL_PRINTINGS_ZIP_URL =
@@ -39,100 +80,39 @@ const ALL_PRINTINGS_PATH = path.join(DATA_DIR, 'AllPrintings.json');
 const EXTENDED_DATA_PATH = path.join(DATA_DIR, 'sealed_extended_data.json');
 const SCRYFALL_DATA_PATH = path.join(DATA_DIR, 'scryfall_all_cards.json');
 
+// Add new constant for booster configurations directory
+const BOOSTERS_DIR = path.join(DATA_DIR, 'boosters');
+
 // -------------- INTERFACES --------------
 
-// Interfaces from AllPrintings.json structure
-export interface AllPrintings {
-  meta: Meta;
-  data: Record<string, MTGSet>;
-}
-interface Meta {
-  version: string;
-  date: string;
-}
-
-export interface MTGSet {
-  baseSetSize: number;
-  code: string;
-  name: string;
-  releaseDate: string;
-  cards: CardSet[];
-  tcgplayerGroupId?: number; // Added TCGPlayer Group ID
-  // Add other MTGSet properties if needed
-}
-
-export interface CardSet {
-  uuid: string;
-  name: string;
-  rarity: string;
-  identifiers?: {
-    scryfallId?: string;
-    tcgplayerProductId?: string; // Explicitly add TCGPlayer ID
-    [key: string]: any; // Keep other identifiers if necessary
-  };
-  // Add other CardSet properties if needed
-}
-
-// Interfaces from sealed_extended_data.json structure
-
 // Represents the raw sheet structure found in the JSON file
-interface RawExtendedSheet {
-  total_weight: number;
-  // Cards are an array of objects, each containing uuid, weight, and potentially other info
-  cards: Array<{ uuid: string; weight: number; [key: string]: any }>;
-}
-
-// Represents the processed sheet card structure used for picking
-export interface ExtendedSheetCard {
-  // Renamed from ProcessedSheetCard
-  uuid: string;
-  weight: number;
-}
-
-// Represents the processed sheet structure used after loading
-export interface ExtendedSheet {
-  total_weight: number;
-  balance_colors: boolean;
+interface RawBoosterSheet {
+  totalWeight: number;
+  balanceColors: boolean;
   foil: boolean;
-  cards: ExtendedSheetCard[]; // Uses the processed card structure
-}
-
-// ExtendedSealedData now uses the *processed* sheet structure definition
-// as this is what the application logic expects after loadAndProcessExtendedData runs.
-export interface ExtendedSealedData {
-  name: string;
-  code: string;
-  set_code: string;
-  set_name: string;
-  boosters: ExtendedBooster[];
-  sheets: Record<string, ExtendedSheet>; // <-- Uses the processed ExtendedSheet type
-  source_set_codes: string[];
-  tcgplayerProductId?: number; // Add TCGPlayer ID for sealed products
-  tcgMarketPrice?: number | null; // Ensure nullable
-}
-
-export interface ExtendedBooster {
-  sheets: Record<string, number>; // Sheet Name -> Count
-  weight: number;
-}
-
-// Removed ProcessedSheet and ProcessedSheetCard as they were renamed
-
-// Combined Card Data structure (AllPrintings + Scryfall + TCG CSV Price)
-export interface CombinedCard {
-  allPrintingsData: CardSet;
-  scryfallData?: ScryfallTypes.IScryfallCard; // Using interface from index.ts
-  // Replace generic price with specific Normal/Foil prices from TCG CSV
-  tcgNormalMarketPrice?: number | null;
-  tcgFoilMarketPrice?: number | null;
-  // tcgMarketPrice?: number; // Removed generic price field
+  fixed: boolean;
+  cards: Array<{
+    uuid: string;
+    weight: number;
+  }>;
 }
 
 // Structure returned by loadAllData
 export interface LoadedData {
-  allPrintings: AllPrintings | null;
+  allPrintings: UnifiedData | null;
   extendedDataArray: ExtendedSealedData[];
-  combinedCards: Record<string, CombinedCard>; // MTGJson UUID -> CombinedCard
+  combinedCards: Record<string, UnifiedCard>;
+  sealedProducts: Record<string, UnifiedSealedProduct>;
+  codeToUuidMap: Record<string, string>;
+  sets: UnifiedSet[];
+}
+
+interface AllPrintingsFile {
+  data: Record<string, MTGSet>;
+  meta: {
+    date: string;
+    version: string;
+  };
 }
 
 // -------------- HELPER FUNCTIONS: FILE ENSURE & LOAD --------------
@@ -322,11 +302,11 @@ async function ensureScryfallAllCards(localPath: string): Promise<void> {
 
 // -------------- HELPER FUNCTIONS: LOAD INTO MEMORY --------------
 
-function loadAllPrintings(filePath: string): AllPrintings | null {
+function loadAllPrintings(filePath: string): AllPrintingsFile | null {
   logger.info(`Loading AllPrintings from ${filePath}...`);
   try {
     const raw = fs.readFileSync(filePath, 'utf-8');
-    const parsed = JSON.parse(raw) as AllPrintings;
+    const parsed = JSON.parse(raw) as AllPrintingsFile;
     logger.info(
       `Successfully loaded AllPrintings version ${parsed.meta.version} (${parsed.meta.date}). Found ${Object.keys(parsed.data).length} sets.`
     );
@@ -340,6 +320,50 @@ function loadAllPrintings(filePath: string): AllPrintings | null {
   }
 }
 
+// Helper function to calculate total weight from cards
+function calculateTotalWeight(cards: Array<{ weight: number }>): number {
+  return cards.reduce((sum, card) => sum + card.weight, 0);
+}
+
+// Process a raw sheet into the expected format
+function processRawSheet(sheet: MtgjsonBoosterSheet): BoosterSheet {
+  return {
+    totalWeight: sheet.totalWeight,
+    balanceColors: sheet.balanceColors || false,
+    foil: sheet.foil || false,
+    fixed: sheet.fixed || false,
+    cards: Object.entries(sheet.cards).map(([uuid, weight]) => ({
+      uuid,
+      weight: Number(weight),
+    })),
+  };
+}
+
+// Helper function to validate and fix sheet weights
+function validateAndFixSheetWeights(sheet: RawBoosterSheet): RawBoosterSheet {
+  const calculatedWeight = sheet.cards.reduce(
+    (sum, card) => sum + card.weight,
+    0
+  );
+
+  if (calculatedWeight !== sheet.totalWeight) {
+    // logger.info(
+    //   {
+    //     expected: sheet.totalWeight,
+    //     calculated: calculatedWeight,
+    //   },
+    //   `Fixing sheet totalWeight mismatch`
+    // );
+
+    return {
+      ...sheet,
+      totalWeight: calculatedWeight,
+    };
+  }
+
+  return sheet;
+}
+
 /**
  * Loads the extended sealed data and processes the sheets
  * from the { uuid: weight } format to the [{ uuid, weight }, ...] format.
@@ -349,89 +373,104 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
   logger.info(`Loading Extended Sealed Data from ${filePath}...`);
   try {
     const raw = fs.readFileSync(filePath, 'utf-8');
-    // Parse initially assuming the raw structure might be slightly different
-    // if the source JSON structure is strictly typed, use that type here.
     const dataArray: any[] = JSON.parse(raw);
     const processedDataArray: ExtendedSealedData[] = [];
+
+    logger.debug(
+      {
+        filePath,
+        productCount: dataArray.length,
+        sampleProduct: dataArray[0]
+          ? {
+              uuid: dataArray[0].uuid,
+              name: dataArray[0].name,
+              hasBoosters: !!dataArray[0].boosters,
+              boosterCount: dataArray[0].boosters?.length,
+              hasSheets: !!dataArray[0].sheets,
+              sheetCount: Object.keys(dataArray[0].sheets || {}).length,
+            }
+          : null,
+      },
+      'Loaded raw extended data'
+    );
 
     // Process sheets for easier weighted random selection
     for (const product of dataArray) {
       // Create a new object conforming to ExtendedSealedData
       const processedProduct: ExtendedSealedData = {
-        ...product, // Copy existing properties
+        ...product, // Copy existing properties including boosters
         sheets: {}, // Initialize sheets to be filled with processed ones
       };
-      const processedSheets: Record<string, ExtendedSheet> = {}; // Use the final type
 
-      // Ensure product.sheets exists and is an object
-      if (product.sheets && typeof product.sheets === 'object') {
-        for (const sheetName in product.sheets) {
-          // Use 'any' temporarily for the raw sheet to handle variability before validation
-          const originalSheetData: any = product.sheets[sheetName];
-          // Basic validation of the original sheet structure
-          if (
-            !originalSheetData ||
-            !Array.isArray(originalSheetData.cards) ||
-            typeof originalSheetData.total_weight !== 'number'
-          ) {
-            logger.warn(
-              { productCode: product.code, sheetName },
-              `Skipping invalid raw sheet data structure`
-            );
-            continue;
-          }
-          // Cast to RawExtendedSheet now that basic structure seems okay
-          const originalSheet = originalSheetData as RawExtendedSheet;
+      logger.debug(
+        {
+          productUuid: product.uuid,
+          productName: product.name,
+          hasBoosters: !!product.boosters,
+          boosterCount: product.boosters?.length,
+          hasSheets: !!product.sheets,
+          sheetCount: Object.keys(product.sheets || {}).length,
+          boosterDetails: product.boosters?.map((b: ExtendedBooster) => ({
+            weight: b.weight,
+            sheetCount: Object.keys(b.sheets || {}).length,
+          })),
+        },
+        'Processing product'
+      );
 
-          const processedCards: ExtendedSheetCard[] = []; // Use the final type
+      const processedSheets: Record<string, ExtendedSheet> = {};
+      // Process each sheet in the product
+      if (product.sheets) {
+        for (const [sheetName, sheetData] of Object.entries(product.sheets)) {
+          const originalSheet = sheetData as {
+            cards: Record<string, number>;
+            totalWeight: number;
+            balanceColors?: boolean;
+            foil?: boolean;
+            fixed?: boolean;
+          };
+
+          // Convert the sheet's card data from { uuid: weight } to [{ uuid, weight }, ...]
+          const processedCards: ExtendedSheetCard[] = [];
           let calculatedTotalWeight = 0;
-          // Iterate through the array of card objects
-          for (const cardObject of originalSheet.cards) {
-            // Validate the structure of the card object within the array
-            if (
-              typeof cardObject !== 'object' ||
-              cardObject === null ||
-              typeof cardObject.uuid !== 'string' ||
-              typeof cardObject.weight !== 'number'
-            ) {
-              logger.warn(
-                { productCode: product.code, sheetName, cardObject },
-                `Skipping card object with invalid structure within sheet array`
-              );
-              continue;
-            }
 
-            const uuid = cardObject.uuid;
-            const weight = cardObject.weight;
-
-            // Ensure extracted weight is positive
-            if (weight > 0) {
-              processedCards.push({ uuid, weight });
-              calculatedTotalWeight += weight;
+          if (originalSheet.cards) {
+            for (const [cardUuid, weight] of Object.entries(
+              originalSheet.cards
+            )) {
+              if (weight > 0) {
+                processedCards.push({
+                  uuid: cardUuid,
+                  weight: weight,
+                });
+                calculatedTotalWeight += weight;
+              }
             }
           }
 
-          // Validate calculated weight matches the provided total_weight
-          if (calculatedTotalWeight !== originalSheet.total_weight) {
+          // Validate calculated weight matches the provided totalWeight
+          if (calculatedTotalWeight !== originalSheet.totalWeight) {
             // Log mismatch only if calculated > 0; if 0, previous warnings cover it.
             if (calculatedTotalWeight > 0) {
               logger.warn(
                 {
                   productCode: product.code,
                   sheetName,
-                  expected: originalSheet.total_weight,
+                  expected: originalSheet.totalWeight,
                   calculated: calculatedTotalWeight,
                 },
-                `Mismatch in sheet total_weight. Using calculated weight.`
+                `Mismatch in sheet totalWeight. Using calculated weight.`
               );
             }
           }
+
           // Only add sheet if it has cards and positive weight
           if (processedCards.length > 0 && calculatedTotalWeight > 0) {
             processedSheets[sheetName] = {
-              total_weight: calculatedTotalWeight, // Use calculated weight for safety
-              balance_colors: false,
-              foil: false,
+              totalWeight: calculatedTotalWeight, // Use calculated weight for safety
+              balanceColors: originalSheet.balanceColors || false,
+              foil: originalSheet.foil || false,
+              fixed: originalSheet.fixed || false,
               cards: processedCards,
             };
           } else {
@@ -447,14 +486,54 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
           }
         }
       }
+
       // Assign the processed sheets to the new product object
       processedProduct.sheets = processedSheets;
+
+      logger.debug(
+        {
+          productUuid: product.uuid,
+          productName: product.name,
+          hasBoosters: !!processedProduct.boosters,
+          boosterCount: processedProduct.boosters?.length,
+          hasSheets: !!processedProduct.sheets,
+          sheetCount: Object.keys(processedProduct.sheets || {}).length,
+          sheetDetails: Object.entries(processedProduct.sheets).map(
+            ([name, sheet]) => ({
+              name,
+              cardCount: sheet.cards.length,
+              totalWeight: sheet.totalWeight,
+              balanceColors: sheet.balanceColors,
+              foil: sheet.foil,
+              fixed: sheet.fixed,
+            })
+          ),
+          boosterDetails: processedProduct.boosters?.map(
+            (b: ExtendedBooster) => ({
+              weight: b.weight,
+              sheetCount: Object.keys(b.sheets || {}).length,
+            })
+          ),
+        },
+        'Processed product'
+      );
+
       processedDataArray.push(processedProduct);
     }
 
     logger.info(
-      `Successfully loaded and processed ${processedDataArray.length} sealed product definitions.`
+      {
+        productCount: processedDataArray.length,
+        productsWithBoosters: processedDataArray.filter(
+          (p) => p.boosters?.length > 0
+        ).length,
+        productsWithSheets: processedDataArray.filter(
+          (p) => Object.keys(p.sheets || {}).length > 0
+        ).length,
+      },
+      'Successfully loaded and processed sealed product definitions'
     );
+
     return processedDataArray;
   } catch (err) {
     logger.error(
@@ -472,7 +551,7 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
 async function loadScryfallAllCardsStreamed(
   filePath: string,
   neededScryfallIds: Set<string>
-): Promise<Record<string, ScryfallTypes.IScryfallCard>> {
+): Promise<Record<string, IScryfallCard>> {
   if (neededScryfallIds.size === 0) {
     logger.warn(
       'No Scryfall IDs were identified as needed. Skipping Scryfall load.'
@@ -484,13 +563,13 @@ async function loadScryfallAllCardsStreamed(
     `Streaming parse of Scryfall data from ${filePath}. Looking for ${neededScryfallIds.size} specific card IDs.`
   );
 
-  const scryfallMap: Record<string, ScryfallTypes.IScryfallCard> = {};
+  const scryfallMap: Record<string, IScryfallCard> = {};
   let processedCount = 0;
   const startTime = Date.now();
 
   const pipelineStream = chain([
     fs.createReadStream(filePath),
-    parser({ jsonStreaming: true }),
+    jsonParser({ jsonStreaming: true }),
     streamArray(),
   ]);
 
@@ -498,7 +577,7 @@ async function loadScryfallAllCardsStreamed(
     logger.debug('Starting Scryfall stream processing loop...'); // Log before loop
     for await (const chunk of pipelineStream) {
       processedCount++;
-      const card = chunk.value as ScryfallTypes.IScryfallCard;
+      const card = chunk.value as IScryfallCard;
 
       // Basic validation of card object
       if (card && typeof card === 'object' && card.id) {
@@ -560,314 +639,1214 @@ async function loadScryfallAllCardsStreamed(
   return scryfallMap;
 }
 
-// -------------- HELPER FUNCTION: MERGING --------------
+// -------------- HELPER FUNCTION: MERGING & CONVERSION --------------
 
-/**
- * Builds the combinedCards map by:
- * 1. Identifying all unique Scryfall IDs needed from AllPrintings.
- * 2. Loading the required Scryfall card data using the streaming parser.
- * 3. Merging the AllPrintings card data with the corresponding Scryfall data.
- */
-async function buildCombinedCards(
-  allPrintings: AllPrintings,
-  scryfallFilePath: string
-): Promise<Record<string, CombinedCard>> {
-  logger.info('Starting combined card data build...');
-  const combinedCardsMap: Record<string, CombinedCard> = {};
+// Helper: Convert MTGJSON SealedProductContents to UnifiedSealedProductContents
+function convertMtgjsonContentsToUnified(
+  mtgjsonContents: MtgjsonSealedProductContents
+): UnifiedSealedProductContents {
+  const convertCard = (
+    card: NonNullable<MtgjsonSealedProductContents['card']>[0]
+  ): UnifiedSealedProductCard => ({
+    foil: card.foil || false,
+    name: card.name,
+    number: card.number || '',
+    set: card.set || '',
+    uuid: card.uuid,
+  });
 
-  // 1. Collect needed Scryfall IDs from AllPrintings
-  const neededScryfallIds = new Set<string>();
-  let allPrintingsCardCount = 0;
-  for (const setCode of Object.keys(allPrintings.data)) {
-    const setObj = allPrintings.data[setCode];
-    if (setObj?.cards) {
-      for (const card of setObj.cards) {
-        allPrintingsCardCount++;
-        const scryId = card.identifiers?.scryfallId;
-        if (scryId) {
-          neededScryfallIds.add(scryId);
-        }
-      }
-    }
-  }
-  logger.info(
-    `Collected ${neededScryfallIds.size} unique Scryfall IDs from ${allPrintingsCardCount} card printings in AllPrintings.`
-  );
-
-  // 2. Load Scryfall data for needed IDs
-  logger.info('Calling loadScryfallAllCardsStreamed...'); // Log before await
-  const scryfallMap = await loadScryfallAllCardsStreamed(
-    scryfallFilePath,
-    neededScryfallIds
-  );
-  logger.info('Returned from loadScryfallAllCardsStreamed.'); // Log after await
-
-  // 3. Merge AllPrintings and Scryfall data
-  let mergedCount = 0;
-  let missingScryfallCount = 0;
-  for (const setCode of Object.keys(allPrintings.data)) {
-    const setObj = allPrintings.data[setCode];
-    if (setObj?.cards) {
-      for (const card of setObj.cards) {
-        const scryId = card.identifiers?.scryfallId;
-        const scryData = scryId ? scryfallMap[scryId] : undefined;
-
-        if (scryId && !scryData) {
-          missingScryfallCount++;
-          // Log only once per missing ID if needed
-          // logger.warn({ scryfallId: scryId, cardName: card.name, setCode }, `Scryfall data missing for printing`);
-        }
-
-        // Store combined data using the MTGJSON UUID as the key
-        combinedCardsMap[card.uuid] = {
-          allPrintingsData: card,
-          scryfallData: scryData, // Will be undefined if scryId was missing or not found
-          // Initialize price fields to null - they will be populated later
-          tcgNormalMarketPrice: null,
-          tcgFoilMarketPrice: null,
-        };
-        mergedCount++;
-      }
-    }
-  }
-  logger.info(`Built combined data for ${mergedCount} card printings.`);
-  if (missingScryfallCount > 0) {
-    logger.warn(
-      `Note: Scryfall data was not found for ${missingScryfallCount} printings (affecting ${neededScryfallIds.size - Object.keys(scryfallMap).length} unique card IDs).`
-    );
-  }
-
-  return combinedCardsMap;
+  return {
+    card: mtgjsonContents.card?.map(convertCard) || [],
+    deck:
+      mtgjsonContents.deck?.map((deck) => ({
+        name: deck.name || '',
+        set: deck.set || '',
+      })) || [],
+    other:
+      mtgjsonContents.other?.map((other) => ({ name: other.name || '' })) || [],
+    pack:
+      mtgjsonContents.pack?.map((pack) => ({
+        code: pack.code || '',
+        set: pack.set || '',
+      })) || [],
+    sealed:
+      mtgjsonContents.sealed?.map((sealed) => ({
+        count: sealed.count || 0,
+        name: sealed.name || '',
+        set: sealed.set || '',
+        uuid: sealed.uuid || '',
+      })) || [],
+    variable:
+      mtgjsonContents.variable?.map((variable) => ({
+        configs: variable.configs?.map(convertMtgjsonContentsToUnified) || [],
+      })) || [],
+  };
 }
 
-// -------------- HELPER FUNCTION: TCG CSV PRICE FETCHING --------------
+// Helper: Convert Mtgjson.Identifiers to Unified.Identifiers
+function convertMtgjsonIdentifiersToUnified(
+  ids?: MtgjsonIdentifiers
+): Identifiers {
+  return {
+    mtgjsonV4Id: ids?.mtgjsonV4Id || '',
+    mtgjsonFoilVersionId: ids?.mtgjsonFoilVersionId || '',
+    mtgjsonNonFoilVersionId: ids?.mtgjsonNonFoilVersionId || '',
+    scryfallId: ids?.scryfallId || '',
+    scryfallOracleId: ids?.scryfallOracleId || '',
+    scryfallIllustrationId: ids?.scryfallIllustrationId || '',
+    scryfallCardBackId: ids?.scryfallCardBackId || '',
+    tcgplayerProductId: ids?.tcgplayerProductId || '',
+    tcgplayerEtchedProductId: ids?.tcgplayerEtchedProductId || '',
+    cardKingdomId: ids?.cardKingdomId || '',
+    cardKingdomFoilId: ids?.cardKingdomFoilId || '',
+    cardKingdomEtchedId: ids?.cardKingdomEtchedId || '',
+    cardsphereId: ids?.cardsphereId || '',
+    cardsphereFoilId: ids?.cardsphereFoilId || '',
+    cardtraderId: ids?.cardtraderId || '',
+    mcmId: ids?.mcmId || '',
+    mcmMetaId: ids?.mcmMetaId || '',
+    mtgoId: ids?.mtgoId || '',
+    mtgoFoilId: ids?.mtgoFoilId || '',
+    multiverseId: ids?.multiverseId || '',
+  };
+}
 
-/**
- * Fetches TCGPlayer group, product, and price data and applies market prices
- * to the provided combinedCardsMap and extendedDataArray.
- */
+// Helper: Convert Mtgjson.PurchaseUrls to Unified.PurchaseUrls
+function convertMtgjsonPurchaseUrlsToUnified(
+  urls?: MtgjsonPurchaseUrls
+): PurchaseUrls {
+  return {
+    cardKingdom: urls?.cardKingdom || '',
+    cardKingdomFoil: urls?.cardKingdomFoil || '',
+    cardKingdomEtched: urls?.cardKingdomEtched || '',
+    cardmarket: urls?.cardmarket || '',
+    tcgplayer: urls?.tcgplayer || '',
+    tcgplayerEtched: urls?.tcgplayerEtched || '',
+  };
+}
+
+// -------------- HELPER FUNCTION: PRICE CONVERSION --------------
+function convertPriceToUnifiedPriceInfo(
+  price: number | string | null
+): PriceInfo {
+  let numericPrice = 0;
+  if (typeof price === 'number') {
+    numericPrice = price;
+  } else if (typeof price === 'string' && price !== '') {
+    const parsed = parseFloat(price.replace(/[^\d.-]/g, ''));
+    numericPrice = isNaN(parsed) ? 0 : parsed;
+  }
+  return {
+    lowPrice: numericPrice,
+    midPrice: numericPrice,
+    highPrice: numericPrice,
+    marketPrice: numericPrice,
+    directLowPrice: numericPrice,
+  };
+}
+
+// Helper function to safely convert marketPrice to number
+function safeConvertMarketPrice(price: number | string | null): number | null {
+  if (typeof price === 'number') {
+    return price;
+  } else if (typeof price === 'string' && price !== '') {
+    const parsed = parseFloat(price.replace(/[^\d.-]/g, ''));
+    return isNaN(parsed) ? null : parsed;
+  }
+  return null;
+}
+
+// -------------- HELPER FUNCTION: TCG CSV PRICE FETCHING (Restored) --------------
 async function fetchAndApplyTcgPrices(
-  allPrintings: AllPrintings,
-  combinedCardsMap: Record<string, CombinedCard>,
-  extendedDataArray: ExtendedSealedData[]
+  combinedCardsMap: Record<string, UnifiedCard>,
+  extendedDataArray: ExtendedSealedData[],
+  allTcgProducts: TcgCsvProduct[]
 ): Promise<void> {
   logger.info('--- Starting TCGPlayer Price Fetching and Application ---');
-
-  // 1. Fetch all MTG groups (sets) from TCG CSV
-  const groupsResult = await TcgCsvService.fetchGroups();
-  if (!isOk(groupsResult)) {
-    logger.error(
-      {
-        errorType: groupsResult.error.type,
-        details: groupsResult.error,
-      },
-      'Failed to fetch TCGPlayer groups. Skipping price fetching.'
-    );
-    return;
-  }
-  const tcgGroups = groupsResult.value;
-  const tcgGroupMap = new Map<number, TcgCsvTypes.TcgCsvGroup>(
-    tcgGroups.map((g) => [g.groupId, g])
-  );
-  logger.info(`Fetched ${tcgGroupMap.size} TCGPlayer groups.`);
-
-  // Create a consolidated price map across all groups for sealed lookup
-  const consolidatedPriceMap = new Map<
-    number,
-    { normal?: number | null; foil?: number | null }
+  const tcgProductPriceMap = new Map<
+    string,
+    { normal: number | null; foil: number | null }
   >();
-
-  // 2. Iterate through AllPrintings sets to find corresponding TCG groups
-  let setsProcessedForPrices = 0;
-  for (const setCode of Object.keys(allPrintings.data)) {
-    const mtgSet = allPrintings.data[setCode];
-    const tcgGroupId = mtgSet.tcgplayerGroupId;
-
-    if (!tcgGroupId) {
-      continue;
+  for (const product of allTcgProducts) {
+    if (product.productId) {
+      tcgProductPriceMap.set(product.productId.toString(), {
+        normal:
+          product.normalPrice ??
+          safeConvertMarketPrice(product.marketPrice) ??
+          product.avgPrice ??
+          null,
+        foil:
+          product.foilPrice ??
+          safeConvertMarketPrice(product.marketPrice) ??
+          product.avgPrice ??
+          null,
+      });
     }
+  }
 
-    if (!tcgGroupMap.has(tcgGroupId)) {
-      logger.warn(
-        { setCode, tcgplayerGroupId: tcgGroupId },
-        `TCGPlayer group data not found for groupId provided by MTGSet. Skipping.`
-      );
-      continue;
-    }
-
-    logger.info(
-      `Processing TCG prices for Set: ${setCode} (Group ID: ${tcgGroupId})`
-    );
-
-    // 3. Fetch Products and Prices for the group
-    const [productsResult, pricesResult] = await Promise.all([
-      TcgCsvService.fetchProducts(tcgGroupId),
-      TcgCsvService.fetchPrices(tcgGroupId),
-    ]);
-
-    if (!isOk(productsResult)) {
-      logger.error(
-        {
-          errorType: productsResult.error.type,
-          details: productsResult.error,
-          setCode,
-          tcgGroupId,
-        },
-        `Failed to fetch TCGPlayer products for group. Skipping prices for this set.`
-      );
-      continue;
-    }
-    const tcgProducts = productsResult.value;
-    const tcgProductMap = new Map<number, TcgCsvTypes.TcgCsvProduct>(
-      tcgProducts.map((p) => [p.productId, p])
-    );
-
-    if (!isOk(pricesResult)) {
-      logger.error(
-        {
-          errorType: pricesResult.error.type,
-          details: pricesResult.error,
-          setCode,
-          tcgGroupId,
-        },
-        `Failed to fetch TCGPlayer prices for group. Skipping prices for this set.`
-      );
-      continue;
-    }
-    const tcgPrices = pricesResult.value;
-
-    // 4. Build a temporary price map for *this group* and merge into consolidated map
-    const groupPriceMap = new Map<
-      number,
-      { normal?: number | null; foil?: number | null }
-    >();
-    for (const price of tcgPrices) {
-      if (!groupPriceMap.has(price.productId)) {
-        groupPriceMap.set(price.productId, {});
-      }
-      const entry = groupPriceMap.get(price.productId)!;
-      const marketPrice = price.marketPrice;
-
-      if (price.subTypeName === 'Normal') {
-        entry.normal = marketPrice;
-      } else if (price.subTypeName === 'Foil') {
-        entry.foil = marketPrice;
-      }
-      // Also add to consolidated map
-      if (!consolidatedPriceMap.has(price.productId)) {
-        consolidatedPriceMap.set(price.productId, {});
-      }
-      const consolidatedEntry = consolidatedPriceMap.get(price.productId)!;
-      if (price.subTypeName === 'Normal') {
-        consolidatedEntry.normal = marketPrice;
-      } else if (price.subTypeName === 'Foil') {
-        consolidatedEntry.foil = marketPrice;
-      }
-    }
-
-    // 5. Apply prices to CombinedCard map using the group-specific price map
-    let cardsUpdated = 0;
-    for (const card of mtgSet.cards) {
-      const combinedCard = combinedCardsMap[card.uuid];
-      if (!combinedCard) continue;
-
-      const tcgProductId =
-        combinedCard.allPrintingsData.identifiers?.tcgplayerProductId;
-      if (!tcgProductId) continue;
-
-      const prices = groupPriceMap.get(Number(tcgProductId));
+  for (const card of Object.values(combinedCardsMap)) {
+    const tcgId = card.identifiers.tcgplayerProductId;
+    if (tcgId && tcgProductPriceMap.has(tcgId)) {
+      const prices = tcgProductPriceMap.get(tcgId);
       if (prices) {
-        combinedCard.tcgNormalMarketPrice = prices.normal ?? null;
-        combinedCard.tcgFoilMarketPrice = prices.foil ?? null;
-        cardsUpdated++;
+        if (!card.tcgplayer) {
+          card.tcgplayer = {
+            product_id: parseInt(tcgId),
+            prices: {
+              normal: convertPriceToUnifiedPriceInfo(null),
+              foil: convertPriceToUnifiedPriceInfo(null),
+            },
+            image_url: '',
+            clean_name: card.name.toLowerCase().replace(/[^a-z0-9]/g, ''),
+            extended_data: [],
+            market_price: undefined,
+          };
+        }
+        card.tcgplayer.prices.normal = convertPriceToUnifiedPriceInfo(
+          prices.normal
+        );
+        card.tcgplayer.prices.foil = convertPriceToUnifiedPriceInfo(
+          prices.foil
+        );
+        const tcgProductDetails = allTcgProducts.find(
+          (p) => p.productId?.toString() === tcgId
+        );
+        if (tcgProductDetails) {
+          card.tcgplayer.image_url = tcgProductDetails.imageUrl || '';
+          card.tcgplayer.clean_name =
+            tcgProductDetails.cleanName ||
+            card.name.toLowerCase().replace(/[^a-z0-9]/g, '');
+          card.tcgplayer.market_price =
+            safeConvertMarketPrice(tcgProductDetails.marketPrice) ?? undefined;
+        }
       }
     }
-    if (cardsUpdated > 0) {
-      logger.debug(`  Updated prices for ${cardsUpdated} cards in ${setCode}.`);
-    }
+  }
 
-    setsProcessedForPrices++;
-  } // End of set loop
-
-  // 6. Apply prices to ExtendedSealedData using the consolidated price map
-  let sealedProductsUpdated = 0;
   for (const sealedProduct of extendedDataArray) {
-    const tcgProductId = sealedProduct.tcgplayerProductId;
-    if (!tcgProductId) continue;
-
-    const prices = consolidatedPriceMap.get(Number(tcgProductId)); // Use consolidated map here
-    if (prices) {
-      sealedProduct.tcgMarketPrice = prices.normal ?? prices.foil ?? null;
-      if (sealedProduct.tcgMarketPrice !== null) {
-        sealedProductsUpdated++;
+    const productIdStr = sealedProduct.tcgplayerProductId?.toString();
+    if (productIdStr && tcgProductPriceMap.has(productIdStr)) {
+      const prices = tcgProductPriceMap.get(productIdStr);
+      if (prices) {
+        sealedProduct.tcgMarketPrice = prices.normal ?? undefined;
       }
     }
   }
-  if (sealedProductsUpdated > 0) {
-    logger.info(`Updated prices for ${sealedProductsUpdated} sealed products.`);
+  logger.info('--- Completed TCGPlayer Price Fetching and Application ---');
+}
+
+// -------------- HELPER FUNCTION: MERGING (Restored buildCombinedCards) --------------
+async function buildCombinedCards(
+  allPrintingsFile: AllPrintingsFile,
+  scryfallDataMap: Record<string, IScryfallCard>
+): Promise<Record<string, UnifiedCard>> {
+  const combinedCards: Record<string, UnifiedCard> = {};
+
+  // Process each set and its cards
+  for (const [setCode, mtgSet] of Object.entries(allPrintingsFile.data)) {
+    for (const mtgJsonCard of mtgSet.cards) {
+      const scryfallCard =
+        scryfallDataMap[mtgJsonCard.identifiers?.scryfallId || ''];
+      const scryfallImageUris: ImageUris = scryfallCard?.image_uris
+        ? {
+            small: scryfallCard.image_uris.small || '',
+            normal: scryfallCard.image_uris.normal || '',
+            large: scryfallCard.image_uris.large || '',
+            png: scryfallCard.image_uris.png || '',
+            art_crop: scryfallCard.image_uris.art_crop || '',
+            border_crop: scryfallCard.image_uris.border_crop || '',
+          }
+        : {
+            small: '',
+            normal: '',
+            large: '',
+            png: '',
+            art_crop: '',
+            border_crop: '',
+          };
+
+      const initialTcgPlayerData: TCGPlayerData = {
+        product_id: parseInt(
+          mtgJsonCard.identifiers?.tcgplayerProductId || '0'
+        ),
+        prices: {
+          normal: convertPriceToUnifiedPriceInfo(null),
+          foil: convertPriceToUnifiedPriceInfo(null),
+        },
+        image_url: '',
+        clean_name: mtgJsonCard.name.toLowerCase().replace(/[^a-z0-9]/g, ''),
+        extended_data: [],
+      };
+
+      const unifiedCard: UnifiedCard = {
+        uuid: mtgJsonCard.uuid,
+        name: mtgJsonCard.name,
+        asciiName: mtgJsonCard.asciiName || '',
+        setCode: mtgJsonCard.setCode || setCode,
+        number: mtgJsonCard.number,
+        layout: mtgJsonCard.layout || '',
+        type: mtgJsonCard.type,
+        types: mtgJsonCard.types || [],
+        subtypes: mtgJsonCard.subtypes || [],
+        supertypes: mtgJsonCard.supertypes || [],
+        text: mtgJsonCard.text || '',
+        flavorText: mtgJsonCard.flavorText || '',
+        artist: mtgJsonCard.artist || '',
+        artistIds: mtgJsonCard.artistIds || [],
+        borderColor: mtgJsonCard.borderColor || '',
+        frameVersion: mtgJsonCard.frameVersion || '',
+        frameEffects: mtgJsonCard.frameEffects || [],
+        language: mtgJsonCard.language || 'en',
+        rarity: mtgJsonCard.rarity,
+        cardParts: mtgJsonCard.cardParts || [],
+        finishes: mtgJsonCard.finishes || [],
+        identifiers: convertMtgjsonIdentifiersToUnified(
+          mtgJsonCard.identifiers
+        ),
+        purchaseUrls: convertMtgjsonPurchaseUrlsToUnified(
+          mtgJsonCard.purchaseUrls
+        ),
+        legalities: (mtgJsonCard.legalities as Legalities) || {},
+        leadershipSkills:
+          (mtgJsonCard.leadershipSkills as LeadershipSkills) || {
+            brawl: false,
+            commander: false,
+            oathbreaker: false,
+          },
+        colors: mtgJsonCard.colors || [],
+        colorIdentity: mtgJsonCard.colorIdentity || [],
+        colorIndicator: mtgJsonCard.colorIndicator || [],
+        manaCost: mtgJsonCard.manaCost || '',
+        convertedManaCost: mtgJsonCard.convertedManaCost || 0,
+        manaValue: mtgJsonCard.manaValue || 0,
+        power: mtgJsonCard.power || '',
+        toughness: mtgJsonCard.toughness || '',
+        defense: mtgJsonCard.defense || '',
+        loyalty: mtgJsonCard.loyalty || '',
+        life: mtgJsonCard.life || '',
+        hand: mtgJsonCard.hand || '',
+        hasFoil: mtgJsonCard.hasFoil || false,
+        hasNonFoil:
+          mtgJsonCard.hasNonFoil !== undefined ? mtgJsonCard.hasNonFoil : true,
+        isAlternative: mtgJsonCard.isAlternative || false,
+        isFullArt: mtgJsonCard.isFullArt || false,
+        isFunny: mtgJsonCard.isFunny || false,
+        isOnlineOnly: mtgJsonCard.isOnlineOnly || false,
+        isOversized: mtgJsonCard.isOversized || false,
+        isPromo: mtgJsonCard.isPromo || false,
+        isRebalanced: mtgJsonCard.isRebalanced || false,
+        isReprint: mtgJsonCard.isReprint || false,
+        isReserved: mtgJsonCard.isReserved || false,
+        isStarter: mtgJsonCard.isStarter || false,
+        isStorySpotlight: mtgJsonCard.isStorySpotlight || false,
+        isTextless: mtgJsonCard.isTextless || false,
+        isTimeshifted: mtgJsonCard.isTimeshifted || false,
+        hasAlternativeDeckLimit: mtgJsonCard.hasAlternativeDeckLimit || false,
+        hasContentWarning: mtgJsonCard.hasContentWarning || false,
+        scryfallData: scryfallCard
+          ? {
+              id: scryfallCard.id,
+              card_faces:
+                scryfallCard.card_faces?.map((face) => ({
+                  id: face.oracle_id || face.name,
+                  image_uris: face.image_uris as ImageUris | undefined,
+                })) || [],
+              image_uris: scryfallCard.image_uris as ImageUris | undefined,
+            }
+          : undefined,
+        image_uris: scryfallImageUris,
+        foil_types: scryfallCard?.finishes || mtgJsonCard.finishes || [],
+        keywords: scryfallCard?.keywords || [],
+        oracle_text: scryfallCard?.oracle_text || mtgJsonCard.text || '',
+        type_line: scryfallCard?.type_line || mtgJsonCard.type,
+        released_at: scryfallCard?.released_at || mtgSet.releaseDate,
+        highres_image: scryfallCard?.highres_image || false,
+        image_status: scryfallCard?.image_status || '',
+        tcgplayer: initialTcgPlayerData,
+      };
+      combinedCards[unifiedCard.uuid] = unifiedCard;
+    }
+  }
+  logger.info(
+    `Built combined cards map with ${Object.keys(combinedCards).length} cards.`
+  );
+  return combinedCards;
+}
+
+// -------------- HELPER FUNCTION: CONVERT ALLPRINTINGS TO UNIFIED (Restored) --------------
+function convertToUnifiedData(
+  allPrintingsFile: AllPrintingsFile,
+  masterSealedProductsMap: Record<string, UnifiedSealedProduct>
+): UnifiedData {
+  logger.info('Converting AllPrintingsFile to UnifiedData...');
+  const unifiedData: UnifiedData = {
+    meta: {
+      version: allPrintingsFile.meta.version,
+      date: allPrintingsFile.meta.date,
+    },
+    data: {},
+  };
+
+  for (const [setCode, mtgSet] of Object.entries(allPrintingsFile.data)) {
+    const unifiedCards: UnifiedCard[] = mtgSet.cards.map((card) => {
+      return {
+        uuid: card.uuid,
+        name: card.name,
+        asciiName: card.asciiName || '',
+        setCode: card.setCode || setCode,
+        number: card.number,
+        layout: card.layout || '',
+        type: card.type,
+        types: card.types || [],
+        subtypes: card.subtypes || [],
+        supertypes: card.supertypes || [],
+        text: card.text || '',
+        flavorText: card.flavorText || '',
+        artist: card.artist || '',
+        artistIds: card.artistIds || [],
+        borderColor: card.borderColor || '',
+        frameVersion: card.frameVersion || '',
+        frameEffects: card.frameEffects || [],
+        language: card.language || 'en',
+        rarity: card.rarity,
+        cardParts: card.cardParts || [],
+        finishes: card.finishes || [],
+        identifiers: convertMtgjsonIdentifiersToUnified(card.identifiers),
+        purchaseUrls: convertMtgjsonPurchaseUrlsToUnified(card.purchaseUrls),
+        legalities: (card.legalities as Legalities) || {},
+        leadershipSkills: (card.leadershipSkills as LeadershipSkills) || {
+          brawl: false,
+          commander: false,
+          oathbreaker: false,
+        },
+        colors: card.colors || [],
+        colorIdentity: card.colorIdentity || [],
+        colorIndicator: card.colorIndicator || [],
+        manaCost: card.manaCost || '',
+        convertedManaCost: card.convertedManaCost || 0,
+        manaValue: card.manaValue || 0,
+        power: card.power || '',
+        toughness: card.toughness || '',
+        defense: card.defense || '',
+        loyalty: card.loyalty || '',
+        life: card.life || '',
+        hand: card.hand || '',
+        hasFoil: card.hasFoil || false,
+        hasNonFoil: card.hasNonFoil !== undefined ? card.hasNonFoil : true,
+        isAlternative: card.isAlternative || false,
+        isFullArt: card.isFullArt || false,
+        isFunny: card.isFunny || false,
+        isOnlineOnly: card.isOnlineOnly || false,
+        isOversized: card.isOversized || false,
+        isPromo: card.isPromo || false,
+        isRebalanced: card.isRebalanced || false,
+        isReprint: card.isReprint || false,
+        isReserved: card.isReserved || false,
+        isStarter: card.isStarter || false,
+        isStorySpotlight: card.isStorySpotlight || false,
+        isTextless: card.isTextless || false,
+        isTimeshifted: card.isTimeshifted || false,
+        hasAlternativeDeckLimit: card.hasAlternativeDeckLimit || false,
+        hasContentWarning: card.hasContentWarning || false,
+        image_uris: {
+          small: '',
+          normal: '',
+          large: '',
+          png: '',
+          art_crop: '',
+          border_crop: '',
+        },
+        foil_types: card.finishes || [],
+        keywords: [],
+        oracle_text: card.text || '',
+        type_line: card.type,
+        released_at: mtgSet.releaseDate,
+        highres_image: false,
+        image_status: '',
+        tcgplayer: {
+          product_id: parseInt(card.identifiers?.tcgplayerProductId || '0'),
+          prices: {
+            normal: convertPriceToUnifiedPriceInfo(null),
+            foil: convertPriceToUnifiedPriceInfo(null),
+          },
+          image_url: '',
+          clean_name: card.name.toLowerCase().replace(/[^a-z0-9]/g, ''),
+          extended_data: [],
+        },
+      };
+    });
+
+    const setSealedProducts: UnifiedSealedProduct[] = [];
+    if (mtgSet.sealedProduct && Array.isArray(mtgSet.sealedProduct)) {
+      for (const productStub of mtgSet.sealedProduct) {
+        if (masterSealedProductsMap[productStub.uuid]) {
+          setSealedProducts.push(masterSealedProductsMap[productStub.uuid]);
+        } else {
+          logger.warn(
+            { uuid: productStub.uuid, setCode },
+            'Sealed product from MTGSet not found in master map during UnifiedData conversion.'
+          );
+        }
+      }
+    }
+
+    const unifiedBoosterConfig: Record<string, BoosterConfig> = {};
+    if (mtgSet.booster) {
+      for (const [boosterName, mtgjsonBoosterValue] of Object.entries(
+        mtgSet.booster
+      )) {
+        const unifiedSheets: Record<string, BoosterSheet> = {};
+        if (mtgjsonBoosterValue.sheets) {
+          for (const [sheetName, mtgjsonSheet] of Object.entries(
+            mtgjsonBoosterValue.sheets
+          )) {
+            unifiedSheets[sheetName] = {
+              totalWeight: mtgjsonSheet.totalWeight,
+              balanceColors: mtgjsonSheet.balanceColors || false,
+              foil: mtgjsonSheet.foil || false,
+              fixed: mtgjsonSheet.fixed || false,
+              cards: Object.entries(mtgjsonSheet.cards).map(
+                ([uuid, weight]) => ({ uuid, weight: Number(weight) })
+              ),
+            };
+          }
+        }
+        unifiedBoosterConfig[boosterName] = {
+          name: boosterName,
+          boosters: mtgjsonBoosterValue.boosters.map((b) => ({
+            weight: b.weight,
+            contents: Object.entries(b.contents).map(([sheet, count]) => ({
+              sheet,
+              count: Number(count),
+            })),
+          })),
+          boostersTotalWeight: mtgjsonBoosterValue.boostersTotalWeight,
+          sheets: unifiedSheets,
+        };
+      }
+    }
+
+    const translations: Record<string, string> = {};
+    if (mtgSet.translations) {
+      for (const [key, value] of Object.entries(mtgSet.translations)) {
+        if (value !== null) {
+          translations[key] = value;
+        }
+      }
+    }
+
+    unifiedData.data[setCode] = {
+      baseSetSize: mtgSet.baseSetSize,
+      block: mtgSet.block || '',
+      booster: unifiedBoosterConfig,
+      cards: unifiedCards,
+      cardsphereSetId: mtgSet.cardsphereSetId || 0,
+      code: mtgSet.code,
+      codeV3: mtgSet.codeV3 || '',
+      isForeignOnly: mtgSet.isForeignOnly || false,
+      isFoilOnly: mtgSet.isFoilOnly || false,
+      isNonFoilOnly: mtgSet.isNonFoilOnly || false,
+      isOnlineOnly: mtgSet.isOnlineOnly || false,
+      isPaperOnly: mtgSet.isPaperOnly || false,
+      isPartialPreview: mtgSet.isPartialPreview || false,
+      keyruneCode: mtgSet.keyruneCode || '',
+      languages: mtgSet.languages || [],
+      mcmId: mtgSet.mcmId || 0,
+      mcmIdExtras: mtgSet.mcmIdExtras || 0,
+      mcmName: mtgSet.mcmName || '',
+      mtgoCode: mtgSet.mtgoCode || '',
+      name: mtgSet.name,
+      parentCode: mtgSet.parentCode || '',
+      releaseDate: mtgSet.releaseDate,
+      sealedProduct: setSealedProducts,
+      tcgplayerGroupId: mtgSet.tcgplayerGroupId || 0,
+      tokens: [],
+      tokenSetCode: mtgSet.tokenSetCode || '',
+      totalSetSize: mtgSet.totalSetSize,
+      translations: translations,
+      type: mtgSet.type,
+    };
+  }
+  logger.info(
+    `Converted AllPrintingsFile to UnifiedData. ${Object.keys(unifiedData.data).length} sets processed.`
+  );
+  return unifiedData;
+}
+
+function loadAndMergeAdditionalProducts(
+  extendedDataArray: ExtendedSealedData[],
+  productsFilePath: string
+): ExtendedSealedData[] {
+  try {
+    const productsData = JSON.parse(fs.readFileSync(productsFilePath, 'utf8'));
+    const additionalProducts = productsData.products || [];
+
+    // Merge additional products into extendedDataArray
+    for (const product of additionalProducts) {
+      const existingData = extendedDataArray.find(
+        (d) => d.uuid === product.uuid
+      );
+      if (existingData) {
+        // Merge product data with existing data
+        Object.assign(existingData, product);
+      } else {
+        // Add new product data
+        extendedDataArray.push(product);
+      }
+    }
+
+    return extendedDataArray;
+  } catch (error) {
+    logger.error('Error loading additional products:', error);
+    return extendedDataArray;
+  }
+}
+
+function convertSealedProductFromExtended(
+  extendedProduct: ExtendedSealedData
+): UnifiedSealedProduct {
+  logger.debug(
+    {
+      productUuid: extendedProduct.uuid,
+      productName: extendedProduct.name,
+      hasBoosters: !!extendedProduct.boosters,
+      boosterCount: extendedProduct.boosters?.length,
+      hasSheets: !!extendedProduct.sheets,
+      sheetCount: Object.keys(extendedProduct.sheets || {}).length,
+    },
+    'Converting extended product'
+  );
+
+  // Create base product
+  const product: UnifiedSealedProduct = {
+    uuid: extendedProduct.uuid,
+    code: extendedProduct.code,
+    name: extendedProduct.name,
+    setCode: extendedProduct.set_code,
+    category: extendedProduct.category || '',
+    subtype: extendedProduct.subtype || '',
+    cardCount: extendedProduct.cardCount || 0,
+    productSize: extendedProduct.productSize || 0,
+    releaseDate: extendedProduct.releaseDate || '',
+    contents: extendedProduct.contents || {},
+    identifiers: extendedProduct.identifiers || {},
+    purchaseUrls: extendedProduct.purchaseUrls || {},
+    tcgplayer: extendedProduct.tcgplayer || {
+      product_id: 0,
+      prices: {
+        normal: {
+          lowPrice: 0,
+          midPrice: 0,
+          highPrice: 0,
+          marketPrice: 0,
+          directLowPrice: 0,
+        },
+        foil: {
+          lowPrice: 0,
+          midPrice: 0,
+          highPrice: 0,
+          marketPrice: 0,
+          directLowPrice: 0,
+        },
+      },
+      image_url: '',
+      clean_name: extendedProduct.name.toLowerCase().replace(/[^a-z0-9]/g, ''),
+      extended_data: [],
+    },
+  };
+
+  // Convert booster configuration if it exists
+  if (extendedProduct.boosters && extendedProduct.boosters.length > 0) {
+    logger.debug(
+      {
+        productUuid: extendedProduct.uuid,
+        boosterCount: extendedProduct.boosters.length,
+        firstBooster: extendedProduct.boosters[0],
+      },
+      'Converting booster configuration'
+    );
+
+    // Calculate total weight of all boosters
+    const boostersTotalWeight = extendedProduct.boosters.reduce(
+      (sum, b) => sum + b.weight,
+      0
+    );
+
+    // Convert boosters to the unified format
+    const boosters = extendedProduct.boosters.map((b: ExtendedBooster) => ({
+      weight: b.weight,
+      contents: Object.entries(b.sheets).map(([sheet, count]) => ({
+        sheet,
+        count,
+      })),
+    }));
+
+    // Convert sheets to the unified format
+    const sheets: Record<string, BoosterSheet> = {};
+    if (extendedProduct.sheets) {
+      for (const [sheetName, sheet] of Object.entries(extendedProduct.sheets)) {
+        sheets[sheetName] = {
+          totalWeight: sheet.totalWeight,
+          balanceColors: sheet.balanceColors ?? false,
+          foil: sheet.foil ?? false,
+          fixed: sheet.fixed ?? false,
+          cards: sheet.cards.map((card) => ({
+            uuid: card.uuid,
+            weight: card.weight,
+          })),
+        };
+      }
+    }
+
+    // Create the booster configuration
+    product.booster = {
+      boosters,
+      boostersTotalWeight,
+      name: extendedProduct.name,
+      sheets,
+    };
+
+    logger.debug(
+      {
+        productUuid: extendedProduct.uuid,
+        boosterConfig: {
+          boostersCount: boosters.length,
+          totalWeight: boostersTotalWeight,
+          sheetsCount: Object.keys(sheets).length,
+        },
+      },
+      'Converted booster configuration'
+    );
+  } else {
+    logger.warn(
+      {
+        productUuid: extendedProduct.uuid,
+        productName: extendedProduct.name,
+        product: product,
+      },
+      'Product has no booster configuration'
+    );
   }
 
+  return product;
+}
+
+function createPurchaseUrls(
+  purchaseUrls?: Partial<PurchaseUrls>
+): PurchaseUrls {
+  return {
+    cardKingdom: purchaseUrls?.cardKingdom ?? '',
+    cardKingdomFoil: purchaseUrls?.cardKingdomFoil ?? '',
+    cardKingdomEtched: purchaseUrls?.cardKingdomEtched ?? '',
+    cardmarket: purchaseUrls?.cardmarket ?? '',
+    tcgplayer: purchaseUrls?.tcgplayer ?? '',
+    tcgplayerEtched: purchaseUrls?.tcgplayerEtched ?? '',
+  };
+}
+
+async function processSealedProducts(
+  allPrintingsFile: AllPrintingsFile,
+  tcgProducts: TcgCsvProduct[]
+): Promise<Record<string, UnifiedSealedProduct>> {
   logger.info(
-    `--- Finished TCGPlayer Price Fetching. Processed ${setsProcessedForPrices} sets. ---`
+    'Processing sealed products from AllPrintingsFile to build master map...'
   );
+  const masterSealedProductsMap: Record<string, UnifiedSealedProduct> = {};
+  const tcgProductMap = new Map(tcgProducts.map((p) => [p.productId, p]));
+
+  for (const [setCode, mtgSet] of Object.entries(allPrintingsFile.data)) {
+    if (
+      !mtgSet.sealedProduct ||
+      !Array.isArray(mtgSet.sealedProduct) ||
+      mtgSet.sealedProduct.length === 0
+    )
+      continue;
+
+    for (const productStub of mtgSet.sealedProduct) {
+      const tcgProductIdStr = productStub.identifiers?.tcgplayerProductId;
+      const tcgProduct = tcgProductIdStr
+        ? tcgProductMap.get(parseInt(tcgProductIdStr))
+        : undefined;
+
+      const derivedProductCode = `${mtgSet.code}_${productStub.uuid}`;
+
+      logger.debug(
+        {
+          setCode,
+          productUuid: productStub.uuid,
+          productName: productStub.name,
+          derivedCode: derivedProductCode,
+          hasTcgProduct: !!tcgProduct,
+        },
+        'Processing sealed product from MTGJSON'
+      );
+
+      const unifiedSp: UnifiedSealedProduct = {
+        uuid: productStub.uuid,
+        code: derivedProductCode,
+        name: productStub.name,
+        setCode: setCode,
+        category: productStub.category,
+        subtype: productStub.subtype || undefined,
+        cardCount: productStub.cardCount,
+        productSize: productStub.productSize,
+        releaseDate: productStub.releaseDate,
+        contents: productStub.contents
+          ? convertMtgjsonContentsToUnified(productStub.contents)
+          : undefined,
+        identifiers: convertMtgjsonIdentifiersToUnified(
+          productStub.identifiers
+        ),
+        purchaseUrls: convertMtgjsonPurchaseUrlsToUnified(
+          productStub.purchaseUrls
+        ),
+        booster: undefined,
+        tcgplayer: {
+          product_id: tcgProduct?.productId || 0,
+          prices: {
+            normal: convertPriceToUnifiedPriceInfo(
+              tcgProduct?.normalPrice ??
+                tcgProduct?.marketPrice ??
+                tcgProduct?.avgPrice ??
+                null
+            ),
+            foil: convertPriceToUnifiedPriceInfo(
+              tcgProduct?.foilPrice ??
+                tcgProduct?.marketPrice ??
+                tcgProduct?.avgPrice ??
+                null
+            ),
+          },
+          image_url: tcgProduct?.imageUrl || '',
+          clean_name: tcgProduct?.cleanName || '',
+          extended_data: [],
+          market_price:
+            safeConvertMarketPrice(tcgProduct?.marketPrice ?? null) ??
+            undefined,
+        },
+      };
+      masterSealedProductsMap[productStub.uuid] = unifiedSp;
+    }
+  }
+  logger.info(
+    `Created master map with ${Object.keys(masterSealedProductsMap).length} sealed products from AllPrintingsFile.`
+  );
+  return masterSealedProductsMap;
+}
+
+function processTcgProduct(product: TcgCsvProduct): TCGPlayerData {
+  return {
+    product_id: product.productId,
+    prices: {
+      normal: {
+        lowPrice: product.normalPrice ?? 0,
+        midPrice: product.avgPrice ?? 0,
+        highPrice: 0,
+        marketPrice: safeConvertMarketPrice(product.marketPrice) ?? 0,
+        directLowPrice: product.directLowPrice ?? 0,
+      },
+      foil: {
+        lowPrice: product.foilPrice ?? 0,
+        midPrice: product.avgPrice ?? 0,
+        highPrice: 0,
+        marketPrice: safeConvertMarketPrice(product.marketPrice) ?? 0,
+        directLowPrice: product.directLowPrice ?? 0,
+      },
+    },
+    image_url: product.imageUrl,
+    clean_name: product.cleanName,
+    extended_data: [],
+    market_price: safeConvertMarketPrice(product.marketPrice) ?? undefined,
+  };
 }
 
 // -------------- MAIN EXPORTED FUNCTION --------------
-
-/**
- * Ensures all necessary data files are present (downloading if needed),
- * loads them into memory, processes them, fetches prices, and returns the final data structures.
- */
 export async function loadAllData(): Promise<LoadedData> {
   logger.info('--- Starting Data Loading Process ---');
 
-  // Ensure data directory exists
   await ensureDirectoryExists(ALL_PRINTINGS_PATH);
 
-  // 1. Ensure and Load AllPrintings
+  // 1. Load AllPrintingsFile (raw MTGJSON)
   await ensureAllPrintingsUnzipped(ALL_PRINTINGS_PATH);
-  const allPrintingsData = loadAllPrintings(ALL_PRINTINGS_PATH);
-  if (!allPrintingsData) {
-    throw new Error('Failed to load AllPrintings.json. Server cannot start.');
+  const allPrintingsFile = loadAllPrintings(ALL_PRINTINGS_PATH);
+  if (!allPrintingsFile) {
+    logger.fatal('Failed to load AllPrintings.json. Server cannot start.');
+    throw new Error('Failed to load AllPrintings.json.');
   }
 
-  // 2. Ensure and Load Extended Sealed Data
+  // 2. Load ExtendedSealedDataFile
   const extendedDataExists = await ensureFileExistsHelper(
     EXTENDED_DATA_PATH,
     EXTENDED_DATA_URL,
     false
   );
   if (!extendedDataExists) {
-    throw new Error(
+    logger.fatal(
       'Failed to load sealed_extended_data.json. Server cannot start.'
     );
+    throw new Error('Failed to load sealed_extended_data.json.');
   }
-  const extendedDataArray = loadAndProcessExtendedData(EXTENDED_DATA_PATH);
-  if (!extendedDataArray || extendedDataArray.length === 0) {
-    logger.warn('Extended sealed data is empty or failed to load properly.');
+  let extendedDataArray = loadAndProcessExtendedData(EXTENDED_DATA_PATH);
+
+  // 2.5 Merge additional _products.json files into extendedDataArray
+  const dataDir = path.join(process.cwd(), DATA_DIR);
+  try {
+    const filesInDatadir = fs.readdirSync(dataDir);
+    const additionalProductFiles = filesInDatadir.filter(
+      (file) =>
+        file.endsWith('_products.json') &&
+        file !== path.basename(EXTENDED_DATA_PATH)
+    );
+    for (const productFile of additionalProductFiles) {
+      const filePath = path.join(dataDir, productFile);
+      extendedDataArray = loadAndMergeAdditionalProducts(
+        extendedDataArray,
+        filePath
+      );
+    }
+  } catch (readdirError) {
+    logger.error(
+      { err: readdirError, directory: dataDir },
+      'Error reading data directory for additional product files.'
+    );
   }
 
-  // 3. Ensure Scryfall Bulk Data
+  // 3. Fetch all TCGPlayer Product data (once)
+  const tcgGroupsResult = await TcgCsvService.fetchGroups();
+  if (!isOk(tcgGroupsResult)) {
+    logger.error(
+      'Failed to fetch TCGPlayer groups. Price data will be incomplete.'
+    );
+    throw new Error('Failed to fetch TCGPlayer groups for initial load.');
+  }
+  const tcgGroups = tcgGroupsResult.value;
+  const tcgGroupMap = new Map(tcgGroups.map((g) => [g.groupId, g]));
+  const allTcgProducts: TcgCsvProduct[] = [];
+  for (const mtgJsonSet of Object.values(allPrintingsFile.data)) {
+    const tcgGroupId = mtgJsonSet.tcgplayerGroupId;
+    if (tcgGroupId && tcgGroupMap.has(tcgGroupId)) {
+      const productsResult = await TcgCsvService.fetchProducts(tcgGroupId);
+      if (isOk(productsResult)) {
+        allTcgProducts.push(...productsResult.value);
+      } else {
+        logger.warn(
+          { setCode: mtgJsonSet.code, tcgGroupId },
+          `Failed to fetch TCGPlayer products for group ${tcgGroupId}`
+        );
+      }
+    }
+  }
+  logger.info(
+    `Fetched a total of ${allTcgProducts.length} TCGPlayer products across all groups.`
+  );
+
+  // 4. Create Master Map of Sealed Products (from AllPrintingsFile + TCGPlayer data)
+  let masterSealedProductsMap = await processSealedProducts(
+    allPrintingsFile,
+    allTcgProducts
+  );
+
+  // 4.5 Enrich/Merge with ExtendedSealedData
+  const finalMasterSealedProductsMap: Record<string, UnifiedSealedProduct> = {
+    ...masterSealedProductsMap,
+  };
+
+  // Build code to UUID mapping
+  const codeToUuidMap: Record<string, string> = {};
+  for (const [uuid, product] of Object.entries(masterSealedProductsMap)) {
+    codeToUuidMap[product.code] = uuid;
+  }
+
+  for (const extProduct of extendedDataArray) {
+    const convertedExtProduct = convertSealedProductFromExtended(extProduct);
+    if (!convertedExtProduct) {
+      logger.warn(
+        { productName: extProduct.name, uuid: extProduct.uuid },
+        'Failed to convert extended product'
+      );
+      continue;
+    }
+
+    logger.debug(
+      {
+        extUuid: convertedExtProduct.uuid,
+        extCode: convertedExtProduct.code,
+        extName: convertedExtProduct.name,
+        hasBooster: !!convertedExtProduct.booster,
+      },
+      'Processing extended sealed product'
+    );
+
+    const definitiveUuid = convertedExtProduct.uuid;
+    let targetProduct = finalMasterSealedProductsMap[definitiveUuid];
+
+    // If not found by UUID, try to find by code
+    if (!targetProduct) {
+      const existingUuid = codeToUuidMap[convertedExtProduct.code];
+      if (existingUuid) {
+        logger.warn(
+          {
+            extUuid: convertedExtProduct.uuid,
+            extCode: convertedExtProduct.code,
+            existingUuid,
+            existingCode: finalMasterSealedProductsMap[existingUuid].code,
+          },
+          'Found product by code instead of UUID'
+        );
+        targetProduct = finalMasterSealedProductsMap[existingUuid];
+      }
+    }
+
+    if (targetProduct) {
+      // Update booster configuration if it exists and is valid
+      if (convertedExtProduct.booster) {
+        if (
+          !convertedExtProduct.booster.boosters ||
+          convertedExtProduct.booster.boosters.length === 0
+        ) {
+          logger.warn(
+            {
+              uuid: convertedExtProduct.uuid,
+              code: convertedExtProduct.code,
+            },
+            'Extended product has empty booster configuration'
+          );
+        } else {
+          // Validate booster configuration
+          const hasValidContents = convertedExtProduct.booster.boosters.every(
+            (booster) => booster.contents && booster.contents.length > 0
+          );
+
+          if (!hasValidContents) {
+            logger.warn(
+              {
+                uuid: convertedExtProduct.uuid,
+                code: convertedExtProduct.code,
+              },
+              'Extended product has invalid booster contents'
+            );
+          } else {
+            targetProduct.booster = convertedExtProduct.booster;
+          }
+        }
+      }
+
+      // Update other fields
+      targetProduct.name = convertedExtProduct.name;
+      targetProduct.code = convertedExtProduct.code;
+
+      // Update TCGPlayer data if available
+      if (convertedExtProduct.tcgplayer.market_price !== undefined) {
+        targetProduct.tcgplayer.market_price =
+          convertedExtProduct.tcgplayer.market_price;
+        targetProduct.tcgplayer.prices = convertedExtProduct.tcgplayer.prices;
+      }
+    } else {
+      // Add new product
+      logger.info(
+        {
+          uuid: convertedExtProduct.uuid,
+          code: convertedExtProduct.code,
+          name: convertedExtProduct.name,
+        },
+        'Adding new sealed product from extended data'
+      );
+      finalMasterSealedProductsMap[definitiveUuid] = convertedExtProduct;
+      codeToUuidMap[convertedExtProduct.code] = definitiveUuid;
+    }
+  }
+
+  masterSealedProductsMap = finalMasterSealedProductsMap;
+  logger.info(
+    `Master sealed products map size after merging extended data: ${Object.keys(masterSealedProductsMap).length}`
+  );
+
+  // 5. Create UnifiedData (Sets and Cards), populating Set.sealedProduct using the master map
+  const unifiedData = convertToUnifiedData(
+    allPrintingsFile,
+    masterSealedProductsMap
+  );
+  if (!unifiedData) {
+    logger.fatal('Unified data could not be created.');
+    throw new Error('Unified data creation failed.');
+  }
+
+  // Extract sets from unifiedData
+  const sets = Object.values(unifiedData.data);
+
+  // 6. Load Scryfall data
   await ensureScryfallAllCards(SCRYFALL_DATA_PATH);
 
-  // 4. Build Combined Card Map (requires AllPrintings and Scryfall path)
-  const combinedCardsMap = await buildCombinedCards(
-    allPrintingsData,
-    SCRYFALL_DATA_PATH
+  const neededScryfallIds = new Set<string>();
+  for (const set of Object.values(allPrintingsFile.data)) {
+    for (const card of set.cards) {
+      if (card.identifiers?.scryfallId) {
+        neededScryfallIds.add(card.identifiers.scryfallId);
+      }
+    }
+  }
+  logger.info(
+    `Identified ${neededScryfallIds.size} unique Scryfall IDs needed from AllPrintings data.`
   );
 
-  // 5. Fetch and Apply TCGPlayer Prices
-  await fetchAndApplyTcgPrices(
-    allPrintingsData,
-    combinedCardsMap,
-    extendedDataArray // Pass the array to be potentially modified
+  const allScryfallCardsMap = await loadScryfallAllCardsStreamed(
+    SCRYFALL_DATA_PATH,
+    neededScryfallIds
   );
+
+  // 7. Build CombinedCards map
+  const combinedCardsMap = await buildCombinedCards(
+    allPrintingsFile,
+    allScryfallCardsMap
+  );
+
+  // 8. Apply TCGPlayer prices to combinedCardsMap and update extendedDataArray market prices
+  await fetchAndApplyTcgPrices(
+    combinedCardsMap,
+    extendedDataArray,
+    allTcgProducts
+  );
+
+  // 9. Final array of sets for GraphQL
+  const setsArray: UnifiedSet[] = Object.entries(unifiedData.data).map(
+    ([code, set]) => ({
+      ...set,
+      code,
+      cards: set.cards || [],
+      tokens: set.tokens || [],
+      sealedProduct: set.sealedProduct || [],
+    })
+  );
+
+  // -------------- HELPER FUNCTION: BOOSTER CONFIGURATION CONVERSION --------------
+  function convertBoosterConfig(rawConfig: any): BoosterConfig {
+    if (!rawConfig.boosters || !Array.isArray(rawConfig.boosters)) {
+      throw new Error(
+        'Invalid booster configuration: missing or invalid boosters array'
+      );
+    }
+
+    // Convert boosters array
+    const boosters = rawConfig.boosters.map((booster: any) => {
+      if (!booster.contents || typeof booster.contents !== 'object') {
+        throw new Error(
+          'Invalid booster configuration: missing or invalid contents'
+        );
+      }
+
+      // Convert contents from object to array format
+      const contents = Object.entries(booster.contents).map(
+        ([sheet, count]) => ({
+          sheet,
+          count: Number(count),
+        })
+      );
+
+      return {
+        weight: Number(booster.weight),
+        contents,
+      };
+    });
+
+    // Convert sheets
+    const sheets: Record<string, BoosterSheet> = {};
+    if (rawConfig.sheets) {
+      for (const [sheetName, sheetData] of Object.entries(rawConfig.sheets)) {
+        const sheet = sheetData as any;
+        if (sheet.cards && typeof sheet.cards === 'object') {
+          // Convert cards from object format to array format
+          const cards = Object.entries(sheet.cards).map(([uuid, weight]) => ({
+            uuid,
+            weight: Number(weight),
+          }));
+
+          sheets[sheetName] = {
+            totalWeight: Number(sheet.totalWeight),
+            balanceColors: Boolean(sheet.balanceColors),
+            foil: Boolean(sheet.foil),
+            fixed: Boolean(sheet.fixed),
+            cards,
+          };
+        }
+      }
+    }
+
+    return {
+      boosters,
+      boostersTotalWeight: Number(rawConfig.boostersTotalWeight),
+      name: String(rawConfig.name),
+      sheets,
+    };
+  }
+
+  // Load booster configurations
+  logger.info('Loading booster configurations...');
+  const boosterConfigs: Record<string, any> = {};
+  try {
+    const boosterFiles = fs.readdirSync(BOOSTERS_DIR);
+    for (const file of boosterFiles) {
+      if (file.endsWith('.json')) {
+        const setCode = file.replace('.json', '');
+        const rawConfig = JSON.parse(
+          fs.readFileSync(path.join(BOOSTERS_DIR, file), 'utf8')
+        );
+        boosterConfigs[setCode] = rawConfig;
+      }
+    }
+    logger.info(
+      `Loaded ${Object.keys(boosterConfigs).length} booster configurations`
+    );
+  } catch (error) {
+    logger.error('Failed to load booster configurations:', error);
+  }
+
+  // Merge booster configurations with set data and sealed products
+  for (const [setCode, setData] of Object.entries(allPrintingsFile.data)) {
+    if (boosterConfigs[setCode]) {
+      // Merge with set data
+      setData.booster = boosterConfigs[setCode].booster;
+      logger.debug(`Merged booster configuration for set ${setCode}`);
+
+      // Find and update corresponding sealed products
+      for (const product of Object.values(masterSealedProductsMap)) {
+        // Check if the product belongs to this set by comparing set code and name
+        // Look for products that contain the set name or set code in their name
+        const setCodeInName = product.name
+          .toLowerCase()
+          .includes(setCode.toLowerCase());
+        const setDataNameInName = product.name
+          .toLowerCase()
+          .includes(setData.name.toLowerCase());
+
+        if (setCodeInName || setDataNameInName) {
+          // Look for a booster configuration that matches this product's UUID
+          const productUuid = product.uuid;
+          const boosterConfig = boosterConfigs[setCode].booster[productUuid];
+
+          if (boosterConfig) {
+            // Convert the booster configuration to the expected format
+            const convertedBooster = convertBoosterConfig(boosterConfig);
+            product.booster = convertedBooster;
+            logger.debug(
+              `Merged booster configuration for product ${product.uuid} (${product.name}) with set ${setCode}`
+            );
+          } else {
+            logger.debug(
+              `Product ${product.uuid} (${product.name}) matches set ${setCode} but no booster configuration found for UUID ${productUuid}`
+            );
+          }
+        }
+      }
+    }
+  }
 
   logger.info('--- Data Loading Process Finished Successfully ---');
-
   return {
-    allPrintings: allPrintingsData,
-    extendedDataArray: extendedDataArray,
+    allPrintings: unifiedData,
+    extendedDataArray,
     combinedCards: combinedCardsMap,
+    sealedProducts: masterSealedProductsMap,
+    codeToUuidMap,
+    sets,
   };
 }

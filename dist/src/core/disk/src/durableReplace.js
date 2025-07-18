@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.durableReplace = void 0;
 const nodeFs = __importStar(require("node:fs/promises"));
@@ -56,7 +47,7 @@ const makeTempDirectory_1 = require("./makeTempDirectory");
  *
  * @return A status object indicating success or failure.
  */
-const durableReplace = (options) => __awaiter(void 0, void 0, void 0, function* () {
+const durableReplace = async (options) => {
     const { path, contents, parentDirectory } = options;
     /// Writing a file durably requires careful management. In particular there
     /// are two scenarios we need to guard against.
@@ -73,11 +64,11 @@ const durableReplace = (options) => __awaiter(void 0, void 0, void 0, function* 
     /// - The temporary file is atomically moved to its final destination.
     /// - `fsync` is used to ensure directory metadata changes are committed to
     ///   non-volatile memory.
-    const makeDirectoryResult = yield (0, makeTempDirectory_1.doInTempDirectory)((tempDirectory) => __awaiter(void 0, void 0, void 0, function* () {
+    const makeDirectoryResult = await (0, makeTempDirectory_1.doInTempDirectory)(async (tempDirectory) => {
         const tempFile = nodePath.join(tempDirectory, 'staging');
         // Write the file contents to a temporary file, and ensure `fsync` is
         // called to commit the data to non-volatile memory.
-        const writeResult = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.writeFile(tempFile, contents, {
+        const writeResult = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.writeFile(tempFile, contents, {
             flag: nodeFs.constants.O_SYNC |
                 nodeFs.constants.O_CREAT |
                 nodeFs.constants.O_WRONLY,
@@ -86,34 +77,34 @@ const durableReplace = (options) => __awaiter(void 0, void 0, void 0, function* 
             return writeResult;
         }
         // Atomically move the temporary file to its final destination.
-        const renameResult = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.rename(tempFile, path));
+        const renameResult = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.rename(tempFile, path));
         if (!status.isOk(renameResult)) {
             return renameResult;
         }
         /// Ensure `fsync` is called on the destination directory to flush
         /// directory metadata changes to non-volatile memory.
         if (parentDirectory != null) {
-            return status.stripValue(yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectory.sync()));
+            return status.stripValue(await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectory.sync()));
         }
-        const maybeParentDirectoryFileHandle = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.open(nodePath.dirname(path), nodeFs.constants.O_DIRECTORY));
+        const maybeParentDirectoryFileHandle = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.open(nodePath.dirname(path), nodeFs.constants.O_DIRECTORY));
         if (!status.isOk(maybeParentDirectoryFileHandle)) {
             return maybeParentDirectoryFileHandle;
         }
         const parentDirectoryFileHandle = maybeParentDirectoryFileHandle.value;
         try {
-            return status.stripValue(yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectoryFileHandle.sync()));
+            return status.stripValue(await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectoryFileHandle.sync()));
         }
         finally {
-            const closeResult = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectoryFileHandle.close());
+            const closeResult = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectoryFileHandle.close());
             if (!status.isOk(closeResult)) {
                 console.warn(`Failed to close file handle for ${nodePath.dirname(path)}`);
             }
         }
         return status.okStatus();
-    }));
+    });
     if (!status.isOk(makeDirectoryResult)) {
         return makeDirectoryResult;
     }
     return makeDirectoryResult.value;
-});
+};
 exports.durableReplace = durableReplace;

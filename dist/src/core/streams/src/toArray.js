@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toArray = void 0;
 const status = __importStar(require("@core/status"));
@@ -61,7 +52,7 @@ const webStreams = __importStar(require("web-streams-polyfill"));
  *
  * @returns An array containing the streamed data.
  */
-const toArray = (stream) => __awaiter(void 0, void 0, void 0, function* () {
+const toArray = async (stream) => {
     const buffer = [];
     const sink = new webStreams.WritableStream({
         write(chunk) {
@@ -69,7 +60,7 @@ const toArray = (stream) => __awaiter(void 0, void 0, void 0, function* () {
         },
     });
     try {
-        yield stream.pipeTo(sink);
+        await stream.pipeTo(sink);
         return status.fromValue(buffer);
     }
     catch (error) {
@@ -83,5 +74,5 @@ const toArray = (stream) => __awaiter(void 0, void 0, void 0, function* () {
             return status.fromError(error);
         }
     }
-});
+};
 exports.toArray = toArray;

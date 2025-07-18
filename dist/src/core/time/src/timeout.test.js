@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const status = __importStar(require("@core/status"));
 const time = __importStar(require("./index"));
@@ -48,54 +39,54 @@ beforeEach(() => {
     jest.useFakeTimers();
 });
 describe('doWithTimeout', () => {
-    it('returns the callback result when it resolves before the time.', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('returns the callback result when it resolves before the time.', async () => {
         const result = time.doWithTimeout({
-            callback: () => __awaiter(void 0, void 0, void 0, function* () {
-                yield time.sleep({ seconds: 0.5 });
+            callback: async () => {
+                await time.sleep({ seconds: 0.5 });
                 return 100;
-            }),
+            },
             timeout: { seconds: 1 },
         });
         jest.advanceTimersByTime(500);
-        yield drainEventLoop();
-        expect(status.throwIfError(yield result)).toStrictEqual(100);
-    }));
-    it('returns error when a callback times out.', () => __awaiter(void 0, void 0, void 0, function* () {
+        await drainEventLoop();
+        expect(status.throwIfError(await result)).toStrictEqual(100);
+    });
+    it('returns error when a callback times out.', async () => {
         const result = time.doWithTimeout({
-            callback: () => __awaiter(void 0, void 0, void 0, function* () {
-                yield time.sleep({ seconds: 2 });
+            callback: async () => {
+                await time.sleep({ seconds: 2 });
                 return 100;
-            }),
+            },
             timeout: { seconds: 1 },
         });
         jest.advanceTimersByTime(1000);
-        yield drainEventLoop();
-        expect(yield result).toMatchObject({
+        await drainEventLoop();
+        expect(await result).toMatchObject({
             error: {
                 type: time.TIMEOUT_ERROR_TYPE,
             },
         });
-    }));
-    it('triggers the abort signal when a timeout occurs.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('triggers the abort signal when a timeout occurs.', async () => {
         let hoistedAbortSignal;
         const result = time.doWithTimeout({
-            callback: (abortSignal) => __awaiter(void 0, void 0, void 0, function* () {
+            callback: async (abortSignal) => {
                 hoistedAbortSignal = abortSignal;
-                yield time.sleep({ seconds: 2 });
+                await time.sleep({ seconds: 2 });
                 return 100;
-            }),
+            },
             timeout: { seconds: 1 },
         });
         jest.advanceTimersByTime(1000);
-        yield drainEventLoop();
-        expect(yield result).toMatchObject({
+        await drainEventLoop();
+        expect(await result).toMatchObject({
             error: {
                 type: time.TIMEOUT_ERROR_TYPE,
             },
         });
         expect(hoistedAbortSignal.aborted).toBe(true);
-    }));
-    it('does not trigger the abort signal when the callback returns in time.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('does not trigger the abort signal when the callback returns in time.', async () => {
         let hoistedAbortSignal;
         const result = time.doWithTimeout({
             callback: (abortSignal) => {
@@ -104,10 +95,10 @@ describe('doWithTimeout', () => {
             },
             timeout: { seconds: 1 },
         });
-        yield drainEventLoop();
-        expect(status.throwIfError(yield result)).toStrictEqual(100);
+        await drainEventLoop();
+        expect(status.throwIfError(await result)).toStrictEqual(100);
         expect(hoistedAbortSignal.aborted).toBe(false);
-    }));
+    });
 });
 /**
  * It's often necessary when writing tests which mock time, to advance time
@@ -127,7 +118,7 @@ describe('doWithTimeout', () => {
  * To achieve this, we have this helper which enforces a 1000 event loop cycles
  * to complete, offering plenty of time for promises to resolve.
  */
-const drainEventLoop = () => __awaiter(void 0, void 0, void 0, function* () {
+const drainEventLoop = async () => {
     for (let i = 0; i < 1000; ++i)
-        yield Promise.resolve();
-});
+        await Promise.resolve();
+};

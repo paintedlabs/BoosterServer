@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.observeReadableStream = void 0;
 const webStreams = __importStar(require("web-streams-polyfill"));
@@ -63,40 +54,36 @@ const webStreams = __importStar(require("web-streams-polyfill"));
 const observeReadableStream = (stream, triggers) => {
     const reader = stream.getReader();
     return new webStreams.ReadableStream({
-        pull(controller) {
-            return __awaiter(this, void 0, void 0, function* () {
-                if (triggers.onPull != null) {
-                    triggers.onPull();
-                }
-                try {
-                    const { done, value } = yield reader.read();
-                    if (done) {
-                        controller.close();
-                        reader.releaseLock();
-                        if (triggers.onClose != null) {
-                            triggers.onClose();
-                        }
-                        return;
-                    }
-                    controller.enqueue(value);
-                }
-                catch (error) {
-                    controller.error(error);
+        async pull(controller) {
+            if (triggers.onPull != null) {
+                triggers.onPull();
+            }
+            try {
+                const { done, value } = await reader.read();
+                if (done) {
+                    controller.close();
                     reader.releaseLock();
-                    if (triggers.onError != null) {
-                        triggers.onError(error);
+                    if (triggers.onClose != null) {
+                        triggers.onClose();
                     }
+                    return;
                 }
-            });
-        },
-        cancel(reason) {
-            return __awaiter(this, void 0, void 0, function* () {
-                yield reader.cancel(reason);
+                controller.enqueue(value);
+            }
+            catch (error) {
+                controller.error(error);
                 reader.releaseLock();
-                if (triggers.onCancel != null) {
-                    triggers.onCancel();
+                if (triggers.onError != null) {
+                    triggers.onError(error);
                 }
-            });
+            }
+        },
+        async cancel(reason) {
+            await reader.cancel(reason);
+            reader.releaseLock();
+            if (triggers.onCancel != null) {
+                triggers.onCancel();
+            }
         },
     }, 
     // It's important when wrapping the original stream that we don't

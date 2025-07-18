@@ -44,10 +44,13 @@ const dataManager = __importStar(require("./DataManager"));
  * @returns A new `Heap` instance.
  */
 const createHeap = (values, options) => {
-    const optionsWithDefaults = Object.assign({ compare: defaultComparitor }, options);
+    const optionsWithDefaults = {
+        compare: defaultComparitor,
+        ...options,
+    };
     const { compare } = optionsWithDefaults;
     const data = dataManager.createDataManager();
-    const peekMin = () => { var _a; return (_a = data.get(0)) === null || _a === void 0 ? void 0 : _a.value; };
+    const peekMin = () => data.get(0)?.value;
     const popMin = () => {
         const min = data.remove(0);
         if (min == null) {
@@ -61,11 +64,10 @@ const createHeap = (values, options) => {
         return min.value;
     };
     const peekMax = () => {
-        var _a;
         const a = data.get(1);
         const b = data.get(2);
         if (a == null) {
-            return (_a = data.get(0)) === null || _a === void 0 ? void 0 : _a.value;
+            return data.get(0)?.value;
         }
         else if (b == null) {
             return a.value;
@@ -73,14 +75,13 @@ const createHeap = (values, options) => {
         return compare(a.value, b.value) > 0 ? a.value : b.value;
     };
     const popMax = () => {
-        var _a, _b;
         const a = data.get(1);
         const b = data.get(2);
         if (a == null) {
-            return (_a = data.remove(0)) === null || _a === void 0 ? void 0 : _a.value;
+            return data.remove(0)?.value;
         }
         else if (b == null) {
-            return (_b = data.remove(1)) === null || _b === void 0 ? void 0 : _b.value;
+            return data.remove(1)?.value;
         }
         const max = compare(a.value, b.value) > 0 ? a : b;
         const maxIndex = max.index;

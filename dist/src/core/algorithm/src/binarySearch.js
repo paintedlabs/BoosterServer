@@ -37,13 +37,15 @@ exports.binarySearch = binarySearch;
  * @return The index of the located value, or -1 if the value was not found.
  */
 const binaryIndexOf = (options) => {
-    var _a;
-    const { haystack, needle, compare } = Object.assign({ compare: defaultIndexOfComparitor }, options);
-    return ((_a = (0, exports.binarySearch)({
+    const { haystack, needle, compare } = {
+        compare: defaultIndexOfComparitor,
+        ...options,
+    };
+    return ((0, exports.binarySearch)({
         visit: (index) => compare(needle, haystack[index]),
         start: 0,
         end: haystack.length - 1,
-    })) !== null && _a !== void 0 ? _a : -1);
+    }) ?? -1);
 };
 exports.binaryIndexOf = binaryIndexOf;
 const defaultIndexOfComparitor = (a, b) => {

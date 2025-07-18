@@ -32,24 +32,15 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const status = __importStar(require("@core/status"));
 const webStreams = __importStar(require("web-streams-polyfill"));
 const streams = __importStar(require("./index"));
 describe('filter', () => {
-    it('only retains selected values.', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('only retains selected values.', async () => {
         const stream = webStreams.ReadableStream.from([
             100, 200, 300, 400, 500, 600,
         ]);
-        expect(status.throwIfError(yield streams.toArray(streams.filter(stream, (value) => value % 200 === 0)))).toStrictEqual([200, 400, 600]);
-    }));
+        expect(status.throwIfError(await streams.toArray(streams.filter(stream, (value) => value % 200 === 0)))).toStrictEqual([200, 400, 600]);
+    });
 });

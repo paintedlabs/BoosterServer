@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const nodeFs = __importStar(require("node:fs/promises"));
 const nodeOs = __importStar(require("node:os"));
@@ -52,32 +43,32 @@ const disk = __importStar(require("./index"));
 jestMockModule.extend(jest);
 jest.spy('node:fs/promises');
 let testFile;
-beforeEach(() => __awaiter(void 0, void 0, void 0, function* () {
+beforeEach(async () => {
     testFile = nodePath.join(nodeOs.tmpdir(), uuid.v4());
-}));
+});
 afterEach(() => {
     jest.clearAllMocks();
 });
 describe('durableRemove', () => {
-    it('correctly syncs the parent directory when not provided.', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('correctly syncs the parent directory when not provided.', async () => {
         // Initialize the test file with some data.
-        yield nodeFs.writeFile(testFile, 'test data');
+        await nodeFs.writeFile(testFile, 'test data');
         let parentDirectoryFileHandleSyncSpy;
-        jest.spyOn(nodeFs, 'open').mockImplementationOnce((...args) => __awaiter(void 0, void 0, void 0, function* () {
-            const handle = yield nodeFs.open(...args);
+        jest.spyOn(nodeFs, 'open').mockImplementationOnce(async (...args) => {
+            const handle = await nodeFs.open(...args);
             parentDirectoryFileHandleSyncSpy = jest.spyOn(handle, 'sync');
             return handle;
-        }));
-        status.throwIfError(yield disk.durableRemove({ path: testFile }));
+        });
+        status.throwIfError(await disk.durableRemove({ path: testFile }));
         // Validate that the file was removed.
         expect(nodeFs.rm).toHaveBeenCalledTimes(1);
         expect(nodeFs.rm).toHaveBeenCalledWith(testFile);
         // Validate that the parent directory was opened and fsync'd.
         expect(nodeFs.open).toHaveBeenCalledWith(nodePath.dirname(testFile), nodeFs.constants.O_DIRECTORY);
         expect(parentDirectoryFileHandleSyncSpy).toHaveBeenCalledTimes(1);
-    }));
-    it('early exits when the removal fails.', () => __awaiter(void 0, void 0, void 0, function* () {
-        expect(yield disk.durableRemove({ path: testFile })).toMatchObject({
+    });
+    it('early exits when the removal fails.', async () => {
+        expect(await disk.durableRemove({ path: testFile })).toMatchObject({
             error: {
                 type: disk.ErrorType.SYSTEM,
                 code: disk.SystemErrorCode.ENOENT,
@@ -88,5 +79,5 @@ describe('durableRemove', () => {
         expect(nodeFs.rm).toHaveBeenCalledWith(testFile);
         // Validate that the parent directory was never fsync'd.
         expect(nodeFs.open).toHaveBeenCalledTimes(0);
-    }));
+    });
 });

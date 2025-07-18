@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fetchBodyAsBytes = exports.fetchBody = void 0;
 const status = __importStar(require("@core/status"));
@@ -86,9 +77,9 @@ const fetchBodyAsBytes = (input, init) => genericFetchBody({
     reader: (response) => response.arrayBuffer(),
 });
 exports.fetchBodyAsBytes = fetchBodyAsBytes;
-const genericFetchBody = (args) => __awaiter(void 0, void 0, void 0, function* () {
+const genericFetchBody = async (args) => {
     const { input, init, reader } = args;
-    const maybeResponse = yield status.tryCatchAsync(() => fetch(input, init), (error) => status.fromError(errors.createUnknownError(error)));
+    const maybeResponse = await status.tryCatchAsync(() => fetch(input, init), (error) => status.fromError(errors.createUnknownError(error)));
     if (!status.isOk(maybeResponse)) {
         return maybeResponse;
     }
@@ -102,5 +93,5 @@ const genericFetchBody = (args) => __awaiter(void 0, void 0, void 0, function* (
     if (response.body == null) {
         return status.fromError(errors.createNoContentError());
     }
-    return yield status.tryCatchAsync(() => reader(response), (error) => status.fromError(errors.createUnknownError(error)));
-});
+    return await status.tryCatchAsync(() => reader(response), (error) => status.fromError(errors.createUnknownError(error)));
+};

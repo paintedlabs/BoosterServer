@@ -1,7 +1,7 @@
 import * as net from './src/core/net/src'; // Corrected path
 import * as status from './src/core/status/src'; // Corrected path
-import typia from 'typia';
-import * as TcgCsvTypes from './types'; // Assuming types.ts is in the same directory
+import * as typia from 'typia';
+import * as TcgCsvTypes from './types'; // Update the import path
 import logger from './logger'; // Assuming logger.ts is in the same directory
 
 // --- Error Types ---
@@ -58,14 +58,17 @@ function createTcgCsvError<E extends TcgCsvError>(
 
 async function fetchAndValidate<T>(
   url: string,
-  asserter: (input: unknown) => T
+  asserter: (input: unknown) => T, // Asserter remains for re-validation if needed
+  // Add a flag or type check to know if price correction logic is applicable
+  shouldCorrectPrices: boolean = false
 ): Promise<status.StatusOr<T, TcgCsvError>> {
   logger.info(`Fetching data from ${url}`);
   const maybeBody = await net.fetchBody(url);
 
   if (!status.isOk(maybeBody)) {
     const error = maybeBody.error;
-    logger.error(`Network error fetching ${url}: ${JSON.stringify(error)}`);
+    // Log specific network error type before returning
+    logger.error({ url, error }, `Network error fetching data`);
     switch (error.type) {
       case net.ErrorType.NO_CONTENT:
         return createTcgCsvError({ type: TcgCsvErrorType.NO_CONTENT });
@@ -85,80 +88,161 @@ async function fetchAndValidate<T>(
   }
 
   const bodyText = maybeBody.value;
-  let parsedJson: unknown;
+  let parsedJson: any;
   try {
-    // @ts-ignore - Suppress persistent, likely incorrect linter error on this line
     parsedJson = JSON.parse(bodyText);
   } catch (e) {
+    // Log specific JSON parse error before returning
     const errorMsg = `JSON parse error for ${url}: ${e instanceof Error ? e.message : String(e)}`;
-    logger.error({}, errorMsg);
+    logger.error({ url, parseError: e }, errorMsg);
     return createTcgCsvError({
       type: TcgCsvErrorType.JSON_PARSE_ERROR,
       message: e instanceof Error ? e.message : String(e),
     });
   }
 
-  let validatedData: T;
+  // Validate using the provided asserter function
   try {
-    validatedData = asserter(parsedJson);
-  } catch (error: unknown) {
-    // Log the raw error for debugging purposes
-    logger.error(
-      { rawError: error }, // Log the raw error object
-      `Typia assertion failed for ${url}`
+    const validatedData = asserter(parsedJson);
+    logger.info({ url }, `Initial validation successful.`);
+    // Check API success status AFTER successful validation
+    const apiResponse = validatedData as any; // Assume structure includes success/errors
+    if (
+      !apiResponse.success ||
+      (apiResponse.errors && apiResponse.errors.length > 0)
+    ) {
+      logger.error(
+        { url, apiErrors: apiResponse.errors },
+        `TCG CSV API reported errors`
+      );
+      return createTcgCsvError({
+        type: TcgCsvErrorType.API_ERROR,
+        errors: apiResponse.errors || [],
+      });
+    }
+    logger.info(`Successfully fetched and validated data from ${url}`);
+    return status.fromValue(validatedData);
+  } catch (initialError: unknown) {
+    // Initial assertion failed, check if correction is applicable
+    logger.warn(
+      { url, error: initialError },
+      `Initial validation failed for ${url}. Checking if correction is applicable...`
     );
+    let corrected = false;
 
-    // Check if the error is a Typia validation error and extract detailed errors
+    // Only attempt price correction if flagged AND if the structure looks like Products/Prices response
+    if (
+      shouldCorrectPrices &&
+      parsedJson &&
+      Array.isArray(parsedJson.results)
+    ) {
+      logger.info({ url }, 'Attempting price field corrections...');
+      parsedJson.results.forEach((item: any, index: number) => {
+        const priceFields = [
+          'marketPrice',
+          'directLowPrice',
+          'avgPrice',
+          'foilPrice',
+          'normalPrice',
+          'etchedPrice',
+        ];
+        priceFields.forEach((field) => {
+          const currentValue = item[field];
+          const currentType = typeof currentValue;
+
+          // Convert any non-number, non-null values to null
+          if (currentValue !== null && currentType !== 'number') {
+            // Log the problematic value before correction
+            // logger.warn(
+            //   {
+            //     url,
+            //     path: `results[${index}].${field}`,
+            //     type: currentType,
+            //     value: currentValue,
+            //   },
+            //   `Invalid type found for price field. Converting to null.`
+            // );
+            corrected = true; // Set corrected flag when we make a change
+
+            // Convert undefined, empty string, or any other non-number value to null
+            item[field] = null;
+            // logger.info(
+            //   { url, path: `results[${index}].${field}` },
+            //   `Converted '${currentValue}' to null.`
+            // );
+          }
+        });
+      });
+    }
+
+    if (corrected) {
+      logger.info({ url }, `Attempting validation again after corrections`);
+      try {
+        // Retry assertion with the potentially corrected data
+        const validatedData = asserter(parsedJson);
+        logger.info({ url }, `Validation successful after correction.`);
+        // Check API success status AFTER successful validation
+        const apiResponse = validatedData as any; // Assume structure includes success/errors
+        if (
+          !apiResponse.success ||
+          (apiResponse.errors && apiResponse.errors.length > 0)
+        ) {
+          logger.error(
+            { url, apiErrors: apiResponse.errors },
+            `TCG CSV API reported errors AFTER correction`
+          );
+          return createTcgCsvError({
+            type: TcgCsvErrorType.API_ERROR,
+            errors: apiResponse.errors || [],
+          });
+        }
+        return status.fromValue(validatedData);
+      } catch (errorAfterCorrection: unknown) {
+        logger.error(
+          { url, rawError: errorAfterCorrection },
+          `Typia assertion failed EVEN AFTER CORRECTION`
+        );
+        // Fall through to return original validation error below
+      }
+    }
+
+    // Log specific validation error (use the initial error that was caught)
+    // Extract errors if it's a typia error object
     let validationErrors: typia.IValidation.IError[] = [];
     if (
-      error &&
-      typeof error === 'object' &&
-      'errors' in error &&
-      Array.isArray(error.errors)
-      // Add a type guard or further check if needed to ensure elements are IValidation.IError
-      // For now, assume 'errors' contains the correct type if it exists and is an array.
+      initialError &&
+      typeof initialError === 'object' &&
+      'errors' in initialError &&
+      Array.isArray(initialError.errors)
     ) {
-      // Attempt to cast, assuming the structure matches.
-      // A more robust solution might involve a custom type guard for typia's error structure.
-      validationErrors = error.errors as typia.IValidation.IError[];
-    } else {
-      // Fallback if the error structure is unexpected
+      validationErrors = initialError.errors as typia.IValidation.IError[];
+    } else if (initialError instanceof Error) {
       validationErrors = [
         {
-          path: 'unknown validation error path',
-          expected: 'valid data matching type',
-          value:
-            error instanceof Error ? error.message : 'Unknown error structure',
+          path: 'unknown',
+          expected: 'valid data',
+          value: initialError.message,
+        },
+      ];
+    } else {
+      validationErrors = [
+        {
+          path: 'unknown',
+          expected: 'valid data',
+          value: 'Unknown validation error',
         },
       ];
     }
 
-    // Treat any assertion error as a validation failure
-    return createTcgCsvError({
-      type: TcgCsvErrorType.VALIDATION_ERROR,
-      errors: validationErrors, // Pass the extracted Typia errors
-    });
-  }
-
-  const apiResponse = validatedData as {
-    success: boolean;
-    errors: Array<unknown>;
-  };
-  if (
-    !apiResponse.success ||
-    (apiResponse.errors && apiResponse.errors.length > 0)
-  ) {
     logger.error(
-      `TCG CSV API reported errors for ${url}: ${JSON.stringify(apiResponse.errors)}`
+      { url, typiaErrors: validationErrors },
+      `Typia validation failed permanently`
     );
     return createTcgCsvError({
-      type: TcgCsvErrorType.API_ERROR,
-      errors: apiResponse.errors || [],
+      type: TcgCsvErrorType.VALIDATION_ERROR,
+      errors: validationErrors,
     });
   }
-
-  logger.info(`Successfully fetched and validated data from ${url}`);
-  return status.fromValue(validatedData);
 }
 
 // --- Service Functions ---
@@ -167,16 +251,19 @@ const TCGPLAYER_CATEGORY_ID_MTG = 1; // Assuming 1 is Magic: The Gathering
 const BASE_URL = 'https://tcgcsv.com/tcgplayer';
 
 /**
- * Fetches all TCGPlayer groups (sets) for a specific category.
+ * Fetches all TCGPlayer groups for a specific category.
  * Defaults to MTG category (ID 1).
  */
 export async function fetchGroups(
   categoryId: number = TCGPLAYER_CATEGORY_ID_MTG
 ): Promise<status.StatusOr<TcgCsvTypes.TcgCsvGroup[], TcgCsvError>> {
   const url = `${BASE_URL}/${categoryId}/groups`;
+  // Define the specific asserter for the Groups endpoint response type
   const asserter = (input: unknown) =>
     typia.assert<TcgCsvTypes.TcgCsvGroupsEndpointResponse>(input);
-  const result = await fetchAndValidate(url, asserter);
+  // Call fetchAndValidate, price correction is NOT applicable here
+  const result = await fetchAndValidate(url, asserter, false);
+  // Extract results array if successful
   return status.isOk(result) ? status.fromValue(result.value.results) : result;
 }
 
@@ -189,9 +276,12 @@ export async function fetchProducts(
   categoryId: number = TCGPLAYER_CATEGORY_ID_MTG
 ): Promise<status.StatusOr<TcgCsvTypes.TcgCsvProduct[], TcgCsvError>> {
   const url = `${BASE_URL}/${categoryId}/${groupId}/products`;
+  // Define the specific asserter for the Products endpoint response type
   const asserter = (input: unknown) =>
     typia.assert<TcgCsvTypes.TcgCsvProductsEndpointResponse>(input);
-  const result = await fetchAndValidate(url, asserter);
+  // Call fetchAndValidate, price correction IS applicable here
+  const result = await fetchAndValidate(url, asserter, true);
+  // Extract results array if successful
   return status.isOk(result) ? status.fromValue(result.value.results) : result;
 }
 
@@ -204,8 +294,11 @@ export async function fetchPrices(
   categoryId: number = TCGPLAYER_CATEGORY_ID_MTG
 ): Promise<status.StatusOr<TcgCsvTypes.TcgCsvPrice[], TcgCsvError>> {
   const url = `${BASE_URL}/${categoryId}/${groupId}/prices`;
+  // Define the specific asserter for the Prices endpoint response type
   const asserter = (input: unknown) =>
     typia.assert<TcgCsvTypes.TcgCsvPricesEndpointResponse>(input);
-  const result = await fetchAndValidate(url, asserter);
+  // Call fetchAndValidate, price correction IS applicable here
+  const result = await fetchAndValidate(url, asserter, true);
+  // Extract results array if successful
   return status.isOk(result) ? status.fromValue(result.value.results) : result;
 }

@@ -1,7 +1,7 @@
 /**
  * graphql/schema.ts
  *
- * Defines the GraphQL schema (type definitions).
+ * Defines the GraphQL schema (type definitions) using our unified data model.
  */
 
 // We use gql tag for syntax highlighting and potential future tooling
@@ -10,120 +10,15 @@ import gql from 'graphql-tag';
 // Type Definitions (Schema)
 // We'll map our existing data structures to GraphQL types.
 export const typeDefs = gql`
-  # Represents basic information about an MTG Set
-  type Set {
-    code: String!
-    name: String!
-    releaseDate: String!
-    # Add other set fields if needed, e.g., releaseDate: String
+  # Base types
+  type PriceInfo {
+    lowPrice: Float!
+    midPrice: Float!
+    highPrice: Float!
+    marketPrice: Float!
+    directLowPrice: Float!
   }
 
-  # Represents basic card info from MTGJSON AllPrintings
-  type AllPrintingsCard {
-    uuid: String!
-    name: String!
-    rarity: String!
-    identifiers: Identifiers # Nested type for identifiers
-  }
-
-  # Nested type for identifiers
-  type Identifiers {
-    scryfallId: String
-    tcgplayerProductId: String
-    # Add other identifier fields if needed
-  }
-
-  # Represents a face of a double-faced card
-  type CardFace {
-    object: String!
-    name: String!
-    mana_cost: String
-    type_line: String!
-    oracle_text: String
-    colors: [String!]
-    color_identity: [String!]
-    power: String
-    toughness: String
-    flavor_text: String
-    artist: String
-    artist_id: String
-    illustration_id: String
-    image_uris: ImageUris
-  }
-
-  # Represents Scryfall card data (simplified for now)
-  type ScryfallCard {
-    id: String! # Scryfall ID
-    oracle_id: String
-    name: String!
-    lang: String
-    released_at: String
-    uri: String
-    scryfall_uri: String
-    layout: String
-    mana_cost: String
-    cmc: Float
-    type_line: String!
-    oracle_text: String
-    colors: [String!]
-    color_identity: [String!]
-    keywords: [String!]
-    legalities: String # JSON string containing format legality
-    games: [String!]
-    reserved: Boolean
-    foil: Boolean
-    nonfoil: Boolean
-    finishes: [String!]
-    oversized: Boolean
-    promo: Boolean
-    reprint: Boolean
-    variation: Boolean
-    set_id: String
-    set: String!
-    set_name: String!
-    set_type: String
-    set_uri: String
-    set_search_uri: String
-    scryfall_set_uri: String
-    rulings_uri: String
-    prints_search_uri: String
-    collector_number: String!
-    digital: Boolean
-    rarity: String!
-    flavor_text: String
-    card_back_id: String
-    artist: String
-    artist_ids: [String!]
-    illustration_id: String
-    border_color: String
-    frame: String
-    full_art: Boolean
-    textless: Boolean
-    booster: Boolean
-    story_spotlight: Boolean
-    edhrec_rank: Int
-    penny_rank: Int
-    prices: Prices
-    related_uris: String # JSON string containing related cards
-    purchase_uris: String # JSON string containing purchase links
-    card_faces: [CardFace!]
-    image_uris: ImageUris
-    promo_types: [String!]
-    tcgplayer_id: String
-    all_parts: [RelatedCard!] # For tokens and related cards
-  }
-
-  # Type for related cards (tokens, etc.)
-  type RelatedCard {
-    object: String!
-    id: String!
-    component: String!
-    name: String!
-    type_line: String!
-    uri: String!
-  }
-
-  # Type for image URIs
   type ImageUris {
     small: String
     normal: String
@@ -133,109 +28,350 @@ export const typeDefs = gql`
     border_crop: String
   }
 
-  # Type for card prices from Scryfall
-  type Prices {
-    usd: String
-    usd_foil: String
-    usd_etched: String
-    eur: String
-    eur_foil: String
-    tix: String
+  type Identifiers {
+    # MTGJson identifiers
+    mtgjsonV4Id: String
+    mtgjsonFoilVersionId: String
+    mtgjsonNonFoilVersionId: String
+
+    # Scryfall identifiers
+    scryfallId: String
+    scryfallOracleId: String
+    scryfallIllustrationId: String
+    scryfallCardBackId: String
+
+    # TCGPlayer identifiers
+    tcgplayerProductId: String
+    tcgplayerEtchedProductId: String
+
+    # Other marketplace identifiers
+    cardKingdomId: String
+    cardKingdomFoilId: String
+    cardKingdomEtchedId: String
+    cardsphereId: String
+    cardsphereFoilId: String
+    cardtraderId: String
+    mcmId: String
+    mcmMetaId: String
+    mtgoId: String
+    mtgoFoilId: String
+    multiverseId: String
   }
 
-  # Represents the combined internal card data structure
-  type CombinedCard {
-    allPrintingsData: AllPrintingsCard! # Keep basic print data
-    scryfallData: ScryfallCard # Keep detailed Scryfall data
-    # Add our fetched TCG CSV prices
-    tcgNormalMarketPrice: Float # Nullable Float
-    tcgFoilMarketPrice: Float # Nullable Float
+  type PurchaseUrls {
+    cardKingdom: String
+    cardKingdomFoil: String
+    cardKingdomEtched: String
+    cardmarket: String
+    tcgplayer: String
+    tcgplayerEtched: String
   }
 
-  # Represents a single card within an opened pack
-  type OpenedCard {
-    sheet: String!
-    # Use the CombinedCard type to represent the card
-    card: CombinedCard! # Expose the full combined data
-    # Removed allPrintingsData and scryfallData as they are nested in card
+  type Legalities {
+    standard: String
+    future: String
+    historic: String
+    gladiator: String
+    pioneer: String
+    explorer: String
+    modern: String
+    legacy: String
+    pauper: String
+    vintage: String
+    penny: String
+    commander: String
+    oathbreaker: String
+    brawl: String
+    historicbrawl: String
+    alchemy: String
+    paupercommander: String
+    duel: String
+    oldschool: String
+    premodern: String
+    predh: String
   }
 
-  # Response type for opening a SINGLE pack
-  type OpenedPackResponse {
-    warning: String
-    pack: [OpenedCard!]
+  type LeadershipSkills {
+    brawl: Boolean!
+    commander: Boolean!
+    oathbreaker: Boolean!
   }
 
-  # Response type for opening MULTIPLE packs
-  type OpenedPacksResponse {
-    warning: String
-    packs: [OpenedCard!] # Flat array of all opened cards
+  type TCGPlayerData {
+    product_id: Int
+    prices: TcgPlayerPrices
+    image_url: String
+    clean_name: String
+    extended_data: [TcgPlayerExtendedData!]
+    market_price: Float
   }
 
-  # Represents a specific product available for opening
-  type Product {
-    code: String!
+  # Core card type
+  type Card {
+    # Core MTGJson fields
+    uuid: String!
     name: String!
-    set_code: String!
-    set_name: String!
-    boosters: [BoosterV2!] # Expose booster configurations
-    sheets: [SheetV2!] # Expose sheet details
-    tcgMarketPrice: Float # Add our fetched market price (nullable Float)
+    asciiName: String
+    setCode: String!
+    number: String!
+    layout: String!
+    type: String!
+    types: [String!]!
+    subtypes: [String!]!
+    supertypes: [String!]!
+    text: String
+    flavorText: String
+    artist: String
+    artistIds: [String!]
+    borderColor: String!
+    frameVersion: String!
+    frameEffects: [String!]
+    language: String!
+    rarity: String!
+    cardParts: [String!]
+    finishes: [String!]!
+    identifiers: Identifiers!
+    purchaseUrls: PurchaseUrls!
+    legalities: Legalities!
+    leadershipSkills: LeadershipSkills
+
+    # Card characteristics
+    colors: [String!]!
+    colorIdentity: [String!]!
+    colorIndicator: [String!]
+    manaCost: String
+    convertedManaCost: Float!
+    manaValue: Float!
+    power: String
+    toughness: String
+    defense: String
+    loyalty: String
+    life: String
+    hand: String
+
+    # Card properties
+    hasFoil: Boolean!
+    hasNonFoil: Boolean
+    isAlternative: Boolean
+    isFullArt: Boolean
+    isFunny: Boolean
+    isOnlineOnly: Boolean
+    isOversized: Boolean
+    isPromo: Boolean
+    isRebalanced: Boolean
+    isReprint: Boolean
+    isReserved: Boolean
+    isStarter: Boolean
+    isStorySpotlight: Boolean
+    isTextless: Boolean
+    isTimeshifted: Boolean
+    hasAlternativeDeckLimit: Boolean
+    hasContentWarning: Boolean
+
+    # Scryfall additions
+    image_uris: ImageUris
+    foil_types: [String!]
+    foil: Boolean
+    keywords: [String!]
+    oracle_text: String
+    type_line: String
+    released_at: String
+    highres_image: Boolean
+    image_status: String
+
+    # TCGPlayer additions
+    tcgplayer: TCGPlayerData
+    tcgplayer_product_id: Int
+    tcgplayer_prices: TcgPlayerPrices
+    tcgplayer_image_url: String
+    tcgplayer_clean_name: String
+    tcgplayer_extended_data: [TcgPlayerExtendedData!]
   }
 
-  # Represents the structure of a booster pack configuration (based on BoosterV2 type)
-  type BoosterV2 {
-    contents: [BoosterContentEntry!]! # Key-value map of sheet names to counts
+  type TcgPlayerPrices {
+    normal: PriceInfo
+    foil: PriceInfo
+    etched: PriceInfo
+  }
+
+  type TcgPlayerExtendedData {
+    name: String!
+    displayName: String!
+    value: String!
+  }
+
+  # Booster configuration types
+  type BoosterSheet {
     totalWeight: Int!
+    balanceColors: Boolean!
+    foil: Boolean!
+    fixed: Boolean!
+    cards: [BoosterSheetCard!]!
   }
 
-  # Helper type for the key-value pairs in BoosterV2.contents
-  type BoosterContentEntry {
-    sheetName: String!
+  type BoosterSheetCard {
+    uuid: String!
+    weight: Int!
+  }
+
+  type BoosterConfig {
+    boosters: [BoosterEntry!]!
+    boostersTotalWeight: Int!
+    name: String!
+    sheets: [BoosterSheet!]!
+  }
+
+  type BoosterEntry {
+    weight: Int!
+    contents: [BoosterContent!]!
+  }
+
+  type BoosterContent {
+    sheet: String!
     count: Int!
   }
 
-  # Represents the structure of a printing sheet (based on SheetV2 type)
-  type SheetV2 {
-    name: String! # The name of the sheet (derived from the key)
-    balanceColors: Boolean!
-    cards: [SheetCardEntry!]! # Key-value map of card UUIDs to weights
+  # Sealed product types
+  type SealedProductContents {
+    card: [SealedProductCard!]
+    deck: [SealedProductDeck!]
+    other: [SealedProductOther!]
+    pack: [SealedProductPack!]
+    sealed: [SealedProductSealed!]
+    variable: [SealedProductVariable!]
+  }
+
+  type SealedProductCard {
     foil: Boolean!
-    totalWeight: Int!
+    name: String!
+    number: String!
+    set: String!
+    uuid: String!
   }
 
-  # Helper type for the key-value pairs in SheetV2.cards
-  type SheetCardEntry {
-    uuid: String! # Card UUID from AllPrintings
-    weight: Int! # Weight/frequency of the card on this sheet
+  type SealedProductDeck {
+    name: String!
+    set: String!
   }
 
-  # --- Root Query Type ---
-  # Defines the available read operations
+  type SealedProductOther {
+    name: String!
+  }
+
+  type SealedProductPack {
+    code: String!
+    set: String!
+  }
+
+  type SealedProductSealed {
+    count: Int!
+    name: String!
+    set: String!
+    uuid: String!
+  }
+
+  type SealedProductVariable {
+    configs: [SealedProductContents!]!
+  }
+
+  # Sealed product type
+  type SealedProduct {
+    # MTGJson base fields
+    uuid: String!
+    name: String!
+    category: String!
+    subtype: String!
+    cardCount: Int!
+    productSize: Int!
+    releaseDate: String!
+    contents: SealedProductContents!
+    identifiers: Identifiers!
+    purchaseUrls: PurchaseUrls!
+    booster: BoosterConfig
+
+    # TCGPlayer additions
+    tcgplayer: TCGPlayerData
+    tcgMarketPrice: Float
+    tcgplayerProductId: Int
+  }
+
+  # Set type
+  type Set {
+    # MTGJson base fields
+    baseSetSize: Int!
+    block: String
+    booster: [BoosterConfig!]!
+    cards: [Card!]!
+    cardsphereSetId: Int
+    code: String!
+    codeV3: String
+    isForeignOnly: Boolean!
+    isFoilOnly: Boolean!
+    isNonFoilOnly: Boolean!
+    isOnlineOnly: Boolean!
+    isPaperOnly: Boolean!
+    isPartialPreview: Boolean!
+    keyruneCode: String!
+    languages: [String!]!
+    mcmId: Int
+    mcmIdExtras: Int
+    mcmName: String
+    mtgoCode: String
+    name: String!
+    parentCode: String
+    releaseDate: String!
+    sealedProduct: [SealedProduct!]!
+    tcgplayerGroupId: Int
+    tokens: [Card!]!
+    tokenSetCode: String
+    totalSetSize: Int!
+    translations: [String!]!
+    type: String!
+  }
+
+  # Opened pack types
+  type OpenedCard {
+    sheet: String!
+    card: Card!
+  }
+
+  type OpenedPackResponse {
+    warning: String
+    pack: [OpenedCard!]!
+  }
+
+  type OpenedPacksResponse {
+    warning: String
+    packs: [OpenedCard!]!
+  }
+
+  # Root Query type
   type Query {
-    # Get a list of all available sets that have products
+    # Get all sets
     sets: [Set!]!
 
-    # Get a list of products for a given set code
-    products(setCode: String!): [Product!]!
+    # Get a specific set by code
+    set(code: String!): Set
 
-    # Get details for a specific product (optional, could just use products query)
-    product(productCode: String!): Product
+    # Get all sealed products
+    sealedProducts: [SealedProduct!]!
 
-    # Add query for combined card data by UUID
-    card(uuid: String!): CombinedCard
+    # Get a specific sealed product by code
+    sealedProduct(code: String!): SealedProduct
+
+    # Get all sealed products for a specific set
+    sealedProductsForSet(code: String!): [SealedProduct!]!
+
+    # Get a specific card by UUID
+    card(uuid: String!): Card
   }
 
-  # --- Root Mutation Type ---
-  # Defines the available write/action operations
+  # Root Mutation type
   type Mutation {
-    # Open a single booster pack for a given product code
-    openPack(productCode: String!): OpenedPackResponse
+    # Open a single pack
+    openPack(productCode: String!): OpenedPackResponse!
 
-    # Open multiple booster packs for a given product code
-    openPacks(productCode: String!, number: Int!): OpenedPacksResponse
+    # Open multiple packs
+    openPacks(productCode: String!, number: Int!): OpenedPacksResponse!
   }
 `;
-
-// Note: We might need to install graphql-tag if not already present
-// npm install graphql-tag

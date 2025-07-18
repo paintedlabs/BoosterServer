@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const time = __importStar(require("./index"));
 beforeEach(() => {
@@ -49,19 +40,19 @@ beforeEach(() => {
     jest.spyOn(global, 'clearTimeout');
 });
 describe('sleep', () => {
-    it('resolves after the designated duration.', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('resolves after the designated duration.', async () => {
         let sleepResult = null;
         time.sleep({ seconds: 5 }).then((resolvedSleepResult) => {
             sleepResult = resolvedSleepResult;
         });
         jest.advanceTimersByTime(4999);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(sleepResult).toBe(null);
         jest.advanceTimersByTime(5000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(sleepResult).toStrictEqual({ cancelled: false });
-    }));
-    it('can be cancelled before the desired duration.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('can be cancelled before the desired duration.', async () => {
         const abortController = new AbortController();
         let sleepResult = null;
         time
@@ -70,22 +61,22 @@ describe('sleep', () => {
             sleepResult = resolvedSleepResult;
         });
         jest.advanceTimersByTime(2000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(sleepResult).toBe(null);
         abortController.abort();
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(sleepResult).toStrictEqual({ cancelled: true });
-    }));
-    it('clears all timers when cancelled.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('clears all timers when cancelled.', async () => {
         expect(jest.getTimerCount()).toBe(0);
         const abortController = new AbortController();
         time.sleep({ seconds: 5 }, { abortSignal: abortController.signal });
         expect(jest.getTimerCount()).toBe(1);
         abortController.abort();
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(jest.getTimerCount()).toBe(0);
-    }));
-    it('cancellation after the desired duration does nothing.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('cancellation after the desired duration does nothing.', async () => {
         const abortController = new AbortController();
         let sleepResult = null;
         time
@@ -94,42 +85,42 @@ describe('sleep', () => {
             sleepResult = resolvedSleepResult;
         });
         jest.advanceTimersByTime(5000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(sleepResult).toStrictEqual({ cancelled: false });
         abortController.abort();
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(sleepResult).toStrictEqual({ cancelled: false });
-    }));
-    it('does not clear any timers when cancelled after completion.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('does not clear any timers when cancelled after completion.', async () => {
         expect(jest.getTimerCount()).toBe(0);
         const abortController = new AbortController();
         time.sleep({ seconds: 5 }, { abortSignal: abortController.signal });
         expect(jest.getTimerCount()).toBe(1);
         jest.advanceTimersByTime(5000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(jest.getTimerCount()).toBe(0);
         abortController.abort();
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(jest.getTimerCount()).toBe(0);
         expect(setTimeout).toHaveBeenCalledTimes(1);
         expect(clearTimeout).toHaveBeenCalledTimes(0);
-    }));
-    it('resolves immediately when the delay is zero.', () => __awaiter(void 0, void 0, void 0, function* () {
-        expect(yield time.sleep({ seconds: 0 })).toStrictEqual({
+    });
+    it('resolves immediately when the delay is zero.', async () => {
+        expect(await time.sleep({ seconds: 0 })).toStrictEqual({
             cancelled: false,
         });
-    }));
-    it('resolves immediately when the delay is negative.', () => __awaiter(void 0, void 0, void 0, function* () {
-        expect(yield time.sleep({ seconds: -1 })).toStrictEqual({
+    });
+    it('resolves immediately when the delay is negative.', async () => {
+        expect(await time.sleep({ seconds: -1 })).toStrictEqual({
             cancelled: false,
         });
-    }));
-    it('resolves immediately when the abort signal is already aborted.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('resolves immediately when the abort signal is already aborted.', async () => {
         const abortController = new AbortController();
         abortController.abort();
-        expect(yield time.sleep({ seconds: 5 }, { abortSignal: abortController.signal })).toStrictEqual({ cancelled: true });
-        expect(yield time.sleep({ seconds: -1 }, { abortSignal: abortController.signal })).toStrictEqual({ cancelled: true });
-    }));
+        expect(await time.sleep({ seconds: 5 }, { abortSignal: abortController.signal })).toStrictEqual({ cancelled: true });
+        expect(await time.sleep({ seconds: -1 }, { abortSignal: abortController.signal })).toStrictEqual({ cancelled: true });
+    });
 });
 /**
  * It's often necessary when writing tests which mock time, to advance time
@@ -149,7 +140,7 @@ describe('sleep', () => {
  * To achieve this, we have this helper which enforces a 1000 event loop cycles
  * to complete, offering plenty of time for promises to resolve.
  */
-const drainEventLoop = () => __awaiter(void 0, void 0, void 0, function* () {
+const drainEventLoop = async () => {
     for (let i = 0; i < 1000; ++i)
-        yield Promise.resolve();
-});
+        await Promise.resolve();
+};

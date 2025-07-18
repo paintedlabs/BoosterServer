@@ -2,7 +2,7 @@ import { IScryfallColor } from './IScryfallColor';
 import { IScryfallObject } from './IScryfallObject';
 
 /**
- * A Card Symbol object represents an illustrated symbol that may appear in card’s mana cost or Oracle text. Symbols are based on the notation used in the [Comprehensive Rules]{@link http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/rules}.
+ * A Card Symbol object represents an illustrated symbol that may appear in card's mana cost or Oracle text. Symbols are based on the notation used in the [Comprehensive Rules]{@link http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/rules}.
  *
  * @see https://scryfall.com/docs/api/card-symbols
  */
@@ -30,7 +30,7 @@ export interface IScryfallCardSymbol extends IScryfallObject {
   english: string;
 
   /**
-   * True if it is possible to write this symbol “backwards”. For example, the official symbol `{U/P}` is sometimes
+   * True if it is possible to write this symbol "backwards". For example, the official symbol `{U/P}` is sometimes
    * written as `{P/U}` or `{P\U}` in informal settings. Note that the Scryfall API never writes symbols backwards in
    * other responses. This field is provided for informational purposes.
    */
@@ -42,7 +42,7 @@ export interface IScryfallCardSymbol extends IScryfallObject {
   represents_mana: boolean;
 
   /**
-   * A decimal number representing this symbol’s mana value (also known as the converted mana cost). Note that mana
+   * A decimal number representing this symbol's mana value (also known as the converted mana cost). Note that mana
    * symbols from funny sets can have fractional mana values.
    */
   mana_value: number;
@@ -72,7 +72,7 @@ export interface IScryfallCardSymbol extends IScryfallObject {
   gatherer_alternatives?: string[] | null;
 
   /**
-   *  A URI to an SVG image of this symbol on Scryfall’s CDNs.
+   *  A URI to an SVG image of this symbol on Scryfall's CDNs.
    */
   svg_uri?: string | null;
 }

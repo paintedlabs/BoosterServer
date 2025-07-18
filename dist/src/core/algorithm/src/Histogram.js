@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createHistogram = void 0;
 const createHistogram = () => {
     const counts = new Map();
-    const getCount = (value) => { var _a; return (_a = counts.get(value)) !== null && _a !== void 0 ? _a : 0; };
+    const getCount = (value) => counts.get(value) ?? 0;
     const increment = (value, amount) => {
         const newCount = getCount(value) + (amount == null ? 1 : Math.round(amount));
         if (newCount <= 0) {

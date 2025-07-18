@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -55,61 +46,53 @@ afterAll(() => {
     jest_fetch_mock_1.default.disableMocks();
 });
 describe('fetchBody', () => {
-    it('returns a failure if fetch throws an exception.', () => __awaiter(void 0, void 0, void 0, function* () {
-        jest_fetch_mock_1.default.mockOnce(() => __awaiter(void 0, void 0, void 0, function* () {
+    it('returns a failure if fetch throws an exception.', async () => {
+        jest_fetch_mock_1.default.mockOnce(async () => {
             throw new Error('some error');
-        }));
-        expect(yield net.fetchBody('http://fake.com')).toMatchObject({
+        });
+        expect(await net.fetchBody('http://fake.com')).toMatchObject({
             error: {
                 type: net.ErrorType.UNKNOWN,
             },
         });
-    }));
-    it('returns a status failure if the response has a non-200 code despite a body.', () => __awaiter(void 0, void 0, void 0, function* () {
-        jest_fetch_mock_1.default.mockOnce(() => __awaiter(void 0, void 0, void 0, function* () {
-            return ({
-                status: 404,
-                body: 'Not Found',
-            });
+    });
+    it('returns a status failure if the response has a non-200 code despite a body.', async () => {
+        jest_fetch_mock_1.default.mockOnce(async () => ({
+            status: 404,
+            body: 'Not Found',
         }));
-        expect(yield net.fetchBody('http://fake.com')).toMatchObject({
+        expect(await net.fetchBody('http://fake.com')).toMatchObject({
             error: {
                 type: net.ErrorType.UNEXPECTED_STATUS,
             },
         });
-    }));
-    it('returns a status failure if the response has a non-200 code and no body.', () => __awaiter(void 0, void 0, void 0, function* () {
-        jest_fetch_mock_1.default.mockOnce(() => __awaiter(void 0, void 0, void 0, function* () {
-            return ({
-                status: 203,
-            });
+    });
+    it('returns a status failure if the response has a non-200 code and no body.', async () => {
+        jest_fetch_mock_1.default.mockOnce(async () => ({
+            status: 203,
         }));
-        expect(yield net.fetchBody('http://fake.com')).toMatchObject({
+        expect(await net.fetchBody('http://fake.com')).toMatchObject({
             error: {
                 type: net.ErrorType.UNEXPECTED_STATUS,
             },
         });
-    }));
-    it('returns a failure if the response is missing a body.', () => __awaiter(void 0, void 0, void 0, function* () {
-        jest_fetch_mock_1.default.mockOnce(() => __awaiter(void 0, void 0, void 0, function* () {
-            return ({
-                status: 200,
-                body: undefined,
-            });
+    });
+    it('returns a failure if the response is missing a body.', async () => {
+        jest_fetch_mock_1.default.mockOnce(async () => ({
+            status: 200,
+            body: undefined,
         }));
-        expect(yield net.fetchBody('http://fake.com')).toMatchObject({
+        expect(await net.fetchBody('http://fake.com')).toMatchObject({
             error: {
                 type: net.ErrorType.NO_CONTENT,
             },
         });
-    }));
-    it('returns an existing body if 200 status.', () => __awaiter(void 0, void 0, void 0, function* () {
-        jest_fetch_mock_1.default.mockOnce(() => __awaiter(void 0, void 0, void 0, function* () {
-            return ({
-                status: 200,
-                body: 'Fake Content',
-            });
+    });
+    it('returns an existing body if 200 status.', async () => {
+        jest_fetch_mock_1.default.mockOnce(async () => ({
+            status: 200,
+            body: 'Fake Content',
         }));
-        expect(status.throwIfError(yield net.fetchBody('http://fake.com'))).toEqual('Fake Content');
-    }));
+        expect(status.throwIfError(await net.fetchBody('http://fake.com'))).toEqual('Fake Content');
+    });
 });

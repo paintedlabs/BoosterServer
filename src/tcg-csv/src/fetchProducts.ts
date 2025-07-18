@@ -1,9 +1,9 @@
-import * as net from '@core/net';
-import * as status from '@core/status';
-import * as typiaExtensions from '@extensions/typia';
-
+import * as net from '../../core/net/src';
+import * as status from '../../core/status/src';
+import typia from 'typia';
 import * as types from './types';
 import * as validation from './validation';
+import logger from '../../../logger';
 
 export type FetchProductsOptions = {
   // The category for which all products will be fetched.
@@ -33,15 +33,15 @@ export const fetchProducts = async (
     | net.UnknownError
     | net.NoContentError
     | net.UnexpectedStatusError
-    | typiaExtensions.JsonParseError
-    | typiaExtensions.ValidationError
+    | SyntaxError
+    | typia.TypeGuardError
+    | Error
   >
 > => {
   const { categoryId, groupId } = options;
+  const url = `https://tcgcsv.com/tcgplayer/${categoryId}/groups/${groupId}/products`;
 
-  const maybeBody = await net.fetchBody(
-    `https://tcgcsv.com/tcgplayer/${categoryId}/groups/${groupId}/products`
-  );
+  const maybeBody = await net.fetchBody(url);
   if (!status.isOk(maybeBody)) {
     return maybeBody;
   }
@@ -51,12 +51,27 @@ export const fetchProducts = async (
     const productsResponse = validation.parseProductsEndpointResponse(body);
     return status.fromValue(productsResponse.results);
   } catch (e) {
-    if (
-      e instanceof typiaExtensions.JsonParseError ||
-      e instanceof typiaExtensions.ValidationError
-    ) {
+    if (e instanceof typia.TypeGuardError) {
+      logger.error(
+        { error: e },
+        `Typia validation/parse error during fetchProducts for URL: ${url}`
+      );
       return status.fromError(e);
     }
-    throw e;
+    if (e instanceof SyntaxError) {
+      logger.error(
+        { error: e },
+        `JSON Syntax error during fetchProducts for URL: ${url}`
+      );
+      return status.fromError(e);
+    }
+    const errorMessage =
+      e instanceof Error ? e.message : 'Unknown error during fetchProducts';
+    const unknownError = new Error(errorMessage);
+    logger.error(
+      { originalError: e, url },
+      `Unexpected error during fetchProducts`
+    );
+    return status.fromError(unknownError);
   }
 };

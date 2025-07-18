@@ -32,20 +32,17 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fetchGroups = void 0;
-const net = __importStar(require("@core/net"));
-const status = __importStar(require("@core/status"));
+const __typia_transform__assertGuard = __importStar(require("typia/lib/internal/_assertGuard.js"));
+const net = __importStar(require("../../core/net/src"));
+const status = __importStar(require("../../core/status/src"));
+const typia_1 = __importDefault(require("typia"));
 const validation = __importStar(require("./validation"));
+const logger_1 = __importDefault(require("../../../logger"));
 /**
  * Fetches all groups for a specific game scraped by tcgcsv.
  *
@@ -53,18 +50,42 @@ const validation = __importStar(require("./validation"));
  *
  * @return A list of groups.
  */
-const fetchGroups = (options) => __awaiter(void 0, void 0, void 0, function* () {
+const fetchGroups = async (options) => {
     const { categoryId } = options;
-    const maybeBody = yield net.fetchBody(`https://tcgcsv.com/tcgplayer/${categoryId}/groups`);
+    const url = `https://tcgcsv.com/tcgplayer/${categoryId}/groups`;
+    const maybeBody = await net.fetchBody(url);
     if (!status.isOk(maybeBody)) {
         return maybeBody;
     }
     const body = maybeBody.value;
-    const maybeGroupsResponse = validation.parseGroupsEndpointResponse(body);
-    if (!status.isOk(maybeGroupsResponse)) {
-        return maybeGroupsResponse;
+    try {
+        const groupsResponse = (() => { const __is = input => "string" === typeof input; let _errorFactory; const __assert = (input, errorFactory) => {
+            if (false === __is(input)) {
+                _errorFactory = errorFactory;
+                ((input, _path, _exceptionable = true) => "string" === typeof input || __typia_transform__assertGuard._assertGuard(true, {
+                    method: "validation.parseGroupsEndpointResponse",
+                    path: _path + "",
+                    expected: "string",
+                    value: input
+                }, _errorFactory))(input, "$input", true);
+            }
+            return input;
+        }; return (input, errorFactory) => __assert(JSON.parse(input), errorFactory); })()(body);
+        return status.fromValue(groupsResponse.results);
     }
-    const productsResponse = maybeGroupsResponse.value;
-    return status.fromValue(productsResponse.results);
-});
+    catch (e) {
+        if (e instanceof typia_1.default.TypeGuardError) {
+            logger_1.default.error({ error: e }, `Typia validation/parse error during fetchGroups for URL: ${url}`);
+            return status.fromError(e);
+        }
+        if (e instanceof SyntaxError) {
+            logger_1.default.error({ error: e }, `JSON Syntax error during fetchGroups for URL: ${url}`);
+            return status.fromError(e);
+        }
+        const errorMessage = e instanceof Error ? e.message : 'Unknown error during fetchGroups';
+        const unknownError = new Error(errorMessage);
+        logger_1.default.error({ originalError: e, url }, `Unexpected error during fetchGroups`);
+        return status.fromError(unknownError);
+    }
+};
 exports.fetchGroups = fetchGroups;

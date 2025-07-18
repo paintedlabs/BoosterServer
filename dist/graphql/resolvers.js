@@ -4,13 +4,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.resolvers = void 0;
-const boosterService_1 = require("../boosterService"); // Only import generatePack for now
+const boosterService_1 = require("../boosterService");
 const logger_1 = __importDefault(require("../logger"));
-const graphql_1 = require("graphql"); // Import for throwing GraphQL-specific errors
+const graphql_1 = require("graphql");
 // Helper to get product or throw GraphQLError
 function findProductOrThrow(productCode, loadedData) {
-    var _a;
-    const product = (_a = loadedData.extendedDataArray) === null || _a === void 0 ? void 0 : _a.find((p) => { var _a; return ((_a = p === null || p === void 0 ? void 0 : p.code) === null || _a === void 0 ? void 0 : _a.toLowerCase()) === productCode.toLowerCase(); });
+    const product = loadedData.extendedDataArray?.find((p) => p?.code?.toLowerCase() === productCode.toLowerCase());
     if (!product) {
         logger_1.default.warn({ productCode }, 'GraphQL resolver: Product not found');
         throw new graphql_1.GraphQLError('Product not found', {
@@ -25,206 +24,377 @@ function findProductOrThrow(productCode, loadedData) {
 // Resolver Map
 exports.resolvers = {
     Query: {
-        // Resolver for the 'sets' query
-        sets: (_parent, _args, contextValue) => {
-            const { loadedData } = contextValue;
-            if (!(loadedData === null || loadedData === void 0 ? void 0 : loadedData.allPrintings) || !(loadedData === null || loadedData === void 0 ? void 0 : loadedData.extendedDataArray)) {
-                logger_1.default.error('GraphQL sets query called before data loaded.');
-                throw new graphql_1.GraphQLError('Server data not ready', {
-                    extensions: { code: 'DATA_NOT_READY' },
-                });
-            }
-            logger_1.default.info('Resolving GraphQL query: sets');
-            const seenCodes = new Set();
-            const setsArray = [];
-            for (const product of loadedData.extendedDataArray) {
-                const setCode = product.set_code.toUpperCase();
-                const mtgSet = loadedData.allPrintings.data[setCode];
-                if (!seenCodes.has(setCode) && mtgSet) {
-                    seenCodes.add(setCode);
-                    setsArray.push({
-                        code: setCode,
-                        name: mtgSet.name,
-                        releaseDate: mtgSet.releaseDate,
-                    });
-                }
-            }
-            // Create a new array and sort it
-            const sortedSets = [...setsArray].sort((a, b) => new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime());
-            return sortedSets;
+        // Get all sets
+        sets: async (_, __, { dataSources }) => {
+            const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
+            logger_1.default.debug('Resolving sets query');
+            return loadedData?.sets ?? [];
         },
-        // Resolver for the 'products' query
-        products: (_parent, { setCode }, { loadedData }) => {
-            const upperSetCode = setCode.toUpperCase();
-            logger_1.default.info({ setCode: upperSetCode }, `Resolving products for set`);
-            if (!(loadedData === null || loadedData === void 0 ? void 0 : loadedData.extendedDataArray)) {
-                logger_1.default.warn('Extended data array not loaded, returning empty product list.');
+        // Get a specific set by code
+        set: async (_, { code }, { dataSources }) => {
+            const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
+            if (!loadedData || !loadedData.sets) {
+                logger_1.default.error('Loaded data or sets array is undefined');
+                return null;
+            }
+            // Find the set in the sets array
+            const set = loadedData.sets.find((s) => s.code === code);
+            if (!set) {
+                logger_1.default.debug({ code }, 'Set not found');
+                return null;
+            }
+            // Get the full card data for this set
+            const cardsData = set.cards
+                .map((card) => loadedData.combinedCards[card.uuid])
+                .filter((c) => !!c);
+            // Get the full sealed product data for this set
+            const sealedProductsData = set.sealedProduct
+                .map((sp) => loadedData.sealedProducts[sp.uuid])
+                .filter((p) => !!p);
+            return {
+                ...set,
+                cards: cardsData,
+                sealedProduct: sealedProductsData,
+            };
+        },
+        // Get all sealed products for a specific set
+        sealedProductsForSet: async (_, { code }, { dataSources }) => {
+            const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
+            // Find the set first by its code within the sets array
+            const set = loadedData.sets.find((s) => s.code === code);
+            if (set && set.sealedProduct) {
+                // Map the sealedProduct array from the set to the actual product objects using UUIDs
+                const products = set.sealedProduct // Iterate over the sealed products in the set
+                    .map((sp) => loadedData.sealedProducts[sp.uuid]) // Look up by UUID in the map
+                    .filter((product) => !!product); // Filter out any undefined results (if UUID is bad)
+                logger_1.default.debug({ setCode: code, productCount: products.length }, 'Returning products for set');
+                return products;
+            }
+            else if (set) {
+                // Set found but has no sealedProduct array
+                logger_1.default.debug({ setCode: code }, 'Set found but has no sealed products');
                 return [];
             }
-            const matchingProducts = loadedData.extendedDataArray.filter((p) => { var _a; return ((_a = p === null || p === void 0 ? void 0 : p.set_code) === null || _a === void 0 ? void 0 : _a.toUpperCase()) === upperSetCode; });
-            // Sort products alphabetically by name
-            matchingProducts.sort((a, b) => a.name.localeCompare(b.name));
-            // Return the data without transforming sheets here
-            return matchingProducts;
-        },
-        // Resolver for the 'product' query
-        product: (_parent, args, contextValue) => {
-            const { loadedData } = contextValue;
-            const { productCode } = args;
-            if (!productCode) {
-                throw new graphql_1.GraphQLError('Missing required argument: productCode', {
-                    extensions: { code: 'BAD_USER_INPUT' },
-                });
-            }
-            logger_1.default.info({ productCode }, 'Resolving GraphQL query: product');
-            try {
-                const product = findProductOrThrow(productCode, loadedData);
-                return product;
-            }
-            catch (error) {
-                return null;
+            else {
+                // Should not happen if hasOwnProperty is true
+                logger_1.default.warn({ setCode: code }, `Set with code ${code} found by key but was unexpectedly undefined.`);
+                return [];
             }
         },
-        // NEW: Resolver for the 'card' query
-        card: (_parent, { uuid }, { loadedData }) => {
-            logger_1.default.info({ uuid }, 'Resolving card query');
-            if (!(loadedData === null || loadedData === void 0 ? void 0 : loadedData.combinedCards)) {
-                throw new graphql_1.GraphQLError('Card data not loaded', {
-                    extensions: { code: 'DATA_NOT_READY' },
+        // Get all sealed products
+        sealedProducts: async (_, __, { dataSources }) => {
+            const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
+            logger_1.default.debug('Resolving sealedProducts query');
+            if (!loadedData || !loadedData.sealedProducts) {
+                logger_1.default.error('Loaded data or sealedProducts map is undefined');
+                return [];
+            }
+            // Return all sealed products from the map, filtering out those with null/undefined UUIDs
+            const products = Object.values(loadedData.sealedProducts).filter((product) => product &&
+                typeof product.uuid === 'string' &&
+                product.uuid.trim().length > 0);
+            logger_1.default.debug({ productCount: products.length }, 'Returning all sealed products (filtered for valid UUIDs)');
+            return products;
+        },
+        // Get a specific sealed product by code (or UUID? Resolver uses UUID)
+        sealedProduct: async (_, { code }, { dataSources }) => {
+            const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
+            // Try to find by UUID first
+            let product = Object.values(loadedData.sealedProducts).find((product) => product.uuid === code);
+            // If not found by UUID, try to find by code
+            if (!product) {
+                product = Object.values(loadedData.sealedProducts).find((product) => product.code.toLowerCase() === code.toLowerCase());
+            }
+            if (!product) {
+                logger_1.default.warn({ code }, 'Product not found by UUID or code');
+                throw new graphql_1.GraphQLError('Product not found', {
+                    extensions: {
+                        code: 'NOT_FOUND',
+                        argumentName: 'code',
+                    },
                 });
             }
-            const cardData = loadedData.combinedCards[uuid];
-            if (!cardData) {
-                logger_1.default.warn({ uuid }, 'Card not found for UUID');
-                return null;
-            }
-            return cardData;
+            return product;
+        },
+        // Get a specific card by UUID
+        card: async (_, { uuid }, { dataSources }) => {
+            const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
+            return loadedData.cards.find((card) => card.uuid === uuid);
         },
     },
     Mutation: {
-        // Resolver for the 'openPack' mutation
-        openPack: (_parent, args, contextValue) => {
-            const { loadedData } = contextValue;
-            const { productCode } = args;
-            if (!productCode) {
-                throw new graphql_1.GraphQLError('Missing required argument: productCode', {
-                    extensions: { code: 'BAD_USER_INPUT' },
+        // Open a single pack
+        openPack: async (_, { productCode }, { dataSources }) => {
+            logger_1.default.info({ productCode }, 'OpenPack mutation called');
+            const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
+            // Try to find by UUID first
+            let product = loadedData.sealedProducts[productCode];
+            // If not found by UUID, try to find by code
+            if (!product) {
+                const products = Object.values(loadedData.sealedProducts);
+                product = products.find((p) => p.code.toLowerCase() === productCode.toLowerCase());
+            }
+            if (!product) {
+                logger_1.default.warn({ productCode }, 'Product not found by UUID or code');
+                throw new graphql_1.GraphQLError('Product not found', {
+                    extensions: {
+                        code: 'NOT_FOUND',
+                        argumentName: 'productCode',
+                    },
                 });
             }
-            logger_1.default.info({ productCode }, 'Resolving GraphQL mutation: openPack');
-            const product = findProductOrThrow(productCode, loadedData);
-            const result = (0, boosterService_1.generatePack)(product, loadedData);
-            return {
-                warning: result.warning,
-                pack: result.pack.map((opened) => ({
-                    sheet: opened.sheet,
-                    card: opened.card,
-                })),
-            };
+            if (!product.booster) {
+                logger_1.default.warn({ productCode, productName: product.name }, 'Product has no booster configuration');
+                throw new graphql_1.GraphQLError('Product does not have booster configuration', {
+                    extensions: {
+                        code: 'INVALID_PRODUCT',
+                        argumentName: 'productCode',
+                    },
+                });
+            }
+            return (0, boosterService_1.generatePack)(product, loadedData);
         },
-        // Resolver for the 'openPacks' mutation
-        openPacks: (_parent, args, contextValue) => {
-            const { loadedData } = contextValue;
-            const { productCode, number } = args;
-            if (!productCode) {
-                throw new graphql_1.GraphQLError('Missing required argument: productCode', {
-                    extensions: { code: 'BAD_USER_INPUT' },
-                });
-            }
-            if (!number || number <= 0 || number > 100) {
-                // Basic validation for number
-                throw new graphql_1.GraphQLError('Invalid number argument (must be 1-100)', {
-                    extensions: { code: 'BAD_USER_INPUT' },
-                });
-            }
-            logger_1.default.info({ productCode, count: number }, 'Resolving GraphQL mutation: openPacks');
-            const product = findProductOrThrow(productCode, loadedData);
-            let allOpenedCardsInternal = [];
-            const allWarnings = new Set();
-            for (let i = 0; i < number; i++) {
-                const result = (0, boosterService_1.generatePack)(product, loadedData);
-                if (result.pack) {
-                    allOpenedCardsInternal = allOpenedCardsInternal.concat(result.pack);
-                }
-                if (result.warning) {
-                    allWarnings.add(result.warning);
-                }
-            }
-            const combinedWarning = allWarnings.size > 0 ? Array.from(allWarnings).join(' ') : null;
-            logger_1.default.info({
+        // Open multiple packs
+        openPacks: async (_, { productCode, number }, { dataSources }) => {
+            logger_1.default.info({ productCode, number }, 'OpenPacks mutation called');
+            const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
+            // Find the product by UUID in the sealedProducts map
+            const product = loadedData.sealedProducts[productCode];
+            logger_1.default.debug({
                 productCode,
-                number,
-                openedCount: allOpenedCardsInternal.length,
-                warnings: combinedWarning,
-            }, 'Finished openPacks mutation');
-            const gqlOpenedCards = allOpenedCardsInternal.map((opened) => ({
-                sheet: opened.sheet,
-                card: opened.card,
-            }));
+                found: !!product,
+                productName: product?.name,
+                hasBooster: !!product?.booster,
+                boosterName: product?.booster?.name,
+                boosterCount: product?.booster?.boosters?.length,
+                sheetCount: Object.keys(product?.booster?.sheets || {}).length,
+                loadedDataStats: {
+                    sealedProductsCount: Object.keys(loadedData.sealedProducts).length,
+                    combinedCardsCount: Object.keys(loadedData.combinedCards).length,
+                    hasAllPrintings: !!loadedData.allPrintings,
+                },
+            }, 'Product lookup results');
+            if (!product) {
+                throw new Error(`Product with code ${productCode} not found`);
+            }
+            if (!product.booster ||
+                !product.booster.boosters ||
+                product.booster.boosters.length === 0) {
+                logger_1.default.warn({
+                    productCode,
+                    productName: product.name,
+                    boosterConfig: JSON.stringify(product.booster, null, 2),
+                }, 'Product is not configured as a booster pack');
+                return {
+                    warning: `Product ${product.name} (${productCode}) is not configured as a booster pack. This might be a bundle, deck, or other sealed product.`,
+                    packs: [],
+                };
+            }
+            const packs = [];
+            for (let i = 0; i < number; i++) {
+                logger_1.default.debug({ productCode, packNumber: i + 1, totalPacks: number }, 'Generating pack');
+                const pack = await (0, boosterService_1.generatePack)(product, loadedData);
+                if (pack.pack) {
+                    packs.push(...pack.pack);
+                }
+                if (pack.warning) {
+                    logger_1.default.warn({ productCode, packNumber: i + 1, warning: pack.warning }, 'Pack generation warning');
+                }
+            }
+            logger_1.default.debug({
+                productCode,
+                totalPacks: number,
+                generatedPacks: packs.length,
+                packDetails: packs.map((p) => ({
+                    sheet: p.sheet,
+                    cardName: p.card.name,
+                    cardUUID: p.card.uuid,
+                })),
+            }, 'Pack generation complete');
             return {
-                warning: combinedWarning,
-                packs: gqlOpenedCards,
+                warning: null,
+                packs,
             };
         },
     },
     // --- Resolvers for Nested/Object Types ---
-    // Add resolver for Product Type to handle transformations
-    Product: {
-        // Resolver for the 'sheets' field: transforms Record to Array
-        sheets: (parent) => {
-            return Object.entries(parent.sheets || {}).map(([sheetName, sheetData]) => ({
-                name: sheetName,
-                balanceColors: sheetData.balance_colors,
-                cards: sheetData.cards.map((card) => ({
-                    // Map card data
-                    uuid: card.uuid,
-                    weight: card.weight,
+    // Resolver for SealedProduct type
+    SealedProduct: {
+        // Resolver for the 'booster' field
+        booster: (parent) => {
+            if (!parent.boosters || parent.boosters.length === 0)
+                return null;
+            return {
+                name: parent.name || '',
+                boosters: parent.boosters.map((booster) => ({
+                    weight: booster.weight,
+                    contents: Object.entries(booster.sheets).map(([sheet, count]) => ({
+                        sheet,
+                        count,
+                    })),
                 })),
-                foil: sheetData.foil,
-                totalWeight: sheetData.total_weight,
-            }));
-        },
-        // Resolver for the 'boosters' field (might need transformation if schema differs)
-        boosters: (parent) => {
-            // Assuming ExtendedBooster matches BoosterV2 schema enough for direct return
-            // Add transformations here if necessary (e.g., mapping contents)
-            return parent.boosters || [];
+                boostersTotalWeight: parent.boosters.reduce((sum, booster) => sum + booster.weight, 0),
+                sheets: Object.entries(parent.sheets || {}).map(([sheetName, sheetData]) => ({
+                    name: sheetName,
+                    balanceColors: sheetData.balanceColors,
+                    cards: sheetData.cards,
+                    foil: sheetData.foil,
+                    totalWeight: sheetData.totalWeight,
+                })),
+            };
         },
         // Other fields like code, name, set_code, set_name usually resolve directly
         tcgMarketPrice: (parent) => {
-            var _a;
-            return (_a = parent.tcgMarketPrice) !== null && _a !== void 0 ? _a : null;
+            return parent.tcgMarketPrice ?? null;
+        },
+        tcgplayerProductId: (parent) => {
+            return parent.tcgplayerProductId ?? null;
         },
     },
-    ScryfallCard: {
-        // Optional: Resolver to stringify complex fields if needed by client
-        prices: (parent) => parent.prices ? JSON.stringify(parent.prices) : null,
-        // Direct mapping usually works if schema matches TypeScript type
-        image_uris: (parent) => parent.image_uris,
-        card_faces: (parent) => parent.card_faces,
-        all_parts: (parent) => parent.all_parts,
-        // Add resolvers for other complex fields like legalities, related_uris etc. if needed
+    // Resolver for BoosterConfig type
+    BoosterConfig: {
+        boosters: (parent) => parent.boosters || [],
+        boostersTotalWeight: (parent) => parent.boostersTotalWeight || 0,
+        name: (parent) => parent.name || '',
+        sheets: (parent) => Object.values(parent.sheets || {}),
     },
-    // Resolver for BoosterV2 type (maps to ExtendedBooster)
-    BoosterV2: {
-        contents: (booster) => {
-            return Object.entries(booster.sheets || {}).map(([sheetName, count]) => ({
-                sheetName,
-                count,
-            }));
-        },
-        totalWeight: (booster) => booster.weight,
+    // Resolver for BoosterSheet type
+    BoosterSheet: {
+        totalWeight: (parent) => parent.totalWeight || 0,
+        balanceColors: (parent) => parent.balanceColors || false,
+        foil: (parent) => parent.foil || false,
+        fixed: (parent) => parent.fixed || false,
+        cards: (parent) => parent.cards || [],
     },
-    // Other type resolvers (SheetV2, SheetCardEntry, BoosterContentEntry) are likely not needed
-    // as the parent resolver (Product) handles the data transformation.
-    // NEW: Resolver for CombinedCard type (trivial resolvers)
-    CombinedCard: {
-        allPrintingsData: (parent) => parent.allPrintingsData,
-        scryfallData: (parent) => parent.scryfallData,
-        tcgNormalMarketPrice: (parent) => parent.tcgNormalMarketPrice,
-        tcgFoilMarketPrice: (parent) => parent.tcgFoilMarketPrice,
+    // Resolver for BoosterSheetCard type
+    BoosterSheetCard: {
+        uuid: (parent) => parent.uuid || '',
+        weight: (parent) => parent.weight || 0,
     },
-    AllPrintingsCard: {
+    // Resolver for BoosterEntry type
+    BoosterEntry: {
+        weight: (parent) => parent.weight || 0,
+        contents: (parent) => parent.contents || [],
+    },
+    // Resolver for BoosterContent type
+    BoosterContent: {
+        sheet: (parent) => parent.sheet || '',
+        count: (parent) => parent.count || 0,
+    },
+    // Resolver for SealedProductContents type
+    SealedProductContents: {
+        card: (parent) => parent.card || [],
+        deck: (parent) => parent.deck || [],
+        other: (parent) => parent.other || [],
+        pack: (parent) => parent.pack || [],
+        sealed: (parent) => parent.sealed || [],
+        variable: (parent) => parent.variable || [],
+    },
+    // Resolver for SealedProductCard type
+    SealedProductCard: {
+        foil: (parent) => parent.foil || false,
+        name: (parent) => parent.name || '',
+        number: (parent) => parent.number || '',
+        set: (parent) => parent.set || '',
+        uuid: (parent) => parent.uuid || '',
+    },
+    // Resolver for SealedProductDeck type
+    SealedProductDeck: {
+        name: (parent) => parent.name || '',
+        set: (parent) => parent.set || '',
+    },
+    // Resolver for SealedProductOther type
+    SealedProductOther: {
+        name: (parent) => parent.name || '',
+    },
+    // Resolver for SealedProductPack type
+    SealedProductPack: {
+        code: (parent) => parent.code || '',
+        set: (parent) => parent.set || '',
+    },
+    // Resolver for SealedProductSealed type
+    SealedProductSealed: {
+        count: (parent) => parent.count || 0,
+        name: (parent) => parent.name || '',
+        set: (parent) => parent.set || '',
+        uuid: (parent) => parent.uuid || '',
+    },
+    // Resolver for SealedProductVariable type
+    SealedProductVariable: {
+        configs: (parent) => parent.configs || [],
+    },
+    // Resolver for Card type
+    Card: {
+        // All fields resolve directly from the CombinedCard type
+        uuid: (parent) => parent.uuid,
+        name: (parent) => parent.name,
+        asciiName: (parent) => parent.asciiName,
+        setCode: (parent) => parent.setCode,
+        number: (parent) => parent.number,
+        layout: (parent) => parent.layout,
+        type: (parent) => parent.type,
+        types: (parent) => parent.types,
+        subtypes: (parent) => parent.subtypes,
+        supertypes: (parent) => parent.supertypes,
+        text: (parent) => parent.text,
+        flavorText: (parent) => parent.flavorText,
+        artist: (parent) => parent.artist,
+        artistIds: (parent) => parent.artistIds,
+        borderColor: (parent) => parent.borderColor,
+        frameVersion: (parent) => parent.frameVersion,
+        frameEffects: (parent) => parent.frameEffects,
+        language: (parent) => parent.language,
+        rarity: (parent) => parent.rarity,
+        cardParts: (parent) => parent.cardParts,
+        finishes: (parent) => parent.finishes,
         identifiers: (parent) => parent.identifiers,
+        purchaseUrls: (parent) => parent.purchaseUrls,
+        legalities: (parent) => parent.legalities,
+        leadershipSkills: (parent) => parent.leadershipSkills,
+        colors: (parent) => parent.colors,
+        colorIdentity: (parent) => parent.colorIdentity,
+        colorIndicator: (parent) => parent.colorIndicator,
+        manaCost: (parent) => parent.manaCost,
+        convertedManaCost: (parent) => parent.convertedManaCost,
+        manaValue: (parent) => parent.manaValue,
+        power: (parent) => parent.power,
+        toughness: (parent) => parent.toughness,
+        defense: (parent) => parent.defense,
+        loyalty: (parent) => parent.loyalty,
+        life: (parent) => parent.life,
+        hand: (parent) => parent.hand,
+        hasFoil: (parent) => parent.hasFoil,
+        hasNonFoil: (parent) => parent.hasNonFoil,
+        isAlternative: (parent) => parent.isAlternative,
+        isFullArt: (parent) => parent.isFullArt,
+        isFunny: (parent) => parent.isFunny,
+        isOnlineOnly: (parent) => parent.isOnlineOnly,
+        isOversized: (parent) => parent.isOversized,
+        isPromo: (parent) => parent.isPromo,
+        isRebalanced: (parent) => parent.isRebalanced,
+        isReprint: (parent) => parent.isReprint,
+        isReserved: (parent) => parent.isReserved,
+        isStarter: (parent) => parent.isStarter,
+        isStorySpotlight: (parent) => parent.isStorySpotlight,
+        isTextless: (parent) => parent.isTextless,
+        isTimeshifted: (parent) => parent.isTimeshifted,
+        hasAlternativeDeckLimit: (parent) => parent.hasAlternativeDeckLimit,
+        hasContentWarning: (parent) => parent.hasContentWarning,
+        image_uris: (parent) => parent.image_uris,
+        foil: (parent) => parent.finishes?.includes('foil') || false,
+        keywords: (parent) => parent.keywords,
+        oracle_text: (parent) => parent.oracle_text,
+        type_line: (parent) => parent.type_line,
+        released_at: (parent) => parent.released_at,
+        highres_image: (parent) => parent.highres_image,
+        image_status: (parent) => parent.image_status,
+        tcgplayer_product_id: (parent) => parent.identifiers?.tcgplayerProductId
+            ? parseInt(parent.identifiers.tcgplayerProductId)
+            : null,
+        tcgplayer_prices: (parent) => parent.tcgplayer.prices,
+        tcgplayer_image_url: (parent) => parent.tcgplayer.image_url,
+        tcgplayer_clean_name: (parent) => parent.tcgplayer.clean_name,
+        tcgplayer_extended_data: (parent) => parent.tcgplayer.extended_data,
+        foil_types: (parent) => parent.foil_types,
     },
 };

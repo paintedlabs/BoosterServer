@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.concatenate = void 0;
 const webStreams = __importStar(require("web-streams-polyfill"));
@@ -56,29 +47,27 @@ const concatenate = (streams) => {
     const streamsIterator = streams[Symbol.iterator]();
     let currentReader = null;
     return new webStreams.ReadableStream({
-        pull(controller) {
-            return __awaiter(this, void 0, void 0, function* () {
-                while (true) {
-                    // If there's no current reader, try to get the next stream.
-                    if (currentReader == null) {
-                        const { value: nextStream, done } = streamsIterator.next();
-                        if (done) {
-                            controller.close();
-                            return;
-                        }
-                        currentReader = nextStream.getReader();
-                    }
-                    // Read from the current stream.
-                    const result = yield currentReader.read();
-                    if (!result.done) {
-                        controller.enqueue(result.value);
+        async pull(controller) {
+            while (true) {
+                // If there's no current reader, try to get the next stream.
+                if (currentReader == null) {
+                    const { value: nextStream, done } = streamsIterator.next();
+                    if (done) {
+                        controller.close();
                         return;
                     }
-                    // When the current stream is exhausted, release its lock.
-                    currentReader.releaseLock();
-                    currentReader = null;
+                    currentReader = nextStream.getReader();
                 }
-            });
+                // Read from the current stream.
+                const result = await currentReader.read();
+                if (!result.done) {
+                    controller.enqueue(result.value);
+                    return;
+                }
+                // When the current stream is exhausted, release its lock.
+                currentReader.releaseLock();
+                currentReader = null;
+            }
         },
     }, new webStreams.CountQueuingStrategy({ highWaterMark: 0 }));
 };

@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const nodeFs = __importStar(require("node:fs/promises"));
 const nodeOs = __importStar(require("node:os"));
@@ -55,23 +46,23 @@ let testFile;
 beforeEach(() => {
     testFile = nodePath.join(nodeOs.tmpdir(), uuid.v4());
 });
-afterEach(() => __awaiter(void 0, void 0, void 0, function* () {
-    yield nodeFs.rm(testFile);
-}));
+afterEach(async () => {
+    await nodeFs.rm(testFile);
+});
 describe('durableReplace', () => {
-    it('correctly uses fsync and atomic replace.', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('correctly uses fsync and atomic replace.', async () => {
         let parentDirectoryFileHandleSyncSpy;
-        jest.spyOn(nodeFs, 'open').mockImplementationOnce((...args) => __awaiter(void 0, void 0, void 0, function* () {
-            const handle = yield nodeFs.open(...args);
+        jest.spyOn(nodeFs, 'open').mockImplementationOnce(async (...args) => {
+            const handle = await nodeFs.open(...args);
             parentDirectoryFileHandleSyncSpy = jest.spyOn(handle, 'sync');
             return handle;
-        }));
-        status.throwIfError(yield disk.durableReplace({
+        });
+        status.throwIfError(await disk.durableReplace({
             path: testFile,
             contents: 'foo',
         }));
         // Validate that the path was replaced with the contents 'foo'.
-        expect(yield nodeFs.readFile(testFile, { encoding: 'utf8' })).toBe('foo');
+        expect(await nodeFs.readFile(testFile, { encoding: 'utf8' })).toBe('foo');
         // Validate that only a single write occured to a temporary file with the
         // `fsync` flag enabled.
         expect(nodeFs.writeFile).toHaveBeenCalledTimes(1);
@@ -83,5 +74,5 @@ describe('durableReplace', () => {
         // Validate that the parent directory was opened and fsync'd.
         expect(nodeFs.open).toHaveBeenCalledWith(nodePath.dirname(testFile), nodeFs.constants.O_DIRECTORY);
         expect(parentDirectoryFileHandleSyncSpy).toHaveBeenCalledTimes(1);
-    }));
+    });
 });

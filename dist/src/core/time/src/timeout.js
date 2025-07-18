@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createTimeoutError = exports.TIMEOUT_ERROR_TYPE = exports.doWithTimeout = void 0;
 const status = __importStar(require("@core/status"));
@@ -65,16 +56,16 @@ const sleep = __importStar(require("./sleep"));
  *
  * @returns The result of your callback, or an error if it timed out.
  */
-const doWithTimeout = (args) => __awaiter(void 0, void 0, void 0, function* () {
+const doWithTimeout = async (args) => {
     const { callback, timeout } = args;
     const sleepAbortController = new AbortController();
     const callbackAbortController = new AbortController();
     const COMPLETED_TIMER = Symbol();
-    const waitUntilTimeout = () => __awaiter(void 0, void 0, void 0, function* () {
-        yield sleep.sleep(timeout, { abortSignal: sleepAbortController.signal });
+    const waitUntilTimeout = async () => {
+        await sleep.sleep(timeout, { abortSignal: sleepAbortController.signal });
         return COMPLETED_TIMER;
-    });
-    const result = yield Promise.race([
+    };
+    const result = await Promise.race([
         waitUntilTimeout(),
         callback(callbackAbortController.signal),
     ]);
@@ -84,8 +75,11 @@ const doWithTimeout = (args) => __awaiter(void 0, void 0, void 0, function* () {
     }
     sleepAbortController.abort();
     return status.fromValue(result);
-});
+};
 exports.doWithTimeout = doWithTimeout;
 exports.TIMEOUT_ERROR_TYPE = Symbol('TimeoutError');
-const createTimeoutError = (details) => (Object.assign({ type: exports.TIMEOUT_ERROR_TYPE }, details));
+const createTimeoutError = (details) => ({
+    type: exports.TIMEOUT_ERROR_TYPE,
+    ...details,
+});
 exports.createTimeoutError = createTimeoutError;

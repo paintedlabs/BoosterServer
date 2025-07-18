@@ -4,26 +4,25 @@
  * @see https://mtgjson.com/faq/#how-can-i-use-typescript-for-mtgjson-data
  */
 
-export type BoosterConfig = {
+export interface BoosterPack {
+  weight: number;
+  contents: Record<string, number>;
+}
+
+export interface BoosterSheet {
+  balanceColors: boolean;
+  foil: boolean;
+  fixed: boolean;
+  cards: Record<string, number>;
+  totalWeight: number;
+}
+
+export interface BoosterConfig {
   boosters: BoosterPack[];
   boostersTotalWeight: number;
-  name?: string;
+  name: string;
   sheets: Record<string, BoosterSheet>;
-};
-
-export type BoosterPack = {
-  contents: Partial<Record<string, number>>;
-  weight: number;
-};
-
-export type BoosterSheet = {
-  allowDuplicates?: boolean;
-  balanceColors?: boolean;
-  cards: Record<string, number>;
-  foil: boolean;
-  fixed?: boolean;
-  totalWeight: number;
-};
+}
 
 export type CardAtomic = {
   asciiName?: string;
@@ -331,43 +330,37 @@ export type PricePoints = {
   normal?: Record<string, number>;
 };
 
-export type SealedProductCard = {
-  foil?: boolean;
+export interface SealedProductCard {
+  foil: boolean;
   name: string;
   number: string;
   set: string;
   uuid: string;
-};
+}
 
-export type SealedProductContents = {
+export interface SealedProductContents {
   card?: SealedProductCard[];
-  deck?: SealedProductDeck[];
-  other?: SealedProductOther[];
-  pack?: SealedProductPack[];
-  sealed?: SealedProductSealed[];
-  variable?: Record<'configs', SealedProductContents[]>[];
-};
-
-export type SealedProductDeck = {
-  name: string;
-  set: string;
-};
-
-export type SealedProductOther = {
-  name: string;
-};
-
-export type SealedProductPack = {
-  code: string;
-  set: string;
-};
-
-export type SealedProductSealed = {
-  count: number;
-  name: string;
-  set: string;
-  uuid: string;
-};
+  deck?: Array<{
+    name: string;
+    set: string;
+  }>;
+  other?: Array<{
+    name: string;
+  }>;
+  pack?: Array<{
+    code: string;
+    set: string;
+  }>;
+  sealed?: Array<{
+    count: number;
+    name: string;
+    set: string;
+    uuid: string;
+  }>;
+  variable?: Array<{
+    configs: SealedProductContents[];
+  }>;
+}
 
 export type CardType = {
   subTypes: string[];
@@ -535,7 +528,7 @@ export type SealedProduct = {
   uuid: string;
 };
 
-export type Set = {
+export type MTGSet = {
   baseSetSize: number;
   block?: string;
   booster?: Record<string, BoosterConfig>;
@@ -632,7 +625,7 @@ export type Translations = {
   Spanish?: string | null;
 };
 
-export type AllPrintingsFile = { meta: Meta; data: Record<string, Set> };
+export type AllPrintingsFile = { meta: Meta; data: Record<string, MTGSet> };
 export type AllPricesFile = { meta: Meta; data: Record<string, PriceFormats> };
 export type AllPricesTodayFile = {
   meta: Meta;

@@ -1,26 +1,55 @@
-# BoosterServer
+# Boostie Backend
 
-**To run the server:**
+A Node.js server that provides a GraphQL API for opening Magic: The Gathering booster packs.
 
-```bash
-npm install
-npm run start
+## Setup
+
+1. Create a `.env` file in the root directory with the following content:
+```
+PORT=8080
+FRONTEND_URL=http://localhost:3000
+NODE_ENV=development
 ```
 
-The server runs on port 3000. Please note that on startup, the server will download some very large files.
+2. Install dependencies:
+```bash
+npm install
+```
 
-Currently working endpoints:
+3. Start the development server:
+```bash
+npm start
+```
 
-1. http://localhost:3000/sets <- Lists all sets.
-2. http://localhost:3000/sets/{SETCODE}/products <- Given a setcode, returns all products for that set.
-3. http://localhost:3000/products/{PRODUCTCODE}/open <- Given a product code, returns the contents of a booster pack.
+## Development
 
-## A special thanks to:
+The backend is built with:
+- Node.js + Express
+- Apollo Server for GraphQL
+- TypeScript
+- MTGJSON data
+- Scryfall data
 
-[MTGJSON](https://mtgjson.com/)
+## API
 
-[scryfall](https://scryfall.com/)
+The server exposes a GraphQL API at `/graphql`. The schema includes:
 
-[mtg.wtf](https://mtg.wtf/)
+- Queries:
+  - `sets`: Get all available sets
+  - `products`: Get products for a specific set
+- Mutations:
+  - `openPacks`: Open a specified number of booster packs
 
-If any of you arrive on this page because I am pinging your API too much, please get in touch! I want to stress that I have no idea what I'm doing.
+## Data Sources
+
+The server uses:
+- MTGJSON's AllPrintings data
+- Scryfall's card data
+- Extended sealed product data
+
+## Environment Variables
+
+- `PORT`: Server port (default: 8080)
+- `FRONTEND_URL`: Frontend URL for CORS (default: http://localhost:3000)
+- `NODE_ENV`: Environment (development/production)
+- `DATA_DIR`: Directory for data files (default: data/)

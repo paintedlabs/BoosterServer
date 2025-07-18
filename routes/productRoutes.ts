@@ -48,22 +48,62 @@ export function createProductRouter(loadedData: LoadedData): Router {
     try {
       // Validate request params
       const { productCode } = productCodeSchema.parse(req.params);
-      logger.info({ productCode }, `Handling POST /products/:productCode/open request`);
-
-      const product = loadedData.extendedDataArray.find(
-        (p) => p?.code?.toLowerCase() === productCode
+      logger.info(
+        { productCode },
+        `Handling POST /products/:productCode/open request`
       );
 
-      if (!product) {
-        logger.warn({ productCode }, 'Product not found for open request.');
-        return res
-          .status(404)
-          .json({ error: `Product with code '${productCode}' not found` });
+      // Find the UUID using the code map
+      const productUuid = loadedData.codeToUuidMap[productCode];
+
+      if (!productUuid) {
+        logger.warn(
+          { productCode },
+          'Product code not found in codeToUuidMap for open request.'
+        );
+        return res.status(404).json({
+          error: `Product with code '${productCode}' not found or mapped.`,
+        });
       }
 
-      const result: OpenedPackResponse = generatePack(product, loadedData);
+      // Now find the corresponding UnifiedSealedProduct using the UUID
+      const unifiedProduct = loadedData.sealedProducts[productUuid];
+
+      if (!unifiedProduct) {
+        // This case should be rare if map is built correctly, but handle it.
+        logger.error(
+          { productCode, uuid: productUuid },
+          'Unified product not found for UUID from map! Data inconsistency?'
+        );
+        return res.status(404).json({
+          error: `Product data inconsistency for code '${productCode}'.`,
+        });
+      }
+
+      // Check if allPrintings data is available (addressing the other type error)
+      if (!loadedData.allPrintings) {
+        logger.error(
+          { productCode, uuid: productUuid },
+          'AllPrintings data is null, cannot generate pack.'
+        );
+        return res
+          .status(503) // Service Unavailable
+          .json({
+            error: 'Server data loading incomplete, cannot generate pack.',
+          });
+      }
+
+      // Pass the CORRECT product type and loadedData to generatePack
+      const result: OpenedPackResponse = generatePack(
+        unifiedProduct,
+        // Provide the required shape, ensuring allPrintings is not null here
+        {
+          ...loadedData,
+          allPrintings: loadedData.allPrintings,
+        }
+      );
       logger.info(
-        { productCode: product.code, packSize: result.pack.length },
+        { productCode: unifiedProduct.code, packSize: result.pack.length }, // Log with product code
         `Returning generated pack`
       );
       return res.json(result);
@@ -75,7 +115,10 @@ export function createProductRouter(loadedData: LoadedData): Router {
           details: error.errors,
         });
       } else {
-        logger.error({ err: error }, 'Unexpected error in /products/:productCode/open');
+        logger.error(
+          { err: error },
+          'Unexpected error in /products/:productCode/open'
+        );
         throw error; // Re-throw for centralized handler
       }
     }
@@ -85,44 +128,86 @@ export function createProductRouter(loadedData: LoadedData): Router {
   router.post('/:productCode/open/:number', (req: Request, res: Response) => {
     try {
       // Validate request params
-      const { productCode, number: numPacks } = openMultipleParamsSchema.parse(req.params);
+      const { productCode, number: numPacks } = openMultipleParamsSchema.parse(
+        req.params
+      );
       logger.info(
         { productCode, count: numPacks },
         `Handling POST /products/:productCode/open/:number request`
       );
 
-      const product = loadedData.extendedDataArray.find(
-        (p) => p?.code?.toLowerCase() === productCode
-      );
-      if (!product) {
+      // Find the UUID using the code map
+      const productUuid = loadedData.codeToUuidMap[productCode];
+
+      if (!productUuid) {
         logger.warn(
           { productCode },
-          'Product not found for open multiple request.'
+          'Product code not found in codeToUuidMap for open multiple request.'
+        );
+        return res.status(404).json({
+          error: `Product with code '${productCode}' not found or mapped.`,
+        });
+      }
+
+      // Now find the corresponding UnifiedSealedProduct using the UUID
+      const unifiedProduct = loadedData.sealedProducts[productUuid];
+
+      if (!unifiedProduct) {
+        logger.error(
+          { productCode, uuid: productUuid },
+          'Unified product not found for UUID from map! Data inconsistency?'
+        );
+        return res.status(404).json({
+          error: `Product data inconsistency for code '${productCode}'.`,
+        });
+      }
+
+      // Check if allPrintings data is available
+      if (!loadedData.allPrintings) {
+        logger.error(
+          { productCode, uuid: productUuid },
+          'AllPrintings data is null, cannot generate packs.'
         );
         return res
-          .status(404)
-          .json({ error: `Product with code '${productCode}' not found` });
+          .status(503) // Service Unavailable
+          .json({
+            error: 'Server data loading incomplete, cannot generate packs.',
+          });
       }
 
       const results: MultiplePacksResponse = { packs: [] };
       for (let i = 0; i < numPacks; i++) {
-        const packResult = generatePack(product, loadedData); // Use imported function
+        // Pass the CORRECT product type and loadedData to generatePack
+        const packResult = generatePack(
+          unifiedProduct,
+          // Provide the required shape, ensuring allPrintings is not null here
+          {
+            ...loadedData,
+            allPrintings: loadedData.allPrintings,
+          }
+        );
         results.packs.push(packResult);
       }
       logger.info(
-        { productCode: product.code, packCount: results.packs.length },
+        { productCode: unifiedProduct.code, packCount: results.packs.length }, // Log with product code
         `Returning multiple generated packs`
       );
       return res.json(results);
     } catch (error) {
       if (error instanceof ZodError) {
-        logger.warn({ errors: error.errors }, 'Invalid parameters for opening multiple packs');
+        logger.warn(
+          { errors: error.errors },
+          'Invalid parameters for opening multiple packs'
+        );
         return res.status(400).json({
           error: 'Invalid request parameters',
           details: error.errors,
         });
       } else {
-        logger.error({ err: error }, 'Unexpected error in /products/:productCode/open/:number');
+        logger.error(
+          { err: error },
+          'Unexpected error in /products/:productCode/open/:number'
+        );
         throw error; // Re-throw for centralized handler
       }
     }

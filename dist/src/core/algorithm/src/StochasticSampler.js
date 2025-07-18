@@ -48,7 +48,10 @@ const binarySearch = __importStar(require("./binarySearch"));
  * @return StochasticSampler.
  */
 const createStochasticSampler = (options) => {
-    const optionsWithDefaults = Object.assign({ strictWeights: false }, options);
+    const optionsWithDefaults = {
+        strictWeights: false,
+        ...options,
+    };
     const { weights, strictWeights } = optionsWithDefaults;
     // It's important that we store the values associated with each prefix sum
     // rather than relying on `weights` so that we safeguard this implementation

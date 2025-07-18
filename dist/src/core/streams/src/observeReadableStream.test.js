@@ -32,19 +32,10 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const streams = __importStar(require("./index"));
 describe('observeReadableStream', () => {
-    it('correctly calls triggers when stream is naturally drained.', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('correctly calls triggers when stream is naturally drained.', async () => {
         const sourceStream = streams.ReadableStream.from([100, 200, 300]);
         const onCancel = jest.fn();
         const onClose = jest.fn();
@@ -61,22 +52,22 @@ describe('observeReadableStream', () => {
         expect(onPull).toHaveBeenCalledTimes(0);
         expect(onError).toHaveBeenCalledTimes(0);
         const reader = observedStream.getReader();
-        expect(yield reader.read()).toStrictEqual({ done: false, value: 100 });
+        expect(await reader.read()).toStrictEqual({ done: false, value: 100 });
         expect(onCancel).toHaveBeenCalledTimes(0);
         expect(onClose).toHaveBeenCalledTimes(0);
         expect(onPull).toHaveBeenCalledTimes(1);
         expect(onError).toHaveBeenCalledTimes(0);
-        expect(yield reader.read()).toStrictEqual({ done: false, value: 200 });
+        expect(await reader.read()).toStrictEqual({ done: false, value: 200 });
         expect(onCancel).toHaveBeenCalledTimes(0);
         expect(onClose).toHaveBeenCalledTimes(0);
         expect(onPull).toHaveBeenCalledTimes(2);
         expect(onError).toHaveBeenCalledTimes(0);
-        expect(yield reader.read()).toStrictEqual({ done: false, value: 300 });
+        expect(await reader.read()).toStrictEqual({ done: false, value: 300 });
         expect(onCancel).toHaveBeenCalledTimes(0);
         expect(onClose).toHaveBeenCalledTimes(0);
         expect(onPull).toHaveBeenCalledTimes(3);
         expect(onError).toHaveBeenCalledTimes(0);
-        expect(yield reader.read()).toStrictEqual({
+        expect(await reader.read()).toStrictEqual({
             done: true,
             value: undefined,
         });
@@ -85,9 +76,9 @@ describe('observeReadableStream', () => {
         expect(onPull).toHaveBeenCalledTimes(4);
         expect(onError).toHaveBeenCalledTimes(0);
         // Ensure that the upstream's reader is released.
-        yield expect(sourceStream.getReader().closed).resolves.toBeUndefined();
-    }));
-    it('correctly calls triggers when stream is cancelled.', () => __awaiter(void 0, void 0, void 0, function* () {
+        await expect(sourceStream.getReader().closed).resolves.toBeUndefined();
+    });
+    it('correctly calls triggers when stream is cancelled.', async () => {
         const sourceStream = streams.ReadableStream.from([100, 200, 300]);
         const onCancel = jest.fn();
         const onClose = jest.fn();
@@ -104,20 +95,20 @@ describe('observeReadableStream', () => {
         expect(onPull).toHaveBeenCalledTimes(0);
         expect(onError).toHaveBeenCalledTimes(0);
         const reader = observedStream.getReader();
-        expect(yield reader.read()).toStrictEqual({ done: false, value: 100 });
+        expect(await reader.read()).toStrictEqual({ done: false, value: 100 });
         expect(onCancel).toHaveBeenCalledTimes(0);
         expect(onClose).toHaveBeenCalledTimes(0);
         expect(onPull).toHaveBeenCalledTimes(1);
         expect(onError).toHaveBeenCalledTimes(0);
-        yield reader.cancel();
+        await reader.cancel();
         expect(onCancel).toHaveBeenCalledTimes(1);
         expect(onClose).toHaveBeenCalledTimes(0);
         expect(onPull).toHaveBeenCalledTimes(1);
         expect(onError).toHaveBeenCalledTimes(0);
         // Ensure that when cancelled, the upstream is closed.
-        yield expect(sourceStream.getReader().closed).resolves.toBeUndefined();
-    }));
-    it('correctly calls triggers when stream errors.', () => __awaiter(void 0, void 0, void 0, function* () {
+        await expect(sourceStream.getReader().closed).resolves.toBeUndefined();
+    });
+    it('correctly calls triggers when stream errors.', async () => {
         const sourceStream = new streams.ReadableStream({
             pull: (controller) => {
                 controller.error('Expected error.');
@@ -138,13 +129,13 @@ describe('observeReadableStream', () => {
         expect(onPull).toHaveBeenCalledTimes(0);
         expect(onError).toHaveBeenCalledTimes(0);
         const reader = observedStream.getReader();
-        yield expect(reader.read()).rejects.toBe('Expected error.');
+        await expect(reader.read()).rejects.toBe('Expected error.');
         expect(onCancel).toHaveBeenCalledTimes(0);
         expect(onClose).toHaveBeenCalledTimes(0);
         expect(onPull).toHaveBeenCalledTimes(1);
         expect(onError).toHaveBeenCalledTimes(1);
         expect(onError).toHaveBeenCalledWith('Expected error.');
         // Ensure that the upstream's reader is released.
-        yield expect(sourceStream.getReader().closed).rejects.toBe('Expected error.');
-    }));
+        await expect(sourceStream.getReader().closed).rejects.toBe('Expected error.');
+    });
 });

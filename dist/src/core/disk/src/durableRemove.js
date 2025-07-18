@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.durableRemove = void 0;
 const nodeFs = __importStar(require("node:fs/promises"));
@@ -55,28 +46,28 @@ const executeNativeSystemCall_1 = require("./executeNativeSystemCall");
  *
  * @return A status object indicating success or failure.
  */
-const durableRemove = (options) => __awaiter(void 0, void 0, void 0, function* () {
+const durableRemove = async (options) => {
     const { path, parentDirectory } = options;
-    const removeResult = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.rm(path));
+    const removeResult = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.rm(path));
     if (!status.isOk(removeResult)) {
         return removeResult;
     }
     if (parentDirectory != null) {
-        return status.stripValue(yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectory.sync()));
+        return status.stripValue(await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectory.sync()));
     }
-    const maybeParentDirectoryFileHandle = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.open(nodePath.dirname(path), nodeFs.constants.O_DIRECTORY));
+    const maybeParentDirectoryFileHandle = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.open(nodePath.dirname(path), nodeFs.constants.O_DIRECTORY));
     if (!status.isOk(maybeParentDirectoryFileHandle)) {
         return maybeParentDirectoryFileHandle;
     }
     const parentDirectoryFileHandle = maybeParentDirectoryFileHandle.value;
     try {
-        return status.stripValue(yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectoryFileHandle.sync()));
+        return status.stripValue(await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectoryFileHandle.sync()));
     }
     finally {
-        const closeResult = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectoryFileHandle.close());
+        const closeResult = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => parentDirectoryFileHandle.close());
         if (!status.isOk(closeResult)) {
             console.warn(`Failed to close file handle for ${nodePath.dirname(path)}`);
         }
     }
-});
+};
 exports.durableRemove = durableRemove;

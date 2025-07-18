@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const nodeFs = __importStar(require("node:fs"));
 const nodeOs = __importStar(require("node:os"));
@@ -49,65 +40,65 @@ const status = __importStar(require("@core/status"));
 const uuid = __importStar(require("uuid"));
 const disk = __importStar(require("./index"));
 describe('makeTempDirectory', () => {
-    it(`by default allocates directories in the os's tmp nodePath.`, () => __awaiter(void 0, void 0, void 0, function* () {
-        const tempDirectory = status.throwIfError(yield disk.makeTempDirectory());
+    it(`by default allocates directories in the os's tmp nodePath.`, async () => {
+        const tempDirectory = status.throwIfError(await disk.makeTempDirectory());
         expect(tempDirectory.startsWith(`${nodeOs.tmpdir()}/`)).toBe(true);
-    }));
-    it('can set a custom tmp directory prefix.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('can set a custom tmp directory prefix.', async () => {
         const customDirectory = `${nodeOs.tmpdir()}/${uuid.v4()}`;
-        const tempDirectory = status.throwIfError(yield disk.makeTempDirectory({
+        const tempDirectory = status.throwIfError(await disk.makeTempDirectory({
             parentDirectory: customDirectory,
         }));
         expect(tempDirectory.startsWith(`${customDirectory}/`)).toBe(true);
-    }));
-    it('Allocates an accessible directory.', () => __awaiter(void 0, void 0, void 0, function* () {
-        yield expect(nodeFs.promises.access(status.throwIfError(yield disk.makeTempDirectory()))).resolves.not.toThrow();
-    }));
+    });
+    it('Allocates an accessible directory.', async () => {
+        await expect(nodeFs.promises.access(status.throwIfError(await disk.makeTempDirectory()))).resolves.not.toThrow();
+    });
 });
 describe('doInTempDirectory', () => {
-    it(`By default allocates directories in the os's nodePath.`, () => __awaiter(void 0, void 0, void 0, function* () {
+    it(`By default allocates directories in the os's nodePath.`, async () => {
         const handler = jest.fn((tempDirectory) => {
             expect(nodePath.dirname(tempDirectory)).toEqual(nodeOs.tmpdir());
             return status.okStatus();
         });
-        status.throwIfError(yield disk.doInTempDirectory(handler));
+        status.throwIfError(await disk.doInTempDirectory(handler));
         expect(handler).toHaveBeenCalledTimes(1);
-    }));
-    it('Can set custom tmp directory prefix.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('Can set custom tmp directory prefix.', async () => {
         const customDirectory = `${nodeOs.tmpdir()}/${uuid.v4()}`;
         const handler = jest.fn((tempDirectory) => {
             expect(nodePath.dirname(tempDirectory)).toEqual(customDirectory);
             return status.okStatus();
         });
-        status.throwIfError(yield disk.doInTempDirectory(handler, {
+        status.throwIfError(await disk.doInTempDirectory(handler, {
             parentDirectory: customDirectory,
         }));
         expect(handler).toHaveBeenCalledTimes(1);
-    }));
-    it('Allocates an accessible directory.', () => __awaiter(void 0, void 0, void 0, function* () {
-        const handler = jest.fn((tempDirectory) => __awaiter(void 0, void 0, void 0, function* () {
-            yield expect(nodeFs.promises.access(tempDirectory)).resolves.not.toThrow();
+    });
+    it('Allocates an accessible directory.', async () => {
+        const handler = jest.fn(async (tempDirectory) => {
+            await expect(nodeFs.promises.access(tempDirectory)).resolves.not.toThrow();
+            return status.okStatus();
+        });
+        status.throwIfError(await disk.doInTempDirectory(handler));
+        expect(handler).toHaveBeenCalledTimes(1);
+    });
+    it('Deletes the directory after the handler resolves.', async () => {
+        let savedTempDirectory = null;
+        status.throwIfError(await disk.doInTempDirectory(async (tempDirectory) => {
+            savedTempDirectory = tempDirectory;
+            await expect(nodeFs.promises.access(tempDirectory)).resolves.not.toThrow();
             return status.okStatus();
         }));
-        status.throwIfError(yield disk.doInTempDirectory(handler));
-        expect(handler).toHaveBeenCalledTimes(1);
-    }));
-    it('Deletes the directory after the handler resolves.', () => __awaiter(void 0, void 0, void 0, function* () {
-        let savedTempDirectory = null;
-        status.throwIfError(yield disk.doInTempDirectory((tempDirectory) => __awaiter(void 0, void 0, void 0, function* () {
-            savedTempDirectory = tempDirectory;
-            yield expect(nodeFs.promises.access(tempDirectory)).resolves.not.toThrow();
-            return status.okStatus();
-        })));
         if (savedTempDirectory == null) {
             throw new Error('savedTempDirectory is unset');
         }
-        yield expect(nodeFs.promises.access(savedTempDirectory)).rejects.toThrow();
-    }));
-    it('returns the handler response.', () => __awaiter(void 0, void 0, void 0, function* () {
-        expect(yield disk.doInTempDirectory(() => 100)).toStrictEqual(status.fromValue(100));
-        expect(status.throwIfError(yield disk.doInTempDirectory(() => status.fromError('Expected error.')))).toMatchObject({
+        await expect(nodeFs.promises.access(savedTempDirectory)).rejects.toThrow();
+    });
+    it('returns the handler response.', async () => {
+        expect(await disk.doInTempDirectory(() => 100)).toStrictEqual(status.fromValue(100));
+        expect(status.throwIfError(await disk.doInTempDirectory(() => status.fromError('Expected error.')))).toMatchObject({
             error: 'Expected error.',
         });
-    }));
+    });
 });

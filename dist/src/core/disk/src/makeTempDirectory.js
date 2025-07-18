@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.doInTempDirectory = exports.makeTempDirectory = void 0;
 const nodeFs = __importStar(require("node:fs/promises"));
@@ -60,15 +51,18 @@ const executeNativeSystemCall_1 = require("./executeNativeSystemCall");
  *
  * @returns The string of the created temp directory.
  */
-const makeTempDirectory = (options) => __awaiter(void 0, void 0, void 0, function* () {
-    const optionsWithDefaults = Object.assign({ parentDirectory: nodeOs.tmpdir() }, options);
+const makeTempDirectory = async (options) => {
+    const optionsWithDefaults = {
+        parentDirectory: nodeOs.tmpdir(),
+        ...options,
+    };
     const absolutePath = nodePath.join(optionsWithDefaults.parentDirectory, uuid.v4());
-    const maybeResult = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.mkdir(absolutePath, { recursive: true }));
+    const maybeResult = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.mkdir(absolutePath, { recursive: true }));
     if (!status.isOk(maybeResult)) {
         return maybeResult;
     }
     return status.fromValue(absolutePath);
-});
+};
 exports.makeTempDirectory = makeTempDirectory;
 /**
  * Creates a tmp directory and automatically cleans up that tmp directory when
@@ -82,14 +76,14 @@ exports.makeTempDirectory = makeTempDirectory;
  * @returns A status which contains the handler's response or an error if a
  *   temporary directory couldn't be created.
  */
-const doInTempDirectory = (handler, options) => __awaiter(void 0, void 0, void 0, function* () {
-    const maybeTempDirectory = yield (0, exports.makeTempDirectory)(options);
+const doInTempDirectory = async (handler, options) => {
+    const maybeTempDirectory = await (0, exports.makeTempDirectory)(options);
     if (!status.isOk(maybeTempDirectory)) {
         return maybeTempDirectory;
     }
     const tempDirectory = maybeTempDirectory.value;
-    const response = yield handler(tempDirectory);
-    const maybeRemoved = yield (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.rm(tempDirectory, {
+    const response = await handler(tempDirectory);
+    const maybeRemoved = await (0, executeNativeSystemCall_1.executeNativeSystemCall)(() => nodeFs.rm(tempDirectory, {
         recursive: true,
         force: true,
     }));
@@ -100,5 +94,5 @@ const doInTempDirectory = (handler, options) => __awaiter(void 0, void 0, void 0
         }, 'Failed to clean up temp directory.');
     }
     return status.fromValue(response);
-});
+};
 exports.doInTempDirectory = doInTempDirectory;

@@ -24,5 +24,8 @@ const createNoContentError = () => ({
     type: ErrorType.NO_CONTENT,
 });
 exports.createNoContentError = createNoContentError;
-const createUnexpectedStatusError = (details) => (Object.assign({ type: ErrorType.UNEXPECTED_STATUS }, details));
+const createUnexpectedStatusError = (details) => ({
+    type: ErrorType.UNEXPECTED_STATUS,
+    ...details,
+});
 exports.createUnexpectedStatusError = createUnexpectedStatusError;

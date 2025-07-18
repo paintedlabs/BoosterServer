@@ -50,8 +50,7 @@ const duration = __importStar(require("./duration"));
  * @returns A promise which will resolve after `delay`.
  */
 const sleep = (delay, options) => {
-    var _a;
-    if ((_a = options === null || options === void 0 ? void 0 : options.abortSignal) === null || _a === void 0 ? void 0 : _a.aborted) {
+    if (options?.abortSignal?.aborted) {
         return Promise.resolve({ cancelled: true });
     }
     const delayMs = duration.toMilliseconds(delay);
@@ -63,12 +62,11 @@ const sleep = (delay, options) => {
             resolve({ cancelled: true });
             clearTimeout(timeout);
         };
-        if ((options === null || options === void 0 ? void 0 : options.abortSignal) != null) {
+        if (options?.abortSignal != null) {
             options.abortSignal.addEventListener('abort', onAbort);
         }
         const timeout = setTimeout(() => {
-            var _a;
-            (_a = options === null || options === void 0 ? void 0 : options.abortSignal) === null || _a === void 0 ? void 0 : _a.removeEventListener('abort', onAbort);
+            options?.abortSignal?.removeEventListener('abort', onAbort);
             resolve({ cancelled: false });
         }, delayMs);
     });

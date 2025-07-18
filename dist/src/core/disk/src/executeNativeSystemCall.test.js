@@ -32,40 +32,31 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const status = __importStar(require("@core/status"));
 const disk = __importStar(require("./index"));
 describe('executeNativeSystemCall', () => {
-    it('returns the callback response if no errors are thrown.', () => __awaiter(void 0, void 0, void 0, function* () {
-        expect(status.throwIfError(yield disk.executeNativeSystemCall(() => 100))).toBe(100);
-    }));
-    it('represents errors with no code as UnknownError', () => __awaiter(void 0, void 0, void 0, function* () {
-        expect(yield disk.executeNativeSystemCall(() => {
+    it('returns the callback response if no errors are thrown.', async () => {
+        expect(status.throwIfError(await disk.executeNativeSystemCall(() => 100))).toBe(100);
+    });
+    it('represents errors with no code as UnknownError', async () => {
+        expect(await disk.executeNativeSystemCall(() => {
             throw new Error('An unknown error.');
         })).toMatchObject({
             error: {
                 type: disk.ErrorType.UNKNOWN,
             },
         });
-    }));
-    it('represents errors with unrecognized code as UnknownError', () => __awaiter(void 0, void 0, void 0, function* () {
-        expect(yield disk.executeNativeSystemCall(() => {
+    });
+    it('represents errors with unrecognized code as UnknownError', async () => {
+        expect(await disk.executeNativeSystemCall(() => {
             throw makeErrorWithCode('Expected error.', 'FAKE_CODE');
         })).toMatchObject({
             error: {
                 type: disk.ErrorType.UNKNOWN,
             },
         });
-    }));
+    });
     it.each([
         'EACCES',
         'EEXIST',
@@ -75,8 +66,8 @@ describe('executeNativeSystemCall', () => {
         'ENOTDIR',
         'ENOTEMPTY',
         'EPERM',
-    ])('represents errors with code "%s" as SystemError', (code) => __awaiter(void 0, void 0, void 0, function* () {
-        expect(yield disk.executeNativeSystemCall(() => {
+    ])('represents errors with code "%s" as SystemError', async (code) => {
+        expect(await disk.executeNativeSystemCall(() => {
             throw makeErrorWithCode('Expected error.', code);
         })).toMatchObject({
             error: {
@@ -84,7 +75,7 @@ describe('executeNativeSystemCall', () => {
                 code,
             },
         });
-    }));
+    });
 });
 const makeErrorWithCode = (message, code) => {
     const error = new Error(message);

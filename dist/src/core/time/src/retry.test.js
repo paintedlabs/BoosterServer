@@ -32,15 +32,6 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const status = __importStar(require("@core/status"));
 const time = __importStar(require("./index"));
@@ -48,51 +39,51 @@ beforeEach(() => {
     jest.useFakeTimers();
 });
 describe('doWithRetry', () => {
-    it('infinite maxRetries only returns after a success.', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('infinite maxRetries only returns after a success.', async () => {
         const mockCallback = jest.fn(() => status.fromError('Expected error.'));
         const observer = createPromiseObserver(time.doWithRetry(mockCallback, {
             maxRetries: Infinity,
         }));
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(mockCallback.mock.calls.length).toBe(1);
         jest.advanceTimersByTime(1000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(mockCallback.mock.calls.length).toBe(2);
         jest.advanceTimersByTime(2000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(mockCallback.mock.calls.length).toBe(3);
         jest.advanceTimersByTime(4000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(mockCallback.mock.calls.length).toBe(4);
         // Change the mocked function to return a successful status and wait 500ms.
         // Then validate that doWithRetry has returned the successful status.
         mockCallback.mockImplementation(() => status.fromValue('Success!'));
         jest.advanceTimersByTime(8000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(mockCallback.mock.calls.length).toBe(5);
         expect(observer.state).toStrictEqual({
             resolved: status.fromValue('Success!'),
         });
-    }));
-    it('will early return an error if max retries is hit.', () => __awaiter(void 0, void 0, void 0, function* () {
+    });
+    it('will early return an error if max retries is hit.', async () => {
         const mockCallback = jest.fn(() => status.fromError('Expected error.'));
         const observer = createPromiseObserver(time.doWithRetry(mockCallback, {
             maxRetries: 2,
         }));
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(mockCallback.mock.calls.length).toBe(1);
         jest.advanceTimersByTime(1000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(mockCallback.mock.calls.length).toBe(2);
         jest.advanceTimersByTime(2000);
-        yield drainEventLoop();
+        await drainEventLoop();
         expect(mockCallback.mock.calls.length).toBe(3);
         expect(observer.state).toMatchObject({
             resolved: {
                 error: 'Expected error.',
             },
         });
-    }));
+    });
 });
 const createPromiseObserver = (promise) => {
     let state = null;
@@ -126,7 +117,7 @@ const createPromiseObserver = (promise) => {
  * To achieve this, we have this helper which enforces a 1000 event loop cycles
  * to complete, offering plenty of time for promises to resolve.
  */
-const drainEventLoop = () => __awaiter(void 0, void 0, void 0, function* () {
+const drainEventLoop = async () => {
     for (let i = 0; i < 1000; ++i)
-        yield Promise.resolve();
-});
+        await Promise.resolve();
+};
