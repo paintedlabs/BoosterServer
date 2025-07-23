@@ -402,7 +402,7 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
         sheets: {}, // Initialize sheets to be filled with processed ones
       };
 
-      logger.debug(
+      logger.trace(
         {
           productUuid: product.uuid,
           productName: product.name,
@@ -490,7 +490,7 @@ function loadAndProcessExtendedData(filePath: string): ExtendedSealedData[] {
       // Assign the processed sheets to the new product object
       processedProduct.sheets = processedSheets;
 
-      logger.debug(
+      logger.trace(
         {
           productUuid: product.uuid,
           productName: product.name,
@@ -1567,7 +1567,7 @@ export async function loadAllData(): Promise<LoadedData> {
       continue;
     }
 
-    logger.debug(
+    logger.trace(
       {
         extUuid: convertedExtProduct.uuid,
         extCode: convertedExtProduct.code,
@@ -1805,7 +1805,7 @@ export async function loadAllData(): Promise<LoadedData> {
     if (boosterConfigs[setCode]) {
       // Merge with set data
       setData.booster = boosterConfigs[setCode].booster;
-      logger.debug(`Merged booster configuration for set ${setCode}`);
+      logger.trace(`Merged booster configuration for set ${setCode}`);
 
       // Find and update corresponding sealed products
       for (const product of Object.values(masterSealedProductsMap)) {
@@ -1818,7 +1818,10 @@ export async function loadAllData(): Promise<LoadedData> {
           .toLowerCase()
           .includes(setData.name.toLowerCase());
 
-        if (setCodeInName || setDataNameInName) {
+        // Additional matching logic: check if the product's setCode matches
+        const productSetCodeMatch = product.setCode === setCode;
+
+        if (setCodeInName || setDataNameInName || productSetCodeMatch) {
           // Look for a booster configuration that matches this product's UUID
           const productUuid = product.uuid;
           const boosterConfig = boosterConfigs[setCode].booster[productUuid];
@@ -1827,12 +1830,12 @@ export async function loadAllData(): Promise<LoadedData> {
             // Convert the booster configuration to the expected format
             const convertedBooster = convertBoosterConfig(boosterConfig);
             product.booster = convertedBooster;
-            logger.debug(
+            logger.trace(
               `Merged booster configuration for product ${product.uuid} (${product.name}) with set ${setCode}`
             );
           } else {
-            logger.debug(
-              `Product ${product.uuid} (${product.name}) matches set ${setCode} but no booster configuration found for UUID ${productUuid}`
+            logger.trace(
+              `Product ${product.uuid} (${product.name}) matches set ${setCode} but no booster configuration found for UUID ${productUuid}. Available UUIDs: ${Object.keys(boosterConfigs[setCode].booster).join(', ')}`
             );
           }
         }

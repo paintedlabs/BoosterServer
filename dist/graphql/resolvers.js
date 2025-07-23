@@ -28,7 +28,24 @@ exports.resolvers = {
         sets: async (_, __, { dataSources }) => {
             const loadedData = await dataSources.mtgjsonAPI.getLoadedData();
             logger_1.default.debug('Resolving sets query');
-            return loadedData?.sets ?? [];
+            if (!loadedData?.sets) {
+                logger_1.default.error('Loaded data or sets array is undefined');
+                return [];
+            }
+            // Filter sets to only include those with sealed products
+            const setsWithSealedProducts = loadedData.sets.filter((set) => set.sealedProduct && set.sealedProduct.length > 0);
+            // Sort by release date in descending order (newest first)
+            const sortedSets = setsWithSealedProducts.sort((a, b) => {
+                const dateA = new Date(a.releaseDate || '1900-01-01');
+                const dateB = new Date(b.releaseDate || '1900-01-01');
+                return dateB.getTime() - dateA.getTime(); // Descending order
+            });
+            logger_1.default.debug({
+                totalSets: loadedData.sets.length,
+                setsWithSealedProducts: setsWithSealedProducts.length,
+                sortedSetsCount: sortedSets.length,
+            }, 'Returning sets with sealed products sorted by release date');
+            return sortedSets;
         },
         // Get a specific set by code
         set: async (_, { code }, { dataSources }) => {

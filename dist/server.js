@@ -112,6 +112,18 @@ let loadedData = null;
 async function main() {
     logger_1.default.info('Starting server initialization...');
     try {
+        // 0. Extract booster configurations from AllPrintings data
+        logger_1.default.info('Extracting booster configurations...');
+        try {
+            const { execSync } = require('child_process');
+            const path = require('path');
+            const scriptPath = path.join(__dirname, 'scripts', 'extractBoosters.js');
+            execSync(`node ${scriptPath}`, { stdio: 'inherit' });
+            logger_1.default.info('Booster configuration extraction complete.');
+        }
+        catch (extractError) {
+            logger_1.default.warn({ err: extractError }, 'Failed to extract booster configurations, continuing with existing files...');
+        }
         // 1. Load all necessary data using the new dataLoader module
         logger_1.default.info('Loading data...');
         loadedData = await (0, dataLoader_1.loadAllData)();

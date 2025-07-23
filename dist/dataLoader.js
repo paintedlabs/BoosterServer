@@ -283,7 +283,7 @@ function loadAndProcessExtendedData(filePath) {
                 ...product, // Copy existing properties including boosters
                 sheets: {}, // Initialize sheets to be filled with processed ones
             };
-            logger_1.default.debug({
+            logger_1.default.trace({
                 productUuid: product.uuid,
                 productName: product.name,
                 hasBoosters: !!product.boosters,
@@ -348,7 +348,7 @@ function loadAndProcessExtendedData(filePath) {
             }
             // Assign the processed sheets to the new product object
             processedProduct.sheets = processedSheets;
-            logger_1.default.debug({
+            logger_1.default.trace({
                 productUuid: product.uuid,
                 productName: product.name,
                 hasBoosters: !!processedProduct.boosters,
@@ -1201,7 +1201,7 @@ async function loadAllData() {
             logger_1.default.warn({ productName: extProduct.name, uuid: extProduct.uuid }, 'Failed to convert extended product');
             continue;
         }
-        logger_1.default.debug({
+        logger_1.default.trace({
             extUuid: convertedExtProduct.uuid,
             extCode: convertedExtProduct.code,
             extName: convertedExtProduct.name,
@@ -1371,7 +1371,7 @@ async function loadAllData() {
         if (boosterConfigs[setCode]) {
             // Merge with set data
             setData.booster = boosterConfigs[setCode].booster;
-            logger_1.default.debug(`Merged booster configuration for set ${setCode}`);
+            logger_1.default.trace(`Merged booster configuration for set ${setCode}`);
             // Find and update corresponding sealed products
             for (const product of Object.values(masterSealedProductsMap)) {
                 // Check if the product belongs to this set by comparing set code and name
@@ -1382,7 +1382,9 @@ async function loadAllData() {
                 const setDataNameInName = product.name
                     .toLowerCase()
                     .includes(setData.name.toLowerCase());
-                if (setCodeInName || setDataNameInName) {
+                // Additional matching logic: check if the product's setCode matches
+                const productSetCodeMatch = product.setCode === setCode;
+                if (setCodeInName || setDataNameInName || productSetCodeMatch) {
                     // Look for a booster configuration that matches this product's UUID
                     const productUuid = product.uuid;
                     const boosterConfig = boosterConfigs[setCode].booster[productUuid];
@@ -1390,10 +1392,10 @@ async function loadAllData() {
                         // Convert the booster configuration to the expected format
                         const convertedBooster = convertBoosterConfig(boosterConfig);
                         product.booster = convertedBooster;
-                        logger_1.default.debug(`Merged booster configuration for product ${product.uuid} (${product.name}) with set ${setCode}`);
+                        logger_1.default.trace(`Merged booster configuration for product ${product.uuid} (${product.name}) with set ${setCode}`);
                     }
                     else {
-                        logger_1.default.debug(`Product ${product.uuid} (${product.name}) matches set ${setCode} but no booster configuration found for UUID ${productUuid}`);
+                        logger_1.default.trace(`Product ${product.uuid} (${product.name}) matches set ${setCode} but no booster configuration found for UUID ${productUuid}. Available UUIDs: ${Object.keys(boosterConfigs[setCode].booster).join(', ')}`);
                     }
                 }
             }

@@ -62,7 +62,7 @@ async function fetchAndValidate<T>(
   // Add a flag or type check to know if price correction logic is applicable
   shouldCorrectPrices: boolean = false
 ): Promise<status.StatusOr<T, TcgCsvError>> {
-  logger.info(`Fetching data from ${url}`);
+  logger.trace(`Fetching data from ${url}`);
   const maybeBody = await net.fetchBody(url);
 
   if (!status.isOk(maybeBody)) {
@@ -104,7 +104,7 @@ async function fetchAndValidate<T>(
   // Validate using the provided asserter function
   try {
     const validatedData = asserter(parsedJson);
-    logger.info({ url }, `Initial validation successful.`);
+    logger.trace({ url }, `Initial validation successful.`);
     // Check API success status AFTER successful validation
     const apiResponse = validatedData as any; // Assume structure includes success/errors
     if (
@@ -120,11 +120,11 @@ async function fetchAndValidate<T>(
         errors: apiResponse.errors || [],
       });
     }
-    logger.info(`Successfully fetched and validated data from ${url}`);
+    logger.trace(`Successfully fetched and validated data from ${url}`);
     return status.fromValue(validatedData);
   } catch (initialError: unknown) {
     // Initial assertion failed, check if correction is applicable
-    logger.warn(
+    logger.trace(
       { url, error: initialError },
       `Initial validation failed for ${url}. Checking if correction is applicable...`
     );
@@ -136,7 +136,7 @@ async function fetchAndValidate<T>(
       parsedJson &&
       Array.isArray(parsedJson.results)
     ) {
-      logger.info({ url }, 'Attempting price field corrections...');
+      logger.trace({ url }, 'Attempting price field corrections...');
       parsedJson.results.forEach((item: any, index: number) => {
         const priceFields = [
           'marketPrice',
@@ -176,11 +176,11 @@ async function fetchAndValidate<T>(
     }
 
     if (corrected) {
-      logger.info({ url }, `Attempting validation again after corrections`);
+      logger.trace({ url }, `Attempting validation again after corrections`);
       try {
         // Retry assertion with the potentially corrected data
         const validatedData = asserter(parsedJson);
-        logger.info({ url }, `Validation successful after correction.`);
+        logger.trace({ url }, `Validation successful after correction.`);
         // Check API success status AFTER successful validation
         const apiResponse = validatedData as any; // Assume structure includes success/errors
         if (

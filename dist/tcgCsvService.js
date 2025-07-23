@@ -64,7 +64,7 @@ function createTcgCsvError(error) {
 async function fetchAndValidate(url, asserter, // Asserter remains for re-validation if needed
 // Add a flag or type check to know if price correction logic is applicable
 shouldCorrectPrices = false) {
-    logger_1.default.info(`Fetching data from ${url}`);
+    logger_1.default.trace(`Fetching data from ${url}`);
     const maybeBody = await net.fetchBody(url);
     if (!status.isOk(maybeBody)) {
         const error = maybeBody.error;
@@ -104,7 +104,7 @@ shouldCorrectPrices = false) {
     // Validate using the provided asserter function
     try {
         const validatedData = asserter(parsedJson);
-        logger_1.default.info({ url }, `Initial validation successful.`);
+        logger_1.default.trace({ url }, `Initial validation successful.`);
         // Check API success status AFTER successful validation
         const apiResponse = validatedData; // Assume structure includes success/errors
         if (!apiResponse.success ||
@@ -115,18 +115,18 @@ shouldCorrectPrices = false) {
                 errors: apiResponse.errors || [],
             });
         }
-        logger_1.default.info(`Successfully fetched and validated data from ${url}`);
+        logger_1.default.trace(`Successfully fetched and validated data from ${url}`);
         return status.fromValue(validatedData);
     }
     catch (initialError) {
         // Initial assertion failed, check if correction is applicable
-        logger_1.default.warn({ url, error: initialError }, `Initial validation failed for ${url}. Checking if correction is applicable...`);
+        logger_1.default.trace({ url, error: initialError }, `Initial validation failed for ${url}. Checking if correction is applicable...`);
         let corrected = false;
         // Only attempt price correction if flagged AND if the structure looks like Products/Prices response
         if (shouldCorrectPrices &&
             parsedJson &&
             Array.isArray(parsedJson.results)) {
-            logger_1.default.info({ url }, 'Attempting price field corrections...');
+            logger_1.default.trace({ url }, 'Attempting price field corrections...');
             parsedJson.results.forEach((item, index) => {
                 const priceFields = [
                     'marketPrice',
@@ -163,11 +163,11 @@ shouldCorrectPrices = false) {
             });
         }
         if (corrected) {
-            logger_1.default.info({ url }, `Attempting validation again after corrections`);
+            logger_1.default.trace({ url }, `Attempting validation again after corrections`);
             try {
                 // Retry assertion with the potentially corrected data
                 const validatedData = asserter(parsedJson);
-                logger_1.default.info({ url }, `Validation successful after correction.`);
+                logger_1.default.trace({ url }, `Validation successful after correction.`);
                 // Check API success status AFTER successful validation
                 const apiResponse = validatedData; // Assume structure includes success/errors
                 if (!apiResponse.success ||

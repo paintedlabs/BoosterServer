@@ -103,6 +103,21 @@ let loadedData: LoadedData | null = null;
 async function main() {
   logger.info('Starting server initialization...');
   try {
+    // 0. Extract booster configurations from AllPrintings data
+    logger.info('Extracting booster configurations...');
+    try {
+      const { execSync } = require('child_process');
+      const path = require('path');
+      const scriptPath = path.join(__dirname, 'scripts', 'extractBoosters.js');
+      execSync(`node ${scriptPath}`, { stdio: 'inherit' });
+      logger.info('Booster configuration extraction complete.');
+    } catch (extractError) {
+      logger.warn(
+        { err: extractError },
+        'Failed to extract booster configurations, continuing with existing files...'
+      );
+    }
+
     // 1. Load all necessary data using the new dataLoader module
     logger.info('Loading data...');
     loadedData = await loadAllData();

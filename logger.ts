@@ -10,8 +10,19 @@ import pino from 'pino';
 // Default to development if not set
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
+// Log level priority: LOG_LEVEL env var > NODE_ENV default > fallback
+const getLogLevel = () => {
+  if (process.env.LOG_LEVEL) {
+    return process.env.LOG_LEVEL;
+  }
+  if (isDevelopment) {
+    return process.env.DEV_LOG_LEVEL || 'info'; // Less verbose default for dev
+  }
+  return 'info';
+};
+
 const loggerOptions: pino.LoggerOptions = {
-  level: process.env.LOG_LEVEL || (isDevelopment ? 'debug' : 'info'), // Default log level
+  level: getLogLevel(),
 };
 
 // Use pino-pretty only in development for human-readable logs
