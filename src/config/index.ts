@@ -21,7 +21,13 @@ export interface Config {
       allPrintings: string;
       extendedData: string;
       scryfallData: string;
+      setMappings: string;
     };
+  };
+  tcgcsv: {
+    baseUrl: string;
+    cacheTimeout: number;
+    maxRetries: number;
   };
   cache: {
     images: string;
@@ -55,7 +61,16 @@ export const config: Config = {
       allPrintings: "data/AllPrintings.json",
       extendedData: "data/sealed_extended_data.json",
       scryfallData: "data/scryfall_all_cards.json",
+      setMappings: "data/setMappings.json",
     },
+  },
+  tcgcsv: {
+    baseUrl: "https://tcgcsv.com/tcgplayer",
+    cacheTimeout: parseInt(
+      process.env["TCGCSV_CACHE_TIMEOUT"] || "3600000",
+      10
+    ), // 1 hour default
+    maxRetries: parseInt(process.env["TCGCSV_MAX_RETRIES"] || "3", 10),
   },
   cache: {
     images: "cache/images",

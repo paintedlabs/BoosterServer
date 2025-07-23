@@ -10,6 +10,7 @@
     "build": "npm run clean && tsc",
     "build:dev": "npm run clean:dev && tsc -p tsconfig.dev.json",
     "test": "jest",
+    "test:tcgcsv": "node test-tcgcsv.js",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
     "clean": "rm -rf dist logs cache",

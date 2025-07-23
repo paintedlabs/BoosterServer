@@ -16,13 +16,20 @@ import {
   PackResponse,
   MultiplePacksResponse,
   DataService,
+  PackResponseWithPricing,
 } from "../types";
 import { NotFoundError, ValidationError } from "../utils/errors";
+import { TCGCSVService } from "./tcgcsvService";
 
 export class MTGDataService implements DataService {
   private allPrintings: AllPrintings | null = null;
   private extendedDataArray: ExtendedSealedData[] = [];
   private combinedCards: Record<string, CombinedCard> = {};
+  private tcgcsvService: TCGCSVService;
+
+  constructor() {
+    this.tcgcsvService = new TCGCSVService();
+  }
 
   /**
    * Initialize the data service by loading all required data files
@@ -100,18 +107,89 @@ export class MTGDataService implements DataService {
     return { pack };
   }
 
+  async openProductWithPricing(
+    productCode: string
+  ): Promise<PackResponseWithPricing> {
+    const product = this.extendedDataArray.find(
+      (p) => p.code.toLowerCase() === productCode.toLowerCase()
+    );
+
+    if (!product) {
+      throw new NotFoundError(`Product not found: ${productCode}`);
+    }
+
+    const pack = this.generatePack(product);
+    const response: PackResponseWithPricing = { pack };
+
+    // Try to get pricing data for this product
+    try {
+      const productsWithPrices =
+        await this.tcgcsvService.getSealedProductsWithPrices(product.set_code);
+
+      // Find matching product by name similarity
+      const matchingProduct = productsWithPrices.find((productWithPrice) => {
+        const productName = productWithPrice.product.name.toLowerCase();
+        const sealedProductName = product.name.toLowerCase();
+
+        return (
+          productName.includes(sealedProductName) ||
+          sealedProductName.includes(productName) ||
+          productName.includes(product.name.toLowerCase()) ||
+          product.name.toLowerCase().includes(productName)
+        );
+      });
+
+      if (matchingProduct) {
+        const priceStats = this.tcgcsvService.getPriceStats(
+          matchingProduct.product,
+          matchingProduct.prices
+        );
+
+        if (priceStats) {
+          response.pricing = {
+            productId: matchingProduct.product.productId,
+            priceStats: {
+              lowPrice: priceStats.lowPrice,
+              midPrice: priceStats.midPrice,
+              highPrice: priceStats.highPrice,
+              marketPrice: priceStats.marketPrice,
+              directLowPrice: priceStats.directLowPrice,
+            },
+            lastUpdated: new Date().toISOString(),
+          };
+        }
+      }
+    } catch (error) {
+      logger.warn(
+        `Failed to fetch pricing data for product ${productCode}:`,
+        error
+      );
+      // Don't fail the request if pricing fails
+    }
+
+    return response;
+  }
+
   openMultipleProducts(
     productCode: string,
     count: number
   ): MultiplePacksResponse {
-    if (isNaN(count) || count <= 0) {
-      throw new ValidationError("Invalid number of packs");
+    const product = this.extendedDataArray.find(
+      (p) => p.code.toLowerCase() === productCode.toLowerCase()
+    );
+
+    if (!product) {
+      throw new NotFoundError(`Product not found: ${productCode}`);
+    }
+
+    if (count < 1 || count > 100) {
+      throw new ValidationError("Count must be between 1 and 100");
     }
 
     const packs: PackResponse[] = [];
     for (let i = 0; i < count; i++) {
-      const pack = this.openProduct(productCode);
-      packs.push(pack);
+      const pack = this.generatePack(product);
+      packs.push({ pack });
     }
 
     return { packs };

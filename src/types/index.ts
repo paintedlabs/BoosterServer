@@ -1,4 +1,8 @@
 import * as ScryfallTypes from "./scryfall";
+import { PackResponseWithPricing } from "./tcgcsv";
+
+// Re-export for convenience
+export { PackResponseWithPricing } from "./tcgcsv";
 
 // MTGJson Types
 export interface AllPrintings {
@@ -104,10 +108,38 @@ export interface DataService {
     productCode: string,
     count: number
   ): MultiplePacksResponse;
+  openProductWithPricing(productCode: string): Promise<PackResponseWithPricing>;
 }
 
 export interface ImageService {
   getCardImage(allPrintingsId: string, cardFace: string): Promise<string>;
   getSetImage(setCode: string): string;
   ensureSetImagesCached(): Promise<void>;
+}
+
+// TCGCSV Service Interface
+export interface TCGCSVServiceInterface {
+  fetchCategories(): Promise<any[]>;
+  fetchGroups(categoryId: number): Promise<any[]>;
+  fetchProducts(groupId: number): Promise<any[]>;
+  fetchPrices(groupId: number): Promise<any[]>;
+  getMagicCategoryId(): Promise<number | null>;
+  getPokemonCategoryId(): Promise<number | null>;
+  findGroupByName(name: string, categoryId: number): Promise<any | null>;
+  getSealedProducts(groupId: number): Promise<any[]>;
+  getPricesForProducts(productIds: number[], groupId: number): Promise<any[]>;
+  getGroupIdForSet(setCode: string): number | null;
+  getAllMappings(): any[];
+  setMapping(
+    setCode: string,
+    setName: string,
+    groupId: number,
+    categoryId: number,
+    categoryName: string
+  ): void;
+  removeMapping(setCode: string): void;
+  getSealedProductsWithPrices(setCode: string): Promise<any[]>;
+  getBestPrice(product: any, prices: any[]): number | null;
+  getPriceStats(product: any, prices: any[]): any | null;
+  findAndMapSet(name: string, setCode: string): Promise<boolean>;
 }

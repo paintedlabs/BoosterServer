@@ -36,6 +36,45 @@ export function createProductsRouter(dataService: DataService): Router {
   });
 
   /**
+   * @route POST /products/:productCode/open-with-pricing
+   * @desc Open a single booster pack with pricing data
+   * @access Public
+   */
+  router.post(
+    "/:productCode/open-with-pricing",
+    async (req: Request, res: Response) => {
+      const productCode = req.params["productCode"];
+      if (!productCode) {
+        return res.status(400).json({ error: "Product code is required" });
+      }
+
+      logger.info(
+        `Received POST /products/${productCode}/open-with-pricing request`
+      );
+
+      try {
+        const result = await dataService.openProductWithPricing(productCode);
+        logger.info(
+          `Returning pack with ${result.pack.length} cards and pricing for product: ${productCode}`
+        );
+        return res.json(result);
+      } catch (error) {
+        logger.error(
+          `Error opening product with pricing ${productCode}:`,
+          error
+        );
+        if (error instanceof ValidationError) {
+          return res.status(400).json({ error: error.message });
+        } else {
+          return res
+            .status(500)
+            .json({ error: "Failed to open product with pricing" });
+        }
+      }
+    }
+  );
+
+  /**
    * @route POST /products/:productCode/open/:number
    * @desc Open multiple booster packs
    * @access Public
