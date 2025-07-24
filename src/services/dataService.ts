@@ -18,7 +18,8 @@ import {
   DataService,
   PackResponseWithPricing,
 } from "../types";
-import { NotFoundError, ValidationError } from "../utils/errors";
+import { TCGCSVProduct, TCGCSVPrice } from "../types/tcgcsv";
+import { NotFoundError } from "../utils/errors";
 import { TCGCSVService } from "./tcgcsvService";
 
 export class MTGDataService implements DataService {
@@ -123,21 +124,28 @@ export class MTGDataService implements DataService {
 
     // Try to get pricing data for this product
     try {
+      // First, try to get the group ID for this set
+      const groupId = this.tcgcsvService.getGroupIdForSet(product.set_code);
+
+      if (!groupId) {
+        logger.warn(`No group ID mapping found for set: ${product.set_code}`);
+        return response;
+      }
+
+      // Get all sealed products with prices for this set
       const productsWithPrices =
         await this.tcgcsvService.getSealedProductsWithPrices(product.set_code);
 
-      // Find matching product by name similarity
-      const matchingProduct = productsWithPrices.find((productWithPrice) => {
-        const productName = productWithPrice.product.name.toLowerCase();
-        const sealedProductName = product.name.toLowerCase();
+      if (productsWithPrices.length === 0) {
+        logger.warn(`No sealed products found for set: ${product.set_code}`);
+        return response;
+      }
 
-        return (
-          productName.includes(sealedProductName) ||
-          sealedProductName.includes(productName) ||
-          productName.includes(product.name.toLowerCase()) ||
-          product.name.toLowerCase().includes(productName)
-        );
-      });
+      // Find the best matching product using enhanced name matching
+      const matchingProduct = this.findBestProductMatch(
+        product,
+        productsWithPrices
+      );
 
       if (matchingProduct) {
         const priceStats = this.tcgcsvService.getPriceStats(
@@ -158,6 +166,10 @@ export class MTGDataService implements DataService {
             lastUpdated: new Date().toISOString(),
           };
         }
+      } else {
+        logger.warn(
+          `No matching product found for: ${product.name} in set ${product.set_code}`
+        );
       }
     } catch (error) {
       logger.warn(
@@ -174,6 +186,14 @@ export class MTGDataService implements DataService {
     productCode: string,
     count: number
   ): MultiplePacksResponse {
+    const packs: PackResponse[] = [];
+    for (let i = 0; i < count; i++) {
+      packs.push(this.openProduct(productCode));
+    }
+    return { packs };
+  }
+
+  async openProductWithCardPricing(productCode: string): Promise<PackResponse> {
     const product = this.extendedDataArray.find(
       (p) => p.code.toLowerCase() === productCode.toLowerCase()
     );
@@ -182,16 +202,22 @@ export class MTGDataService implements DataService {
       throw new NotFoundError(`Product not found: ${productCode}`);
     }
 
-    if (count < 1 || count > 100) {
-      throw new ValidationError("Count must be between 1 and 100");
-    }
+    const pack = await this.generatePackWithTCGCSV(product);
 
+    return {
+      pack,
+    };
+  }
+
+  async openMultipleProductsWithCardPricing(
+    productCode: string,
+    count: number
+  ): Promise<MultiplePacksResponse> {
     const packs: PackResponse[] = [];
     for (let i = 0; i < count; i++) {
-      const pack = this.generatePack(product);
-      packs.push({ pack });
+      const packResponse = await this.openProductWithCardPricing(productCode);
+      packs.push(packResponse);
     }
-
     return { packs };
   }
 
@@ -343,6 +369,7 @@ export class MTGDataService implements DataService {
     const scryfallMap = await this.loadScryfallAllCardsStreamed(neededIds);
 
     let count = 0;
+    let tcgcsvCount = 0;
     for (const setCode of Object.keys(this.allPrintings.data)) {
       const setObj = this.allPrintings.data[setCode];
       if (!setObj) continue;
@@ -350,21 +377,79 @@ export class MTGDataService implements DataService {
       for (const card of setObj.cards) {
         const scryId = card.identifiers?.scryfallId;
         const scryData = scryId ? scryfallMap[scryId] : undefined;
+
+        // Check if card has TCGPlayer product ID for potential TCGCSV data
+        const tcgplayerProductId = card.identifiers?.["tcgplayerProductId"];
+
         this.combinedCards[card.uuid] = {
           allPrintingsData: card,
           ...(scryData && { scryfallData: scryData }),
+          // TCGCSV data will be loaded on-demand when needed
         };
+
+        if (tcgplayerProductId) {
+          tcgcsvCount++;
+        }
         count++;
       }
     }
 
-    logger.info(`Built combined data for ${count} cards.`);
+    logger.info(
+      `Built combined data for ${count} cards. ${tcgcsvCount} cards have TCGPlayer product IDs for potential TCGCSV data.`
+    );
+  }
+
+  // New method to get TCGCSV data for a specific card
+  async getCardWithTCGCSV(cardUuid: string): Promise<CombinedCard | null> {
+    const card = this.combinedCards[cardUuid];
+    if (!card) {
+      return null;
+    }
+
+    // If TCGCSV data is already loaded, return the card as is
+    if (card.tcgcsvData) {
+      return card;
+    }
+
+    // Check if card has TCGPlayer product ID
+    const tcgplayerProductId =
+      card.allPrintingsData.identifiers?.["tcgplayerProductId"];
+    if (!tcgplayerProductId) {
+      return card; // No TCGPlayer ID, return card without TCGCSV data
+    }
+
+    try {
+      // Fetch TCGCSV data for this card
+      const tcgcsvData =
+        await this.tcgcsvService.getProductByTcgplayerId(tcgplayerProductId);
+
+      if (tcgcsvData) {
+        // Update the card with TCGCSV data
+        this.combinedCards[cardUuid] = {
+          ...card,
+          tcgcsvData,
+        };
+
+        logger.debug(
+          `Loaded TCGCSV data for card ${cardUuid} (TCGPlayer ID: ${tcgplayerProductId})`
+        );
+        return this.combinedCards[cardUuid] || null;
+      }
+    } catch (error) {
+      logger.error(`Error loading TCGCSV data for card ${cardUuid}:`, error);
+    }
+
+    return card; // Return card without TCGCSV data if fetch failed
   }
 
   private generatePack(product: ExtendedSealedData): Array<{
     sheet: string;
     allPrintingsData: any;
     scryfallData?: ScryfallTypes.IScryfallCard;
+    tcgcsvData?: {
+      product: TCGCSVProduct;
+      prices: TCGCSVPrice[];
+    };
   }> {
     const localMap: Record<string, boolean> = {};
     for (let code of product.source_set_codes) {
@@ -388,6 +473,10 @@ export class MTGDataService implements DataService {
       sheet: string;
       allPrintingsData: any;
       scryfallData?: ScryfallTypes.IScryfallCard;
+      tcgcsvData?: {
+        product: TCGCSVProduct;
+        prices: TCGCSVPrice[];
+      };
     }> = [];
 
     for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
@@ -417,11 +506,197 @@ export class MTGDataService implements DataService {
           sheet: sheetName,
           allPrintingsData: combined.allPrintingsData,
           ...(combined.scryfallData && { scryfallData: combined.scryfallData }),
+          ...(combined.tcgcsvData && { tcgcsvData: combined.tcgcsvData }),
         });
       }
     }
 
     return pack;
+  }
+
+  // Async version that fetches TCGCSV data for cards
+  private async generatePackWithTCGCSV(product: ExtendedSealedData): Promise<
+    Array<{
+      sheet: string;
+      allPrintingsData: any;
+      scryfallData?: ScryfallTypes.IScryfallCard;
+      tcgcsvData?: {
+        product: TCGCSVProduct;
+        prices: TCGCSVPrice[];
+      };
+    }>
+  > {
+    const localMap: Record<string, boolean> = {};
+    for (let code of product.source_set_codes) {
+      code = code.toUpperCase();
+      const setObj = this.allPrintings?.data[code];
+      if (!setObj) {
+        logger.warn(`Set code '${code}' not found in AllPrintings`);
+        continue;
+      }
+      for (const c of setObj.cards) {
+        localMap[c.uuid] = true;
+      }
+    }
+
+    const chosenBooster = this.pickBooster(product.boosters);
+    if (!chosenBooster) {
+      return [];
+    }
+
+    const pack: Array<{
+      sheet: string;
+      allPrintingsData: any;
+      scryfallData?: ScryfallTypes.IScryfallCard;
+      tcgcsvData?: {
+        product: TCGCSVProduct;
+        prices: TCGCSVPrice[];
+      };
+    }> = [];
+
+    for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
+      const sheet = product.sheets[sheetName];
+      if (!sheet) {
+        logger.warn(
+          `No sheet data for sheet '${sheetName}' in product '${product.code}'`
+        );
+        continue;
+      }
+
+      for (let i = 0; i < count; i++) {
+        const pickedUUID = this.pickCardFromSheet(sheet);
+        if (!pickedUUID) continue;
+
+        // Get card with TCGCSV data
+        const combined = await this.getCardWithTCGCSV(pickedUUID);
+        if (!combined) {
+          logger.warn(`No combined data for card uuid=${pickedUUID}`);
+          continue;
+        }
+        if (!localMap[pickedUUID]) {
+          logger.warn(`Card uuid=${pickedUUID} not in source_set_codes?`);
+          continue;
+        }
+
+        pack.push({
+          sheet: sheetName,
+          allPrintingsData: combined.allPrintingsData,
+          ...(combined.scryfallData && { scryfallData: combined.scryfallData }),
+          ...(combined.tcgcsvData && { tcgcsvData: combined.tcgcsvData }),
+        });
+      }
+    }
+
+    return pack;
+  }
+
+  private findBestProductMatch(
+    product: ExtendedSealedData,
+    productsWithPrices: any[]
+  ): any | null {
+    if (productsWithPrices.length === 0) return null;
+
+    // Normalize the product name for comparison
+    const normalizeName = (name: string) => {
+      return name
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, " ") // Remove special characters
+        .replace(/\s+/g, " ") // Normalize whitespace
+        .trim();
+    };
+
+    const normalizedProductName = normalizeName(product.name);
+
+    // Score each potential match
+    const scoredMatches = productsWithPrices.map((productWithPrice) => {
+      const tcgcsvName = productWithPrice.product.name;
+      const normalizedTcgcsvName = normalizeName(tcgcsvName);
+
+      let score = 0;
+      let matchType = "none";
+
+      // Exact match after normalization
+      if (normalizedProductName === normalizedTcgcsvName) {
+        score = 100;
+        matchType = "exact";
+      }
+      // Contains match (one name contains the other)
+      else if (
+        normalizedProductName.includes(normalizedTcgcsvName) ||
+        normalizedTcgcsvName.includes(normalizedProductName)
+      ) {
+        score = 80;
+        matchType = "contains";
+      }
+      // Word-based matching
+      else {
+        const productWords = normalizedProductName
+          .split(" ")
+          .filter((w) => w.length > 2);
+        const tcgcsvWords = normalizedTcgcsvName
+          .split(" ")
+          .filter((w) => w.length > 2);
+
+        if (productWords.length > 0 && tcgcsvWords.length > 0) {
+          const matchingWords = productWords.filter((word) =>
+            tcgcsvWords.some(
+              (tcgcsvWord) =>
+                tcgcsvWord.includes(word) || word.includes(tcgcsvWord)
+            )
+          );
+
+          const wordMatchRatio =
+            matchingWords.length /
+            Math.max(productWords.length, tcgcsvWords.length);
+
+          if (wordMatchRatio >= 0.7) {
+            score = 70;
+            matchType = "word_match_high";
+          } else if (wordMatchRatio >= 0.5) {
+            score = 50;
+            matchType = "word_match_medium";
+          } else if (wordMatchRatio >= 0.3) {
+            score = 30;
+            matchType = "word_match_low";
+          }
+        }
+      }
+
+      // Bonus for sealed products
+      if (productWithPrice.product.isSealed) {
+        score += 10;
+      }
+
+      // Bonus for pack/booster products
+      const packKeywords = ["pack", "booster", "display"];
+      const hasPackKeyword = packKeywords.some((keyword) =>
+        normalizedTcgcsvName.includes(keyword)
+      );
+      if (hasPackKeyword) {
+        score += 5;
+      }
+
+      return {
+        productWithPrice,
+        score,
+        matchType,
+        tcgcsvName,
+      };
+    });
+
+    // Sort by score (highest first) and return the best match
+    scoredMatches.sort((a, b) => b.score - a.score);
+
+    const bestMatch = scoredMatches[0];
+
+    if (bestMatch && bestMatch.score >= 30) {
+      logger.info(
+        `Best match for "${product.name}": "${bestMatch.tcgcsvName}" (score: ${bestMatch.score}, type: ${bestMatch.matchType})`
+      );
+      return bestMatch.productWithPrice;
+    }
+
+    return null;
   }
 
   private pickBooster(

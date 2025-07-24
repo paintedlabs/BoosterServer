@@ -20,6 +20,7 @@ export class TCGCSVService {
   private products: Map<number, TCGCSVProduct[]> = new Map();
   private prices: Map<number, TCGCSVPrice[]> = new Map();
   private setMappings: SetMapping[] = [];
+  private productMappings: Map<string, number> = new Map(); // productCode -> TCGCSV productId
   private mappingsFilePath: string;
 
   constructor() {
@@ -29,6 +30,7 @@ export class TCGCSVService {
       "setMappings.json"
     );
     this.loadSetMappings();
+    this.initializeProductMappings();
   }
 
   // MARK: - Categories
@@ -186,14 +188,122 @@ export class TCGCSVService {
         const data = fs.readFileSync(this.mappingsFilePath, "utf8");
         const mappingsFile: SetMappingsFile = JSON.parse(data);
         this.setMappings = mappingsFile.mappings;
-        logger.info(`Loaded ${this.setMappings.length} set mappings from file`);
+        logger.info(`Loaded ${this.setMappings.length} set mappings`);
       } else {
-        logger.warn("Set mappings file not found, creating default mappings");
+        logger.info("No set mappings file found, creating default mappings");
         this.createDefaultMappings();
       }
     } catch (error) {
       logger.error("Error loading set mappings:", error);
       this.createDefaultMappings();
+    }
+  }
+
+  private initializeProductMappings(): void {
+    // Initialize product mappings for known products
+    // Format: productCode -> TCGCSV productId
+    this.productMappings.set("fin-collector", 618892); // FINAL FANTASY - Collector Booster Pack
+    this.productMappings.set("fin-play", 618889); // FINAL FANTASY - Play Booster Pack
+    this.productMappings.set("lci-collector", 516613); // The Lost Caverns of Ixalan - Collector Booster Pack
+    this.productMappings.set("lci-draft", 516618); // The Lost Caverns of Ixalan - Draft Booster Pack
+
+    logger.info(`Initialized ${this.productMappings.size} product mappings`);
+  }
+
+  async getPricingByProductCode(productCode: string): Promise<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  } | null> {
+    const productId = this.productMappings.get(productCode);
+
+    if (!productId) {
+      logger.warn(`No product mapping found for: ${productCode}`);
+      return null;
+    }
+
+    try {
+      // Determine the group ID based on the product code
+      let groupId: number;
+      if (productCode.startsWith("fin-")) {
+        groupId = 24219; // FINAL FANTASY group
+      } else if (productCode.startsWith("lci-")) {
+        groupId = 23312; // The Lost Caverns of Ixalan group
+      } else {
+        logger.warn(`Unknown product code prefix: ${productCode}`);
+        return null;
+      }
+
+      // Get the product details
+      const allProducts = await this.fetchProducts(groupId);
+      const product = allProducts.find((p) => p.productId === productId);
+
+      if (!product) {
+        logger.warn(`Product not found in TCGCSV: ${productId}`);
+        return null;
+      }
+
+      // Get prices for this product
+      const prices = await this.getPricesForProducts([productId], groupId);
+
+      return {
+        product,
+        prices,
+      };
+    } catch (error) {
+      logger.error(`Error getting pricing for product ${productCode}:`, error);
+      return null;
+    }
+  }
+
+  async getProductByTcgplayerId(tcgplayerProductId: string): Promise<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  } | null> {
+    try {
+      const productId = parseInt(tcgplayerProductId, 10);
+      if (isNaN(productId)) {
+        logger.warn(`Invalid TCGPlayer product ID: ${tcgplayerProductId}`);
+        return null;
+      }
+
+      // We need to search through all groups to find the product
+      // This is inefficient but necessary since we don't have a direct lookup
+      const magicCategoryId = await this.getMagicCategoryId();
+      if (!magicCategoryId) {
+        logger.warn("Could not get Magic category ID");
+        return null;
+      }
+
+      const groups = await this.fetchGroups(magicCategoryId);
+
+      for (const group of groups) {
+        const products = await this.fetchProducts(group.groupId);
+        const product = products.find((p) => p.productId === productId);
+
+        if (product) {
+          // Found the product, get its prices
+          const prices = await this.getPricesForProducts(
+            [productId],
+            group.groupId
+          );
+
+          return {
+            product,
+            prices,
+          };
+        }
+      }
+
+      logger.warn(
+        `Product with TCGPlayer ID ${tcgplayerProductId} not found in any Magic group`
+      );
+      return null;
+    } catch (error) {
+      logger.error(
+        `Error getting product by TCGPlayer ID ${tcgplayerProductId}:`,
+        error
+      );
+      return null;
     }
   }
 
@@ -216,7 +326,7 @@ export class TCGCSVService {
       {
         setCode: "LCI",
         setName: "Lost Caverns of Ixalan",
-        groupId: 23872,
+        groupId: 23312, // Updated to correct group ID
         categoryId: 1,
         categoryName: "Magic",
       },
@@ -428,5 +538,91 @@ export class TCGCSVService {
 
     logger.warn(`Could not find group for set: ${name}`);
     return false;
+  }
+
+  async autoDiscoverAndMapSets(): Promise<void> {
+    logger.info("Starting automatic set discovery and mapping...");
+
+    const magicCategoryId = await this.getMagicCategoryId();
+    if (!magicCategoryId) {
+      logger.error("Could not find Magic category");
+      return;
+    }
+
+    // Get all Magic groups
+    const allGroups = await this.fetchGroups(magicCategoryId);
+    logger.info(`Found ${allGroups.length} Magic groups to search through`);
+
+    // Get all sets from our data service
+    const dataService = new (require("./dataService").MTGDataService)();
+    await dataService.initialize();
+    const allSets = dataService.getSets();
+
+    logger.info(`Found ${allSets.length} sets in our data to map`);
+
+    let mappedCount = 0;
+    let existingCount = 0;
+
+    for (const set of allSets) {
+      // Skip if already mapped
+      if (this.getGroupIdForSet(set.code)) {
+        existingCount++;
+        continue;
+      }
+
+      // Try to find a matching group
+      const matchingGroup = allGroups.find((group) => {
+        const groupName = group.name.toLowerCase();
+        const setName = set.name.toLowerCase();
+
+        // Exact match
+        if (groupName === setName) return true;
+
+        // Contains match
+        if (groupName.includes(setName) || setName.includes(groupName))
+          return true;
+
+        // Word-based matching
+        const groupWords = groupName
+          .split(" ")
+          .filter((w: string) => w.length > 2);
+        const setWords = setName.split(" ").filter((w: string) => w.length > 2);
+
+        if (groupWords.length > 0 && setWords.length > 0) {
+          const matchingWords = groupWords.filter((word) =>
+            setWords.some(
+              (setWord: string) =>
+                setWord.includes(word) || word.includes(setWord)
+            )
+          );
+
+          const matchRatio =
+            matchingWords.length / Math.max(groupWords.length, setWords.length);
+          return matchRatio >= 0.5;
+        }
+
+        return false;
+      });
+
+      if (matchingGroup) {
+        this.setMapping(
+          set.code,
+          set.name,
+          matchingGroup.groupId,
+          magicCategoryId,
+          "Magic"
+        );
+        mappedCount++;
+        logger.info(
+          `Auto-mapped: ${set.code} (${set.name}) -> ${matchingGroup.groupId} (${matchingGroup.name})`
+        );
+      } else {
+        logger.warn(`No match found for set: ${set.code} (${set.name})`);
+      }
+    }
+
+    logger.info(
+      `Auto-discovery complete: ${mappedCount} new mappings, ${existingCount} already existed`
+    );
   }
 }

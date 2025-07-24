@@ -293,30 +293,4 @@ router.get("/categories/magic/id", async (_req, res) => {
   }
 });
 
-// GET /tcgcsv/categories/pokemon/id - Get Pokemon category ID
-router.get("/categories/pokemon/id", async (_req, res) => {
-  try {
-    const pokemonId = await tcgcsvService.getPokemonCategoryId();
-
-    if (pokemonId) {
-      return res.json({
-        success: true,
-        errors: [],
-        categoryId: pokemonId,
-      });
-    } else {
-      return res.status(404).json({
-        success: false,
-        errors: ["Pokemon category not found"],
-      });
-    }
-  } catch (error) {
-    logger.error("Error getting Pokemon category ID:", error);
-    return res.status(500).json({
-      success: false,
-      errors: ["Failed to get Pokemon category ID"],
-    });
-  }
-});
-
 export default router;

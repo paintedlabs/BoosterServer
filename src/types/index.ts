@@ -1,5 +1,5 @@
 import * as ScryfallTypes from "./scryfall";
-import { PackResponseWithPricing } from "./tcgcsv";
+import { PackResponseWithPricing, TCGCSVProduct, TCGCSVPrice } from "./tcgcsv";
 
 // Re-export for convenience
 export { PackResponseWithPricing } from "./tcgcsv";
@@ -71,12 +71,20 @@ export interface SetResponse {
 export interface CombinedCard {
   allPrintingsData: CardSet;
   scryfallData?: ScryfallTypes.IScryfallCard;
+  tcgcsvData?: {
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  };
 }
 
 export interface PackCard {
   sheet: string;
   allPrintingsData: CardSet;
   scryfallData?: ScryfallTypes.IScryfallCard;
+  tcgcsvData?: {
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  };
 }
 
 export interface PackResponse {
@@ -109,6 +117,12 @@ export interface DataService {
     count: number
   ): MultiplePacksResponse;
   openProductWithPricing(productCode: string): Promise<PackResponseWithPricing>;
+  openProductWithCardPricing(productCode: string): Promise<PackResponse>;
+  openMultipleProductsWithCardPricing(
+    productCode: string,
+    count: number
+  ): Promise<MultiplePacksResponse>;
+  getCardWithTCGCSV(cardUuid: string): Promise<CombinedCard | null>;
 }
 
 export interface ImageService {
