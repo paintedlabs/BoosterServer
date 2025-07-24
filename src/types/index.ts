@@ -123,6 +123,12 @@ export interface DataService {
     count: number
   ): Promise<MultiplePacksResponse>;
   getCardWithTCGCSV(cardUuid: string): Promise<CombinedCard | null>;
+  getTCGCSVStats(): {
+    preprocessedProducts: number;
+    totalCards: number;
+    cardsWithTCGPlayerId: number;
+    cardsWithTCGCSVData: number;
+  };
 }
 
 export interface ImageService {
@@ -156,4 +162,11 @@ export interface TCGCSVServiceInterface {
   getBestPrice(product: any, prices: any[]): number | null;
   getPriceStats(product: any, prices: any[]): any | null;
   findAndMapSet(name: string, setCode: string): Promise<boolean>;
+  preprocessAllData(): Promise<void>;
+  getProductByTcgplayerIdFast(tcgplayerProductId: string): any | null;
+  getPreprocessingStats(): {
+    isPreprocessed: boolean;
+    totalProducts: number;
+    totalPrices: number;
+  };
 }

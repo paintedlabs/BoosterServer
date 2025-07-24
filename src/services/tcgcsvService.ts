@@ -23,6 +23,13 @@ export class TCGCSVService {
   private productMappings: Map<string, number> = new Map(); // productCode -> TCGCSV productId
   private mappingsFilePath: string;
 
+  // Pre-processed product map for O(1) lookups
+  private productIdMap: Map<
+    number,
+    { product: TCGCSVProduct; prices: TCGCSVPrice[] }
+  > = new Map();
+  private isPreprocessed = false;
+
   constructor() {
     this.mappingsFilePath = path.join(
       process.cwd(),
@@ -305,6 +312,54 @@ export class TCGCSVService {
       );
       return null;
     }
+  }
+
+  /**
+   * Fast lookup for product data using pre-processed map
+   */
+  getProductByTcgplayerIdFast(tcgplayerProductId: string): {
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  } | null {
+    if (!this.isPreprocessed) {
+      logger.warn("TCGCSV data not pre-processed, falling back to slow lookup");
+      return null;
+    }
+
+    const productId = parseInt(tcgplayerProductId, 10);
+    if (isNaN(productId)) {
+      logger.warn(`Invalid TCGPlayer product ID: ${tcgplayerProductId}`);
+      return null;
+    }
+
+    const result = this.productIdMap.get(productId);
+    if (result) {
+      logger.debug(`Found product ${productId} in pre-processed map`);
+      return result;
+    }
+
+    logger.debug(`Product ${productId} not found in pre-processed map`);
+    return null;
+  }
+
+  /**
+   * Get pre-processing statistics
+   */
+  getPreprocessingStats(): {
+    isPreprocessed: boolean;
+    totalProducts: number;
+    totalPrices: number;
+  } {
+    let totalPrices = 0;
+    for (const entry of this.productIdMap.values()) {
+      totalPrices += entry.prices.length;
+    }
+
+    return {
+      isPreprocessed: this.isPreprocessed,
+      totalProducts: this.productIdMap.size,
+      totalPrices,
+    };
   }
 
   private createDefaultMappings(): void {
@@ -624,5 +679,83 @@ export class TCGCSVService {
     logger.info(
       `Auto-discovery complete: ${mappedCount} new mappings, ${existingCount} already existed`
     );
+  }
+
+  /**
+   * Pre-process all TCGCSV data into a fast lookup map
+   */
+  async preprocessAllData(): Promise<void> {
+    if (this.isPreprocessed) {
+      logger.info("TCGCSV data already pre-processed, skipping");
+      return;
+    }
+
+    logger.info("Starting TCGCSV data pre-processing...");
+
+    try {
+      const magicCategoryId = await this.getMagicCategoryId();
+      if (!magicCategoryId) {
+        logger.warn("Could not get Magic category ID, skipping pre-processing");
+        return;
+      }
+
+      const groups = await this.fetchGroups(magicCategoryId);
+      logger.info(`Found ${groups.length} Magic groups to process`);
+
+      let totalProducts = 0;
+      let totalPrices = 0;
+
+      for (const group of groups) {
+        try {
+          logger.debug(
+            `Processing group: ${group.name} (ID: ${group.groupId})`
+          );
+
+          // Fetch products and prices for this group
+          const [products, prices] = await Promise.all([
+            this.fetchProducts(group.groupId),
+            this.fetchPrices(group.groupId),
+          ]);
+
+          logger.debug(
+            `Found ${products.length} products and ${prices.length} prices in group ${group.name}`
+          );
+
+          // Create a map of productId to prices for this group
+          const priceMap = new Map<number, TCGCSVPrice[]>();
+          for (const price of prices) {
+            if (!priceMap.has(price.productId)) {
+              priceMap.set(price.productId, []);
+            }
+            priceMap.get(price.productId)!.push(price);
+          }
+
+          // Add each product to the global product map
+          for (const product of products) {
+            const productPrices = priceMap.get(product.productId) || [];
+            if (productPrices.length > 0) {
+              this.productIdMap.set(product.productId, {
+                product,
+                prices: productPrices,
+              });
+              totalProducts++;
+              totalPrices += productPrices.length;
+            }
+          }
+        } catch (error) {
+          logger.error(`Error processing group ${group.name}:`, error);
+          // Continue with other groups
+        }
+      }
+
+      this.isPreprocessed = true;
+      logger.info(
+        `TCGCSV pre-processing complete: ${totalProducts} products mapped with ${totalPrices} total prices`
+      );
+      logger.info(`Product lookup map size: ${this.productIdMap.size} entries`);
+    } catch (error) {
+      logger.error("Error during TCGCSV pre-processing:", error);
+      throw error;
+    }
   }
 }

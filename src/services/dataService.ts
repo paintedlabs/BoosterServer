@@ -53,6 +53,9 @@ export class MTGDataService implements DataService {
     this.extendedDataArray = this.loadExtendedData();
     logger.info(`Loaded ${this.extendedDataArray.length} sealed products`);
 
+    // Pre-process TCGCSV data for fast lookup
+    await this.preprocessTCGCSVData();
+
     await this.buildCombinedCards();
     logger.info("MTG Data Service initialized successfully");
   }
@@ -370,6 +373,8 @@ export class MTGDataService implements DataService {
 
     let count = 0;
     let tcgcsvCount = 0;
+    let tcgcsvDataCount = 0;
+
     for (const setCode of Object.keys(this.allPrintings.data)) {
       const setObj = this.allPrintings.data[setCode];
       if (!setObj) continue;
@@ -381,10 +386,20 @@ export class MTGDataService implements DataService {
         // Check if card has TCGPlayer product ID for potential TCGCSV data
         const tcgplayerProductId = card.identifiers?.["tcgplayerProductId"];
 
+        // Try to get pre-processed TCGCSV data
+        let tcgcsvData = undefined;
+        if (tcgplayerProductId) {
+          tcgcsvData =
+            this.tcgcsvService.getProductByTcgplayerIdFast(tcgplayerProductId);
+          if (tcgcsvData) {
+            tcgcsvDataCount++;
+          }
+        }
+
         this.combinedCards[card.uuid] = {
           allPrintingsData: card,
           ...(scryData && { scryfallData: scryData }),
-          // TCGCSV data will be loaded on-demand when needed
+          ...(tcgcsvData && { tcgcsvData: tcgcsvData }),
         };
 
         if (tcgplayerProductId) {
@@ -395,7 +410,7 @@ export class MTGDataService implements DataService {
     }
 
     logger.info(
-      `Built combined data for ${count} cards. ${tcgcsvCount} cards have TCGPlayer product IDs for potential TCGCSV data.`
+      `Built combined data for ${count} cards. ${tcgcsvCount} cards have TCGPlayer product IDs, ${tcgcsvDataCount} cards have pre-loaded TCGCSV data.`
     );
   }
 
@@ -418,6 +433,23 @@ export class MTGDataService implements DataService {
       return card; // No TCGPlayer ID, return card without TCGCSV data
     }
 
+    // First try to get from pre-processed data
+    const tcgcsvData =
+      this.tcgcsvService.getProductByTcgplayerIdFast(tcgplayerProductId);
+    if (tcgcsvData) {
+      // Update the card with TCGCSV data
+      this.combinedCards[cardUuid] = {
+        ...card,
+        tcgcsvData,
+      };
+
+      logger.debug(
+        `Loaded TCGCSV data for card ${cardUuid} from pre-processed map (TCGPlayer ID: ${tcgplayerProductId})`
+      );
+      return this.combinedCards[cardUuid] || null;
+    }
+
+    // Fallback to the old method if not found in pre-processed data
     try {
       // Fetch TCGCSV data for this card
       const tcgcsvData =
@@ -431,7 +463,7 @@ export class MTGDataService implements DataService {
         };
 
         logger.debug(
-          `Loaded TCGCSV data for card ${cardUuid} (TCGPlayer ID: ${tcgplayerProductId})`
+          `Loaded TCGCSV data for card ${cardUuid} via API call (TCGPlayer ID: ${tcgplayerProductId})`
         );
         return this.combinedCards[cardUuid] || null;
       }
@@ -440,6 +472,59 @@ export class MTGDataService implements DataService {
     }
 
     return card; // Return card without TCGCSV data if fetch failed
+  }
+
+  /**
+   * Get TCGCSV pre-processing statistics
+   */
+  getTCGCSVStats(): {
+    preprocessedProducts: number;
+    totalCards: number;
+    cardsWithTCGPlayerId: number;
+    cardsWithTCGCSVData: number;
+  } {
+    let cardsWithTCGPlayerId = 0;
+    let cardsWithTCGCSVData = 0;
+
+    for (const card of Object.values(this.combinedCards)) {
+      const tcgplayerProductId =
+        card.allPrintingsData.identifiers?.["tcgplayerProductId"];
+      if (tcgplayerProductId) {
+        cardsWithTCGPlayerId++;
+        if (card.tcgcsvData) {
+          cardsWithTCGCSVData++;
+        }
+      }
+    }
+
+    return {
+      preprocessedProducts:
+        this.tcgcsvService.getPreprocessingStats().totalProducts,
+      totalCards: Object.keys(this.combinedCards).length,
+      cardsWithTCGPlayerId,
+      cardsWithTCGCSVData,
+    };
+  }
+
+  /**
+   * Pre-process TCGCSV data to create a fast lookup map
+   */
+  private async preprocessTCGCSVData(): Promise<void> {
+    logger.info("Pre-processing TCGCSV data for fast lookup...");
+
+    try {
+      // Use the new fast pre-processing method from TCGCSVService
+      await this.tcgcsvService.preprocessAllData();
+
+      // Get statistics for logging
+      const stats = this.tcgcsvService.getPreprocessingStats();
+      logger.info(
+        `TCGCSV pre-processing complete: ${stats.totalProducts} products with ${stats.totalPrices} total prices`
+      );
+    } catch (error) {
+      logger.error("Error during TCGCSV pre-processing:", error);
+      // Don't fail initialization if TCGCSV pre-processing fails
+    }
   }
 
   private generatePack(product: ExtendedSealedData): Array<{
