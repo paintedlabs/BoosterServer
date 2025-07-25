@@ -111,6 +111,16 @@ export interface DataService {
   getCombinedCards(): Record<string, CombinedCard>;
   getSets(): SetResponse[];
   getProducts(setCode: string): ExtendedSealedData[];
+  getProductsWithAllData(setCode: string): Promise<
+    Array<
+      ExtendedSealedData & {
+        tcgcsvData?: {
+          product: TCGCSVProduct;
+          prices: TCGCSVPrice[];
+        };
+      }
+    >
+  >;
   openProduct(productCode: string): PackResponse;
   openMultipleProducts(
     productCode: string,
@@ -129,6 +139,10 @@ export interface DataService {
     cardsWithTCGPlayerId: number;
     cardsWithTCGCSVData: number;
   };
+  getTCGCSVProducts(): Array<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  }>;
 }
 
 export interface ImageService {
@@ -169,4 +183,8 @@ export interface TCGCSVServiceInterface {
     totalProducts: number;
     totalPrices: number;
   };
+  getAllProducts(): Array<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  }>;
 }

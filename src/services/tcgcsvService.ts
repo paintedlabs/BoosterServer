@@ -362,6 +362,23 @@ export class TCGCSVService {
     };
   }
 
+  /**
+   * Get all pre-processed TCGCSV products
+   */
+  getAllProducts(): Array<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  }> {
+    if (!this.isPreprocessed) {
+      logger.warn("TCGCSV data not pre-processed, returning empty array");
+      return [];
+    }
+
+    const products = Array.from(this.productIdMap.values());
+    logger.info(`Returning ${products.length} pre-processed TCGCSV products`);
+    return products;
+  }
+
   private createDefaultMappings(): void {
     this.setMappings = [
       {

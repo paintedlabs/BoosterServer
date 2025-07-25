@@ -98,6 +98,45 @@ export class MTGDataService implements DataService {
     );
   }
 
+  async getProductsWithAllData(setCode: string): Promise<
+    Array<
+      ExtendedSealedData & {
+        tcgcsvData?: {
+          product: TCGCSVProduct;
+          prices: TCGCSVPrice[];
+        };
+      }
+    >
+  > {
+    const setCodeParam = setCode.toUpperCase();
+    const products = this.extendedDataArray.filter(
+      (p) => p.set_code.toUpperCase() === setCodeParam
+    );
+
+    // Enhance each product with TCGCSV data if available
+    const enhancedProducts = await Promise.all(
+      products.map(async (product) => {
+        try {
+          // Try to get TCGCSV data for this product using the product code
+          const tcgcsvData = await this.getProductTCGCSVData(product.code);
+
+          return {
+            ...product,
+            ...(tcgcsvData && { tcgcsvData }),
+          };
+        } catch (error) {
+          logger.warn(
+            `Failed to get TCGCSV data for product ${product.code}:`,
+            error
+          );
+          return product;
+        }
+      })
+    );
+
+    return enhancedProducts;
+  }
+
   openProduct(productCode: string): PackResponse {
     const product = this.extendedDataArray.find(
       (p) => p.code.toLowerCase() === productCode.toLowerCase()
@@ -222,6 +261,25 @@ export class MTGDataService implements DataService {
       packs.push(packResponse);
     }
     return { packs };
+  }
+
+  /**
+   * Get all pre-processed TCGCSV products
+   */
+  getTCGCSVProducts(): Array<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  }> {
+    const stats = this.tcgcsvService.getPreprocessingStats();
+    if (!stats.isPreprocessed) {
+      logger.warn("TCGCSV data not pre-processed, returning empty array");
+      return [];
+    }
+
+    // Get all products from the TCGCSV service
+    // Note: We'll need to add a method to TCGCSVService to expose all products
+    logger.info(`Returning ${stats.totalProducts} TCGCSV products`);
+    return this.tcgcsvService.getAllProducts();
   }
 
   private async ensureAllPrintingsUnzipped(): Promise<void> {
@@ -816,5 +874,24 @@ export class MTGDataService implements DataService {
       }
     }
     return null;
+  }
+
+  /**
+   * Get TCGCSV data for a specific product code
+   */
+  private async getProductTCGCSVData(productCode: string): Promise<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  } | null> {
+    try {
+      // Use the TCGCSV service to get pricing data for this product
+      return await this.tcgcsvService.getPricingByProductCode(productCode);
+    } catch (error) {
+      logger.warn(
+        `Failed to get TCGCSV data for product ${productCode}:`,
+        error
+      );
+      return null;
+    }
   }
 }

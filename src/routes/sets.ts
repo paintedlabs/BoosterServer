@@ -24,10 +24,10 @@ export function createSetsRouter(dataService: DataService): Router {
 
   /**
    * @route GET /sets/:setCode/products
-   * @desc Get all products for a specific set
+   * @desc Get all products for a specific set with all available data including TCGCSV pricing
    * @access Public
    */
-  router.get("/:setCode/products", (req: Request, res: Response) => {
+  router.get("/:setCode/products", async (req: Request, res: Response) => {
     const setCode = req.params["setCode"];
     if (!setCode) {
       return res.status(400).json({ error: "Set code is required" });
@@ -36,7 +36,10 @@ export function createSetsRouter(dataService: DataService): Router {
     logger.info(`Received GET /sets/${setCode}/products request`);
 
     try {
-      const products = dataService.getProducts(setCode);
+      const products = await dataService.getProductsWithAllData(setCode);
+      logger.info(
+        `Returning ${products.length} products for set ${setCode} with enhanced data`
+      );
       return res.json(products);
     } catch (error) {
       logger.error(`Error fetching products for set ${setCode}:`, error);
