@@ -17,6 +17,7 @@ import {
   MultiplePacksResponse,
   DataService,
   PackResponseWithPricing,
+  AllPrintingsSealedProduct,
 } from "../types";
 import { TCGCSVProduct, TCGCSVPrice } from "../types/tcgcsv";
 import { NotFoundError } from "../utils/errors";
@@ -127,6 +128,58 @@ export class MTGDataService implements DataService {
         } catch (error) {
           logger.warn(
             `Failed to get TCGCSV data for product ${product.code}:`,
+            error
+          );
+          return product;
+        }
+      })
+    );
+
+    return enhancedProducts;
+  }
+
+  async getProductsWithCompleteData(setCode: string): Promise<
+    Array<
+      ExtendedSealedData & {
+        tcgcsvData?: {
+          product: TCGCSVProduct;
+          prices: TCGCSVPrice[];
+        };
+        allPrintingsData?: AllPrintingsSealedProduct[];
+      }
+    >
+  > {
+    const setCodeParam = setCode.toUpperCase();
+    const products = this.extendedDataArray.filter(
+      (p) => p.set_code.toUpperCase() === setCodeParam
+    );
+
+    // Get AllPrintings data for this set
+    const allPrintingsSet = this.allPrintings?.data[setCodeParam];
+    const allPrintingsProducts = allPrintingsSet?.sealedProduct || [];
+
+    // Enhance each product with TCGCSV data and AllPrintings data
+    const enhancedProducts = await Promise.all(
+      products.map(async (product) => {
+        try {
+          // Try to get TCGCSV data for this product using the product code
+          const tcgcsvData = await this.getProductTCGCSVData(product.code);
+
+          // Find matching AllPrintings products by name
+          const matchingAllPrintingsProducts = allPrintingsProducts.filter(
+            (apProduct) => this.productsMatch(product, apProduct)
+          );
+
+          return {
+            ...product,
+            ...(tcgcsvData && { tcgcsvData }),
+            ...(matchingAllPrintingsProducts.length > 0 && {
+              allPrintingsData: matchingAllPrintingsProducts,
+            }),
+          };
+        } catch (error) {
+          logger.warn(
+            `Failed to get complete data for product ${product.code}:`,
             error
           );
           return product;
@@ -893,5 +946,24 @@ export class MTGDataService implements DataService {
       );
       return null;
     }
+  }
+
+  private productsMatch(
+    product: ExtendedSealedData,
+    allPrintingsProduct: AllPrintingsSealedProduct
+  ): boolean {
+    const normalizedProductName = product.name
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    const normalizedAllPrintingsName = allPrintingsProduct.name
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    return normalizedProductName === normalizedAllPrintingsName;
   }
 }

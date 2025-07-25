@@ -47,5 +47,38 @@ export function createSetsRouter(dataService: DataService): Router {
     }
   });
 
+  /**
+   * @route GET /sets/:setCode/products/complete
+   * @desc Get all products for a specific set with complete data including TCGCSV pricing and AllPrintings sealed product data
+   * @access Public
+   */
+  router.get(
+    "/:setCode/products/complete",
+    async (req: Request, res: Response) => {
+      const setCode = req.params["setCode"];
+      if (!setCode) {
+        return res.status(400).json({ error: "Set code is required" });
+      }
+
+      logger.info(`Received GET /sets/${setCode}/products/complete request`);
+
+      try {
+        const products = await dataService.getProductsWithCompleteData(setCode);
+        logger.info(
+          `Returning ${products.length} products for set ${setCode} with complete data`
+        );
+        return res.json(products);
+      } catch (error) {
+        logger.error(
+          `Error fetching complete products for set ${setCode}:`,
+          error
+        );
+        return res
+          .status(500)
+          .json({ error: "Failed to fetch complete products" });
+      }
+    }
+  );
+
   return router;
 }
