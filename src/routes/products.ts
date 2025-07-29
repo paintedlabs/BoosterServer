@@ -332,5 +332,23 @@ export function createProductsRouter(dataService: DataService): Router {
     }
   });
 
+  /**
+   * @route GET /products/tcgcsv-products
+   * @desc Get raw JSON for all TCGCSV products
+   * @access Public
+   */
+  router.get("/tcgcsv-products", async (_req: Request, res: Response) => {
+    logger.info("Received GET /products/tcgcsv-products request");
+
+    try {
+      const products = dataService.getTCGCSVProducts();
+      logger.info(`Returning ${products.length} TCGCSV products`);
+      return res.json(products);
+    } catch (error) {
+      logger.error("Error getting TCGCSV products:", error);
+      return res.status(500).json({ error: "Failed to get TCGCSV products" });
+    }
+  });
+
   return router;
 }

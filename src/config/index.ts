@@ -16,7 +16,7 @@ export interface Config {
     allPrintingsUrl: string;
     allPrintingsUrlZipped: string;
     extendedDataUrl: string;
-    scryfallAllCardsUrl: string;
+    scryfallBulkDataUrl: string;
     localPaths: {
       allPrintings: string;
       extendedData: string;
@@ -55,8 +55,7 @@ export const config: Config = {
     allPrintingsUrlZipped: "https://mtgjson.com/api/v5/AllPrintings.json.zip",
     extendedDataUrl:
       "https://raw.githubusercontent.com/taw/magic-sealed-data/refs/heads/master/sealed_extended_data.json",
-    scryfallAllCardsUrl:
-      "https://data.scryfall.io/all-cards/all-cards-20250124102227.json",
+    scryfallBulkDataUrl: "https://api.scryfall.com/bulk-data",
     localPaths: {
       allPrintings: "data/AllPrintings.json",
       extendedData: "data/sealed_extended_data.json",

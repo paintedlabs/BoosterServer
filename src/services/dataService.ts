@@ -17,6 +17,7 @@ import {
   MultiplePacksResponse,
   DataService,
   PackResponseWithPricing,
+  AllPrintingsSealedProduct,
 } from "../types";
 import { TCGCSVProduct, TCGCSVPrice } from "../types/tcgcsv";
 import { NotFoundError } from "../utils/errors";
@@ -27,6 +28,10 @@ export class MTGDataService implements DataService {
   private extendedDataArray: ExtendedSealedData[] = [];
   private combinedCards: Record<string, CombinedCard> = {};
   private tcgcsvService: TCGCSVService;
+
+  // Pre-processed set mappings for fast lookups
+  private setInfoMap: Map<string, any> = new Map();
+  private enhancedProductsMap: Map<string, any[]> = new Map();
 
   constructor() {
     this.tcgcsvService = new TCGCSVService();
@@ -55,6 +60,9 @@ export class MTGDataService implements DataService {
 
     // Pre-process TCGCSV data for fast lookup
     await this.preprocessTCGCSVData();
+
+    // Pre-process set mappings for fast lookups
+    await this.preprocessSetMappings();
 
     await this.buildCombinedCards();
     logger.info("MTG Data Service initialized successfully");
@@ -96,6 +104,97 @@ export class MTGDataService implements DataService {
     return this.extendedDataArray.filter(
       (p) => p.set_code.toUpperCase() === setCodeParam
     );
+  }
+
+  async getProductsWithAllData(setCode: string): Promise<
+    Array<
+      ExtendedSealedData & {
+        tcgcsvData?: {
+          product: TCGCSVProduct;
+          prices: TCGCSVPrice[];
+        };
+      }
+    >
+  > {
+    const setCodeParam = setCode.toUpperCase();
+    const products = this.extendedDataArray.filter(
+      (p) => p.set_code.toUpperCase() === setCodeParam
+    );
+
+    // Enhance each product with TCGCSV data if available
+    const enhancedProducts = await Promise.all(
+      products.map(async (product) => {
+        try {
+          // Try to get TCGCSV data for this product using the product code
+          const tcgcsvData = await this.getProductTCGCSVData(product.code);
+
+          return {
+            ...product,
+            ...(tcgcsvData && { tcgcsvData }),
+          };
+        } catch (error) {
+          logger.warn(
+            `Failed to get TCGCSV data for product ${product.code}:`,
+            error
+          );
+          return product;
+        }
+      })
+    );
+
+    return enhancedProducts;
+  }
+
+  async getProductsWithCompleteData(setCode: string): Promise<
+    Array<
+      ExtendedSealedData & {
+        tcgcsvData?: {
+          product: TCGCSVProduct;
+          prices: TCGCSVPrice[];
+        };
+        allPrintingsData?: AllPrintingsSealedProduct[];
+      }
+    >
+  > {
+    const setCodeParam = setCode.toUpperCase();
+    const products = this.extendedDataArray.filter(
+      (p) => p.set_code.toUpperCase() === setCodeParam
+    );
+
+    // Get AllPrintings data for this set
+    const allPrintingsSet = this.allPrintings?.data[setCodeParam];
+    const allPrintingsProducts = allPrintingsSet?.sealedProduct || [];
+
+    // Enhance each product with TCGCSV data and AllPrintings data
+    const enhancedProducts = await Promise.all(
+      products.map(async (product) => {
+        try {
+          // Try to get TCGCSV data for this product using the product code
+          const tcgcsvData = await this.getProductTCGCSVData(product.code);
+
+          // Find matching AllPrintings products by name
+          const matchingAllPrintingsProducts = allPrintingsProducts.filter(
+            (apProduct) => this.productsMatch(product, apProduct)
+          );
+
+          return {
+            ...product,
+            ...(tcgcsvData && { tcgcsvData }),
+            ...(matchingAllPrintingsProducts.length > 0 && {
+              allPrintingsData: matchingAllPrintingsProducts,
+            }),
+          };
+        } catch (error) {
+          logger.warn(
+            `Failed to get complete data for product ${product.code}:`,
+            error
+          );
+          return product;
+        }
+      })
+    );
+
+    return enhancedProducts;
   }
 
   openProduct(productCode: string): PackResponse {
@@ -224,6 +323,67 @@ export class MTGDataService implements DataService {
     return { packs };
   }
 
+  /**
+   * Get all pre-processed TCGCSV products
+   */
+  getTCGCSVProducts(): Array<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  }> {
+    return this.tcgcsvService.getAllProducts();
+  }
+
+  /**
+   * Get pre-processed set information (O(1) lookup)
+   */
+  getSetInfo(setCode: string): any | null {
+    const setCodeUpper = setCode.toUpperCase();
+    return this.setInfoMap.get(setCodeUpper) || null;
+  }
+
+  /**
+   * Get pre-processed enhanced products for a set (O(1) lookup)
+   */
+  getEnhancedProducts(setCode: string): any[] {
+    const setCodeUpper = setCode.toUpperCase();
+    return this.enhancedProductsMap.get(setCodeUpper) || [];
+  }
+
+  /**
+   * Get all pre-processed set codes
+   */
+  getPreprocessedSetCodes(): string[] {
+    return Array.from(this.setInfoMap.keys());
+  }
+
+  /**
+   * Get statistics about pre-processed set mappings
+   */
+  getSetMappingStats(): {
+    totalSets: number;
+    totalEnhancedProducts: number;
+    setsWithMtgJsonData: number;
+    setsWithTcgcsvMapping: number;
+  } {
+    const totalSets = this.setInfoMap.size;
+    const totalEnhancedProducts = Array.from(
+      this.enhancedProductsMap.values()
+    ).flat().length;
+    const setsWithMtgJsonData = Array.from(this.setInfoMap.values()).filter(
+      (info) => info.mtgJson.hasAllPrintingsData
+    ).length;
+    const setsWithTcgcsvMapping = Array.from(this.setInfoMap.values()).filter(
+      (info) => info.tcgcsv.isMapped
+    ).length;
+
+    return {
+      totalSets,
+      totalEnhancedProducts,
+      setsWithMtgJsonData,
+      setsWithTcgcsvMapping,
+    };
+  }
+
   private async ensureAllPrintingsUnzipped(): Promise<void> {
     const localJsonPath = config.data.localPaths.allPrintings;
 
@@ -289,9 +449,38 @@ export class MTGDataService implements DataService {
       return;
     }
 
-    logger.info(`Downloading from: ${config.data.scryfallAllCardsUrl}`);
-    const response = await fetch(config.data.scryfallAllCardsUrl);
+    // First, fetch the bulk data metadata to get the latest URL
+    logger.info(
+      `Fetching Scryfall bulk data metadata from: ${config.data.scryfallBulkDataUrl}`
+    );
+    const bulkDataResponse = await fetch(config.data.scryfallBulkDataUrl);
 
+    if (!bulkDataResponse.ok) {
+      throw new Error(
+        `Scryfall bulk data metadata fetch failed: ${bulkDataResponse.status} ${bulkDataResponse.statusText}`
+      );
+    }
+
+    const bulkData =
+      (await bulkDataResponse.json()) as ScryfallTypes.IScryfallList<ScryfallTypes.IScryfallBulkData>;
+
+    // Find the "all_cards" bulk data entry
+    const allCardsBulkData = bulkData.data.find(
+      (item) => item.type === "all_cards"
+    );
+
+    if (!allCardsBulkData) {
+      throw new Error(
+        "Could not find 'all_cards' bulk data in Scryfall API response"
+      );
+    }
+
+    logger.info(
+      `Found latest Scryfall all-cards data: ${allCardsBulkData.name} (updated: ${allCardsBulkData.updated_at})`
+    );
+    logger.info(`Downloading from: ${allCardsBulkData.download_uri}`);
+
+    const response = await fetch(allCardsBulkData.download_uri);
     if (!response.ok) {
       throw new Error(
         `Scryfall bulk data fetch failed: ${response.status} ${response.statusText}`
@@ -521,9 +710,158 @@ export class MTGDataService implements DataService {
       logger.info(
         `TCGCSV pre-processing complete: ${stats.totalProducts} products with ${stats.totalPrices} total prices`
       );
+
+      // Build comprehensive product mappings for all products
+      await this.tcgcsvService.buildProductMappings();
+      logger.info("Product mappings built successfully");
     } catch (error) {
       logger.error("Error during TCGCSV pre-processing:", error);
       // Don't fail initialization if TCGCSV pre-processing fails
+    }
+  }
+
+  private async preprocessSetMappings(): Promise<void> {
+    logger.info("Pre-processing set mappings for fast lookups...");
+    try {
+      // Get all set codes from extended data
+      const setCodes = new Set<string>();
+      for (const product of this.extendedDataArray) {
+        setCodes.add(product.set_code.toUpperCase());
+      }
+
+      // Build enhanced set info and product mappings for each set
+      for (const setCode of setCodes) {
+        const mtgJsonSet = this.allPrintings?.data[setCode];
+        const extendedProducts = this.extendedDataArray.filter(
+          (p) => p.set_code.toUpperCase() === setCode
+        );
+
+        // Get TCGCSV mapping information
+        const tcgcsvGroupId = this.tcgcsvService.getGroupIdForSet(setCode);
+        const tcgcsvMapping = this.tcgcsvService
+          .getAllMappings()
+          .find((m: any) => m.setCode.toUpperCase() === setCode);
+
+        // Build set info
+        const setInfo = {
+          setCode: setCode,
+          mtgJson: mtgJsonSet
+            ? {
+                name: mtgJsonSet.name,
+                code: mtgJsonSet.code,
+                releaseDate: mtgJsonSet.releaseDate,
+                baseSetSize: mtgJsonSet.baseSetSize,
+                totalSetSize: mtgJsonSet.cards?.length || 0,
+                sealedProducts: mtgJsonSet.sealedProduct?.length || 0,
+                hasAllPrintingsData: true,
+              }
+            : {
+                hasAllPrintingsData: false,
+              },
+          extendedData: {
+            products: extendedProducts.length,
+            set_name: extendedProducts[0]?.set_name || null,
+            source_set_codes: extendedProducts[0]?.source_set_codes || [],
+          },
+          tcgcsv: {
+            isMapped: !!tcgcsvMapping,
+            groupId: tcgcsvGroupId,
+            mapping: tcgcsvMapping
+              ? {
+                  setCode: tcgcsvMapping.setCode,
+                  setName: tcgcsvMapping.setName,
+                  groupId: tcgcsvMapping.groupId,
+                  categoryId: tcgcsvMapping.categoryId,
+                  categoryName: tcgcsvMapping.categoryName,
+                }
+              : null,
+          },
+          summary: {
+            hasMtgJsonData: !!mtgJsonSet,
+            hasExtendedData: extendedProducts.length > 0,
+            hasTcgcsvMapping: !!tcgcsvMapping,
+            totalProducts:
+              extendedProducts.length +
+              (mtgJsonSet?.sealedProduct?.length || 0),
+          },
+        };
+
+        this.setInfoMap.set(setCode, setInfo);
+
+        // Build enhanced products for this set
+        const enhancedProducts = await Promise.all(
+          extendedProducts.map(async (product) => {
+            // Get TCGCSV data if available
+            let tcgcsvData = null;
+            try {
+              tcgcsvData = await this.getProductTCGCSVData(product.code);
+            } catch (error) {
+              // TCGCSV data not available for this product
+            }
+
+            // Find matching MTGJson sealed products using enhanced mapping
+            const matchingMtgJsonProducts = this.findMatchingMtgJsonProducts(
+              product,
+              mtgJsonSet?.sealedProduct || []
+            );
+
+            return {
+              // Extended Data
+              name: product.name,
+              code: product.code,
+              set_code: product.set_code,
+              set_name: product.set_name,
+              boosters: product.boosters,
+              sheets: product.sheets,
+              source_set_codes: product.source_set_codes,
+
+              // MTGJson Identifiers
+              mtgJsonIdentifiers: matchingMtgJsonProducts.map((mp: any) => ({
+                uuid: mp.uuid,
+                name: mp.name,
+                category: mp.category,
+                cardCount: mp.cardCount,
+                subtype: mp.subtype,
+                releaseDate: mp.releaseDate,
+                identifiers: mp.identifiers,
+                purchaseUrls: mp.purchaseUrls,
+              })),
+
+              // TCGCSV Data
+              tcgcsvData: tcgcsvData
+                ? {
+                    product: tcgcsvData.product,
+                    prices: tcgcsvData.prices,
+                    bestPrice: this.tcgcsvService.getBestPrice(
+                      tcgcsvData.product,
+                      tcgcsvData.prices
+                    ),
+                    priceStats: this.tcgcsvService.getPriceStats(
+                      tcgcsvData.product,
+                      tcgcsvData.prices
+                    ),
+                  }
+                : null,
+
+              // Mapping Information
+              mappings: {
+                hasTcgcsvMapping: !!tcgcsvMapping,
+                tcgcsvGroupId: tcgcsvMapping?.groupId || null,
+                tcgcsvCategoryId: tcgcsvMapping?.categoryId || null,
+                tcgcsvCategoryName: tcgcsvMapping?.categoryName || null,
+              },
+            };
+          })
+        );
+
+        this.enhancedProductsMap.set(setCode, enhancedProducts);
+      }
+
+      logger.info(
+        `Set mappings pre-processed. Total sets: ${this.setInfoMap.size}, Total enhanced products: ${Array.from(this.enhancedProductsMap.values()).flat().length}`
+      );
+    } catch (error) {
+      logger.error("Error during set mappings pre-processing:", error);
     }
   }
 
@@ -816,5 +1154,298 @@ export class MTGDataService implements DataService {
       }
     }
     return null;
+  }
+
+  /**
+   * Get TCGCSV data for a specific product code
+   */
+  private async getProductTCGCSVData(productCode: string): Promise<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  } | null> {
+    try {
+      // Use the TCGCSV service to get pricing data for this product
+      // This will now use the preprocessed data for fast lookup
+      return await this.tcgcsvService.getPricingByProductCode(productCode);
+    } catch (error) {
+      logger.warn(
+        `Failed to get TCGCSV data for product ${productCode}:`,
+        error
+      );
+      return null;
+    }
+  }
+
+  private productsMatch(
+    product: ExtendedSealedData,
+    allPrintingsProduct: AllPrintingsSealedProduct
+  ): boolean {
+    const normalizedProductName = product.name
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    const normalizedAllPrintingsName = allPrintingsProduct.name
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    return normalizedProductName === normalizedAllPrintingsName;
+  }
+
+  /**
+   * Enhanced mapping function to match Extended Data products to MTGJson sealed products
+   */
+  private findMatchingMtgJsonProducts(
+    extendedProduct: ExtendedSealedData,
+    mtgJsonSealedProducts: AllPrintingsSealedProduct[]
+  ): AllPrintingsSealedProduct[] {
+    if (!mtgJsonSealedProducts || mtgJsonSealedProducts.length === 0) {
+      return [];
+    }
+
+    const normalizeName = (name: string) => {
+      return name
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, " ") // Remove special characters
+        .replace(/\s+/g, " ") // Normalize whitespace
+        .trim();
+    };
+
+    const extendedName = normalizeName(extendedProduct.name);
+    const extendedCode = extendedProduct.code.toLowerCase();
+
+    // Score each potential match
+    const scoredMatches = mtgJsonSealedProducts.map((mtgJsonProduct) => {
+      const mtgJsonName = normalizeName(mtgJsonProduct.name);
+      const mtgJsonCategory = mtgJsonProduct.category?.toLowerCase() || "";
+      const mtgJsonSubtype = mtgJsonProduct.subtype?.toLowerCase() || "";
+
+      let score = 0;
+      let matchType = "none";
+      let matchReason = "";
+
+      // 1. Exact name match (highest priority)
+      if (extendedName === mtgJsonName) {
+        score = 100;
+        matchType = "exact_name";
+        matchReason = "Exact name match";
+      }
+      // 2. Contains match (one name contains the other)
+      else if (
+        extendedName.includes(mtgJsonName) ||
+        mtgJsonName.includes(extendedName)
+      ) {
+        score = 85;
+        matchType = "contains";
+        matchReason = "Name contains match";
+      }
+      // 3. Word-based matching
+      else {
+        const extendedWords = extendedName
+          .split(" ")
+          .filter((w) => w.length > 2);
+        const mtgJsonWords = mtgJsonName.split(" ").filter((w) => w.length > 2);
+
+        if (extendedWords.length > 0 && mtgJsonWords.length > 0) {
+          const matchingWords = extendedWords.filter((word) =>
+            mtgJsonWords.some(
+              (mtgJsonWord) =>
+                mtgJsonWord.includes(word) || word.includes(mtgJsonWord)
+            )
+          );
+
+          const wordMatchRatio =
+            matchingWords.length /
+            Math.max(extendedWords.length, mtgJsonWords.length);
+
+          if (wordMatchRatio >= 0.8) {
+            score = 80;
+            matchType = "word_match_high";
+            matchReason = `High word match (${Math.round(wordMatchRatio * 100)}%)`;
+          } else if (wordMatchRatio >= 0.6) {
+            score = 70;
+            matchType = "word_match_medium";
+            matchReason = `Medium word match (${Math.round(wordMatchRatio * 100)}%)`;
+          } else if (wordMatchRatio >= 0.4) {
+            score = 50;
+            matchType = "word_match_low";
+            matchReason = `Low word match (${Math.round(wordMatchRatio * 100)}%)`;
+          }
+        }
+      }
+
+      // 4. Product type matching based on Extended Data code patterns
+      const productTypeBonus = this.getProductTypeMatchBonus(
+        extendedCode,
+        mtgJsonCategory,
+        mtgJsonSubtype
+      );
+      score += productTypeBonus.bonus;
+      if (productTypeBonus.bonus > 0) {
+        matchReason += ` + ${productTypeBonus.bonus} (${productTypeBonus.reason})`;
+      }
+
+      // 5. Set code matching
+      if (
+        extendedProduct.set_code.toLowerCase() ===
+        mtgJsonProduct.name.toLowerCase().split(" ").pop()
+      ) {
+        score += 10;
+        matchReason += " + 10 (set code match)";
+      }
+
+      // 6. Booster type matching
+      const boosterTypeBonus = this.getBoosterTypeMatchBonus(
+        extendedProduct,
+        mtgJsonProduct
+      );
+      score += boosterTypeBonus.bonus;
+      if (boosterTypeBonus.bonus > 0) {
+        matchReason += ` + ${boosterTypeBonus.bonus} (${boosterTypeBonus.reason})`;
+      }
+
+      return {
+        product: mtgJsonProduct,
+        score,
+        matchType,
+        matchReason,
+        extendedName,
+        mtgJsonName,
+        extendedCode,
+        mtgJsonCategory,
+        mtgJsonSubtype,
+      };
+    });
+
+    // Sort by score (highest first) and filter by minimum threshold
+    scoredMatches.sort((a, b) => b.score - a.score);
+
+    // Return products with score >= 40 (adjustable threshold)
+    const threshold = 40;
+    const matches = scoredMatches.filter((match) => match.score >= threshold);
+
+    // Log the best matches for debugging
+    if (matches.length > 0) {
+      const bestMatch = matches[0];
+      if (bestMatch) {
+        logger.debug(
+          `Best match for "${extendedProduct.name}" (${extendedProduct.code}): ` +
+            `"${bestMatch.mtgJsonName}" (score: ${bestMatch.score}, type: ${bestMatch.matchType}) - ${bestMatch.matchReason}`
+        );
+      }
+    } else {
+      logger.debug(
+        `No good matches found for "${extendedProduct.name}" (${extendedProduct.code})`
+      );
+    }
+
+    return matches.map((match) => match.product);
+  }
+
+  /**
+   * Get bonus score for product type matching
+   */
+  private getProductTypeMatchBonus(
+    extendedCode: string,
+    mtgJsonCategory: string,
+    mtgJsonSubtype: string
+  ): { bonus: number; reason: string } {
+    let bonus = 0;
+    let reason = "";
+
+    // Booster pack matching
+    if (
+      extendedCode.includes("draft") &&
+      (mtgJsonSubtype.includes("draft") || mtgJsonCategory.includes("booster"))
+    ) {
+      bonus += 15;
+      reason = "draft booster";
+    } else if (
+      extendedCode.includes("set") &&
+      (mtgJsonSubtype.includes("set") || mtgJsonCategory.includes("booster"))
+    ) {
+      bonus += 15;
+      reason = "set booster";
+    } else if (
+      extendedCode.includes("collector") &&
+      (mtgJsonSubtype.includes("collector") ||
+        mtgJsonCategory.includes("booster"))
+    ) {
+      bonus += 15;
+      reason = "collector booster";
+    } else if (
+      extendedCode.includes("prerelease") &&
+      (mtgJsonSubtype.includes("prerelease") ||
+        mtgJsonCategory.includes("prerelease"))
+    ) {
+      bonus += 15;
+      reason = "prerelease";
+    }
+
+    // Box vs Pack matching
+    if (
+      extendedCode.includes("box") &&
+      mtgJsonCategory.includes("booster_box")
+    ) {
+      bonus += 10;
+      reason += " + box";
+    } else if (
+      extendedCode.includes("pack") &&
+      mtgJsonCategory.includes("booster_pack")
+    ) {
+      bonus += 10;
+      reason += " + pack";
+    } else if (
+      extendedCode.includes("case") &&
+      mtgJsonCategory.includes("booster_case")
+    ) {
+      bonus += 10;
+      reason += " + case";
+    }
+
+    return { bonus, reason: reason.trim() };
+  }
+
+  /**
+   * Get bonus score for booster type matching based on Extended Data structure
+   */
+  private getBoosterTypeMatchBonus(
+    extendedProduct: ExtendedSealedData,
+    mtgJsonProduct: AllPrintingsSealedProduct
+  ): { bonus: number; reason: string } {
+    let bonus = 0;
+    let reason = "";
+
+    // Analyze Extended Data booster structure
+    const hasFoilSheets = Object.keys(extendedProduct.sheets).some((sheet) =>
+      sheet.includes("foil")
+    );
+    const hasSpecialSheets = Object.keys(extendedProduct.sheets).some(
+      (sheet) =>
+        sheet.includes("rare") ||
+        sheet.includes("mythic") ||
+        sheet.includes("special")
+    );
+    const sheetCount = Object.keys(extendedProduct.sheets).length;
+
+    // Collector boosters typically have more sheets and foil sheets
+    if (hasFoilSheets && hasSpecialSheets && sheetCount > 5) {
+      if (mtgJsonProduct.subtype?.toLowerCase().includes("collector")) {
+        bonus += 10;
+        reason = "collector booster structure";
+      }
+    }
+    // Draft boosters typically have fewer sheets
+    else if (sheetCount <= 5 && !hasSpecialSheets) {
+      if (mtgJsonProduct.subtype?.toLowerCase().includes("draft")) {
+        bonus += 10;
+        reason = "draft booster structure";
+      }
+    }
+
+    return { bonus, reason };
   }
 }

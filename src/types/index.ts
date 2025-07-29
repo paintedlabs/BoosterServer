@@ -21,6 +21,43 @@ export interface MTGSet {
   name: string;
   releaseDate: string;
   cards: CardSet[];
+  sealedProduct?: AllPrintingsSealedProduct[];
+}
+
+export interface AllPrintingsSealedProduct {
+  uuid: string;
+  name: string;
+  category: string;
+  cardCount?: number;
+  contents?: {
+    pack?: Array<{ code: string; set: string }>;
+    sealed?: Array<{ count: number; name: string; set: string; uuid: string }>;
+    card?: Array<{
+      foil?: boolean;
+      name: string;
+      number: string;
+      set: string;
+      uuid: string;
+    }>;
+    other?: Array<{ name: string }>;
+  };
+  identifiers?: {
+    abuId?: string;
+    cardKingdomId?: string;
+    cardtraderId?: string;
+    csiId?: string;
+    mcmId?: string;
+    scgId?: string;
+    tcgplayerProductId?: string;
+    tntId?: string;
+  };
+  purchaseUrls?: {
+    cardKingdom?: string;
+    tcgplayer?: string;
+    cardmarket?: string;
+  };
+  releaseDate?: string;
+  subtype?: string;
 }
 
 export interface CardSet {
@@ -111,6 +148,27 @@ export interface DataService {
   getCombinedCards(): Record<string, CombinedCard>;
   getSets(): SetResponse[];
   getProducts(setCode: string): ExtendedSealedData[];
+  getProductsWithAllData(setCode: string): Promise<
+    Array<
+      ExtendedSealedData & {
+        tcgcsvData?: {
+          product: TCGCSVProduct;
+          prices: TCGCSVPrice[];
+        };
+      }
+    >
+  >;
+  getProductsWithCompleteData(setCode: string): Promise<
+    Array<
+      ExtendedSealedData & {
+        tcgcsvData?: {
+          product: TCGCSVProduct;
+          prices: TCGCSVPrice[];
+        };
+        allPrintingsData?: AllPrintingsSealedProduct[];
+      }
+    >
+  >;
   openProduct(productCode: string): PackResponse;
   openMultipleProducts(
     productCode: string,
@@ -128,6 +186,19 @@ export interface DataService {
     totalCards: number;
     cardsWithTCGPlayerId: number;
     cardsWithTCGCSVData: number;
+  };
+  getTCGCSVProducts(): Array<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  }>;
+  getSetInfo(setCode: string): any | null;
+  getEnhancedProducts(setCode: string): any[];
+  getPreprocessedSetCodes(): string[];
+  getSetMappingStats(): {
+    totalSets: number;
+    totalEnhancedProducts: number;
+    setsWithMtgJsonData: number;
+    setsWithTcgcsvMapping: number;
   };
 }
 
@@ -169,4 +240,20 @@ export interface TCGCSVServiceInterface {
     totalProducts: number;
     totalPrices: number;
   };
+  getAllProducts(): Array<{
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  }>;
+  getAllProductMappings(): Array<{
+    productCode: string;
+    tcgcsvProductId: number;
+    source: "hardcoded" | "auto-mapped" | "extended-data";
+  }>;
+  getPreprocessedProductMap(): Array<{
+    tcgplayerProductId: number;
+    productName: string;
+    isSealed: boolean;
+    priceCount: number;
+    groupId: number;
+  }>;
 }
