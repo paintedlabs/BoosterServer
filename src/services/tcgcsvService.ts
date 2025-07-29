@@ -137,17 +137,6 @@ export class TCGCSVService {
     return magicCategory?.categoryId || null;
   }
 
-  async getPokemonCategoryId(): Promise<number | null> {
-    if (this.categories.length === 0) {
-      await this.fetchCategories();
-    }
-
-    const pokemonCategory = this.categories.find(
-      (cat) => cat.name === "Pokemon"
-    );
-    return pokemonCategory?.categoryId || null;
-  }
-
   async findGroupByName(
     name: string,
     categoryId: number
@@ -229,6 +218,21 @@ export class TCGCSVService {
     }
 
     try {
+      // Use the preprocessed data for fast lookup
+      const productData = this.productIdMap.get(productId);
+
+      if (productData) {
+        logger.debug(
+          `Found TCGCSV data for product ${productCode} in preprocessed map`
+        );
+        return productData;
+      }
+
+      // Fallback to the old method if not found in preprocessed data
+      logger.debug(
+        `Product ${productCode} not found in preprocessed map, falling back to API lookup`
+      );
+
       // Determine the group ID based on the product code
       let groupId: number;
       if (productCode.startsWith("fin-")) {
@@ -315,6 +319,107 @@ export class TCGCSVService {
   }
 
   /**
+   * Build comprehensive product mappings for all sealed products
+   * This should be called during server startup after TCGCSV data is preprocessed
+   */
+  async buildProductMappings(): Promise<void> {
+    if (!this.isPreprocessed) {
+      logger.warn(
+        "TCGCSV data not preprocessed, cannot build product mappings"
+      );
+      return;
+    }
+
+    logger.info("Building comprehensive product mappings...");
+
+    // Don't clear existing mappings initially - we'll merge them
+    const originalMappings = new Map(this.productMappings);
+
+    // Get all preprocessed products
+    const allProducts = Array.from(this.productIdMap.values());
+    logger.info(`Found ${allProducts.length} preprocessed TCGCSV products`);
+
+    // Create a mapping from tcgplayerProductId to TCGCSV prices
+    const tcgplayerIdToPricesMap = new Map<
+      number,
+      { product: TCGCSVProduct; prices: TCGCSVPrice[] }
+    >();
+
+    let sealedProductCount = 0;
+    for (const { product, prices } of allProducts) {
+      if (product.isSealed) {
+        sealedProductCount++;
+        // Use the product's TCGPlayer ID as the key
+        tcgplayerIdToPricesMap.set(product.productId, { product, prices });
+      }
+    }
+
+    logger.info(
+      `Found ${sealedProductCount} sealed TCGCSV products for mapping`
+    );
+
+    // Get all extended data products (from sealed_extended_data.json)
+    const extendedDataPath = path.join(
+      process.cwd(),
+      "data",
+      "sealed_extended_data.json"
+    );
+    if (!fs.existsSync(extendedDataPath)) {
+      logger.warn(
+        "sealed_extended_data.json not found, skipping product mapping"
+      );
+      return;
+    }
+
+    const extendedData = JSON.parse(fs.readFileSync(extendedDataPath, "utf8"));
+    logger.info(`Found ${extendedData.length} extended data products to map`);
+
+    let mappedCount = 0;
+    let notMappedCount = 0;
+
+    for (const product of extendedData) {
+      const productId = parseInt(product.code, 10); // Assuming product.code is the TCGPlayer ID
+
+      if (isNaN(productId)) {
+        logger.warn(
+          `Skipping extended data product with invalid TCGPlayer ID: ${product.code}`
+        );
+        notMappedCount++;
+        continue;
+      }
+
+      // Try to find a matching TCGCSV product by exact TCGPlayer ID
+      const tcgcsvProduct = tcgplayerIdToPricesMap.get(productId);
+
+      if (tcgcsvProduct) {
+        this.productMappings.set(product.code, tcgcsvProduct.product.productId);
+        mappedCount++;
+        logger.debug(
+          `Mapped: ${product.code} -> ${tcgcsvProduct.product.productId} (${product.name})`
+        );
+      } else {
+        notMappedCount++;
+        logger.debug(`No match found for: ${product.code} (${product.name})`);
+      }
+    }
+
+    // Restore original hardcoded mappings for products that weren't mapped
+    for (const [productCode, productId] of originalMappings) {
+      if (!this.productMappings.has(productCode)) {
+        this.productMappings.set(productCode, productId);
+        logger.debug(
+          `Restored hardcoded mapping: ${productCode} -> ${productId}`
+        );
+      }
+    }
+
+    logger.info(
+      `Product mapping complete: ${mappedCount} exact matches, ${notMappedCount} not mapped`
+    );
+    logger.info(`Total product mappings: ${this.productMappings.size}`);
+  }
+
+  /**
    * Fast lookup for product data using pre-processed map
    */
   getProductByTcgplayerIdFast(tcgplayerProductId: string): {
@@ -377,6 +482,91 @@ export class TCGCSVService {
     const products = Array.from(this.productIdMap.values());
     logger.info(`Returning ${products.length} pre-processed TCGCSV products`);
     return products;
+  }
+
+  /**
+   * Get all product mappings (productCode -> TCGCSV productId)
+   */
+  getAllProductMappings(): Array<{
+    productCode: string;
+    tcgcsvProductId: number;
+    source: "hardcoded" | "auto-mapped" | "extended-data";
+  }> {
+    const mappings: Array<{
+      productCode: string;
+      tcgcsvProductId: number;
+      source: "hardcoded" | "auto-mapped" | "extended-data";
+    }> = [];
+
+    // Get all mappings from the Map
+    for (const [productCode, tcgcsvProductId] of this.productMappings) {
+      // Determine the source of this mapping
+      let source: "hardcoded" | "auto-mapped" | "extended-data" = "auto-mapped";
+
+      // Check if it's a hardcoded mapping
+      if (
+        ["fin-collector", "fin-play", "lci-collector", "lci-draft"].includes(
+          productCode
+        )
+      ) {
+        source = "hardcoded";
+      } else if (this.isPreprocessed) {
+        // Check if it exists in the preprocessed data (extended-data mapping)
+        const productData = this.productIdMap.get(tcgcsvProductId);
+        if (productData) {
+          source = "extended-data";
+        }
+      }
+
+      mappings.push({
+        productCode,
+        tcgcsvProductId,
+        source,
+      });
+    }
+
+    // Sort by product code for consistent output
+    mappings.sort((a, b) => a.productCode.localeCompare(b.productCode));
+
+    logger.info(`Returning ${mappings.length} product mappings`);
+    return mappings;
+  }
+
+  /**
+   * Get the preprocessed product ID map (TCGPlayer Product ID -> Product Data)
+   */
+  getPreprocessedProductMap(): Array<{
+    tcgplayerProductId: number;
+    productName: string;
+    isSealed: boolean;
+    priceCount: number;
+    groupId: number;
+  }> {
+    const productMap: Array<{
+      tcgplayerProductId: number;
+      productName: string;
+      isSealed: boolean;
+      priceCount: number;
+      groupId: number;
+    }> = [];
+
+    for (const [tcgplayerProductId, { product, prices }] of this.productIdMap) {
+      productMap.push({
+        tcgplayerProductId,
+        productName: product.name,
+        isSealed: product.isSealed,
+        priceCount: prices.length,
+        groupId: product.groupId,
+      });
+    }
+
+    // Sort by TCGPlayer Product ID for consistent output
+    productMap.sort((a, b) => a.tcgplayerProductId - b.tcgplayerProductId);
+
+    logger.info(
+      `Returning ${productMap.length} preprocessed products (isPreprocessed: ${this.isPreprocessed})`
+    );
+    return productMap;
   }
 
   private createDefaultMappings(): void {
@@ -770,6 +960,9 @@ export class TCGCSVService {
         `TCGCSV pre-processing complete: ${totalProducts} products mapped with ${totalPrices} total prices`
       );
       logger.info(`Product lookup map size: ${this.productIdMap.size} entries`);
+
+      // Build comprehensive product mappings after data is preprocessed
+      await this.buildProductMappings();
     } catch (error) {
       logger.error("Error during TCGCSV pre-processing:", error);
       throw error;

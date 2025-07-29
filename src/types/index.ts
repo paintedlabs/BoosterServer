@@ -235,4 +235,16 @@ export interface TCGCSVServiceInterface {
     product: TCGCSVProduct;
     prices: TCGCSVPrice[];
   }>;
+  getAllProductMappings(): Array<{
+    productCode: string;
+    tcgcsvProductId: number;
+    source: "hardcoded" | "auto-mapped" | "extended-data";
+  }>;
+  getPreprocessedProductMap(): Array<{
+    tcgplayerProductId: number;
+    productName: string;
+    isSealed: boolean;
+    priceCount: number;
+    groupId: number;
+  }>;
 }

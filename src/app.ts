@@ -3,7 +3,7 @@ import { setupMiddleware, setupErrorHandling } from "./middleware";
 import { createSetsRouter } from "./routes/sets";
 import { createProductsRouter } from "./routes/products";
 import { createImagesRouter } from "./routes/images";
-import tcgcsvRouter from "./routes/tcgcsv";
+import { createTCGCSVRouter } from "./routes/tcgcsv";
 import { DataService, ImageService } from "./types";
 import logger from "./utils/logger";
 
@@ -28,7 +28,7 @@ export function createApp(
   // API routes
   app.use("/sets", createSetsRouter(dataService));
   app.use("/products", createProductsRouter(dataService));
-  app.use("/tcgcsv", tcgcsvRouter);
+  app.use("/tcgcsv", createTCGCSVRouter((dataService as any).tcgcsvService));
   app.use("/", createImagesRouter(imageService));
 
   // Setup error handling (must be last)

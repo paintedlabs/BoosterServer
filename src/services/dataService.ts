@@ -632,6 +632,10 @@ export class MTGDataService implements DataService {
       logger.info(
         `TCGCSV pre-processing complete: ${stats.totalProducts} products with ${stats.totalPrices} total prices`
       );
+
+      // Build comprehensive product mappings for all products
+      await this.tcgcsvService.buildProductMappings();
+      logger.info("Product mappings built successfully");
     } catch (error) {
       logger.error("Error during TCGCSV pre-processing:", error);
       // Don't fail initialization if TCGCSV pre-processing fails
@@ -938,6 +942,7 @@ export class MTGDataService implements DataService {
   } | null> {
     try {
       // Use the TCGCSV service to get pricing data for this product
+      // This will now use the preprocessed data for fast lookup
       return await this.tcgcsvService.getPricingByProductCode(productCode);
     } catch (error) {
       logger.warn(
