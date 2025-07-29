@@ -43,8 +43,7 @@ const ALL_PRINTINGS_URL_ZIPPED =
   "https://mtgjson.com/api/v5/AllPrintings.json.zip";
 const EXTENDED_DATA_URL =
   "https://raw.githubusercontent.com/taw/magic-sealed-data/refs/heads/master/sealed_extended_data.json";
-const SCRYFALL_ALL_CARDS_URL =
-  "https://data.scryfall.io/all-cards/all-cards-20250124102227.json";
+const SCRYFALL_BULK_DATA_URL = "https://api.scryfall.com/bulk-data";
 
 // Local file paths (adjust as desired)
 const ALL_PRINTINGS_PATH = "data/AllPrintings.json";
@@ -195,16 +194,43 @@ async function ensureFileExists(
 // Stream the Scryfall all-cards download to avoid large memory usage
 async function ensureScryfallAllCards(
   localPath: string,
-  remoteUrl: string
+  bulkDataUrl: string
 ): Promise<void> {
   if (fs.existsSync(localPath)) {
     console.log(`Scryfall all-cards file found locally: ${localPath}`);
     return;
   }
   console.log(`Not found locally: ${localPath}`);
-  console.log(`Downloading from: ${remoteUrl}`);
 
-  const response = await fetch(remoteUrl);
+  // First, fetch the bulk data metadata to get the latest URL
+  console.log(`Fetching Scryfall bulk data metadata from: ${bulkDataUrl}`);
+  const bulkDataResponse = await fetch(bulkDataUrl);
+
+  if (!bulkDataResponse.ok) {
+    throw new Error(
+      `Scryfall bulk data metadata fetch failed: ${bulkDataResponse.status} ${bulkDataResponse.statusText}`
+    );
+  }
+
+  const bulkData = await bulkDataResponse.json();
+
+  // Find the "all_cards" bulk data entry
+  const allCardsBulkData = bulkData.data.find(
+    (item: any) => item.type === "all_cards"
+  );
+
+  if (!allCardsBulkData) {
+    throw new Error(
+      "Could not find 'all_cards' bulk data in Scryfall API response"
+    );
+  }
+
+  console.log(
+    `Found latest Scryfall all-cards data: ${allCardsBulkData.name} (updated: ${allCardsBulkData.updated_at})`
+  );
+  console.log(`Downloading from: ${allCardsBulkData.download_uri}`);
+
+  const response = await fetch(allCardsBulkData.download_uri);
   if (!response.ok) {
     throw new Error(
       `Scryfall bulk data fetch failed: ${response.status} ${response.statusText}`
@@ -650,7 +676,7 @@ async function main() {
     await ensureAllPrintingsUnzipped(ALL_PRINTINGS_PATH);
     await ensureFileExists(ALL_PRINTINGS_PATH, ALL_PRINTINGS_URL);
     await ensureFileExists(EXTENDED_DATA_PATH, EXTENDED_DATA_URL);
-    await ensureScryfallAllCards(SCRYFALL_DATA_PATH, SCRYFALL_ALL_CARDS_URL);
+    await ensureScryfallAllCards(SCRYFALL_DATA_PATH, SCRYFALL_BULK_DATA_URL);
 
     allPrintings = loadAllPrintings(ALL_PRINTINGS_PATH);
     if (!allPrintings) {

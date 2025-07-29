@@ -569,6 +569,149 @@ export class TCGCSVService {
     return productMap;
   }
 
+  /**
+   * Get only the sealed products from the preprocessed data
+   */
+  getPreprocessedSealedProducts(): Array<{
+    tcgplayerProductId: number;
+    productName: string;
+    priceCount: number;
+    groupId: number;
+    categoryId: number;
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  }> {
+    const sealedProducts: Array<{
+      tcgplayerProductId: number;
+      productName: string;
+      priceCount: number;
+      groupId: number;
+      categoryId: number;
+      product: TCGCSVProduct;
+      prices: TCGCSVPrice[];
+    }> = [];
+
+    for (const [tcgplayerProductId, { product, prices }] of this.productIdMap) {
+      if (product.isSealed) {
+        sealedProducts.push({
+          tcgplayerProductId,
+          productName: product.name,
+          priceCount: prices.length,
+          groupId: product.groupId,
+          categoryId: product.categoryId,
+          product,
+          prices,
+        });
+      }
+    }
+
+    // Sort by TCGPlayer Product ID for consistent output
+    sealedProducts.sort((a, b) => a.tcgplayerProductId - b.tcgplayerProductId);
+
+    logger.info(
+      `Returning ${sealedProducts.length} preprocessed sealed products (isPreprocessed: ${this.isPreprocessed})`
+    );
+    return sealedProducts;
+  }
+
+  /**
+   * Enhanced pre-processing that includes sealed products from all categories
+   */
+  async preprocessAllDataWithSealed(): Promise<void> {
+    if (this.isPreprocessed) {
+      logger.info("TCGCSV data already pre-processed, skipping");
+      return;
+    }
+
+    logger.info(
+      "Starting enhanced TCGCSV data pre-processing (including sealed products from all categories)..."
+    );
+
+    try {
+      // Get all categories first
+      const categories = await this.fetchCategories();
+      logger.info(`Found ${categories.length} categories to process`);
+
+      let totalProducts = 0;
+      let totalPrices = 0;
+      let totalSealedProducts = 0;
+
+      // Process each category
+      for (const category of categories) {
+        try {
+          logger.debug(
+            `Processing category: ${category.name} (ID: ${category.categoryId})`
+          );
+
+          const groups = await this.fetchGroups(category.categoryId);
+          logger.debug(
+            `Found ${groups.length} groups in category ${category.name}`
+          );
+
+          // Process each group in the category
+          for (const group of groups) {
+            try {
+              logger.debug(
+                `Processing group: ${group.name} (ID: ${group.groupId}) in category ${category.name}`
+              );
+
+              // Fetch products and prices for this group
+              const [products, prices] = await Promise.all([
+                this.fetchProducts(group.groupId),
+                this.fetchPrices(group.groupId),
+              ]);
+
+              logger.debug(
+                `Found ${products.length} products and ${prices.length} prices in group ${group.name}`
+              );
+
+              // Create a map of productId to prices for this group
+              const priceMap = new Map<number, TCGCSVPrice[]>();
+              for (const price of prices) {
+                if (!priceMap.has(price.productId)) {
+                  priceMap.set(price.productId, []);
+                }
+                priceMap.get(price.productId)!.push(price);
+              }
+
+              // Add each product to the global product map
+              for (const product of products) {
+                const productPrices = priceMap.get(product.productId) || [];
+                if (productPrices.length > 0) {
+                  this.productIdMap.set(product.productId, {
+                    product,
+                    prices: productPrices,
+                  });
+                  totalProducts++;
+                  totalPrices += productPrices.length;
+
+                  if (product.isSealed) {
+                    totalSealedProducts++;
+                  }
+                }
+              }
+            } catch (error) {
+              logger.error(
+                `Error processing group ${group.groupId} in category ${category.name}:`,
+                error
+              );
+            }
+          }
+        } catch (error) {
+          logger.error(`Error processing category ${category.name}:`, error);
+        }
+      }
+
+      this.isPreprocessed = true;
+      logger.info(
+        `Enhanced pre-processing complete: ${totalProducts} total products, ${totalSealedProducts} sealed products, ${totalPrices} total prices`
+      );
+    } catch (error) {
+      logger.error("Error during enhanced pre-processing:", error);
+      throw error;
+    }
+  }
+
   private createDefaultMappings(): void {
     this.setMappings = [
       {

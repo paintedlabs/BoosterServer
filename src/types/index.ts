@@ -191,6 +191,15 @@ export interface DataService {
     product: TCGCSVProduct;
     prices: TCGCSVPrice[];
   }>;
+  getSetInfo(setCode: string): any | null;
+  getEnhancedProducts(setCode: string): any[];
+  getPreprocessedSetCodes(): string[];
+  getSetMappingStats(): {
+    totalSets: number;
+    totalEnhancedProducts: number;
+    setsWithMtgJsonData: number;
+    setsWithTcgcsvMapping: number;
+  };
 }
 
 export interface ImageService {

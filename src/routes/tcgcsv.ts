@@ -335,5 +335,163 @@ export function createTCGCSVRouter(tcgcsvService: TCGCSVService): Router {
     }
   });
 
+  // GET /tcgcsv/preprocessed-products/:productId - Get a specific preprocessed product by TCGPlayer product ID
+  router.get("/preprocessed-products/:productId", (req, res) => {
+    try {
+      const productId = req.params.productId;
+
+      if (!productId) {
+        return res.status(400).json({
+          success: false,
+          errors: ["Product ID is required"],
+        });
+      }
+
+      const productData = tcgcsvService.getProductByTcgplayerIdFast(productId);
+
+      if (!productData) {
+        return res.status(404).json({
+          success: false,
+          errors: [
+            `Product with TCGPlayer ID ${productId} not found in preprocessed data`,
+          ],
+        });
+      }
+
+      return res.json({
+        success: true,
+        errors: [],
+        result: {
+          tcgplayerProductId: parseInt(productId, 10),
+          productName: productData.product.name,
+          isSealed: productData.product.isSealed,
+          priceCount: productData.prices.length,
+          groupId: productData.product.groupId,
+          product: productData.product,
+          prices: productData.prices,
+        },
+      });
+    } catch (error) {
+      logger.error(
+        `Error fetching preprocessed product ${req.params.productId}:`,
+        error
+      );
+      return res.status(500).json({
+        success: false,
+        errors: ["Failed to fetch preprocessed product"],
+      });
+    }
+  });
+
+  // GET /tcgcsv/preprocessed-sealed-products - Get all preprocessed sealed products
+  router.get("/preprocessed-sealed-products", (_req, res) => {
+    try {
+      const sealedProducts = tcgcsvService.getPreprocessedSealedProducts();
+      return res.json({
+        totalItems: sealedProducts.length,
+        success: true,
+        errors: [],
+        results: sealedProducts,
+      });
+    } catch (error) {
+      logger.error("Error fetching preprocessed sealed products:", error);
+      return res.status(500).json({
+        totalItems: 0,
+        success: false,
+        errors: ["Failed to fetch preprocessed sealed products"],
+        results: [],
+      });
+    }
+  });
+
+  // GET /tcgcsv/preprocessed-sealed-products/:productId - Get a specific sealed product by TCGPlayer product ID
+  router.get("/preprocessed-sealed-products/:productId", (req, res) => {
+    try {
+      const productId = req.params.productId;
+
+      if (!productId) {
+        return res.status(400).json({
+          success: false,
+          errors: ["Product ID is required"],
+        });
+      }
+
+      const productData = tcgcsvService.getProductByTcgplayerIdFast(productId);
+
+      if (!productData) {
+        return res.status(404).json({
+          success: false,
+          errors: [
+            `Product with TCGPlayer ID ${productId} not found in preprocessed data`,
+          ],
+        });
+      }
+
+      // Check if it's a sealed product
+      if (!productData.product.isSealed) {
+        return res.status(400).json({
+          success: false,
+          errors: [
+            `Product with TCGPlayer ID ${productId} is not a sealed product`,
+          ],
+        });
+      }
+
+      return res.json({
+        success: true,
+        errors: [],
+        result: {
+          tcgplayerProductId: parseInt(productId, 10),
+          productName: productData.product.name,
+          priceCount: productData.prices.length,
+          groupId: productData.product.groupId,
+          categoryId: productData.product.categoryId,
+          product: productData.product,
+          prices: productData.prices,
+        },
+      });
+    } catch (error) {
+      logger.error(
+        `Error fetching preprocessed sealed product ${req.params.productId}:`,
+        error
+      );
+      return res.status(500).json({
+        success: false,
+        errors: ["Failed to fetch preprocessed sealed product"],
+      });
+    }
+  });
+
+  // POST /tcgcsv/preprocess-enhanced - Trigger enhanced preprocessing including sealed products from all categories
+  router.post("/preprocess-enhanced", async (_req, res) => {
+    try {
+      logger.info("Received request to trigger enhanced preprocessing");
+
+      // Start the enhanced preprocessing in the background
+      tcgcsvService
+        .preprocessAllDataWithSealed()
+        .then(() => {
+          logger.info("Enhanced preprocessing completed successfully");
+        })
+        .catch((error) => {
+          logger.error("Enhanced preprocessing failed:", error);
+        });
+
+      return res.json({
+        success: true,
+        errors: [],
+        message:
+          "Enhanced preprocessing started. This may take several minutes to complete.",
+        note: "Check the server logs for progress updates.",
+      });
+    } catch (error) {
+      logger.error("Error starting enhanced preprocessing:", error);
+      return res.status(500).json({
+        success: false,
+        errors: ["Failed to start enhanced preprocessing"],
+      });
+    }
+  });
+
   return router;
 }
