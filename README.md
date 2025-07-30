@@ -57,7 +57,6 @@ src/
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd BoosterServer
 ```
 
 2. Install dependencies:
