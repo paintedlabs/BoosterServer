@@ -1716,6 +1716,47 @@ export class MTGDataService implements DataService {
   }
 
   /**
+   * Find a nested sealed product by code and set
+   */
+  private findNestedSealedProduct(
+    code: string,
+    set: string
+  ): CombinedSealedProduct | null {
+    // First try to find by set code
+    const setProducts = this.combinedSealedProductsBySet.get(set.toUpperCase());
+    if (setProducts) {
+      // Look for a product that matches the code
+      const matchingProduct = setProducts.find((product) => {
+        // Check if the product has extended data with matching code
+        if (product.extendedData && product.extendedData.code === code) {
+          return true;
+        }
+        // Check if the product name contains the code
+        if (product.name.toLowerCase().includes(code.toLowerCase())) {
+          return true;
+        }
+        return false;
+      });
+
+      if (matchingProduct) {
+        return matchingProduct;
+      }
+    }
+
+    // If not found by set, search all products
+    for (const product of this.combinedSealedProducts.values()) {
+      if (product.extendedData && product.extendedData.code === code) {
+        return product;
+      }
+      if (product.name.toLowerCase().includes(code.toLowerCase())) {
+        return product;
+      }
+    }
+
+    return null;
+  }
+
+  /**
    * Generate a pack from AllPrintings sealed product contents
    */
   private generatePackFromAllPrintings(product: CombinedSealedProduct): Array<{
@@ -1761,15 +1802,67 @@ export class MTGDataService implements DataService {
         }
       }
     } else if (product.contents.pack) {
-      // Contains other packs - this is more complex and would need recursive handling
-      logger.warn(
-        `Pack contains other packs - not yet implemented for ${product.uuid}`
+      // Contains other packs - recursively open each pack
+      logger.info(
+        `Opening ${product.contents.pack.length} nested packs for ${product.uuid}`
       );
+
+      for (const packContent of product.contents.pack) {
+        try {
+          // Find the nested pack product by code and set
+          const nestedPack = this.findNestedSealedProduct(
+            packContent.code,
+            packContent.set
+          );
+
+          if (nestedPack) {
+            // Recursively generate pack from the nested product
+            const nestedPackCards =
+              this.generatePackFromAllPrintings(nestedPack);
+            pack.push(...nestedPackCards);
+          } else {
+            logger.warn(
+              `Could not find nested pack: ${packContent.code} from set ${packContent.set}`
+            );
+          }
+        } catch (error) {
+          logger.error(`Error opening nested pack ${packContent.code}:`, error);
+        }
+      }
     } else if (product.contents.sealed) {
-      // Contains other sealed products - this is more complex and would need recursive handling
-      logger.warn(
-        `Pack contains other sealed products - not yet implemented for ${product.uuid}`
+      // Contains other sealed products - recursively open each sealed product
+      logger.info(
+        `Opening ${product.contents.sealed.length} nested sealed products for ${product.uuid}`
       );
+
+      for (const sealedContent of product.contents.sealed) {
+        try {
+          // Find the nested sealed product by UUID
+          const nestedSealed = this.combinedSealedProducts.get(
+            sealedContent.uuid
+          );
+
+          if (nestedSealed) {
+            // Recursively generate pack from the nested product
+            const nestedSealedCards =
+              this.generatePackFromAllPrintings(nestedSealed);
+
+            // Add the cards multiple times based on the count
+            for (let i = 0; i < sealedContent.count; i++) {
+              pack.push(...nestedSealedCards);
+            }
+          } else {
+            logger.warn(
+              `Could not find nested sealed product: ${sealedContent.uuid} (${sealedContent.name})`
+            );
+          }
+        } catch (error) {
+          logger.error(
+            `Error opening nested sealed product ${sealedContent.uuid}:`,
+            error
+          );
+        }
+      }
     }
 
     return pack;
