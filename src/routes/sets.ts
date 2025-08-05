@@ -99,47 +99,44 @@ export function createSetsRouter(dataService: DataService): Router {
       // Get pre-processed set info (O(1) lookup)
       const setInfo = dataService.getSetInfo(setCodeUpper);
 
-      if (!setInfo) {
-        return res.status(404).json({ error: `Set ${setCodeUpper} not found` });
-      }
+      // Get enhanced products for this set
+      const enhancedProducts = dataService.getEnhancedProducts(setCodeUpper);
 
-      // Get TCGCSV sealed products if mapped (this is still async but much faster)
-      let tcgcsvSealedProducts: any[] = [];
-      if (setInfo.tcgcsv.isMapped) {
-        try {
-          const tcgcsvService = (dataService as any).tcgcsvService;
-          tcgcsvSealedProducts =
-            await tcgcsvService.getSealedProductsWithPrices(setCodeUpper);
-        } catch (error) {
-          logger.warn(
-            `Failed to get TCGCSV sealed products for ${setCodeUpper}:`,
-            error
-          );
-        }
-      }
+      // Get combined sealed products (new AllPrintings-prioritized data)
+      const combinedProducts =
+        dataService.getCombinedSealedProducts(setCodeUpper);
 
-      // Add TCGCSV sealed products to the response
-      const response = {
-        ...setInfo,
-        tcgcsv: {
-          ...setInfo.tcgcsv,
-          sealedProducts: tcgcsvSealedProducts.length,
-          sealedProductsWithPrices: tcgcsvSealedProducts.map((sp: any) => ({
-            name: sp.product.name,
-            productId: sp.product.productId,
-            isSealed: sp.product.isSealed,
-            priceCount: sp.prices.length,
-            bestPrice:
-              (dataService as any).tcgcsvService?.getBestPrice(
-                sp.product,
-                sp.prices
-              ) || null,
-          })),
+      // Get traditional ExtendedData products
+      const extendedProducts = dataService.getProducts(setCodeUpper);
+
+      return res.json({
+        setCode: setCodeUpper,
+        setInfo,
+        comparison: {
+          extendedData: {
+            totalProducts: extendedProducts.length,
+            products: extendedProducts.map((p) => ({
+              name: p.name,
+              code: p.code,
+              set_code: p.set_code,
+              set_name: p.set_name,
+            })),
+          },
+          allPrintings: {
+            totalProducts: combinedProducts.length,
+            products: combinedProducts.map((p) => ({
+              uuid: p.uuid,
+              name: p.name,
+              category: p.category,
+              cardCount: p.cardCount,
+              setCode: p.setCode,
+              hasExtendedData: !!p.extendedData,
+              hasTCGCSVData: !!p.tcgcsvData,
+            })),
+          },
         },
-      };
-
-      logger.info(`Returning pre-processed info for set ${setCodeUpper}`);
-      return res.json(response);
+        enhancedProducts,
+      });
     } catch (error) {
       logger.error(`Error fetching set info for ${setCode}:`, error);
       return res.status(500).json({ error: "Failed to fetch set info" });

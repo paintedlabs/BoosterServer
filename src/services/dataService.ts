@@ -18,10 +18,12 @@ import {
   DataService,
   PackResponseWithPricing,
   AllPrintingsSealedProduct,
+  CombinedSealedProduct,
 } from "../types";
 import { TCGCSVProduct, TCGCSVPrice } from "../types/tcgcsv";
 import { NotFoundError } from "../utils/errors";
 import { TCGCSVService } from "./tcgcsvService";
+import * as path from "path";
 
 export class MTGDataService implements DataService {
   private allPrintings: AllPrintings | null = null;
@@ -32,6 +34,12 @@ export class MTGDataService implements DataService {
   // Pre-processed set mappings for fast lookups
   private setInfoMap: Map<string, any> = new Map();
   private enhancedProductsMap: Map<string, any[]> = new Map();
+
+  // New combined sealed products that prioritize AllPrintings
+  private combinedSealedProducts: Map<string, CombinedSealedProduct> =
+    new Map();
+  private combinedSealedProductsBySet: Map<string, CombinedSealedProduct[]> =
+    new Map();
 
   constructor() {
     this.tcgcsvService = new TCGCSVService();
@@ -63,6 +71,9 @@ export class MTGDataService implements DataService {
 
     // Pre-process set mappings for fast lookups
     await this.preprocessSetMappings();
+
+    // Build combined sealed products that prioritize AllPrintings
+    await this.buildCombinedSealedProducts();
 
     await this.buildCombinedCards();
     logger.info("MTG Data Service initialized successfully");
@@ -382,6 +393,108 @@ export class MTGDataService implements DataService {
       setsWithMtgJsonData,
       setsWithTcgcsvMapping,
     };
+  }
+
+  // New methods for AllPrintings-prioritized sealed products
+
+  /**
+   * Get combined sealed products for a set that prioritize AllPrintings data
+   */
+  getCombinedSealedProducts(setCode: string): CombinedSealedProduct[] {
+    const setCodeUpper = setCode.toUpperCase();
+    return this.combinedSealedProductsBySet.get(setCodeUpper) || [];
+  }
+
+  /**
+   * Get a specific combined sealed product by UUID
+   */
+  getCombinedSealedProductByUuid(uuid: string): CombinedSealedProduct | null {
+    return this.combinedSealedProducts.get(uuid) || null;
+  }
+
+  /**
+   * Open a combined sealed product using AllPrintings data with fallback to ExtendedData
+   */
+  openCombinedSealedProduct(uuid: string): PackResponse {
+    const product = this.combinedSealedProducts.get(uuid);
+    if (!product) {
+      throw new NotFoundError(`Sealed product with UUID ${uuid} not found`);
+    }
+
+    // If we have extended data, use it for pack generation
+    if (product.extendedData) {
+      const extendedProduct: ExtendedSealedData = {
+        name: product.name,
+        code: product.extendedData.code,
+        set_code: product.setCode,
+        set_name: product.setName,
+        boosters: product.extendedData.boosters,
+        sheets: product.extendedData.sheets,
+        source_set_codes: product.extendedData.source_set_codes,
+      };
+      const pack = this.generatePack(extendedProduct);
+      return { pack };
+    }
+
+    // Otherwise, try to generate pack from AllPrintings contents
+    const pack = this.generatePackFromAllPrintings(product);
+    return { pack };
+  }
+
+  /**
+   * Open a combined sealed product with pricing data
+   */
+  async openCombinedSealedProductWithPricing(
+    uuid: string
+  ): Promise<PackResponseWithPricing> {
+    const product = this.combinedSealedProducts.get(uuid);
+    if (!product) {
+      throw new NotFoundError(`Sealed product with UUID ${uuid} not found`);
+    }
+
+    // If we have extended data, use it for pack generation
+    if (product.extendedData) {
+      const extendedProduct: ExtendedSealedData = {
+        name: product.name,
+        code: product.extendedData.code,
+        set_code: product.setCode,
+        set_name: product.setName,
+        boosters: product.extendedData.boosters,
+        sheets: product.extendedData.sheets,
+        source_set_codes: product.extendedData.source_set_codes,
+      };
+      const pack = await this.generatePackWithTCGCSV(extendedProduct);
+
+      // Calculate pricing information
+      let totalValue = 0;
+
+      for (const card of pack) {
+        if (card.tcgcsvData) {
+          const bestPrice = this.tcgcsvService.getBestPrice(
+            card.tcgcsvData.product,
+            card.tcgcsvData.prices
+          );
+          if (bestPrice) {
+            totalValue += bestPrice;
+          }
+        }
+      }
+
+      return {
+        pack,
+        pricing: {
+          ...(product.tcgcsvData?.product.productId && {
+            productId: product.tcgcsvData.product.productId,
+          }),
+          ...(totalValue > 0 && { priceStats: { marketPrice: totalValue } }),
+          lastUpdated: new Date().toISOString(),
+        },
+      };
+    }
+
+    // Otherwise, try to generate pack from AllPrintings contents
+    const pack = await this.generatePackFromAllPrintingsWithPricing(product);
+    return pack;
   }
 
   private async ensureAllPrintingsUnzipped(): Promise<void> {
@@ -725,64 +838,35 @@ export class MTGDataService implements DataService {
     try {
       // Get all set codes from extended data
       const setCodes = new Set<string>();
+
       for (const product of this.extendedDataArray) {
         setCodes.add(product.set_code.toUpperCase());
       }
 
-      // Build enhanced set info and product mappings for each set
+      // Process each set
       for (const setCode of setCodes) {
-        const mtgJsonSet = this.allPrintings?.data[setCode];
         const extendedProducts = this.extendedDataArray.filter(
           (p) => p.set_code.toUpperCase() === setCode
         );
 
-        // Get TCGCSV mapping information
-        const tcgcsvGroupId = this.tcgcsvService.getGroupIdForSet(setCode);
-        const tcgcsvMapping = this.tcgcsvService
-          .getAllMappings()
-          .find((m: any) => m.setCode.toUpperCase() === setCode);
+        const mtgJsonSet = this.allPrintings?.data[setCode];
+        const mtgJsonSealedProducts = mtgJsonSet?.sealedProduct || [];
 
         // Build set info
         const setInfo = {
-          setCode: setCode,
-          mtgJson: mtgJsonSet
-            ? {
-                name: mtgJsonSet.name,
-                code: mtgJsonSet.code,
-                releaseDate: mtgJsonSet.releaseDate,
-                baseSetSize: mtgJsonSet.baseSetSize,
-                totalSetSize: mtgJsonSet.cards?.length || 0,
-                sealedProducts: mtgJsonSet.sealedProduct?.length || 0,
-                hasAllPrintingsData: true,
-              }
-            : {
-                hasAllPrintingsData: false,
-              },
-          extendedData: {
-            products: extendedProducts.length,
-            set_name: extendedProducts[0]?.set_name || null,
-            source_set_codes: extendedProducts[0]?.source_set_codes || [],
+          setCode,
+          setName: mtgJsonSet?.name || extendedProducts[0]?.set_name || setCode,
+          mtgJson: {
+            hasAllPrintingsData: !!mtgJsonSet,
+            sealedProductCount: mtgJsonSealedProducts.length,
           },
           tcgcsv: {
-            isMapped: !!tcgcsvMapping,
-            groupId: tcgcsvGroupId,
-            mapping: tcgcsvMapping
-              ? {
-                  setCode: tcgcsvMapping.setCode,
-                  setName: tcgcsvMapping.setName,
-                  groupId: tcgcsvMapping.groupId,
-                  categoryId: tcgcsvMapping.categoryId,
-                  categoryName: tcgcsvMapping.categoryName,
-                }
-              : null,
+            isMapped: false, // Will be updated during TCGCSV preprocessing
+            groupId: null,
+            categoryId: null,
           },
-          summary: {
-            hasMtgJsonData: !!mtgJsonSet,
-            hasExtendedData: extendedProducts.length > 0,
-            hasTcgcsvMapping: !!tcgcsvMapping,
-            totalProducts:
-              extendedProducts.length +
-              (mtgJsonSet?.sealedProduct?.length || 0),
+          extendedData: {
+            productCount: extendedProducts.length,
           },
         };
 
@@ -802,7 +886,7 @@ export class MTGDataService implements DataService {
             // Find matching MTGJson sealed products using enhanced mapping
             const matchingMtgJsonProducts = this.findMatchingMtgJsonProducts(
               product,
-              mtgJsonSet?.sealedProduct || []
+              mtgJsonSealedProducts
             );
 
             return {
@@ -845,10 +929,8 @@ export class MTGDataService implements DataService {
 
               // Mapping Information
               mappings: {
-                hasTcgcsvMapping: !!tcgcsvMapping,
-                tcgcsvGroupId: tcgcsvMapping?.groupId || null,
-                tcgcsvCategoryId: tcgcsvMapping?.categoryId || null,
-                tcgcsvCategoryName: tcgcsvMapping?.categoryName || null,
+                mtgJsonMatches: matchingMtgJsonProducts.length,
+                tcgcsvMapped: !!tcgcsvData,
               },
             };
           })
@@ -858,10 +940,277 @@ export class MTGDataService implements DataService {
       }
 
       logger.info(
-        `Set mappings pre-processed. Total sets: ${this.setInfoMap.size}, Total enhanced products: ${Array.from(this.enhancedProductsMap.values()).flat().length}`
+        `Pre-processed ${this.setInfoMap.size} sets with enhanced product mappings`
       );
     } catch (error) {
-      logger.error("Error during set mappings pre-processing:", error);
+      logger.error("Error pre-processing set mappings:", error);
+    }
+  }
+
+  /**
+   * Build combined sealed products that prioritize AllPrintings data
+   */
+  private async buildCombinedSealedProducts(): Promise<void> {
+    logger.info(
+      "Building combined sealed products that prioritize AllPrintings..."
+    );
+
+    if (!this.allPrintings) {
+      logger.warn(
+        "AllPrintings data not available, skipping combined sealed products build"
+      );
+      return;
+    }
+
+    // Check for server data overrides
+    const overrideData = await this.loadServerDataOverrides();
+    if (overrideData) {
+      logger.info("Using server data overrides for sealed products");
+      this.applyServerDataOverrides(overrideData);
+      return;
+    }
+
+    // Build the combined sealed products normally
+    const builtProducts = this.buildCombinedSealedProductsFromData();
+
+    // Create override files with the built data
+    await this.createServerDataOverrides(builtProducts);
+
+    logger.info(
+      `Built ${builtProducts.totalProducts} combined sealed products: ` +
+        `${builtProducts.productsWithExtendedData} with ExtendedData, ` +
+        `${builtProducts.productsWithTCGCSV} with TCGCSV data`
+    );
+  }
+
+  /**
+   * Build combined sealed products from AllPrintings data
+   */
+  private buildCombinedSealedProductsFromData(): {
+    totalProducts: number;
+    productsWithExtendedData: number;
+    productsWithTCGCSV: number;
+  } {
+    let totalProducts = 0;
+    let productsWithExtendedData = 0;
+    let productsWithTCGCSV = 0;
+
+    // Process each set in AllPrintings
+    for (const [setCode, setData] of Object.entries(this.allPrintings!.data)) {
+      if (!setData.sealedProduct || setData.sealedProduct.length === 0) {
+        continue;
+      }
+
+      const setProducts: CombinedSealedProduct[] = [];
+
+      // Process each sealed product in the set
+      for (const sealedProduct of setData.sealedProduct) {
+        // Find matching ExtendedData product
+        const matchingExtendedProduct = this.findMatchingExtendedProduct(
+          sealedProduct,
+          setCode
+        );
+
+        // Validate that the matching extended product has required fields
+        const validExtendedProduct =
+          matchingExtendedProduct &&
+          matchingExtendedProduct.source_set_codes &&
+          Array.isArray(matchingExtendedProduct.source_set_codes) &&
+          matchingExtendedProduct.source_set_codes.length > 0
+            ? matchingExtendedProduct
+            : null;
+
+        // Try to get TCGCSV data
+        let tcgcsvData = null;
+        if (sealedProduct.identifiers?.tcgplayerProductId) {
+          try {
+            tcgcsvData = this.tcgcsvService.getProductByTcgplayerIdFast(
+              sealedProduct.identifiers.tcgplayerProductId.toString()
+            );
+          } catch (error) {
+            // TCGCSV data not available
+          }
+        }
+
+        // Create combined product
+        const combinedProduct: CombinedSealedProduct = {
+          // AllPrintings data
+          uuid: sealedProduct.uuid,
+          name: sealedProduct.name,
+          category: sealedProduct.category,
+          ...(sealedProduct.cardCount && {
+            cardCount: sealedProduct.cardCount,
+          }),
+          ...(sealedProduct.releaseDate && {
+            releaseDate: sealedProduct.releaseDate,
+          }),
+          ...(sealedProduct.subtype && { subtype: sealedProduct.subtype }),
+          ...(sealedProduct.identifiers && {
+            identifiers: sealedProduct.identifiers,
+          }),
+          ...(sealedProduct.purchaseUrls && {
+            purchaseUrls: sealedProduct.purchaseUrls,
+          }),
+          ...(sealedProduct.contents && { contents: sealedProduct.contents }),
+
+          // Set information
+          setCode: setCode.toUpperCase(),
+          setName: setData.name,
+
+          // Extended data (if available)
+          ...(validExtendedProduct && {
+            extendedData: {
+              code: validExtendedProduct.code,
+              boosters: validExtendedProduct.boosters,
+              sheets: validExtendedProduct.sheets,
+              source_set_codes: validExtendedProduct.source_set_codes,
+            },
+          }),
+
+          // TCGCSV data (if available)
+          ...(tcgcsvData && { tcgcsvData }),
+        };
+
+        this.combinedSealedProducts.set(sealedProduct.uuid, combinedProduct);
+        setProducts.push(combinedProduct);
+        totalProducts++;
+
+        if (validExtendedProduct) {
+          productsWithExtendedData++;
+        }
+        if (tcgcsvData) {
+          productsWithTCGCSV++;
+        }
+      }
+
+      this.combinedSealedProductsBySet.set(setCode.toUpperCase(), setProducts);
+    }
+
+    return {
+      totalProducts,
+      productsWithExtendedData,
+      productsWithTCGCSV,
+    };
+  }
+
+  /**
+   * Load server data overrides from the ServerDataOverride folder
+   */
+  private async loadServerDataOverrides(): Promise<Record<
+    string,
+    CombinedSealedProduct[]
+  > | null> {
+    const overrideDir = path.join(process.cwd(), "data", "ServerDataOverride");
+
+    try {
+      if (!fs.existsSync(overrideDir)) {
+        logger.info("ServerDataOverride directory does not exist");
+        return null;
+      }
+
+      const files = fs.readdirSync(overrideDir);
+      if (files.length === 0) {
+        logger.info("ServerDataOverride directory is empty");
+        return null;
+      }
+
+      const overrideData: Record<string, CombinedSealedProduct[]> = {};
+
+      for (const file of files) {
+        if (!file.endsWith(".json")) continue;
+
+        const setCode = file.replace(".json", "").toUpperCase();
+        const filePath = path.join(overrideDir, file);
+
+        try {
+          const fileContent = fs.readFileSync(filePath, "utf8");
+          const products = JSON.parse(fileContent);
+
+          if (Array.isArray(products)) {
+            overrideData[setCode] = products;
+            logger.info(
+              `Loaded override data for set ${setCode}: ${products.length} products`
+            );
+          } else {
+            logger.warn(
+              `Invalid override file format for ${setCode}: expected array`
+            );
+          }
+        } catch (error) {
+          logger.error(`Error loading override file ${file}:`, error);
+        }
+      }
+
+      return Object.keys(overrideData).length > 0 ? overrideData : null;
+    } catch (error) {
+      logger.error("Error loading server data overrides:", error);
+      return null;
+    }
+  }
+
+  /**
+   * Apply server data overrides to the combined sealed products
+   */
+  private applyServerDataOverrides(
+    overrideData: Record<string, CombinedSealedProduct[]>
+  ): void {
+    let totalProducts = 0;
+
+    for (const [setCode, products] of Object.entries(overrideData)) {
+      this.combinedSealedProductsBySet.set(setCode.toUpperCase(), products);
+
+      // Also add to the main products map
+      for (const product of products) {
+        this.combinedSealedProducts.set(product.uuid, product);
+        totalProducts++;
+      }
+    }
+
+    logger.info(
+      `Applied ${totalProducts} override products across ${Object.keys(overrideData).length} sets`
+    );
+  }
+
+  /**
+   * Create server data override files with current combined sealed products data
+   */
+  private async createServerDataOverrides(buildStats: {
+    totalProducts: number;
+    productsWithExtendedData: number;
+    productsWithTCGCSV: number;
+  }): Promise<void> {
+    const overrideDir = path.join(process.cwd(), "data", "ServerDataOverride");
+
+    try {
+      // Create the override directory if it doesn't exist
+      if (!fs.existsSync(overrideDir)) {
+        fs.mkdirSync(overrideDir, { recursive: true });
+        logger.info("Created ServerDataOverride directory");
+      }
+
+      // Write files for each set
+      for (const [
+        setCode,
+        products,
+      ] of this.combinedSealedProductsBySet.entries()) {
+        const filePath = path.join(
+          overrideDir,
+          `${setCode.toLowerCase()}.json`
+        );
+        fs.writeFileSync(filePath, JSON.stringify(products, null, 2));
+        logger.info(
+          `Created override file for set ${setCode}: ${products.length} products`
+        );
+      }
+
+      logger.info(
+        `Created override files for ${this.combinedSealedProductsBySet.size} sets: ` +
+          `${buildStats.totalProducts} total products, ` +
+          `${buildStats.productsWithExtendedData} with ExtendedData, ` +
+          `${buildStats.productsWithTCGCSV} with TCGCSV data`
+      );
+    } catch (error) {
+      logger.error("Error creating server data overrides:", error);
     }
   }
 
@@ -1346,6 +1695,83 @@ export class MTGDataService implements DataService {
   }
 
   /**
+   * Find matching ExtendedData product for an AllPrintings sealed product
+   */
+  private findMatchingExtendedProduct(
+    allPrintingsProduct: AllPrintingsSealedProduct,
+    setCode: string
+  ): ExtendedSealedData | null {
+    const setCodeUpper = setCode.toUpperCase();
+    const extendedProducts = this.extendedDataArray.filter(
+      (p) => p.set_code.toUpperCase() === setCodeUpper
+    );
+
+    if (extendedProducts.length === 0) {
+      return null;
+    }
+
+    // Use the same matching logic as productsMatch but in reverse
+    const matches = extendedProducts
+      .map((extendedProduct) => {
+        const score = this.calculateProductMatchScore(
+          extendedProduct,
+          allPrintingsProduct
+        );
+        return { product: extendedProduct, score };
+      })
+      .filter((match) => match.score > 0)
+      .sort((a, b) => b.score - a.score);
+
+    return matches.length > 0 && matches[0] ? matches[0].product : null;
+  }
+
+  /**
+   * Calculate match score between ExtendedData and AllPrintings products
+   */
+  private calculateProductMatchScore(
+    extendedProduct: ExtendedSealedData,
+    allPrintingsProduct: AllPrintingsSealedProduct
+  ): number {
+    let score = 0;
+
+    // Normalize names for comparison
+    const normalizeName = (name: string) =>
+      name.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+    const extendedName = normalizeName(extendedProduct.name);
+    const allPrintingsName = normalizeName(allPrintingsProduct.name);
+
+    // Exact name match
+    if (extendedName === allPrintingsName) {
+      score += 100;
+    }
+    // Partial name match
+    else if (
+      extendedName.includes(allPrintingsName) ||
+      allPrintingsName.includes(extendedName)
+    ) {
+      score += 50;
+    }
+
+    // Product type matching
+    const typeBonus = this.getProductTypeMatchBonus(
+      extendedProduct.code,
+      allPrintingsProduct.category,
+      allPrintingsProduct.subtype || ""
+    );
+    score += typeBonus.bonus;
+
+    // Booster type matching
+    const boosterBonus = this.getBoosterTypeMatchBonus(
+      extendedProduct,
+      allPrintingsProduct
+    );
+    score += boosterBonus.bonus;
+
+    return score;
+  }
+
+  /**
    * Get bonus score for product type matching
    */
   private getProductTypeMatchBonus(
@@ -1447,5 +1873,193 @@ export class MTGDataService implements DataService {
     }
 
     return { bonus, reason };
+  }
+
+  /**
+   * Find a nested sealed product by code and set
+   */
+  private findNestedSealedProduct(
+    code: string,
+    set: string
+  ): CombinedSealedProduct | null {
+    // First try to find by set code
+    const setProducts = this.combinedSealedProductsBySet.get(set.toUpperCase());
+    if (setProducts) {
+      // Look for a product that matches the code
+      const matchingProduct = setProducts.find((product) => {
+        // Check if the product has extended data with matching code
+        if (product.extendedData && product.extendedData.code === code) {
+          return true;
+        }
+        // Check if the product name contains the code
+        if (product.name.toLowerCase().includes(code.toLowerCase())) {
+          return true;
+        }
+        return false;
+      });
+
+      if (matchingProduct) {
+        return matchingProduct;
+      }
+    }
+
+    // If not found by set, search all products
+    for (const product of this.combinedSealedProducts.values()) {
+      if (product.extendedData && product.extendedData.code === code) {
+        return product;
+      }
+      if (product.name.toLowerCase().includes(code.toLowerCase())) {
+        return product;
+      }
+    }
+
+    return null;
+  }
+
+  /**
+   * Generate a pack from AllPrintings sealed product contents
+   */
+  private generatePackFromAllPrintings(product: CombinedSealedProduct): Array<{
+    sheet: string;
+    allPrintingsData: any;
+    scryfallData?: ScryfallTypes.IScryfallCard;
+    tcgcsvData?: {
+      product: TCGCSVProduct;
+      prices: TCGCSVPrice[];
+    };
+  }> {
+    const pack: Array<{
+      sheet: string;
+      allPrintingsData: any;
+      scryfallData?: ScryfallTypes.IScryfallCard;
+      tcgcsvData?: {
+        product: TCGCSVProduct;
+        prices: TCGCSVPrice[];
+      };
+    }> = [];
+
+    if (!product.contents) {
+      logger.warn(`No contents data for product ${product.uuid}`);
+      return pack;
+    }
+
+    // Handle different content types
+    if (product.contents.card) {
+      // Direct card list
+      for (const cardContent of product.contents.card) {
+        const cardUuid = cardContent.uuid;
+        const combined = this.combinedCards[cardUuid];
+
+        if (combined) {
+          pack.push({
+            sheet: "card",
+            allPrintingsData: combined.allPrintingsData,
+            ...(combined.scryfallData && {
+              scryfallData: combined.scryfallData,
+            }),
+            ...(combined.tcgcsvData && { tcgcsvData: combined.tcgcsvData }),
+          });
+        }
+      }
+    } else if (product.contents.pack) {
+      // Contains other packs - recursively open each pack
+      logger.info(
+        `Opening ${product.contents.pack.length} nested packs for ${product.uuid}`
+      );
+
+      for (const packContent of product.contents.pack) {
+        try {
+          // Find the nested pack product by code and set
+          const nestedPack = this.findNestedSealedProduct(
+            packContent.code,
+            packContent.set
+          );
+
+          if (nestedPack) {
+            // Recursively generate pack from the nested product
+            const nestedPackCards =
+              this.generatePackFromAllPrintings(nestedPack);
+            pack.push(...nestedPackCards);
+          } else {
+            logger.warn(
+              `Could not find nested pack: ${packContent.code} from set ${packContent.set}`
+            );
+          }
+        } catch (error) {
+          logger.error(`Error opening nested pack ${packContent.code}:`, error);
+        }
+      }
+    } else if (product.contents.sealed) {
+      // Contains other sealed products - recursively open each sealed product
+      logger.info(
+        `Opening ${product.contents.sealed.length} nested sealed products for ${product.uuid}`
+      );
+
+      for (const sealedContent of product.contents.sealed) {
+        try {
+          // Find the nested sealed product by UUID
+          const nestedSealed = this.combinedSealedProducts.get(
+            sealedContent.uuid
+          );
+
+          if (nestedSealed) {
+            // Recursively generate pack from the nested product
+            const nestedSealedCards =
+              this.generatePackFromAllPrintings(nestedSealed);
+
+            // Add the cards multiple times based on the count
+            for (let i = 0; i < sealedContent.count; i++) {
+              pack.push(...nestedSealedCards);
+            }
+          } else {
+            logger.warn(
+              `Could not find nested sealed product: ${sealedContent.uuid} (${sealedContent.name})`
+            );
+          }
+        } catch (error) {
+          logger.error(
+            `Error opening nested sealed product ${sealedContent.uuid}:`,
+            error
+          );
+        }
+      }
+    }
+
+    return pack;
+  }
+
+  /**
+   * Generate a pack from AllPrintings sealed product contents with pricing
+   */
+  private async generatePackFromAllPrintingsWithPricing(
+    product: CombinedSealedProduct
+  ): Promise<PackResponseWithPricing> {
+    const pack = this.generatePackFromAllPrintings(product);
+
+    // Calculate pricing information
+    let totalValue = 0;
+
+    for (const card of pack) {
+      if (card.tcgcsvData) {
+        const bestPrice = this.tcgcsvService.getBestPrice(
+          card.tcgcsvData.product,
+          card.tcgcsvData.prices
+        );
+        if (bestPrice) {
+          totalValue += bestPrice;
+        }
+      }
+    }
+
+    return {
+      pack,
+      pricing: {
+        ...(product.tcgcsvData?.product.productId && {
+          productId: product.tcgcsvData.product.productId,
+        }),
+        ...(totalValue > 0 && { priceStats: { marketPrice: totalValue } }),
+        lastUpdated: new Date().toISOString(),
+      },
+    };
   }
 }

@@ -169,6 +169,15 @@ export interface DataService {
       }
     >
   >;
+
+  // New methods for AllPrintings-prioritized sealed products
+  getCombinedSealedProducts(setCode: string): CombinedSealedProduct[];
+  getCombinedSealedProductByUuid(uuid: string): CombinedSealedProduct | null;
+  openCombinedSealedProduct(uuid: string): PackResponse;
+  openCombinedSealedProductWithPricing(
+    uuid: string
+  ): Promise<PackResponseWithPricing>;
+
   openProduct(productCode: string): PackResponse;
   openMultipleProducts(
     productCode: string,
@@ -256,4 +265,60 @@ export interface TCGCSVServiceInterface {
     priceCount: number;
     groupId: number;
   }>;
+}
+
+// New combined sealed product type that prioritizes AllPrintings
+export interface CombinedSealedProduct {
+  // Primary data from AllPrintings
+  uuid: string;
+  name: string;
+  category: string;
+  cardCount?: number;
+  releaseDate?: string;
+  subtype?: string;
+  identifiers?: {
+    abuId?: string;
+    cardKingdomId?: string;
+    cardtraderId?: string;
+    csiId?: string;
+    mcmId?: string;
+    scgId?: string;
+    tcgplayerProductId?: string;
+    tntId?: string;
+  };
+  purchaseUrls?: {
+    cardKingdom?: string;
+    tcgplayer?: string;
+    cardmarket?: string;
+  };
+  contents?: {
+    pack?: Array<{ code: string; set: string }>;
+    sealed?: Array<{ count: number; name: string; set: string; uuid: string }>;
+    card?: Array<{
+      foil?: boolean;
+      name: string;
+      number: string;
+      set: string;
+      uuid: string;
+    }>;
+    other?: Array<{ name: string }>;
+  };
+
+  // Set information
+  setCode: string;
+  setName: string;
+
+  // Extended data (if available) for pack generation
+  extendedData?: {
+    code: string;
+    boosters: ExtendedBooster[];
+    sheets: Record<string, ExtendedSheet>;
+    source_set_codes: string[];
+  };
+
+  // TCGCSV data (if available)
+  tcgcsvData?: {
+    product: TCGCSVProduct;
+    prices: TCGCSVPrice[];
+  };
 }
