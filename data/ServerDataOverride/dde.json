@@ -1,0 +1,130 @@
+[
+  {
+    "uuid": "24f8b090-fea2-55b8-abe6-11538544004b",
+    "name": "Duel Deck Phyrexia vs the Coalition",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100970",
+      "cardKingdomId": "130367",
+      "cardtraderId": "47464",
+      "csiId": "98056",
+      "mcmId": "240406",
+      "scgId": "SLD-MTG-BXS-DDE-EN",
+      "tcgplayerProductId": "78335",
+      "tntId": "292572"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/b08fd5bbddb726c8",
+      "tcgplayer": "https://mtgjson.com/links/7ae841a304ad4dfe"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Phyrexia vs the Coalition Phyrexia Deck",
+          "set": "dde",
+          "uuid": "7163ee1f-15e5-5532-a247-1217a9233937"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Phyrexia vs the Coalition The Coalition Deck",
+          "set": "dde",
+          "uuid": "c7dd845d-ed61-5da3-87ea-f433c6949f5f"
+        }
+      ]
+    },
+    "setCode": "DDE",
+    "setName": "Duel Decks: Phyrexia vs. the Coalition",
+    "tcgcsvData": {
+      "product": {
+        "productId": 78335,
+        "name": "Duel Decks: Phyrexia vs. the Coalition - Box Set",
+        "cleanName": "Duel Decks Phyrexia vs the Coalition Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78335_200w.jpg",
+        "categoryId": 1,
+        "groupId": 37,
+        "url": "https://www.tcgplayer.com/product/78335/magic-duel-decks-phyrexia-vs-the-coalition-duel-decks-phyrexia-vs-the-coalition-box-set",
+        "modifiedOn": "2019-11-20T13:59:26.943",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 78335,
+          "lowPrice": 54.99,
+          "midPrice": 69.47,
+          "highPrice": 89.69,
+          "marketPrice": 65.8,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "7adedb35-b762-5db3-a828-58457c5489db",
+    "name": "Duel Deck Phyrexia vs the Coalition Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "292667"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Phyrexia vs the Coalition",
+          "set": "dde",
+          "uuid": "24f8b090-fea2-55b8-abe6-11538544004b"
+        }
+      ]
+    },
+    "setCode": "DDE",
+    "setName": "Duel Decks: Phyrexia vs. the Coalition"
+  },
+  {
+    "uuid": "7163ee1f-15e5-5532-a247-1217a9233937",
+    "name": "Duel Deck Phyrexia vs the Coalition Phyrexia Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Phyrexia",
+          "set": "dde"
+        }
+      ]
+    },
+    "setCode": "DDE",
+    "setName": "Duel Decks: Phyrexia vs. the Coalition"
+  },
+  {
+    "uuid": "c7dd845d-ed61-5da3-87ea-f433c6949f5f",
+    "name": "Duel Deck Phyrexia vs the Coalition The Coalition Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "The Coalition",
+          "set": "dde"
+        }
+      ]
+    },
+    "setCode": "DDE",
+    "setName": "Duel Decks: Phyrexia vs. the Coalition"
+  }
+]

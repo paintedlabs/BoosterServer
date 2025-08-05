@@ -1,0 +1,153 @@
+[
+  {
+    "uuid": "72ea1fc0-e27c-511a-94af-040811f3d217",
+    "name": "Planechase Anthology",
+    "category": "deck_box",
+    "cardCount": 326,
+    "subtype": "planechase",
+    "identifiers": {
+      "abuId": "1101001",
+      "cardKingdomId": "209858",
+      "cardtraderId": "48480",
+      "csiId": "228441",
+      "scgId": "SLD-MTG-MLT-PCA-EN",
+      "tcgplayerProductId": "125161",
+      "tntId": "1108137"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/bf29486bf13dea98",
+      "tcgplayer": "https://mtgjson.com/links/a1ed66ef1485351c"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Chaos Reigns",
+          "set": "pca"
+        },
+        {
+          "name": "Night Of The Ninja",
+          "set": "pca"
+        },
+        {
+          "name": "Primordial Hunger",
+          "set": "pca"
+        },
+        {
+          "name": "Savage Auras",
+          "set": "pca"
+        },
+        {
+          "name": "Anthology Planes Deck",
+          "set": "pca"
+        }
+      ],
+      "other": [
+        {
+          "name": "4 Deck Boxes"
+        },
+        {
+          "name": "35 Double-Sided Tokens"
+        },
+        {
+          "name": "Special Edition Planar Die"
+        },
+        {
+          "name": "4 Planechase Anthology Spindowns"
+        },
+        {
+          "name": "Strategy Insert"
+        }
+      ]
+    },
+    "setCode": "PCA",
+    "setName": "Planechase Anthology",
+    "tcgcsvData": {
+      "product": {
+        "productId": 125161,
+        "name": "Planechase Anthology Box Set",
+        "cleanName": "Planechase Anthology Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/125161_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1793,
+        "url": "https://www.tcgplayer.com/product/125161/magic-planechase-anthology-planechase-anthology-box-set",
+        "modifiedOn": "2018-04-15T18:01:46.427",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Planechase Anthology showcases cards, both Planar and normal, from Planechase and Planechase (2012 Edition). Planechase Anthology will contain the following:\r\n<br>\r\n<br><b>-</b> Four ready-to-play 60-card decks from Planechase (2012 Edition), each with eight rare cards\r\n<br><b>-</b> 86 oversized Planar cards\r\n<br><b>-</b> Four slide deck boxes\r\n<br><b>-</b> Oversize slide deck box\r\n<br><b>-</b> 35 double-sided token cards\r\n<br><b>-</b> Special edition planar die\r\n<br><b>-</b> Four Spindown life counters\r\n<br><b>-</b> Strategy insert"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 125161,
+          "lowPrice": 321.25,
+          "midPrice": 350,
+          "highPrice": 499.99,
+          "marketPrice": 327.92,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "dcab051a-3946-508f-8014-4c48be965601",
+    "name": "Planechase Anthology Planechase Deck Chaos Reigns",
+    "category": "deck",
+    "subtype": "planechase",
+    "identifiers": {
+      "cardtraderId": "48483",
+      "mcmId": "294029"
+    },
+    "purchaseUrls": {},
+    "setCode": "PCA",
+    "setName": "Planechase Anthology"
+  },
+  {
+    "uuid": "c0da9d19-3f73-5209-acb8-a9a95a57eb88",
+    "name": "Planechase Anthology Planechase Deck Night of the Ninja",
+    "category": "deck",
+    "subtype": "planechase",
+    "identifiers": {
+      "cardtraderId": "48482",
+      "mcmId": "294030"
+    },
+    "purchaseUrls": {},
+    "setCode": "PCA",
+    "setName": "Planechase Anthology"
+  },
+  {
+    "uuid": "d3658bd8-f4ad-5739-b5c7-a91fadda5f66",
+    "name": "Planechase Anthology Planechase Deck Primordial Hunger",
+    "category": "deck",
+    "subtype": "planechase",
+    "identifiers": {
+      "cardtraderId": "48484",
+      "mcmId": "294028"
+    },
+    "purchaseUrls": {},
+    "setCode": "PCA",
+    "setName": "Planechase Anthology"
+  },
+  {
+    "uuid": "73bfb451-dfb9-5809-beb2-7dfa6b8b2326",
+    "name": "Planechase Anthology Planechase Deck Savage Auras",
+    "category": "deck",
+    "subtype": "planechase",
+    "identifiers": {
+      "cardtraderId": "48485",
+      "mcmId": "294031"
+    },
+    "purchaseUrls": {},
+    "setCode": "PCA",
+    "setName": "Planechase Anthology"
+  }
+]

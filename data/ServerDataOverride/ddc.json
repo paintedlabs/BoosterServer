@@ -1,0 +1,130 @@
+[
+  {
+    "uuid": "9f8de8d6-f59c-5995-ae7c-48c3393a97af",
+    "name": "Duel Deck Divine vs Demonic",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100393",
+      "cardKingdomId": "126713",
+      "cardtraderId": "47379",
+      "csiId": "97582",
+      "mcmId": "240371",
+      "scgId": "SLD-MTG-BXS-DDC-EN",
+      "tcgplayerProductId": "32807",
+      "tntId": "245978"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/06305f422c6cd858",
+      "tcgplayer": "https://mtgjson.com/links/cd6f9c8f024f9f51"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Divine vs Demonic Demonic Deck",
+          "set": "ddc",
+          "uuid": "de6885b7-c9cf-5525-9f11-3f38897fee51"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Divine vs Demonic Divine Deck",
+          "set": "ddc",
+          "uuid": "5be37aff-fead-5ab4-9605-3fdef1a8c2fb"
+        }
+      ]
+    },
+    "setCode": "DDC",
+    "setName": "Duel Decks: Divine vs. Demonic",
+    "tcgcsvData": {
+      "product": {
+        "productId": 32807,
+        "name": "Duel Decks: Divine vs Demonic - Box Set",
+        "cleanName": "Duel Decks Divine vs Demonic Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32807_200w.jpg",
+        "categoryId": 1,
+        "groupId": 31,
+        "url": "https://www.tcgplayer.com/product/32807/magic-duel-decks-divine-vs-demonic-duel-decks-divine-vs-demonic-box-set",
+        "modifiedOn": "2023-12-14T18:09:47.14",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 32807,
+          "lowPrice": 149.97,
+          "midPrice": 149.97,
+          "highPrice": 149.97,
+          "marketPrice": 144.19,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "de6885b7-c9cf-5525-9f11-3f38897fee51",
+    "name": "Duel Deck Divine vs Demonic Demonic Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Demonic",
+          "set": "ddc"
+        }
+      ]
+    },
+    "setCode": "DDC",
+    "setName": "Duel Decks: Divine vs. Demonic"
+  },
+  {
+    "uuid": "93d33c52-141c-576a-a74a-4ed03eb20825",
+    "name": "Duel Deck Divine vs Demonic Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "245977"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Divine vs Demonic",
+          "set": "ddc",
+          "uuid": "9f8de8d6-f59c-5995-ae7c-48c3393a97af"
+        }
+      ]
+    },
+    "setCode": "DDC",
+    "setName": "Duel Decks: Divine vs. Demonic"
+  },
+  {
+    "uuid": "5be37aff-fead-5ab4-9605-3fdef1a8c2fb",
+    "name": "Duel Deck Divine vs Demonic Divine Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Divine",
+          "set": "ddc"
+        }
+      ]
+    },
+    "setCode": "DDC",
+    "setName": "Duel Decks: Divine vs. Demonic"
+  }
+]

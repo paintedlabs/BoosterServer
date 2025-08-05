@@ -1,0 +1,76 @@
+[
+  {
+    "uuid": "dfa9c011-ac53-51d9-bd2f-8590767f5303",
+    "name": "Beatdown",
+    "category": "multiple_decks",
+    "cardCount": 122,
+    "subtype": "other",
+    "identifiers": {
+      "abuId": "1100158",
+      "cardKingdomId": "1292",
+      "cardtraderId": "45757",
+      "scgId": "SLD-MTG-BXS-BTD-EN",
+      "tcgplayerProductId": "77301",
+      "tntId": "112112"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/b893202a6d5daab3",
+      "tcgplayer": "https://mtgjson.com/links/b617acee79a1fa4f"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Aerodoom",
+          "set": "btd"
+        },
+        {
+          "name": "Ground Pounder",
+          "set": "btd"
+        }
+      ],
+      "other": [
+        {
+          "name": "two special-edition life counters"
+        },
+        {
+          "name": "a two-sided poster"
+        },
+        {
+          "name": "a full-color booklet with play tips and creature histories"
+        }
+      ]
+    },
+    "setCode": "BTD",
+    "setName": "Beatdown Box Set",
+    "tcgcsvData": {
+      "product": {
+        "productId": 77301,
+        "name": "Beatdown Box Set",
+        "cleanName": "Beatdown Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77301_200w.jpg",
+        "categoryId": 1,
+        "groupId": 16,
+        "url": "https://www.tcgplayer.com/product/77301/magic-beatdown-box-set-beatdown-box-set",
+        "modifiedOn": "2015-03-24T12:32:34.703",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 77301,
+          "lowPrice": 469.99,
+          "midPrice": 469.99,
+          "highPrice": 469.99,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

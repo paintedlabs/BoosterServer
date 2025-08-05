@@ -1,0 +1,5819 @@
+[
+  {
+    "uuid": "cc954762-b935-5dea-bce3-4ee4c76d10d9",
+    "name": "Torment Booster Box",
+    "category": "booster_box",
+    "subtype": "draft",
+    "identifiers": {
+      "abuId": "1101233",
+      "cardKingdomId": "1430",
+      "cardtraderId": "45999",
+      "csiId": "98225",
+      "mcmId": "210104",
+      "scgId": "SLD-MTG-BBX-TOR-EN",
+      "tcgplayerProductId": "27311",
+      "tntId": "98976"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/85d1080c08a10f97",
+      "tcgplayer": "https://mtgjson.com/links/64555789824a6a87"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 36,
+          "name": "Torment Booster Pack",
+          "set": "tor",
+          "uuid": "4d1b722d-deb3-5f67-a1e4-e0c0bca49cc0"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment",
+    "extendedData": {
+      "code": "tor-draft",
+      "boosters": [
+        {
+          "sheets": {
+            "rare": 1,
+            "uncommon": 3,
+            "common": 11
+          },
+          "weight": 272757
+        },
+        {
+          "sheets": {
+            "rare": 1,
+            "uncommon": 3,
+            "common": 10,
+            "foil_common": 1
+          },
+          "weight": 50853
+        },
+        {
+          "sheets": {
+            "rare": 1,
+            "uncommon": 2,
+            "foil_uncommon": 1,
+            "common": 11
+          },
+          "weight": 12213
+        },
+        {
+          "sheets": {
+            "rare": 1,
+            "uncommon": 2,
+            "foil_uncommon": 1,
+            "common": 10,
+            "foil_common": 1
+          },
+          "weight": 2277
+        },
+        {
+          "sheets": {
+            "foil_rare": 1,
+            "uncommon": 3,
+            "common": 11
+          },
+          "weight": 3953
+        },
+        {
+          "sheets": {
+            "foil_rare": 1,
+            "uncommon": 3,
+            "common": 10,
+            "foil_common": 1
+          },
+          "weight": 737
+        },
+        {
+          "sheets": {
+            "foil_rare": 1,
+            "uncommon": 2,
+            "foil_uncommon": 1,
+            "common": 11
+          },
+          "weight": 177
+        },
+        {
+          "sheets": {
+            "foil_rare": 1,
+            "uncommon": 2,
+            "foil_uncommon": 1,
+            "common": 10,
+            "foil_common": 1
+          },
+          "weight": 33
+        }
+      ],
+      "sheets": {
+        "rare": {
+          "total_weight": 44,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "1",
+              "weight": 1,
+              "foil": false,
+              "uuid": "fc1a0569-b60f-5552-9e70-4173a8ed2ed9"
+            },
+            {
+              "set": "tor",
+              "number": "8",
+              "weight": 1,
+              "foil": false,
+              "uuid": "519e48b8-482c-561f-99e2-7c103c1adc1c"
+            },
+            {
+              "set": "tor",
+              "number": "10",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6f4643e0-8b63-536f-996b-e5dbfe8b28e2"
+            },
+            {
+              "set": "tor",
+              "number": "13",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf426dc0-d57a-5d18-b439-7ab99d16b5b3"
+            },
+            {
+              "set": "tor",
+              "number": "14",
+              "weight": 1,
+              "foil": false,
+              "uuid": "29dadd6e-660b-52a0-80b7-ef4e3a714a01"
+            },
+            {
+              "set": "tor",
+              "number": "20",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9a42fd02-1943-568d-9fc3-7a2d9b7a6e91"
+            },
+            {
+              "set": "tor",
+              "number": "21",
+              "weight": 1,
+              "foil": false,
+              "uuid": "23f5d9b5-4bb5-576e-a00b-ebd15fb35dde"
+            },
+            {
+              "set": "tor",
+              "number": "22",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ab88c891-75d4-5d09-acf9-a758cd440f32"
+            },
+            {
+              "set": "tor",
+              "number": "23",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bc9aee0e-058a-5127-a7fd-83a6d730caf0"
+            },
+            {
+              "set": "tor",
+              "number": "31",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4987901a-a992-5217-b716-9243a0c6f8b1"
+            },
+            {
+              "set": "tor",
+              "number": "37",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d565f956-c713-5105-800a-07cf2deec32c"
+            },
+            {
+              "set": "tor",
+              "number": "42",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a913c87d-8234-5ee5-ae72-0ec343f9e62d"
+            },
+            {
+              "set": "tor",
+              "number": "44",
+              "weight": 1,
+              "foil": false,
+              "uuid": "addaa28a-1f9c-5197-968d-3170447224bb"
+            },
+            {
+              "set": "tor",
+              "number": "45",
+              "weight": 1,
+              "foil": false,
+              "uuid": "393bf366-6e5d-5170-8458-fd5e8dc2f91c"
+            },
+            {
+              "set": "tor",
+              "number": "46",
+              "weight": 1,
+              "foil": false,
+              "uuid": "44627f26-cd3b-5a40-a724-b92d4df76e6a"
+            },
+            {
+              "set": "tor",
+              "number": "49",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f2d75518-971f-5b19-8f68-4a03aed356c6"
+            },
+            {
+              "set": "tor",
+              "number": "56",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9b8a549d-4cd1-53d6-900c-7f10cbf8a14c"
+            },
+            {
+              "set": "tor",
+              "number": "59",
+              "weight": 1,
+              "foil": false,
+              "uuid": "54c78af4-d7ea-5a67-ba83-4caf764364a4"
+            },
+            {
+              "set": "tor",
+              "number": "64",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5f648e9e-a131-5068-82be-9e88c0ab0bfe"
+            },
+            {
+              "set": "tor",
+              "number": "65",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0ba5cbc3-2ed7-53db-bc33-485b75072aba"
+            },
+            {
+              "set": "tor",
+              "number": "66",
+              "weight": 1,
+              "foil": false,
+              "uuid": "12318b18-d6b9-5e91-81ff-48b4c9296a12"
+            },
+            {
+              "set": "tor",
+              "number": "67",
+              "weight": 1,
+              "foil": false,
+              "uuid": "06906c32-7d54-54c7-aa9a-babed68c0d88"
+            },
+            {
+              "set": "tor",
+              "number": "68",
+              "weight": 1,
+              "foil": false,
+              "uuid": "31d67ad5-fb18-51e0-88df-c48586cc52c7"
+            },
+            {
+              "set": "tor",
+              "number": "71",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ea852198-b417-5208-b049-965d625f6726"
+            },
+            {
+              "set": "tor",
+              "number": "73",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a8f0ce54-9847-5e65-8fcd-3040a7418828"
+            },
+            {
+              "set": "tor",
+              "number": "74",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dd8a801e-f880-548f-8d7a-5c9bd2d4f5c3"
+            },
+            {
+              "set": "tor",
+              "number": "80",
+              "weight": 1,
+              "foil": false,
+              "uuid": "16409fb6-a1d0-5fe7-8169-9e975490210a"
+            },
+            {
+              "set": "tor",
+              "number": "82",
+              "weight": 1,
+              "foil": false,
+              "uuid": "63254f5b-a7ee-540f-8296-8935fe0c6389"
+            },
+            {
+              "set": "tor",
+              "number": "91",
+              "weight": 1,
+              "foil": false,
+              "uuid": "106af149-efa9-51ae-8ae6-abdd46ac1a74"
+            },
+            {
+              "set": "tor",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b0ff65aa-9350-5432-9c7c-0658ecbd626d"
+            },
+            {
+              "set": "tor",
+              "number": "100",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dffe11c6-c922-560b-a7d0-a87b5f594baa"
+            },
+            {
+              "set": "tor",
+              "number": "101",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bd6bbd55-0507-5c2a-9435-a170a5b09698"
+            },
+            {
+              "set": "tor",
+              "number": "104",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5eddb334-6cf2-50ac-b25f-d0caaf61b258"
+            },
+            {
+              "set": "tor",
+              "number": "108",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a527f2a8-656e-53fe-a0a7-e1274895af0b"
+            },
+            {
+              "set": "tor",
+              "number": "111",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b176c4bd-74a3-51a4-b223-930edf3e81fa"
+            },
+            {
+              "set": "tor",
+              "number": "113",
+              "weight": 1,
+              "foil": false,
+              "uuid": "fa1c13c4-3989-5d83-9e27-c6b0ee423183"
+            },
+            {
+              "set": "tor",
+              "number": "114",
+              "weight": 1,
+              "foil": false,
+              "uuid": "80d91e47-765f-5895-8ed3-b62319ce17f4"
+            },
+            {
+              "set": "tor",
+              "number": "126",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f18cd46b-b364-5825-92c6-53dd633cb5ba"
+            },
+            {
+              "set": "tor",
+              "number": "127",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bfeb3ac2-3de7-509c-8f6d-f32aee83c139"
+            },
+            {
+              "set": "tor",
+              "number": "131",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7b115352-628b-5e26-b4d5-71b5b0ecd657"
+            },
+            {
+              "set": "tor",
+              "number": "133",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c3db5cd9-0568-5af8-a4e1-547aa1122491"
+            },
+            {
+              "set": "tor",
+              "number": "135",
+              "weight": 1,
+              "foil": false,
+              "uuid": "73eb451f-925c-536a-a490-2d3bb532b839"
+            },
+            {
+              "set": "tor",
+              "number": "136",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1bb0806a-46d6-501f-9f8e-f03fd42391c6"
+            },
+            {
+              "set": "tor",
+              "number": "137",
+              "weight": 1,
+              "foil": false,
+              "uuid": "71fabf1e-b2b7-5ec9-9a98-12ef81fb3c69"
+            }
+          ]
+        },
+        "uncommon": {
+          "total_weight": 44,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "3",
+              "weight": 1,
+              "foil": false,
+              "uuid": "441ceda3-1ceb-5502-bad4-43254850608e"
+            },
+            {
+              "set": "tor",
+              "number": "4",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bc146494-d03f-5c9f-81ff-71aea02c7946"
+            },
+            {
+              "set": "tor",
+              "number": "7",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c55b66dc-8ca0-5396-a889-981c0f86a055"
+            },
+            {
+              "set": "tor",
+              "number": "16",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d4a31710-0637-50eb-8fe3-41817842b686"
+            },
+            {
+              "set": "tor",
+              "number": "17",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cba1546a-9dc6-5b14-8b38-8f14b66ab860"
+            },
+            {
+              "set": "tor",
+              "number": "19",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c018f0c1-d898-5b54-837f-03dc011182c1"
+            },
+            {
+              "set": "tor",
+              "number": "25",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2610df1e-b8cc-5b79-8abc-e02e17ba4675"
+            },
+            {
+              "set": "tor",
+              "number": "26",
+              "weight": 1,
+              "foil": false,
+              "uuid": "71c348ea-ccbf-52df-9a9c-990675344cc9"
+            },
+            {
+              "set": "tor",
+              "number": "28",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0d815dba-bbcc-5a5e-a2cd-556a618d6bc6"
+            },
+            {
+              "set": "tor",
+              "number": "29",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1e6a2789-eff5-5d79-9904-26898236e81b"
+            },
+            {
+              "set": "tor",
+              "number": "33",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e8462ebd-de29-557a-8358-b88d87d8d34a"
+            },
+            {
+              "set": "tor",
+              "number": "34",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5c150d9b-681a-50e8-8395-294543ffaeae"
+            },
+            {
+              "set": "tor",
+              "number": "40",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d317e668-b43c-5760-ba06-62765c8d1bcf"
+            },
+            {
+              "set": "tor",
+              "number": "48",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d23e0bc2-550e-5718-872d-b6e8529672d1"
+            },
+            {
+              "set": "tor",
+              "number": "50",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c77bbbae-3eac-5600-9d8c-bb6c30f7315e"
+            },
+            {
+              "set": "tor",
+              "number": "55",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dadc3a3e-4ea8-5658-904d-4b246b432fda"
+            },
+            {
+              "set": "tor",
+              "number": "57",
+              "weight": 1,
+              "foil": false,
+              "uuid": "96789104-3d73-5cc6-be73-02f78ccf43e9"
+            },
+            {
+              "set": "tor",
+              "number": "61",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4fbeefa6-7da4-57b4-b4f0-43532ff49a7b"
+            },
+            {
+              "set": "tor",
+              "number": "63",
+              "weight": 1,
+              "foil": false,
+              "uuid": "86ddd9ce-bbb6-5a6c-b2eb-16459cd0b4fc"
+            },
+            {
+              "set": "tor",
+              "number": "70",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f1dcaea8-e6b3-5580-9660-3736d7060e90"
+            },
+            {
+              "set": "tor",
+              "number": "72",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0d8a104e-4254-59dc-b494-5f56402faa18"
+            },
+            {
+              "set": "tor",
+              "number": "83",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c5b09b6c-5252-5740-8de1-8b9b0d37f2e9"
+            },
+            {
+              "set": "tor",
+              "number": "84",
+              "weight": 1,
+              "foil": false,
+              "uuid": "989060b0-a72d-5936-a287-e94701f05e2c"
+            },
+            {
+              "set": "tor",
+              "number": "86",
+              "weight": 1,
+              "foil": false,
+              "uuid": "48368a13-87b7-53b1-ae7f-112abcccac04"
+            },
+            {
+              "set": "tor",
+              "number": "89",
+              "weight": 1,
+              "foil": false,
+              "uuid": "52d19dcf-afe7-56ac-9b20-e5d8842ff71e"
+            },
+            {
+              "set": "tor",
+              "number": "94",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e2046740-daff-5234-8cbc-0b65f7807c6a"
+            },
+            {
+              "set": "tor",
+              "number": "98",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4eb9ace4-8006-5cc9-93fd-902073549fb8"
+            },
+            {
+              "set": "tor",
+              "number": "105",
+              "weight": 1,
+              "foil": false,
+              "uuid": "988e9471-589f-595d-95b7-621de9007955"
+            },
+            {
+              "set": "tor",
+              "number": "106",
+              "weight": 1,
+              "foil": false,
+              "uuid": "19ddbe76-0037-511e-900f-329a182026a0"
+            },
+            {
+              "set": "tor",
+              "number": "110",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7297032b-c487-5ec5-95d8-f6f27fb90def"
+            },
+            {
+              "set": "tor",
+              "number": "112",
+              "weight": 1,
+              "foil": false,
+              "uuid": "49a12b66-156a-50a6-8058-b29da5cde6f3"
+            },
+            {
+              "set": "tor",
+              "number": "116",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5c63e915-0e02-5b2e-ab25-1c6fff519046"
+            },
+            {
+              "set": "tor",
+              "number": "117",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ff666c15-0491-520f-b264-3a2986b10362"
+            },
+            {
+              "set": "tor",
+              "number": "119",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3bbe2a88-8983-5b7b-8aa8-ac90210289e6"
+            },
+            {
+              "set": "tor",
+              "number": "120",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7248c346-3952-5cd8-9717-174224fe4f5b"
+            },
+            {
+              "set": "tor",
+              "number": "122",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9d00e2a7-604e-52a9-8417-c92a00f88f16"
+            },
+            {
+              "set": "tor",
+              "number": "124",
+              "weight": 1,
+              "foil": false,
+              "uuid": "908b7e06-78e0-5495-bb55-c92cd41ab886"
+            },
+            {
+              "set": "tor",
+              "number": "134",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c3158763-e39d-5b9b-a518-6f26087f70dd"
+            },
+            {
+              "set": "tor",
+              "number": "138",
+              "weight": 1,
+              "foil": false,
+              "uuid": "70a30893-d11b-50a7-83ef-2be0cf5837a9"
+            },
+            {
+              "set": "tor",
+              "number": "139",
+              "weight": 1,
+              "foil": false,
+              "uuid": "53a58169-e2c5-5191-a125-87353eb951c4"
+            },
+            {
+              "set": "tor",
+              "number": "140",
+              "weight": 1,
+              "foil": false,
+              "uuid": "40698409-a9af-53b7-850d-4411fe01fe49"
+            },
+            {
+              "set": "tor",
+              "number": "141",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cc9dc60e-4b34-5477-8e5d-24a5c8cfc238"
+            },
+            {
+              "set": "tor",
+              "number": "142",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a2684ded-4874-5516-9398-96182a6c50ba"
+            },
+            {
+              "set": "tor",
+              "number": "143",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d352b51b-fc4e-5926-b674-aa0871efe326"
+            }
+          ]
+        },
+        "common": {
+          "balance_colors": true,
+          "total_weight": 55,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "2",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ddb07907-9ce1-5938-b972-d34c53eaa94f"
+            },
+            {
+              "set": "tor",
+              "number": "5",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1f6c1d56-0c51-5274-a2d4-7bc58e56be59"
+            },
+            {
+              "set": "tor",
+              "number": "6",
+              "weight": 1,
+              "foil": false,
+              "uuid": "08f51ca5-bd07-5616-a787-a75d0cebd0ea"
+            },
+            {
+              "set": "tor",
+              "number": "9",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d6b06a6f-7427-5b46-8f97-f6beb053d727"
+            },
+            {
+              "set": "tor",
+              "number": "11",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0874b6d9-0619-5649-9208-e02fbed73a17"
+            },
+            {
+              "set": "tor",
+              "number": "12",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1fcdafc5-bbbe-5cc8-97ee-34d542ccae5b"
+            },
+            {
+              "set": "tor",
+              "number": "15",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0fa43b6d-f844-5790-89c9-834903b07496"
+            },
+            {
+              "set": "tor",
+              "number": "18",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3cc5aa27-fd04-51ea-9165-fc2be033009c"
+            },
+            {
+              "set": "tor",
+              "number": "24",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba9a0a67-c125-5d43-9344-d723c316127f"
+            },
+            {
+              "set": "tor",
+              "number": "27",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e2151173-fc41-5970-96e1-4a4291e72dcf"
+            },
+            {
+              "set": "tor",
+              "number": "30",
+              "weight": 1,
+              "foil": false,
+              "uuid": "412122d4-1f92-5039-81c5-53b246e31b9f"
+            },
+            {
+              "set": "tor",
+              "number": "32",
+              "weight": 1,
+              "foil": false,
+              "uuid": "44185394-1935-5e9f-9bd3-5b9771ac7697"
+            },
+            {
+              "set": "tor",
+              "number": "35",
+              "weight": 1,
+              "foil": false,
+              "uuid": "78de564a-f64b-51d7-90b1-4c84496409b7"
+            },
+            {
+              "set": "tor",
+              "number": "36",
+              "weight": 1,
+              "foil": false,
+              "uuid": "63e92ee1-de37-5cc9-85f3-2cf9d9ad750f"
+            },
+            {
+              "set": "tor",
+              "number": "38",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5f54f814-b452-59ff-8fbb-a791fb7c4462"
+            },
+            {
+              "set": "tor",
+              "number": "39",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e44d3e62-17dc-5cd7-b637-f1c0f18cf811"
+            },
+            {
+              "set": "tor",
+              "number": "41",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b9839771-6017-5edd-8c0f-250cb73c6d48"
+            },
+            {
+              "set": "tor",
+              "number": "43",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ced723da-ba01-575d-9bb1-417982807a28"
+            },
+            {
+              "set": "tor",
+              "number": "47",
+              "weight": 1,
+              "foil": false,
+              "uuid": "77a56a80-ccff-560f-8994-7b882a5eaaba"
+            },
+            {
+              "set": "tor",
+              "number": "51",
+              "weight": 1,
+              "foil": false,
+              "uuid": "87ba5908-55bc-52df-aecc-98f3ec6edad3"
+            },
+            {
+              "set": "tor",
+              "number": "52",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0e7cf4e2-dd04-55be-87ca-cf437596ed23"
+            },
+            {
+              "set": "tor",
+              "number": "53",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c6f714f-a315-5464-8622-1844834013a4"
+            },
+            {
+              "set": "tor",
+              "number": "54",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e23652ea-49ac-5817-b59f-8e380a7eada0"
+            },
+            {
+              "set": "tor",
+              "number": "58",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3aef2983-40c6-544b-9393-27814e6df47b"
+            },
+            {
+              "set": "tor",
+              "number": "60",
+              "weight": 1,
+              "foil": false,
+              "uuid": "29217f6e-fdd2-5eaa-aa4f-31b0cb668e60"
+            },
+            {
+              "set": "tor",
+              "number": "62",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ee49e3aa-982f-58ed-9fd3-598d6e10b48f"
+            },
+            {
+              "set": "tor",
+              "number": "69",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0629f77d-c16f-595f-885c-b35e4612ed86"
+            },
+            {
+              "set": "tor",
+              "number": "75",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bc2ea9b7-1007-562c-bafe-341c729008a4"
+            },
+            {
+              "set": "tor",
+              "number": "76",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e2ee3a3f-3025-56e7-8742-a7085d65531b"
+            },
+            {
+              "set": "tor",
+              "number": "77",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2b3144bc-c36e-5269-886b-114b16f91893"
+            },
+            {
+              "set": "tor",
+              "number": "78",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8f6ec1be-a0bf-566c-a1ee-b1ab090dc701"
+            },
+            {
+              "set": "tor",
+              "number": "79",
+              "weight": 1,
+              "foil": false,
+              "uuid": "abceaf8b-c9e6-5eef-b8c9-38be124bc7bb"
+            },
+            {
+              "set": "tor",
+              "number": "81",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a7114daf-eee0-5326-93cb-c1c1ad5cbf68"
+            },
+            {
+              "set": "tor",
+              "number": "85",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5766dd59-450c-518c-9dd5-dcbaaff2b734"
+            },
+            {
+              "set": "tor",
+              "number": "87",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05ac49fe-e971-557f-be97-387837f991ab"
+            },
+            {
+              "set": "tor",
+              "number": "88",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b016c395-47e6-5a94-88af-3e554fcab6ce"
+            },
+            {
+              "set": "tor",
+              "number": "90",
+              "weight": 1,
+              "foil": false,
+              "uuid": "63c421f3-b215-5f52-82b5-74300e2a5ac4"
+            },
+            {
+              "set": "tor",
+              "number": "92",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9a1dda5d-6cc4-56f0-8778-adc95a352787"
+            },
+            {
+              "set": "tor",
+              "number": "93",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f4131788-1a62-5b26-8abf-e5a32f0348d4"
+            },
+            {
+              "set": "tor",
+              "number": "96",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d902e008-29eb-5815-a4da-2aa3c3ce94c9"
+            },
+            {
+              "set": "tor",
+              "number": "97",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b6fc518-5813-5bef-ab8e-c44b1b0f21d6"
+            },
+            {
+              "set": "tor",
+              "number": "99",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8db065b8-01ed-5b51-a9d0-afd0578a7f5a"
+            },
+            {
+              "set": "tor",
+              "number": "102",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ed777d42-0c42-52d7-a3aa-ee53b9befa40"
+            },
+            {
+              "set": "tor",
+              "number": "103",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7e49f29b-f0b3-573a-aa0a-541853ddb78a"
+            },
+            {
+              "set": "tor",
+              "number": "107",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475599f4-d6fd-5e0c-aa8e-2d3ecc370055"
+            },
+            {
+              "set": "tor",
+              "number": "109",
+              "weight": 1,
+              "foil": false,
+              "uuid": "38c8bbf7-b63c-55eb-b6c8-31feecfbf7be"
+            },
+            {
+              "set": "tor",
+              "number": "115",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1b4cd2f6-e517-5379-9841-9fb78d80f289"
+            },
+            {
+              "set": "tor",
+              "number": "118",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1abe8b04-69c4-5f90-af2c-5f3868a2c89c"
+            },
+            {
+              "set": "tor",
+              "number": "121",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e8e569e1-993c-5c44-b2ca-1a76e0bcfb8d"
+            },
+            {
+              "set": "tor",
+              "number": "123",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b8dff7c3-d5be-543f-b9ea-2c4a563743c7"
+            },
+            {
+              "set": "tor",
+              "number": "125",
+              "weight": 1,
+              "foil": false,
+              "uuid": "56dfb15c-6075-5802-ab33-75a8087c0080"
+            },
+            {
+              "set": "tor",
+              "number": "128",
+              "weight": 1,
+              "foil": false,
+              "uuid": "70feeeae-10b1-5969-9c2c-a0098ac2a24e"
+            },
+            {
+              "set": "tor",
+              "number": "129",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d2ca9cac-8d4d-536f-844f-c4dcae200843"
+            },
+            {
+              "set": "tor",
+              "number": "130",
+              "weight": 1,
+              "foil": false,
+              "uuid": "30d87966-33f2-505c-a6b7-df6f3593c1da"
+            },
+            {
+              "set": "tor",
+              "number": "132",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c8b8e7e-c1ac-5e51-b505-429ed98dc7c7"
+            }
+          ]
+        },
+        "foil_common": {
+          "total_weight": 55,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "2",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ddb07907-9ce1-5938-b972-d34c53eaa94f"
+            },
+            {
+              "set": "tor",
+              "number": "5",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1f6c1d56-0c51-5274-a2d4-7bc58e56be59"
+            },
+            {
+              "set": "tor",
+              "number": "6",
+              "weight": 1,
+              "foil": true,
+              "uuid": "08f51ca5-bd07-5616-a787-a75d0cebd0ea"
+            },
+            {
+              "set": "tor",
+              "number": "9",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d6b06a6f-7427-5b46-8f97-f6beb053d727"
+            },
+            {
+              "set": "tor",
+              "number": "11",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0874b6d9-0619-5649-9208-e02fbed73a17"
+            },
+            {
+              "set": "tor",
+              "number": "12",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1fcdafc5-bbbe-5cc8-97ee-34d542ccae5b"
+            },
+            {
+              "set": "tor",
+              "number": "15",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0fa43b6d-f844-5790-89c9-834903b07496"
+            },
+            {
+              "set": "tor",
+              "number": "18",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3cc5aa27-fd04-51ea-9165-fc2be033009c"
+            },
+            {
+              "set": "tor",
+              "number": "24",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ba9a0a67-c125-5d43-9344-d723c316127f"
+            },
+            {
+              "set": "tor",
+              "number": "27",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2151173-fc41-5970-96e1-4a4291e72dcf"
+            },
+            {
+              "set": "tor",
+              "number": "30",
+              "weight": 1,
+              "foil": true,
+              "uuid": "412122d4-1f92-5039-81c5-53b246e31b9f"
+            },
+            {
+              "set": "tor",
+              "number": "32",
+              "weight": 1,
+              "foil": true,
+              "uuid": "44185394-1935-5e9f-9bd3-5b9771ac7697"
+            },
+            {
+              "set": "tor",
+              "number": "35",
+              "weight": 1,
+              "foil": true,
+              "uuid": "78de564a-f64b-51d7-90b1-4c84496409b7"
+            },
+            {
+              "set": "tor",
+              "number": "36",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63e92ee1-de37-5cc9-85f3-2cf9d9ad750f"
+            },
+            {
+              "set": "tor",
+              "number": "38",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5f54f814-b452-59ff-8fbb-a791fb7c4462"
+            },
+            {
+              "set": "tor",
+              "number": "39",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e44d3e62-17dc-5cd7-b637-f1c0f18cf811"
+            },
+            {
+              "set": "tor",
+              "number": "41",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b9839771-6017-5edd-8c0f-250cb73c6d48"
+            },
+            {
+              "set": "tor",
+              "number": "43",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ced723da-ba01-575d-9bb1-417982807a28"
+            },
+            {
+              "set": "tor",
+              "number": "47",
+              "weight": 1,
+              "foil": true,
+              "uuid": "77a56a80-ccff-560f-8994-7b882a5eaaba"
+            },
+            {
+              "set": "tor",
+              "number": "51",
+              "weight": 1,
+              "foil": true,
+              "uuid": "87ba5908-55bc-52df-aecc-98f3ec6edad3"
+            },
+            {
+              "set": "tor",
+              "number": "52",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0e7cf4e2-dd04-55be-87ca-cf437596ed23"
+            },
+            {
+              "set": "tor",
+              "number": "53",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4c6f714f-a315-5464-8622-1844834013a4"
+            },
+            {
+              "set": "tor",
+              "number": "54",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e23652ea-49ac-5817-b59f-8e380a7eada0"
+            },
+            {
+              "set": "tor",
+              "number": "58",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3aef2983-40c6-544b-9393-27814e6df47b"
+            },
+            {
+              "set": "tor",
+              "number": "60",
+              "weight": 1,
+              "foil": true,
+              "uuid": "29217f6e-fdd2-5eaa-aa4f-31b0cb668e60"
+            },
+            {
+              "set": "tor",
+              "number": "62",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ee49e3aa-982f-58ed-9fd3-598d6e10b48f"
+            },
+            {
+              "set": "tor",
+              "number": "69",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0629f77d-c16f-595f-885c-b35e4612ed86"
+            },
+            {
+              "set": "tor",
+              "number": "75",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bc2ea9b7-1007-562c-bafe-341c729008a4"
+            },
+            {
+              "set": "tor",
+              "number": "76",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2ee3a3f-3025-56e7-8742-a7085d65531b"
+            },
+            {
+              "set": "tor",
+              "number": "77",
+              "weight": 1,
+              "foil": true,
+              "uuid": "2b3144bc-c36e-5269-886b-114b16f91893"
+            },
+            {
+              "set": "tor",
+              "number": "78",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8f6ec1be-a0bf-566c-a1ee-b1ab090dc701"
+            },
+            {
+              "set": "tor",
+              "number": "79",
+              "weight": 1,
+              "foil": true,
+              "uuid": "abceaf8b-c9e6-5eef-b8c9-38be124bc7bb"
+            },
+            {
+              "set": "tor",
+              "number": "81",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a7114daf-eee0-5326-93cb-c1c1ad5cbf68"
+            },
+            {
+              "set": "tor",
+              "number": "85",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5766dd59-450c-518c-9dd5-dcbaaff2b734"
+            },
+            {
+              "set": "tor",
+              "number": "87",
+              "weight": 1,
+              "foil": true,
+              "uuid": "05ac49fe-e971-557f-be97-387837f991ab"
+            },
+            {
+              "set": "tor",
+              "number": "88",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b016c395-47e6-5a94-88af-3e554fcab6ce"
+            },
+            {
+              "set": "tor",
+              "number": "90",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63c421f3-b215-5f52-82b5-74300e2a5ac4"
+            },
+            {
+              "set": "tor",
+              "number": "92",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9a1dda5d-6cc4-56f0-8778-adc95a352787"
+            },
+            {
+              "set": "tor",
+              "number": "93",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f4131788-1a62-5b26-8abf-e5a32f0348d4"
+            },
+            {
+              "set": "tor",
+              "number": "96",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d902e008-29eb-5815-a4da-2aa3c3ce94c9"
+            },
+            {
+              "set": "tor",
+              "number": "97",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5b6fc518-5813-5bef-ab8e-c44b1b0f21d6"
+            },
+            {
+              "set": "tor",
+              "number": "99",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8db065b8-01ed-5b51-a9d0-afd0578a7f5a"
+            },
+            {
+              "set": "tor",
+              "number": "102",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ed777d42-0c42-52d7-a3aa-ee53b9befa40"
+            },
+            {
+              "set": "tor",
+              "number": "103",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7e49f29b-f0b3-573a-aa0a-541853ddb78a"
+            },
+            {
+              "set": "tor",
+              "number": "107",
+              "weight": 1,
+              "foil": true,
+              "uuid": "475599f4-d6fd-5e0c-aa8e-2d3ecc370055"
+            },
+            {
+              "set": "tor",
+              "number": "109",
+              "weight": 1,
+              "foil": true,
+              "uuid": "38c8bbf7-b63c-55eb-b6c8-31feecfbf7be"
+            },
+            {
+              "set": "tor",
+              "number": "115",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1b4cd2f6-e517-5379-9841-9fb78d80f289"
+            },
+            {
+              "set": "tor",
+              "number": "118",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1abe8b04-69c4-5f90-af2c-5f3868a2c89c"
+            },
+            {
+              "set": "tor",
+              "number": "121",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e8e569e1-993c-5c44-b2ca-1a76e0bcfb8d"
+            },
+            {
+              "set": "tor",
+              "number": "123",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b8dff7c3-d5be-543f-b9ea-2c4a563743c7"
+            },
+            {
+              "set": "tor",
+              "number": "125",
+              "weight": 1,
+              "foil": true,
+              "uuid": "56dfb15c-6075-5802-ab33-75a8087c0080"
+            },
+            {
+              "set": "tor",
+              "number": "128",
+              "weight": 1,
+              "foil": true,
+              "uuid": "70feeeae-10b1-5969-9c2c-a0098ac2a24e"
+            },
+            {
+              "set": "tor",
+              "number": "129",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d2ca9cac-8d4d-536f-844f-c4dcae200843"
+            },
+            {
+              "set": "tor",
+              "number": "130",
+              "weight": 1,
+              "foil": true,
+              "uuid": "30d87966-33f2-505c-a6b7-df6f3593c1da"
+            },
+            {
+              "set": "tor",
+              "number": "132",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4c8b8e7e-c1ac-5e51-b505-429ed98dc7c7"
+            }
+          ]
+        },
+        "foil_uncommon": {
+          "total_weight": 44,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "3",
+              "weight": 1,
+              "foil": true,
+              "uuid": "441ceda3-1ceb-5502-bad4-43254850608e"
+            },
+            {
+              "set": "tor",
+              "number": "4",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bc146494-d03f-5c9f-81ff-71aea02c7946"
+            },
+            {
+              "set": "tor",
+              "number": "7",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c55b66dc-8ca0-5396-a889-981c0f86a055"
+            },
+            {
+              "set": "tor",
+              "number": "16",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d4a31710-0637-50eb-8fe3-41817842b686"
+            },
+            {
+              "set": "tor",
+              "number": "17",
+              "weight": 1,
+              "foil": true,
+              "uuid": "cba1546a-9dc6-5b14-8b38-8f14b66ab860"
+            },
+            {
+              "set": "tor",
+              "number": "19",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c018f0c1-d898-5b54-837f-03dc011182c1"
+            },
+            {
+              "set": "tor",
+              "number": "25",
+              "weight": 1,
+              "foil": true,
+              "uuid": "2610df1e-b8cc-5b79-8abc-e02e17ba4675"
+            },
+            {
+              "set": "tor",
+              "number": "26",
+              "weight": 1,
+              "foil": true,
+              "uuid": "71c348ea-ccbf-52df-9a9c-990675344cc9"
+            },
+            {
+              "set": "tor",
+              "number": "28",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0d815dba-bbcc-5a5e-a2cd-556a618d6bc6"
+            },
+            {
+              "set": "tor",
+              "number": "29",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1e6a2789-eff5-5d79-9904-26898236e81b"
+            },
+            {
+              "set": "tor",
+              "number": "33",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e8462ebd-de29-557a-8358-b88d87d8d34a"
+            },
+            {
+              "set": "tor",
+              "number": "34",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5c150d9b-681a-50e8-8395-294543ffaeae"
+            },
+            {
+              "set": "tor",
+              "number": "40",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d317e668-b43c-5760-ba06-62765c8d1bcf"
+            },
+            {
+              "set": "tor",
+              "number": "48",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d23e0bc2-550e-5718-872d-b6e8529672d1"
+            },
+            {
+              "set": "tor",
+              "number": "50",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c77bbbae-3eac-5600-9d8c-bb6c30f7315e"
+            },
+            {
+              "set": "tor",
+              "number": "55",
+              "weight": 1,
+              "foil": true,
+              "uuid": "dadc3a3e-4ea8-5658-904d-4b246b432fda"
+            },
+            {
+              "set": "tor",
+              "number": "57",
+              "weight": 1,
+              "foil": true,
+              "uuid": "96789104-3d73-5cc6-be73-02f78ccf43e9"
+            },
+            {
+              "set": "tor",
+              "number": "61",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4fbeefa6-7da4-57b4-b4f0-43532ff49a7b"
+            },
+            {
+              "set": "tor",
+              "number": "63",
+              "weight": 1,
+              "foil": true,
+              "uuid": "86ddd9ce-bbb6-5a6c-b2eb-16459cd0b4fc"
+            },
+            {
+              "set": "tor",
+              "number": "70",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f1dcaea8-e6b3-5580-9660-3736d7060e90"
+            },
+            {
+              "set": "tor",
+              "number": "72",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0d8a104e-4254-59dc-b494-5f56402faa18"
+            },
+            {
+              "set": "tor",
+              "number": "83",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c5b09b6c-5252-5740-8de1-8b9b0d37f2e9"
+            },
+            {
+              "set": "tor",
+              "number": "84",
+              "weight": 1,
+              "foil": true,
+              "uuid": "989060b0-a72d-5936-a287-e94701f05e2c"
+            },
+            {
+              "set": "tor",
+              "number": "86",
+              "weight": 1,
+              "foil": true,
+              "uuid": "48368a13-87b7-53b1-ae7f-112abcccac04"
+            },
+            {
+              "set": "tor",
+              "number": "89",
+              "weight": 1,
+              "foil": true,
+              "uuid": "52d19dcf-afe7-56ac-9b20-e5d8842ff71e"
+            },
+            {
+              "set": "tor",
+              "number": "94",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2046740-daff-5234-8cbc-0b65f7807c6a"
+            },
+            {
+              "set": "tor",
+              "number": "98",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4eb9ace4-8006-5cc9-93fd-902073549fb8"
+            },
+            {
+              "set": "tor",
+              "number": "105",
+              "weight": 1,
+              "foil": true,
+              "uuid": "988e9471-589f-595d-95b7-621de9007955"
+            },
+            {
+              "set": "tor",
+              "number": "106",
+              "weight": 1,
+              "foil": true,
+              "uuid": "19ddbe76-0037-511e-900f-329a182026a0"
+            },
+            {
+              "set": "tor",
+              "number": "110",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7297032b-c487-5ec5-95d8-f6f27fb90def"
+            },
+            {
+              "set": "tor",
+              "number": "112",
+              "weight": 1,
+              "foil": true,
+              "uuid": "49a12b66-156a-50a6-8058-b29da5cde6f3"
+            },
+            {
+              "set": "tor",
+              "number": "116",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5c63e915-0e02-5b2e-ab25-1c6fff519046"
+            },
+            {
+              "set": "tor",
+              "number": "117",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ff666c15-0491-520f-b264-3a2986b10362"
+            },
+            {
+              "set": "tor",
+              "number": "119",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3bbe2a88-8983-5b7b-8aa8-ac90210289e6"
+            },
+            {
+              "set": "tor",
+              "number": "120",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7248c346-3952-5cd8-9717-174224fe4f5b"
+            },
+            {
+              "set": "tor",
+              "number": "122",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9d00e2a7-604e-52a9-8417-c92a00f88f16"
+            },
+            {
+              "set": "tor",
+              "number": "124",
+              "weight": 1,
+              "foil": true,
+              "uuid": "908b7e06-78e0-5495-bb55-c92cd41ab886"
+            },
+            {
+              "set": "tor",
+              "number": "134",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c3158763-e39d-5b9b-a518-6f26087f70dd"
+            },
+            {
+              "set": "tor",
+              "number": "138",
+              "weight": 1,
+              "foil": true,
+              "uuid": "70a30893-d11b-50a7-83ef-2be0cf5837a9"
+            },
+            {
+              "set": "tor",
+              "number": "139",
+              "weight": 1,
+              "foil": true,
+              "uuid": "53a58169-e2c5-5191-a125-87353eb951c4"
+            },
+            {
+              "set": "tor",
+              "number": "140",
+              "weight": 1,
+              "foil": true,
+              "uuid": "40698409-a9af-53b7-850d-4411fe01fe49"
+            },
+            {
+              "set": "tor",
+              "number": "141",
+              "weight": 1,
+              "foil": true,
+              "uuid": "cc9dc60e-4b34-5477-8e5d-24a5c8cfc238"
+            },
+            {
+              "set": "tor",
+              "number": "142",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a2684ded-4874-5516-9398-96182a6c50ba"
+            },
+            {
+              "set": "tor",
+              "number": "143",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d352b51b-fc4e-5926-b674-aa0871efe326"
+            }
+          ]
+        },
+        "foil_rare": {
+          "total_weight": 44,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "1",
+              "weight": 1,
+              "foil": true,
+              "uuid": "fc1a0569-b60f-5552-9e70-4173a8ed2ed9"
+            },
+            {
+              "set": "tor",
+              "number": "8",
+              "weight": 1,
+              "foil": true,
+              "uuid": "519e48b8-482c-561f-99e2-7c103c1adc1c"
+            },
+            {
+              "set": "tor",
+              "number": "10",
+              "weight": 1,
+              "foil": true,
+              "uuid": "6f4643e0-8b63-536f-996b-e5dbfe8b28e2"
+            },
+            {
+              "set": "tor",
+              "number": "13",
+              "weight": 1,
+              "foil": true,
+              "uuid": "cf426dc0-d57a-5d18-b439-7ab99d16b5b3"
+            },
+            {
+              "set": "tor",
+              "number": "14",
+              "weight": 1,
+              "foil": true,
+              "uuid": "29dadd6e-660b-52a0-80b7-ef4e3a714a01"
+            },
+            {
+              "set": "tor",
+              "number": "20",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9a42fd02-1943-568d-9fc3-7a2d9b7a6e91"
+            },
+            {
+              "set": "tor",
+              "number": "21",
+              "weight": 1,
+              "foil": true,
+              "uuid": "23f5d9b5-4bb5-576e-a00b-ebd15fb35dde"
+            },
+            {
+              "set": "tor",
+              "number": "22",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ab88c891-75d4-5d09-acf9-a758cd440f32"
+            },
+            {
+              "set": "tor",
+              "number": "23",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bc9aee0e-058a-5127-a7fd-83a6d730caf0"
+            },
+            {
+              "set": "tor",
+              "number": "31",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4987901a-a992-5217-b716-9243a0c6f8b1"
+            },
+            {
+              "set": "tor",
+              "number": "37",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d565f956-c713-5105-800a-07cf2deec32c"
+            },
+            {
+              "set": "tor",
+              "number": "42",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a913c87d-8234-5ee5-ae72-0ec343f9e62d"
+            },
+            {
+              "set": "tor",
+              "number": "44",
+              "weight": 1,
+              "foil": true,
+              "uuid": "addaa28a-1f9c-5197-968d-3170447224bb"
+            },
+            {
+              "set": "tor",
+              "number": "45",
+              "weight": 1,
+              "foil": true,
+              "uuid": "393bf366-6e5d-5170-8458-fd5e8dc2f91c"
+            },
+            {
+              "set": "tor",
+              "number": "46",
+              "weight": 1,
+              "foil": true,
+              "uuid": "44627f26-cd3b-5a40-a724-b92d4df76e6a"
+            },
+            {
+              "set": "tor",
+              "number": "49",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f2d75518-971f-5b19-8f68-4a03aed356c6"
+            },
+            {
+              "set": "tor",
+              "number": "56",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9b8a549d-4cd1-53d6-900c-7f10cbf8a14c"
+            },
+            {
+              "set": "tor",
+              "number": "59",
+              "weight": 1,
+              "foil": true,
+              "uuid": "54c78af4-d7ea-5a67-ba83-4caf764364a4"
+            },
+            {
+              "set": "tor",
+              "number": "64",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5f648e9e-a131-5068-82be-9e88c0ab0bfe"
+            },
+            {
+              "set": "tor",
+              "number": "65",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0ba5cbc3-2ed7-53db-bc33-485b75072aba"
+            },
+            {
+              "set": "tor",
+              "number": "66",
+              "weight": 1,
+              "foil": true,
+              "uuid": "12318b18-d6b9-5e91-81ff-48b4c9296a12"
+            },
+            {
+              "set": "tor",
+              "number": "67",
+              "weight": 1,
+              "foil": true,
+              "uuid": "06906c32-7d54-54c7-aa9a-babed68c0d88"
+            },
+            {
+              "set": "tor",
+              "number": "68",
+              "weight": 1,
+              "foil": true,
+              "uuid": "31d67ad5-fb18-51e0-88df-c48586cc52c7"
+            },
+            {
+              "set": "tor",
+              "number": "71",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ea852198-b417-5208-b049-965d625f6726"
+            },
+            {
+              "set": "tor",
+              "number": "73",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a8f0ce54-9847-5e65-8fcd-3040a7418828"
+            },
+            {
+              "set": "tor",
+              "number": "74",
+              "weight": 1,
+              "foil": true,
+              "uuid": "dd8a801e-f880-548f-8d7a-5c9bd2d4f5c3"
+            },
+            {
+              "set": "tor",
+              "number": "80",
+              "weight": 1,
+              "foil": true,
+              "uuid": "16409fb6-a1d0-5fe7-8169-9e975490210a"
+            },
+            {
+              "set": "tor",
+              "number": "82",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63254f5b-a7ee-540f-8296-8935fe0c6389"
+            },
+            {
+              "set": "tor",
+              "number": "91",
+              "weight": 1,
+              "foil": true,
+              "uuid": "106af149-efa9-51ae-8ae6-abdd46ac1a74"
+            },
+            {
+              "set": "tor",
+              "number": "95",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b0ff65aa-9350-5432-9c7c-0658ecbd626d"
+            },
+            {
+              "set": "tor",
+              "number": "100",
+              "weight": 1,
+              "foil": true,
+              "uuid": "dffe11c6-c922-560b-a7d0-a87b5f594baa"
+            },
+            {
+              "set": "tor",
+              "number": "101",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bd6bbd55-0507-5c2a-9435-a170a5b09698"
+            },
+            {
+              "set": "tor",
+              "number": "104",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5eddb334-6cf2-50ac-b25f-d0caaf61b258"
+            },
+            {
+              "set": "tor",
+              "number": "108",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a527f2a8-656e-53fe-a0a7-e1274895af0b"
+            },
+            {
+              "set": "tor",
+              "number": "111",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b176c4bd-74a3-51a4-b223-930edf3e81fa"
+            },
+            {
+              "set": "tor",
+              "number": "113",
+              "weight": 1,
+              "foil": true,
+              "uuid": "fa1c13c4-3989-5d83-9e27-c6b0ee423183"
+            },
+            {
+              "set": "tor",
+              "number": "114",
+              "weight": 1,
+              "foil": true,
+              "uuid": "80d91e47-765f-5895-8ed3-b62319ce17f4"
+            },
+            {
+              "set": "tor",
+              "number": "126",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f18cd46b-b364-5825-92c6-53dd633cb5ba"
+            },
+            {
+              "set": "tor",
+              "number": "127",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bfeb3ac2-3de7-509c-8f6d-f32aee83c139"
+            },
+            {
+              "set": "tor",
+              "number": "131",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7b115352-628b-5e26-b4d5-71b5b0ecd657"
+            },
+            {
+              "set": "tor",
+              "number": "133",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c3db5cd9-0568-5af8-a4e1-547aa1122491"
+            },
+            {
+              "set": "tor",
+              "number": "135",
+              "weight": 1,
+              "foil": true,
+              "uuid": "73eb451f-925c-536a-a490-2d3bb532b839"
+            },
+            {
+              "set": "tor",
+              "number": "136",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1bb0806a-46d6-501f-9f8e-f03fd42391c6"
+            },
+            {
+              "set": "tor",
+              "number": "137",
+              "weight": 1,
+              "foil": true,
+              "uuid": "71fabf1e-b2b7-5ec9-9a98-12ef81fb3c69"
+            }
+          ]
+        }
+      },
+      "source_set_codes": [
+        "tor"
+      ]
+    },
+    "tcgcsvData": {
+      "product": {
+        "productId": 27311,
+        "name": "Torment - Booster Box",
+        "cleanName": "Torment Booster Box",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/27311_200w.jpg",
+        "categoryId": 1,
+        "groupId": 112,
+        "url": "https://www.tcgplayer.com/product/27311/magic-torment-torment-booster-box",
+        "modifiedOn": "2013-05-09T12:13:41.653",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 27311,
+          "lowPrice": 1055.51,
+          "midPrice": 1077.76,
+          "highPrice": 1154.94,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "1608b8e1-c0e5-5871-b958-5f0723398777",
+    "name": "Torment Booster Box Case",
+    "category": "booster_case",
+    "subtype": "draft",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Torment Booster Box",
+          "set": "tor",
+          "uuid": "cc954762-b935-5dea-bce3-4ee4c76d10d9"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment",
+    "extendedData": {
+      "code": "tor-draft",
+      "boosters": [
+        {
+          "sheets": {
+            "rare": 1,
+            "uncommon": 3,
+            "common": 11
+          },
+          "weight": 272757
+        },
+        {
+          "sheets": {
+            "rare": 1,
+            "uncommon": 3,
+            "common": 10,
+            "foil_common": 1
+          },
+          "weight": 50853
+        },
+        {
+          "sheets": {
+            "rare": 1,
+            "uncommon": 2,
+            "foil_uncommon": 1,
+            "common": 11
+          },
+          "weight": 12213
+        },
+        {
+          "sheets": {
+            "rare": 1,
+            "uncommon": 2,
+            "foil_uncommon": 1,
+            "common": 10,
+            "foil_common": 1
+          },
+          "weight": 2277
+        },
+        {
+          "sheets": {
+            "foil_rare": 1,
+            "uncommon": 3,
+            "common": 11
+          },
+          "weight": 3953
+        },
+        {
+          "sheets": {
+            "foil_rare": 1,
+            "uncommon": 3,
+            "common": 10,
+            "foil_common": 1
+          },
+          "weight": 737
+        },
+        {
+          "sheets": {
+            "foil_rare": 1,
+            "uncommon": 2,
+            "foil_uncommon": 1,
+            "common": 11
+          },
+          "weight": 177
+        },
+        {
+          "sheets": {
+            "foil_rare": 1,
+            "uncommon": 2,
+            "foil_uncommon": 1,
+            "common": 10,
+            "foil_common": 1
+          },
+          "weight": 33
+        }
+      ],
+      "sheets": {
+        "rare": {
+          "total_weight": 44,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "1",
+              "weight": 1,
+              "foil": false,
+              "uuid": "fc1a0569-b60f-5552-9e70-4173a8ed2ed9"
+            },
+            {
+              "set": "tor",
+              "number": "8",
+              "weight": 1,
+              "foil": false,
+              "uuid": "519e48b8-482c-561f-99e2-7c103c1adc1c"
+            },
+            {
+              "set": "tor",
+              "number": "10",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6f4643e0-8b63-536f-996b-e5dbfe8b28e2"
+            },
+            {
+              "set": "tor",
+              "number": "13",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf426dc0-d57a-5d18-b439-7ab99d16b5b3"
+            },
+            {
+              "set": "tor",
+              "number": "14",
+              "weight": 1,
+              "foil": false,
+              "uuid": "29dadd6e-660b-52a0-80b7-ef4e3a714a01"
+            },
+            {
+              "set": "tor",
+              "number": "20",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9a42fd02-1943-568d-9fc3-7a2d9b7a6e91"
+            },
+            {
+              "set": "tor",
+              "number": "21",
+              "weight": 1,
+              "foil": false,
+              "uuid": "23f5d9b5-4bb5-576e-a00b-ebd15fb35dde"
+            },
+            {
+              "set": "tor",
+              "number": "22",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ab88c891-75d4-5d09-acf9-a758cd440f32"
+            },
+            {
+              "set": "tor",
+              "number": "23",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bc9aee0e-058a-5127-a7fd-83a6d730caf0"
+            },
+            {
+              "set": "tor",
+              "number": "31",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4987901a-a992-5217-b716-9243a0c6f8b1"
+            },
+            {
+              "set": "tor",
+              "number": "37",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d565f956-c713-5105-800a-07cf2deec32c"
+            },
+            {
+              "set": "tor",
+              "number": "42",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a913c87d-8234-5ee5-ae72-0ec343f9e62d"
+            },
+            {
+              "set": "tor",
+              "number": "44",
+              "weight": 1,
+              "foil": false,
+              "uuid": "addaa28a-1f9c-5197-968d-3170447224bb"
+            },
+            {
+              "set": "tor",
+              "number": "45",
+              "weight": 1,
+              "foil": false,
+              "uuid": "393bf366-6e5d-5170-8458-fd5e8dc2f91c"
+            },
+            {
+              "set": "tor",
+              "number": "46",
+              "weight": 1,
+              "foil": false,
+              "uuid": "44627f26-cd3b-5a40-a724-b92d4df76e6a"
+            },
+            {
+              "set": "tor",
+              "number": "49",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f2d75518-971f-5b19-8f68-4a03aed356c6"
+            },
+            {
+              "set": "tor",
+              "number": "56",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9b8a549d-4cd1-53d6-900c-7f10cbf8a14c"
+            },
+            {
+              "set": "tor",
+              "number": "59",
+              "weight": 1,
+              "foil": false,
+              "uuid": "54c78af4-d7ea-5a67-ba83-4caf764364a4"
+            },
+            {
+              "set": "tor",
+              "number": "64",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5f648e9e-a131-5068-82be-9e88c0ab0bfe"
+            },
+            {
+              "set": "tor",
+              "number": "65",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0ba5cbc3-2ed7-53db-bc33-485b75072aba"
+            },
+            {
+              "set": "tor",
+              "number": "66",
+              "weight": 1,
+              "foil": false,
+              "uuid": "12318b18-d6b9-5e91-81ff-48b4c9296a12"
+            },
+            {
+              "set": "tor",
+              "number": "67",
+              "weight": 1,
+              "foil": false,
+              "uuid": "06906c32-7d54-54c7-aa9a-babed68c0d88"
+            },
+            {
+              "set": "tor",
+              "number": "68",
+              "weight": 1,
+              "foil": false,
+              "uuid": "31d67ad5-fb18-51e0-88df-c48586cc52c7"
+            },
+            {
+              "set": "tor",
+              "number": "71",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ea852198-b417-5208-b049-965d625f6726"
+            },
+            {
+              "set": "tor",
+              "number": "73",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a8f0ce54-9847-5e65-8fcd-3040a7418828"
+            },
+            {
+              "set": "tor",
+              "number": "74",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dd8a801e-f880-548f-8d7a-5c9bd2d4f5c3"
+            },
+            {
+              "set": "tor",
+              "number": "80",
+              "weight": 1,
+              "foil": false,
+              "uuid": "16409fb6-a1d0-5fe7-8169-9e975490210a"
+            },
+            {
+              "set": "tor",
+              "number": "82",
+              "weight": 1,
+              "foil": false,
+              "uuid": "63254f5b-a7ee-540f-8296-8935fe0c6389"
+            },
+            {
+              "set": "tor",
+              "number": "91",
+              "weight": 1,
+              "foil": false,
+              "uuid": "106af149-efa9-51ae-8ae6-abdd46ac1a74"
+            },
+            {
+              "set": "tor",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b0ff65aa-9350-5432-9c7c-0658ecbd626d"
+            },
+            {
+              "set": "tor",
+              "number": "100",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dffe11c6-c922-560b-a7d0-a87b5f594baa"
+            },
+            {
+              "set": "tor",
+              "number": "101",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bd6bbd55-0507-5c2a-9435-a170a5b09698"
+            },
+            {
+              "set": "tor",
+              "number": "104",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5eddb334-6cf2-50ac-b25f-d0caaf61b258"
+            },
+            {
+              "set": "tor",
+              "number": "108",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a527f2a8-656e-53fe-a0a7-e1274895af0b"
+            },
+            {
+              "set": "tor",
+              "number": "111",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b176c4bd-74a3-51a4-b223-930edf3e81fa"
+            },
+            {
+              "set": "tor",
+              "number": "113",
+              "weight": 1,
+              "foil": false,
+              "uuid": "fa1c13c4-3989-5d83-9e27-c6b0ee423183"
+            },
+            {
+              "set": "tor",
+              "number": "114",
+              "weight": 1,
+              "foil": false,
+              "uuid": "80d91e47-765f-5895-8ed3-b62319ce17f4"
+            },
+            {
+              "set": "tor",
+              "number": "126",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f18cd46b-b364-5825-92c6-53dd633cb5ba"
+            },
+            {
+              "set": "tor",
+              "number": "127",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bfeb3ac2-3de7-509c-8f6d-f32aee83c139"
+            },
+            {
+              "set": "tor",
+              "number": "131",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7b115352-628b-5e26-b4d5-71b5b0ecd657"
+            },
+            {
+              "set": "tor",
+              "number": "133",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c3db5cd9-0568-5af8-a4e1-547aa1122491"
+            },
+            {
+              "set": "tor",
+              "number": "135",
+              "weight": 1,
+              "foil": false,
+              "uuid": "73eb451f-925c-536a-a490-2d3bb532b839"
+            },
+            {
+              "set": "tor",
+              "number": "136",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1bb0806a-46d6-501f-9f8e-f03fd42391c6"
+            },
+            {
+              "set": "tor",
+              "number": "137",
+              "weight": 1,
+              "foil": false,
+              "uuid": "71fabf1e-b2b7-5ec9-9a98-12ef81fb3c69"
+            }
+          ]
+        },
+        "uncommon": {
+          "total_weight": 44,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "3",
+              "weight": 1,
+              "foil": false,
+              "uuid": "441ceda3-1ceb-5502-bad4-43254850608e"
+            },
+            {
+              "set": "tor",
+              "number": "4",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bc146494-d03f-5c9f-81ff-71aea02c7946"
+            },
+            {
+              "set": "tor",
+              "number": "7",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c55b66dc-8ca0-5396-a889-981c0f86a055"
+            },
+            {
+              "set": "tor",
+              "number": "16",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d4a31710-0637-50eb-8fe3-41817842b686"
+            },
+            {
+              "set": "tor",
+              "number": "17",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cba1546a-9dc6-5b14-8b38-8f14b66ab860"
+            },
+            {
+              "set": "tor",
+              "number": "19",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c018f0c1-d898-5b54-837f-03dc011182c1"
+            },
+            {
+              "set": "tor",
+              "number": "25",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2610df1e-b8cc-5b79-8abc-e02e17ba4675"
+            },
+            {
+              "set": "tor",
+              "number": "26",
+              "weight": 1,
+              "foil": false,
+              "uuid": "71c348ea-ccbf-52df-9a9c-990675344cc9"
+            },
+            {
+              "set": "tor",
+              "number": "28",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0d815dba-bbcc-5a5e-a2cd-556a618d6bc6"
+            },
+            {
+              "set": "tor",
+              "number": "29",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1e6a2789-eff5-5d79-9904-26898236e81b"
+            },
+            {
+              "set": "tor",
+              "number": "33",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e8462ebd-de29-557a-8358-b88d87d8d34a"
+            },
+            {
+              "set": "tor",
+              "number": "34",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5c150d9b-681a-50e8-8395-294543ffaeae"
+            },
+            {
+              "set": "tor",
+              "number": "40",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d317e668-b43c-5760-ba06-62765c8d1bcf"
+            },
+            {
+              "set": "tor",
+              "number": "48",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d23e0bc2-550e-5718-872d-b6e8529672d1"
+            },
+            {
+              "set": "tor",
+              "number": "50",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c77bbbae-3eac-5600-9d8c-bb6c30f7315e"
+            },
+            {
+              "set": "tor",
+              "number": "55",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dadc3a3e-4ea8-5658-904d-4b246b432fda"
+            },
+            {
+              "set": "tor",
+              "number": "57",
+              "weight": 1,
+              "foil": false,
+              "uuid": "96789104-3d73-5cc6-be73-02f78ccf43e9"
+            },
+            {
+              "set": "tor",
+              "number": "61",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4fbeefa6-7da4-57b4-b4f0-43532ff49a7b"
+            },
+            {
+              "set": "tor",
+              "number": "63",
+              "weight": 1,
+              "foil": false,
+              "uuid": "86ddd9ce-bbb6-5a6c-b2eb-16459cd0b4fc"
+            },
+            {
+              "set": "tor",
+              "number": "70",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f1dcaea8-e6b3-5580-9660-3736d7060e90"
+            },
+            {
+              "set": "tor",
+              "number": "72",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0d8a104e-4254-59dc-b494-5f56402faa18"
+            },
+            {
+              "set": "tor",
+              "number": "83",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c5b09b6c-5252-5740-8de1-8b9b0d37f2e9"
+            },
+            {
+              "set": "tor",
+              "number": "84",
+              "weight": 1,
+              "foil": false,
+              "uuid": "989060b0-a72d-5936-a287-e94701f05e2c"
+            },
+            {
+              "set": "tor",
+              "number": "86",
+              "weight": 1,
+              "foil": false,
+              "uuid": "48368a13-87b7-53b1-ae7f-112abcccac04"
+            },
+            {
+              "set": "tor",
+              "number": "89",
+              "weight": 1,
+              "foil": false,
+              "uuid": "52d19dcf-afe7-56ac-9b20-e5d8842ff71e"
+            },
+            {
+              "set": "tor",
+              "number": "94",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e2046740-daff-5234-8cbc-0b65f7807c6a"
+            },
+            {
+              "set": "tor",
+              "number": "98",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4eb9ace4-8006-5cc9-93fd-902073549fb8"
+            },
+            {
+              "set": "tor",
+              "number": "105",
+              "weight": 1,
+              "foil": false,
+              "uuid": "988e9471-589f-595d-95b7-621de9007955"
+            },
+            {
+              "set": "tor",
+              "number": "106",
+              "weight": 1,
+              "foil": false,
+              "uuid": "19ddbe76-0037-511e-900f-329a182026a0"
+            },
+            {
+              "set": "tor",
+              "number": "110",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7297032b-c487-5ec5-95d8-f6f27fb90def"
+            },
+            {
+              "set": "tor",
+              "number": "112",
+              "weight": 1,
+              "foil": false,
+              "uuid": "49a12b66-156a-50a6-8058-b29da5cde6f3"
+            },
+            {
+              "set": "tor",
+              "number": "116",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5c63e915-0e02-5b2e-ab25-1c6fff519046"
+            },
+            {
+              "set": "tor",
+              "number": "117",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ff666c15-0491-520f-b264-3a2986b10362"
+            },
+            {
+              "set": "tor",
+              "number": "119",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3bbe2a88-8983-5b7b-8aa8-ac90210289e6"
+            },
+            {
+              "set": "tor",
+              "number": "120",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7248c346-3952-5cd8-9717-174224fe4f5b"
+            },
+            {
+              "set": "tor",
+              "number": "122",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9d00e2a7-604e-52a9-8417-c92a00f88f16"
+            },
+            {
+              "set": "tor",
+              "number": "124",
+              "weight": 1,
+              "foil": false,
+              "uuid": "908b7e06-78e0-5495-bb55-c92cd41ab886"
+            },
+            {
+              "set": "tor",
+              "number": "134",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c3158763-e39d-5b9b-a518-6f26087f70dd"
+            },
+            {
+              "set": "tor",
+              "number": "138",
+              "weight": 1,
+              "foil": false,
+              "uuid": "70a30893-d11b-50a7-83ef-2be0cf5837a9"
+            },
+            {
+              "set": "tor",
+              "number": "139",
+              "weight": 1,
+              "foil": false,
+              "uuid": "53a58169-e2c5-5191-a125-87353eb951c4"
+            },
+            {
+              "set": "tor",
+              "number": "140",
+              "weight": 1,
+              "foil": false,
+              "uuid": "40698409-a9af-53b7-850d-4411fe01fe49"
+            },
+            {
+              "set": "tor",
+              "number": "141",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cc9dc60e-4b34-5477-8e5d-24a5c8cfc238"
+            },
+            {
+              "set": "tor",
+              "number": "142",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a2684ded-4874-5516-9398-96182a6c50ba"
+            },
+            {
+              "set": "tor",
+              "number": "143",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d352b51b-fc4e-5926-b674-aa0871efe326"
+            }
+          ]
+        },
+        "common": {
+          "balance_colors": true,
+          "total_weight": 55,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "2",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ddb07907-9ce1-5938-b972-d34c53eaa94f"
+            },
+            {
+              "set": "tor",
+              "number": "5",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1f6c1d56-0c51-5274-a2d4-7bc58e56be59"
+            },
+            {
+              "set": "tor",
+              "number": "6",
+              "weight": 1,
+              "foil": false,
+              "uuid": "08f51ca5-bd07-5616-a787-a75d0cebd0ea"
+            },
+            {
+              "set": "tor",
+              "number": "9",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d6b06a6f-7427-5b46-8f97-f6beb053d727"
+            },
+            {
+              "set": "tor",
+              "number": "11",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0874b6d9-0619-5649-9208-e02fbed73a17"
+            },
+            {
+              "set": "tor",
+              "number": "12",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1fcdafc5-bbbe-5cc8-97ee-34d542ccae5b"
+            },
+            {
+              "set": "tor",
+              "number": "15",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0fa43b6d-f844-5790-89c9-834903b07496"
+            },
+            {
+              "set": "tor",
+              "number": "18",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3cc5aa27-fd04-51ea-9165-fc2be033009c"
+            },
+            {
+              "set": "tor",
+              "number": "24",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba9a0a67-c125-5d43-9344-d723c316127f"
+            },
+            {
+              "set": "tor",
+              "number": "27",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e2151173-fc41-5970-96e1-4a4291e72dcf"
+            },
+            {
+              "set": "tor",
+              "number": "30",
+              "weight": 1,
+              "foil": false,
+              "uuid": "412122d4-1f92-5039-81c5-53b246e31b9f"
+            },
+            {
+              "set": "tor",
+              "number": "32",
+              "weight": 1,
+              "foil": false,
+              "uuid": "44185394-1935-5e9f-9bd3-5b9771ac7697"
+            },
+            {
+              "set": "tor",
+              "number": "35",
+              "weight": 1,
+              "foil": false,
+              "uuid": "78de564a-f64b-51d7-90b1-4c84496409b7"
+            },
+            {
+              "set": "tor",
+              "number": "36",
+              "weight": 1,
+              "foil": false,
+              "uuid": "63e92ee1-de37-5cc9-85f3-2cf9d9ad750f"
+            },
+            {
+              "set": "tor",
+              "number": "38",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5f54f814-b452-59ff-8fbb-a791fb7c4462"
+            },
+            {
+              "set": "tor",
+              "number": "39",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e44d3e62-17dc-5cd7-b637-f1c0f18cf811"
+            },
+            {
+              "set": "tor",
+              "number": "41",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b9839771-6017-5edd-8c0f-250cb73c6d48"
+            },
+            {
+              "set": "tor",
+              "number": "43",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ced723da-ba01-575d-9bb1-417982807a28"
+            },
+            {
+              "set": "tor",
+              "number": "47",
+              "weight": 1,
+              "foil": false,
+              "uuid": "77a56a80-ccff-560f-8994-7b882a5eaaba"
+            },
+            {
+              "set": "tor",
+              "number": "51",
+              "weight": 1,
+              "foil": false,
+              "uuid": "87ba5908-55bc-52df-aecc-98f3ec6edad3"
+            },
+            {
+              "set": "tor",
+              "number": "52",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0e7cf4e2-dd04-55be-87ca-cf437596ed23"
+            },
+            {
+              "set": "tor",
+              "number": "53",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c6f714f-a315-5464-8622-1844834013a4"
+            },
+            {
+              "set": "tor",
+              "number": "54",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e23652ea-49ac-5817-b59f-8e380a7eada0"
+            },
+            {
+              "set": "tor",
+              "number": "58",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3aef2983-40c6-544b-9393-27814e6df47b"
+            },
+            {
+              "set": "tor",
+              "number": "60",
+              "weight": 1,
+              "foil": false,
+              "uuid": "29217f6e-fdd2-5eaa-aa4f-31b0cb668e60"
+            },
+            {
+              "set": "tor",
+              "number": "62",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ee49e3aa-982f-58ed-9fd3-598d6e10b48f"
+            },
+            {
+              "set": "tor",
+              "number": "69",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0629f77d-c16f-595f-885c-b35e4612ed86"
+            },
+            {
+              "set": "tor",
+              "number": "75",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bc2ea9b7-1007-562c-bafe-341c729008a4"
+            },
+            {
+              "set": "tor",
+              "number": "76",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e2ee3a3f-3025-56e7-8742-a7085d65531b"
+            },
+            {
+              "set": "tor",
+              "number": "77",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2b3144bc-c36e-5269-886b-114b16f91893"
+            },
+            {
+              "set": "tor",
+              "number": "78",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8f6ec1be-a0bf-566c-a1ee-b1ab090dc701"
+            },
+            {
+              "set": "tor",
+              "number": "79",
+              "weight": 1,
+              "foil": false,
+              "uuid": "abceaf8b-c9e6-5eef-b8c9-38be124bc7bb"
+            },
+            {
+              "set": "tor",
+              "number": "81",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a7114daf-eee0-5326-93cb-c1c1ad5cbf68"
+            },
+            {
+              "set": "tor",
+              "number": "85",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5766dd59-450c-518c-9dd5-dcbaaff2b734"
+            },
+            {
+              "set": "tor",
+              "number": "87",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05ac49fe-e971-557f-be97-387837f991ab"
+            },
+            {
+              "set": "tor",
+              "number": "88",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b016c395-47e6-5a94-88af-3e554fcab6ce"
+            },
+            {
+              "set": "tor",
+              "number": "90",
+              "weight": 1,
+              "foil": false,
+              "uuid": "63c421f3-b215-5f52-82b5-74300e2a5ac4"
+            },
+            {
+              "set": "tor",
+              "number": "92",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9a1dda5d-6cc4-56f0-8778-adc95a352787"
+            },
+            {
+              "set": "tor",
+              "number": "93",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f4131788-1a62-5b26-8abf-e5a32f0348d4"
+            },
+            {
+              "set": "tor",
+              "number": "96",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d902e008-29eb-5815-a4da-2aa3c3ce94c9"
+            },
+            {
+              "set": "tor",
+              "number": "97",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b6fc518-5813-5bef-ab8e-c44b1b0f21d6"
+            },
+            {
+              "set": "tor",
+              "number": "99",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8db065b8-01ed-5b51-a9d0-afd0578a7f5a"
+            },
+            {
+              "set": "tor",
+              "number": "102",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ed777d42-0c42-52d7-a3aa-ee53b9befa40"
+            },
+            {
+              "set": "tor",
+              "number": "103",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7e49f29b-f0b3-573a-aa0a-541853ddb78a"
+            },
+            {
+              "set": "tor",
+              "number": "107",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475599f4-d6fd-5e0c-aa8e-2d3ecc370055"
+            },
+            {
+              "set": "tor",
+              "number": "109",
+              "weight": 1,
+              "foil": false,
+              "uuid": "38c8bbf7-b63c-55eb-b6c8-31feecfbf7be"
+            },
+            {
+              "set": "tor",
+              "number": "115",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1b4cd2f6-e517-5379-9841-9fb78d80f289"
+            },
+            {
+              "set": "tor",
+              "number": "118",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1abe8b04-69c4-5f90-af2c-5f3868a2c89c"
+            },
+            {
+              "set": "tor",
+              "number": "121",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e8e569e1-993c-5c44-b2ca-1a76e0bcfb8d"
+            },
+            {
+              "set": "tor",
+              "number": "123",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b8dff7c3-d5be-543f-b9ea-2c4a563743c7"
+            },
+            {
+              "set": "tor",
+              "number": "125",
+              "weight": 1,
+              "foil": false,
+              "uuid": "56dfb15c-6075-5802-ab33-75a8087c0080"
+            },
+            {
+              "set": "tor",
+              "number": "128",
+              "weight": 1,
+              "foil": false,
+              "uuid": "70feeeae-10b1-5969-9c2c-a0098ac2a24e"
+            },
+            {
+              "set": "tor",
+              "number": "129",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d2ca9cac-8d4d-536f-844f-c4dcae200843"
+            },
+            {
+              "set": "tor",
+              "number": "130",
+              "weight": 1,
+              "foil": false,
+              "uuid": "30d87966-33f2-505c-a6b7-df6f3593c1da"
+            },
+            {
+              "set": "tor",
+              "number": "132",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c8b8e7e-c1ac-5e51-b505-429ed98dc7c7"
+            }
+          ]
+        },
+        "foil_common": {
+          "total_weight": 55,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "2",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ddb07907-9ce1-5938-b972-d34c53eaa94f"
+            },
+            {
+              "set": "tor",
+              "number": "5",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1f6c1d56-0c51-5274-a2d4-7bc58e56be59"
+            },
+            {
+              "set": "tor",
+              "number": "6",
+              "weight": 1,
+              "foil": true,
+              "uuid": "08f51ca5-bd07-5616-a787-a75d0cebd0ea"
+            },
+            {
+              "set": "tor",
+              "number": "9",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d6b06a6f-7427-5b46-8f97-f6beb053d727"
+            },
+            {
+              "set": "tor",
+              "number": "11",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0874b6d9-0619-5649-9208-e02fbed73a17"
+            },
+            {
+              "set": "tor",
+              "number": "12",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1fcdafc5-bbbe-5cc8-97ee-34d542ccae5b"
+            },
+            {
+              "set": "tor",
+              "number": "15",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0fa43b6d-f844-5790-89c9-834903b07496"
+            },
+            {
+              "set": "tor",
+              "number": "18",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3cc5aa27-fd04-51ea-9165-fc2be033009c"
+            },
+            {
+              "set": "tor",
+              "number": "24",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ba9a0a67-c125-5d43-9344-d723c316127f"
+            },
+            {
+              "set": "tor",
+              "number": "27",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2151173-fc41-5970-96e1-4a4291e72dcf"
+            },
+            {
+              "set": "tor",
+              "number": "30",
+              "weight": 1,
+              "foil": true,
+              "uuid": "412122d4-1f92-5039-81c5-53b246e31b9f"
+            },
+            {
+              "set": "tor",
+              "number": "32",
+              "weight": 1,
+              "foil": true,
+              "uuid": "44185394-1935-5e9f-9bd3-5b9771ac7697"
+            },
+            {
+              "set": "tor",
+              "number": "35",
+              "weight": 1,
+              "foil": true,
+              "uuid": "78de564a-f64b-51d7-90b1-4c84496409b7"
+            },
+            {
+              "set": "tor",
+              "number": "36",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63e92ee1-de37-5cc9-85f3-2cf9d9ad750f"
+            },
+            {
+              "set": "tor",
+              "number": "38",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5f54f814-b452-59ff-8fbb-a791fb7c4462"
+            },
+            {
+              "set": "tor",
+              "number": "39",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e44d3e62-17dc-5cd7-b637-f1c0f18cf811"
+            },
+            {
+              "set": "tor",
+              "number": "41",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b9839771-6017-5edd-8c0f-250cb73c6d48"
+            },
+            {
+              "set": "tor",
+              "number": "43",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ced723da-ba01-575d-9bb1-417982807a28"
+            },
+            {
+              "set": "tor",
+              "number": "47",
+              "weight": 1,
+              "foil": true,
+              "uuid": "77a56a80-ccff-560f-8994-7b882a5eaaba"
+            },
+            {
+              "set": "tor",
+              "number": "51",
+              "weight": 1,
+              "foil": true,
+              "uuid": "87ba5908-55bc-52df-aecc-98f3ec6edad3"
+            },
+            {
+              "set": "tor",
+              "number": "52",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0e7cf4e2-dd04-55be-87ca-cf437596ed23"
+            },
+            {
+              "set": "tor",
+              "number": "53",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4c6f714f-a315-5464-8622-1844834013a4"
+            },
+            {
+              "set": "tor",
+              "number": "54",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e23652ea-49ac-5817-b59f-8e380a7eada0"
+            },
+            {
+              "set": "tor",
+              "number": "58",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3aef2983-40c6-544b-9393-27814e6df47b"
+            },
+            {
+              "set": "tor",
+              "number": "60",
+              "weight": 1,
+              "foil": true,
+              "uuid": "29217f6e-fdd2-5eaa-aa4f-31b0cb668e60"
+            },
+            {
+              "set": "tor",
+              "number": "62",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ee49e3aa-982f-58ed-9fd3-598d6e10b48f"
+            },
+            {
+              "set": "tor",
+              "number": "69",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0629f77d-c16f-595f-885c-b35e4612ed86"
+            },
+            {
+              "set": "tor",
+              "number": "75",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bc2ea9b7-1007-562c-bafe-341c729008a4"
+            },
+            {
+              "set": "tor",
+              "number": "76",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2ee3a3f-3025-56e7-8742-a7085d65531b"
+            },
+            {
+              "set": "tor",
+              "number": "77",
+              "weight": 1,
+              "foil": true,
+              "uuid": "2b3144bc-c36e-5269-886b-114b16f91893"
+            },
+            {
+              "set": "tor",
+              "number": "78",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8f6ec1be-a0bf-566c-a1ee-b1ab090dc701"
+            },
+            {
+              "set": "tor",
+              "number": "79",
+              "weight": 1,
+              "foil": true,
+              "uuid": "abceaf8b-c9e6-5eef-b8c9-38be124bc7bb"
+            },
+            {
+              "set": "tor",
+              "number": "81",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a7114daf-eee0-5326-93cb-c1c1ad5cbf68"
+            },
+            {
+              "set": "tor",
+              "number": "85",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5766dd59-450c-518c-9dd5-dcbaaff2b734"
+            },
+            {
+              "set": "tor",
+              "number": "87",
+              "weight": 1,
+              "foil": true,
+              "uuid": "05ac49fe-e971-557f-be97-387837f991ab"
+            },
+            {
+              "set": "tor",
+              "number": "88",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b016c395-47e6-5a94-88af-3e554fcab6ce"
+            },
+            {
+              "set": "tor",
+              "number": "90",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63c421f3-b215-5f52-82b5-74300e2a5ac4"
+            },
+            {
+              "set": "tor",
+              "number": "92",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9a1dda5d-6cc4-56f0-8778-adc95a352787"
+            },
+            {
+              "set": "tor",
+              "number": "93",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f4131788-1a62-5b26-8abf-e5a32f0348d4"
+            },
+            {
+              "set": "tor",
+              "number": "96",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d902e008-29eb-5815-a4da-2aa3c3ce94c9"
+            },
+            {
+              "set": "tor",
+              "number": "97",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5b6fc518-5813-5bef-ab8e-c44b1b0f21d6"
+            },
+            {
+              "set": "tor",
+              "number": "99",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8db065b8-01ed-5b51-a9d0-afd0578a7f5a"
+            },
+            {
+              "set": "tor",
+              "number": "102",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ed777d42-0c42-52d7-a3aa-ee53b9befa40"
+            },
+            {
+              "set": "tor",
+              "number": "103",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7e49f29b-f0b3-573a-aa0a-541853ddb78a"
+            },
+            {
+              "set": "tor",
+              "number": "107",
+              "weight": 1,
+              "foil": true,
+              "uuid": "475599f4-d6fd-5e0c-aa8e-2d3ecc370055"
+            },
+            {
+              "set": "tor",
+              "number": "109",
+              "weight": 1,
+              "foil": true,
+              "uuid": "38c8bbf7-b63c-55eb-b6c8-31feecfbf7be"
+            },
+            {
+              "set": "tor",
+              "number": "115",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1b4cd2f6-e517-5379-9841-9fb78d80f289"
+            },
+            {
+              "set": "tor",
+              "number": "118",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1abe8b04-69c4-5f90-af2c-5f3868a2c89c"
+            },
+            {
+              "set": "tor",
+              "number": "121",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e8e569e1-993c-5c44-b2ca-1a76e0bcfb8d"
+            },
+            {
+              "set": "tor",
+              "number": "123",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b8dff7c3-d5be-543f-b9ea-2c4a563743c7"
+            },
+            {
+              "set": "tor",
+              "number": "125",
+              "weight": 1,
+              "foil": true,
+              "uuid": "56dfb15c-6075-5802-ab33-75a8087c0080"
+            },
+            {
+              "set": "tor",
+              "number": "128",
+              "weight": 1,
+              "foil": true,
+              "uuid": "70feeeae-10b1-5969-9c2c-a0098ac2a24e"
+            },
+            {
+              "set": "tor",
+              "number": "129",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d2ca9cac-8d4d-536f-844f-c4dcae200843"
+            },
+            {
+              "set": "tor",
+              "number": "130",
+              "weight": 1,
+              "foil": true,
+              "uuid": "30d87966-33f2-505c-a6b7-df6f3593c1da"
+            },
+            {
+              "set": "tor",
+              "number": "132",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4c8b8e7e-c1ac-5e51-b505-429ed98dc7c7"
+            }
+          ]
+        },
+        "foil_uncommon": {
+          "total_weight": 44,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "3",
+              "weight": 1,
+              "foil": true,
+              "uuid": "441ceda3-1ceb-5502-bad4-43254850608e"
+            },
+            {
+              "set": "tor",
+              "number": "4",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bc146494-d03f-5c9f-81ff-71aea02c7946"
+            },
+            {
+              "set": "tor",
+              "number": "7",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c55b66dc-8ca0-5396-a889-981c0f86a055"
+            },
+            {
+              "set": "tor",
+              "number": "16",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d4a31710-0637-50eb-8fe3-41817842b686"
+            },
+            {
+              "set": "tor",
+              "number": "17",
+              "weight": 1,
+              "foil": true,
+              "uuid": "cba1546a-9dc6-5b14-8b38-8f14b66ab860"
+            },
+            {
+              "set": "tor",
+              "number": "19",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c018f0c1-d898-5b54-837f-03dc011182c1"
+            },
+            {
+              "set": "tor",
+              "number": "25",
+              "weight": 1,
+              "foil": true,
+              "uuid": "2610df1e-b8cc-5b79-8abc-e02e17ba4675"
+            },
+            {
+              "set": "tor",
+              "number": "26",
+              "weight": 1,
+              "foil": true,
+              "uuid": "71c348ea-ccbf-52df-9a9c-990675344cc9"
+            },
+            {
+              "set": "tor",
+              "number": "28",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0d815dba-bbcc-5a5e-a2cd-556a618d6bc6"
+            },
+            {
+              "set": "tor",
+              "number": "29",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1e6a2789-eff5-5d79-9904-26898236e81b"
+            },
+            {
+              "set": "tor",
+              "number": "33",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e8462ebd-de29-557a-8358-b88d87d8d34a"
+            },
+            {
+              "set": "tor",
+              "number": "34",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5c150d9b-681a-50e8-8395-294543ffaeae"
+            },
+            {
+              "set": "tor",
+              "number": "40",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d317e668-b43c-5760-ba06-62765c8d1bcf"
+            },
+            {
+              "set": "tor",
+              "number": "48",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d23e0bc2-550e-5718-872d-b6e8529672d1"
+            },
+            {
+              "set": "tor",
+              "number": "50",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c77bbbae-3eac-5600-9d8c-bb6c30f7315e"
+            },
+            {
+              "set": "tor",
+              "number": "55",
+              "weight": 1,
+              "foil": true,
+              "uuid": "dadc3a3e-4ea8-5658-904d-4b246b432fda"
+            },
+            {
+              "set": "tor",
+              "number": "57",
+              "weight": 1,
+              "foil": true,
+              "uuid": "96789104-3d73-5cc6-be73-02f78ccf43e9"
+            },
+            {
+              "set": "tor",
+              "number": "61",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4fbeefa6-7da4-57b4-b4f0-43532ff49a7b"
+            },
+            {
+              "set": "tor",
+              "number": "63",
+              "weight": 1,
+              "foil": true,
+              "uuid": "86ddd9ce-bbb6-5a6c-b2eb-16459cd0b4fc"
+            },
+            {
+              "set": "tor",
+              "number": "70",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f1dcaea8-e6b3-5580-9660-3736d7060e90"
+            },
+            {
+              "set": "tor",
+              "number": "72",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0d8a104e-4254-59dc-b494-5f56402faa18"
+            },
+            {
+              "set": "tor",
+              "number": "83",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c5b09b6c-5252-5740-8de1-8b9b0d37f2e9"
+            },
+            {
+              "set": "tor",
+              "number": "84",
+              "weight": 1,
+              "foil": true,
+              "uuid": "989060b0-a72d-5936-a287-e94701f05e2c"
+            },
+            {
+              "set": "tor",
+              "number": "86",
+              "weight": 1,
+              "foil": true,
+              "uuid": "48368a13-87b7-53b1-ae7f-112abcccac04"
+            },
+            {
+              "set": "tor",
+              "number": "89",
+              "weight": 1,
+              "foil": true,
+              "uuid": "52d19dcf-afe7-56ac-9b20-e5d8842ff71e"
+            },
+            {
+              "set": "tor",
+              "number": "94",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2046740-daff-5234-8cbc-0b65f7807c6a"
+            },
+            {
+              "set": "tor",
+              "number": "98",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4eb9ace4-8006-5cc9-93fd-902073549fb8"
+            },
+            {
+              "set": "tor",
+              "number": "105",
+              "weight": 1,
+              "foil": true,
+              "uuid": "988e9471-589f-595d-95b7-621de9007955"
+            },
+            {
+              "set": "tor",
+              "number": "106",
+              "weight": 1,
+              "foil": true,
+              "uuid": "19ddbe76-0037-511e-900f-329a182026a0"
+            },
+            {
+              "set": "tor",
+              "number": "110",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7297032b-c487-5ec5-95d8-f6f27fb90def"
+            },
+            {
+              "set": "tor",
+              "number": "112",
+              "weight": 1,
+              "foil": true,
+              "uuid": "49a12b66-156a-50a6-8058-b29da5cde6f3"
+            },
+            {
+              "set": "tor",
+              "number": "116",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5c63e915-0e02-5b2e-ab25-1c6fff519046"
+            },
+            {
+              "set": "tor",
+              "number": "117",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ff666c15-0491-520f-b264-3a2986b10362"
+            },
+            {
+              "set": "tor",
+              "number": "119",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3bbe2a88-8983-5b7b-8aa8-ac90210289e6"
+            },
+            {
+              "set": "tor",
+              "number": "120",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7248c346-3952-5cd8-9717-174224fe4f5b"
+            },
+            {
+              "set": "tor",
+              "number": "122",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9d00e2a7-604e-52a9-8417-c92a00f88f16"
+            },
+            {
+              "set": "tor",
+              "number": "124",
+              "weight": 1,
+              "foil": true,
+              "uuid": "908b7e06-78e0-5495-bb55-c92cd41ab886"
+            },
+            {
+              "set": "tor",
+              "number": "134",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c3158763-e39d-5b9b-a518-6f26087f70dd"
+            },
+            {
+              "set": "tor",
+              "number": "138",
+              "weight": 1,
+              "foil": true,
+              "uuid": "70a30893-d11b-50a7-83ef-2be0cf5837a9"
+            },
+            {
+              "set": "tor",
+              "number": "139",
+              "weight": 1,
+              "foil": true,
+              "uuid": "53a58169-e2c5-5191-a125-87353eb951c4"
+            },
+            {
+              "set": "tor",
+              "number": "140",
+              "weight": 1,
+              "foil": true,
+              "uuid": "40698409-a9af-53b7-850d-4411fe01fe49"
+            },
+            {
+              "set": "tor",
+              "number": "141",
+              "weight": 1,
+              "foil": true,
+              "uuid": "cc9dc60e-4b34-5477-8e5d-24a5c8cfc238"
+            },
+            {
+              "set": "tor",
+              "number": "142",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a2684ded-4874-5516-9398-96182a6c50ba"
+            },
+            {
+              "set": "tor",
+              "number": "143",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d352b51b-fc4e-5926-b674-aa0871efe326"
+            }
+          ]
+        },
+        "foil_rare": {
+          "total_weight": 44,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "1",
+              "weight": 1,
+              "foil": true,
+              "uuid": "fc1a0569-b60f-5552-9e70-4173a8ed2ed9"
+            },
+            {
+              "set": "tor",
+              "number": "8",
+              "weight": 1,
+              "foil": true,
+              "uuid": "519e48b8-482c-561f-99e2-7c103c1adc1c"
+            },
+            {
+              "set": "tor",
+              "number": "10",
+              "weight": 1,
+              "foil": true,
+              "uuid": "6f4643e0-8b63-536f-996b-e5dbfe8b28e2"
+            },
+            {
+              "set": "tor",
+              "number": "13",
+              "weight": 1,
+              "foil": true,
+              "uuid": "cf426dc0-d57a-5d18-b439-7ab99d16b5b3"
+            },
+            {
+              "set": "tor",
+              "number": "14",
+              "weight": 1,
+              "foil": true,
+              "uuid": "29dadd6e-660b-52a0-80b7-ef4e3a714a01"
+            },
+            {
+              "set": "tor",
+              "number": "20",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9a42fd02-1943-568d-9fc3-7a2d9b7a6e91"
+            },
+            {
+              "set": "tor",
+              "number": "21",
+              "weight": 1,
+              "foil": true,
+              "uuid": "23f5d9b5-4bb5-576e-a00b-ebd15fb35dde"
+            },
+            {
+              "set": "tor",
+              "number": "22",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ab88c891-75d4-5d09-acf9-a758cd440f32"
+            },
+            {
+              "set": "tor",
+              "number": "23",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bc9aee0e-058a-5127-a7fd-83a6d730caf0"
+            },
+            {
+              "set": "tor",
+              "number": "31",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4987901a-a992-5217-b716-9243a0c6f8b1"
+            },
+            {
+              "set": "tor",
+              "number": "37",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d565f956-c713-5105-800a-07cf2deec32c"
+            },
+            {
+              "set": "tor",
+              "number": "42",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a913c87d-8234-5ee5-ae72-0ec343f9e62d"
+            },
+            {
+              "set": "tor",
+              "number": "44",
+              "weight": 1,
+              "foil": true,
+              "uuid": "addaa28a-1f9c-5197-968d-3170447224bb"
+            },
+            {
+              "set": "tor",
+              "number": "45",
+              "weight": 1,
+              "foil": true,
+              "uuid": "393bf366-6e5d-5170-8458-fd5e8dc2f91c"
+            },
+            {
+              "set": "tor",
+              "number": "46",
+              "weight": 1,
+              "foil": true,
+              "uuid": "44627f26-cd3b-5a40-a724-b92d4df76e6a"
+            },
+            {
+              "set": "tor",
+              "number": "49",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f2d75518-971f-5b19-8f68-4a03aed356c6"
+            },
+            {
+              "set": "tor",
+              "number": "56",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9b8a549d-4cd1-53d6-900c-7f10cbf8a14c"
+            },
+            {
+              "set": "tor",
+              "number": "59",
+              "weight": 1,
+              "foil": true,
+              "uuid": "54c78af4-d7ea-5a67-ba83-4caf764364a4"
+            },
+            {
+              "set": "tor",
+              "number": "64",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5f648e9e-a131-5068-82be-9e88c0ab0bfe"
+            },
+            {
+              "set": "tor",
+              "number": "65",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0ba5cbc3-2ed7-53db-bc33-485b75072aba"
+            },
+            {
+              "set": "tor",
+              "number": "66",
+              "weight": 1,
+              "foil": true,
+              "uuid": "12318b18-d6b9-5e91-81ff-48b4c9296a12"
+            },
+            {
+              "set": "tor",
+              "number": "67",
+              "weight": 1,
+              "foil": true,
+              "uuid": "06906c32-7d54-54c7-aa9a-babed68c0d88"
+            },
+            {
+              "set": "tor",
+              "number": "68",
+              "weight": 1,
+              "foil": true,
+              "uuid": "31d67ad5-fb18-51e0-88df-c48586cc52c7"
+            },
+            {
+              "set": "tor",
+              "number": "71",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ea852198-b417-5208-b049-965d625f6726"
+            },
+            {
+              "set": "tor",
+              "number": "73",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a8f0ce54-9847-5e65-8fcd-3040a7418828"
+            },
+            {
+              "set": "tor",
+              "number": "74",
+              "weight": 1,
+              "foil": true,
+              "uuid": "dd8a801e-f880-548f-8d7a-5c9bd2d4f5c3"
+            },
+            {
+              "set": "tor",
+              "number": "80",
+              "weight": 1,
+              "foil": true,
+              "uuid": "16409fb6-a1d0-5fe7-8169-9e975490210a"
+            },
+            {
+              "set": "tor",
+              "number": "82",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63254f5b-a7ee-540f-8296-8935fe0c6389"
+            },
+            {
+              "set": "tor",
+              "number": "91",
+              "weight": 1,
+              "foil": true,
+              "uuid": "106af149-efa9-51ae-8ae6-abdd46ac1a74"
+            },
+            {
+              "set": "tor",
+              "number": "95",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b0ff65aa-9350-5432-9c7c-0658ecbd626d"
+            },
+            {
+              "set": "tor",
+              "number": "100",
+              "weight": 1,
+              "foil": true,
+              "uuid": "dffe11c6-c922-560b-a7d0-a87b5f594baa"
+            },
+            {
+              "set": "tor",
+              "number": "101",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bd6bbd55-0507-5c2a-9435-a170a5b09698"
+            },
+            {
+              "set": "tor",
+              "number": "104",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5eddb334-6cf2-50ac-b25f-d0caaf61b258"
+            },
+            {
+              "set": "tor",
+              "number": "108",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a527f2a8-656e-53fe-a0a7-e1274895af0b"
+            },
+            {
+              "set": "tor",
+              "number": "111",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b176c4bd-74a3-51a4-b223-930edf3e81fa"
+            },
+            {
+              "set": "tor",
+              "number": "113",
+              "weight": 1,
+              "foil": true,
+              "uuid": "fa1c13c4-3989-5d83-9e27-c6b0ee423183"
+            },
+            {
+              "set": "tor",
+              "number": "114",
+              "weight": 1,
+              "foil": true,
+              "uuid": "80d91e47-765f-5895-8ed3-b62319ce17f4"
+            },
+            {
+              "set": "tor",
+              "number": "126",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f18cd46b-b364-5825-92c6-53dd633cb5ba"
+            },
+            {
+              "set": "tor",
+              "number": "127",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bfeb3ac2-3de7-509c-8f6d-f32aee83c139"
+            },
+            {
+              "set": "tor",
+              "number": "131",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7b115352-628b-5e26-b4d5-71b5b0ecd657"
+            },
+            {
+              "set": "tor",
+              "number": "133",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c3db5cd9-0568-5af8-a4e1-547aa1122491"
+            },
+            {
+              "set": "tor",
+              "number": "135",
+              "weight": 1,
+              "foil": true,
+              "uuid": "73eb451f-925c-536a-a490-2d3bb532b839"
+            },
+            {
+              "set": "tor",
+              "number": "136",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1bb0806a-46d6-501f-9f8e-f03fd42391c6"
+            },
+            {
+              "set": "tor",
+              "number": "137",
+              "weight": 1,
+              "foil": true,
+              "uuid": "71fabf1e-b2b7-5ec9-9a98-12ef81fb3c69"
+            }
+          ]
+        }
+      },
+      "source_set_codes": [
+        "tor"
+      ]
+    }
+  },
+  {
+    "uuid": "4d1b722d-deb3-5f67-a1e4-e0c0bca49cc0",
+    "name": "Torment Booster Pack",
+    "category": "booster_pack",
+    "cardCount": 15,
+    "subtype": "draft",
+    "identifiers": {
+      "abuId": "1476953",
+      "cardKingdomId": "1431",
+      "cardtraderId": "45998",
+      "csiId": "98227",
+      "mcmId": "210038",
+      "scgId": "SLD-MTG-PCK-TOR-EN",
+      "tcgplayerProductId": "27373",
+      "tntId": "101330"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/b623768e50eb2422",
+      "tcgplayer": "https://mtgjson.com/links/8d96651f28c68ec7"
+    },
+    "contents": {
+      "pack": [
+        {
+          "code": "draft",
+          "set": "tor"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment",
+    "extendedData": {
+      "code": "tor-fat-pack",
+      "boosters": [
+        {
+          "sheets": {
+            "foil_basic": 1,
+            "foil_common": 1
+          },
+          "weight": 1
+        }
+      ],
+      "sheets": {
+        "foil_basic": {
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "ody",
+              "number": "331",
+              "weight": 1,
+              "foil": true,
+              "uuid": "fd317690-4a6c-5f37-97c5-fb09f179c633"
+            },
+            {
+              "set": "ody",
+              "number": "332",
+              "weight": 1,
+              "foil": true,
+              "uuid": "6a8967bf-84be-5b14-ad31-6a5dc0efb375"
+            },
+            {
+              "set": "ody",
+              "number": "333",
+              "weight": 1,
+              "foil": true,
+              "uuid": "65b210e3-b8b7-54a4-b7cd-715641e42d41"
+            },
+            {
+              "set": "ody",
+              "number": "334",
+              "weight": 1,
+              "foil": true,
+              "uuid": "aa8730c2-7377-5ed3-9853-05fd4c96cbd5"
+            },
+            {
+              "set": "ody",
+              "number": "335",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d1558fc2-b254-5cbb-a408-7dd5c97acf23"
+            },
+            {
+              "set": "ody",
+              "number": "336",
+              "weight": 1,
+              "foil": true,
+              "uuid": "fe2f4ad4-65b3-5084-8f53-162d88c8433c"
+            },
+            {
+              "set": "ody",
+              "number": "337",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b8ee0208-27dd-54d3-b25f-3d6d351a6d47"
+            },
+            {
+              "set": "ody",
+              "number": "338",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4705c2be-4aac-500a-9a40-83bc96b987a3"
+            },
+            {
+              "set": "ody",
+              "number": "339",
+              "weight": 1,
+              "foil": true,
+              "uuid": "80cfa786-570f-5474-b7df-e36c03e17016"
+            },
+            {
+              "set": "ody",
+              "number": "340",
+              "weight": 1,
+              "foil": true,
+              "uuid": "57d2884c-53b0-55fd-8368-f84f02ec50fa"
+            },
+            {
+              "set": "ody",
+              "number": "341",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8d2bbb73-4606-5c32-8382-3a7c2876adc8"
+            },
+            {
+              "set": "ody",
+              "number": "342",
+              "weight": 1,
+              "foil": true,
+              "uuid": "6b8970fa-2bb9-58f7-ba13-ffc177a914c3"
+            },
+            {
+              "set": "ody",
+              "number": "343",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a261ddfd-a8c5-549e-b6de-01e6b369afc3"
+            },
+            {
+              "set": "ody",
+              "number": "344",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9077748b-110a-591e-8eae-39e13611124f"
+            },
+            {
+              "set": "ody",
+              "number": "345",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8cc27cb6-5b69-5f8b-83c5-a7251417e67c"
+            },
+            {
+              "set": "ody",
+              "number": "346",
+              "weight": 1,
+              "foil": true,
+              "uuid": "af13132c-589d-5b1d-a9d9-ed862d925efa"
+            },
+            {
+              "set": "ody",
+              "number": "347",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9161b799-9fa2-5501-b856-cf0e20dc6c34"
+            },
+            {
+              "set": "ody",
+              "number": "348",
+              "weight": 1,
+              "foil": true,
+              "uuid": "eb08181a-9298-5851-999f-2b36795705a2"
+            },
+            {
+              "set": "ody",
+              "number": "349",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b8656f2e-3dff-57a0-87a6-8e4d2eefe7c7"
+            },
+            {
+              "set": "ody",
+              "number": "350",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c0597e8c-3015-52de-8d3b-af6f4bd41595"
+            }
+          ]
+        },
+        "foil_common": {
+          "total_weight": 55,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "2",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ddb07907-9ce1-5938-b972-d34c53eaa94f"
+            },
+            {
+              "set": "tor",
+              "number": "5",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1f6c1d56-0c51-5274-a2d4-7bc58e56be59"
+            },
+            {
+              "set": "tor",
+              "number": "6",
+              "weight": 1,
+              "foil": true,
+              "uuid": "08f51ca5-bd07-5616-a787-a75d0cebd0ea"
+            },
+            {
+              "set": "tor",
+              "number": "9",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d6b06a6f-7427-5b46-8f97-f6beb053d727"
+            },
+            {
+              "set": "tor",
+              "number": "11",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0874b6d9-0619-5649-9208-e02fbed73a17"
+            },
+            {
+              "set": "tor",
+              "number": "12",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1fcdafc5-bbbe-5cc8-97ee-34d542ccae5b"
+            },
+            {
+              "set": "tor",
+              "number": "15",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0fa43b6d-f844-5790-89c9-834903b07496"
+            },
+            {
+              "set": "tor",
+              "number": "18",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3cc5aa27-fd04-51ea-9165-fc2be033009c"
+            },
+            {
+              "set": "tor",
+              "number": "24",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ba9a0a67-c125-5d43-9344-d723c316127f"
+            },
+            {
+              "set": "tor",
+              "number": "27",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2151173-fc41-5970-96e1-4a4291e72dcf"
+            },
+            {
+              "set": "tor",
+              "number": "30",
+              "weight": 1,
+              "foil": true,
+              "uuid": "412122d4-1f92-5039-81c5-53b246e31b9f"
+            },
+            {
+              "set": "tor",
+              "number": "32",
+              "weight": 1,
+              "foil": true,
+              "uuid": "44185394-1935-5e9f-9bd3-5b9771ac7697"
+            },
+            {
+              "set": "tor",
+              "number": "35",
+              "weight": 1,
+              "foil": true,
+              "uuid": "78de564a-f64b-51d7-90b1-4c84496409b7"
+            },
+            {
+              "set": "tor",
+              "number": "36",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63e92ee1-de37-5cc9-85f3-2cf9d9ad750f"
+            },
+            {
+              "set": "tor",
+              "number": "38",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5f54f814-b452-59ff-8fbb-a791fb7c4462"
+            },
+            {
+              "set": "tor",
+              "number": "39",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e44d3e62-17dc-5cd7-b637-f1c0f18cf811"
+            },
+            {
+              "set": "tor",
+              "number": "41",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b9839771-6017-5edd-8c0f-250cb73c6d48"
+            },
+            {
+              "set": "tor",
+              "number": "43",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ced723da-ba01-575d-9bb1-417982807a28"
+            },
+            {
+              "set": "tor",
+              "number": "47",
+              "weight": 1,
+              "foil": true,
+              "uuid": "77a56a80-ccff-560f-8994-7b882a5eaaba"
+            },
+            {
+              "set": "tor",
+              "number": "51",
+              "weight": 1,
+              "foil": true,
+              "uuid": "87ba5908-55bc-52df-aecc-98f3ec6edad3"
+            },
+            {
+              "set": "tor",
+              "number": "52",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0e7cf4e2-dd04-55be-87ca-cf437596ed23"
+            },
+            {
+              "set": "tor",
+              "number": "53",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4c6f714f-a315-5464-8622-1844834013a4"
+            },
+            {
+              "set": "tor",
+              "number": "54",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e23652ea-49ac-5817-b59f-8e380a7eada0"
+            },
+            {
+              "set": "tor",
+              "number": "58",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3aef2983-40c6-544b-9393-27814e6df47b"
+            },
+            {
+              "set": "tor",
+              "number": "60",
+              "weight": 1,
+              "foil": true,
+              "uuid": "29217f6e-fdd2-5eaa-aa4f-31b0cb668e60"
+            },
+            {
+              "set": "tor",
+              "number": "62",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ee49e3aa-982f-58ed-9fd3-598d6e10b48f"
+            },
+            {
+              "set": "tor",
+              "number": "69",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0629f77d-c16f-595f-885c-b35e4612ed86"
+            },
+            {
+              "set": "tor",
+              "number": "75",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bc2ea9b7-1007-562c-bafe-341c729008a4"
+            },
+            {
+              "set": "tor",
+              "number": "76",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2ee3a3f-3025-56e7-8742-a7085d65531b"
+            },
+            {
+              "set": "tor",
+              "number": "77",
+              "weight": 1,
+              "foil": true,
+              "uuid": "2b3144bc-c36e-5269-886b-114b16f91893"
+            },
+            {
+              "set": "tor",
+              "number": "78",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8f6ec1be-a0bf-566c-a1ee-b1ab090dc701"
+            },
+            {
+              "set": "tor",
+              "number": "79",
+              "weight": 1,
+              "foil": true,
+              "uuid": "abceaf8b-c9e6-5eef-b8c9-38be124bc7bb"
+            },
+            {
+              "set": "tor",
+              "number": "81",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a7114daf-eee0-5326-93cb-c1c1ad5cbf68"
+            },
+            {
+              "set": "tor",
+              "number": "85",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5766dd59-450c-518c-9dd5-dcbaaff2b734"
+            },
+            {
+              "set": "tor",
+              "number": "87",
+              "weight": 1,
+              "foil": true,
+              "uuid": "05ac49fe-e971-557f-be97-387837f991ab"
+            },
+            {
+              "set": "tor",
+              "number": "88",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b016c395-47e6-5a94-88af-3e554fcab6ce"
+            },
+            {
+              "set": "tor",
+              "number": "90",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63c421f3-b215-5f52-82b5-74300e2a5ac4"
+            },
+            {
+              "set": "tor",
+              "number": "92",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9a1dda5d-6cc4-56f0-8778-adc95a352787"
+            },
+            {
+              "set": "tor",
+              "number": "93",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f4131788-1a62-5b26-8abf-e5a32f0348d4"
+            },
+            {
+              "set": "tor",
+              "number": "96",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d902e008-29eb-5815-a4da-2aa3c3ce94c9"
+            },
+            {
+              "set": "tor",
+              "number": "97",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5b6fc518-5813-5bef-ab8e-c44b1b0f21d6"
+            },
+            {
+              "set": "tor",
+              "number": "99",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8db065b8-01ed-5b51-a9d0-afd0578a7f5a"
+            },
+            {
+              "set": "tor",
+              "number": "102",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ed777d42-0c42-52d7-a3aa-ee53b9befa40"
+            },
+            {
+              "set": "tor",
+              "number": "103",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7e49f29b-f0b3-573a-aa0a-541853ddb78a"
+            },
+            {
+              "set": "tor",
+              "number": "107",
+              "weight": 1,
+              "foil": true,
+              "uuid": "475599f4-d6fd-5e0c-aa8e-2d3ecc370055"
+            },
+            {
+              "set": "tor",
+              "number": "109",
+              "weight": 1,
+              "foil": true,
+              "uuid": "38c8bbf7-b63c-55eb-b6c8-31feecfbf7be"
+            },
+            {
+              "set": "tor",
+              "number": "115",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1b4cd2f6-e517-5379-9841-9fb78d80f289"
+            },
+            {
+              "set": "tor",
+              "number": "118",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1abe8b04-69c4-5f90-af2c-5f3868a2c89c"
+            },
+            {
+              "set": "tor",
+              "number": "121",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e8e569e1-993c-5c44-b2ca-1a76e0bcfb8d"
+            },
+            {
+              "set": "tor",
+              "number": "123",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b8dff7c3-d5be-543f-b9ea-2c4a563743c7"
+            },
+            {
+              "set": "tor",
+              "number": "125",
+              "weight": 1,
+              "foil": true,
+              "uuid": "56dfb15c-6075-5802-ab33-75a8087c0080"
+            },
+            {
+              "set": "tor",
+              "number": "128",
+              "weight": 1,
+              "foil": true,
+              "uuid": "70feeeae-10b1-5969-9c2c-a0098ac2a24e"
+            },
+            {
+              "set": "tor",
+              "number": "129",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d2ca9cac-8d4d-536f-844f-c4dcae200843"
+            },
+            {
+              "set": "tor",
+              "number": "130",
+              "weight": 1,
+              "foil": true,
+              "uuid": "30d87966-33f2-505c-a6b7-df6f3593c1da"
+            },
+            {
+              "set": "tor",
+              "number": "132",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4c8b8e7e-c1ac-5e51-b505-429ed98dc7c7"
+            }
+          ]
+        }
+      },
+      "source_set_codes": [
+        "ody",
+        "tor"
+      ]
+    },
+    "tcgcsvData": {
+      "product": {
+        "productId": 27373,
+        "name": "Torment - Booster Pack",
+        "cleanName": "Torment Booster Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/27373_200w.jpg",
+        "categoryId": 1,
+        "groupId": 112,
+        "url": "https://www.tcgplayer.com/product/27373/magic-torment-torment-booster-pack",
+        "modifiedOn": "2013-05-09T12:13:41.653",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 27373,
+          "lowPrice": 30,
+          "midPrice": 43.01,
+          "highPrice": 66.7,
+          "marketPrice": 27.63,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "548d09b6-7904-5447-a92d-1a867049198d",
+    "name": "Torment Fat Pack",
+    "category": "bundle",
+    "cardCount": 2,
+    "subtype": "fat_pack",
+    "identifiers": {
+      "abuId": "1101234",
+      "cardKingdomId": "240346",
+      "cardtraderId": "46000",
+      "csiId": "218272",
+      "mcmId": "210184",
+      "scgId": "SLD-MTG-BUN-TOR-EN",
+      "tcgplayerProductId": "78333",
+      "tntId": "155326"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/daf98549f339317d"
+    },
+    "contents": {
+      "other": [
+        {
+          "name": "The Torment Novel"
+        },
+        {
+          "name": "Torment Special Edition Spindown"
+        }
+      ],
+      "pack": [
+        {
+          "code": "fat-pack",
+          "set": "tor"
+        }
+      ],
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Torment Booster Pack",
+          "set": "tor",
+          "uuid": "4d1b722d-deb3-5f67-a1e4-e0c0bca49cc0"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment",
+    "extendedData": {
+      "code": "tor-fat-pack",
+      "boosters": [
+        {
+          "sheets": {
+            "foil_basic": 1,
+            "foil_common": 1
+          },
+          "weight": 1
+        }
+      ],
+      "sheets": {
+        "foil_basic": {
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "ody",
+              "number": "331",
+              "weight": 1,
+              "foil": true,
+              "uuid": "fd317690-4a6c-5f37-97c5-fb09f179c633"
+            },
+            {
+              "set": "ody",
+              "number": "332",
+              "weight": 1,
+              "foil": true,
+              "uuid": "6a8967bf-84be-5b14-ad31-6a5dc0efb375"
+            },
+            {
+              "set": "ody",
+              "number": "333",
+              "weight": 1,
+              "foil": true,
+              "uuid": "65b210e3-b8b7-54a4-b7cd-715641e42d41"
+            },
+            {
+              "set": "ody",
+              "number": "334",
+              "weight": 1,
+              "foil": true,
+              "uuid": "aa8730c2-7377-5ed3-9853-05fd4c96cbd5"
+            },
+            {
+              "set": "ody",
+              "number": "335",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d1558fc2-b254-5cbb-a408-7dd5c97acf23"
+            },
+            {
+              "set": "ody",
+              "number": "336",
+              "weight": 1,
+              "foil": true,
+              "uuid": "fe2f4ad4-65b3-5084-8f53-162d88c8433c"
+            },
+            {
+              "set": "ody",
+              "number": "337",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b8ee0208-27dd-54d3-b25f-3d6d351a6d47"
+            },
+            {
+              "set": "ody",
+              "number": "338",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4705c2be-4aac-500a-9a40-83bc96b987a3"
+            },
+            {
+              "set": "ody",
+              "number": "339",
+              "weight": 1,
+              "foil": true,
+              "uuid": "80cfa786-570f-5474-b7df-e36c03e17016"
+            },
+            {
+              "set": "ody",
+              "number": "340",
+              "weight": 1,
+              "foil": true,
+              "uuid": "57d2884c-53b0-55fd-8368-f84f02ec50fa"
+            },
+            {
+              "set": "ody",
+              "number": "341",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8d2bbb73-4606-5c32-8382-3a7c2876adc8"
+            },
+            {
+              "set": "ody",
+              "number": "342",
+              "weight": 1,
+              "foil": true,
+              "uuid": "6b8970fa-2bb9-58f7-ba13-ffc177a914c3"
+            },
+            {
+              "set": "ody",
+              "number": "343",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a261ddfd-a8c5-549e-b6de-01e6b369afc3"
+            },
+            {
+              "set": "ody",
+              "number": "344",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9077748b-110a-591e-8eae-39e13611124f"
+            },
+            {
+              "set": "ody",
+              "number": "345",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8cc27cb6-5b69-5f8b-83c5-a7251417e67c"
+            },
+            {
+              "set": "ody",
+              "number": "346",
+              "weight": 1,
+              "foil": true,
+              "uuid": "af13132c-589d-5b1d-a9d9-ed862d925efa"
+            },
+            {
+              "set": "ody",
+              "number": "347",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9161b799-9fa2-5501-b856-cf0e20dc6c34"
+            },
+            {
+              "set": "ody",
+              "number": "348",
+              "weight": 1,
+              "foil": true,
+              "uuid": "eb08181a-9298-5851-999f-2b36795705a2"
+            },
+            {
+              "set": "ody",
+              "number": "349",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b8656f2e-3dff-57a0-87a6-8e4d2eefe7c7"
+            },
+            {
+              "set": "ody",
+              "number": "350",
+              "weight": 1,
+              "foil": true,
+              "uuid": "c0597e8c-3015-52de-8d3b-af6f4bd41595"
+            }
+          ]
+        },
+        "foil_common": {
+          "total_weight": 55,
+          "cards": [
+            {
+              "set": "tor",
+              "number": "2",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ddb07907-9ce1-5938-b972-d34c53eaa94f"
+            },
+            {
+              "set": "tor",
+              "number": "5",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1f6c1d56-0c51-5274-a2d4-7bc58e56be59"
+            },
+            {
+              "set": "tor",
+              "number": "6",
+              "weight": 1,
+              "foil": true,
+              "uuid": "08f51ca5-bd07-5616-a787-a75d0cebd0ea"
+            },
+            {
+              "set": "tor",
+              "number": "9",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d6b06a6f-7427-5b46-8f97-f6beb053d727"
+            },
+            {
+              "set": "tor",
+              "number": "11",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0874b6d9-0619-5649-9208-e02fbed73a17"
+            },
+            {
+              "set": "tor",
+              "number": "12",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1fcdafc5-bbbe-5cc8-97ee-34d542ccae5b"
+            },
+            {
+              "set": "tor",
+              "number": "15",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0fa43b6d-f844-5790-89c9-834903b07496"
+            },
+            {
+              "set": "tor",
+              "number": "18",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3cc5aa27-fd04-51ea-9165-fc2be033009c"
+            },
+            {
+              "set": "tor",
+              "number": "24",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ba9a0a67-c125-5d43-9344-d723c316127f"
+            },
+            {
+              "set": "tor",
+              "number": "27",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2151173-fc41-5970-96e1-4a4291e72dcf"
+            },
+            {
+              "set": "tor",
+              "number": "30",
+              "weight": 1,
+              "foil": true,
+              "uuid": "412122d4-1f92-5039-81c5-53b246e31b9f"
+            },
+            {
+              "set": "tor",
+              "number": "32",
+              "weight": 1,
+              "foil": true,
+              "uuid": "44185394-1935-5e9f-9bd3-5b9771ac7697"
+            },
+            {
+              "set": "tor",
+              "number": "35",
+              "weight": 1,
+              "foil": true,
+              "uuid": "78de564a-f64b-51d7-90b1-4c84496409b7"
+            },
+            {
+              "set": "tor",
+              "number": "36",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63e92ee1-de37-5cc9-85f3-2cf9d9ad750f"
+            },
+            {
+              "set": "tor",
+              "number": "38",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5f54f814-b452-59ff-8fbb-a791fb7c4462"
+            },
+            {
+              "set": "tor",
+              "number": "39",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e44d3e62-17dc-5cd7-b637-f1c0f18cf811"
+            },
+            {
+              "set": "tor",
+              "number": "41",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b9839771-6017-5edd-8c0f-250cb73c6d48"
+            },
+            {
+              "set": "tor",
+              "number": "43",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ced723da-ba01-575d-9bb1-417982807a28"
+            },
+            {
+              "set": "tor",
+              "number": "47",
+              "weight": 1,
+              "foil": true,
+              "uuid": "77a56a80-ccff-560f-8994-7b882a5eaaba"
+            },
+            {
+              "set": "tor",
+              "number": "51",
+              "weight": 1,
+              "foil": true,
+              "uuid": "87ba5908-55bc-52df-aecc-98f3ec6edad3"
+            },
+            {
+              "set": "tor",
+              "number": "52",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0e7cf4e2-dd04-55be-87ca-cf437596ed23"
+            },
+            {
+              "set": "tor",
+              "number": "53",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4c6f714f-a315-5464-8622-1844834013a4"
+            },
+            {
+              "set": "tor",
+              "number": "54",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e23652ea-49ac-5817-b59f-8e380a7eada0"
+            },
+            {
+              "set": "tor",
+              "number": "58",
+              "weight": 1,
+              "foil": true,
+              "uuid": "3aef2983-40c6-544b-9393-27814e6df47b"
+            },
+            {
+              "set": "tor",
+              "number": "60",
+              "weight": 1,
+              "foil": true,
+              "uuid": "29217f6e-fdd2-5eaa-aa4f-31b0cb668e60"
+            },
+            {
+              "set": "tor",
+              "number": "62",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ee49e3aa-982f-58ed-9fd3-598d6e10b48f"
+            },
+            {
+              "set": "tor",
+              "number": "69",
+              "weight": 1,
+              "foil": true,
+              "uuid": "0629f77d-c16f-595f-885c-b35e4612ed86"
+            },
+            {
+              "set": "tor",
+              "number": "75",
+              "weight": 1,
+              "foil": true,
+              "uuid": "bc2ea9b7-1007-562c-bafe-341c729008a4"
+            },
+            {
+              "set": "tor",
+              "number": "76",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e2ee3a3f-3025-56e7-8742-a7085d65531b"
+            },
+            {
+              "set": "tor",
+              "number": "77",
+              "weight": 1,
+              "foil": true,
+              "uuid": "2b3144bc-c36e-5269-886b-114b16f91893"
+            },
+            {
+              "set": "tor",
+              "number": "78",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8f6ec1be-a0bf-566c-a1ee-b1ab090dc701"
+            },
+            {
+              "set": "tor",
+              "number": "79",
+              "weight": 1,
+              "foil": true,
+              "uuid": "abceaf8b-c9e6-5eef-b8c9-38be124bc7bb"
+            },
+            {
+              "set": "tor",
+              "number": "81",
+              "weight": 1,
+              "foil": true,
+              "uuid": "a7114daf-eee0-5326-93cb-c1c1ad5cbf68"
+            },
+            {
+              "set": "tor",
+              "number": "85",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5766dd59-450c-518c-9dd5-dcbaaff2b734"
+            },
+            {
+              "set": "tor",
+              "number": "87",
+              "weight": 1,
+              "foil": true,
+              "uuid": "05ac49fe-e971-557f-be97-387837f991ab"
+            },
+            {
+              "set": "tor",
+              "number": "88",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b016c395-47e6-5a94-88af-3e554fcab6ce"
+            },
+            {
+              "set": "tor",
+              "number": "90",
+              "weight": 1,
+              "foil": true,
+              "uuid": "63c421f3-b215-5f52-82b5-74300e2a5ac4"
+            },
+            {
+              "set": "tor",
+              "number": "92",
+              "weight": 1,
+              "foil": true,
+              "uuid": "9a1dda5d-6cc4-56f0-8778-adc95a352787"
+            },
+            {
+              "set": "tor",
+              "number": "93",
+              "weight": 1,
+              "foil": true,
+              "uuid": "f4131788-1a62-5b26-8abf-e5a32f0348d4"
+            },
+            {
+              "set": "tor",
+              "number": "96",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d902e008-29eb-5815-a4da-2aa3c3ce94c9"
+            },
+            {
+              "set": "tor",
+              "number": "97",
+              "weight": 1,
+              "foil": true,
+              "uuid": "5b6fc518-5813-5bef-ab8e-c44b1b0f21d6"
+            },
+            {
+              "set": "tor",
+              "number": "99",
+              "weight": 1,
+              "foil": true,
+              "uuid": "8db065b8-01ed-5b51-a9d0-afd0578a7f5a"
+            },
+            {
+              "set": "tor",
+              "number": "102",
+              "weight": 1,
+              "foil": true,
+              "uuid": "ed777d42-0c42-52d7-a3aa-ee53b9befa40"
+            },
+            {
+              "set": "tor",
+              "number": "103",
+              "weight": 1,
+              "foil": true,
+              "uuid": "7e49f29b-f0b3-573a-aa0a-541853ddb78a"
+            },
+            {
+              "set": "tor",
+              "number": "107",
+              "weight": 1,
+              "foil": true,
+              "uuid": "475599f4-d6fd-5e0c-aa8e-2d3ecc370055"
+            },
+            {
+              "set": "tor",
+              "number": "109",
+              "weight": 1,
+              "foil": true,
+              "uuid": "38c8bbf7-b63c-55eb-b6c8-31feecfbf7be"
+            },
+            {
+              "set": "tor",
+              "number": "115",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1b4cd2f6-e517-5379-9841-9fb78d80f289"
+            },
+            {
+              "set": "tor",
+              "number": "118",
+              "weight": 1,
+              "foil": true,
+              "uuid": "1abe8b04-69c4-5f90-af2c-5f3868a2c89c"
+            },
+            {
+              "set": "tor",
+              "number": "121",
+              "weight": 1,
+              "foil": true,
+              "uuid": "e8e569e1-993c-5c44-b2ca-1a76e0bcfb8d"
+            },
+            {
+              "set": "tor",
+              "number": "123",
+              "weight": 1,
+              "foil": true,
+              "uuid": "b8dff7c3-d5be-543f-b9ea-2c4a563743c7"
+            },
+            {
+              "set": "tor",
+              "number": "125",
+              "weight": 1,
+              "foil": true,
+              "uuid": "56dfb15c-6075-5802-ab33-75a8087c0080"
+            },
+            {
+              "set": "tor",
+              "number": "128",
+              "weight": 1,
+              "foil": true,
+              "uuid": "70feeeae-10b1-5969-9c2c-a0098ac2a24e"
+            },
+            {
+              "set": "tor",
+              "number": "129",
+              "weight": 1,
+              "foil": true,
+              "uuid": "d2ca9cac-8d4d-536f-844f-c4dcae200843"
+            },
+            {
+              "set": "tor",
+              "number": "130",
+              "weight": 1,
+              "foil": true,
+              "uuid": "30d87966-33f2-505c-a6b7-df6f3593c1da"
+            },
+            {
+              "set": "tor",
+              "number": "132",
+              "weight": 1,
+              "foil": true,
+              "uuid": "4c8b8e7e-c1ac-5e51-b505-429ed98dc7c7"
+            }
+          ]
+        }
+      },
+      "source_set_codes": [
+        "ody",
+        "tor"
+      ]
+    },
+    "tcgcsvData": {
+      "product": {
+        "productId": 78333,
+        "name": "Torment - Fat Pack",
+        "cleanName": "Torment Fat Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78333_200w.jpg",
+        "categoryId": 1,
+        "groupId": 112,
+        "url": "https://www.tcgplayer.com/product/78333/magic-torment-torment-fat-pack",
+        "modifiedOn": "2019-10-11T12:23:29.067",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 78333,
+          "lowPrice": 799.99,
+          "midPrice": 799.99,
+          "highPrice": 799.99,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "ebc191fd-7eb7-5336-ae26-0e4eeacc5d58",
+    "name": "Torment MTGO Redemption",
+    "category": "box_set",
+    "cardCount": 143,
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Torment Redemption",
+          "set": "tor"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment"
+  },
+  {
+    "uuid": "8a808612-c77c-5b3e-b2a0-5759d9249193",
+    "name": "Torment MTGO Redemption Foil",
+    "category": "box_set",
+    "cardCount": 143,
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Torment Foil Redemption",
+          "set": "tor"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment"
+  },
+  {
+    "uuid": "14023501-9966-56b1-99af-45027da9f6a6",
+    "name": "Torment Theme Deck Display",
+    "category": "deck_box",
+    "subtype": "theme",
+    "identifiers": {
+      "abuId": "1101241",
+      "cardtraderId": "46005",
+      "csiId": "98224",
+      "mcmId": "210242",
+      "tntId": "101331"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 3,
+          "name": "Torment Theme Deck Grave Danger",
+          "set": "tor",
+          "uuid": "35fc1da5-b3ef-5656-b012-3f3c2ec4930f"
+        },
+        {
+          "count": 3,
+          "name": "Torment Theme Deck Insanity",
+          "set": "tor",
+          "uuid": "31300227-8cd5-5933-9051-854af883edce"
+        },
+        {
+          "count": 3,
+          "name": "Torment Theme Deck Sacrilege",
+          "set": "tor",
+          "uuid": "627d18d1-bf42-56dc-be47-67a88570d269"
+        },
+        {
+          "count": 3,
+          "name": "Torment Theme Deck Waking Nightmares",
+          "set": "tor",
+          "uuid": "86f5b0ac-055c-5245-b1a7-be48fb6e1b20"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment"
+  },
+  {
+    "uuid": "35fc1da5-b3ef-5656-b012-3f3c2ec4930f",
+    "name": "Torment Theme Deck Grave Danger",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "theme",
+    "identifiers": {
+      "abuId": "1101235",
+      "cardKingdomId": "1433",
+      "cardtraderId": "46001",
+      "mcmId": "253724",
+      "tcgplayerProductId": "120583",
+      "tntId": "101643"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/675ef3bd445acb3c"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Grave Danger",
+          "set": "tor"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment"
+  },
+  {
+    "uuid": "31300227-8cd5-5933-9051-854af883edce",
+    "name": "Torment Theme Deck Insanity",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "theme",
+    "identifiers": {
+      "abuId": "1101239",
+      "cardKingdomId": "1432",
+      "cardtraderId": "46002",
+      "mcmId": "253725",
+      "tcgplayerProductId": "244386",
+      "tntId": "101642"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/7abeb13e4d3a2c85"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Insanity",
+          "set": "tor"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment"
+  },
+  {
+    "uuid": "627d18d1-bf42-56dc-be47-67a88570d269",
+    "name": "Torment Theme Deck Sacrilege",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "theme",
+    "identifiers": {
+      "abuId": "1101240",
+      "cardKingdomId": "1434",
+      "cardtraderId": "46003",
+      "mcmId": "253726",
+      "tcgplayerProductId": "120585",
+      "tntId": "101644"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/76517048cf53507e"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Sacrilege",
+          "set": "tor"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment"
+  },
+  {
+    "uuid": "86f5b0ac-055c-5245-b1a7-be48fb6e1b20",
+    "name": "Torment Theme Deck Waking Nightmares",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "theme",
+    "identifiers": {
+      "abuId": "1101243",
+      "cardKingdomId": "1435",
+      "cardtraderId": "46004",
+      "mcmId": "253727",
+      "tcgplayerProductId": "120584",
+      "tntId": "101645"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/963a0dbd15da5569"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Waking Nightmares",
+          "set": "tor"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment",
+    "tcgcsvData": {
+      "product": {
+        "productId": 120584,
+        "name": "Torment - Theme Deck - Waking Nightmares",
+        "cleanName": "Torment Theme Deck Waking Nightmares",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/120584_200w.jpg",
+        "categoryId": 1,
+        "groupId": 112,
+        "url": "https://www.tcgplayer.com/product/120584/magic-torment-torment-theme-deck-waking-nightmares",
+        "modifiedOn": "2021-09-10T14:20:34.97",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 120584,
+          "lowPrice": 120,
+          "midPrice": 132,
+          "highPrice": 144,
+          "marketPrice": 120,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "b0535b9c-897f-572d-80a2-f885b9f26a5b",
+    "name": "Torment Theme Decks Set of 4",
+    "category": "subset",
+    "subtype": "theme",
+    "identifiers": {
+      "abuId": "1101244"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Torment Theme Deck Grave Danger",
+          "set": "tor",
+          "uuid": "35fc1da5-b3ef-5656-b012-3f3c2ec4930f"
+        },
+        {
+          "count": 1,
+          "name": "Torment Theme Deck Insanity",
+          "set": "tor",
+          "uuid": "31300227-8cd5-5933-9051-854af883edce"
+        },
+        {
+          "count": 1,
+          "name": "Torment Theme Deck Sacrilege",
+          "set": "tor",
+          "uuid": "627d18d1-bf42-56dc-be47-67a88570d269"
+        },
+        {
+          "count": 1,
+          "name": "Torment Theme Deck Waking Nightmares",
+          "set": "tor",
+          "uuid": "86f5b0ac-055c-5245-b1a7-be48fb6e1b20"
+        }
+      ]
+    },
+    "setCode": "TOR",
+    "setName": "Torment"
+  }
+]

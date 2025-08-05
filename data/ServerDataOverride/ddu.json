@@ -1,0 +1,137 @@
+[
+  {
+    "uuid": "2c3476cc-b5e0-53e3-9a81-12f5cec69e9a",
+    "name": "Duel Deck Elves vs Inventors",
+    "category": "multiple_decks",
+    "releaseDate": "2018-04-06",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1496793",
+      "cardKingdomId": "217618",
+      "cardtraderId": "48644",
+      "csiId": "253920",
+      "mcmId": "315273",
+      "scgId": "SLD-MTG-BXS-DDU-EN",
+      "tcgplayerProductId": "162110",
+      "tntId": "1158681"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/af047b359ea28c24",
+      "tcgplayer": "https://mtgjson.com/links/600a4afdb9c4b899"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Elves vs Inventors Elves Deck",
+          "set": "ddu",
+          "uuid": "b99909da-ae6f-525d-bea0-ba909ed6fcf2"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Elves vs Inventors Inventors Deck",
+          "set": "ddu",
+          "uuid": "c6eca493-d29f-53a7-83ad-5f24f550db0b"
+        }
+      ]
+    },
+    "setCode": "DDU",
+    "setName": "Duel Decks: Elves vs. Inventors",
+    "tcgcsvData": {
+      "product": {
+        "productId": 162110,
+        "name": "Duel Decks: Elves vs. Inventors - Box Set",
+        "cleanName": "Duel Decks Elves vs Inventors Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/162110_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2207,
+        "url": "https://www.tcgplayer.com/product/162110/magic-duel-decks-elves-vs-inventors-duel-decks-elves-vs-inventors-box-set",
+        "modifiedOn": "2018-03-23T15:49:06.723",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2018-04-06T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Elves vs. Inventors is the final release in the Duel Decks line.  The product includes two read-to-play 60-card decks that each carry a specific theme, and include a foil mythic rare card in each deck.  The package also contains 10 token cards, 2 spindown life counters, 2 deck boxes, a strategy insert, and a quick reference guide."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 162110,
+          "lowPrice": 39.96,
+          "midPrice": 42.52,
+          "highPrice": 59.99,
+          "marketPrice": 42.52,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "6eb0c3f7-39d8-5f2c-9dc4-d550ec5887c0",
+    "name": "Duel Deck Elves vs Inventors Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "1158682"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Elves vs Inventors",
+          "set": "ddu",
+          "uuid": "2c3476cc-b5e0-53e3-9a81-12f5cec69e9a"
+        }
+      ]
+    },
+    "setCode": "DDU",
+    "setName": "Duel Decks: Elves vs. Inventors"
+  },
+  {
+    "uuid": "b99909da-ae6f-525d-bea0-ba909ed6fcf2",
+    "name": "Duel Deck Elves vs Inventors Elves Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Woodland Warriors",
+          "set": "ddu"
+        }
+      ]
+    },
+    "setCode": "DDU",
+    "setName": "Duel Decks: Elves vs. Inventors"
+  },
+  {
+    "uuid": "c6eca493-d29f-53a7-83ad-5f24f550db0b",
+    "name": "Duel Deck Elves vs Inventors Inventors Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Ingenious Machinists",
+          "set": "ddu"
+        }
+      ]
+    },
+    "setCode": "DDU",
+    "setName": "Duel Decks: Elves vs. Inventors"
+  }
+]

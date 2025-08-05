@@ -1,0 +1,5274 @@
+[
+  {
+    "uuid": "b2a41e1a-9956-5978-a980-3690f656d66b",
+    "name": "Ravnica Clue Edition",
+    "category": "bundle",
+    "cardCount": 21,
+    "releaseDate": "2024-02-23",
+    "subtype": "game_night",
+    "identifiers": {
+      "abuId": "2452915",
+      "cardKingdomId": "289644",
+      "cardtraderId": "270470",
+      "csiId": "378084",
+      "mcmId": "749351",
+      "miniaturemarketId": "296329",
+      "scgId": "SLD-MTG-MLT-CLU-EN",
+      "tcgplayerProductId": "529974",
+      "tntId": "1797269"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/a22ff3cf587facef",
+      "tcgplayer": "https://mtgjson.com/links/fd847fb21a2ddaae"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Clue Edition Core Contents",
+          "set": "clu"
+        }
+      ],
+      "other": [
+        {
+          "name": "4 hidden info screens"
+        },
+        {
+          "name": "Evidence notepad"
+        },
+        {
+          "name": "Case file envelope"
+        },
+        {
+          "name": "Card storage box"
+        }
+      ],
+      "sealed": [
+        {
+          "count": 8,
+          "name": "Ravnica Clue Edition Booster Pack",
+          "set": "clu",
+          "uuid": "45e240fd-e8ad-5862-b176-78af37af1905"
+        },
+        {
+          "count": 1,
+          "name": "Ravnica Clue Edition Box Topper Booster Pack",
+          "set": "clu",
+          "uuid": "fc7fa0da-7c80-5336-8f94-75bc24fec1f6"
+        }
+      ]
+    },
+    "setCode": "CLU",
+    "setName": "Ravnica: Clue Edition",
+    "extendedData": {
+      "code": "clu",
+      "boosters": [
+        {
+          "sheets": {
+            "azorius_senate_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "azorius_senate_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "boros_legion_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "boros_legion_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "cult_of_rakdos_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "cult_of_rakdos_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "golgari_swarm_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "golgari_swarm_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "gruul_clans_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "gruul_clans_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "house_dimir_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "house_dimir_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "izzet_league_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "izzet_league_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "orzhov_syndicate_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "orzhov_syndicate_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "selesnya_conclave_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "selesnya_conclave_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "simic_combine_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "simic_combine_2": 20
+          },
+          "weight": 1
+        }
+      ],
+      "sheets": {
+        "azorius_senate_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "36",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7e965432-fb84-5e8e-9030-c998c338c211"
+            },
+            {
+              "set": "clu",
+              "number": "40",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cb022b72-b639-55d0-8859-4f8bf42f7cb0"
+            },
+            {
+              "set": "clu",
+              "number": "54",
+              "weight": 1,
+              "foil": false,
+              "uuid": "213dd84a-6c65-5347-b241-08ee4a1e3897"
+            },
+            {
+              "set": "clu",
+              "number": "55",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf03e96c-2d6e-5b8b-b9ae-bcde50be7733"
+            },
+            {
+              "set": "clu",
+              "number": "60",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9caff4e6-13af-52ea-b403-3cbbc87d82c0"
+            },
+            {
+              "set": "clu",
+              "number": "64",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ee36dd28-d349-5467-add7-c99f09737f70"
+            },
+            {
+              "set": "clu",
+              "number": "67",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba2b26a8-a5e6-5cc8-a004-b386eee2d6ce"
+            },
+            {
+              "set": "clu",
+              "number": "69",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d8836402-3dbb-5e25-9126-470cee4f6e9e"
+            },
+            {
+              "set": "clu",
+              "number": "77",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c4318430-e13f-5725-abbe-7cd9af4b2dd2"
+            },
+            {
+              "set": "clu",
+              "number": "80",
+              "weight": 1,
+              "foil": false,
+              "uuid": "98533e3c-c1d2-5d36-97e9-64d8926261af"
+            },
+            {
+              "set": "clu",
+              "number": "183",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba4d65cd-ef28-51d0-b3cc-0f56283729b7"
+            },
+            {
+              "set": "clu",
+              "number": "211",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e7563582-efd7-5d0a-9338-38262c2fcbd5"
+            },
+            {
+              "set": "clu",
+              "number": "229",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6edc43b6-edd9-575f-a529-0761ff311581"
+            },
+            {
+              "set": "clu",
+              "number": "230",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d3b58661-0077-565c-9328-c92b0547909b"
+            },
+            {
+              "set": "clu",
+              "number": "251",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b750e342-84c3-537b-91e8-231f1e43728b"
+            },
+            {
+              "set": "clu",
+              "number": "254",
+              "weight": 5,
+              "foil": false,
+              "uuid": "7bbecac8-3594-5a95-8dd5-d9d56ce796d0"
+            }
+          ]
+        },
+        "azorius_senate_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "40",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cb022b72-b639-55d0-8859-4f8bf42f7cb0"
+            },
+            {
+              "set": "clu",
+              "number": "46",
+              "weight": 1,
+              "foil": false,
+              "uuid": "80eb0561-b1bb-5923-b35a-5b00100b2acc"
+            },
+            {
+              "set": "clu",
+              "number": "82",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3f9fe422-1cb8-5211-a64c-d9f0f40e0c2d"
+            },
+            {
+              "set": "clu",
+              "number": "83",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b92b9bec-e12f-5b1b-8840-89685b4b9f73"
+            },
+            {
+              "set": "clu",
+              "number": "88",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ffd6d81f-0d3f-5341-9762-1f67244b6095"
+            },
+            {
+              "set": "clu",
+              "number": "90",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5de56968-9d72-527a-8e37-ec8ce30c8a85"
+            },
+            {
+              "set": "clu",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "42a47f76-3990-54f4-a9a8-e74e4462de9e"
+            },
+            {
+              "set": "clu",
+              "number": "183",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba4d65cd-ef28-51d0-b3cc-0f56283729b7"
+            },
+            {
+              "set": "clu",
+              "number": "185a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9543ef98-6c3c-5573-9b1b-a94b47974f9e"
+            },
+            {
+              "set": "clu",
+              "number": "199",
+              "weight": 1,
+              "foil": false,
+              "uuid": "21c46ed1-7de2-59b2-8671-b06031af4c3b"
+            },
+            {
+              "set": "clu",
+              "number": "214",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6269ad8a-a875-5430-816f-04d7c4c1da91"
+            },
+            {
+              "set": "clu",
+              "number": "219",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0586ecbd-1031-5d10-b099-796cb7e7ea1c"
+            },
+            {
+              "set": "clu",
+              "number": "229",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6edc43b6-edd9-575f-a529-0761ff311581"
+            },
+            {
+              "set": "clu",
+              "number": "230",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d3b58661-0077-565c-9328-c92b0547909b"
+            },
+            {
+              "set": "clu",
+              "number": "252",
+              "weight": 1,
+              "foil": false,
+              "uuid": "542d2b63-f304-5cff-b572-46345f30e016"
+            },
+            {
+              "set": "clu",
+              "number": "258",
+              "weight": 5,
+              "foil": false,
+              "uuid": "1c9b8605-6d54-5c89-af7c-405a6a9a9372"
+            }
+          ]
+        },
+        "boros_legion_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "22",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f80b60bb-fe69-551e-86e9-711410db1930"
+            },
+            {
+              "set": "clu",
+              "number": "39",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9abf7d82-7935-5080-a012-57b8a895f0e2"
+            },
+            {
+              "set": "clu",
+              "number": "61",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a6e6491c-c8f1-5158-98da-1d591bd0cae6"
+            },
+            {
+              "set": "clu",
+              "number": "65",
+              "weight": 1,
+              "foil": false,
+              "uuid": "88dc16c6-43a1-531c-aab1-8e169bc1820f"
+            },
+            {
+              "set": "clu",
+              "number": "66",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8f68ddac-43f5-5935-8286-e07381db550a"
+            },
+            {
+              "set": "clu",
+              "number": "68",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9a388e76-8651-5fcf-a048-136eca467f03"
+            },
+            {
+              "set": "clu",
+              "number": "70",
+              "weight": 1,
+              "foil": false,
+              "uuid": "66edaa2a-84a5-52b5-876a-d98c953772ae"
+            },
+            {
+              "set": "clu",
+              "number": "73",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5bc2f6ba-81e4-5e34-bdd4-dc2386a43282"
+            },
+            {
+              "set": "clu",
+              "number": "192",
+              "weight": 1,
+              "foil": false,
+              "uuid": "164a7380-0f21-5f93-9bd7-a3c3773d0341"
+            },
+            {
+              "set": "clu",
+              "number": "198a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "45dd32ee-04d7-5675-9cd5-87ed0e70fd22"
+            },
+            {
+              "set": "clu",
+              "number": "220",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d9ae34b0-40e3-5426-9fcf-55b8b80ad684"
+            },
+            {
+              "set": "clu",
+              "number": "231",
+              "weight": 1,
+              "foil": false,
+              "uuid": "24dcf965-f2c9-549e-b256-f0337a433ad1"
+            },
+            {
+              "set": "clu",
+              "number": "232",
+              "weight": 1,
+              "foil": false,
+              "uuid": "59d4594d-8d94-509a-a843-21809b1f762d"
+            },
+            {
+              "set": "clu",
+              "number": "251",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b750e342-84c3-537b-91e8-231f1e43728b"
+            },
+            {
+              "set": "clu",
+              "number": "254",
+              "weight": 5,
+              "foil": false,
+              "uuid": "7bbecac8-3594-5a95-8dd5-d9d56ce796d0"
+            },
+            {
+              "set": "mkm",
+              "number": "29",
+              "weight": 1,
+              "foil": false,
+              "uuid": "680c33fb-90c6-54b2-a796-2e4c2964c9fa"
+            }
+          ]
+        },
+        "boros_legion_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "25",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5606a0c4-5390-5ee1-ba0b-eb1bb7e01866"
+            },
+            {
+              "set": "clu",
+              "number": "39",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9abf7d82-7935-5080-a012-57b8a895f0e2"
+            },
+            {
+              "set": "clu",
+              "number": "129",
+              "weight": 1,
+              "foil": false,
+              "uuid": "218bed69-6874-539b-af2a-6e9383df27b6"
+            },
+            {
+              "set": "clu",
+              "number": "134",
+              "weight": 1,
+              "foil": false,
+              "uuid": "559bdd13-6b07-565c-82d8-c5a8849447e0"
+            },
+            {
+              "set": "clu",
+              "number": "135",
+              "weight": 1,
+              "foil": false,
+              "uuid": "48a55f50-7463-5282-b904-a104ee74981c"
+            },
+            {
+              "set": "clu",
+              "number": "139",
+              "weight": 1,
+              "foil": false,
+              "uuid": "842b1caa-1be0-5000-b9c3-f0afe70c1527"
+            },
+            {
+              "set": "clu",
+              "number": "147",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ef4abcab-0b15-5023-8820-170115dc0857"
+            },
+            {
+              "set": "clu",
+              "number": "151",
+              "weight": 1,
+              "foil": false,
+              "uuid": "15519402-15dc-5ff9-be8a-d47dc377349a"
+            },
+            {
+              "set": "clu",
+              "number": "153",
+              "weight": 1,
+              "foil": false,
+              "uuid": "239b421d-ba7c-57fb-91dc-3a7c408b46cb"
+            },
+            {
+              "set": "clu",
+              "number": "154",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3386bcd3-cfc2-51ec-b84b-43377a693f3b"
+            },
+            {
+              "set": "clu",
+              "number": "189",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2f91e7a3-8142-5194-bba0-aa81f561399e"
+            },
+            {
+              "set": "clu",
+              "number": "198a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "45dd32ee-04d7-5675-9cd5-87ed0e70fd22"
+            },
+            {
+              "set": "clu",
+              "number": "231",
+              "weight": 1,
+              "foil": false,
+              "uuid": "24dcf965-f2c9-549e-b256-f0337a433ad1"
+            },
+            {
+              "set": "clu",
+              "number": "232",
+              "weight": 1,
+              "foil": false,
+              "uuid": "59d4594d-8d94-509a-a843-21809b1f762d"
+            },
+            {
+              "set": "clu",
+              "number": "249",
+              "weight": 1,
+              "foil": false,
+              "uuid": "464b4b4c-e787-590a-befb-dbc936a6fc26"
+            },
+            {
+              "set": "clu",
+              "number": "266",
+              "weight": 5,
+              "foil": false,
+              "uuid": "d3e5fe32-6977-545c-95e5-57d71781b723"
+            }
+          ]
+        },
+        "cult_of_rakdos_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "32",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b8d414f4-cee4-50da-9406-041804bcb51a"
+            },
+            {
+              "set": "clu",
+              "number": "35",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1cbe85f2-fbe3-551a-9cfd-0aa1b981876e"
+            },
+            {
+              "set": "clu",
+              "number": "106",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d16672df-1b27-5f8c-b7f3-5b4416bc643a"
+            },
+            {
+              "set": "clu",
+              "number": "108",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9ab1f026-6829-5c25-8636-a6e77d704a2a"
+            },
+            {
+              "set": "clu",
+              "number": "109",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ffe0a3a9-f26e-5972-b63f-3a44aa0dd332"
+            },
+            {
+              "set": "clu",
+              "number": "113",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5a25d4fd-4461-5972-81b8-0d7109978a4b"
+            },
+            {
+              "set": "clu",
+              "number": "119",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dd6c4b0b-7672-52b5-af45-5971023342ff"
+            },
+            {
+              "set": "clu",
+              "number": "122",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf798ada-b50c-503d-b2a8-6acbad5e5ae5"
+            },
+            {
+              "set": "clu",
+              "number": "126",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ec364cd8-384b-51fe-b2ee-ff6caf5c3202"
+            },
+            {
+              "set": "clu",
+              "number": "191",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b8f8f377-0cff-5361-bd2b-15a01281de7a"
+            },
+            {
+              "set": "clu",
+              "number": "226",
+              "weight": 1,
+              "foil": false,
+              "uuid": "17b208a8-b36f-581b-9ac1-8556593a026a"
+            },
+            {
+              "set": "clu",
+              "number": "243",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a77b0b4e-aaed-5920-96f9-f8ef35d345f6"
+            },
+            {
+              "set": "clu",
+              "number": "244",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f1006723-11c2-573e-9708-5559d713a9f6"
+            },
+            {
+              "set": "clu",
+              "number": "253",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b9671be-73d6-5b12-aa89-d44728d1bcdd"
+            },
+            {
+              "set": "clu",
+              "number": "262",
+              "weight": 5,
+              "foil": false,
+              "uuid": "2fd378d0-659f-5f7c-9525-e1724cdcf55c"
+            },
+            {
+              "set": "mkm",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c5a5633c-312e-5816-90a9-eb623aeababf"
+            }
+          ]
+        },
+        "cult_of_rakdos_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "26",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c56a5207-b361-5f8d-9572-d7bdbaf17d2f"
+            },
+            {
+              "set": "clu",
+              "number": "35",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1cbe85f2-fbe3-551a-9cfd-0aa1b981876e"
+            },
+            {
+              "set": "clu",
+              "number": "128",
+              "weight": 1,
+              "foil": false,
+              "uuid": "173ef7df-fe6f-5012-8366-aed255573093"
+            },
+            {
+              "set": "clu",
+              "number": "130",
+              "weight": 1,
+              "foil": false,
+              "uuid": "df0ed615-301b-5ae7-a72a-ac14a354d880"
+            },
+            {
+              "set": "clu",
+              "number": "131",
+              "weight": 1,
+              "foil": false,
+              "uuid": "80f60d09-bb46-5718-a6ef-511209c3ec64"
+            },
+            {
+              "set": "clu",
+              "number": "138",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ef986b6d-4636-59e8-b554-9375f1de9e12"
+            },
+            {
+              "set": "clu",
+              "number": "140",
+              "weight": 1,
+              "foil": false,
+              "uuid": "97a858fb-82a1-51e2-b849-cb1b542a6b1c"
+            },
+            {
+              "set": "clu",
+              "number": "143",
+              "weight": 1,
+              "foil": false,
+              "uuid": "222abd5b-0b61-54ef-a576-c06db2b0cc90"
+            },
+            {
+              "set": "clu",
+              "number": "145",
+              "weight": 1,
+              "foil": false,
+              "uuid": "27fb237f-5291-5afb-918b-12a9f80ee91e"
+            },
+            {
+              "set": "clu",
+              "number": "191",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b8f8f377-0cff-5361-bd2b-15a01281de7a"
+            },
+            {
+              "set": "clu",
+              "number": "204",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f76e2d82-9faa-5894-80c9-b0ae9347634b"
+            },
+            {
+              "set": "clu",
+              "number": "205",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f5c4cf40-ff01-54cf-a0e4-065ff2eeeb21"
+            },
+            {
+              "set": "clu",
+              "number": "243",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a77b0b4e-aaed-5920-96f9-f8ef35d345f6"
+            },
+            {
+              "set": "clu",
+              "number": "244",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f1006723-11c2-573e-9708-5559d713a9f6"
+            },
+            {
+              "set": "clu",
+              "number": "249",
+              "weight": 1,
+              "foil": false,
+              "uuid": "464b4b4c-e787-590a-befb-dbc936a6fc26"
+            },
+            {
+              "set": "clu",
+              "number": "266",
+              "weight": 5,
+              "foil": false,
+              "uuid": "d3e5fe32-6977-545c-95e5-57d71781b723"
+            }
+          ]
+        },
+        "golgari_swarm_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "24",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a4f767fd-0928-5521-8c9e-9559e6eee71d"
+            },
+            {
+              "set": "clu",
+              "number": "48",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0a56b032-4838-59c2-92db-ca3b9a51099f"
+            },
+            {
+              "set": "clu",
+              "number": "107",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a451f50e-c3cf-57ab-aa72-8412378deada"
+            },
+            {
+              "set": "clu",
+              "number": "110",
+              "weight": 1,
+              "foil": false,
+              "uuid": "39d157b9-c460-5279-a0a7-35a5935303e2"
+            },
+            {
+              "set": "clu",
+              "number": "112",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3de8ba5b-3d78-59b0-8d2e-a5afc4c26f82"
+            },
+            {
+              "set": "clu",
+              "number": "125",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7be5d914-b4cf-5269-90a3-2c84e4525f56"
+            },
+            {
+              "set": "clu",
+              "number": "184",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a47bbf7d-586b-5586-ba23-58a72a2b196d"
+            },
+            {
+              "set": "clu",
+              "number": "194",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b66c7850-0b5b-5da2-b887-9944a2972640"
+            },
+            {
+              "set": "clu",
+              "number": "203",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7d03dfb8-29d2-5913-ab4d-9b4fdf5c4b96"
+            },
+            {
+              "set": "clu",
+              "number": "210a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9ade3c93-7ee1-582b-ac9d-8cfa50913c74"
+            },
+            {
+              "set": "clu",
+              "number": "222",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ec98200f-8c1c-5067-b667-50f608661c6f"
+            },
+            {
+              "set": "clu",
+              "number": "235",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3a6669ad-4387-54d1-b24f-5be900bbf225"
+            },
+            {
+              "set": "clu",
+              "number": "236",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4f399578-ad9c-579c-bdae-af5b5b4aa552"
+            },
+            {
+              "set": "clu",
+              "number": "253",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b9671be-73d6-5b12-aa89-d44728d1bcdd"
+            },
+            {
+              "set": "clu",
+              "number": "262",
+              "weight": 5,
+              "foil": false,
+              "uuid": "2fd378d0-659f-5f7c-9525-e1724cdcf55c"
+            },
+            {
+              "set": "mkm",
+              "number": "91",
+              "weight": 1,
+              "foil": false,
+              "uuid": "72944f0f-3029-5179-a160-b236a20d4bd2"
+            }
+          ]
+        },
+        "golgari_swarm_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "43",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7cc2dbcd-8542-51b5-9b16-1a3a4cb519fe"
+            },
+            {
+              "set": "clu",
+              "number": "48",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0a56b032-4838-59c2-92db-ca3b9a51099f"
+            },
+            {
+              "set": "clu",
+              "number": "163",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9194fcf0-00dd-5085-ba88-463f77488795"
+            },
+            {
+              "set": "clu",
+              "number": "167",
+              "weight": 1,
+              "foil": false,
+              "uuid": "eb4d8bba-4c77-5bd1-a5a8-1275d422a8a2"
+            },
+            {
+              "set": "clu",
+              "number": "168",
+              "weight": 1,
+              "foil": false,
+              "uuid": "308650d7-50f1-552f-a69a-00ba45a6e2f7"
+            },
+            {
+              "set": "clu",
+              "number": "172",
+              "weight": 1,
+              "foil": false,
+              "uuid": "878fa780-b48c-5698-bdb6-0ff76e9407ef"
+            },
+            {
+              "set": "clu",
+              "number": "176",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d9c29b1d-7331-5b48-80a0-81c3efd891eb"
+            },
+            {
+              "set": "clu",
+              "number": "179",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7c2f5cd9-b364-5224-b568-b4f6a2d5bf13"
+            },
+            {
+              "set": "clu",
+              "number": "203",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7d03dfb8-29d2-5913-ab4d-9b4fdf5c4b96"
+            },
+            {
+              "set": "clu",
+              "number": "210a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9ade3c93-7ee1-582b-ac9d-8cfa50913c74"
+            },
+            {
+              "set": "clu",
+              "number": "215",
+              "weight": 1,
+              "foil": false,
+              "uuid": "31e139a2-f67d-508a-900e-acb6a646db74"
+            },
+            {
+              "set": "clu",
+              "number": "235",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3a6669ad-4387-54d1-b24f-5be900bbf225"
+            },
+            {
+              "set": "clu",
+              "number": "236",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4f399578-ad9c-579c-bdae-af5b5b4aa552"
+            },
+            {
+              "set": "clu",
+              "number": "250",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475fa213-cd7e-5fb8-a8b6-4ba7d1e860c4"
+            },
+            {
+              "set": "clu",
+              "number": "270",
+              "weight": 5,
+              "foil": false,
+              "uuid": "268e224e-0de5-50c1-8a9b-2e126b8805d4"
+            },
+            {
+              "set": "mkm",
+              "number": "174",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ca8d33da-f49f-5d78-8326-807e05fa0cb0"
+            }
+          ]
+        },
+        "gruul_clans_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "33",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8a6729f9-4396-5e84-b2da-f8c32a1edb7a"
+            },
+            {
+              "set": "clu",
+              "number": "34",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4496045b-69bd-5777-9481-51155db3d2c5"
+            },
+            {
+              "set": "clu",
+              "number": "127",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9e547507-7597-53e2-923b-3834932a525d"
+            },
+            {
+              "set": "clu",
+              "number": "137",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c31fbdc4-42a4-536c-89c0-024cc8bdbe8d"
+            },
+            {
+              "set": "clu",
+              "number": "144",
+              "weight": 1,
+              "foil": false,
+              "uuid": "671c37a0-375a-5436-8893-493754097efd"
+            },
+            {
+              "set": "clu",
+              "number": "146",
+              "weight": 1,
+              "foil": false,
+              "uuid": "df8a9e14-66e3-5c2a-a422-910c60b797fb"
+            },
+            {
+              "set": "clu",
+              "number": "147",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ef4abcab-0b15-5023-8820-170115dc0857"
+            },
+            {
+              "set": "clu",
+              "number": "149",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cb97294c-d511-5fa6-a50f-b2f3ae2f7325"
+            },
+            {
+              "set": "clu",
+              "number": "152",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1b4efa4e-d3ea-5f82-bdb6-3a013f3b2df8"
+            },
+            {
+              "set": "clu",
+              "number": "182",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d8f2cca3-cdc4-5fce-ab77-397ac94abf54"
+            },
+            {
+              "set": "clu",
+              "number": "190",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f6c46850-5afe-5794-8db3-864a263f596a"
+            },
+            {
+              "set": "clu",
+              "number": "223",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d2b1d6a1-8751-588e-a60b-4404799938c1"
+            },
+            {
+              "set": "clu",
+              "number": "237",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c160f293-6b7c-52d3-81af-070092c49d0a"
+            },
+            {
+              "set": "clu",
+              "number": "238",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05a50b37-d8d6-5545-a981-aee07b62c0c2"
+            },
+            {
+              "set": "clu",
+              "number": "249",
+              "weight": 1,
+              "foil": false,
+              "uuid": "464b4b4c-e787-590a-befb-dbc936a6fc26"
+            },
+            {
+              "set": "clu",
+              "number": "266",
+              "weight": 5,
+              "foil": false,
+              "uuid": "d3e5fe32-6977-545c-95e5-57d71781b723"
+            }
+          ]
+        },
+        "gruul_clans_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "33",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8a6729f9-4396-5e84-b2da-f8c32a1edb7a"
+            },
+            {
+              "set": "clu",
+              "number": "44",
+              "weight": 1,
+              "foil": false,
+              "uuid": "76a20836-8506-5f5c-95db-0f446e4b40fa"
+            },
+            {
+              "set": "clu",
+              "number": "156",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5ef46a94-46e5-5f99-845d-03b64b464420"
+            },
+            {
+              "set": "clu",
+              "number": "159",
+              "weight": 1,
+              "foil": false,
+              "uuid": "017e8948-32bf-5757-af32-87668e3a7fb8"
+            },
+            {
+              "set": "clu",
+              "number": "160",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ce6cf53d-f0f3-5d73-ada7-8df0ef7beba2"
+            },
+            {
+              "set": "clu",
+              "number": "162",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2406e60d-58d1-5467-a014-487f4417d443"
+            },
+            {
+              "set": "clu",
+              "number": "164",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b59ea758-0a3a-5df8-9ed5-2f39f32d795e"
+            },
+            {
+              "set": "clu",
+              "number": "165",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6095216e-9e51-5af9-81df-0aaf39800b6c"
+            },
+            {
+              "set": "clu",
+              "number": "169",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7bac1bfd-e72c-54eb-810a-092550c9c84f"
+            },
+            {
+              "set": "clu",
+              "number": "175",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7b9cee6b-b3f7-59f4-a993-973d213bd992"
+            },
+            {
+              "set": "clu",
+              "number": "180",
+              "weight": 1,
+              "foil": false,
+              "uuid": "522f6870-222b-5bf9-83e8-5b59f9070a68"
+            },
+            {
+              "set": "clu",
+              "number": "202",
+              "weight": 1,
+              "foil": false,
+              "uuid": "16f1f664-f00f-534a-a253-ceefe01bcc2c"
+            },
+            {
+              "set": "clu",
+              "number": "237",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c160f293-6b7c-52d3-81af-070092c49d0a"
+            },
+            {
+              "set": "clu",
+              "number": "238",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05a50b37-d8d6-5545-a981-aee07b62c0c2"
+            },
+            {
+              "set": "clu",
+              "number": "250",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475fa213-cd7e-5fb8-a8b6-4ba7d1e860c4"
+            },
+            {
+              "set": "clu",
+              "number": "270",
+              "weight": 5,
+              "foil": false,
+              "uuid": "268e224e-0de5-50c1-8a9b-2e126b8805d4"
+            }
+          ]
+        },
+        "house_dimir_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "38",
+              "weight": 1,
+              "foil": false,
+              "uuid": "34c7855c-9a83-54d1-ba81-dbdd3759946f"
+            },
+            {
+              "set": "clu",
+              "number": "49",
+              "weight": 1,
+              "foil": false,
+              "uuid": "910e2ec1-1cba-5fde-bb33-cf28debee094"
+            },
+            {
+              "set": "clu",
+              "number": "85",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b36e4e8b-0eed-5f83-8dee-7b5cc4238426"
+            },
+            {
+              "set": "clu",
+              "number": "86",
+              "weight": 1,
+              "foil": false,
+              "uuid": "40fe75df-9832-57e9-8ed3-9a8317503cbb"
+            },
+            {
+              "set": "clu",
+              "number": "92",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1546724f-2d15-5a01-af0c-1e4f5782fe42"
+            },
+            {
+              "set": "clu",
+              "number": "104",
+              "weight": 1,
+              "foil": false,
+              "uuid": "052cf787-7eca-5f2b-84b4-00a2cdf9031c"
+            },
+            {
+              "set": "clu",
+              "number": "186",
+              "weight": 1,
+              "foil": false,
+              "uuid": "48ec0885-a7b1-5a00-a96a-15b277aa064c"
+            },
+            {
+              "set": "clu",
+              "number": "187a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a4f8985a-dc38-52bd-b7fb-ae7899ad4237"
+            },
+            {
+              "set": "clu",
+              "number": "188",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05d33bbd-0e26-5029-9063-09af9f7f5f74"
+            },
+            {
+              "set": "clu",
+              "number": "218",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4df6d1b0-fd29-5fc3-a159-c3485950201d"
+            },
+            {
+              "set": "clu",
+              "number": "221",
+              "weight": 1,
+              "foil": false,
+              "uuid": "98e4ad63-20d8-5ad3-9e51-833af51d5c1d"
+            },
+            {
+              "set": "clu",
+              "number": "233",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c4a5ccca-333a-5350-b26f-2977c4383d40"
+            },
+            {
+              "set": "clu",
+              "number": "234",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c9690748-8434-5f6f-8215-1e854fe68045"
+            },
+            {
+              "set": "clu",
+              "number": "252",
+              "weight": 1,
+              "foil": false,
+              "uuid": "542d2b63-f304-5cff-b572-46345f30e016"
+            },
+            {
+              "set": "clu",
+              "number": "258",
+              "weight": 5,
+              "foil": false,
+              "uuid": "1c9b8605-6d54-5c89-af7c-405a6a9a9372"
+            },
+            {
+              "set": "mkm",
+              "number": "53",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7a8957af-6a29-5e19-aa45-eef3feaaa90c"
+            }
+          ]
+        },
+        "house_dimir_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "30",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cbbe978e-2d8b-51e2-9bd1-d4ed1b9c18c0"
+            },
+            {
+              "set": "clu",
+              "number": "49",
+              "weight": 1,
+              "foil": false,
+              "uuid": "910e2ec1-1cba-5fde-bb33-cf28debee094"
+            },
+            {
+              "set": "clu",
+              "number": "114",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a4683dd0-caf1-50aa-926c-8d09b1d0bded"
+            },
+            {
+              "set": "clu",
+              "number": "115",
+              "weight": 1,
+              "foil": false,
+              "uuid": "63d51c59-7257-5d9d-bc4c-00f696e8d144"
+            },
+            {
+              "set": "clu",
+              "number": "116",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4a0737da-5c5f-587d-ab3a-d60c145e3860"
+            },
+            {
+              "set": "clu",
+              "number": "120",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8900b67c-9223-56c8-af5b-de5bbb0eab91"
+            },
+            {
+              "set": "clu",
+              "number": "121",
+              "weight": 1,
+              "foil": false,
+              "uuid": "43235dcb-d4d5-5de9-94b8-d9aa30dfab6b"
+            },
+            {
+              "set": "clu",
+              "number": "124",
+              "weight": 1,
+              "foil": false,
+              "uuid": "be63f486-9c0b-5995-9779-a6ca26bb7d5d"
+            },
+            {
+              "set": "clu",
+              "number": "187a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a4f8985a-dc38-52bd-b7fb-ae7899ad4237"
+            },
+            {
+              "set": "clu",
+              "number": "212",
+              "weight": 1,
+              "foil": false,
+              "uuid": "abb006cb-dad1-579b-b3dc-d667bae4d839"
+            },
+            {
+              "set": "clu",
+              "number": "218",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4df6d1b0-fd29-5fc3-a159-c3485950201d"
+            },
+            {
+              "set": "clu",
+              "number": "233",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c4a5ccca-333a-5350-b26f-2977c4383d40"
+            },
+            {
+              "set": "clu",
+              "number": "234",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c9690748-8434-5f6f-8215-1e854fe68045"
+            },
+            {
+              "set": "clu",
+              "number": "253",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b9671be-73d6-5b12-aa89-d44728d1bcdd"
+            },
+            {
+              "set": "clu",
+              "number": "262",
+              "weight": 5,
+              "foil": false,
+              "uuid": "2fd378d0-659f-5f7c-9525-e1724cdcf55c"
+            },
+            {
+              "set": "mkm",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c5a5633c-312e-5816-90a9-eb623aeababf"
+            }
+          ]
+        },
+        "izzet_league_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "31",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dbf3d208-9db5-5eea-8142-80d97c472b41"
+            },
+            {
+              "set": "clu",
+              "number": "41",
+              "weight": 1,
+              "foil": false,
+              "uuid": "95a9d4d2-24f6-540c-8fb2-42cfa78cfa8b"
+            },
+            {
+              "set": "clu",
+              "number": "81",
+              "weight": 1,
+              "foil": false,
+              "uuid": "25cef2b4-39ef-523a-bbbc-0be7e236c5c3"
+            },
+            {
+              "set": "clu",
+              "number": "84",
+              "weight": 1,
+              "foil": false,
+              "uuid": "66937474-a5c9-5341-bd10-4e96a606a9b2"
+            },
+            {
+              "set": "clu",
+              "number": "85",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b36e4e8b-0eed-5f83-8dee-7b5cc4238426"
+            },
+            {
+              "set": "clu",
+              "number": "89",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3b52878f-69c4-591a-9752-9620bb62529a"
+            },
+            {
+              "set": "clu",
+              "number": "94",
+              "weight": 1,
+              "foil": false,
+              "uuid": "56c5d348-b386-597a-9c86-48b08ed2ca2d"
+            },
+            {
+              "set": "clu",
+              "number": "100",
+              "weight": 1,
+              "foil": false,
+              "uuid": "49457f40-6db6-5dbe-9e47-9e9e4d567ea7"
+            },
+            {
+              "set": "clu",
+              "number": "101",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e29df46a-d12b-5f76-b660-51ae5d9dea8f"
+            },
+            {
+              "set": "clu",
+              "number": "102",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3427adfd-aed0-50d1-8fbb-d41a8e427c41"
+            },
+            {
+              "set": "clu",
+              "number": "103",
+              "weight": 1,
+              "foil": false,
+              "uuid": "fccc03b9-e15d-58fa-96c2-181b69c1d304"
+            },
+            {
+              "set": "clu",
+              "number": "193",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3783ee9a-62b6-56ee-b644-34748ff49fe4"
+            },
+            {
+              "set": "clu",
+              "number": "239",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1004d6fe-5597-57af-b4d3-2eda8841f645"
+            },
+            {
+              "set": "clu",
+              "number": "240",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d107f866-6a80-58b9-9ce1-35727b8cb10c"
+            },
+            {
+              "set": "clu",
+              "number": "252",
+              "weight": 1,
+              "foil": false,
+              "uuid": "542d2b63-f304-5cff-b572-46345f30e016"
+            },
+            {
+              "set": "clu",
+              "number": "258",
+              "weight": 5,
+              "foil": false,
+              "uuid": "1c9b8605-6d54-5c89-af7c-405a6a9a9372"
+            }
+          ]
+        },
+        "izzet_league_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "28",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f5d27cf6-ff48-502f-8959-9ad7ac732d93"
+            },
+            {
+              "set": "clu",
+              "number": "31",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dbf3d208-9db5-5eea-8142-80d97c472b41"
+            },
+            {
+              "set": "clu",
+              "number": "132",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cd5e2aed-aed3-5976-99cc-3a21a92a0dcd"
+            },
+            {
+              "set": "clu",
+              "number": "133",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d26c11a8-25f7-5c17-bee7-0e761d15891e"
+            },
+            {
+              "set": "clu",
+              "number": "136",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1bf2292f-ff80-542a-af0e-3c03839905ca"
+            },
+            {
+              "set": "clu",
+              "number": "141",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e3398df5-ced3-57a1-b58e-0f77de2618ed"
+            },
+            {
+              "set": "clu",
+              "number": "142",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a3f7e16e-5506-56f6-8233-649fd95da891"
+            },
+            {
+              "set": "clu",
+              "number": "148",
+              "weight": 1,
+              "foil": false,
+              "uuid": "278796f9-6552-547a-aac4-c6892f386ab6"
+            },
+            {
+              "set": "clu",
+              "number": "150",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2026ddd3-ceac-51dd-b3a8-f97a8f655639"
+            },
+            {
+              "set": "clu",
+              "number": "193",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3783ee9a-62b6-56ee-b644-34748ff49fe4"
+            },
+            {
+              "set": "clu",
+              "number": "196",
+              "weight": 1,
+              "foil": false,
+              "uuid": "96632c45-d000-5943-b621-88d838729d7f"
+            },
+            {
+              "set": "clu",
+              "number": "224",
+              "weight": 1,
+              "foil": false,
+              "uuid": "aa2cb286-4af0-5c67-90c6-161405d73cb4"
+            },
+            {
+              "set": "clu",
+              "number": "239",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1004d6fe-5597-57af-b4d3-2eda8841f645"
+            },
+            {
+              "set": "clu",
+              "number": "240",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d107f866-6a80-58b9-9ce1-35727b8cb10c"
+            },
+            {
+              "set": "clu",
+              "number": "249",
+              "weight": 1,
+              "foil": false,
+              "uuid": "464b4b4c-e787-590a-befb-dbc936a6fc26"
+            },
+            {
+              "set": "clu",
+              "number": "266",
+              "weight": 5,
+              "foil": false,
+              "uuid": "d3e5fe32-6977-545c-95e5-57d71781b723"
+            }
+          ]
+        },
+        "orzhov_syndicate_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "23",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c3dfa15c-5216-5c8d-8799-1451f74d1eac"
+            },
+            {
+              "set": "clu",
+              "number": "47",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1d82cd8d-5af9-5ace-9ec2-a664d05ef3df"
+            },
+            {
+              "set": "clu",
+              "number": "52",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5fe4d238-22a6-508c-b0f0-614d2976e17a"
+            },
+            {
+              "set": "clu",
+              "number": "53",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bb3775c9-3545-5f76-8050-38fc85b00985"
+            },
+            {
+              "set": "clu",
+              "number": "57",
+              "weight": 1,
+              "foil": false,
+              "uuid": "98e1886f-0d2d-5bb5-89dd-68b954cb04bb"
+            },
+            {
+              "set": "clu",
+              "number": "58",
+              "weight": 1,
+              "foil": false,
+              "uuid": "34ef30ba-2edd-536c-84f1-bc5f95020b88"
+            },
+            {
+              "set": "clu",
+              "number": "62",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d7fdebb9-5944-5e2a-91d7-db53d9f8fb84"
+            },
+            {
+              "set": "clu",
+              "number": "74",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4aaec702-2b06-5923-97b5-6adb6d7fc6e3"
+            },
+            {
+              "set": "clu",
+              "number": "75",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c91cb0f2-1401-52f0-a3fe-34fa0375041e"
+            },
+            {
+              "set": "clu",
+              "number": "76",
+              "weight": 1,
+              "foil": false,
+              "uuid": "975d577a-af6b-587f-a07f-2978fbf36495"
+            },
+            {
+              "set": "clu",
+              "number": "78",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3da82d51-0cd3-5992-bfa9-63031b6d3f01"
+            },
+            {
+              "set": "clu",
+              "number": "217",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c87bb852-72a3-52b2-8c60-2521d05e988f"
+            },
+            {
+              "set": "clu",
+              "number": "241",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e72d418e-5bcf-5503-ace0-0bf983820f4d"
+            },
+            {
+              "set": "clu",
+              "number": "242",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a32e69d1-3e37-5df7-a421-b3e9117e1ce6"
+            },
+            {
+              "set": "clu",
+              "number": "251",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b750e342-84c3-537b-91e8-231f1e43728b"
+            },
+            {
+              "set": "clu",
+              "number": "254",
+              "weight": 5,
+              "foil": false,
+              "uuid": "7bbecac8-3594-5a95-8dd5-d9d56ce796d0"
+            }
+          ]
+        },
+        "orzhov_syndicate_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "23",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c3dfa15c-5216-5c8d-8799-1451f74d1eac"
+            },
+            {
+              "set": "clu",
+              "number": "29",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ecb91a1d-4660-5e11-a9f5-8f41b72c6d2c"
+            },
+            {
+              "set": "clu",
+              "number": "105",
+              "weight": 1,
+              "foil": false,
+              "uuid": "60d63a16-83ca-5b13-b966-09c170682e25"
+            },
+            {
+              "set": "clu",
+              "number": "111",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba61bc3c-7923-5da5-bb42-f14aa4964ff2"
+            },
+            {
+              "set": "clu",
+              "number": "117",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1a05c51f-3f3e-580f-90d8-12e1846e1e8a"
+            },
+            {
+              "set": "clu",
+              "number": "118",
+              "weight": 1,
+              "foil": false,
+              "uuid": "786dc641-b0c4-526e-88cd-0c81b4709e51"
+            },
+            {
+              "set": "clu",
+              "number": "123",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6e8bc5fa-9236-5a1a-8adb-ce070bde2716"
+            },
+            {
+              "set": "clu",
+              "number": "201",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0283ad5f-90e1-5422-b50f-b1729fb11311"
+            },
+            {
+              "set": "clu",
+              "number": "208",
+              "weight": 1,
+              "foil": false,
+              "uuid": "de37a99d-b3d4-5699-a671-806919767ea1"
+            },
+            {
+              "set": "clu",
+              "number": "225",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3c149261-1152-598b-8073-3e3f58eb04c8"
+            },
+            {
+              "set": "clu",
+              "number": "241",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e72d418e-5bcf-5503-ace0-0bf983820f4d"
+            },
+            {
+              "set": "clu",
+              "number": "242",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a32e69d1-3e37-5df7-a421-b3e9117e1ce6"
+            },
+            {
+              "set": "clu",
+              "number": "253",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b9671be-73d6-5b12-aa89-d44728d1bcdd"
+            },
+            {
+              "set": "clu",
+              "number": "262",
+              "weight": 5,
+              "foil": false,
+              "uuid": "2fd378d0-659f-5f7c-9525-e1724cdcf55c"
+            },
+            {
+              "set": "mkm",
+              "number": "91",
+              "weight": 1,
+              "foil": false,
+              "uuid": "72944f0f-3029-5179-a160-b236a20d4bd2"
+            },
+            {
+              "set": "mkm",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c5a5633c-312e-5816-90a9-eb623aeababf"
+            }
+          ]
+        },
+        "selesnya_conclave_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "27",
+              "weight": 1,
+              "foil": false,
+              "uuid": "77148b50-2ee4-51d6-91f4-c0ff2331ea5c"
+            },
+            {
+              "set": "clu",
+              "number": "45",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d509a511-16d2-5730-b548-702cbce31726"
+            },
+            {
+              "set": "clu",
+              "number": "56",
+              "weight": 1,
+              "foil": false,
+              "uuid": "079354a3-02c6-5d31-b9cb-069d3ba353c6"
+            },
+            {
+              "set": "clu",
+              "number": "59",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9fbc085d-35ce-5e7b-adc2-f534b021fece"
+            },
+            {
+              "set": "clu",
+              "number": "63",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3f0d656e-2439-568c-9869-376f6b133c78"
+            },
+            {
+              "set": "clu",
+              "number": "65",
+              "weight": 1,
+              "foil": false,
+              "uuid": "88dc16c6-43a1-531c-aab1-8e169bc1820f"
+            },
+            {
+              "set": "clu",
+              "number": "71",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9c5b73c9-47da-5d28-977a-8bde4fb14b39"
+            },
+            {
+              "set": "clu",
+              "number": "72",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bc2cea36-5f18-5afc-8ab5-10796d4f1aea"
+            },
+            {
+              "set": "clu",
+              "number": "79",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf5f8b31-34bf-5482-b85a-50d22faeb939"
+            },
+            {
+              "set": "clu",
+              "number": "80",
+              "weight": 1,
+              "foil": false,
+              "uuid": "98533e3c-c1d2-5d36-97e9-64d8926261af"
+            },
+            {
+              "set": "clu",
+              "number": "207",
+              "weight": 1,
+              "foil": false,
+              "uuid": "46d3d6a4-806f-501f-9239-7bc218989640"
+            },
+            {
+              "set": "clu",
+              "number": "213",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d2673289-7b69-5012-bbd5-53f5ac8cf676"
+            },
+            {
+              "set": "clu",
+              "number": "245",
+              "weight": 1,
+              "foil": false,
+              "uuid": "37b5764e-b7fb-59e1-9b99-cce914349c14"
+            },
+            {
+              "set": "clu",
+              "number": "246",
+              "weight": 1,
+              "foil": false,
+              "uuid": "721f9579-15bd-56b7-b894-f22590cd111e"
+            },
+            {
+              "set": "clu",
+              "number": "251",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b750e342-84c3-537b-91e8-231f1e43728b"
+            },
+            {
+              "set": "clu",
+              "number": "254",
+              "weight": 5,
+              "foil": false,
+              "uuid": "7bbecac8-3594-5a95-8dd5-d9d56ce796d0"
+            }
+          ]
+        },
+        "selesnya_conclave_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "45",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d509a511-16d2-5730-b548-702cbce31726"
+            },
+            {
+              "set": "clu",
+              "number": "51",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d74f6578-0499-5644-b919-3f42b51e169f"
+            },
+            {
+              "set": "clu",
+              "number": "155",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4284f18d-72aa-52b5-a709-8036f753bbba"
+            },
+            {
+              "set": "clu",
+              "number": "156",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5ef46a94-46e5-5f99-845d-03b64b464420"
+            },
+            {
+              "set": "clu",
+              "number": "158",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e4d9602f-1990-5ed1-993d-4376b3371e2a"
+            },
+            {
+              "set": "clu",
+              "number": "171",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3a307246-3f90-559b-9c46-8ccda811cda9"
+            },
+            {
+              "set": "clu",
+              "number": "177",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3e0c0839-0211-538a-8f80-a6dc54cfd266"
+            },
+            {
+              "set": "clu",
+              "number": "178",
+              "weight": 1,
+              "foil": false,
+              "uuid": "325116c4-533a-5bbd-9adb-858341cec694"
+            },
+            {
+              "set": "clu",
+              "number": "181",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c13de04d-2889-5b5d-9a27-7de00db8db76"
+            },
+            {
+              "set": "clu",
+              "number": "207",
+              "weight": 1,
+              "foil": false,
+              "uuid": "46d3d6a4-806f-501f-9239-7bc218989640"
+            },
+            {
+              "set": "clu",
+              "number": "216",
+              "weight": 1,
+              "foil": false,
+              "uuid": "591ce9fc-f9f3-591b-b5d5-46dd4b20619f"
+            },
+            {
+              "set": "clu",
+              "number": "227",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ffdd4001-3606-50aa-a56c-cb60d770b302"
+            },
+            {
+              "set": "clu",
+              "number": "245",
+              "weight": 1,
+              "foil": false,
+              "uuid": "37b5764e-b7fb-59e1-9b99-cce914349c14"
+            },
+            {
+              "set": "clu",
+              "number": "246",
+              "weight": 1,
+              "foil": false,
+              "uuid": "721f9579-15bd-56b7-b894-f22590cd111e"
+            },
+            {
+              "set": "clu",
+              "number": "250",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475fa213-cd7e-5fb8-a8b6-4ba7d1e860c4"
+            },
+            {
+              "set": "clu",
+              "number": "270",
+              "weight": 5,
+              "foil": false,
+              "uuid": "268e224e-0de5-50c1-8a9b-2e126b8805d4"
+            }
+          ]
+        },
+        "simic_combine_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "42",
+              "weight": 1,
+              "foil": false,
+              "uuid": "21d3714b-e028-5613-a096-b44e38a1fa80"
+            },
+            {
+              "set": "clu",
+              "number": "50",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c1ef8835-ccda-5613-9626-c8fc40ef70b2"
+            },
+            {
+              "set": "clu",
+              "number": "87",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c964347-5c35-5c89-b55a-cb2d89fc9138"
+            },
+            {
+              "set": "clu",
+              "number": "91",
+              "weight": 1,
+              "foil": false,
+              "uuid": "18aad98a-6a2a-5eef-9f7c-66f58005d8c8"
+            },
+            {
+              "set": "clu",
+              "number": "92",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1546724f-2d15-5a01-af0c-1e4f5782fe42"
+            },
+            {
+              "set": "clu",
+              "number": "93",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e6c1f004-28c1-5e0f-b109-f415e2fb2948"
+            },
+            {
+              "set": "clu",
+              "number": "96",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5fc41c75-f761-5dce-98ac-71158db4e278"
+            },
+            {
+              "set": "clu",
+              "number": "97",
+              "weight": 1,
+              "foil": false,
+              "uuid": "69a27e8d-5cd3-5666-8bc6-d0b13cbc8500"
+            },
+            {
+              "set": "clu",
+              "number": "98",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05564bb1-047e-5977-adb3-7fdff59c6087"
+            },
+            {
+              "set": "clu",
+              "number": "99",
+              "weight": 1,
+              "foil": false,
+              "uuid": "795d581c-5d18-5ddb-9b3a-de59ba56d9ed"
+            },
+            {
+              "set": "clu",
+              "number": "200",
+              "weight": 1,
+              "foil": false,
+              "uuid": "296ba690-c7d0-52f2-a2a2-ac14f9d00615"
+            },
+            {
+              "set": "clu",
+              "number": "228",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1856fdee-c6f0-5777-8941-3765e60adac2"
+            },
+            {
+              "set": "clu",
+              "number": "247",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c8e1785-d7ad-5f06-b489-c9649d02db1e"
+            },
+            {
+              "set": "clu",
+              "number": "248",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f3b47e8e-f8fb-5172-8f92-8413ba3193dc"
+            },
+            {
+              "set": "clu",
+              "number": "252",
+              "weight": 1,
+              "foil": false,
+              "uuid": "542d2b63-f304-5cff-b572-46345f30e016"
+            },
+            {
+              "set": "clu",
+              "number": "258",
+              "weight": 5,
+              "foil": false,
+              "uuid": "1c9b8605-6d54-5c89-af7c-405a6a9a9372"
+            }
+          ]
+        },
+        "simic_combine_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "37",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf7246df-f671-563d-9bb5-993b365c77ad"
+            },
+            {
+              "set": "clu",
+              "number": "42",
+              "weight": 1,
+              "foil": false,
+              "uuid": "21d3714b-e028-5613-a096-b44e38a1fa80"
+            },
+            {
+              "set": "clu",
+              "number": "157",
+              "weight": 1,
+              "foil": false,
+              "uuid": "31c08f6b-0d96-5813-9515-97da748c4f1d"
+            },
+            {
+              "set": "clu",
+              "number": "161",
+              "weight": 1,
+              "foil": false,
+              "uuid": "02ed400a-703c-5ba7-ab6c-293187148d42"
+            },
+            {
+              "set": "clu",
+              "number": "166",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7bbe0d0d-183f-5242-91f1-767f7a4f1530"
+            },
+            {
+              "set": "clu",
+              "number": "170",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8e0923fc-a4bc-5d6b-9ea1-d59a091b268e"
+            },
+            {
+              "set": "clu",
+              "number": "173",
+              "weight": 1,
+              "foil": false,
+              "uuid": "fd1a6f38-bbcd-5a90-b5f4-c70a98324d78"
+            },
+            {
+              "set": "clu",
+              "number": "174",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2205922c-7151-5885-9b78-1bdee6fdfd45"
+            },
+            {
+              "set": "clu",
+              "number": "195",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cfc33d08-2b94-52c2-8b57-ff9171326e81"
+            },
+            {
+              "set": "clu",
+              "number": "197a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8bb654aa-a2b4-5923-8877-f9f9656a0aa4"
+            },
+            {
+              "set": "clu",
+              "number": "206",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4a36872d-9996-5314-a71f-364a1c4d29e9"
+            },
+            {
+              "set": "clu",
+              "number": "209",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c233f72e-a4de-5296-9cb7-079c905f2a34"
+            },
+            {
+              "set": "clu",
+              "number": "247",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c8e1785-d7ad-5f06-b489-c9649d02db1e"
+            },
+            {
+              "set": "clu",
+              "number": "248",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f3b47e8e-f8fb-5172-8f92-8413ba3193dc"
+            },
+            {
+              "set": "clu",
+              "number": "250",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475fa213-cd7e-5fb8-a8b6-4ba7d1e860c4"
+            },
+            {
+              "set": "clu",
+              "number": "270",
+              "weight": 5,
+              "foil": false,
+              "uuid": "268e224e-0de5-50c1-8a9b-2e126b8805d4"
+            }
+          ]
+        }
+      },
+      "source_set_codes": [
+        "clu",
+        "mkm"
+      ]
+    },
+    "tcgcsvData": {
+      "product": {
+        "productId": 529974,
+        "name": "Ravnica: Clue Edition",
+        "cleanName": "Ravnica Clue Edition",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/529974_200w.jpg",
+        "categoryId": 1,
+        "groupId": 23362,
+        "url": "https://www.tcgplayer.com/product/529974/magic-ravnica-clue-edition-ravnica-clue-edition",
+        "modifiedOn": "2024-02-23T05:03:14.297",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2024-02-23T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "In this Clue-inspired spin on Magic: The Gathering, your players will step into the roles of Ravnica's top detectives, gathering evidence to determine the killer, their weapon, and the scene of the crime. There are two ways to win: be the first to solve the mystery or be the last suspect standing.\r\n<br>\r\nThis product has endless replayability—to get started, players only need to grab 2 Ravnica: Clue Edition Boosters, shuffle them together, and play. To start up a new game, players can keep their own decks together, reshuffle the Evidence cards, and get back to sleuthing!\r\n<br>\r\nContents:\r\n<br>\r\n• 8 Ravnica: Clue Edition Boosters\r\n<br>\r\n• 21 Evidence cards featuring characters, weapons, and rooms inspired by Clue\r\n<br>\r\n• 1 of 10 possible Foil Shock Lands featuring new art\r\n<br>\r\n• 4 Hidden Info Screens\r\n<br>\r\n• 1 Evidence Notepad\r\n<br>\r\n• 1 Case File Envelope\r\n<br>\r\n• 1 Card Storage Box"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "195166249278"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 529974,
+          "lowPrice": 28.5,
+          "midPrice": 54.99,
+          "highPrice": 83.94,
+          "marketPrice": 41.27,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "45e240fd-e8ad-5862-b176-78af37af1905",
+    "name": "Ravnica Clue Edition Booster Pack",
+    "category": "booster_pack",
+    "cardCount": 20,
+    "subtype": "other",
+    "identifiers": {
+      "cardtraderId": "270500",
+      "mcmId": "749352",
+      "tcgplayerProductId": "618914"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/86f50a491a963e8d"
+    },
+    "contents": {
+      "pack": [
+        {
+          "code": "default",
+          "set": "clu"
+        }
+      ]
+    },
+    "setCode": "CLU",
+    "setName": "Ravnica: Clue Edition",
+    "extendedData": {
+      "code": "clu",
+      "boosters": [
+        {
+          "sheets": {
+            "azorius_senate_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "azorius_senate_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "boros_legion_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "boros_legion_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "cult_of_rakdos_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "cult_of_rakdos_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "golgari_swarm_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "golgari_swarm_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "gruul_clans_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "gruul_clans_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "house_dimir_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "house_dimir_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "izzet_league_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "izzet_league_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "orzhov_syndicate_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "orzhov_syndicate_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "selesnya_conclave_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "selesnya_conclave_2": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "simic_combine_1": 20
+          },
+          "weight": 1
+        },
+        {
+          "sheets": {
+            "simic_combine_2": 20
+          },
+          "weight": 1
+        }
+      ],
+      "sheets": {
+        "azorius_senate_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "36",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7e965432-fb84-5e8e-9030-c998c338c211"
+            },
+            {
+              "set": "clu",
+              "number": "40",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cb022b72-b639-55d0-8859-4f8bf42f7cb0"
+            },
+            {
+              "set": "clu",
+              "number": "54",
+              "weight": 1,
+              "foil": false,
+              "uuid": "213dd84a-6c65-5347-b241-08ee4a1e3897"
+            },
+            {
+              "set": "clu",
+              "number": "55",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf03e96c-2d6e-5b8b-b9ae-bcde50be7733"
+            },
+            {
+              "set": "clu",
+              "number": "60",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9caff4e6-13af-52ea-b403-3cbbc87d82c0"
+            },
+            {
+              "set": "clu",
+              "number": "64",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ee36dd28-d349-5467-add7-c99f09737f70"
+            },
+            {
+              "set": "clu",
+              "number": "67",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba2b26a8-a5e6-5cc8-a004-b386eee2d6ce"
+            },
+            {
+              "set": "clu",
+              "number": "69",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d8836402-3dbb-5e25-9126-470cee4f6e9e"
+            },
+            {
+              "set": "clu",
+              "number": "77",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c4318430-e13f-5725-abbe-7cd9af4b2dd2"
+            },
+            {
+              "set": "clu",
+              "number": "80",
+              "weight": 1,
+              "foil": false,
+              "uuid": "98533e3c-c1d2-5d36-97e9-64d8926261af"
+            },
+            {
+              "set": "clu",
+              "number": "183",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba4d65cd-ef28-51d0-b3cc-0f56283729b7"
+            },
+            {
+              "set": "clu",
+              "number": "211",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e7563582-efd7-5d0a-9338-38262c2fcbd5"
+            },
+            {
+              "set": "clu",
+              "number": "229",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6edc43b6-edd9-575f-a529-0761ff311581"
+            },
+            {
+              "set": "clu",
+              "number": "230",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d3b58661-0077-565c-9328-c92b0547909b"
+            },
+            {
+              "set": "clu",
+              "number": "251",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b750e342-84c3-537b-91e8-231f1e43728b"
+            },
+            {
+              "set": "clu",
+              "number": "254",
+              "weight": 5,
+              "foil": false,
+              "uuid": "7bbecac8-3594-5a95-8dd5-d9d56ce796d0"
+            }
+          ]
+        },
+        "azorius_senate_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "40",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cb022b72-b639-55d0-8859-4f8bf42f7cb0"
+            },
+            {
+              "set": "clu",
+              "number": "46",
+              "weight": 1,
+              "foil": false,
+              "uuid": "80eb0561-b1bb-5923-b35a-5b00100b2acc"
+            },
+            {
+              "set": "clu",
+              "number": "82",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3f9fe422-1cb8-5211-a64c-d9f0f40e0c2d"
+            },
+            {
+              "set": "clu",
+              "number": "83",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b92b9bec-e12f-5b1b-8840-89685b4b9f73"
+            },
+            {
+              "set": "clu",
+              "number": "88",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ffd6d81f-0d3f-5341-9762-1f67244b6095"
+            },
+            {
+              "set": "clu",
+              "number": "90",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5de56968-9d72-527a-8e37-ec8ce30c8a85"
+            },
+            {
+              "set": "clu",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "42a47f76-3990-54f4-a9a8-e74e4462de9e"
+            },
+            {
+              "set": "clu",
+              "number": "183",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba4d65cd-ef28-51d0-b3cc-0f56283729b7"
+            },
+            {
+              "set": "clu",
+              "number": "185a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9543ef98-6c3c-5573-9b1b-a94b47974f9e"
+            },
+            {
+              "set": "clu",
+              "number": "199",
+              "weight": 1,
+              "foil": false,
+              "uuid": "21c46ed1-7de2-59b2-8671-b06031af4c3b"
+            },
+            {
+              "set": "clu",
+              "number": "214",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6269ad8a-a875-5430-816f-04d7c4c1da91"
+            },
+            {
+              "set": "clu",
+              "number": "219",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0586ecbd-1031-5d10-b099-796cb7e7ea1c"
+            },
+            {
+              "set": "clu",
+              "number": "229",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6edc43b6-edd9-575f-a529-0761ff311581"
+            },
+            {
+              "set": "clu",
+              "number": "230",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d3b58661-0077-565c-9328-c92b0547909b"
+            },
+            {
+              "set": "clu",
+              "number": "252",
+              "weight": 1,
+              "foil": false,
+              "uuid": "542d2b63-f304-5cff-b572-46345f30e016"
+            },
+            {
+              "set": "clu",
+              "number": "258",
+              "weight": 5,
+              "foil": false,
+              "uuid": "1c9b8605-6d54-5c89-af7c-405a6a9a9372"
+            }
+          ]
+        },
+        "boros_legion_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "22",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f80b60bb-fe69-551e-86e9-711410db1930"
+            },
+            {
+              "set": "clu",
+              "number": "39",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9abf7d82-7935-5080-a012-57b8a895f0e2"
+            },
+            {
+              "set": "clu",
+              "number": "61",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a6e6491c-c8f1-5158-98da-1d591bd0cae6"
+            },
+            {
+              "set": "clu",
+              "number": "65",
+              "weight": 1,
+              "foil": false,
+              "uuid": "88dc16c6-43a1-531c-aab1-8e169bc1820f"
+            },
+            {
+              "set": "clu",
+              "number": "66",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8f68ddac-43f5-5935-8286-e07381db550a"
+            },
+            {
+              "set": "clu",
+              "number": "68",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9a388e76-8651-5fcf-a048-136eca467f03"
+            },
+            {
+              "set": "clu",
+              "number": "70",
+              "weight": 1,
+              "foil": false,
+              "uuid": "66edaa2a-84a5-52b5-876a-d98c953772ae"
+            },
+            {
+              "set": "clu",
+              "number": "73",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5bc2f6ba-81e4-5e34-bdd4-dc2386a43282"
+            },
+            {
+              "set": "clu",
+              "number": "192",
+              "weight": 1,
+              "foil": false,
+              "uuid": "164a7380-0f21-5f93-9bd7-a3c3773d0341"
+            },
+            {
+              "set": "clu",
+              "number": "198a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "45dd32ee-04d7-5675-9cd5-87ed0e70fd22"
+            },
+            {
+              "set": "clu",
+              "number": "220",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d9ae34b0-40e3-5426-9fcf-55b8b80ad684"
+            },
+            {
+              "set": "clu",
+              "number": "231",
+              "weight": 1,
+              "foil": false,
+              "uuid": "24dcf965-f2c9-549e-b256-f0337a433ad1"
+            },
+            {
+              "set": "clu",
+              "number": "232",
+              "weight": 1,
+              "foil": false,
+              "uuid": "59d4594d-8d94-509a-a843-21809b1f762d"
+            },
+            {
+              "set": "clu",
+              "number": "251",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b750e342-84c3-537b-91e8-231f1e43728b"
+            },
+            {
+              "set": "clu",
+              "number": "254",
+              "weight": 5,
+              "foil": false,
+              "uuid": "7bbecac8-3594-5a95-8dd5-d9d56ce796d0"
+            },
+            {
+              "set": "mkm",
+              "number": "29",
+              "weight": 1,
+              "foil": false,
+              "uuid": "680c33fb-90c6-54b2-a796-2e4c2964c9fa"
+            }
+          ]
+        },
+        "boros_legion_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "25",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5606a0c4-5390-5ee1-ba0b-eb1bb7e01866"
+            },
+            {
+              "set": "clu",
+              "number": "39",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9abf7d82-7935-5080-a012-57b8a895f0e2"
+            },
+            {
+              "set": "clu",
+              "number": "129",
+              "weight": 1,
+              "foil": false,
+              "uuid": "218bed69-6874-539b-af2a-6e9383df27b6"
+            },
+            {
+              "set": "clu",
+              "number": "134",
+              "weight": 1,
+              "foil": false,
+              "uuid": "559bdd13-6b07-565c-82d8-c5a8849447e0"
+            },
+            {
+              "set": "clu",
+              "number": "135",
+              "weight": 1,
+              "foil": false,
+              "uuid": "48a55f50-7463-5282-b904-a104ee74981c"
+            },
+            {
+              "set": "clu",
+              "number": "139",
+              "weight": 1,
+              "foil": false,
+              "uuid": "842b1caa-1be0-5000-b9c3-f0afe70c1527"
+            },
+            {
+              "set": "clu",
+              "number": "147",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ef4abcab-0b15-5023-8820-170115dc0857"
+            },
+            {
+              "set": "clu",
+              "number": "151",
+              "weight": 1,
+              "foil": false,
+              "uuid": "15519402-15dc-5ff9-be8a-d47dc377349a"
+            },
+            {
+              "set": "clu",
+              "number": "153",
+              "weight": 1,
+              "foil": false,
+              "uuid": "239b421d-ba7c-57fb-91dc-3a7c408b46cb"
+            },
+            {
+              "set": "clu",
+              "number": "154",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3386bcd3-cfc2-51ec-b84b-43377a693f3b"
+            },
+            {
+              "set": "clu",
+              "number": "189",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2f91e7a3-8142-5194-bba0-aa81f561399e"
+            },
+            {
+              "set": "clu",
+              "number": "198a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "45dd32ee-04d7-5675-9cd5-87ed0e70fd22"
+            },
+            {
+              "set": "clu",
+              "number": "231",
+              "weight": 1,
+              "foil": false,
+              "uuid": "24dcf965-f2c9-549e-b256-f0337a433ad1"
+            },
+            {
+              "set": "clu",
+              "number": "232",
+              "weight": 1,
+              "foil": false,
+              "uuid": "59d4594d-8d94-509a-a843-21809b1f762d"
+            },
+            {
+              "set": "clu",
+              "number": "249",
+              "weight": 1,
+              "foil": false,
+              "uuid": "464b4b4c-e787-590a-befb-dbc936a6fc26"
+            },
+            {
+              "set": "clu",
+              "number": "266",
+              "weight": 5,
+              "foil": false,
+              "uuid": "d3e5fe32-6977-545c-95e5-57d71781b723"
+            }
+          ]
+        },
+        "cult_of_rakdos_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "32",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b8d414f4-cee4-50da-9406-041804bcb51a"
+            },
+            {
+              "set": "clu",
+              "number": "35",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1cbe85f2-fbe3-551a-9cfd-0aa1b981876e"
+            },
+            {
+              "set": "clu",
+              "number": "106",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d16672df-1b27-5f8c-b7f3-5b4416bc643a"
+            },
+            {
+              "set": "clu",
+              "number": "108",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9ab1f026-6829-5c25-8636-a6e77d704a2a"
+            },
+            {
+              "set": "clu",
+              "number": "109",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ffe0a3a9-f26e-5972-b63f-3a44aa0dd332"
+            },
+            {
+              "set": "clu",
+              "number": "113",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5a25d4fd-4461-5972-81b8-0d7109978a4b"
+            },
+            {
+              "set": "clu",
+              "number": "119",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dd6c4b0b-7672-52b5-af45-5971023342ff"
+            },
+            {
+              "set": "clu",
+              "number": "122",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf798ada-b50c-503d-b2a8-6acbad5e5ae5"
+            },
+            {
+              "set": "clu",
+              "number": "126",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ec364cd8-384b-51fe-b2ee-ff6caf5c3202"
+            },
+            {
+              "set": "clu",
+              "number": "191",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b8f8f377-0cff-5361-bd2b-15a01281de7a"
+            },
+            {
+              "set": "clu",
+              "number": "226",
+              "weight": 1,
+              "foil": false,
+              "uuid": "17b208a8-b36f-581b-9ac1-8556593a026a"
+            },
+            {
+              "set": "clu",
+              "number": "243",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a77b0b4e-aaed-5920-96f9-f8ef35d345f6"
+            },
+            {
+              "set": "clu",
+              "number": "244",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f1006723-11c2-573e-9708-5559d713a9f6"
+            },
+            {
+              "set": "clu",
+              "number": "253",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b9671be-73d6-5b12-aa89-d44728d1bcdd"
+            },
+            {
+              "set": "clu",
+              "number": "262",
+              "weight": 5,
+              "foil": false,
+              "uuid": "2fd378d0-659f-5f7c-9525-e1724cdcf55c"
+            },
+            {
+              "set": "mkm",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c5a5633c-312e-5816-90a9-eb623aeababf"
+            }
+          ]
+        },
+        "cult_of_rakdos_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "26",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c56a5207-b361-5f8d-9572-d7bdbaf17d2f"
+            },
+            {
+              "set": "clu",
+              "number": "35",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1cbe85f2-fbe3-551a-9cfd-0aa1b981876e"
+            },
+            {
+              "set": "clu",
+              "number": "128",
+              "weight": 1,
+              "foil": false,
+              "uuid": "173ef7df-fe6f-5012-8366-aed255573093"
+            },
+            {
+              "set": "clu",
+              "number": "130",
+              "weight": 1,
+              "foil": false,
+              "uuid": "df0ed615-301b-5ae7-a72a-ac14a354d880"
+            },
+            {
+              "set": "clu",
+              "number": "131",
+              "weight": 1,
+              "foil": false,
+              "uuid": "80f60d09-bb46-5718-a6ef-511209c3ec64"
+            },
+            {
+              "set": "clu",
+              "number": "138",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ef986b6d-4636-59e8-b554-9375f1de9e12"
+            },
+            {
+              "set": "clu",
+              "number": "140",
+              "weight": 1,
+              "foil": false,
+              "uuid": "97a858fb-82a1-51e2-b849-cb1b542a6b1c"
+            },
+            {
+              "set": "clu",
+              "number": "143",
+              "weight": 1,
+              "foil": false,
+              "uuid": "222abd5b-0b61-54ef-a576-c06db2b0cc90"
+            },
+            {
+              "set": "clu",
+              "number": "145",
+              "weight": 1,
+              "foil": false,
+              "uuid": "27fb237f-5291-5afb-918b-12a9f80ee91e"
+            },
+            {
+              "set": "clu",
+              "number": "191",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b8f8f377-0cff-5361-bd2b-15a01281de7a"
+            },
+            {
+              "set": "clu",
+              "number": "204",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f76e2d82-9faa-5894-80c9-b0ae9347634b"
+            },
+            {
+              "set": "clu",
+              "number": "205",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f5c4cf40-ff01-54cf-a0e4-065ff2eeeb21"
+            },
+            {
+              "set": "clu",
+              "number": "243",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a77b0b4e-aaed-5920-96f9-f8ef35d345f6"
+            },
+            {
+              "set": "clu",
+              "number": "244",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f1006723-11c2-573e-9708-5559d713a9f6"
+            },
+            {
+              "set": "clu",
+              "number": "249",
+              "weight": 1,
+              "foil": false,
+              "uuid": "464b4b4c-e787-590a-befb-dbc936a6fc26"
+            },
+            {
+              "set": "clu",
+              "number": "266",
+              "weight": 5,
+              "foil": false,
+              "uuid": "d3e5fe32-6977-545c-95e5-57d71781b723"
+            }
+          ]
+        },
+        "golgari_swarm_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "24",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a4f767fd-0928-5521-8c9e-9559e6eee71d"
+            },
+            {
+              "set": "clu",
+              "number": "48",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0a56b032-4838-59c2-92db-ca3b9a51099f"
+            },
+            {
+              "set": "clu",
+              "number": "107",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a451f50e-c3cf-57ab-aa72-8412378deada"
+            },
+            {
+              "set": "clu",
+              "number": "110",
+              "weight": 1,
+              "foil": false,
+              "uuid": "39d157b9-c460-5279-a0a7-35a5935303e2"
+            },
+            {
+              "set": "clu",
+              "number": "112",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3de8ba5b-3d78-59b0-8d2e-a5afc4c26f82"
+            },
+            {
+              "set": "clu",
+              "number": "125",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7be5d914-b4cf-5269-90a3-2c84e4525f56"
+            },
+            {
+              "set": "clu",
+              "number": "184",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a47bbf7d-586b-5586-ba23-58a72a2b196d"
+            },
+            {
+              "set": "clu",
+              "number": "194",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b66c7850-0b5b-5da2-b887-9944a2972640"
+            },
+            {
+              "set": "clu",
+              "number": "203",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7d03dfb8-29d2-5913-ab4d-9b4fdf5c4b96"
+            },
+            {
+              "set": "clu",
+              "number": "210a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9ade3c93-7ee1-582b-ac9d-8cfa50913c74"
+            },
+            {
+              "set": "clu",
+              "number": "222",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ec98200f-8c1c-5067-b667-50f608661c6f"
+            },
+            {
+              "set": "clu",
+              "number": "235",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3a6669ad-4387-54d1-b24f-5be900bbf225"
+            },
+            {
+              "set": "clu",
+              "number": "236",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4f399578-ad9c-579c-bdae-af5b5b4aa552"
+            },
+            {
+              "set": "clu",
+              "number": "253",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b9671be-73d6-5b12-aa89-d44728d1bcdd"
+            },
+            {
+              "set": "clu",
+              "number": "262",
+              "weight": 5,
+              "foil": false,
+              "uuid": "2fd378d0-659f-5f7c-9525-e1724cdcf55c"
+            },
+            {
+              "set": "mkm",
+              "number": "91",
+              "weight": 1,
+              "foil": false,
+              "uuid": "72944f0f-3029-5179-a160-b236a20d4bd2"
+            }
+          ]
+        },
+        "golgari_swarm_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "43",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7cc2dbcd-8542-51b5-9b16-1a3a4cb519fe"
+            },
+            {
+              "set": "clu",
+              "number": "48",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0a56b032-4838-59c2-92db-ca3b9a51099f"
+            },
+            {
+              "set": "clu",
+              "number": "163",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9194fcf0-00dd-5085-ba88-463f77488795"
+            },
+            {
+              "set": "clu",
+              "number": "167",
+              "weight": 1,
+              "foil": false,
+              "uuid": "eb4d8bba-4c77-5bd1-a5a8-1275d422a8a2"
+            },
+            {
+              "set": "clu",
+              "number": "168",
+              "weight": 1,
+              "foil": false,
+              "uuid": "308650d7-50f1-552f-a69a-00ba45a6e2f7"
+            },
+            {
+              "set": "clu",
+              "number": "172",
+              "weight": 1,
+              "foil": false,
+              "uuid": "878fa780-b48c-5698-bdb6-0ff76e9407ef"
+            },
+            {
+              "set": "clu",
+              "number": "176",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d9c29b1d-7331-5b48-80a0-81c3efd891eb"
+            },
+            {
+              "set": "clu",
+              "number": "179",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7c2f5cd9-b364-5224-b568-b4f6a2d5bf13"
+            },
+            {
+              "set": "clu",
+              "number": "203",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7d03dfb8-29d2-5913-ab4d-9b4fdf5c4b96"
+            },
+            {
+              "set": "clu",
+              "number": "210a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9ade3c93-7ee1-582b-ac9d-8cfa50913c74"
+            },
+            {
+              "set": "clu",
+              "number": "215",
+              "weight": 1,
+              "foil": false,
+              "uuid": "31e139a2-f67d-508a-900e-acb6a646db74"
+            },
+            {
+              "set": "clu",
+              "number": "235",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3a6669ad-4387-54d1-b24f-5be900bbf225"
+            },
+            {
+              "set": "clu",
+              "number": "236",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4f399578-ad9c-579c-bdae-af5b5b4aa552"
+            },
+            {
+              "set": "clu",
+              "number": "250",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475fa213-cd7e-5fb8-a8b6-4ba7d1e860c4"
+            },
+            {
+              "set": "clu",
+              "number": "270",
+              "weight": 5,
+              "foil": false,
+              "uuid": "268e224e-0de5-50c1-8a9b-2e126b8805d4"
+            },
+            {
+              "set": "mkm",
+              "number": "174",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ca8d33da-f49f-5d78-8326-807e05fa0cb0"
+            }
+          ]
+        },
+        "gruul_clans_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "33",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8a6729f9-4396-5e84-b2da-f8c32a1edb7a"
+            },
+            {
+              "set": "clu",
+              "number": "34",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4496045b-69bd-5777-9481-51155db3d2c5"
+            },
+            {
+              "set": "clu",
+              "number": "127",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9e547507-7597-53e2-923b-3834932a525d"
+            },
+            {
+              "set": "clu",
+              "number": "137",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c31fbdc4-42a4-536c-89c0-024cc8bdbe8d"
+            },
+            {
+              "set": "clu",
+              "number": "144",
+              "weight": 1,
+              "foil": false,
+              "uuid": "671c37a0-375a-5436-8893-493754097efd"
+            },
+            {
+              "set": "clu",
+              "number": "146",
+              "weight": 1,
+              "foil": false,
+              "uuid": "df8a9e14-66e3-5c2a-a422-910c60b797fb"
+            },
+            {
+              "set": "clu",
+              "number": "147",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ef4abcab-0b15-5023-8820-170115dc0857"
+            },
+            {
+              "set": "clu",
+              "number": "149",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cb97294c-d511-5fa6-a50f-b2f3ae2f7325"
+            },
+            {
+              "set": "clu",
+              "number": "152",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1b4efa4e-d3ea-5f82-bdb6-3a013f3b2df8"
+            },
+            {
+              "set": "clu",
+              "number": "182",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d8f2cca3-cdc4-5fce-ab77-397ac94abf54"
+            },
+            {
+              "set": "clu",
+              "number": "190",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f6c46850-5afe-5794-8db3-864a263f596a"
+            },
+            {
+              "set": "clu",
+              "number": "223",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d2b1d6a1-8751-588e-a60b-4404799938c1"
+            },
+            {
+              "set": "clu",
+              "number": "237",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c160f293-6b7c-52d3-81af-070092c49d0a"
+            },
+            {
+              "set": "clu",
+              "number": "238",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05a50b37-d8d6-5545-a981-aee07b62c0c2"
+            },
+            {
+              "set": "clu",
+              "number": "249",
+              "weight": 1,
+              "foil": false,
+              "uuid": "464b4b4c-e787-590a-befb-dbc936a6fc26"
+            },
+            {
+              "set": "clu",
+              "number": "266",
+              "weight": 5,
+              "foil": false,
+              "uuid": "d3e5fe32-6977-545c-95e5-57d71781b723"
+            }
+          ]
+        },
+        "gruul_clans_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "33",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8a6729f9-4396-5e84-b2da-f8c32a1edb7a"
+            },
+            {
+              "set": "clu",
+              "number": "44",
+              "weight": 1,
+              "foil": false,
+              "uuid": "76a20836-8506-5f5c-95db-0f446e4b40fa"
+            },
+            {
+              "set": "clu",
+              "number": "156",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5ef46a94-46e5-5f99-845d-03b64b464420"
+            },
+            {
+              "set": "clu",
+              "number": "159",
+              "weight": 1,
+              "foil": false,
+              "uuid": "017e8948-32bf-5757-af32-87668e3a7fb8"
+            },
+            {
+              "set": "clu",
+              "number": "160",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ce6cf53d-f0f3-5d73-ada7-8df0ef7beba2"
+            },
+            {
+              "set": "clu",
+              "number": "162",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2406e60d-58d1-5467-a014-487f4417d443"
+            },
+            {
+              "set": "clu",
+              "number": "164",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b59ea758-0a3a-5df8-9ed5-2f39f32d795e"
+            },
+            {
+              "set": "clu",
+              "number": "165",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6095216e-9e51-5af9-81df-0aaf39800b6c"
+            },
+            {
+              "set": "clu",
+              "number": "169",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7bac1bfd-e72c-54eb-810a-092550c9c84f"
+            },
+            {
+              "set": "clu",
+              "number": "175",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7b9cee6b-b3f7-59f4-a993-973d213bd992"
+            },
+            {
+              "set": "clu",
+              "number": "180",
+              "weight": 1,
+              "foil": false,
+              "uuid": "522f6870-222b-5bf9-83e8-5b59f9070a68"
+            },
+            {
+              "set": "clu",
+              "number": "202",
+              "weight": 1,
+              "foil": false,
+              "uuid": "16f1f664-f00f-534a-a253-ceefe01bcc2c"
+            },
+            {
+              "set": "clu",
+              "number": "237",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c160f293-6b7c-52d3-81af-070092c49d0a"
+            },
+            {
+              "set": "clu",
+              "number": "238",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05a50b37-d8d6-5545-a981-aee07b62c0c2"
+            },
+            {
+              "set": "clu",
+              "number": "250",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475fa213-cd7e-5fb8-a8b6-4ba7d1e860c4"
+            },
+            {
+              "set": "clu",
+              "number": "270",
+              "weight": 5,
+              "foil": false,
+              "uuid": "268e224e-0de5-50c1-8a9b-2e126b8805d4"
+            }
+          ]
+        },
+        "house_dimir_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "38",
+              "weight": 1,
+              "foil": false,
+              "uuid": "34c7855c-9a83-54d1-ba81-dbdd3759946f"
+            },
+            {
+              "set": "clu",
+              "number": "49",
+              "weight": 1,
+              "foil": false,
+              "uuid": "910e2ec1-1cba-5fde-bb33-cf28debee094"
+            },
+            {
+              "set": "clu",
+              "number": "85",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b36e4e8b-0eed-5f83-8dee-7b5cc4238426"
+            },
+            {
+              "set": "clu",
+              "number": "86",
+              "weight": 1,
+              "foil": false,
+              "uuid": "40fe75df-9832-57e9-8ed3-9a8317503cbb"
+            },
+            {
+              "set": "clu",
+              "number": "92",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1546724f-2d15-5a01-af0c-1e4f5782fe42"
+            },
+            {
+              "set": "clu",
+              "number": "104",
+              "weight": 1,
+              "foil": false,
+              "uuid": "052cf787-7eca-5f2b-84b4-00a2cdf9031c"
+            },
+            {
+              "set": "clu",
+              "number": "186",
+              "weight": 1,
+              "foil": false,
+              "uuid": "48ec0885-a7b1-5a00-a96a-15b277aa064c"
+            },
+            {
+              "set": "clu",
+              "number": "187a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a4f8985a-dc38-52bd-b7fb-ae7899ad4237"
+            },
+            {
+              "set": "clu",
+              "number": "188",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05d33bbd-0e26-5029-9063-09af9f7f5f74"
+            },
+            {
+              "set": "clu",
+              "number": "218",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4df6d1b0-fd29-5fc3-a159-c3485950201d"
+            },
+            {
+              "set": "clu",
+              "number": "221",
+              "weight": 1,
+              "foil": false,
+              "uuid": "98e4ad63-20d8-5ad3-9e51-833af51d5c1d"
+            },
+            {
+              "set": "clu",
+              "number": "233",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c4a5ccca-333a-5350-b26f-2977c4383d40"
+            },
+            {
+              "set": "clu",
+              "number": "234",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c9690748-8434-5f6f-8215-1e854fe68045"
+            },
+            {
+              "set": "clu",
+              "number": "252",
+              "weight": 1,
+              "foil": false,
+              "uuid": "542d2b63-f304-5cff-b572-46345f30e016"
+            },
+            {
+              "set": "clu",
+              "number": "258",
+              "weight": 5,
+              "foil": false,
+              "uuid": "1c9b8605-6d54-5c89-af7c-405a6a9a9372"
+            },
+            {
+              "set": "mkm",
+              "number": "53",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7a8957af-6a29-5e19-aa45-eef3feaaa90c"
+            }
+          ]
+        },
+        "house_dimir_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "30",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cbbe978e-2d8b-51e2-9bd1-d4ed1b9c18c0"
+            },
+            {
+              "set": "clu",
+              "number": "49",
+              "weight": 1,
+              "foil": false,
+              "uuid": "910e2ec1-1cba-5fde-bb33-cf28debee094"
+            },
+            {
+              "set": "clu",
+              "number": "114",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a4683dd0-caf1-50aa-926c-8d09b1d0bded"
+            },
+            {
+              "set": "clu",
+              "number": "115",
+              "weight": 1,
+              "foil": false,
+              "uuid": "63d51c59-7257-5d9d-bc4c-00f696e8d144"
+            },
+            {
+              "set": "clu",
+              "number": "116",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4a0737da-5c5f-587d-ab3a-d60c145e3860"
+            },
+            {
+              "set": "clu",
+              "number": "120",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8900b67c-9223-56c8-af5b-de5bbb0eab91"
+            },
+            {
+              "set": "clu",
+              "number": "121",
+              "weight": 1,
+              "foil": false,
+              "uuid": "43235dcb-d4d5-5de9-94b8-d9aa30dfab6b"
+            },
+            {
+              "set": "clu",
+              "number": "124",
+              "weight": 1,
+              "foil": false,
+              "uuid": "be63f486-9c0b-5995-9779-a6ca26bb7d5d"
+            },
+            {
+              "set": "clu",
+              "number": "187a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a4f8985a-dc38-52bd-b7fb-ae7899ad4237"
+            },
+            {
+              "set": "clu",
+              "number": "212",
+              "weight": 1,
+              "foil": false,
+              "uuid": "abb006cb-dad1-579b-b3dc-d667bae4d839"
+            },
+            {
+              "set": "clu",
+              "number": "218",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4df6d1b0-fd29-5fc3-a159-c3485950201d"
+            },
+            {
+              "set": "clu",
+              "number": "233",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c4a5ccca-333a-5350-b26f-2977c4383d40"
+            },
+            {
+              "set": "clu",
+              "number": "234",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c9690748-8434-5f6f-8215-1e854fe68045"
+            },
+            {
+              "set": "clu",
+              "number": "253",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b9671be-73d6-5b12-aa89-d44728d1bcdd"
+            },
+            {
+              "set": "clu",
+              "number": "262",
+              "weight": 5,
+              "foil": false,
+              "uuid": "2fd378d0-659f-5f7c-9525-e1724cdcf55c"
+            },
+            {
+              "set": "mkm",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c5a5633c-312e-5816-90a9-eb623aeababf"
+            }
+          ]
+        },
+        "izzet_league_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "31",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dbf3d208-9db5-5eea-8142-80d97c472b41"
+            },
+            {
+              "set": "clu",
+              "number": "41",
+              "weight": 1,
+              "foil": false,
+              "uuid": "95a9d4d2-24f6-540c-8fb2-42cfa78cfa8b"
+            },
+            {
+              "set": "clu",
+              "number": "81",
+              "weight": 1,
+              "foil": false,
+              "uuid": "25cef2b4-39ef-523a-bbbc-0be7e236c5c3"
+            },
+            {
+              "set": "clu",
+              "number": "84",
+              "weight": 1,
+              "foil": false,
+              "uuid": "66937474-a5c9-5341-bd10-4e96a606a9b2"
+            },
+            {
+              "set": "clu",
+              "number": "85",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b36e4e8b-0eed-5f83-8dee-7b5cc4238426"
+            },
+            {
+              "set": "clu",
+              "number": "89",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3b52878f-69c4-591a-9752-9620bb62529a"
+            },
+            {
+              "set": "clu",
+              "number": "94",
+              "weight": 1,
+              "foil": false,
+              "uuid": "56c5d348-b386-597a-9c86-48b08ed2ca2d"
+            },
+            {
+              "set": "clu",
+              "number": "100",
+              "weight": 1,
+              "foil": false,
+              "uuid": "49457f40-6db6-5dbe-9e47-9e9e4d567ea7"
+            },
+            {
+              "set": "clu",
+              "number": "101",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e29df46a-d12b-5f76-b660-51ae5d9dea8f"
+            },
+            {
+              "set": "clu",
+              "number": "102",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3427adfd-aed0-50d1-8fbb-d41a8e427c41"
+            },
+            {
+              "set": "clu",
+              "number": "103",
+              "weight": 1,
+              "foil": false,
+              "uuid": "fccc03b9-e15d-58fa-96c2-181b69c1d304"
+            },
+            {
+              "set": "clu",
+              "number": "193",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3783ee9a-62b6-56ee-b644-34748ff49fe4"
+            },
+            {
+              "set": "clu",
+              "number": "239",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1004d6fe-5597-57af-b4d3-2eda8841f645"
+            },
+            {
+              "set": "clu",
+              "number": "240",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d107f866-6a80-58b9-9ce1-35727b8cb10c"
+            },
+            {
+              "set": "clu",
+              "number": "252",
+              "weight": 1,
+              "foil": false,
+              "uuid": "542d2b63-f304-5cff-b572-46345f30e016"
+            },
+            {
+              "set": "clu",
+              "number": "258",
+              "weight": 5,
+              "foil": false,
+              "uuid": "1c9b8605-6d54-5c89-af7c-405a6a9a9372"
+            }
+          ]
+        },
+        "izzet_league_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "28",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f5d27cf6-ff48-502f-8959-9ad7ac732d93"
+            },
+            {
+              "set": "clu",
+              "number": "31",
+              "weight": 1,
+              "foil": false,
+              "uuid": "dbf3d208-9db5-5eea-8142-80d97c472b41"
+            },
+            {
+              "set": "clu",
+              "number": "132",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cd5e2aed-aed3-5976-99cc-3a21a92a0dcd"
+            },
+            {
+              "set": "clu",
+              "number": "133",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d26c11a8-25f7-5c17-bee7-0e761d15891e"
+            },
+            {
+              "set": "clu",
+              "number": "136",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1bf2292f-ff80-542a-af0e-3c03839905ca"
+            },
+            {
+              "set": "clu",
+              "number": "141",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e3398df5-ced3-57a1-b58e-0f77de2618ed"
+            },
+            {
+              "set": "clu",
+              "number": "142",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a3f7e16e-5506-56f6-8233-649fd95da891"
+            },
+            {
+              "set": "clu",
+              "number": "148",
+              "weight": 1,
+              "foil": false,
+              "uuid": "278796f9-6552-547a-aac4-c6892f386ab6"
+            },
+            {
+              "set": "clu",
+              "number": "150",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2026ddd3-ceac-51dd-b3a8-f97a8f655639"
+            },
+            {
+              "set": "clu",
+              "number": "193",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3783ee9a-62b6-56ee-b644-34748ff49fe4"
+            },
+            {
+              "set": "clu",
+              "number": "196",
+              "weight": 1,
+              "foil": false,
+              "uuid": "96632c45-d000-5943-b621-88d838729d7f"
+            },
+            {
+              "set": "clu",
+              "number": "224",
+              "weight": 1,
+              "foil": false,
+              "uuid": "aa2cb286-4af0-5c67-90c6-161405d73cb4"
+            },
+            {
+              "set": "clu",
+              "number": "239",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1004d6fe-5597-57af-b4d3-2eda8841f645"
+            },
+            {
+              "set": "clu",
+              "number": "240",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d107f866-6a80-58b9-9ce1-35727b8cb10c"
+            },
+            {
+              "set": "clu",
+              "number": "249",
+              "weight": 1,
+              "foil": false,
+              "uuid": "464b4b4c-e787-590a-befb-dbc936a6fc26"
+            },
+            {
+              "set": "clu",
+              "number": "266",
+              "weight": 5,
+              "foil": false,
+              "uuid": "d3e5fe32-6977-545c-95e5-57d71781b723"
+            }
+          ]
+        },
+        "orzhov_syndicate_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "23",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c3dfa15c-5216-5c8d-8799-1451f74d1eac"
+            },
+            {
+              "set": "clu",
+              "number": "47",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1d82cd8d-5af9-5ace-9ec2-a664d05ef3df"
+            },
+            {
+              "set": "clu",
+              "number": "52",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5fe4d238-22a6-508c-b0f0-614d2976e17a"
+            },
+            {
+              "set": "clu",
+              "number": "53",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bb3775c9-3545-5f76-8050-38fc85b00985"
+            },
+            {
+              "set": "clu",
+              "number": "57",
+              "weight": 1,
+              "foil": false,
+              "uuid": "98e1886f-0d2d-5bb5-89dd-68b954cb04bb"
+            },
+            {
+              "set": "clu",
+              "number": "58",
+              "weight": 1,
+              "foil": false,
+              "uuid": "34ef30ba-2edd-536c-84f1-bc5f95020b88"
+            },
+            {
+              "set": "clu",
+              "number": "62",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d7fdebb9-5944-5e2a-91d7-db53d9f8fb84"
+            },
+            {
+              "set": "clu",
+              "number": "74",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4aaec702-2b06-5923-97b5-6adb6d7fc6e3"
+            },
+            {
+              "set": "clu",
+              "number": "75",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c91cb0f2-1401-52f0-a3fe-34fa0375041e"
+            },
+            {
+              "set": "clu",
+              "number": "76",
+              "weight": 1,
+              "foil": false,
+              "uuid": "975d577a-af6b-587f-a07f-2978fbf36495"
+            },
+            {
+              "set": "clu",
+              "number": "78",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3da82d51-0cd3-5992-bfa9-63031b6d3f01"
+            },
+            {
+              "set": "clu",
+              "number": "217",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c87bb852-72a3-52b2-8c60-2521d05e988f"
+            },
+            {
+              "set": "clu",
+              "number": "241",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e72d418e-5bcf-5503-ace0-0bf983820f4d"
+            },
+            {
+              "set": "clu",
+              "number": "242",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a32e69d1-3e37-5df7-a421-b3e9117e1ce6"
+            },
+            {
+              "set": "clu",
+              "number": "251",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b750e342-84c3-537b-91e8-231f1e43728b"
+            },
+            {
+              "set": "clu",
+              "number": "254",
+              "weight": 5,
+              "foil": false,
+              "uuid": "7bbecac8-3594-5a95-8dd5-d9d56ce796d0"
+            }
+          ]
+        },
+        "orzhov_syndicate_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "23",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c3dfa15c-5216-5c8d-8799-1451f74d1eac"
+            },
+            {
+              "set": "clu",
+              "number": "29",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ecb91a1d-4660-5e11-a9f5-8f41b72c6d2c"
+            },
+            {
+              "set": "clu",
+              "number": "105",
+              "weight": 1,
+              "foil": false,
+              "uuid": "60d63a16-83ca-5b13-b966-09c170682e25"
+            },
+            {
+              "set": "clu",
+              "number": "111",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ba61bc3c-7923-5da5-bb42-f14aa4964ff2"
+            },
+            {
+              "set": "clu",
+              "number": "117",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1a05c51f-3f3e-580f-90d8-12e1846e1e8a"
+            },
+            {
+              "set": "clu",
+              "number": "118",
+              "weight": 1,
+              "foil": false,
+              "uuid": "786dc641-b0c4-526e-88cd-0c81b4709e51"
+            },
+            {
+              "set": "clu",
+              "number": "123",
+              "weight": 1,
+              "foil": false,
+              "uuid": "6e8bc5fa-9236-5a1a-8adb-ce070bde2716"
+            },
+            {
+              "set": "clu",
+              "number": "201",
+              "weight": 1,
+              "foil": false,
+              "uuid": "0283ad5f-90e1-5422-b50f-b1729fb11311"
+            },
+            {
+              "set": "clu",
+              "number": "208",
+              "weight": 1,
+              "foil": false,
+              "uuid": "de37a99d-b3d4-5699-a671-806919767ea1"
+            },
+            {
+              "set": "clu",
+              "number": "225",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3c149261-1152-598b-8073-3e3f58eb04c8"
+            },
+            {
+              "set": "clu",
+              "number": "241",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e72d418e-5bcf-5503-ace0-0bf983820f4d"
+            },
+            {
+              "set": "clu",
+              "number": "242",
+              "weight": 1,
+              "foil": false,
+              "uuid": "a32e69d1-3e37-5df7-a421-b3e9117e1ce6"
+            },
+            {
+              "set": "clu",
+              "number": "253",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5b9671be-73d6-5b12-aa89-d44728d1bcdd"
+            },
+            {
+              "set": "clu",
+              "number": "262",
+              "weight": 5,
+              "foil": false,
+              "uuid": "2fd378d0-659f-5f7c-9525-e1724cdcf55c"
+            },
+            {
+              "set": "mkm",
+              "number": "91",
+              "weight": 1,
+              "foil": false,
+              "uuid": "72944f0f-3029-5179-a160-b236a20d4bd2"
+            },
+            {
+              "set": "mkm",
+              "number": "95",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c5a5633c-312e-5816-90a9-eb623aeababf"
+            }
+          ]
+        },
+        "selesnya_conclave_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "27",
+              "weight": 1,
+              "foil": false,
+              "uuid": "77148b50-2ee4-51d6-91f4-c0ff2331ea5c"
+            },
+            {
+              "set": "clu",
+              "number": "45",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d509a511-16d2-5730-b548-702cbce31726"
+            },
+            {
+              "set": "clu",
+              "number": "56",
+              "weight": 1,
+              "foil": false,
+              "uuid": "079354a3-02c6-5d31-b9cb-069d3ba353c6"
+            },
+            {
+              "set": "clu",
+              "number": "59",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9fbc085d-35ce-5e7b-adc2-f534b021fece"
+            },
+            {
+              "set": "clu",
+              "number": "63",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3f0d656e-2439-568c-9869-376f6b133c78"
+            },
+            {
+              "set": "clu",
+              "number": "65",
+              "weight": 1,
+              "foil": false,
+              "uuid": "88dc16c6-43a1-531c-aab1-8e169bc1820f"
+            },
+            {
+              "set": "clu",
+              "number": "71",
+              "weight": 1,
+              "foil": false,
+              "uuid": "9c5b73c9-47da-5d28-977a-8bde4fb14b39"
+            },
+            {
+              "set": "clu",
+              "number": "72",
+              "weight": 1,
+              "foil": false,
+              "uuid": "bc2cea36-5f18-5afc-8ab5-10796d4f1aea"
+            },
+            {
+              "set": "clu",
+              "number": "79",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf5f8b31-34bf-5482-b85a-50d22faeb939"
+            },
+            {
+              "set": "clu",
+              "number": "80",
+              "weight": 1,
+              "foil": false,
+              "uuid": "98533e3c-c1d2-5d36-97e9-64d8926261af"
+            },
+            {
+              "set": "clu",
+              "number": "207",
+              "weight": 1,
+              "foil": false,
+              "uuid": "46d3d6a4-806f-501f-9239-7bc218989640"
+            },
+            {
+              "set": "clu",
+              "number": "213",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d2673289-7b69-5012-bbd5-53f5ac8cf676"
+            },
+            {
+              "set": "clu",
+              "number": "245",
+              "weight": 1,
+              "foil": false,
+              "uuid": "37b5764e-b7fb-59e1-9b99-cce914349c14"
+            },
+            {
+              "set": "clu",
+              "number": "246",
+              "weight": 1,
+              "foil": false,
+              "uuid": "721f9579-15bd-56b7-b894-f22590cd111e"
+            },
+            {
+              "set": "clu",
+              "number": "251",
+              "weight": 1,
+              "foil": false,
+              "uuid": "b750e342-84c3-537b-91e8-231f1e43728b"
+            },
+            {
+              "set": "clu",
+              "number": "254",
+              "weight": 5,
+              "foil": false,
+              "uuid": "7bbecac8-3594-5a95-8dd5-d9d56ce796d0"
+            }
+          ]
+        },
+        "selesnya_conclave_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "45",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d509a511-16d2-5730-b548-702cbce31726"
+            },
+            {
+              "set": "clu",
+              "number": "51",
+              "weight": 1,
+              "foil": false,
+              "uuid": "d74f6578-0499-5644-b919-3f42b51e169f"
+            },
+            {
+              "set": "clu",
+              "number": "155",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4284f18d-72aa-52b5-a709-8036f753bbba"
+            },
+            {
+              "set": "clu",
+              "number": "156",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5ef46a94-46e5-5f99-845d-03b64b464420"
+            },
+            {
+              "set": "clu",
+              "number": "158",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e4d9602f-1990-5ed1-993d-4376b3371e2a"
+            },
+            {
+              "set": "clu",
+              "number": "171",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3a307246-3f90-559b-9c46-8ccda811cda9"
+            },
+            {
+              "set": "clu",
+              "number": "177",
+              "weight": 1,
+              "foil": false,
+              "uuid": "3e0c0839-0211-538a-8f80-a6dc54cfd266"
+            },
+            {
+              "set": "clu",
+              "number": "178",
+              "weight": 1,
+              "foil": false,
+              "uuid": "325116c4-533a-5bbd-9adb-858341cec694"
+            },
+            {
+              "set": "clu",
+              "number": "181",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c13de04d-2889-5b5d-9a27-7de00db8db76"
+            },
+            {
+              "set": "clu",
+              "number": "207",
+              "weight": 1,
+              "foil": false,
+              "uuid": "46d3d6a4-806f-501f-9239-7bc218989640"
+            },
+            {
+              "set": "clu",
+              "number": "216",
+              "weight": 1,
+              "foil": false,
+              "uuid": "591ce9fc-f9f3-591b-b5d5-46dd4b20619f"
+            },
+            {
+              "set": "clu",
+              "number": "227",
+              "weight": 1,
+              "foil": false,
+              "uuid": "ffdd4001-3606-50aa-a56c-cb60d770b302"
+            },
+            {
+              "set": "clu",
+              "number": "245",
+              "weight": 1,
+              "foil": false,
+              "uuid": "37b5764e-b7fb-59e1-9b99-cce914349c14"
+            },
+            {
+              "set": "clu",
+              "number": "246",
+              "weight": 1,
+              "foil": false,
+              "uuid": "721f9579-15bd-56b7-b894-f22590cd111e"
+            },
+            {
+              "set": "clu",
+              "number": "250",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475fa213-cd7e-5fb8-a8b6-4ba7d1e860c4"
+            },
+            {
+              "set": "clu",
+              "number": "270",
+              "weight": 5,
+              "foil": false,
+              "uuid": "268e224e-0de5-50c1-8a9b-2e126b8805d4"
+            }
+          ]
+        },
+        "simic_combine_1": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "42",
+              "weight": 1,
+              "foil": false,
+              "uuid": "21d3714b-e028-5613-a096-b44e38a1fa80"
+            },
+            {
+              "set": "clu",
+              "number": "50",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c1ef8835-ccda-5613-9626-c8fc40ef70b2"
+            },
+            {
+              "set": "clu",
+              "number": "87",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c964347-5c35-5c89-b55a-cb2d89fc9138"
+            },
+            {
+              "set": "clu",
+              "number": "91",
+              "weight": 1,
+              "foil": false,
+              "uuid": "18aad98a-6a2a-5eef-9f7c-66f58005d8c8"
+            },
+            {
+              "set": "clu",
+              "number": "92",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1546724f-2d15-5a01-af0c-1e4f5782fe42"
+            },
+            {
+              "set": "clu",
+              "number": "93",
+              "weight": 1,
+              "foil": false,
+              "uuid": "e6c1f004-28c1-5e0f-b109-f415e2fb2948"
+            },
+            {
+              "set": "clu",
+              "number": "96",
+              "weight": 1,
+              "foil": false,
+              "uuid": "5fc41c75-f761-5dce-98ac-71158db4e278"
+            },
+            {
+              "set": "clu",
+              "number": "97",
+              "weight": 1,
+              "foil": false,
+              "uuid": "69a27e8d-5cd3-5666-8bc6-d0b13cbc8500"
+            },
+            {
+              "set": "clu",
+              "number": "98",
+              "weight": 1,
+              "foil": false,
+              "uuid": "05564bb1-047e-5977-adb3-7fdff59c6087"
+            },
+            {
+              "set": "clu",
+              "number": "99",
+              "weight": 1,
+              "foil": false,
+              "uuid": "795d581c-5d18-5ddb-9b3a-de59ba56d9ed"
+            },
+            {
+              "set": "clu",
+              "number": "200",
+              "weight": 1,
+              "foil": false,
+              "uuid": "296ba690-c7d0-52f2-a2a2-ac14f9d00615"
+            },
+            {
+              "set": "clu",
+              "number": "228",
+              "weight": 1,
+              "foil": false,
+              "uuid": "1856fdee-c6f0-5777-8941-3765e60adac2"
+            },
+            {
+              "set": "clu",
+              "number": "247",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c8e1785-d7ad-5f06-b489-c9649d02db1e"
+            },
+            {
+              "set": "clu",
+              "number": "248",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f3b47e8e-f8fb-5172-8f92-8413ba3193dc"
+            },
+            {
+              "set": "clu",
+              "number": "252",
+              "weight": 1,
+              "foil": false,
+              "uuid": "542d2b63-f304-5cff-b572-46345f30e016"
+            },
+            {
+              "set": "clu",
+              "number": "258",
+              "weight": 5,
+              "foil": false,
+              "uuid": "1c9b8605-6d54-5c89-af7c-405a6a9a9372"
+            }
+          ]
+        },
+        "simic_combine_2": {
+          "fixed": true,
+          "total_weight": 20,
+          "cards": [
+            {
+              "set": "clu",
+              "number": "37",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cf7246df-f671-563d-9bb5-993b365c77ad"
+            },
+            {
+              "set": "clu",
+              "number": "42",
+              "weight": 1,
+              "foil": false,
+              "uuid": "21d3714b-e028-5613-a096-b44e38a1fa80"
+            },
+            {
+              "set": "clu",
+              "number": "157",
+              "weight": 1,
+              "foil": false,
+              "uuid": "31c08f6b-0d96-5813-9515-97da748c4f1d"
+            },
+            {
+              "set": "clu",
+              "number": "161",
+              "weight": 1,
+              "foil": false,
+              "uuid": "02ed400a-703c-5ba7-ab6c-293187148d42"
+            },
+            {
+              "set": "clu",
+              "number": "166",
+              "weight": 1,
+              "foil": false,
+              "uuid": "7bbe0d0d-183f-5242-91f1-767f7a4f1530"
+            },
+            {
+              "set": "clu",
+              "number": "170",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8e0923fc-a4bc-5d6b-9ea1-d59a091b268e"
+            },
+            {
+              "set": "clu",
+              "number": "173",
+              "weight": 1,
+              "foil": false,
+              "uuid": "fd1a6f38-bbcd-5a90-b5f4-c70a98324d78"
+            },
+            {
+              "set": "clu",
+              "number": "174",
+              "weight": 1,
+              "foil": false,
+              "uuid": "2205922c-7151-5885-9b78-1bdee6fdfd45"
+            },
+            {
+              "set": "clu",
+              "number": "195",
+              "weight": 1,
+              "foil": false,
+              "uuid": "cfc33d08-2b94-52c2-8b57-ff9171326e81"
+            },
+            {
+              "set": "clu",
+              "number": "197a",
+              "weight": 1,
+              "foil": false,
+              "uuid": "8bb654aa-a2b4-5923-8877-f9f9656a0aa4"
+            },
+            {
+              "set": "clu",
+              "number": "206",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4a36872d-9996-5314-a71f-364a1c4d29e9"
+            },
+            {
+              "set": "clu",
+              "number": "209",
+              "weight": 1,
+              "foil": false,
+              "uuid": "c233f72e-a4de-5296-9cb7-079c905f2a34"
+            },
+            {
+              "set": "clu",
+              "number": "247",
+              "weight": 1,
+              "foil": false,
+              "uuid": "4c8e1785-d7ad-5f06-b489-c9649d02db1e"
+            },
+            {
+              "set": "clu",
+              "number": "248",
+              "weight": 1,
+              "foil": false,
+              "uuid": "f3b47e8e-f8fb-5172-8f92-8413ba3193dc"
+            },
+            {
+              "set": "clu",
+              "number": "250",
+              "weight": 1,
+              "foil": false,
+              "uuid": "475fa213-cd7e-5fb8-a8b6-4ba7d1e860c4"
+            },
+            {
+              "set": "clu",
+              "number": "270",
+              "weight": 5,
+              "foil": false,
+              "uuid": "268e224e-0de5-50c1-8a9b-2e126b8805d4"
+            }
+          ]
+        }
+      },
+      "source_set_codes": [
+        "clu",
+        "mkm"
+      ]
+    },
+    "tcgcsvData": {
+      "product": {
+        "productId": 618914,
+        "name": "Ravnica: Clue Edition - Booster Pack",
+        "cleanName": "Ravnica Clue Edition Booster Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/618914_200w.jpg",
+        "categoryId": 1,
+        "groupId": 23362,
+        "url": "https://www.tcgplayer.com/product/618914/magic-ravnica-clue-edition-ravnica-clue-edition-booster-pack",
+        "modifiedOn": "2025-02-19T15:31:24.047",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each Booster Pack contains 20 cards themed to each of Ravnica's guilds featuring reprints from past Ravnica sets and new-to-Magic cards."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 618914,
+          "lowPrice": 6,
+          "midPrice": 8.5,
+          "highPrice": 10.99,
+          "marketPrice": 8.48,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "fc7fa0da-7c80-5336-8f94-75bc24fec1f6",
+    "name": "Ravnica Clue Edition Box Topper Booster Pack",
+    "category": "booster_pack",
+    "cardCount": 1,
+    "subtype": "topper",
+    "identifiers": {
+      "cardtraderId": "270502",
+      "mcmId": "749353",
+      "tcgplayerProductId": "618918"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/b433063e07c88ba0"
+    },
+    "contents": {
+      "pack": [
+        {
+          "code": "box-topper",
+          "set": "clu"
+        }
+      ]
+    },
+    "setCode": "CLU",
+    "setName": "Ravnica: Clue Edition",
+    "tcgcsvData": {
+      "product": {
+        "productId": 618918,
+        "name": "Ravnica: Clue Edition - Shock Land Box Topper",
+        "cleanName": "Ravnica Clue Edition Shock Land Box Topper",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/618918_200w.jpg",
+        "categoryId": 1,
+        "groupId": 23362,
+        "url": "https://www.tcgplayer.com/product/618918/magic-ravnica-clue-edition-ravnica-clue-edition-shock-land-box-topper",
+        "modifiedOn": "2025-02-19T15:38:49.78",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each sealed Shock Land Box Topper pack contains 1 special art card."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 618918,
+          "lowPrice": 27,
+          "midPrice": 28.95,
+          "highPrice": 46,
+          "marketPrice": 26.57,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "9bd3eeff-8f8a-5bdf-b7f8-6f283171645b",
+    "name": "Ravnica Clue Edition Case",
+    "category": "bundle_case",
+    "releaseDate": "2024-02-23",
+    "subtype": "game_night",
+    "identifiers": {
+      "tcgplayerProductId": "529975"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/bcee2c64df0a31de"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Ravnica Clue Edition",
+          "set": "clu",
+          "uuid": "b2a41e1a-9956-5978-a980-3690f656d66b"
+        }
+      ]
+    },
+    "setCode": "CLU",
+    "setName": "Ravnica: Clue Edition",
+    "tcgcsvData": {
+      "product": {
+        "productId": 529975,
+        "name": "Ravnica: Clue Edition Case",
+        "cleanName": "Ravnica Clue Edition Case",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/529975_200w.jpg",
+        "categoryId": 1,
+        "groupId": 23362,
+        "url": "https://www.tcgplayer.com/product/529975/magic-ravnica-clue-edition-ravnica-clue-edition-case",
+        "modifiedOn": "2024-02-23T05:03:14.297",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2024-02-23T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "In this Clue-inspired spin on Magic: The Gathering, your players will step into the roles of Ravnica's top detectives, gathering evidence to determine the killer, their weapon, and the scene of the crime. There are two ways to win: be the first to solve the mystery or be the last suspect standing.\r\n<br>\r\nThis product has endless replayability—to get started, players only need to grab 2 Ravnica: Clue Edition Boosters, shuffle them together, and play. To start up a new game, players can keep their own decks together, reshuffle the Evidence cards, and get back to sleuthing!\r\n<br>\r\nContents:\r\n<br>\r\n• 6 Ravnica: Clue Edition Sets"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "195166249285"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 529975,
+          "lowPrice": 299.56,
+          "midPrice": 334.77,
+          "highPrice": 369.98,
+          "marketPrice": 235.37,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

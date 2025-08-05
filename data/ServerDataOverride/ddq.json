@@ -1,0 +1,129 @@
+[
+  {
+    "uuid": "4a4295cf-7f17-575b-a18d-68b3e358b653",
+    "name": "Duel Deck Blessed vs Cursed",
+    "category": "multiple_decks",
+    "releaseDate": "2016-02-26",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100170",
+      "cardKingdomId": "205098",
+      "cardtraderId": "48390",
+      "csiId": "221782",
+      "mcmId": "288299",
+      "scgId": "SLD-MTG-BXS-DDQ-EN",
+      "tcgplayerProductId": "112696",
+      "tntId": "1089633"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/8b0d304b4d8709a2",
+      "tcgplayer": "https://mtgjson.com/links/5f4cc99b9f8eba80"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Blessed vs Cursed Blessed Deck",
+          "set": "ddq",
+          "uuid": "3dbac40e-57e5-5330-aa5b-4f3ca0d1baa2"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Blessed vs Cursed Cursed Deck",
+          "set": "ddq",
+          "uuid": "55e02454-a66c-5e23-97a9-b9b6c821e689"
+        }
+      ]
+    },
+    "setCode": "DDQ",
+    "setName": "Duel Decks: Blessed vs. Cursed",
+    "tcgcsvData": {
+      "product": {
+        "productId": 112696,
+        "name": "Duel Decks: Blessed vs. Cursed - Box Set",
+        "cleanName": "Duel Decks Blessed vs Cursed Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/112696_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1726,
+        "url": "https://www.tcgplayer.com/product/112696/magic-duel-decks-blessed-vs-cursed-duel-decks-blessed-vs-cursed-box-set",
+        "modifiedOn": "2016-02-19T13:23:21.183",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2016-02-26T00:00:00",
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 112696,
+          "lowPrice": 22.99,
+          "midPrice": 34.99,
+          "highPrice": 44.99,
+          "marketPrice": 24.16,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "3dbac40e-57e5-5330-aa5b-4f3ca0d1baa2",
+    "name": "Duel Deck Blessed vs Cursed Blessed Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Blessed",
+          "set": "ddq"
+        }
+      ]
+    },
+    "setCode": "DDQ",
+    "setName": "Duel Decks: Blessed vs. Cursed"
+  },
+  {
+    "uuid": "55e02454-a66c-5e23-97a9-b9b6c821e689",
+    "name": "Duel Deck Blessed vs Cursed Cursed Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Cursed",
+          "set": "ddq"
+        }
+      ]
+    },
+    "setCode": "DDQ",
+    "setName": "Duel Decks: Blessed vs. Cursed"
+  },
+  {
+    "uuid": "948762b2-be62-57b0-8c38-d8f904d2477e",
+    "name": "Duel Deck Blessed vs Cursed Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Blessed vs Cursed",
+          "set": "ddq",
+          "uuid": "4a4295cf-7f17-575b-a18d-68b3e358b653"
+        }
+      ]
+    },
+    "setCode": "DDQ",
+    "setName": "Duel Decks: Blessed vs. Cursed"
+  }
+]

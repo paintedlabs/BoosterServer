@@ -1,0 +1,138 @@
+[
+  {
+    "uuid": "035b26f3-6a34-5ee5-b107-97035762530c",
+    "name": "Duel Deck Sorin vs Tibalt",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1101166",
+      "cardKingdomId": "189413",
+      "cardtraderId": "47925",
+      "csiId": "165905",
+      "mcmId": "260630",
+      "scgId": "SLD-MTG-BXS-DDK-EN",
+      "tcgplayerProductId": "67874",
+      "tntId": "803694"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/c8248568f0377f29",
+      "tcgplayer": "https://mtgjson.com/links/1f1a9672b2545d3a"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Sorin vs Tibalt Sorin Deck",
+          "set": "ddk",
+          "uuid": "2ae26e25-9bde-58e5-98d2-a98b6770a979"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Sorin vs Tibalt Tibalt Deck",
+          "set": "ddk",
+          "uuid": "5d871def-7934-5389-93b4-a22c584e01cc"
+        }
+      ]
+    },
+    "setCode": "DDK",
+    "setName": "Duel Decks: Sorin vs. Tibalt",
+    "tcgcsvData": {
+      "product": {
+        "productId": 67874,
+        "name": "Duel Decks: Sorin vs. Tibalt - Box Set",
+        "cleanName": "Duel Decks Sorin vs Tibalt Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/67874_200w.jpg",
+        "categoryId": 1,
+        "groupId": 601,
+        "url": "https://www.tcgplayer.com/product/67874/magic-duel-decks-sorin-vs-tibalt-duel-decks-sorin-vs-tibalt-box-set",
+        "modifiedOn": "2019-04-01T20:04:24.257",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 67874,
+          "lowPrice": 23.99,
+          "midPrice": 29.77,
+          "highPrice": 59.99,
+          "marketPrice": 27.72,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "5a0b2cc6-9fe8-5db0-94e1-5eaa37083f87",
+    "name": "Duel Deck Sorin vs Tibalt Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47929",
+      "mcmId": "260631",
+      "tntId": "803695"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Sorin vs Tibalt",
+          "set": "ddk",
+          "uuid": "035b26f3-6a34-5ee5-b107-97035762530c"
+        }
+      ]
+    },
+    "setCode": "DDK",
+    "setName": "Duel Decks: Sorin vs. Tibalt"
+  },
+  {
+    "uuid": "2ae26e25-9bde-58e5-98d2-a98b6770a979",
+    "name": "Duel Deck Sorin vs Tibalt Sorin Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47927",
+      "mcmId": "261016"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Sorin",
+          "set": "ddk"
+        }
+      ]
+    },
+    "setCode": "DDK",
+    "setName": "Duel Decks: Sorin vs. Tibalt"
+  },
+  {
+    "uuid": "5d871def-7934-5389-93b4-a22c584e01cc",
+    "name": "Duel Deck Sorin vs Tibalt Tibalt Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47928",
+      "mcmId": "261017"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Tibalt",
+          "set": "ddk"
+        }
+      ]
+    },
+    "setCode": "DDK",
+    "setName": "Duel Decks: Sorin vs. Tibalt"
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "uuid": "e035cf9d-468d-510e-b8eb-395a5df72081",
+    "name": "Duel Deck Merfolk vs Goblins",
+    "category": "multiple_decks",
+    "releaseDate": "2017-06-28",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1477018",
+      "cardKingdomId": "214721",
+      "cardtraderId": "48584",
+      "csiId": "243744",
+      "mcmId": "298751",
+      "scgId": "SLD-MTG-BXS-DDT-EN",
+      "tcgplayerProductId": "146998",
+      "tntId": "1139822"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/644cef758738bca8",
+      "tcgplayer": "https://mtgjson.com/links/e24f81b781284e62"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Merfolk vs Goblins Goblins Deck",
+          "set": "ddt",
+          "uuid": "73d36629-12dc-5b8d-92ba-3f075220050c"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Merfolk vs Goblins Merfolk Deck",
+          "set": "ddt",
+          "uuid": "121187e6-9063-50a8-a52d-8e2421d27e90"
+        }
+      ]
+    },
+    "setCode": "DDT",
+    "setName": "Duel Decks: Merfolk vs. Goblins",
+    "tcgcsvData": {
+      "product": {
+        "productId": 146998,
+        "name": "Duel Decks: Merfolk vs. Goblins - Box Set",
+        "cleanName": "Duel Decks Merfolk vs Goblins Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/146998_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2076,
+        "url": "https://www.tcgplayer.com/product/146998/magic-duel-decks-merfolk-vs-goblins-duel-decks-merfolk-vs-goblins-box-set",
+        "modifiedOn": "2023-06-23T14:10:22.44",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 146998,
+          "lowPrice": 42.34,
+          "midPrice": 57.48,
+          "highPrice": 109.99,
+          "marketPrice": 42.42,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "565eb62f-9213-519a-8fcb-28050d67dda0",
+    "name": "Duel Deck Merfolk vs Goblins Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "1139823"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Merfolk vs Goblins",
+          "set": "ddt",
+          "uuid": "e035cf9d-468d-510e-b8eb-395a5df72081"
+        }
+      ]
+    },
+    "setCode": "DDT",
+    "setName": "Duel Decks: Merfolk vs. Goblins"
+  },
+  {
+    "uuid": "73d36629-12dc-5b8d-92ba-3f075220050c",
+    "name": "Duel Deck Merfolk vs Goblins Goblins Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2017-11-01",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48586",
+      "mcmId": "312369"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Goblins",
+          "set": "ddt"
+        }
+      ]
+    },
+    "setCode": "DDT",
+    "setName": "Duel Decks: Merfolk vs. Goblins"
+  },
+  {
+    "uuid": "121187e6-9063-50a8-a52d-8e2421d27e90",
+    "name": "Duel Deck Merfolk vs Goblins Merfolk Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2017-11-01",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48585",
+      "mcmId": "312370"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Merfolk",
+          "set": "ddt"
+        }
+      ]
+    },
+    "setCode": "DDT",
+    "setName": "Duel Decks: Merfolk vs. Goblins"
+  }
+]

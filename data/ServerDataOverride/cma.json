@@ -1,0 +1,187 @@
+[
+  {
+    "uuid": "df1500dd-860f-5fb8-bda2-1a08192d94a0",
+    "name": "Commander Anthology",
+    "category": "box_set",
+    "subtype": "commander",
+    "identifiers": {
+      "abuId": "1476863",
+      "cardKingdomId": "212386",
+      "cardtraderId": "48537",
+      "csiId": "232548",
+      "scgId": "SLD-MTG-MLT-CMA-EN",
+      "tcgplayerProductId": "131447",
+      "tntId": "1118790"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/3683945d3799965a",
+      "tcgplayer": "https://mtgjson.com/links/e5f71654ab70745e"
+    },
+    "contents": {
+      "other": [
+        {
+          "name": "4 Specialized Life Counters"
+        },
+        {
+          "name": "Tokens for All Decks"
+        }
+      ],
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Commander Anthology Commander Deck Evasive Maneuvers",
+          "set": "cma",
+          "uuid": "68cf5577-5cd1-51ca-be9f-33309c88d55f"
+        },
+        {
+          "count": 1,
+          "name": "Commander Anthology Commander Deck Guided by Nature",
+          "set": "cma",
+          "uuid": "28690cea-9be7-5a1c-9097-553700512c5d"
+        },
+        {
+          "count": 1,
+          "name": "Commander Anthology Commander Deck Heavenly Inferno",
+          "set": "cma",
+          "uuid": "d0c617ee-b56c-5176-baee-4dbec2c1a972"
+        },
+        {
+          "count": 1,
+          "name": "Commander Anthology Commander Deck Plunder the Graves",
+          "set": "cma",
+          "uuid": "600c4590-87fb-5181-ae88-e2c2952c0f74"
+        }
+      ]
+    },
+    "setCode": "CMA",
+    "setName": "Commander Anthology",
+    "tcgcsvData": {
+      "product": {
+        "productId": 131447,
+        "name": "Commander Anthology Box Set",
+        "cleanName": "Commander Anthology Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/131447_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1933,
+        "url": "https://www.tcgplayer.com/product/131447/magic-commander-anthology-commander-anthology-box-set",
+        "modifiedOn": "2018-04-15T17:57:00.047",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "In the same spirit as <a href=\"http://shop.tcgplayer.com/magic/duel-decks-anthology\">Duel Decks: Anthology</a> and <a href=\"http://shop.tcgplayer.com/magic/planechase-anthology\">Planechase Anthology</a>,Commander Anthology gathers four previous Commander products together in one convenient package. Includes four specialized life counters, tokens, and all cards included in the original decks:\r\n<br>\r\n<br>\"Heavenly Inferno\" \r\n<br>\"Evasive Maneuvers\" \r\n<br>\"Guided by Nature\"  \r\n<br>\"Plunder the Graves\""
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 131447,
+          "lowPrice": 328,
+          "midPrice": 338.97,
+          "highPrice": 475,
+          "marketPrice": 326.69,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "68cf5577-5cd1-51ca-be9f-33309c88d55f",
+    "name": "Commander Anthology Commander Deck Evasive Maneuvers",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2017-06-01",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "48541",
+      "mcmId": "298276"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Evasive Maneuvers",
+          "set": "cma"
+        }
+      ]
+    },
+    "setCode": "CMA",
+    "setName": "Commander Anthology"
+  },
+  {
+    "uuid": "28690cea-9be7-5a1c-9097-553700512c5d",
+    "name": "Commander Anthology Commander Deck Guided by Nature",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2017-06-01",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "48538",
+      "mcmId": "298277"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Guided by Nature",
+          "set": "cma"
+        }
+      ]
+    },
+    "setCode": "CMA",
+    "setName": "Commander Anthology"
+  },
+  {
+    "uuid": "d0c617ee-b56c-5176-baee-4dbec2c1a972",
+    "name": "Commander Anthology Commander Deck Heavenly Inferno",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2017-06-01",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "48539",
+      "mcmId": "298278"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Heavenly Inferno",
+          "set": "cma"
+        }
+      ]
+    },
+    "setCode": "CMA",
+    "setName": "Commander Anthology"
+  },
+  {
+    "uuid": "600c4590-87fb-5181-ae88-e2c2952c0f74",
+    "name": "Commander Anthology Commander Deck Plunder the Graves",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2017-06-01",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "48540",
+      "mcmId": "298279"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Plunder the Graves",
+          "set": "cma"
+        }
+      ]
+    },
+    "setCode": "CMA",
+    "setName": "Commander Anthology"
+  }
+]

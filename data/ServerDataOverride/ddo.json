@@ -1,0 +1,145 @@
+[
+  {
+    "uuid": "610fdad6-50f4-5f1e-abbd-d94cfdf799d9",
+    "name": "Duel Deck Elspeth vs Kiora",
+    "category": "multiple_decks",
+    "releaseDate": "2015-01-27",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100486",
+      "cardKingdomId": "199087",
+      "cardtraderId": "48245",
+      "csiId": "209774",
+      "mcmId": "272164",
+      "scgId": "SLD-MTG-BXS-DDO-EN",
+      "tcgplayerProductId": "96064",
+      "tntId": "1067704"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/04668aca75effa90",
+      "tcgplayer": "https://mtgjson.com/links/cb28b75a9910bd52"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Elspeth vs Kiora Elspeth Deck",
+          "set": "ddo",
+          "uuid": "6ea4f987-e899-527d-80a1-bc96dfcef417"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Elspeth vs Kiora Kiora Deck",
+          "set": "ddo",
+          "uuid": "d94d7aa9-a0c2-59af-ac0a-9d059f09ecd5"
+        }
+      ]
+    },
+    "setCode": "DDO",
+    "setName": "Duel Decks: Elspeth vs. Kiora",
+    "tcgcsvData": {
+      "product": {
+        "productId": 96064,
+        "name": "Duel Decks: Elspeth vs. Kiora Box Set",
+        "cleanName": "Duel Decks Elspeth vs Kiora Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/96064_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1511,
+        "url": "https://www.tcgplayer.com/product/96064/magic-duel-decks-elspeth-vs-kiora-duel-decks-elspeth-vs-kiora-box-set",
+        "modifiedOn": "2022-12-23T18:36:10.473",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "<em>The knight Planeswalker Elspeth Tirel sees herself as the protector of the Multiverse. She has pledged her sword and shield to all who suffer, and she summons forth impressive armies to assist her. The merfolk Planeswalker Kiora calls upon the creatures of the deepest oceans to fight at her side. She is the master of the world beneath the waves, her true power only now beginning to surface. How will these Planeswalkers measure up when they meet in battle?</em>"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 96064,
+          "lowPrice": 18.5,
+          "midPrice": 33.99,
+          "highPrice": 59.99,
+          "marketPrice": 32.48,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "7dee71ae-cb35-544a-831d-30d06dd7badf",
+    "name": "Duel Deck Elspeth vs Kiora Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "1067705"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Elspeth vs Kiora",
+          "set": "ddo",
+          "uuid": "610fdad6-50f4-5f1e-abbd-d94cfdf799d9"
+        }
+      ]
+    },
+    "setCode": "DDO",
+    "setName": "Duel Decks: Elspeth vs. Kiora"
+  },
+  {
+    "uuid": "6ea4f987-e899-527d-80a1-bc96dfcef417",
+    "name": "Duel Deck Elspeth vs Kiora Elspeth Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2015-03-25",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48246",
+      "mcmId": "282062"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Elspeth",
+          "set": "ddo"
+        }
+      ]
+    },
+    "setCode": "DDO",
+    "setName": "Duel Decks: Elspeth vs. Kiora"
+  },
+  {
+    "uuid": "d94d7aa9-a0c2-59af-ac0a-9d059f09ecd5",
+    "name": "Duel Deck Elspeth vs Kiora Kiora Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2015-03-25",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48247",
+      "mcmId": "282063"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Kiora",
+          "set": "ddo"
+        }
+      ]
+    },
+    "setCode": "DDO",
+    "setName": "Duel Decks: Elspeth vs. Kiora"
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "uuid": "a5c040fc-aa77-578e-8c5e-650dfcf62ce9",
+    "name": "Signature Spellbook Gideon",
+    "category": "box_set",
+    "cardCount": 8,
+    "releaseDate": "2019-04-24",
+    "subtype": "spellbook",
+    "identifiers": {
+      "abuId": "1580827",
+      "cardKingdomId": "225030",
+      "cardtraderId": "56377",
+      "csiId": "276101",
+      "mcmId": "372931",
+      "scgId": "SLD-MTG-BXS-SS2-EN",
+      "tcgplayerProductId": "188989",
+      "tntId": "1642781"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/bd5c8031d8f902fb",
+      "tcgplayer": "https://mtgjson.com/links/584915d77353ae9d"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Signature Spellbook Gideon",
+          "set": "ss2"
+        }
+      ],
+      "variable": [
+        {
+          "configs": [
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Gideon Jura",
+                  "number": "1",
+                  "set": "ss2",
+                  "uuid": "36c5a35f-fe7d-59a7-b582-30cfecdbafaf"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Martyr's Bond",
+                  "number": "2",
+                  "set": "ss2",
+                  "uuid": "18d3ffe2-7b73-55b5-81f5-7b17920d63a6"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Path to Exile",
+                  "number": "3",
+                  "set": "ss2",
+                  "uuid": "198a362c-9fcc-5957-8c90-cffb228c7cea"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Rest in Peace",
+                  "number": "4",
+                  "set": "ss2",
+                  "uuid": "a74e090d-c62b-5bb1-a796-ca6cddb8a153"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Shielded by Faith",
+                  "number": "5",
+                  "set": "ss2",
+                  "uuid": "ddd83d5a-8218-5b87-913d-468e8f7a654b"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "True Conviction",
+                  "number": "6",
+                  "set": "ss2",
+                  "uuid": "9fa01351-a0b5-5940-a736-bbf16031059d"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Worship",
+                  "number": "7",
+                  "set": "ss2",
+                  "uuid": "df94e109-42f7-5c6b-afb7-564e734bbbea"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Blackblade Reforged",
+                  "number": "8",
+                  "set": "ss2",
+                  "uuid": "3be18db0-9a64-50bd-a79d-fd7b6fb9506e"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "setCode": "SS2",
+    "setName": "Signature Spellbook: Gideon",
+    "tcgcsvData": {
+      "product": {
+        "productId": 188989,
+        "name": "Signature Spellbook: Gideon - Box Set",
+        "cleanName": "Signature Spellbook Gideon Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/188989_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2447,
+        "url": "https://www.tcgplayer.com/product/188989/magic-signature-spellbook-gideon-signature-spellbook-gideon-box-set",
+        "modifiedOn": "2019-07-23T17:39:49.387",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "The product contains eight cards, plus one bonus foil, all featuring the powerful planeswalker Gideon Jura. With first-time foils, amazing new art, and alternate frames, it’s a collector’s dream."
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509763955"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 188989,
+          "lowPrice": 12.98,
+          "midPrice": 18.43,
+          "highPrice": 42,
+          "marketPrice": 14.23,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "uuid": "79ee20bd-bf0e-58dc-b867-80df4393596f",
+    "name": "Duel Deck Jace vs Chandra",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100632",
+      "cardKingdomId": "110085",
+      "cardtraderId": "47375",
+      "csiId": "97705",
+      "mcmId": "240364",
+      "scgId": "SLD-MTG-BXS-DD2-EN",
+      "tcgplayerProductId": "32804",
+      "tntId": "231074"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/9a7c2c195e983a8f",
+      "tcgplayer": "https://mtgjson.com/links/33c2b8aeae24a084"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Jace vs Chandra Chandra Deck",
+          "set": "dd2",
+          "uuid": "0146a152-259a-5fb4-a591-ee1dbd799920"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Jace vs Chandra Jace Deck",
+          "set": "dd2",
+          "uuid": "3ab90ff9-049d-572c-b5a1-5b6b7e1e5911"
+        }
+      ]
+    },
+    "setCode": "DD2",
+    "setName": "Duel Decks: Jace vs. Chandra",
+    "tcgcsvData": {
+      "product": {
+        "productId": 32804,
+        "name": "Duel Decks: Jace vs. Chandra - Box Set",
+        "cleanName": "Duel Decks Jace vs Chandra Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32804_200w.jpg",
+        "categoryId": 1,
+        "groupId": 35,
+        "url": "https://www.tcgplayer.com/product/32804/magic-duel-decks-jace-vs-chandra-duel-decks-jace-vs-chandra-box-set",
+        "modifiedOn": "2015-10-15T16:28:06.473",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 32804,
+          "lowPrice": 55,
+          "midPrice": 70.33,
+          "highPrice": 72.99,
+          "marketPrice": 72.1,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "0146a152-259a-5fb4-a591-ee1dbd799920",
+    "name": "Duel Deck Jace vs Chandra Chandra Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Chandra",
+          "set": "dd2"
+        }
+      ]
+    },
+    "setCode": "DD2",
+    "setName": "Duel Decks: Jace vs. Chandra"
+  },
+  {
+    "uuid": "34d30fe4-f645-5897-834c-4fd033cca78c",
+    "name": "Duel Deck Jace vs Chandra Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "231075"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Jace vs Chandra",
+          "set": "dd2",
+          "uuid": "79ee20bd-bf0e-58dc-b867-80df4393596f"
+        }
+      ]
+    },
+    "setCode": "DD2",
+    "setName": "Duel Decks: Jace vs. Chandra"
+  },
+  {
+    "uuid": "3ab90ff9-049d-572c-b5a1-5b6b7e1e5911",
+    "name": "Duel Deck Jace vs Chandra Jace Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Jace",
+          "set": "dd2"
+        }
+      ]
+    },
+    "setCode": "DD2",
+    "setName": "Duel Decks: Jace vs. Chandra"
+  },
+  {
+    "uuid": "97be7446-1f81-5ad8-862c-9dd5ae6cc775",
+    "name": "Duel Deck Jace vs Chandra Japanese",
+    "category": "multiple_decks",
+    "cardCount": 120,
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100633",
+      "cardKingdomId": "132597",
+      "cardtraderId": "47374",
+      "mcmId": "245055",
+      "tcgplayerProductId": "78341",
+      "tntId": "301156"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/8e573b5b25c7e529"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Jace Japanese",
+          "set": "dd2"
+        },
+        {
+          "name": "Chandra Japanese",
+          "set": "dd2"
+        }
+      ]
+    },
+    "setCode": "DD2",
+    "setName": "Duel Decks: Jace vs. Chandra",
+    "tcgcsvData": {
+      "product": {
+        "productId": 78341,
+        "name": "Duel Decks: Jace vs. Chandra - Japanese Box Set",
+        "cleanName": "Duel Decks Jace vs Chandra Japanese Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78341_200w.jpg",
+        "categoryId": 1,
+        "groupId": 35,
+        "url": "https://www.tcgplayer.com/product/78341/magic-duel-decks-jace-vs-chandra-duel-decks-jace-vs-chandra-japanese-box-set",
+        "modifiedOn": "2017-04-06T19:36:52.917",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 78341,
+          "lowPrice": 54.99,
+          "midPrice": 72,
+          "highPrice": 89.99,
+          "marketPrice": 70.18,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

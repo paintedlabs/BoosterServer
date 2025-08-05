@@ -1,0 +1,115 @@
+[
+  {
+    "uuid": "f06f30a4-6665-5d46-8a1d-77b3961e4fa4",
+    "name": "2018 Gift Pack",
+    "category": "bundle",
+    "releaseDate": "2018-11-16",
+    "subtype": "gift_bundle",
+    "identifiers": {
+      "abuId": "1538883",
+      "cardKingdomId": "222238",
+      "csiId": "263892",
+      "scgId": "SLD-MTG-BXS-GFT2018-EN",
+      "tcgplayerProductId": "175170",
+      "tntId": "1189139"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/263efb9812c75993"
+    },
+    "contents": {
+      "card": [
+        {
+          "foil": true,
+          "name": "Angelic Guardian",
+          "number": "GP1",
+          "set": "g18",
+          "uuid": "6b586423-b893-52c9-bba3-73a1e2599ec6"
+        },
+        {
+          "foil": true,
+          "name": "Angler Turtle",
+          "number": "GP2",
+          "set": "g18",
+          "uuid": "974b16c9-bc3b-54fa-9ab9-caccb60ff242"
+        },
+        {
+          "foil": true,
+          "name": "Vengeant Vampire",
+          "number": "GP3",
+          "set": "g18",
+          "uuid": "637ccd65-567f-511e-bba4-6df211696b23"
+        },
+        {
+          "foil": true,
+          "name": "Immortal Phoenix",
+          "number": "GP4",
+          "set": "g18",
+          "uuid": "4f530304-3911-5c59-b512-642bf445d74e"
+        },
+        {
+          "foil": true,
+          "name": "Rampaging Brontodon",
+          "number": "GP5",
+          "set": "g18",
+          "uuid": "6a684fbd-dfe7-5235-8aac-29dfa5901e3d"
+        }
+      ],
+      "other": [
+        {
+          "name": "One Foil Basic of Each Type"
+        }
+      ],
+      "sealed": [
+        {
+          "count": 4,
+          "name": "Core Set 2019 Booster Pack",
+          "set": "m19",
+          "uuid": "36d4765d-add1-5d6b-8bff-f342ef62a3d0"
+        }
+      ]
+    },
+    "setCode": "G18",
+    "setName": "M19 Gift Pack",
+    "tcgcsvData": {
+      "product": {
+        "productId": 175170,
+        "name": "2018 Gift Pack",
+        "cleanName": "2018 Gift Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/175170_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2084,
+        "url": "https://www.tcgplayer.com/product/175170/magic-gift-boxes-and-promos-2018-gift-pack",
+        "modifiedOn": "2018-11-09T19:35:41.54",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2018-11-16T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "The new Gift Pack is the go-to gift for any Magic: The Gathering player. An evolution from previous gift sets, the Gift Pack now includes exclusive cards not found in any other product.\r\n<br>\r\n<br>Contents: \r\n<br>• 4 Core Set 2019 booster packs\r\n<br>• 5 exclusive foil creature cards\r\n<br>• 5 foil basic lands\r\n<br>• 1 themed Spindown life counter"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509686063"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 175170,
+          "lowPrice": 6.74,
+          "midPrice": 21.74,
+          "highPrice": 30,
+          "marketPrice": 18.65,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

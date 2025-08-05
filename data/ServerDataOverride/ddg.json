@@ -1,0 +1,130 @@
+[
+  {
+    "uuid": "e35c07f5-8d95-558a-b8b7-9d9843703789",
+    "name": "Duel Deck Knights vs Dragons",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100710",
+      "cardKingdomId": "184203",
+      "cardtraderId": "47594",
+      "csiId": "97708",
+      "mcmId": "245725",
+      "scgId": "SLD-MTG-BXS-DDG-EN",
+      "tcgplayerProductId": "78342",
+      "tntId": "322682"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/23d72010373fdbce",
+      "tcgplayer": "https://mtgjson.com/links/a1d3bf732c51886b"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Knights vs Dragons Knights Deck",
+          "set": "ddg",
+          "uuid": "c77159bf-6de4-5324-9226-d0142f6c8b9a"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Knights vs Dragons Dragons Deck",
+          "set": "ddg",
+          "uuid": "b68c5670-420c-56b0-9ef6-b400ca632872"
+        }
+      ]
+    },
+    "setCode": "DDG",
+    "setName": "Duel Decks: Knights vs. Dragons",
+    "tcgcsvData": {
+      "product": {
+        "productId": 78342,
+        "name": "Duel Decks: Knights vs Dragons - Box Set",
+        "cleanName": "Duel Decks Knights vs Dragons Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78342_200w.jpg",
+        "categoryId": 1,
+        "groupId": 36,
+        "url": "https://www.tcgplayer.com/product/78342/magic-duel-decks-knights-vs-dragons-duel-decks-knights-vs-dragons-box-set",
+        "modifiedOn": "2017-11-16T19:59:02.813",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 78342,
+          "lowPrice": 84,
+          "midPrice": 129.99,
+          "highPrice": 199.98,
+          "marketPrice": 96.36,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "eee0edc9-ad8c-5489-884e-f8bc8e6160e7",
+    "name": "Duel Deck Knights vs Dragons Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "322681"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Knights vs Dragons",
+          "set": "ddg",
+          "uuid": "e35c07f5-8d95-558a-b8b7-9d9843703789"
+        }
+      ]
+    },
+    "setCode": "DDG",
+    "setName": "Duel Decks: Knights vs. Dragons"
+  },
+  {
+    "uuid": "b68c5670-420c-56b0-9ef6-b400ca632872",
+    "name": "Duel Deck Knights vs Dragons Dragons Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Dragons",
+          "set": "ddg"
+        }
+      ]
+    },
+    "setCode": "DDG",
+    "setName": "Duel Decks: Knights vs. Dragons"
+  },
+  {
+    "uuid": "c77159bf-6de4-5324-9226-d0142f6c8b9a",
+    "name": "Duel Deck Knights vs Dragons Knights Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Knights",
+          "set": "ddg"
+        }
+      ]
+    },
+    "setCode": "DDG",
+    "setName": "Duel Decks: Knights vs. Dragons"
+  }
+]

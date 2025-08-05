@@ -1,0 +1,116 @@
+[
+  {
+    "uuid": "12f26abc-964c-5a6c-a5e6-1f51f1b1d8e3",
+    "name": "Fourth Edition Black Bordered Booster Box",
+    "category": "booster_box",
+    "subtype": "default",
+    "identifiers": {
+      "cardtraderId": "43625",
+      "mcmId": "298959"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 36,
+          "name": "Fourth Edition Black Bordered Booster Pack",
+          "set": "4bb",
+          "uuid": "acd9218c-b9c8-5fd7-9fdc-ad2b16498c2f"
+        }
+      ]
+    },
+    "setCode": "4BB",
+    "setName": "Fourth Edition Foreign Black Border"
+  },
+  {
+    "uuid": "a7bd1bfe-e51c-5586-a967-c01d003108a6",
+    "name": "Fourth Edition Black Bordered Booster Box Case",
+    "category": "booster_case",
+    "subtype": "default",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Fourth Edition Black Bordered Booster Box",
+          "set": "4bb",
+          "uuid": "12f26abc-964c-5a6c-a5e6-1f51f1b1d8e3"
+        }
+      ]
+    },
+    "setCode": "4BB",
+    "setName": "Fourth Edition Foreign Black Border"
+  },
+  {
+    "uuid": "acd9218c-b9c8-5fd7-9fdc-ad2b16498c2f",
+    "name": "Fourth Edition Black Bordered Booster Pack",
+    "category": "booster_pack",
+    "cardCount": 15,
+    "subtype": "default",
+    "identifiers": {
+      "cardtraderId": "43623",
+      "mcmId": "298958"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "pack": [
+        {
+          "code": "default",
+          "set": "4bb"
+        }
+      ]
+    },
+    "setCode": "4BB",
+    "setName": "Fourth Edition Foreign Black Border"
+  },
+  {
+    "uuid": "c2b5e2da-330e-5938-af84-c229f6b06dc6",
+    "name": "Fourth Edition Black Bordered Starter Deck",
+    "category": "limited_aid_tool",
+    "cardCount": 60,
+    "subtype": "starter_deck",
+    "identifiers": {
+      "cardtraderId": "43627",
+      "mcmId": "270437"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "other": [
+        {
+          "name": "Fourth Edition Starter Deck Rule Book"
+        }
+      ],
+      "pack": [
+        {
+          "code": "starter",
+          "set": "4bb"
+        }
+      ]
+    },
+    "setCode": "4BB",
+    "setName": "Fourth Edition Foreign Black Border"
+  },
+  {
+    "uuid": "8bd05295-e603-5421-9e04-a8cba3278b29",
+    "name": "Fourth Edition Black Bordered Starter Deck Box",
+    "category": "limited_aid_case",
+    "subtype": "starter_deck",
+    "identifiers": {
+      "cardtraderId": "43631"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 10,
+          "name": "Fourth Edition Black Bordered Starter Deck",
+          "set": "4bb",
+          "uuid": "c2b5e2da-330e-5938-af84-c229f6b06dc6"
+        }
+      ]
+    },
+    "setCode": "4BB",
+    "setName": "Fourth Edition Foreign Black Border"
+  }
+]

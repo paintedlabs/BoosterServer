@@ -1,0 +1,84 @@
+[
+  {
+    "uuid": "16ab122c-9ad8-5152-8ae6-cc6a74873ffe",
+    "name": "Renaissance Italian Booster Box",
+    "category": "booster_box",
+    "subtype": "default",
+    "identifiers": {
+      "abuId": "1101068",
+      "cardtraderId": "43690",
+      "mcmId": "300224",
+      "tcgplayerProductId": "245972",
+      "tntId": "119240"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/dad7c0207b06cc1e"
+    },
+    "setCode": "RIN",
+    "setName": "Rinascimento"
+  },
+  {
+    "uuid": "1696b2b8-7cb3-5b24-99b6-d1adccfa0b9e",
+    "name": "Renaissance Italian Booster Box Case",
+    "category": "booster_case",
+    "subtype": "default",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "setCode": "RIN",
+    "setName": "Rinascimento"
+  },
+  {
+    "uuid": "5cd728b8-8e86-53ef-9338-31aa3ac1994e",
+    "name": "Renaissance Italian Booster Pack",
+    "category": "booster_pack",
+    "subtype": "default",
+    "identifiers": {
+      "abuId": "1527126",
+      "cardtraderId": "43689",
+      "mcmId": "300225",
+      "tcgplayerProductId": "182050",
+      "tntId": "119236"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/b0e2f87ab2b19614"
+    },
+    "setCode": "RIN",
+    "setName": "Rinascimento",
+    "tcgcsvData": {
+      "product": {
+        "productId": 182050,
+        "name": "Renaissance - Italian Booster Pack",
+        "cleanName": "Renaissance Italian Booster Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/182050_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2379,
+        "url": "https://www.tcgplayer.com/product/182050/magic-renaissance-renaissance-italian-booster-pack",
+        "modifiedOn": "2018-12-17T14:24:23.97",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each pack contains 8 random cards in Italian."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 182050,
+          "lowPrice": 95,
+          "midPrice": 97.5,
+          "highPrice": 99.99,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

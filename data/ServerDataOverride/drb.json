@@ -1,0 +1,68 @@
+[
+  {
+    "uuid": "5b8dbe74-5cee-5084-9ace-c196f7e80f8b",
+    "name": "From the Vault Dragons",
+    "category": "box_set",
+    "cardCount": 15,
+    "subtype": "from_the_vault",
+    "identifiers": {
+      "abuId": "1100061",
+      "cardKingdomId": "125605",
+      "csiId": "97639",
+      "mcmId": "240357",
+      "scgId": "SLD-MTG-BXS-DRB-EN",
+      "tcgplayerProductId": "32808",
+      "tntId": "225713"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/eaaf97303ffa2f38",
+      "tcgplayer": "https://mtgjson.com/links/92108c31ef49cf8e"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "From the Vault Dragons",
+          "set": "drb"
+        }
+      ]
+    },
+    "setCode": "DRB",
+    "setName": "From the Vault: Dragons",
+    "tcgcsvData": {
+      "product": {
+        "productId": 32808,
+        "name": "From the Vault: Dragons - Box Set",
+        "cleanName": "From the Vault Dragons Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32808_200w.jpg",
+        "categoryId": 1,
+        "groupId": 47,
+        "url": "https://www.tcgplayer.com/product/32808/magic-from-the-vault-dragons-from-the-vault-dragons-box-set",
+        "modifiedOn": "2020-01-06T21:07:11.293",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each From the Vault: Dragons - Box Set contains 15 premium foil cards."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 32808,
+          "lowPrice": 134,
+          "midPrice": 154,
+          "highPrice": 599.98,
+          "marketPrice": 133.92,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

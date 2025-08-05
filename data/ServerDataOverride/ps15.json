@@ -1,0 +1,91 @@
+[
+  {
+    "uuid": "0d78d964-7843-513f-8d25-27bf5d72ba0a",
+    "name": "SDCC 2015 Magic Origins Black Planeswalkers Set",
+    "category": "box_set",
+    "cardCount": 5,
+    "subtype": "convention_exclusive",
+    "identifiers": {
+      "cardKingdomId": "223230",
+      "cardtraderId": "39932",
+      "csiId": "247169",
+      "scgId": "SLD-MTG-BXS-SDCC2015-EN",
+      "tcgplayerProductId": "101352"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/db8a98d34c5a36c0",
+      "tcgplayer": "https://mtgjson.com/links/c89279a7e63107f3"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "SDCC 2015 Planeswalker Set",
+          "set": "ps15"
+        }
+      ],
+      "other": [
+        {
+          "name": "Magic Origins Planeswalker Anthology Book"
+        }
+      ]
+    },
+    "setCode": "PS15",
+    "setName": "San Diego Comic-Con 2015",
+    "tcgcsvData": {
+      "product": {
+        "productId": 101352,
+        "name": "SDCC 2015 EXCLUSIVE Magic Origins Black Planeswalkers Set",
+        "cleanName": "SDCC 2015 EXCLUSIVE Magic Origins Black Planeswalkers Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/101352_200w.jpg",
+        "categoryId": 1,
+        "groupId": 72,
+        "url": "https://www.tcgplayer.com/product/101352/magic-media-promos-sdcc-2015-exclusive-magic-origins-black-planeswalkers-set",
+        "modifiedOn": "2015-07-20T16:08:21.36",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 101352,
+          "lowPrice": 280,
+          "midPrice": 417.44,
+          "highPrice": 899.98,
+          "marketPrice": 294.5,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "2b914848-1839-5016-a9c4-73ad02414a05",
+    "name": "SDCC 2015 Magic Origins Black Planeswalkers Set (No Book)",
+    "category": "box_set",
+    "cardCount": 5,
+    "subtype": "convention_exclusive",
+    "identifiers": {
+      "cardKingdomId": "223229",
+      "cardtraderId": "39931",
+      "scgId": "SLD-MTG-BXS-SDCC2016-EN",
+      "tntId": "1182821"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/d5013d1c8e146824"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "SDCC 2015 Planeswalker Set",
+          "set": "ps15"
+        }
+      ]
+    },
+    "setCode": "PS15",
+    "setName": "San Diego Comic-Con 2015"
+  }
+]

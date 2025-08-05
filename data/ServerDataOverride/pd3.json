@@ -1,0 +1,67 @@
+[
+  {
+    "uuid": "ab5065bd-1745-5a37-9d58-bd5d1ff7d46b",
+    "name": "Premium Deck Series Graveborn",
+    "category": "box_set",
+    "cardCount": 60,
+    "subtype": "premium",
+    "identifiers": {
+      "abuId": "1101039",
+      "cardKingdomId": "186171",
+      "cardtraderId": "47689",
+      "csiId": "98009",
+      "scgId": "SLD-MTG-BXS-PD3-EN",
+      "tcgplayerProductId": "48163",
+      "tntId": "323594"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/2028bafb154b72f2",
+      "tcgplayer": "https://mtgjson.com/links/6997bc2f67400e8d"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Graveborn",
+          "set": "pd3"
+        }
+      ],
+      "other": [
+        {
+          "name": "Premium Deck Series Spindown"
+        }
+      ]
+    },
+    "setCode": "PD3",
+    "setName": "Premium Deck Series: Graveborn",
+    "tcgcsvData": {
+      "product": {
+        "productId": 48163,
+        "name": "Premium Deck Series: Graveborn",
+        "cleanName": "Premium Deck Series Graveborn",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/48163_200w.jpg",
+        "categoryId": 1,
+        "groupId": 90,
+        "url": "https://www.tcgplayer.com/product/48163/magic-premium-deck-series-graveborn-premium-deck-series-graveborn",
+        "modifiedOn": "2014-06-19T15:49:09.71",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 48163,
+          "lowPrice": 127.75,
+          "midPrice": 140.69,
+          "highPrice": 199.99,
+          "marketPrice": 126.65,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

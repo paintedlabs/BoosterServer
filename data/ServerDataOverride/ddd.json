@@ -1,0 +1,130 @@
+[
+  {
+    "uuid": "2842bfea-4fa2-519e-9818-556f19f08239",
+    "name": "Duel Deck Garruk vs Liliana",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100549",
+      "cardKingdomId": "128320",
+      "cardtraderId": "47444",
+      "csiId": "97658",
+      "mcmId": "240396",
+      "scgId": "SLD-MTG-BXS-DDD-EN",
+      "tcgplayerProductId": "32806",
+      "tntId": "286278"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/87a9d3c7ae02ddee",
+      "tcgplayer": "https://mtgjson.com/links/af75fbc81b2c172e"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Garruk vs Liliana Garruk Deck",
+          "set": "ddd",
+          "uuid": "1781a571-7dfd-5ae3-8127-ae5488841d36"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Garruk vs Liliana Liliana Deck",
+          "set": "ddd",
+          "uuid": "0a775f90-5773-503e-9993-ef36aadc1ee2"
+        }
+      ]
+    },
+    "setCode": "DDD",
+    "setName": "Duel Decks: Garruk vs. Liliana",
+    "tcgcsvData": {
+      "product": {
+        "productId": 32806,
+        "name": "Duel Decks: Garruk vs. Liliana - Box Set",
+        "cleanName": "Duel Decks Garruk vs Liliana Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32806_200w.jpg",
+        "categoryId": 1,
+        "groupId": 34,
+        "url": "https://www.tcgplayer.com/product/32806/magic-duel-decks-garruk-vs-liliana-duel-decks-garruk-vs-liliana-box-set",
+        "modifiedOn": "2014-12-30T20:08:12.16",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 32806,
+          "lowPrice": 56.91,
+          "midPrice": 79.85,
+          "highPrice": 115,
+          "marketPrice": 64.92,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "8877ec2d-37ef-5f3a-8937-fff7618023ee",
+    "name": "Duel Deck Garruk vs Liliana Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "286280"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Garruk vs Liliana",
+          "set": "ddd",
+          "uuid": "2842bfea-4fa2-519e-9818-556f19f08239"
+        }
+      ]
+    },
+    "setCode": "DDD",
+    "setName": "Duel Decks: Garruk vs. Liliana"
+  },
+  {
+    "uuid": "1781a571-7dfd-5ae3-8127-ae5488841d36",
+    "name": "Duel Deck Garruk vs Liliana Garruk Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Garruk",
+          "set": "ddd"
+        }
+      ]
+    },
+    "setCode": "DDD",
+    "setName": "Duel Decks: Garruk vs. Liliana"
+  },
+  {
+    "uuid": "0a775f90-5773-503e-9993-ef36aadc1ee2",
+    "name": "Duel Deck Garruk vs Liliana Liliana Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Liliana",
+          "set": "ddd"
+        }
+      ]
+    },
+    "setCode": "DDD",
+    "setName": "Duel Decks: Garruk vs. Liliana"
+  }
+]

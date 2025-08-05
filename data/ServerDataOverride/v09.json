@@ -1,0 +1,69 @@
+[
+  {
+    "uuid": "7637696e-1da6-5883-aa40-fc466d081347",
+    "name": "From the Vault Exiled",
+    "category": "box_set",
+    "cardCount": 15,
+    "subtype": "from_the_vault",
+    "identifiers": {
+      "abuId": "1100540",
+      "cardKingdomId": "199267",
+      "cardtraderId": "47410",
+      "csiId": "97640",
+      "mcmId": "240383",
+      "scgId": "SLD-MTG-BXS-V09-EN",
+      "tcgplayerProductId": "32809",
+      "tntId": "279924"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/f41bfae602571bf6",
+      "tcgplayer": "https://mtgjson.com/links/5487d07d843d1bcc"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "From the Vault Exiled",
+          "set": "v09"
+        }
+      ]
+    },
+    "setCode": "V09",
+    "setName": "From the Vault: Exiled",
+    "tcgcsvData": {
+      "product": {
+        "productId": 32809,
+        "name": "From the Vault: Exiled - Box Set",
+        "cleanName": "From the Vault Exiled Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32809_200w.jpg",
+        "categoryId": 1,
+        "groupId": 48,
+        "url": "https://www.tcgplayer.com/product/32809/magic-from-the-vault-exiled-from-the-vault-exiled-box-set",
+        "modifiedOn": "2020-01-06T21:50:25.673",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each From the Vault: Exiled - Box Set contains 15 premium cards."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 32809,
+          "lowPrice": 289.99,
+          "midPrice": 309.99,
+          "highPrice": 325,
+          "marketPrice": 247.21,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

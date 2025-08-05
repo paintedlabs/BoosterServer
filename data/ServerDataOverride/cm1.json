@@ -1,0 +1,77 @@
+[
+  {
+    "uuid": "6fa487b0-4cb0-544f-8993-d25f27af5d9c",
+    "name": "Commanders Arsenal",
+    "category": "box_set",
+    "cardCount": 18,
+    "subtype": "commander",
+    "identifiers": {
+      "abuId": "1107820",
+      "cardKingdomId": "199270",
+      "cardtraderId": "47868",
+      "csiId": "165853",
+      "scgId": "SLD-MTG-MLT-CM1-EN",
+      "tcgplayerProductId": "71419",
+      "tntId": "1109477"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/e607a031c3d509f6",
+      "tcgplayer": "https://mtgjson.com/links/72781d879b69ae82"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Commander's Arsenal",
+          "set": "cm1"
+        },
+        {
+          "name": "Commander's Arsenal Oversized",
+          "set": "ocm1"
+        }
+      ],
+      "other": [
+        {
+          "name": "120 UltraPRO foil card sleeves exclusive"
+        },
+        {
+          "name": "20 double-sided Battle Marks"
+        },
+        {
+          "name": "99 life point life counter"
+        }
+      ]
+    },
+    "setCode": "CM1",
+    "setName": "Commander's Arsenal",
+    "tcgcsvData": {
+      "product": {
+        "productId": 71419,
+        "name": "Commander's Arsenal - Box Set",
+        "cleanName": "Commanders Arsenal Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/71419_200w.jpg",
+        "categoryId": 1,
+        "groupId": 568,
+        "url": "https://www.tcgplayer.com/product/71419/magic-commanders-arsenal-commanders-arsenal-box-set",
+        "modifiedOn": "2014-09-03T03:32:24.69",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 71419,
+          "lowPrice": 295,
+          "midPrice": 335.96,
+          "highPrice": 1000,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

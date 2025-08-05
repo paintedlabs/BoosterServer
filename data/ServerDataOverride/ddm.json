@@ -1,0 +1,133 @@
+[
+  {
+    "uuid": "dfee7c16-e1b9-564f-b4c2-9181521c4c97",
+    "name": "Duel Deck Jace vs Vraska",
+    "category": "multiple_decks",
+    "releaseDate": "2014-03-14",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100615",
+      "cardKingdomId": "193749",
+      "cardtraderId": "48124",
+      "csiId": "199244",
+      "mcmId": "266322",
+      "scgId": "SLD-MTG-BXS-DDM-EN",
+      "tcgplayerProductId": "71895",
+      "tntId": "1047009"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/6971cab453c6b2dd",
+      "tcgplayer": "https://mtgjson.com/links/4edf34efd516d6b5"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Jace vs Vraska Jace Deck",
+          "set": "ddm",
+          "uuid": "3c573c40-dec7-580b-8756-cb77322ce67c"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Jace vs Vraska Vraska Deck",
+          "set": "ddm",
+          "uuid": "232e91d1-c54c-52ff-8561-e515c35ba3bd"
+        }
+      ]
+    },
+    "setCode": "DDM",
+    "setName": "Duel Decks: Jace vs. Vraska",
+    "tcgcsvData": {
+      "product": {
+        "productId": 71895,
+        "name": "Duel Decks: Jace vs. Vraska - Box Set",
+        "cleanName": "Duel Decks Jace vs Vraska Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/71895_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1166,
+        "url": "https://www.tcgplayer.com/product/71895/magic-duel-decks-jace-vs-vraska-duel-decks-jace-vs-vraska-box-set",
+        "modifiedOn": "2014-03-03T19:38:26.103",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2014-03-14T00:00:00",
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 71895,
+          "lowPrice": 19.76,
+          "midPrice": 24.92,
+          "highPrice": 39.98,
+          "marketPrice": 22.84,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "ae75c777-fccb-5df3-a2ea-b7368cd77591",
+    "name": "Duel Deck Jace vs Vraska Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48125",
+      "mcmId": "266323",
+      "tntId": "1047008"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Jace vs Vraska",
+          "set": "ddm",
+          "uuid": "dfee7c16-e1b9-564f-b4c2-9181521c4c97"
+        }
+      ]
+    },
+    "setCode": "DDM",
+    "setName": "Duel Decks: Jace vs. Vraska"
+  },
+  {
+    "uuid": "3c573c40-dec7-580b-8756-cb77322ce67c",
+    "name": "Duel Deck Jace vs Vraska Jace Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Jace",
+          "set": "ddm"
+        }
+      ]
+    },
+    "setCode": "DDM",
+    "setName": "Duel Decks: Jace vs. Vraska"
+  },
+  {
+    "uuid": "232e91d1-c54c-52ff-8561-e515c35ba3bd",
+    "name": "Duel Deck Jace vs Vraska Vraska Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Vraska",
+          "set": "ddm"
+        }
+      ]
+    },
+    "setCode": "DDM",
+    "setName": "Duel Decks: Jace vs. Vraska"
+  }
+]

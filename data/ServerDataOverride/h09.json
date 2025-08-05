@@ -1,0 +1,67 @@
+[
+  {
+    "uuid": "8c1956ac-c44a-5c7b-bb1b-e3b375eba07f",
+    "name": "Premium Deck Series Slivers",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "premium",
+    "identifiers": {
+      "abuId": "1101040",
+      "cardKingdomId": "128381",
+      "cardtraderId": "47442",
+      "csiId": "98011",
+      "scgId": "SLD-MTG-BXS-H09-EN",
+      "tcgplayerProductId": "90957",
+      "tntId": "287108"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/309807c266c264f0",
+      "tcgplayer": "https://mtgjson.com/links/17ba5fac63029fde"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Slivers",
+          "set": "h09"
+        }
+      ],
+      "other": [
+        {
+          "name": "Premium Deck Series Spindown"
+        }
+      ]
+    },
+    "setCode": "H09",
+    "setName": "Premium Deck Series: Slivers",
+    "tcgcsvData": {
+      "product": {
+        "productId": 90957,
+        "name": "Premium Deck Series: Slivers",
+        "cleanName": "Premium Deck Series Slivers",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/90957_200w.jpg",
+        "categoryId": 1,
+        "groupId": 91,
+        "url": "https://www.tcgplayer.com/product/90957/magic-premium-deck-series-slivers-premium-deck-series-slivers",
+        "modifiedOn": "2024-06-16T14:28:23.92",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 90957,
+          "lowPrice": 345,
+          "midPrice": 399.99,
+          "highPrice": 599.99,
+          "marketPrice": 329.13,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

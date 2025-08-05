@@ -1,0 +1,71 @@
+[
+  {
+    "uuid": "2dca49e9-8c34-550d-b0e1-ba07a52a2d3b",
+    "name": "Anthologies",
+    "category": "multiple_decks",
+    "cardCount": 120,
+    "subtype": "other",
+    "identifiers": {
+      "abuId": "1100103",
+      "cardKingdomId": "227274",
+      "cardtraderId": "41107",
+      "csiId": "97379",
+      "scgId": "SLD-MTG-BXS-ATH-EN",
+      "tcgplayerProductId": "77302",
+      "tntId": "85213"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/9fd2af7eaed2b8f1",
+      "tcgplayer": "https://mtgjson.com/links/382c5512449560f6"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Dark Alliance",
+          "set": "ath"
+        },
+        {
+          "name": "Defenders of the Cause",
+          "set": "ath"
+        }
+      ],
+      "other": [
+        {
+          "name": "Magic Anthologies Booklet"
+        }
+      ]
+    },
+    "setCode": "ATH",
+    "setName": "Anthologies",
+    "tcgcsvData": {
+      "product": {
+        "productId": 77302,
+        "name": "Anthologies Box Set",
+        "cleanName": "Anthologies Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77302_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1275,
+        "url": "https://www.tcgplayer.com/product/77302/magic-anthologies-anthologies-box-set",
+        "modifiedOn": "2014-01-06T17:52:21.233",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 77302,
+          "lowPrice": 249.94,
+          "midPrice": 249.94,
+          "highPrice": 249.95,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

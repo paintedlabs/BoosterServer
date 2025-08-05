@@ -1,0 +1,69 @@
+[
+  {
+    "uuid": "b325f3ba-5be3-5ed0-9f40-74051533c6e4",
+    "name": "From the Vault Annihilation",
+    "category": "box_set",
+    "cardCount": 15,
+    "subtype": "from_the_vault",
+    "identifiers": {
+      "abuId": "1100539",
+      "cardKingdomId": "199266",
+      "cardtraderId": "48174",
+      "csiId": "200557",
+      "mcmId": "268635",
+      "scgId": "SLD-MTG-BXS-V14-EN",
+      "tcgplayerProductId": "91636",
+      "tntId": "1083928"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/5196f774590c07b2",
+      "tcgplayer": "https://mtgjson.com/links/05d514f907faaad1"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "From the Vault Annihilation",
+          "set": "v14"
+        }
+      ]
+    },
+    "setCode": "V14",
+    "setName": "From the Vault: Annihilation",
+    "tcgcsvData": {
+      "product": {
+        "productId": 91636,
+        "name": "From the Vault: Annihilation - Box Set",
+        "cleanName": "From the Vault Annihilation Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/91636_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1475,
+        "url": "https://www.tcgplayer.com/product/91636/magic-from-the-vault-annihilation-from-the-vault-annihilation-box-set",
+        "modifiedOn": "2020-01-06T20:17:20.01",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each From the Vault: Annihilation - Box Set contains 15 premium foil cards."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 91636,
+          "lowPrice": 29.85,
+          "midPrice": 46.35,
+          "highPrice": 495.95,
+          "marketPrice": 34.73,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

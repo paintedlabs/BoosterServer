@@ -1,0 +1,171 @@
+[
+  {
+    "uuid": "603fd53a-7b55-59c2-91d9-a73086f9e29b",
+    "name": "Unlimited Booster Box",
+    "category": "booster_box",
+    "subtype": "default",
+    "identifiers": {
+      "abuId": "1107810",
+      "cardKingdomId": "240231",
+      "cardtraderId": "39402",
+      "csiId": "98265",
+      "mcmId": "210069",
+      "scgId": "SLD-MTG-BBX-2ED-EN",
+      "tcgplayerProductId": "27313",
+      "tntId": "96904"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/6a4d10604b57c812",
+      "tcgplayer": "https://mtgjson.com/links/40093c3bd386f849"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 36,
+          "name": "Unlimited Booster Pack",
+          "set": "2ed",
+          "uuid": "3f7ddeba-52f5-5f8f-a013-309403c8a870"
+        }
+      ]
+    },
+    "setCode": "2ED",
+    "setName": "Unlimited Edition"
+  },
+  {
+    "uuid": "61f80a03-b2cc-531b-9045-cec8dca0f638",
+    "name": "Unlimited Booster Box Case",
+    "category": "booster_case",
+    "subtype": "default",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Unlimited Booster Box",
+          "set": "2ed",
+          "uuid": "603fd53a-7b55-59c2-91d9-a73086f9e29b"
+        }
+      ]
+    },
+    "setCode": "2ED",
+    "setName": "Unlimited Edition"
+  },
+  {
+    "uuid": "3f7ddeba-52f5-5f8f-a013-309403c8a870",
+    "name": "Unlimited Booster Pack",
+    "category": "booster_pack",
+    "cardCount": 15,
+    "subtype": "default",
+    "identifiers": {
+      "abuId": "1476956",
+      "cardtraderId": "39401",
+      "mcmId": "210003",
+      "scgId": "SLD-MTG-PCK-2ED-EN",
+      "tcgplayerProductId": "27375",
+      "tntId": "90084"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/2e9cc5d432f303ca"
+    },
+    "contents": {
+      "pack": [
+        {
+          "code": "default",
+          "set": "2ed"
+        }
+      ]
+    },
+    "setCode": "2ED",
+    "setName": "Unlimited Edition",
+    "tcgcsvData": {
+      "product": {
+        "productId": 27375,
+        "name": "Unlimited Edition - Booster Pack",
+        "cleanName": "Unlimited Edition Booster Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/27375_200w.jpg",
+        "categoryId": 1,
+        "groupId": 115,
+        "url": "https://www.tcgplayer.com/product/27375/magic-unlimited-edition-unlimited-edition-booster-pack",
+        "modifiedOn": "2013-05-09T12:13:41.653",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 27375,
+          "lowPrice": 7500,
+          "midPrice": 7500,
+          "highPrice": 7500,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "88f78f27-1c8e-5bec-8c78-e2a75ff2d91f",
+    "name": "Unlimited Starter Deck",
+    "category": "limited_aid_tool",
+    "cardCount": 60,
+    "subtype": "starter_deck",
+    "identifiers": {
+      "abuId": "1107811",
+      "cardKingdomId": "223909",
+      "cardtraderId": "39403",
+      "mcmId": "248491",
+      "tcgplayerProductId": "162897",
+      "tntId": "90085"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/0764d4d70309e76f",
+      "tcgplayer": "https://mtgjson.com/links/b48569734e9fb162"
+    },
+    "contents": {
+      "other": [
+        {
+          "name": "Unlimited Edition Starter Deck Rulebook"
+        }
+      ],
+      "pack": [
+        {
+          "code": "starter",
+          "set": "2ed"
+        }
+      ]
+    },
+    "setCode": "2ED",
+    "setName": "Unlimited Edition"
+  },
+  {
+    "uuid": "79833703-7d0e-50f5-babe-ed96b2e07b84",
+    "name": "Unlimited Starter Deck Display",
+    "category": "limited_aid_case",
+    "subtype": "starter_deck",
+    "identifiers": {
+      "abuId": "1476957",
+      "cardtraderId": "39404",
+      "mcmId": "272018",
+      "tntId": "90089"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 10,
+          "name": "Unlimited Starter Deck",
+          "set": "2ed",
+          "uuid": "88f78f27-1c8e-5bec-8c78-e2a75ff2d91f"
+        }
+      ]
+    },
+    "setCode": "2ED",
+    "setName": "Unlimited Edition"
+  }
+]

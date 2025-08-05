@@ -1,0 +1,301 @@
+[
+  {
+    "uuid": "fbb2f456-f94a-5084-9dba-02aad18dc27a",
+    "name": "Zendikar Rising Commander Deck Display",
+    "category": "deck_box",
+    "subtype": "commander",
+    "identifiers": {
+      "tcgplayerProductId": "452723",
+      "tntId": "1672300"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/bcf97ac0db32fa59"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 3,
+          "name": "Zendikar Rising Commander Deck Lands Wrath",
+          "set": "znc",
+          "uuid": "e52b4295-49ef-507a-ab56-023ab7b0d0a4"
+        },
+        {
+          "count": 3,
+          "name": "Zendikar Rising Commander Deck Sneak Attack",
+          "set": "znc",
+          "uuid": "b01552aa-529f-5924-a54e-a28fdf866a55"
+        }
+      ]
+    },
+    "setCode": "ZNC",
+    "setName": "Zendikar Rising Commander",
+    "tcgcsvData": {
+      "product": {
+        "productId": 452723,
+        "name": "Zendikar Rising - Commander Deck Display Case",
+        "cleanName": "Zendikar Rising Commander Deck Display Case",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/452723_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2716,
+        "url": "https://www.tcgplayer.com/product/452723/magic-commander-zendikar-rising-zendikar-rising-commander-deck-display-case",
+        "modifiedOn": "2022-11-02T18:04:29.817",
+        "imageCount": 0,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each Zendikar Rising Commander Case contains 6 commander decks themed for Zendikar Rising <em>(3 of each deck)</em>."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 452723,
+          "lowPrice": 140,
+          "midPrice": 153.99,
+          "highPrice": 283.69,
+          "marketPrice": 141.16,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "e52b4295-49ef-507a-ab56-023ab7b0d0a4",
+    "name": "Zendikar Rising Commander Deck Lands Wrath",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2020-09-25",
+    "subtype": "commander",
+    "identifiers": {
+      "abuId": "1899536",
+      "cardKingdomId": "236839",
+      "cardtraderId": "146527",
+      "csiId": "302497",
+      "mcmId": "495244",
+      "scgId": "SLD-MTG-MLT-ZNC-EN-LANDS",
+      "tcgplayerProductId": "221917",
+      "tntId": "1672299"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/8f8cf6054782855b",
+      "tcgplayer": "https://mtgjson.com/links/a58b075c531dd9ef"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Land's Wrath",
+          "set": "znc"
+        }
+      ],
+      "other": [
+        {
+          "name": "Foil Etched Cardstock Display Commander"
+        },
+        {
+          "name": "Zendikar Rising Life Wheel"
+        },
+        {
+          "name": "10 Double Sided Tokens"
+        }
+      ]
+    },
+    "setCode": "ZNC",
+    "setName": "Zendikar Rising Commander",
+    "tcgcsvData": {
+      "product": {
+        "productId": 221917,
+        "name": "Zendikar Rising - Land's Wrath Commander Deck",
+        "cleanName": "Zendikar Rising Lands Wrath Commander Deck",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/221917_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2716,
+        "url": "https://www.tcgplayer.com/product/221917/magic-commander-zendikar-rising-zendikar-rising-lands-wrath-commander-deck",
+        "modifiedOn": "2020-09-25T13:15:22.587",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2020-09-25T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Commander isn't only one of the most popular Magic formats—it's also how a lot of people learn to play. Zendikar Rising Commander Decks are designed to make learning Magic through Commander a great experience for those new players.\r\n<br>\r\n<br>These decks are the perfect onramp for folks diving into both Commander and Magic in general, taking the place of Planeswalker Decks for Zendikar Rising.\r\n<br>\r\n<br>Contents of each deck: \r\n<br>• 99-card deck\r\n<br>• 1 foil Commander\r\n<br>• 10 double-sided tokens\r\n<br>• 1 deck box\r\n<br>• 1 Life Wheel"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 221917,
+          "lowPrice": 28,
+          "midPrice": 41.34,
+          "highPrice": 59.99,
+          "marketPrice": 34.95,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "b01552aa-529f-5924-a54e-a28fdf866a55",
+    "name": "Zendikar Rising Commander Deck Sneak Attack",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2020-09-25",
+    "subtype": "commander",
+    "identifiers": {
+      "abuId": "1899537",
+      "cardKingdomId": "236840",
+      "cardtraderId": "146528",
+      "csiId": "302498",
+      "mcmId": "495239",
+      "scgId": "SLD-MTG-MLT-ZNC-EN-SNEAK",
+      "tcgplayerProductId": "221916",
+      "tntId": "1672298"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/49ca1a8119ade3c5",
+      "tcgplayer": "https://mtgjson.com/links/75b79ceb31e71bcb"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Sneak Attack",
+          "set": "znc"
+        }
+      ],
+      "other": [
+        {
+          "name": "Foil Etched Cardstock Display Commander"
+        },
+        {
+          "name": "Zendikar Rising Life Wheel"
+        },
+        {
+          "name": "10 Double Sided Tokens"
+        }
+      ]
+    },
+    "setCode": "ZNC",
+    "setName": "Zendikar Rising Commander",
+    "tcgcsvData": {
+      "product": {
+        "productId": 221916,
+        "name": "Zendikar Rising - Sneak Attack Commander Deck",
+        "cleanName": "Zendikar Rising Sneak Attack Commander Deck",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/221916_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2716,
+        "url": "https://www.tcgplayer.com/product/221916/magic-commander-zendikar-rising-zendikar-rising-sneak-attack-commander-deck",
+        "modifiedOn": "2020-09-25T13:15:32.127",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2020-09-25T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Commander isn't only one of the most popular Magic formats—it's also how a lot of people learn to play. Zendikar Rising Commander Decks are designed to make learning Magic through Commander a great experience for those new players.\r\n<br>\r\n<br>These decks are the perfect onramp for folks diving into both Commander and Magic in general, taking the place of Planeswalker Decks for Zendikar Rising.\r\n<br>\r\n<br>Contents of each deck: \r\n<br>• 99-card deck\r\n<br>• 1 foil Commander\r\n<br>• 10 double-sided tokens\r\n<br>• 1 deck box\r\n<br>• 1 Life Wheel"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 221916,
+          "lowPrice": 22.01,
+          "midPrice": 37.47,
+          "highPrice": 50,
+          "marketPrice": 34.29,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "d044a248-67c4-5beb-aa63-39ab9390d10e",
+    "name": "Zendikar Rising Commander Decks Set of 2",
+    "category": "subset",
+    "releaseDate": "2020-09-25",
+    "subtype": "commander",
+    "identifiers": {
+      "abuId": "1899538",
+      "cardKingdomId": "236841",
+      "cardtraderId": "145666",
+      "csiId": "302503",
+      "mcmId": "486959",
+      "scgId": "SLD-MTG-MLT-ZNC-EN-SET2",
+      "tcgplayerProductId": "221139",
+      "tntId": "1675257"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/f608ab776b4e700b"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Zendikar Rising Commander Deck Lands Wrath",
+          "set": "znc",
+          "uuid": "e52b4295-49ef-507a-ab56-023ab7b0d0a4"
+        },
+        {
+          "count": 1,
+          "name": "Zendikar Rising Commander Deck Sneak Attack",
+          "set": "znc",
+          "uuid": "b01552aa-529f-5924-a54e-a28fdf866a55"
+        }
+      ]
+    },
+    "setCode": "ZNC",
+    "setName": "Zendikar Rising Commander",
+    "tcgcsvData": {
+      "product": {
+        "productId": 221139,
+        "name": "Zendikar Rising - Commander Deck [Set of 2]",
+        "cleanName": "Zendikar Rising Commander Deck Set of 2",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/221139_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2716,
+        "url": "https://www.tcgplayer.com/product/221139/magic-commander-zendikar-rising-zendikar-rising-commander-deck-set-of-2",
+        "modifiedOn": "2020-09-25T13:15:04.083",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2020-09-25T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Commander isn't only one of the most popular Magic formats—it's also how a lot of people learn to play. Zendikar Rising Commander Decks are designed to make learning Magic through Commander a great experience for those new players.\r\n<br>\r\n<br>These decks are the perfect onramp for folks diving into both Commander and Magic in general, taking the place of Planeswalker Decks for Zendikar Rising.\r\n<br>\r\n<br>Contents of each deck: \r\n<br>• 99-card deck\r\n<br>• 1 foil Commander\r\n<br>• 10 double-sided tokens\r\n<br>• 1 deck box\r\n<br>• 1 Life Wheel"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 221139,
+          "lowPrice": 60.3,
+          "midPrice": 64.99,
+          "highPrice": 200,
+          "marketPrice": 60.99,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

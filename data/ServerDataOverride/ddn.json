@@ -1,0 +1,132 @@
+[
+  {
+    "uuid": "23ad1208-ec16-5ee7-b2a1-02631bd6dd93",
+    "name": "Duel Deck Speed vs Cunning",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1101160",
+      "cardKingdomId": "195557",
+      "cardtraderId": "48178",
+      "csiId": "201934",
+      "mcmId": "268661",
+      "scgId": "SLD-MTG-BXS-DDN-EN",
+      "tcgplayerProductId": "91644",
+      "tntId": "1059180"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/f0fd15e534bced61",
+      "tcgplayer": "https://mtgjson.com/links/86c373da3c2bad51"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Speed vs Cunning Cunning Deck",
+          "set": "ddn",
+          "uuid": "efcad0d9-0a84-5f66-ad95-c243a2d49284"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Speed vs Cunning Speed Deck",
+          "set": "ddn",
+          "uuid": "d3122ebc-ac85-5637-8e69-f932de6fd919"
+        }
+      ]
+    },
+    "setCode": "DDN",
+    "setName": "Duel Decks: Speed vs. Cunning",
+    "tcgcsvData": {
+      "product": {
+        "productId": 91644,
+        "name": "Duel Decks: Speed vs. Cunning - Box Set",
+        "cleanName": "Duel Decks Speed vs Cunning Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/91644_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1477,
+        "url": "https://www.tcgplayer.com/product/91644/magic-duel-decks-speed-vs-cunning-duel-decks-speed-vs-cunning-box-set",
+        "modifiedOn": "2014-09-13T15:39:55.63",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 91644,
+          "lowPrice": 21.6,
+          "midPrice": 30.77,
+          "highPrice": 39.98,
+          "marketPrice": 25.72,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "efcad0d9-0a84-5f66-ad95-c243a2d49284",
+    "name": "Duel Deck Speed vs Cunning Cunning Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Cunning",
+          "set": "ddn"
+        }
+      ]
+    },
+    "setCode": "DDN",
+    "setName": "Duel Decks: Speed vs. Cunning"
+  },
+  {
+    "uuid": "342fd697-50da-502f-affb-2a15c35ba451",
+    "name": "Duel Deck Speed vs Cunning Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "mcmId": "268662"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Speed vs Cunning",
+          "set": "ddn",
+          "uuid": "23ad1208-ec16-5ee7-b2a1-02631bd6dd93"
+        }
+      ]
+    },
+    "setCode": "DDN",
+    "setName": "Duel Decks: Speed vs. Cunning"
+  },
+  {
+    "uuid": "d3122ebc-ac85-5637-8e69-f932de6fd919",
+    "name": "Duel Deck Speed vs Cunning Speed Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "1060116"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Speed",
+          "set": "ddn"
+        }
+      ]
+    },
+    "setCode": "DDN",
+    "setName": "Duel Decks: Speed vs. Cunning"
+  }
+]
