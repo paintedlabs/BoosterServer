@@ -23,6 +23,7 @@ import {
 import { TCGCSVProduct, TCGCSVPrice } from "../types/tcgcsv";
 import { NotFoundError } from "../utils/errors";
 import { TCGCSVService } from "./tcgcsvService";
+import * as path from "path";
 
 export class MTGDataService implements DataService {
   private allPrintings: AllPrintings | null = null;
@@ -961,12 +962,41 @@ export class MTGDataService implements DataService {
       return;
     }
 
+    // Check for server data overrides
+    const overrideData = await this.loadServerDataOverrides();
+    if (overrideData) {
+      logger.info("Using server data overrides for sealed products");
+      this.applyServerDataOverrides(overrideData);
+      return;
+    }
+
+    // Build the combined sealed products normally
+    const builtProducts = this.buildCombinedSealedProductsFromData();
+
+    // Create override files with the built data
+    await this.createServerDataOverrides(builtProducts);
+
+    logger.info(
+      `Built ${builtProducts.totalProducts} combined sealed products: ` +
+        `${builtProducts.productsWithExtendedData} with ExtendedData, ` +
+        `${builtProducts.productsWithTCGCSV} with TCGCSV data`
+    );
+  }
+
+  /**
+   * Build combined sealed products from AllPrintings data
+   */
+  private buildCombinedSealedProductsFromData(): {
+    totalProducts: number;
+    productsWithExtendedData: number;
+    productsWithTCGCSV: number;
+  } {
     let totalProducts = 0;
     let productsWithExtendedData = 0;
     let productsWithTCGCSV = 0;
 
     // Process each set in AllPrintings
-    for (const [setCode, setData] of Object.entries(this.allPrintings.data)) {
+    for (const [setCode, setData] of Object.entries(this.allPrintings!.data)) {
       if (!setData.sealedProduct || setData.sealedProduct.length === 0) {
         continue;
       }
@@ -980,6 +1010,15 @@ export class MTGDataService implements DataService {
           sealedProduct,
           setCode
         );
+
+        // Validate that the matching extended product has required fields
+        const validExtendedProduct =
+          matchingExtendedProduct &&
+          matchingExtendedProduct.source_set_codes &&
+          Array.isArray(matchingExtendedProduct.source_set_codes) &&
+          matchingExtendedProduct.source_set_codes.length > 0
+            ? matchingExtendedProduct
+            : null;
 
         // Try to get TCGCSV data
         let tcgcsvData = null;
@@ -1019,12 +1058,12 @@ export class MTGDataService implements DataService {
           setName: setData.name,
 
           // Extended data (if available)
-          ...(matchingExtendedProduct && {
+          ...(validExtendedProduct && {
             extendedData: {
-              code: matchingExtendedProduct.code,
-              boosters: matchingExtendedProduct.boosters,
-              sheets: matchingExtendedProduct.sheets,
-              source_set_codes: matchingExtendedProduct.source_set_codes,
+              code: validExtendedProduct.code,
+              boosters: validExtendedProduct.boosters,
+              sheets: validExtendedProduct.sheets,
+              source_set_codes: validExtendedProduct.source_set_codes,
             },
           }),
 
@@ -1036,7 +1075,7 @@ export class MTGDataService implements DataService {
         setProducts.push(combinedProduct);
         totalProducts++;
 
-        if (matchingExtendedProduct) {
+        if (validExtendedProduct) {
           productsWithExtendedData++;
         }
         if (tcgcsvData) {
@@ -1047,11 +1086,132 @@ export class MTGDataService implements DataService {
       this.combinedSealedProductsBySet.set(setCode.toUpperCase(), setProducts);
     }
 
+    return {
+      totalProducts,
+      productsWithExtendedData,
+      productsWithTCGCSV,
+    };
+  }
+
+  /**
+   * Load server data overrides from the ServerDataOverride folder
+   */
+  private async loadServerDataOverrides(): Promise<Record<
+    string,
+    CombinedSealedProduct[]
+  > | null> {
+    const overrideDir = path.join(process.cwd(), "data", "ServerDataOverride");
+
+    try {
+      if (!fs.existsSync(overrideDir)) {
+        logger.info("ServerDataOverride directory does not exist");
+        return null;
+      }
+
+      const files = fs.readdirSync(overrideDir);
+      if (files.length === 0) {
+        logger.info("ServerDataOverride directory is empty");
+        return null;
+      }
+
+      const overrideData: Record<string, CombinedSealedProduct[]> = {};
+
+      for (const file of files) {
+        if (!file.endsWith(".json")) continue;
+
+        const setCode = file.replace(".json", "").toUpperCase();
+        const filePath = path.join(overrideDir, file);
+
+        try {
+          const fileContent = fs.readFileSync(filePath, "utf8");
+          const products = JSON.parse(fileContent);
+
+          if (Array.isArray(products)) {
+            overrideData[setCode] = products;
+            logger.info(
+              `Loaded override data for set ${setCode}: ${products.length} products`
+            );
+          } else {
+            logger.warn(
+              `Invalid override file format for ${setCode}: expected array`
+            );
+          }
+        } catch (error) {
+          logger.error(`Error loading override file ${file}:`, error);
+        }
+      }
+
+      return Object.keys(overrideData).length > 0 ? overrideData : null;
+    } catch (error) {
+      logger.error("Error loading server data overrides:", error);
+      return null;
+    }
+  }
+
+  /**
+   * Apply server data overrides to the combined sealed products
+   */
+  private applyServerDataOverrides(
+    overrideData: Record<string, CombinedSealedProduct[]>
+  ): void {
+    let totalProducts = 0;
+
+    for (const [setCode, products] of Object.entries(overrideData)) {
+      this.combinedSealedProductsBySet.set(setCode.toUpperCase(), products);
+
+      // Also add to the main products map
+      for (const product of products) {
+        this.combinedSealedProducts.set(product.uuid, product);
+        totalProducts++;
+      }
+    }
+
     logger.info(
-      `Built ${totalProducts} combined sealed products: ` +
-        `${productsWithExtendedData} with ExtendedData, ` +
-        `${productsWithTCGCSV} with TCGCSV data`
+      `Applied ${totalProducts} override products across ${Object.keys(overrideData).length} sets`
     );
+  }
+
+  /**
+   * Create server data override files with current combined sealed products data
+   */
+  private async createServerDataOverrides(buildStats: {
+    totalProducts: number;
+    productsWithExtendedData: number;
+    productsWithTCGCSV: number;
+  }): Promise<void> {
+    const overrideDir = path.join(process.cwd(), "data", "ServerDataOverride");
+
+    try {
+      // Create the override directory if it doesn't exist
+      if (!fs.existsSync(overrideDir)) {
+        fs.mkdirSync(overrideDir, { recursive: true });
+        logger.info("Created ServerDataOverride directory");
+      }
+
+      // Write files for each set
+      for (const [
+        setCode,
+        products,
+      ] of this.combinedSealedProductsBySet.entries()) {
+        const filePath = path.join(
+          overrideDir,
+          `${setCode.toLowerCase()}.json`
+        );
+        fs.writeFileSync(filePath, JSON.stringify(products, null, 2));
+        logger.info(
+          `Created override file for set ${setCode}: ${products.length} products`
+        );
+      }
+
+      logger.info(
+        `Created override files for ${this.combinedSealedProductsBySet.size} sets: ` +
+          `${buildStats.totalProducts} total products, ` +
+          `${buildStats.productsWithExtendedData} with ExtendedData, ` +
+          `${buildStats.productsWithTCGCSV} with TCGCSV data`
+      );
+    } catch (error) {
+      logger.error("Error creating server data overrides:", error);
+    }
   }
 
   private generatePack(product: ExtendedSealedData): Array<{
