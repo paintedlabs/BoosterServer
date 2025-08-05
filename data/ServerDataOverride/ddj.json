@@ -1,0 +1,144 @@
+[
+  {
+    "uuid": "ad43ba87-433d-503f-b3ae-6754446837ad",
+    "name": "Duel Deck Izzet vs Golgari",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100619",
+      "cardKingdomId": "187967",
+      "cardtraderId": "47807",
+      "csiId": "164818",
+      "mcmId": "257390",
+      "scgId": "SLD-MTG-BXS-DDJ-EN",
+      "tcgplayerProductId": "60128",
+      "tntId": "375954"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/19d040ead20dfb2c",
+      "tcgplayer": "https://mtgjson.com/links/4bfd666cc7800369"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Izzet vs Golgari Golgari Deck",
+          "set": "ddj",
+          "uuid": "9c82dab9-9d14-50e3-8414-0576563d3e46"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Izzet vs Golgari Izzet Deck",
+          "set": "ddj",
+          "uuid": "6889931d-f62e-5b67-a658-3c46056328a9"
+        }
+      ]
+    },
+    "setCode": "DDJ",
+    "setName": "Duel Decks: Izzet vs. Golgari",
+    "tcgcsvData": {
+      "product": {
+        "productId": 60128,
+        "name": "Duel Decks: Izzet vs. Golgari - Box Set",
+        "cleanName": "Duel Decks Izzet vs Golgari Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/60128_200w.jpg",
+        "categoryId": 1,
+        "groupId": 365,
+        "url": "https://www.tcgplayer.com/product/60128/magic-duel-decks-izzet-vs-golgari-duel-decks-izzet-vs-golgari-box-set",
+        "modifiedOn": "2013-12-18T14:40:53.437",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "6 53569 72269 4"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 60128,
+          "lowPrice": 52,
+          "midPrice": 69.95,
+          "highPrice": 99.99,
+          "marketPrice": 49.54,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "b889cf76-e3a7-5990-99ee-534cc948e788",
+    "name": "Duel Deck Izzet vs Golgari Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47810",
+      "mcmId": "257395",
+      "tntId": "375955"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Izzet vs Golgari",
+          "set": "ddj",
+          "uuid": "ad43ba87-433d-503f-b3ae-6754446837ad"
+        }
+      ]
+    },
+    "setCode": "DDJ",
+    "setName": "Duel Decks: Izzet vs. Golgari"
+  },
+  {
+    "uuid": "9c82dab9-9d14-50e3-8414-0576563d3e46",
+    "name": "Duel Deck Izzet vs Golgari Golgari Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47809",
+      "mcmId": "257393"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Golgari",
+          "set": "ddj"
+        }
+      ]
+    },
+    "setCode": "DDJ",
+    "setName": "Duel Decks: Izzet vs. Golgari"
+  },
+  {
+    "uuid": "6889931d-f62e-5b67-a658-3c46056328a9",
+    "name": "Duel Deck Izzet vs Golgari Izzet Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47808",
+      "mcmId": "257394"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Izzet",
+          "set": "ddj"
+        }
+      ]
+    },
+    "setCode": "DDJ",
+    "setName": "Duel Decks: Izzet vs. Golgari"
+  }
+]

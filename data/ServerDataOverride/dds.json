@@ -1,0 +1,129 @@
+[
+  {
+    "uuid": "fc0c1968-46d5-579b-a0ed-905716677b6b",
+    "name": "Duel Deck Mind vs Might",
+    "category": "multiple_decks",
+    "releaseDate": "2017-03-31",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1476904",
+      "cardKingdomId": "211076",
+      "cardtraderId": "48515",
+      "csiId": "232572",
+      "mcmId": "292575",
+      "scgId": "SLD-MTG-BXS-DDS-EN",
+      "tcgplayerProductId": "129358",
+      "tntId": "1102287"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/1cb723d64d42a7ec",
+      "tcgplayer": "https://mtgjson.com/links/70dafba21ad18d66"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Mind vs Might Might Deck",
+          "set": "dds",
+          "uuid": "f7de334d-8ca4-529d-b638-a7a4c5d22484"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Mind vs Might Mind Deck",
+          "set": "dds",
+          "uuid": "b232985a-6371-5b26-a627-9fefc39f29a1"
+        }
+      ]
+    },
+    "setCode": "DDS",
+    "setName": "Duel Decks: Mind vs. Might",
+    "tcgcsvData": {
+      "product": {
+        "productId": 129358,
+        "name": "Duel Decks: Mind vs. Might - Box Set",
+        "cleanName": "Duel Decks Mind vs Might Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/129358_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1905,
+        "url": "https://www.tcgplayer.com/product/129358/magic-duel-decks-mind-vs-might-duel-decks-mind-vs-might-box-set",
+        "modifiedOn": "2017-03-27T18:10:32.39",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2017-03-31T00:00:00",
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 129358,
+          "lowPrice": 24.07,
+          "midPrice": 32.75,
+          "highPrice": 49.19,
+          "marketPrice": 30.24,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "7afcf483-678e-59c9-b9c0-5ee4830d5dd8",
+    "name": "Duel Deck Mind vs Might Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Mind vs Might",
+          "set": "dds",
+          "uuid": "fc0c1968-46d5-579b-a0ed-905716677b6b"
+        }
+      ]
+    },
+    "setCode": "DDS",
+    "setName": "Duel Decks: Mind vs. Might"
+  },
+  {
+    "uuid": "f7de334d-8ca4-529d-b638-a7a4c5d22484",
+    "name": "Duel Deck Mind vs Might Might Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Might",
+          "set": "dds"
+        }
+      ]
+    },
+    "setCode": "DDS",
+    "setName": "Duel Decks: Mind vs. Might"
+  },
+  {
+    "uuid": "b232985a-6371-5b26-a627-9fefc39f29a1",
+    "name": "Duel Deck Mind vs Might Mind Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Mind",
+          "set": "dds"
+        }
+      ]
+    },
+    "setCode": "DDS",
+    "setName": "Duel Decks: Mind vs. Might"
+  }
+]

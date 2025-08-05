@@ -1,0 +1,96 @@
+[
+  {
+    "uuid": "d9f01f98-43e6-58b6-8067-9bebc35c9d9e",
+    "name": "Foreign Black Border Booster Box",
+    "category": "booster_box",
+    "subtype": "default",
+    "identifiers": {
+      "cardtraderId": "43451",
+      "mcmId": "210122"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 36,
+          "name": "Foreign Black Border Booster Pack",
+          "set": "fbb",
+          "uuid": "0abde444-896d-5e5a-926b-5dda64136c9a"
+        }
+      ]
+    },
+    "setCode": "FBB",
+    "setName": "Foreign Black Border"
+  },
+  {
+    "uuid": "e648947a-899f-5b07-89b3-f2a0503460ce",
+    "name": "Foreign Black Border Booster Box Case",
+    "category": "booster_case",
+    "subtype": "default",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Foreign Black Border Booster Box",
+          "set": "fbb",
+          "uuid": "d9f01f98-43e6-58b6-8067-9bebc35c9d9e"
+        }
+      ]
+    },
+    "setCode": "FBB",
+    "setName": "Foreign Black Border"
+  },
+  {
+    "uuid": "0abde444-896d-5e5a-926b-5dda64136c9a",
+    "name": "Foreign Black Border Booster Pack",
+    "category": "booster_pack",
+    "subtype": "default",
+    "identifiers": {
+      "cardtraderId": "43450",
+      "mcmId": "210056",
+      "tntId": "1098930"
+    },
+    "purchaseUrls": {},
+    "setCode": "FBB",
+    "setName": "Foreign Black Border"
+  },
+  {
+    "uuid": "3f7cb3bc-95ae-55ea-b83a-3154ea27a481",
+    "name": "Foreign Black Border Starter Deck",
+    "category": "limited_aid_tool",
+    "subtype": "starter_deck",
+    "identifiers": {
+      "cardtraderId": "43452",
+      "mcmId": "248492",
+      "tntId": "1110884"
+    },
+    "purchaseUrls": {},
+    "setCode": "FBB",
+    "setName": "Foreign Black Border"
+  },
+  {
+    "uuid": "dcd896e1-9306-576f-a886-ebe071e72d6f",
+    "name": "Foreign Black Border Starter Deck Display",
+    "category": "limited_aid_case",
+    "subtype": "starter_deck",
+    "identifiers": {
+      "cardtraderId": "164555",
+      "mcmId": "272025"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 10,
+          "name": "Foreign Black Border Starter Deck",
+          "set": "fbb",
+          "uuid": "3f7cb3bc-95ae-55ea-b83a-3154ea27a481"
+        }
+      ]
+    },
+    "setCode": "FBB",
+    "setName": "Foreign Black Border"
+  }
+]

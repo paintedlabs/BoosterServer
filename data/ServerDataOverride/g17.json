@@ -1,0 +1,140 @@
+[
+  {
+    "uuid": "75ccf736-bd12-5f0a-a77f-bc2495138694",
+    "name": "2017 Gift Pack",
+    "category": "bundle",
+    "cardCount": 7,
+    "subtype": "gift_bundle",
+    "identifiers": {
+      "abuId": "1476799",
+      "cardKingdomId": "215151",
+      "cardtraderId": "167925",
+      "csiId": "243743",
+      "mcmId": "299077",
+      "scgId": "SLD-MTG-BXS-GFT2017-EN",
+      "tcgplayerProductId": "148748"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/bd5230da6f98026f"
+    },
+    "contents": {
+      "card": [
+        {
+          "foil": true,
+          "name": "Plains",
+          "number": "1",
+          "set": "g17",
+          "uuid": "98addd47-09a7-54b4-98ea-04a8be03ac06"
+        },
+        {
+          "foil": true,
+          "name": "Island",
+          "number": "2",
+          "set": "g17",
+          "uuid": "3bd8500b-de53-5cd4-a4f5-efe6c4c0fb95"
+        },
+        {
+          "foil": true,
+          "name": "Swamp",
+          "number": "3",
+          "set": "g17",
+          "uuid": "6a7a99f5-4d8c-598a-a18f-1acc156adffc"
+        },
+        {
+          "foil": true,
+          "name": "Mountain",
+          "number": "4",
+          "set": "g17",
+          "uuid": "a11f4f6c-9c8c-5b69-a359-cfccf577b016"
+        },
+        {
+          "foil": true,
+          "name": "Forest",
+          "number": "5",
+          "set": "g17",
+          "uuid": "e2d7e1d4-b237-58dd-8f65-c51b517fecf8"
+        },
+        {
+          "foil": true,
+          "name": "Metalwork Colossus",
+          "number": "222",
+          "set": "kld",
+          "uuid": "8f079cbd-8419-5f5f-9f30-ea601918ebb4"
+        },
+        {
+          "foil": true,
+          "name": "Kari Zev, Skyship Raider",
+          "number": "87",
+          "set": "aer",
+          "uuid": "e3f86614-17b1-51b3-87ec-b223f9eca7aa"
+        }
+      ],
+      "other": [
+        {
+          "name": "Spindown life counter"
+        },
+        {
+          "name": "Exclusive mini-poster featuring art from HOU"
+        }
+      ],
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Ixalan Booster Pack",
+          "set": "xln",
+          "uuid": "1ffd541f-99e2-509e-9c9e-49f383f03484"
+        },
+        {
+          "count": 1,
+          "name": "Hour of Devastation Booster Pack",
+          "set": "hou",
+          "uuid": "e3af734e-d2eb-557b-9187-cd487d9ae46c"
+        },
+        {
+          "count": 1,
+          "name": "Amonkhet Booster Pack",
+          "set": "akh",
+          "uuid": "bdfaa43d-9ebd-502f-856b-11eadc97b026"
+        }
+      ]
+    },
+    "setCode": "G17",
+    "setName": "2017 Gift Pack",
+    "tcgcsvData": {
+      "product": {
+        "productId": 148748,
+        "name": "2017 Gift Pack",
+        "cleanName": "2017 Gift Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/148748_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2084,
+        "url": "https://www.tcgplayer.com/product/148748/magic-gift-boxes-and-promos-2017-gift-pack",
+        "modifiedOn": "2017-10-23T14:43:35.543",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each 2017 Gift Pack contains:\r\n<br>• 5 premium basic lands by artist Mark Poole (known as the \"Shooting Star Lands\")\r\n<br>• 2 premium creature cards (Metalwork Colossus and Kari Zev, Skyship Raider)\r\n<br>• 3 booster packs (Ixalan, Hour of Devastation, Amonkhet)\r\n<br>• Spindown life counter\r\n<br>• Exclusive mini-poster (Featuring art from Hour of Devastation)"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 148748,
+          "lowPrice": 25.26,
+          "midPrice": 30,
+          "highPrice": 34.48,
+          "marketPrice": 30.33,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

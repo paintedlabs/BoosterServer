@@ -1,0 +1,67 @@
+[
+  {
+    "uuid": "6b4e8033-e4a3-59af-aeb0-6191b6c39f4a",
+    "name": "Premium Deck Series Fire and Lightning Deck",
+    "category": "box_set",
+    "cardCount": 60,
+    "subtype": "premium",
+    "identifiers": {
+      "abuId": "1101038",
+      "cardKingdomId": "132595",
+      "cardtraderId": "47559",
+      "csiId": "98007",
+      "scgId": "SLD-MTG-BXS-PD2-EN",
+      "tcgplayerProductId": "78736",
+      "tntId": "301175"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/9299a247d1f7df0b",
+      "tcgplayer": "https://mtgjson.com/links/f3eab8374b6a4da4"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Fire and Lightning",
+          "set": "pd2"
+        }
+      ],
+      "other": [
+        {
+          "name": "Premium Deck Series Spindown"
+        }
+      ]
+    },
+    "setCode": "PD2",
+    "setName": "Premium Deck Series: Fire and Lightning",
+    "tcgcsvData": {
+      "product": {
+        "productId": 78736,
+        "name": "Premium Deck Series: Fire and Lightning Deck",
+        "cleanName": "Premium Deck Series Fire and Lightning Deck",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78736_200w.jpg",
+        "categoryId": 1,
+        "groupId": 89,
+        "url": "https://www.tcgplayer.com/product/78736/magic-premium-deck-series-fire-and-lightning-premium-deck-series-fire-and-lightning-deck",
+        "modifiedOn": "2022-12-23T16:18:15.667",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 78736,
+          "lowPrice": 35.84,
+          "midPrice": 55.41,
+          "highPrice": 109.99,
+          "marketPrice": 45.91,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "uuid": "2b7d3b86-826c-5432-a925-e36ee8a2767e",
+    "name": "Commander Anthology Volume II",
+    "category": "box_set",
+    "releaseDate": "2018-06-08",
+    "subtype": "commander",
+    "identifiers": {
+      "abuId": "1502905",
+      "cardKingdomId": "218692",
+      "cardtraderId": "48683",
+      "csiId": "254578",
+      "scgId": "SLD-MTG-MLT-CM2-EN",
+      "tcgplayerProductId": "166534",
+      "tntId": "1177658"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/b49a2ed197d32289",
+      "tcgplayer": "https://mtgjson.com/links/442e63adcf36cbe6"
+    },
+    "contents": {
+      "other": [
+        {
+          "name": "Specialized Life Counters"
+        },
+        {
+          "name": "Tokens for All Decks"
+        }
+      ],
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Commander Anthology Volume II Commander Deck Breed Lethality",
+          "set": "cm2",
+          "uuid": "e4b25b9c-efe9-5920-b4b6-ad6b46f01fee"
+        },
+        {
+          "count": 1,
+          "name": "Commander Anthology Volume II Commander Deck Built from Scratch",
+          "set": "cm2",
+          "uuid": "96770485-43db-5af4-a82b-06bbf96cf05d"
+        },
+        {
+          "count": 1,
+          "name": "Commander Anthology Volume II Commander Deck Devour for Power",
+          "set": "cm2",
+          "uuid": "da309847-725f-5d5e-9609-f20ac21b7daa"
+        },
+        {
+          "count": 1,
+          "name": "Commander Anthology Volume II Commander Deck Wade into Battle",
+          "set": "cm2",
+          "uuid": "8417f534-e75f-59b2-bbae-7976f0f623ab"
+        }
+      ]
+    },
+    "setCode": "CM2",
+    "setName": "Commander Anthology Volume II",
+    "tcgcsvData": {
+      "product": {
+        "productId": 166534,
+        "name": "Commander Anthology Volume II Box Set",
+        "cleanName": "Commander Anthology Volume II Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/166534_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2246,
+        "url": "https://www.tcgplayer.com/product/166534/magic-commander-anthology-volume-ii-commander-anthology-volume-ii-box-set",
+        "modifiedOn": "2018-05-14T17:52:19.13",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2018-06-08T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Launch a legendary four-player Magic battle right out of the box with this collection of classic Commander decks. Choose from among these powerful strategies, then challenge your friends to an epic multiplayer showdown.\r\n<br><br>\r\n4 decks per display."
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509732289"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 166534,
+          "lowPrice": 349.3,
+          "midPrice": 374.5,
+          "highPrice": 599.99,
+          "marketPrice": 344.93,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "e4b25b9c-efe9-5920-b4b6-ad6b46f01fee",
+    "name": "Commander Anthology Volume II Commander Deck Breed Lethality",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2018-05-08",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "48685",
+      "mcmId": "357028"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Breed Lethality",
+          "set": "cm2"
+        }
+      ]
+    },
+    "setCode": "CM2",
+    "setName": "Commander Anthology Volume II"
+  },
+  {
+    "uuid": "96770485-43db-5af4-a82b-06bbf96cf05d",
+    "name": "Commander Anthology Volume II Commander Deck Built from Scratch",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2018-05-08",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "48684",
+      "mcmId": "357030"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Built From Scratch",
+          "set": "cm2"
+        }
+      ]
+    },
+    "setCode": "CM2",
+    "setName": "Commander Anthology Volume II"
+  },
+  {
+    "uuid": "da309847-725f-5d5e-9609-f20ac21b7daa",
+    "name": "Commander Anthology Volume II Commander Deck Devour for Power",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2018-05-08",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "48686",
+      "mcmId": "357031"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Devour for Power",
+          "set": "cm2"
+        }
+      ]
+    },
+    "setCode": "CM2",
+    "setName": "Commander Anthology Volume II"
+  },
+  {
+    "uuid": "8417f534-e75f-59b2-bbae-7976f0f623ab",
+    "name": "Commander Anthology Volume II Commander Deck Wade into Battle",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2018-05-08",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "48687",
+      "mcmId": "357029"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Wade into Battle",
+          "set": "cm2"
+        }
+      ]
+    },
+    "setCode": "CM2",
+    "setName": "Commander Anthology Volume II"
+  }
+]

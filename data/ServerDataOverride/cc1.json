@@ -1,0 +1,147 @@
+[
+  {
+    "uuid": "7294a4c5-68d0-5e3b-8982-9f0c176ccddc",
+    "name": "Commander Collection Green",
+    "category": "box_set",
+    "cardCount": 8,
+    "releaseDate": "2020-12-04",
+    "subtype": "commander_collection",
+    "identifiers": {
+      "abuId": "1928163",
+      "cardKingdomId": "239977",
+      "cardtraderId": "145707",
+      "csiId": "302908",
+      "mcmId": "486949",
+      "scgId": "SLD-MTG-BXS-CC1-EN-NONFOIL",
+      "tcgplayerProductId": "221302",
+      "tntId": "1688129"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/e80353b5b39a27c9",
+      "tcgplayer": "https://mtgjson.com/links/a901b61677059e7e"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Commander Collection Green",
+          "set": "cc1"
+        }
+      ]
+    },
+    "setCode": "CC1",
+    "setName": "Commander Collection: Green",
+    "tcgcsvData": {
+      "product": {
+        "productId": 221302,
+        "name": "Commander Collection: Green",
+        "cleanName": "Commander Collection Green",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/221302_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2699,
+        "url": "https://www.tcgplayer.com/product/221302/magic-commander-collection-green-commander-collection-green",
+        "modifiedOn": "2020-12-04T05:03:07.697",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2020-12-04T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Commander Collection: Green is a boxed set of eight reprinted cards themed to one color and what it does best—in this case green, the color of big mana and big creatures! These cards have been selected to showcase the things green mages love to do in Commander, and each one has been given brand-new art with loads of references to popular legendary characters. They'll be right at home in your favorite green deck alongside their legendary counterparts!"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "00630509926343"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 221302,
+          "lowPrice": 63.61,
+          "midPrice": 76.12,
+          "highPrice": 129.99,
+          "marketPrice": 62.23,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "ac3edaad-41cc-5e61-bd6f-6e422096b076",
+    "name": "Commander Collection Green Premium",
+    "category": "box_set",
+    "cardCount": 8,
+    "releaseDate": "2020-12-04",
+    "subtype": "commander_collection",
+    "identifiers": {
+      "cardKingdomId": "239978",
+      "cardtraderId": "145708",
+      "csiId": "302909",
+      "mcmId": "486954",
+      "scgId": "SLD-MTG-BXS-CC1-EN-FOIL",
+      "tcgplayerProductId": "221303",
+      "tntId": "1688130"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/1acd3d6c9383da7c",
+      "tcgplayer": "https://mtgjson.com/links/b04ae800abcbe3c1"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Commander Collection Green Premium",
+          "set": "cc1"
+        }
+      ]
+    },
+    "setCode": "CC1",
+    "setName": "Commander Collection: Green",
+    "tcgcsvData": {
+      "product": {
+        "productId": 221303,
+        "name": "Commander Collection: Green - Premium",
+        "cleanName": "Commander Collection Green Premium",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/221303_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2699,
+        "url": "https://www.tcgplayer.com/product/221303/magic-commander-collection-green-commander-collection-green-premium",
+        "modifiedOn": "2020-12-04T05:03:07.697",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2020-12-04T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Commander Collection: Green - Premum is a boxed set of eight foil reprinted cards themed to one color and what it does best—in this case green, the color of big mana and big creatures! These cards have been selected to showcase the things green mages love to do in Commander, and each one has been given brand-new art with loads of references to popular legendary characters. They'll be right at home in your favorite green deck alongside their legendary counterparts!"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "00630509926347"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 221303,
+          "lowPrice": 76.3,
+          "midPrice": 120,
+          "highPrice": 500,
+          "marketPrice": 76.3,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

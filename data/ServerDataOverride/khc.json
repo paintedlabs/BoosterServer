@@ -1,0 +1,319 @@
+[
+  {
+    "uuid": "65a8f10c-8151-50e2-a361-375dae91277c",
+    "name": "Kaldheim Commander Deck Display",
+    "category": "deck_box",
+    "releaseDate": "2021-02-05",
+    "subtype": "commander",
+    "identifiers": {
+      "tcgplayerProductId": "229374",
+      "tntId": "1685221"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/9c50f11ca15c4829"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 3,
+          "name": "Kaldheim Commander Deck Elven Empire",
+          "set": "khc",
+          "uuid": "c44e86b2-bd49-5658-8554-ea92828c4ace"
+        },
+        {
+          "count": 3,
+          "name": "Kaldheim Commander Deck Phantom Premonition",
+          "set": "khc",
+          "uuid": "b92f39f9-8df0-59ef-920d-3b066bc84766"
+        }
+      ]
+    },
+    "setCode": "KHC",
+    "setName": "Kaldheim Commander",
+    "tcgcsvData": {
+      "product": {
+        "productId": 229374,
+        "name": "Kaldheim - Commander Deck Display Case",
+        "cleanName": "Kaldheim Commander Deck Display Case",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/229374_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2766,
+        "url": "https://www.tcgplayer.com/product/229374/magic-commander-kaldheim-kaldheim-commander-deck-display-case",
+        "modifiedOn": "2021-02-05T05:03:27.47",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2021-02-05T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each Kaldheim Commander Case contains 6 commander decks themed for Kaldheim <em>(3 of each deck)</em>."
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509922307"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 229374,
+          "lowPrice": 1051.7,
+          "midPrice": 1059.2,
+          "highPrice": 1066.69,
+          "marketPrice": 394.99,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "c44e86b2-bd49-5658-8554-ea92828c4ace",
+    "name": "Kaldheim Commander Deck Elven Empire",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2021-02-05",
+    "subtype": "commander",
+    "identifiers": {
+      "abuId": "1963696",
+      "cardKingdomId": "240295",
+      "cardtraderId": "151469",
+      "csiId": "302499",
+      "mcmId": "527725",
+      "scgId": "SLD-MTG-MLT-KHC-EN-ELVEN",
+      "tcgplayerProductId": "229377",
+      "tntId": "1685219"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/a748b65b08c0be0c",
+      "tcgplayer": "https://mtgjson.com/links/d4e2ed6648990b00"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Elven Empire",
+          "set": "khc"
+        }
+      ],
+      "other": [
+        {
+          "name": "Foil Etched Cardstock Display Commander"
+        },
+        {
+          "name": "Kaldheim Life Wheel"
+        },
+        {
+          "name": "10 Double Sided Tokens"
+        }
+      ]
+    },
+    "setCode": "KHC",
+    "setName": "Kaldheim Commander",
+    "tcgcsvData": {
+      "product": {
+        "productId": 229377,
+        "name": "Kaldheim - Elven Empire Commander Deck",
+        "cleanName": "Kaldheim Elven Empire Commander Deck",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/229377_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2766,
+        "url": "https://www.tcgplayer.com/product/229377/magic-commander-kaldheim-kaldheim-elven-empire-commander-deck",
+        "modifiedOn": "2021-02-05T05:03:27.47",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2021-02-05T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each commander deck contains:\r\n<br>• 99-card deck\r\n<br>• 1 foil Commander\r\n<br>• 10 double-sided tokens\r\n<br>• 1 Life Wheel"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "00630509922314"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 229377,
+          "lowPrice": 100,
+          "midPrice": 126.01,
+          "highPrice": 204.99,
+          "marketPrice": 109.93,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "b92f39f9-8df0-59ef-920d-3b066bc84766",
+    "name": "Kaldheim Commander Deck Phantom Premonition",
+    "category": "deck",
+    "cardCount": 100,
+    "releaseDate": "2021-02-05",
+    "subtype": "commander",
+    "identifiers": {
+      "abuId": "1963695",
+      "cardKingdomId": "240296",
+      "cardtraderId": "151470",
+      "csiId": "302500",
+      "mcmId": "527720",
+      "scgId": "SLD-MTG-MLT-KHC-EN-PHANTOM",
+      "tcgplayerProductId": "229376",
+      "tntId": "1685220"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/fb5bc1abddd02c1e",
+      "tcgplayer": "https://mtgjson.com/links/e30b10c5c8fa3b41"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Phantom Premonition",
+          "set": "khc"
+        }
+      ],
+      "other": [
+        {
+          "name": "Foil Etched Cardstock Display Commander"
+        },
+        {
+          "name": "Kaldheim Life Wheel"
+        },
+        {
+          "name": "10 Double Sided Tokens"
+        }
+      ]
+    },
+    "setCode": "KHC",
+    "setName": "Kaldheim Commander",
+    "tcgcsvData": {
+      "product": {
+        "productId": 229376,
+        "name": "Kaldheim - Phantom Premonition Commander Deck",
+        "cleanName": "Kaldheim Phantom Premonition Commander Deck",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/229376_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2766,
+        "url": "https://www.tcgplayer.com/product/229376/magic-commander-kaldheim-kaldheim-phantom-premonition-commander-deck",
+        "modifiedOn": "2021-02-05T05:03:27.47",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2021-02-05T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each commander deck contains:\r\n<br>• 99-card deck\r\n<br>• 1 foil Commander\r\n<br>• 10 double-sided tokens\r\n<br>• 1 Life Wheel"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "00630509922314"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 229376,
+          "lowPrice": 38.97,
+          "midPrice": 47.39,
+          "highPrice": 94.77,
+          "marketPrice": 40.19,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "8dc8da23-e40e-5e17-9314-db536dafe847",
+    "name": "Kaldheim Commander Decks Set of 2",
+    "category": "subset",
+    "releaseDate": "2021-02-05",
+    "subtype": "commander",
+    "identifiers": {
+      "cardtraderId": "151550",
+      "csiId": "302501",
+      "mcmId": "527715",
+      "scgId": "SLD-MTG-MLT-KHC-EN-SET2",
+      "tcgplayerProductId": "229375"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/ae7e23a848c7925f"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Kaldheim Commander Deck Elven Empire",
+          "set": "khc",
+          "uuid": "c44e86b2-bd49-5658-8554-ea92828c4ace"
+        },
+        {
+          "count": 1,
+          "name": "Kaldheim Commander Deck Phantom Premonition",
+          "set": "khc",
+          "uuid": "b92f39f9-8df0-59ef-920d-3b066bc84766"
+        }
+      ]
+    },
+    "setCode": "KHC",
+    "setName": "Kaldheim Commander",
+    "tcgcsvData": {
+      "product": {
+        "productId": 229375,
+        "name": "Kaldheim - Commander Deck [Set of 2]",
+        "cleanName": "Kaldheim Commander Deck Set of 2",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/229375_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2766,
+        "url": "https://www.tcgplayer.com/product/229375/magic-commander-kaldheim-kaldheim-commander-deck-set-of-2",
+        "modifiedOn": "2021-02-05T05:03:27.47",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2021-02-05T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Collect each of the 2 Kaldheim Commander Decks. Each deck contains:\r\n<br>• 99-card deck\r\n<br>• 1 foil Commander\r\n<br>• 10 double-sided tokens\r\n<br>• 1 Life Wheel"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "00630509922314"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 229375,
+          "lowPrice": 153.99,
+          "midPrice": 160,
+          "highPrice": 175,
+          "marketPrice": 153.55,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

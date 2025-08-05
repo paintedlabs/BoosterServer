@@ -1,0 +1,73 @@
+[
+  {
+    "uuid": "db044702-4496-5b06-989e-818a08fd0322",
+    "name": "Collectors Edition Box",
+    "category": "box_set",
+    "cardCount": 302,
+    "subtype": "collectors_edition",
+    "identifiers": {
+      "abuId": "1100316",
+      "cardKingdomId": "223971",
+      "cardtraderId": "39365",
+      "csiId": "245779",
+      "scgId": "SLD-MTG-BXS-CED-EN",
+      "tcgplayerProductId": "177863",
+      "tntId": "1143660"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/eb5e8252b5a342ec",
+      "tcgplayer": "https://mtgjson.com/links/566e829df34aa2f9"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Collectors' Edition",
+          "set": "ced"
+        }
+      ]
+    },
+    "setCode": "CED",
+    "setName": "Collectors' Edition",
+    "tcgcsvData": {
+      "product": {
+        "productId": 177863,
+        "name": "Collectors' Edition Box",
+        "cleanName": "Collectors Edition Box",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/177863_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1526,
+        "url": "https://www.tcgplayer.com/product/177863/magic-collectors-edition-collectors-edition-box",
+        "modifiedOn": "2019-11-20T16:24:18.653",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "This special collectors' edition of Magic: The Gathering contains all 302 cards from the original Deckmaster series of playable trading cards. The complete set is augmented with duplicates of the many land cards, making a total of 363 cards. These cards are produced in a special collectors' format with square-cut corners and gold borders. So pick up the Magic: The Gathering Collectors' Edition and explore the whole world in one box."
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "0742818068000"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 177863,
+          "lowPrice": 14999,
+          "midPrice": 17499.5,
+          "highPrice": 21999.99,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

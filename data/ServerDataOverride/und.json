@@ -1,0 +1,104 @@
+[
+  {
+    "uuid": "b966f472-6bd1-55a5-9e13-235320a03bb2",
+    "name": "Unsanctioned",
+    "category": "multiple_decks",
+    "cardCount": 150,
+    "releaseDate": "2020-02-29",
+    "subtype": "game_night",
+    "identifiers": {
+      "abuId": "1815658",
+      "cardKingdomId": "231828",
+      "cardtraderId": "107645",
+      "csiId": "287323",
+      "mcmId": "410964",
+      "scgId": "SLD-MTG-BXS-UND-EN",
+      "tcgplayerProductId": "207281",
+      "tntId": "1641024"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/74187e63d7afb56a"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "White",
+          "set": "und"
+        },
+        {
+          "name": "Blue",
+          "set": "und"
+        },
+        {
+          "name": "Black",
+          "set": "und"
+        },
+        {
+          "name": "Red",
+          "set": "und"
+        },
+        {
+          "name": "Green",
+          "set": "und"
+        }
+      ],
+      "other": [
+        {
+          "name": "2 Six-Sided Dice"
+        },
+        {
+          "name": "10 Double-Sided Tokens"
+        },
+        {
+          "name": "10 Full-Art Basic Lands"
+        },
+        {
+          "name": "Reusable Game Box"
+        }
+      ]
+    },
+    "setCode": "UND",
+    "setName": "Unsanctioned",
+    "tcgcsvData": {
+      "product": {
+        "productId": 207281,
+        "name": "Unsanctioned - Box Set",
+        "cleanName": "Unsanctioned Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/207281_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2598,
+        "url": "https://www.tcgplayer.com/product/207281/magic-unsanctioned-unsanctioned-box-set",
+        "modifiedOn": "2020-01-14T14:09:50.607",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2020-02-29T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Choose two wacky silver-bordered 30-card decks, shuffle them together, and watch the mayhem unfold!\r\n<br><br>\r\nUnsanctioned is a ready-to-play \"Un-set\" experience.\r\n<br><br>\r\nInside, you'll find five 30-card, mono-colored decks, each designed to synergize with one another in unique and surprising ways. Each player combines two decks into one 60-card deck and faces off for some wacky gameplay that stretches the limits of what Magic cards can do.\r\n<br><br><strong>\r\nContents:</strong>\r\n<br>• 5 30-card mono-colored decks\r\n<br>• 2 6-sided dice\r\n<br>• 10 double-sided tokens\r\n<br>• 5 full-art basic lands, with all-new artwork\r\n<br>• 5 foil full-art basic lands, with all-new artwork\r\n<br>• 1 reusable storage box"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509795079"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 207281,
+          "lowPrice": 18.01,
+          "midPrice": 44.44,
+          "highPrice": 79.98,
+          "marketPrice": 28.12,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

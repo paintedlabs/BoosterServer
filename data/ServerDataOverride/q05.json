@@ -1,0 +1,460 @@
+[
+  {
+    "uuid": "c6f5f120-41e4-572e-8e6c-2b033b464bcf",
+    "name": "Challenger Deck 2021 Azorius Control",
+    "category": "deck",
+    "cardCount": 75,
+    "releaseDate": "2021-02-17",
+    "subtype": "challenger",
+    "identifiers": {
+      "abuId": "1996870",
+      "cardKingdomId": "241978",
+      "cardtraderId": "152952",
+      "csiId": "312083",
+      "mcmId": "540221",
+      "tcgplayerProductId": "232756",
+      "tntId": "1699154"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/ad1099e01a55edb0"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Azorius Control",
+          "set": "q05"
+        }
+      ]
+    },
+    "setCode": "Q05",
+    "setName": "Challenger Decks 2021",
+    "tcgcsvData": {
+      "product": {
+        "productId": 232756,
+        "name": "Challenger Deck 2021: Azorius Control",
+        "cleanName": "Challenger Deck 2021 Azorius Control",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232756_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/232756/magic-challenger-decks-challenger-deck-2021-azorius-control",
+        "modifiedOn": "2021-03-26T04:03:11.753",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509997053"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 232756,
+          "lowPrice": 15.5,
+          "midPrice": 24.97,
+          "highPrice": 39.99,
+          "marketPrice": 17.31,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "a680a179-aa91-5c01-9f83-6265131cfdfe",
+    "name": "Challenger Deck 2021 Dimir Rogues",
+    "category": "deck",
+    "cardCount": 75,
+    "releaseDate": "2021-02-17",
+    "subtype": "challenger",
+    "identifiers": {
+      "abuId": "1996871",
+      "cardKingdomId": "241979",
+      "cardtraderId": "152953",
+      "csiId": "312085",
+      "mcmId": "540226",
+      "tcgplayerProductId": "232758",
+      "tntId": "1699155"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/0fad5fd9bdc34f73"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Dimir Rogue",
+          "set": "q05"
+        }
+      ]
+    },
+    "setCode": "Q05",
+    "setName": "Challenger Decks 2021",
+    "tcgcsvData": {
+      "product": {
+        "productId": 232758,
+        "name": "Challenger Deck 2021: Dimir Rogues",
+        "cleanName": "Challenger Deck 2021 Dimir Rogues",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232758_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/232758/magic-challenger-decks-challenger-deck-2021-dimir-rogues",
+        "modifiedOn": "2021-03-26T04:03:11.753",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509997053"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 232758,
+          "lowPrice": 20,
+          "midPrice": 27.99,
+          "highPrice": 37.72,
+          "marketPrice": 19.48,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "60fe8c7d-354a-533b-a951-0a65666deb58",
+    "name": "Challenger Deck 2021 Display",
+    "category": "deck_box",
+    "releaseDate": "2019-04-12",
+    "subtype": "challenger",
+    "identifiers": {
+      "cardtraderId": "152951",
+      "tcgplayerProductId": "232752",
+      "tntId": "1699158"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/267cbd23d32e6d90"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 2,
+          "name": "Challenger Deck 2021 Azorius Control",
+          "set": "q05",
+          "uuid": "c6f5f120-41e4-572e-8e6c-2b033b464bcf"
+        },
+        {
+          "count": 2,
+          "name": "Challenger Deck 2021 Dimir Rogues",
+          "set": "q05",
+          "uuid": "a680a179-aa91-5c01-9f83-6265131cfdfe"
+        },
+        {
+          "count": 2,
+          "name": "Challenger Deck 2021 Mono Green Stompy",
+          "set": "q05",
+          "uuid": "e0d88354-2e1a-54b7-88bd-63a8a629df80"
+        },
+        {
+          "count": 2,
+          "name": "Challenger Deck 2021 Mono Red Aggro",
+          "set": "q05",
+          "uuid": "fde63a47-9596-54e4-9947-93c68a27d7a2"
+        }
+      ]
+    },
+    "setCode": "Q05",
+    "setName": "Challenger Decks 2021",
+    "tcgcsvData": {
+      "product": {
+        "productId": 232752,
+        "name": "Challenger Deck 2021 Display",
+        "cleanName": "Challenger Deck 2021 Display",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232752_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/232752/magic-challenger-decks-challenger-deck-2021-display",
+        "modifiedOn": "2021-03-26T04:03:11.753",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "A Challenger Decks Display comes with two of each deck for a total of eight decks. Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509997053"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 232752,
+          "lowPrice": 129.85,
+          "midPrice": 147.9,
+          "highPrice": 199.99,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "e0d88354-2e1a-54b7-88bd-63a8a629df80",
+    "name": "Challenger Deck 2021 Mono Green Stompy",
+    "category": "deck",
+    "cardCount": 75,
+    "releaseDate": "2021-02-17",
+    "subtype": "challenger",
+    "identifiers": {
+      "abuId": "1996873",
+      "cardKingdomId": "241981",
+      "cardtraderId": "152955",
+      "csiId": "312087",
+      "mcmId": "540236",
+      "tcgplayerProductId": "232761",
+      "tntId": "1699157"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/1856e7589d4151c3"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Mono-Green Stompy",
+          "set": "q05"
+        }
+      ]
+    },
+    "setCode": "Q05",
+    "setName": "Challenger Decks 2021",
+    "tcgcsvData": {
+      "product": {
+        "productId": 232761,
+        "name": "Challenger Deck 2021: Mono Green Stompy",
+        "cleanName": "Challenger Deck 2021 Mono Green Stompy",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232761_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/232761/magic-challenger-decks-challenger-deck-2021-mono-green-stompy",
+        "modifiedOn": "2021-03-26T04:03:11.753",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509997053"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 232761,
+          "lowPrice": 18.36,
+          "midPrice": 24.02,
+          "highPrice": 36.34,
+          "marketPrice": 19.8,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "fde63a47-9596-54e4-9947-93c68a27d7a2",
+    "name": "Challenger Deck 2021 Mono Red Aggro",
+    "category": "deck",
+    "cardCount": 75,
+    "releaseDate": "2021-02-17",
+    "subtype": "challenger",
+    "identifiers": {
+      "abuId": "1996872",
+      "cardKingdomId": "241980",
+      "cardtraderId": "152954",
+      "csiId": "312086",
+      "mcmId": "540231",
+      "scgId": "SLD-MTG-INT-Q04-EN-RED",
+      "tcgplayerProductId": "232760",
+      "tntId": "1699156"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/6ed9283326c8d2da"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Mono-Red Aggro",
+          "set": "q05"
+        }
+      ]
+    },
+    "setCode": "Q05",
+    "setName": "Challenger Decks 2021",
+    "tcgcsvData": {
+      "product": {
+        "productId": 232760,
+        "name": "Challenger Deck 2021: Mono Red Aggro",
+        "cleanName": "Challenger Deck 2021 Mono Red Aggro",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232760_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/232760/magic-challenger-decks-challenger-deck-2021-mono-red-aggro",
+        "modifiedOn": "2021-03-26T04:03:11.753",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509997053"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 232760,
+          "lowPrice": 21.99,
+          "midPrice": 25.84,
+          "highPrice": 37.84,
+          "marketPrice": 25.75,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "78cbfbba-9382-598d-b459-e96e1d470cb2",
+    "name": "Challenger Deck 2021 Set of 4",
+    "category": "subset",
+    "releaseDate": "2021-02-17",
+    "subtype": "challenger",
+    "identifiers": {
+      "cardtraderId": "153215",
+      "csiId": "312088",
+      "mcmId": "540241",
+      "tcgplayerProductId": "232755"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/7cdefe30e0cfce61"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Challenger Deck 2021 Azorius Control",
+          "set": "q05",
+          "uuid": "c6f5f120-41e4-572e-8e6c-2b033b464bcf"
+        },
+        {
+          "count": 1,
+          "name": "Challenger Deck 2021 Dimir Rogues",
+          "set": "q05",
+          "uuid": "a680a179-aa91-5c01-9f83-6265131cfdfe"
+        },
+        {
+          "count": 1,
+          "name": "Challenger Deck 2021 Mono Green Stompy",
+          "set": "q05",
+          "uuid": "e0d88354-2e1a-54b7-88bd-63a8a629df80"
+        },
+        {
+          "count": 1,
+          "name": "Challenger Deck 2021 Mono Red Aggro",
+          "set": "q05",
+          "uuid": "fde63a47-9596-54e4-9947-93c68a27d7a2"
+        }
+      ]
+    },
+    "setCode": "Q05",
+    "setName": "Challenger Decks 2021",
+    "tcgcsvData": {
+      "product": {
+        "productId": 232755,
+        "name": "Challenger Deck 2021 (Set of 4)",
+        "cleanName": "Challenger Deck 2021 Set of 4",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232755_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/232755/magic-challenger-decks-challenger-deck-2021-set-of-4",
+        "modifiedOn": "2021-03-26T04:03:11.753",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "A Challenger Decks (set of 4) comes with one of each deck. Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509997053"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 232755,
+          "lowPrice": 88.69,
+          "midPrice": 119.89,
+          "highPrice": 140,
+          "marketPrice": 81.47,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

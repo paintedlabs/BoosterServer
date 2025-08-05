@@ -1,0 +1,70 @@
+[
+  {
+    "uuid": "f8f98f4f-4d61-59fd-8efa-a879dc96a70a",
+    "name": "From the Vault Angels",
+    "category": "box_set",
+    "cardCount": 15,
+    "releaseDate": "2015-08-06",
+    "subtype": "from_the_vault",
+    "identifiers": {
+      "abuId": "1100534",
+      "cardKingdomId": "206542",
+      "cardtraderId": "48323",
+      "csiId": "212595",
+      "mcmId": "283944",
+      "scgId": "SLD-MTG-BXS-V15-EN",
+      "tcgplayerProductId": "100667",
+      "tntId": "1083929"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/193ef1284571a5b0",
+      "tcgplayer": "https://mtgjson.com/links/d7ead4400506f71b"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "From the Vault Angels",
+          "set": "v15"
+        }
+      ]
+    },
+    "setCode": "V15",
+    "setName": "From the Vault: Angels",
+    "tcgcsvData": {
+      "product": {
+        "productId": 100667,
+        "name": "From the Vault: Angels - Box Set",
+        "cleanName": "From the Vault Angels Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/100667_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1577,
+        "url": "https://www.tcgplayer.com/product/100667/magic-from-the-vault-angels-from-the-vault-angels-box-set",
+        "modifiedOn": "2020-01-06T19:59:54.63",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each From the Vault: Angels - Box Set contains 15 premium foil cards."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 100667,
+          "lowPrice": 111,
+          "midPrice": 129.99,
+          "highPrice": 999.95,
+          "marketPrice": 120.61,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

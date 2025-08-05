@@ -1,0 +1,138 @@
+[
+  {
+    "uuid": "15d55438-859b-552f-90a1-63f66c5a6060",
+    "name": "Duel Deck Heroes vs Monsters",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100587",
+      "cardKingdomId": "191063",
+      "cardtraderId": "48013",
+      "csiId": "187258",
+      "mcmId": "263714",
+      "scgId": "SLD-MTG-BXS-DDL-EN",
+      "tcgplayerProductId": "70927",
+      "tntId": "1026931"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/f71372c466e9752b",
+      "tcgplayer": "https://mtgjson.com/links/f96cfb7f1e9e22d7"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Heroes vs Monsters Heroes Deck",
+          "set": "ddl",
+          "uuid": "5ab1c1df-1a96-5543-af00-efa5219a2057"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Heroes vs Monsters Monsters Deck",
+          "set": "ddl",
+          "uuid": "dc3ea158-0ec5-51d0-a0a1-f28e5a794b55"
+        }
+      ]
+    },
+    "setCode": "DDL",
+    "setName": "Duel Decks: Heroes vs. Monsters",
+    "tcgcsvData": {
+      "product": {
+        "productId": 70927,
+        "name": "Duel Decks: Heroes vs. Monsters - Box Set",
+        "cleanName": "Duel Decks Heroes vs Monsters Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70927_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1145,
+        "url": "https://www.tcgplayer.com/product/70927/magic-duel-decks-heroes-vs-monsters-duel-decks-heroes-vs-monsters-box-set",
+        "modifiedOn": "2014-01-06T17:41:30.09",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 70927,
+          "lowPrice": 30.4,
+          "midPrice": 48.01,
+          "highPrice": 72.44,
+          "marketPrice": 34.25,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "44961ec1-a9f3-56b5-b3ed-3757e62a8bfd",
+    "name": "Duel Deck Heroes vs Monsters Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48016",
+      "mcmId": "263891",
+      "tntId": "1026930"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Heroes vs Monsters",
+          "set": "ddl",
+          "uuid": "15d55438-859b-552f-90a1-63f66c5a6060"
+        }
+      ]
+    },
+    "setCode": "DDL",
+    "setName": "Duel Decks: Heroes vs. Monsters"
+  },
+  {
+    "uuid": "5ab1c1df-1a96-5543-af00-efa5219a2057",
+    "name": "Duel Deck Heroes vs Monsters Heroes Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48014",
+      "mcmId": "263889"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Heroes",
+          "set": "ddl"
+        }
+      ]
+    },
+    "setCode": "DDL",
+    "setName": "Duel Decks: Heroes vs. Monsters"
+  },
+  {
+    "uuid": "dc3ea158-0ec5-51d0-a0a1-f28e5a794b55",
+    "name": "Duel Deck Heroes vs Monsters Monsters Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48015",
+      "mcmId": "263890"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Monsters",
+          "set": "ddl"
+        }
+      ]
+    },
+    "setCode": "DDL",
+    "setName": "Duel Decks: Heroes vs. Monsters"
+  }
+]

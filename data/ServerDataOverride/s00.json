@@ -1,0 +1,137 @@
+[
+  {
+    "uuid": "a74103c0-ff84-5ee8-997f-5336ad0cd9de",
+    "name": "Starter 2000 Advanced Booster Pack",
+    "category": "booster_pack",
+    "subtype": "advanced",
+    "identifiers": {
+      "cardtraderId": "45731",
+      "mcmId": "260971"
+    },
+    "purchaseUrls": {},
+    "setCode": "S00",
+    "setName": "Starter 2000"
+  },
+  {
+    "uuid": "627b02a0-cdef-5d94-af5c-98c91f0dc75f",
+    "name": "Starter 2000 Demo Game Booster",
+    "category": "booster_pack",
+    "subtype": "promotional",
+    "identifiers": {
+      "cardtraderId": "45730",
+      "mcmId": "260970"
+    },
+    "purchaseUrls": {},
+    "setCode": "S00",
+    "setName": "Starter 2000"
+  },
+  {
+    "uuid": "312b9d82-3a53-53d7-84cc-c05534547d86",
+    "name": "Starter 2000 Sampler Booster Pack",
+    "category": "booster_pack",
+    "cardCount": 10,
+    "releaseDate": "2019-01-29",
+    "subtype": "promotional",
+    "identifiers": {
+      "cardtraderId": "51003",
+      "mcmId": "369561",
+      "tcgplayerProductId": "257333"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/3123f354b1bb66bb"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Starter 2000 sampler pack",
+          "set": "s00"
+        }
+      ]
+    },
+    "setCode": "S00",
+    "setName": "Starter 2000"
+  },
+  {
+    "uuid": "b5ad501f-0aba-503e-ae55-d66e1b27de1b",
+    "name": "Starter 2000 Two Player Starter Game",
+    "category": "multiple_decks",
+    "cardCount": 74,
+    "subtype": "two_player_starter",
+    "identifiers": {
+      "abuId": "1101169",
+      "cardKingdomId": "240217",
+      "cardtraderId": "45732",
+      "mcmId": "242505",
+      "tntId": "113692"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "card": [
+        {
+          "foil": true,
+          "name": "Rhox",
+          "number": "43",
+          "set": "s00",
+          "uuid": "37118303-6548-5d4e-86b6-aab4941c3ccc"
+        }
+      ],
+      "deck": [
+        {
+          "name": "Player A's deck",
+          "set": "s00"
+        },
+        {
+          "name": "Player A's advanced pack",
+          "set": "s00"
+        },
+        {
+          "name": "Player B's deck",
+          "set": "s00"
+        },
+        {
+          "name": "Player B's advanced pack",
+          "set": "s00"
+        }
+      ],
+      "other": [
+        {
+          "name": "Two Play Guides"
+        },
+        {
+          "name": "Magic the Gathering Rulebook"
+        },
+        {
+          "name": "Two Playmats and Scorekeeping Disks"
+        },
+        {
+          "name": "CD-ROM with Magic Mini-Games"
+        }
+      ]
+    },
+    "setCode": "S00",
+    "setName": "Starter 2000"
+  },
+  {
+    "uuid": "f6d4ab84-1b28-5aec-9043-d809c456daf2",
+    "name": "Starter 2000 Two Player Starter Game Display",
+    "category": "deck_box",
+    "subtype": "two_player_starter",
+    "identifiers": {
+      "abuId": "1101175",
+      "tntId": "113691"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Starter 2000 Two Player Starter Game",
+          "set": "s00",
+          "uuid": "b5ad501f-0aba-503e-ae55-d66e1b27de1b"
+        }
+      ]
+    },
+    "setCode": "S00",
+    "setName": "Starter 2000"
+  }
+]

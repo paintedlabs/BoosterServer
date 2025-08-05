@@ -1,0 +1,455 @@
+[
+  {
+    "uuid": "291b4274-beee-53d5-b4db-309f05d696a5",
+    "name": "Challenger Deck 2022 Dimir Control",
+    "category": "deck",
+    "cardCount": 75,
+    "releaseDate": "2022-01-26",
+    "subtype": "challenger",
+    "identifiers": {
+      "abuId": "2167836",
+      "cardKingdomId": "257493",
+      "cardtraderId": "206982",
+      "csiId": "328756",
+      "mcmId": "611305",
+      "miniaturemarketId": "283478",
+      "tcgplayerProductId": "263165",
+      "tntId": "1745656"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/50a7023c680018ec"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Dimir Control",
+          "set": "q07"
+        }
+      ]
+    },
+    "setCode": "Q07",
+    "setName": "Challenger Decks 2022",
+    "tcgcsvData": {
+      "product": {
+        "productId": 263165,
+        "name": "Challenger Deck 2022: Dimir Control",
+        "cleanName": "Challenger Deck 2022 Dimir Control",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263165_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/263165/magic-challenger-decks-challenger-deck-2022-dimir-control",
+        "modifiedOn": "2022-04-01T04:03:13.61",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "195166138817"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 263165,
+          "lowPrice": 23.45,
+          "midPrice": 32.45,
+          "highPrice": 64.99,
+          "marketPrice": 23.7,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "cc8321c9-7758-5e5b-91ce-fbb2c80f122f",
+    "name": "Challenger Deck 2022 Display",
+    "category": "deck_box",
+    "subtype": "challenger",
+    "identifiers": {
+      "tcgplayerProductId": "263168",
+      "tntId": "1745660"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/423f38c818ca1080"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 2,
+          "name": "Challenger Deck 2022 Dimir Control",
+          "set": "q07",
+          "uuid": "291b4274-beee-53d5-b4db-309f05d696a5"
+        },
+        {
+          "count": 2,
+          "name": "Challenger Deck 2022 Gruul Stompy",
+          "set": "q07",
+          "uuid": "3486b605-60ec-54af-8ab1-265e1d01c688"
+        },
+        {
+          "count": 2,
+          "name": "Challenger Deck 2022 Mono White Aggro",
+          "set": "q07",
+          "uuid": "83cc5488-a136-5153-ac4e-b121e921df4b"
+        },
+        {
+          "count": 2,
+          "name": "Challenger Deck 2022 Rakdos Vampires",
+          "set": "q07",
+          "uuid": "ccbdd4bb-508a-5a28-92bb-a71396b166c9"
+        }
+      ]
+    },
+    "setCode": "Q07",
+    "setName": "Challenger Decks 2022",
+    "tcgcsvData": {
+      "product": {
+        "productId": 263168,
+        "name": "Challenger Deck 2022 Display",
+        "cleanName": "Challenger Deck 2022 Display",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263168_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/263168/magic-challenger-decks-challenger-deck-2022-display",
+        "modifiedOn": "2022-07-06T13:12:52.833",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "A Challenger Decks Display comes with two of each deck for a total of eight decks. Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "195166138824"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 263168,
+          "lowPrice": 169.18,
+          "midPrice": 169.18,
+          "highPrice": 169.18,
+          "marketPrice": 147.47,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "3486b605-60ec-54af-8ab1-265e1d01c688",
+    "name": "Challenger Deck 2022 Gruul Stompy",
+    "category": "deck",
+    "cardCount": 75,
+    "releaseDate": "2022-03-06",
+    "subtype": "challenger",
+    "identifiers": {
+      "abuId": "2167837",
+      "cardKingdomId": "257495",
+      "cardtraderId": "206981",
+      "csiId": "328758",
+      "mcmId": "611306",
+      "miniaturemarketId": "283476",
+      "tcgplayerProductId": "263166",
+      "tntId": "1745657"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/2b8e1fb8f320c9c8"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Gruul Stompy",
+          "set": "q07"
+        }
+      ]
+    },
+    "setCode": "Q07",
+    "setName": "Challenger Decks 2022",
+    "tcgcsvData": {
+      "product": {
+        "productId": 263166,
+        "name": "Challenger Deck 2022: Gruul Stompy",
+        "cleanName": "Challenger Deck 2022 Gruul Stompy",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263166_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/263166/magic-challenger-decks-challenger-deck-2022-gruul-stompy",
+        "modifiedOn": "2022-04-01T04:03:13.61",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "195166138817"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 263166,
+          "lowPrice": 23.01,
+          "midPrice": 34.39,
+          "highPrice": 39.99,
+          "marketPrice": 23.07,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "83cc5488-a136-5153-ac4e-b121e921df4b",
+    "name": "Challenger Deck 2022 Mono White Aggro",
+    "category": "deck",
+    "cardCount": 75,
+    "releaseDate": "2022-03-06",
+    "subtype": "challenger",
+    "identifiers": {
+      "abuId": "2167838",
+      "cardKingdomId": "257492",
+      "cardtraderId": "206983",
+      "csiId": "328752",
+      "mcmId": "611304",
+      "tcgplayerProductId": "263164",
+      "tntId": "1745655"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/fc8efcc8c499fd26"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Mono White Aggro",
+          "set": "q07"
+        }
+      ]
+    },
+    "setCode": "Q07",
+    "setName": "Challenger Decks 2022",
+    "tcgcsvData": {
+      "product": {
+        "productId": 263164,
+        "name": "Challenger Deck 2022: Mono White Aggro",
+        "cleanName": "Challenger Deck 2022 Mono White Aggro",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263164_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/263164/magic-challenger-decks-challenger-deck-2022-mono-white-aggro",
+        "modifiedOn": "2022-04-01T04:03:13.61",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "195166138817"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 263164,
+          "lowPrice": 24.95,
+          "midPrice": 30.89,
+          "highPrice": 34.99,
+          "marketPrice": 22.39,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "ccbdd4bb-508a-5a28-92bb-a71396b166c9",
+    "name": "Challenger Deck 2022 Rakdos Vampires",
+    "category": "deck",
+    "cardCount": 75,
+    "releaseDate": "2022-03-06",
+    "subtype": "challenger",
+    "identifiers": {
+      "abuId": "2167840",
+      "cardKingdomId": "257494",
+      "cardtraderId": "206980",
+      "csiId": "328757",
+      "mcmId": "611307",
+      "tcgplayerProductId": "263167",
+      "tntId": "1745658"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/e4fa5fcad9ff6afd"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Rakdos Vampires",
+          "set": "q07"
+        }
+      ]
+    },
+    "setCode": "Q07",
+    "setName": "Challenger Decks 2022",
+    "tcgcsvData": {
+      "product": {
+        "productId": 263167,
+        "name": "Challenger Deck 2022: Rakdos Vampires",
+        "cleanName": "Challenger Deck 2022 Rakdos Vampires",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263167_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/263167/magic-challenger-decks-challenger-deck-2022-rakdos-vampires",
+        "modifiedOn": "2022-04-01T04:03:13.61",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "195166138817"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 263167,
+          "lowPrice": 22,
+          "midPrice": 28.73,
+          "highPrice": 49.99,
+          "marketPrice": 28.55,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "ccf778d2-fc6a-5282-b9b9-ffa375d8e19d",
+    "name": "Challenger Deck 2022 Set of 4",
+    "category": "subset",
+    "releaseDate": "2022-03-06",
+    "subtype": "challenger",
+    "identifiers": {
+      "cardtraderId": "206984",
+      "csiId": "328751",
+      "mcmId": "611308",
+      "tcgplayerProductId": "263169",
+      "tntId": "1745659"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/d204240724f90b4f"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Challenger Deck 2022 Dimir Control",
+          "set": "q07",
+          "uuid": "291b4274-beee-53d5-b4db-309f05d696a5"
+        },
+        {
+          "count": 1,
+          "name": "Challenger Deck 2022 Gruul Stompy",
+          "set": "q07",
+          "uuid": "3486b605-60ec-54af-8ab1-265e1d01c688"
+        },
+        {
+          "count": 1,
+          "name": "Challenger Deck 2022 Mono White Aggro",
+          "set": "q07",
+          "uuid": "83cc5488-a136-5153-ac4e-b121e921df4b"
+        },
+        {
+          "count": 1,
+          "name": "Challenger Deck 2022 Rakdos Vampires",
+          "set": "q07",
+          "uuid": "ccbdd4bb-508a-5a28-92bb-a71396b166c9"
+        }
+      ]
+    },
+    "setCode": "Q07",
+    "setName": "Challenger Decks 2022",
+    "tcgcsvData": {
+      "product": {
+        "productId": 263169,
+        "name": "Challenger Deck 2022 (Set of 4)",
+        "cleanName": "Challenger Deck 2022 Set of 4",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263169_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2203,
+        "url": "https://www.tcgplayer.com/product/263169/magic-challenger-decks-challenger-deck-2022-set-of-4",
+        "modifiedOn": "2022-04-01T04:03:13.61",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2019-04-12T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "A Challenger Decks (set of 4) comes with one of each deck. Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 263169,
+          "lowPrice": 124.65,
+          "midPrice": 124.65,
+          "highPrice": 124.65,
+          "marketPrice": 113.68,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

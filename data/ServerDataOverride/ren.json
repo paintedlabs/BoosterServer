@@ -1,0 +1,159 @@
+[
+  {
+    "uuid": "6e38f92c-06cd-5dea-9d1f-f47cb331a2e4",
+    "name": "Renaissance French Booster Box",
+    "category": "booster_box",
+    "subtype": "default",
+    "identifiers": {
+      "cardtraderId": "43670",
+      "csiId": "279850",
+      "mcmId": "210125",
+      "tcgplayerProductId": "245970",
+      "tntId": "119238"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/0fc3ee8f95a61abc"
+    },
+    "setCode": "REN",
+    "setName": "Renaissance"
+  },
+  {
+    "uuid": "378c8b89-a89a-5526-b1d3-049b920e827f",
+    "name": "Renaissance French Booster Box Case",
+    "category": "booster_case",
+    "subtype": "default",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "setCode": "REN",
+    "setName": "Renaissance"
+  },
+  {
+    "uuid": "21e61c60-d9a9-5760-9b1d-2aa1acbbec93",
+    "name": "Renaissance French Booster Pack",
+    "category": "booster_pack",
+    "subtype": "default",
+    "identifiers": {
+      "cardtraderId": "43667",
+      "mcmId": "210059",
+      "tcgplayerProductId": "182048",
+      "tntId": "119235"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/b14abfe6175d705b"
+    },
+    "setCode": "REN",
+    "setName": "Renaissance",
+    "tcgcsvData": {
+      "product": {
+        "productId": 182048,
+        "name": "Renaissance - French Booster Pack",
+        "cleanName": "Renaissance French Booster Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/182048_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2379,
+        "url": "https://www.tcgplayer.com/product/182048/magic-renaissance-renaissance-french-booster-pack",
+        "modifiedOn": "2018-12-17T14:23:48.383",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each pack contains 8 random cards in French."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 182048,
+          "lowPrice": 76.99,
+          "midPrice": 85.49,
+          "highPrice": 100,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "e7661556-1f6a-5e12-be44-d9e2453f599c",
+    "name": "Renaissance German Booster Box",
+    "category": "booster_box",
+    "subtype": "default",
+    "identifiers": {
+      "tcgplayerProductId": "245971",
+      "tntId": "119239"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/ac47698415844948"
+    },
+    "setCode": "REN",
+    "setName": "Renaissance"
+  },
+  {
+    "uuid": "902ad7dc-f21a-5df1-9d7b-2cb8aef24697",
+    "name": "Renaissance German Booster Box Case",
+    "category": "booster_case",
+    "subtype": "default",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "setCode": "REN",
+    "setName": "Renaissance"
+  },
+  {
+    "uuid": "9f9d93b9-2314-5886-ad9a-f61da75df04f",
+    "name": "Renaissance German Booster Pack",
+    "category": "booster_pack",
+    "subtype": "default",
+    "identifiers": {
+      "tcgplayerProductId": "182049",
+      "tntId": "119237"
+    },
+    "purchaseUrls": {
+      "tcgplayer": "https://mtgjson.com/links/1f2b7acd6e1bc7f1"
+    },
+    "setCode": "REN",
+    "setName": "Renaissance",
+    "tcgcsvData": {
+      "product": {
+        "productId": 182049,
+        "name": "Renaissance - German Booster Pack",
+        "cleanName": "Renaissance German Booster Pack",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/182049_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2379,
+        "url": "https://www.tcgplayer.com/product/182049/magic-renaissance-renaissance-german-booster-pack",
+        "modifiedOn": "2018-12-17T14:24:07.183",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Each pack contains 8 random cards in German."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 182049,
+          "lowPrice": 83.97,
+          "midPrice": 88.96,
+          "highPrice": 89.76,
+          "marketPrice": null,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

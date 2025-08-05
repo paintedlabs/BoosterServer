@@ -1,0 +1,165 @@
+[
+  {
+    "uuid": "da578d52-945a-5c4a-9fc6-16bd3bcb6570",
+    "name": "Battle Royale Multi Player Box set",
+    "category": "multiple_decks",
+    "subtype": "game_night",
+    "identifiers": {
+      "abuId": "1100157",
+      "cardKingdomId": "200994",
+      "cardtraderId": "41112",
+      "csiId": "231382",
+      "scgId": "SLD-MTG-BXS-BRB-EN",
+      "tcgplayerProductId": "77303",
+      "tntId": "80035"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/75ad2e45172bbe6e",
+      "tcgplayer": "https://mtgjson.com/links/138ca0279d12ad20"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Battle Royale Theme Deck Chargoyf",
+          "set": "brb",
+          "uuid": "976e880f-6f2f-589c-9956-d23000160b8b"
+        },
+        {
+          "count": 1,
+          "name": "Battle Royale Theme Deck Cinder Heart",
+          "set": "brb",
+          "uuid": "33280afb-f33d-522d-83cd-2c47bc115263"
+        },
+        {
+          "count": 1,
+          "name": "Battle Royale Theme Deck Spirit Gale",
+          "set": "brb",
+          "uuid": "cb8fdfd0-5152-5d32-9aa8-b8807929ca90"
+        },
+        {
+          "count": 1,
+          "name": "Battle Royale Theme Deck The Deluge",
+          "set": "brb",
+          "uuid": "7e74e34d-f8a1-50f4-b3f2-477e41d02857"
+        }
+      ]
+    },
+    "setCode": "BRB",
+    "setName": "Battle Royale Box Set",
+    "tcgcsvData": {
+      "product": {
+        "productId": 77303,
+        "name": "Battle Royale Box Set - Battle Royale Multi-Player Box set",
+        "cleanName": "Battle Royale Box Set Battle Royale Multi Player Box set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77303_200w.jpg",
+        "categoryId": 1,
+        "groupId": 15,
+        "url": "https://www.tcgplayer.com/product/77303/magic-battle-royale-box-set-battle-royale-box-set-battle-royale-multi-player-box-set",
+        "modifiedOn": "2019-05-13T13:37:29.483",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 77303,
+          "lowPrice": 399.9,
+          "midPrice": 399.95,
+          "highPrice": 399.99,
+          "marketPrice": 399.9,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "976e880f-6f2f-589c-9956-d23000160b8b",
+    "name": "Battle Royale Theme Deck Chargoyf",
+    "category": "deck",
+    "cardCount": 40,
+    "subtype": "game_night",
+    "identifiers": {
+      "cardtraderId": "41113"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Chargoyf",
+          "set": "brb"
+        }
+      ]
+    },
+    "setCode": "BRB",
+    "setName": "Battle Royale Box Set"
+  },
+  {
+    "uuid": "33280afb-f33d-522d-83cd-2c47bc115263",
+    "name": "Battle Royale Theme Deck Cinder Heart",
+    "category": "deck",
+    "cardCount": 40,
+    "subtype": "game_night",
+    "identifiers": {
+      "cardtraderId": "41114"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Cinder Heart",
+          "set": "brb"
+        }
+      ]
+    },
+    "setCode": "BRB",
+    "setName": "Battle Royale Box Set"
+  },
+  {
+    "uuid": "cb8fdfd0-5152-5d32-9aa8-b8807929ca90",
+    "name": "Battle Royale Theme Deck Spirit Gale",
+    "category": "deck",
+    "cardCount": 40,
+    "subtype": "game_night",
+    "identifiers": {
+      "cardtraderId": "41115"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Spirit Gale",
+          "set": "brb"
+        }
+      ]
+    },
+    "setCode": "BRB",
+    "setName": "Battle Royale Box Set"
+  },
+  {
+    "uuid": "7e74e34d-f8a1-50f4-b3f2-477e41d02857",
+    "name": "Battle Royale Theme Deck The Deluge",
+    "category": "deck",
+    "cardCount": 40,
+    "subtype": "game_night",
+    "identifiers": {
+      "cardtraderId": "41116"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "The Deluge",
+          "set": "brb"
+        }
+      ]
+    },
+    "setCode": "BRB",
+    "setName": "Battle Royale Box Set"
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "uuid": "08543966-6649-5610-9897-2e6ad3075440",
+    "name": "Signature Spellbook Chandra",
+    "category": "box_set",
+    "cardCount": 8,
+    "releaseDate": "2020-06-26",
+    "subtype": "spellbook",
+    "identifiers": {
+      "abuId": "1862109",
+      "cardKingdomId": "233851",
+      "cardtraderId": "108009",
+      "csiId": "299168",
+      "mcmId": "445363",
+      "scgId": "SLD-MTG-BXS-SS3-EN",
+      "tcgplayerProductId": "210721",
+      "tntId": "1672338"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/635c52272168053e",
+      "tcgplayer": "https://mtgjson.com/links/c4ed9ec736ae7fb0"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Signature Spellbook Chandra",
+          "set": "ss3"
+        }
+      ],
+      "variable": [
+        {
+          "configs": [
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Chandra, Torch of Defiance",
+                  "number": "1",
+                  "set": "ss3",
+                  "uuid": "f4f2051a-9271-5998-bad4-d01c10d7941a"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Cathartic Reunion",
+                  "number": "2",
+                  "set": "ss3",
+                  "uuid": "e060db0f-1512-5e14-9473-078452daeb0a"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Fiery Confluence",
+                  "number": "3",
+                  "set": "ss3",
+                  "uuid": "5cacf1bc-d0dc-5f5d-9c6e-5bbaf28e2a2b"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Past in Flames",
+                  "number": "4",
+                  "set": "ss3",
+                  "uuid": "c721a931-bbdb-5697-bcef-5fc9a95fe9d9"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Pyroblast",
+                  "number": "5",
+                  "set": "ss3",
+                  "uuid": "f48c615e-f187-58e0-bad3-22e6d6344ec3"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Pyromancer Ascension",
+                  "number": "6",
+                  "set": "ss3",
+                  "uuid": "e78ab644-1830-5229-b3b0-12221937579c"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Rite of Flame",
+                  "number": "7",
+                  "set": "ss3",
+                  "uuid": "806c43ba-eebb-5f9f-857b-d1d4f1034ba4"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Young Pyromancer",
+                  "number": "8",
+                  "set": "ss3",
+                  "uuid": "e70ef48e-1df1-5302-89b2-273ca68856bc"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "setCode": "SS3",
+    "setName": "Signature Spellbook: Chandra",
+    "tcgcsvData": {
+      "product": {
+        "productId": 210721,
+        "name": "Signature Spellbook: Chandra - Box Set",
+        "cleanName": "Signature Spellbook Chandra Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/210721_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2633,
+        "url": "https://www.tcgplayer.com/product/210721/magic-signature-spellbook-chandra-signature-spellbook-chandra-box-set",
+        "modifiedOn": "2020-06-04T17:56:51.44",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2020-06-26T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "This product contains eight cards, plus one bonus foil, all featuring the powerful planeswalker Chandra Nalaar. With first-time foils, amazing new art, and alternate frames, it’s a collector’s dream."
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509923984"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 210721,
+          "lowPrice": 12.11,
+          "midPrice": 19.42,
+          "highPrice": 41.94,
+          "marketPrice": 13.8,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

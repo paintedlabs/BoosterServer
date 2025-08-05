@@ -1,0 +1,193 @@
+[
+  {
+    "uuid": "64cd0b6b-62f0-57d4-bda3-e19a2913c09a",
+    "name": "Explorers of Ixalan",
+    "category": "multiple_decks",
+    "releaseDate": "2017-11-24",
+    "subtype": "other",
+    "identifiers": {
+      "cardKingdomId": "215209",
+      "cardtraderId": "48598",
+      "csiId": "243746",
+      "scgId": "SLD-MTG-MLT-E02-EN",
+      "tcgplayerProductId": "147006",
+      "tntId": "1139826"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/d498ea69da0a6ce1",
+      "tcgplayer": "https://mtgjson.com/links/6661ca8afe077418"
+    },
+    "contents": {
+      "other": [
+        {
+          "name": "20 Double-Sided Tokens"
+        },
+        {
+          "name": "50 Game Tiles"
+        },
+        {
+          "name": "40 Counter Pieces"
+        },
+        {
+          "name": "4 Deck Boxes"
+        }
+      ],
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Explorers of Ixalan Deck Brazen Coalition",
+          "set": "e02",
+          "uuid": "84dfba30-0d6b-530f-9cde-22fbce7dfb2e"
+        },
+        {
+          "count": 1,
+          "name": "Explorers of Ixalan Deck Legion of Dusk",
+          "set": "e02",
+          "uuid": "326261cb-5e22-5791-9bc4-826271882221"
+        },
+        {
+          "count": 1,
+          "name": "Explorers of Ixalan Deck River Heralds",
+          "set": "e02",
+          "uuid": "20b66f31-6f38-54de-93bd-91eb02334276"
+        },
+        {
+          "count": 1,
+          "name": "Explorers of Ixalan Deck Sun Empire",
+          "set": "e02",
+          "uuid": "6c7a4d5f-7d6c-5a5a-ae79-3d1ac7a753aa"
+        }
+      ]
+    },
+    "setCode": "E02",
+    "setName": "Explorers of Ixalan",
+    "tcgcsvData": {
+      "product": {
+        "productId": 147006,
+        "name": "Explorers of Ixalan - Box Set",
+        "cleanName": "Explorers of Ixalan Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/147006_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2077,
+        "url": "https://www.tcgplayer.com/product/147006/magic-explorers-of-ixalan-explorers-of-ixalan-box-set",
+        "modifiedOn": "2017-11-07T19:25:15.63",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2017-11-24T00:00:00",
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "<em>Explorers of Ixalan</em> offers a quick-to-play, standalone <em>Magic: The Gathering,</em> experience that combines board-game elements with the excitement of multiplayer Magic. Games take about thirty to forty-five minutes and can support two to four players. Fans of <em>Commander</em> and <em>Planechase</em> will especially love <em>Explorers of Ixalan</em>.\r\n<br><br>\r\n<strong>Contents</strong>:\r\n<br>• 4 60-card decks\r\n<br>• 20 double-sided tokens\r\n<br>• 50 game tiles\r\n<br>• 40 counter pieces\r\n<br>• 4 deck boxes"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 147006,
+          "lowPrice": 45.95,
+          "midPrice": 63.61,
+          "highPrice": 119.98,
+          "marketPrice": 47.1,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "84dfba30-0d6b-530f-9cde-22fbce7dfb2e",
+    "name": "Explorers of Ixalan Deck Brazen Coalition",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2017-11-24",
+    "subtype": "other",
+    "identifiers": {
+      "cardtraderId": "48599",
+      "mcmId": "311233"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Brazen Coalition",
+          "set": "e02"
+        }
+      ]
+    },
+    "setCode": "E02",
+    "setName": "Explorers of Ixalan"
+  },
+  {
+    "uuid": "326261cb-5e22-5791-9bc4-826271882221",
+    "name": "Explorers of Ixalan Deck Legion of Dusk",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2017-11-24",
+    "subtype": "other",
+    "identifiers": {
+      "cardtraderId": "48600",
+      "mcmId": "311232"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Legion of Dusk",
+          "set": "e02"
+        }
+      ]
+    },
+    "setCode": "E02",
+    "setName": "Explorers of Ixalan"
+  },
+  {
+    "uuid": "20b66f31-6f38-54de-93bd-91eb02334276",
+    "name": "Explorers of Ixalan Deck River Heralds",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2017-11-24",
+    "subtype": "other",
+    "identifiers": {
+      "cardtraderId": "48601",
+      "mcmId": "311234"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "River Heralds",
+          "set": "e02"
+        }
+      ]
+    },
+    "setCode": "E02",
+    "setName": "Explorers of Ixalan"
+  },
+  {
+    "uuid": "6c7a4d5f-7d6c-5a5a-ae79-3d1ac7a753aa",
+    "name": "Explorers of Ixalan Deck Sun Empire",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2017-11-24",
+    "subtype": "other",
+    "identifiers": {
+      "cardtraderId": "48602",
+      "mcmId": "311235"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Sun Empire",
+          "set": "e02"
+        }
+      ]
+    },
+    "setCode": "E02",
+    "setName": "Explorers of Ixalan"
+  }
+]

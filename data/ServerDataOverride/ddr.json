@@ -1,0 +1,129 @@
+[
+  {
+    "uuid": "2572a10b-3a7e-5313-8a92-ca1beb1ad090",
+    "name": "Duel Deck Nissa Vs Ob Nixilis",
+    "category": "multiple_decks",
+    "releaseDate": "2016-05-30",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100930",
+      "cardKingdomId": "208624",
+      "cardtraderId": "48457",
+      "csiId": "228440",
+      "mcmId": "290519",
+      "scgId": "SLD-MTG-BXS-DDR-EN",
+      "tcgplayerProductId": "122165",
+      "tntId": "1096476"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/fab8d797f7565773",
+      "tcgplayer": "https://mtgjson.com/links/13b07adcd462ec70"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Nissa Vs Ob Nixilis Nissa Deck",
+          "set": "ddr",
+          "uuid": "75e13b5f-fa44-5fbd-bae5-ef6145fb7a5a"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Nissa Vs Ob Nixilis Ob Nixilis Deck",
+          "set": "ddr",
+          "uuid": "16ea8016-3ec2-5ce3-9235-6c845008adca"
+        }
+      ]
+    },
+    "setCode": "DDR",
+    "setName": "Duel Decks: Nissa vs. Ob Nixilis",
+    "tcgcsvData": {
+      "product": {
+        "productId": 122165,
+        "name": "Duel Decks: Nissa Vs. Ob Nixilis - Box Set",
+        "cleanName": "Duel Decks Nissa Vs Ob Nixilis Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/122165_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1835,
+        "url": "https://www.tcgplayer.com/product/122165/magic-duel-decks-nissa-vs-ob-nixilis-duel-decks-nissa-vs-ob-nixilis-box-set",
+        "modifiedOn": "2022-04-04T13:08:36.45",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 122165,
+          "lowPrice": 23.96,
+          "midPrice": 28,
+          "highPrice": 59.95,
+          "marketPrice": 25.64,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "f861c8de-dd6a-592f-9ca1-e616e713ddf9",
+    "name": "Duel Deck Nissa Vs Ob Nixilis Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Nissa Vs Ob Nixilis",
+          "set": "ddr",
+          "uuid": "2572a10b-3a7e-5313-8a92-ca1beb1ad090"
+        }
+      ]
+    },
+    "setCode": "DDR",
+    "setName": "Duel Decks: Nissa vs. Ob Nixilis"
+  },
+  {
+    "uuid": "75e13b5f-fa44-5fbd-bae5-ef6145fb7a5a",
+    "name": "Duel Deck Nissa Vs Ob Nixilis Nissa Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Nissa",
+          "set": "ddr"
+        }
+      ]
+    },
+    "setCode": "DDR",
+    "setName": "Duel Decks: Nissa vs. Ob Nixilis"
+  },
+  {
+    "uuid": "16ea8016-3ec2-5ce3-9235-6c845008adca",
+    "name": "Duel Deck Nissa Vs Ob Nixilis Ob Nixilis Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Ob Nixilis",
+          "set": "ddr"
+        }
+      ]
+    },
+    "setCode": "DDR",
+    "setName": "Duel Decks: Nissa vs. Ob Nixilis"
+  }
+]

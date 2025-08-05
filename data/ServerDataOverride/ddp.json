@@ -1,0 +1,139 @@
+[
+  {
+    "uuid": "f43c54a3-50a6-5b50-998b-9b426d029679",
+    "name": "Duel Deck Zendikar vs Eldrazi",
+    "category": "multiple_decks",
+    "releaseDate": "2015-08-28",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100201",
+      "cardKingdomId": "202252",
+      "cardtraderId": "48327",
+      "csiId": "214898",
+      "mcmId": "283986",
+      "scgId": "SLD-MTG-BXS-DDP-EN",
+      "tcgplayerProductId": "101886",
+      "tntId": "1075336"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/c51b0f667764ad67",
+      "tcgplayer": "https://mtgjson.com/links/3023d4ac41266d49"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Zendikar vs Eldrazi Eldrazi Deck",
+          "set": "ddp",
+          "uuid": "b9a1ad79-e50a-569c-9161-c41ef90e735f"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Zendikar vs Eldrazi Zendikar Deck",
+          "set": "ddp",
+          "uuid": "e60370cb-b230-570f-9ea1-d8a8f9896b46"
+        }
+      ]
+    },
+    "setCode": "DDP",
+    "setName": "Duel Decks: Zendikar vs. Eldrazi",
+    "tcgcsvData": {
+      "product": {
+        "productId": 101886,
+        "name": "Duel Decks: Zendikar vs. Eldrazi - Box Set",
+        "cleanName": "Duel Decks Zendikar vs Eldrazi Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/101886_200w.jpg",
+        "categoryId": 1,
+        "groupId": 1641,
+        "url": "https://www.tcgplayer.com/product/101886/magic-duel-decks-zendikar-vs-eldrazi-duel-decks-zendikar-vs-eldrazi-box-set",
+        "modifiedOn": "2015-08-10T16:49:35.74",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": "2015-08-28T00:00:00",
+          "note": null
+        },
+        "extendedData": []
+      },
+      "prices": [
+        {
+          "productId": 101886,
+          "lowPrice": 34.79,
+          "midPrice": 59.99,
+          "highPrice": 109.99,
+          "marketPrice": 48.18,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "8dd18fc8-2537-5dc3-acc1-8040c3a9d2b9",
+    "name": "Duel Deck Zendikar vs Eldrazi Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "1075335"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Zendikar vs Eldrazi",
+          "set": "ddp",
+          "uuid": "f43c54a3-50a6-5b50-998b-9b426d029679"
+        }
+      ]
+    },
+    "setCode": "DDP",
+    "setName": "Duel Decks: Zendikar vs. Eldrazi"
+  },
+  {
+    "uuid": "b9a1ad79-e50a-569c-9161-c41ef90e735f",
+    "name": "Duel Deck Zendikar vs Eldrazi Eldrazi Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2015-08-18",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48329",
+      "mcmId": "283996"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Eldrazi",
+          "set": "ddp"
+        }
+      ]
+    },
+    "setCode": "DDP",
+    "setName": "Duel Decks: Zendikar vs. Eldrazi"
+  },
+  {
+    "uuid": "e60370cb-b230-570f-9ea1-d8a8f9896b46",
+    "name": "Duel Deck Zendikar vs Eldrazi Zendikar Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "releaseDate": "2015-08-18",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "48330",
+      "mcmId": "283995"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Zendikar",
+          "set": "ddp"
+        }
+      ]
+    },
+    "setCode": "DDP",
+    "setName": "Duel Decks: Zendikar vs. Eldrazi"
+  }
+]

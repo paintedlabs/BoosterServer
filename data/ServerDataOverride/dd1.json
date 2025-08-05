@@ -1,0 +1,100 @@
+[
+  {
+    "uuid": "6907c6d1-b2fe-56c7-8784-4fe671581b72",
+    "name": "Duel Deck Elves vs Goblins",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100488",
+      "cardKingdomId": "124078",
+      "cardtraderId": "47273",
+      "csiId": "97584",
+      "mcmId": "240333",
+      "scgId": "SLD-MTG-BXS-EVG-EN",
+      "tcgplayerProductId": "32805",
+      "tntId": "171165"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/8b2d7ac6f09e594f",
+      "tcgplayer": "https://mtgjson.com/links/986d5c27cf952e42"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Elves vs Goblins Elves Deck",
+          "set": "dd1",
+          "uuid": "18fde9de-7b79-5fa7-8720-b4181b0110e6"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Elves vs Goblins Goblins Deck",
+          "set": "dd1",
+          "uuid": "f5458bb7-666e-5819-b110-2b54c28f512b"
+        }
+      ]
+    },
+    "setCode": "DD1",
+    "setName": "Duel Decks: Elves vs. Goblins"
+  },
+  {
+    "uuid": "58a6a720-8fce-55df-bba9-e0d62c226ea3",
+    "name": "Duel Deck Elves vs Goblins Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "tntId": "171164"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Elves vs Goblins",
+          "set": "dd1",
+          "uuid": "6907c6d1-b2fe-56c7-8784-4fe671581b72"
+        }
+      ]
+    },
+    "setCode": "DD1",
+    "setName": "Duel Decks: Elves vs. Goblins"
+  },
+  {
+    "uuid": "18fde9de-7b79-5fa7-8720-b4181b0110e6",
+    "name": "Duel Deck Elves vs Goblins Elves Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Elves",
+          "set": "dd1"
+        }
+      ]
+    },
+    "setCode": "DD1",
+    "setName": "Duel Decks: Elves vs. Goblins"
+  },
+  {
+    "uuid": "f5458bb7-666e-5819-b110-2b54c28f512b",
+    "name": "Duel Deck Elves vs Goblins Goblins Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {},
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Goblins",
+          "set": "dd1"
+        }
+      ]
+    },
+    "setCode": "DD1",
+    "setName": "Duel Decks: Elves vs. Goblins"
+  }
+]

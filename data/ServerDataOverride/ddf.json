@@ -1,0 +1,149 @@
+[
+  {
+    "uuid": "6a9bb265-b010-5a43-b7e2-32e5801c7f19",
+    "name": "Duel Deck Elspeth vs Tezzeret",
+    "category": "multiple_decks",
+    "subtype": "duel",
+    "identifiers": {
+      "abuId": "1100487",
+      "cardKingdomId": "131983",
+      "cardtraderId": "47530",
+      "csiId": "97583",
+      "mcmId": "242228",
+      "scgId": "SLD-MTG-BXS-DDF-EN",
+      "tcgplayerProductId": "78338",
+      "tntId": "299520"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/115bba508fd766a4",
+      "tcgplayer": "https://mtgjson.com/links/d550d5cff9aa2c70"
+    },
+    "contents": {
+      "sealed": [
+        {
+          "count": 1,
+          "name": "Duel Deck Elspeth vs Tezzeret Elspeth Deck",
+          "set": "ddf",
+          "uuid": "32526732-b2e3-5e72-96d8-87cd54ef0667"
+        },
+        {
+          "count": 1,
+          "name": "Duel Deck Elspeth vs Tezzeret Tezzeret Deck",
+          "set": "ddf",
+          "uuid": "39a58ba5-35f8-5cd6-8dce-e05a732ebdda"
+        }
+      ]
+    },
+    "setCode": "DDF",
+    "setName": "Duel Decks: Elspeth vs. Tezzeret",
+    "tcgcsvData": {
+      "product": {
+        "productId": 78338,
+        "name": "Duel Decks: Elspeth vs Tezzeret - Box Set",
+        "cleanName": "Duel Decks Elspeth vs Tezzeret Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78338_200w.jpg",
+        "categoryId": 1,
+        "groupId": 32,
+        "url": "https://www.tcgplayer.com/product/78338/magic-duel-decks-elspeth-vs-tezzeret-duel-decks-elspeth-vs-tezzeret-box-set",
+        "modifiedOn": "2022-05-16T19:32:19.65",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "These two 60-card decks showcase some of the best spells white and blue have in their arsenal. The decks include twelve rares and six cards with new artwork, including foil art versions of two Planeswalker cards. Each card in these two decks is black-bordered and tournament-legal. They were designed to be played right out of the box, with no deckbuilding required."
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "653569510826"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 78338,
+          "lowPrice": 49.88,
+          "midPrice": 54.99,
+          "highPrice": 59.95,
+          "marketPrice": 47.74,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "a8effee7-79a6-5438-bb25-18181ad503f9",
+    "name": "Duel Deck Elspeth vs Tezzeret Display",
+    "category": "deck_box",
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47533",
+      "mcmId": "245322",
+      "tntId": "299521"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "sealed": [
+        {
+          "count": 6,
+          "name": "Duel Deck Elspeth vs Tezzeret",
+          "set": "ddf",
+          "uuid": "6a9bb265-b010-5a43-b7e2-32e5801c7f19"
+        }
+      ]
+    },
+    "setCode": "DDF",
+    "setName": "Duel Decks: Elspeth vs. Tezzeret"
+  },
+  {
+    "uuid": "32526732-b2e3-5e72-96d8-87cd54ef0667",
+    "name": "Duel Deck Elspeth vs Tezzeret Elspeth Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47531",
+      "mcmId": "245320"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Elspeth",
+          "set": "ddf"
+        }
+      ]
+    },
+    "setCode": "DDF",
+    "setName": "Duel Decks: Elspeth vs. Tezzeret"
+  },
+  {
+    "uuid": "39a58ba5-35f8-5cd6-8dce-e05a732ebdda",
+    "name": "Duel Deck Elspeth vs Tezzeret Tezzeret Deck",
+    "category": "deck",
+    "cardCount": 60,
+    "subtype": "duel",
+    "identifiers": {
+      "cardtraderId": "47532",
+      "mcmId": "245321"
+    },
+    "purchaseUrls": {},
+    "contents": {
+      "deck": [
+        {
+          "name": "Tezzeret",
+          "set": "ddf"
+        }
+      ]
+    },
+    "setCode": "DDF",
+    "setName": "Duel Decks: Elspeth vs. Tezzeret"
+  }
+]

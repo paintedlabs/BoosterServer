@@ -1,0 +1,217 @@
+[
+  {
+    "uuid": "cdcd7361-1625-5a71-b059-77ceda4ab134",
+    "name": "Signature Spellbook Jace",
+    "category": "box_set",
+    "cardCount": 8,
+    "releaseDate": "2018-02-20",
+    "subtype": "spellbook",
+    "identifiers": {
+      "abuId": "1509382",
+      "cardKingdomId": "218874",
+      "cardtraderId": "48690",
+      "csiId": "254567",
+      "mcmId": "318788",
+      "scgId": "SLD-MTG-BXS-SS1-EN",
+      "tcgplayerProductId": "162755",
+      "tntId": "1178798"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/aec35e3e70ddccda",
+      "tcgplayer": "https://mtgjson.com/links/7ac2e59582bb2712"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Signature Spellbook Jace",
+          "set": "ss1"
+        }
+      ],
+      "variable": [
+        {
+          "configs": [
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Jace Beleren",
+                  "number": "1",
+                  "set": "ss1",
+                  "uuid": "8a9b5a73-ba3b-5913-b777-b437e662b9ba"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Blue Elemental Blast",
+                  "number": "2",
+                  "set": "ss1",
+                  "uuid": "3980fc75-daba-5ac6-81de-69c697e711bf"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Brainstorm",
+                  "number": "3",
+                  "set": "ss1",
+                  "uuid": "2819fa50-5740-52fd-92ea-a82a2180e745"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Counterspell",
+                  "number": "4",
+                  "set": "ss1",
+                  "uuid": "ccedcb38-723e-54c1-936b-7b1ad7200c67"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Gifts Ungiven",
+                  "number": "5",
+                  "set": "ss1",
+                  "uuid": "e889728b-3dc6-59a1-ab13-d5fc847d11e2"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Mystical Tutor",
+                  "number": "6",
+                  "set": "ss1",
+                  "uuid": "a8387980-3c77-5ba4-98ba-d798a754fbe4"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Negate",
+                  "number": "7",
+                  "set": "ss1",
+                  "uuid": "bbe3ccc7-acc6-527b-97fb-55368a130278"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            },
+            {
+              "card": [
+                {
+                  "foil": true,
+                  "name": "Threads of Disloyalty",
+                  "number": "8",
+                  "set": "ss1",
+                  "uuid": "87a036b5-f2a6-5bca-acc5-e1790bd0b0f9"
+                }
+              ],
+              "variable_config": [
+                {
+                  "chance": 1,
+                  "weight": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "setCode": "SS1",
+    "setName": "Signature Spellbook: Jace",
+    "tcgcsvData": {
+      "product": {
+        "productId": 162755,
+        "name": "Signature Spellbook: Jace - Box Set",
+        "cleanName": "Signature Spellbook Jace Box Set",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/162755_200w.jpg",
+        "categoryId": 1,
+        "groupId": 2220,
+        "url": "https://www.tcgplayer.com/product/162755/magic-signature-spellbook-jace-signature-spellbook-jace-box-set",
+        "modifiedOn": "2019-07-23T17:39:47.05",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "Signature Spellbook: Jace is a collection of eight cards plus one random premium foil version of one of those eight cards for the serious blue mage. Each card has Jace-flavored art and special frames just for this set."
+          },
+          {
+            "name": "UPC",
+            "displayName": "UPC",
+            "value": "630509685073"
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 162755,
+          "lowPrice": 28.99,
+          "midPrice": 39.97,
+          "highPrice": 79.98,
+          "marketPrice": 31.12,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]

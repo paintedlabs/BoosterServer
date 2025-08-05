@@ -1,0 +1,66 @@
+[
+  {
+    "uuid": "60e154f0-91f2-5145-ae10-67d7c1c051f1",
+    "name": "2017 Magic The Gathering Hascon Collection",
+    "category": "box_set",
+    "cardCount": 4,
+    "subtype": "other",
+    "identifiers": {
+      "cardKingdomId": "223232",
+      "cardtraderId": "41104",
+      "csiId": "248086",
+      "scgId": "SLD-MTG-BXS-HASCON2017-EN",
+      "tcgplayerProductId": "145878"
+    },
+    "purchaseUrls": {
+      "cardKingdom": "https://mtgjson.com/links/fdbfb8a523edb529",
+      "tcgplayer": "https://mtgjson.com/links/cc6c2cc7414f7767"
+    },
+    "contents": {
+      "deck": [
+        {
+          "name": "Hascon 2017 Promo Cards",
+          "set": "h17"
+        }
+      ]
+    },
+    "setCode": "H17",
+    "setName": "HasCon 2017",
+    "tcgcsvData": {
+      "product": {
+        "productId": 145878,
+        "name": "2017 Magic: The Gathering Hascon Collection",
+        "cleanName": "2017 Magic The Gathering Hascon Collection",
+        "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/145878_200w.jpg",
+        "categoryId": 1,
+        "groupId": 72,
+        "url": "https://www.tcgplayer.com/product/145878/magic-media-promos-2017-magic-the-gathering-hascon-collection",
+        "modifiedOn": "2017-09-20T20:28:20.187",
+        "imageCount": 1,
+        "presaleInfo": {
+          "isPresale": false,
+          "releasedOn": null,
+          "note": null
+        },
+        "extendedData": [
+          {
+            "name": "OracleText",
+            "displayName": "Rules Text Contains",
+            "value": "This sealed promo set was exclusive to 2017 Hascon."
+          }
+        ]
+      },
+      "prices": [
+        {
+          "productId": 145878,
+          "lowPrice": 227.99,
+          "midPrice": 250,
+          "highPrice": 1099.99,
+          "marketPrice": 248.5,
+          "directLowPrice": null,
+          "subTypeName": "Normal"
+        }
+      ]
+    }
+  }
+]
