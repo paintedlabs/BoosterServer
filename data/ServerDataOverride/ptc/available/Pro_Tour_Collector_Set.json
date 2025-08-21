@@ -1,0 +1,108 @@
+{
+  "uuid": "9ed7c7e8-cc5d-5c8e-984f-2ef371862557",
+  "name": "Pro Tour Collector Set",
+  "category": "deck_box",
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100218",
+    "cardKingdomId": "240568",
+    "cardtraderId": "40743",
+    "mcmId": "270801",
+    "scgId": "SLD-MTG-BXS-PTCOLLECTORSET-EN",
+    "tcgplayerProductId": "629898",
+    "tntId": "133437"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/48a1d06c3eb1eef3"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "1996 World Championship Deck Bertrand Lestree",
+        "set": "ptc",
+        "uuid": "412f2a14-c36d-554c-9ec5-b0beb0b7b671"
+      },
+      {
+        "count": 1,
+        "name": "1996 World Championship Deck Eric Tam",
+        "set": "ptc",
+        "uuid": "31bbdadb-7a92-5960-b525-de8acdbc7490"
+      },
+      {
+        "count": 1,
+        "name": "1996 World Championship Deck George Baxter",
+        "set": "ptc",
+        "uuid": "70473da0-3feb-55ab-bb4f-5e68146373b8"
+      },
+      {
+        "count": 1,
+        "name": "1996 World Championship Deck Leon Lindback",
+        "set": "ptc",
+        "uuid": "36d10361-7c6a-5eec-a81b-9381e7e3a986"
+      },
+      {
+        "count": 1,
+        "name": "1996 World Championship Deck Mark Justice",
+        "set": "ptc",
+        "uuid": "5fc7f272-cf91-5537-940f-e4e8ec9485ed"
+      },
+      {
+        "count": 1,
+        "name": "1996 World Championship Deck Michael Loconto",
+        "set": "ptc",
+        "uuid": "fb30f8f0-dca2-59c1-a2bd-1e2f4ed7aa18"
+      },
+      {
+        "count": 1,
+        "name": "1996 World Championship Deck Preston Poulter",
+        "set": "ptc",
+        "uuid": "25bbee95-997d-5849-9693-02d8c5b955f2"
+      },
+      {
+        "count": 1,
+        "name": "1996 World Championship Deck Shawn HAMMER Regnier",
+        "set": "ptc",
+        "uuid": "24b978a8-c548-5d21-9066-7f43d96ee17f"
+      }
+    ]
+  },
+  "setCode": "PTC",
+  "setName": "Pro Tour Collector Set",
+  "tcgcsvData": {
+    "product": {
+      "productId": 629898,
+      "name": "World Championship Deck: 1996 New York City - Inaugural Edition [8 Decks]",
+      "cleanName": "World Championship Deck 1996 New York City Inaugural Edition 8 Decks",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629898_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/629898/magic-world-championship-decks-world-championship-deck-1996-new-york-city-inaugural-edition-8-decks",
+      "modifiedOn": "2025-05-01T14:10:10.42",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 629898,
+        "lowPrice": 1899.99,
+        "midPrice": 2449.99,
+        "highPrice": 2999.98,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

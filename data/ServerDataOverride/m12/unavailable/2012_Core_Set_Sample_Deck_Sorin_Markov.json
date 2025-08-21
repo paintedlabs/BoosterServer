@@ -1,0 +1,50 @@
+{
+  "uuid": "2f246d5d-2b25-5116-93d4-1c8e55ce46db",
+  "name": "2012 Core Set Sample Deck Sorin Markov",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "abuId": "1101041",
+    "cardtraderId": "47647",
+    "mcmId": "287579"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Black Deck A",
+                "set": "m12"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Black Deck B",
+                "set": "m12"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "M12",
+  "setName": "Magic 2012"
+}

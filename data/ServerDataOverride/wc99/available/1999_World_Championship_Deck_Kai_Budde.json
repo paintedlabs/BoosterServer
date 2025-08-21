@@ -1,0 +1,66 @@
+{
+  "uuid": "726f4c37-5c3d-58a3-b7f9-e3ec78a3ad29",
+  "name": "1999 World Championship Deck Kai Budde",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100238",
+    "cardKingdomId": "240325",
+    "cardtraderId": "39901",
+    "csiId": "97884",
+    "mcmId": "250163",
+    "scgId": "SLD-MTG-BXS-WCH1999-EN-KAIBUDDE",
+    "tcgplayerProductId": "158285",
+    "tntId": "91199"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4a6f79323c59c585"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Kai Budde - Red-Artifact Wildfire",
+        "set": "wc99"
+      }
+    ]
+  },
+  "setCode": "WC99",
+  "setName": "World Championship Decks 1999",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158285,
+      "name": "World Championship Deck: 1999 Yokohama - Kai Budde, World Champion",
+      "cleanName": "World Championship Deck 1999 Yokohama Kai Budde World Champion",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158285_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/158285/magic-world-championship-decks-world-championship-deck-1999-yokohama-kai-budde-world-champion",
+      "modifiedOn": "2018-02-07T13:36:02.55",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>\"World Champion Kai Budde's red-artifact deck employed more than 30 artifacts to generate huge amounts of mana. Big creatures like Masticore or Covetous Dragon became a threat to any opponent, and a well-timed Wildfire added the finishing touch.\"</em>\r\n<br>\r\n<br><strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158285,
+        "lowPrice": 262.5,
+        "midPrice": 499,
+        "highPrice": 534.6,
+        "marketPrice": 262.5,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

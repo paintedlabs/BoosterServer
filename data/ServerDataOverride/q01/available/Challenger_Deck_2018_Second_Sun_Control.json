@@ -1,0 +1,67 @@
+{
+  "uuid": "55a2ef53-0387-5f64-a9a6-b7d0e4806409",
+  "name": "Challenger Deck 2018 Second Sun Control",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2018-02-23",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1495920",
+    "cardKingdomId": "217622",
+    "cardtraderId": "54737",
+    "csiId": "254891",
+    "mcmId": "318970",
+    "scgId": "SLD-MTG-INT-Q01-EN-SECONDSUN",
+    "tcgplayerProductId": "161414",
+    "tntId": "1159419"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/22e69c406de60a0c"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Second Sun Control",
+        "set": "q01"
+      }
+    ]
+  },
+  "setCode": "Q01",
+  "setName": "Challenger Decks 2018",
+  "tcgcsvData": {
+    "product": {
+      "productId": 161414,
+      "name": "Challenger Deck 2018: Second Sun Control",
+      "cleanName": "Challenger Deck 2018 Second Sun Control",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/161414_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/161414/magic-challenger-decks-challenger-deck-2018-second-sun-control",
+      "modifiedOn": "2019-02-14T16:49:33.233",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains:\r\n<br>• 60-card main deck\r\n<br>• 15-card sideboard\r\n<br>• A box capable of holding 75 sleeved cards\r\n<br>• Spindown life counter\r\n<br>• Quick reference guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 161414,
+        "lowPrice": 14.95,
+        "midPrice": 24.93,
+        "highPrice": 49.99,
+        "marketPrice": 23.55,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

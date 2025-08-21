@@ -1,0 +1,74 @@
+{
+  "uuid": "d96ee9a6-cdc4-5884-a75e-4845f0f866cf",
+  "name": "Journey Into Nyx Intro Pack The Wilds and the Deep",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100655",
+    "cardKingdomId": "193940",
+    "cardtraderId": "48108",
+    "csiId": "202689",
+    "mcmId": "266591",
+    "scgId": "SLD-MTG-INT-JOUINTRO-EN-WILDS",
+    "tcgplayerProductId": "82549",
+    "tntId": "1053728"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4e07f527d00c1309"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "The Wilds and the Deep",
+        "set": "jou"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Journey Into Nyx Booster Pack",
+        "set": "jou",
+        "uuid": "ef8281b6-54ab-578a-baec-62f5c79977c0"
+      }
+    ]
+  },
+  "setCode": "JOU",
+  "setName": "Journey into Nyx",
+  "tcgcsvData": {
+    "product": {
+      "productId": 82549,
+      "name": "Journey Into Nyx - Intro Pack - The Wilds and the Deep",
+      "cleanName": "Journey Into Nyx Intro Pack The Wilds and the Deep",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/82549_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1277,
+      "url": "https://www.tcgplayer.com/product/82549/magic-journey-into-nyx-journey-into-nyx-intro-pack-the-wilds-and-the-deep",
+      "modifiedOn": "2021-08-05T14:26:05.347",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck, two Journey Into Nyx booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 82549,
+        "lowPrice": 23.94,
+        "midPrice": 24.93,
+        "highPrice": 24.95,
+        "marketPrice": 23.94,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

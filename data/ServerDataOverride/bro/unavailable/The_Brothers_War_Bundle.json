@@ -1,0 +1,90 @@
+{
+  "uuid": "6d0880d3-b3a8-5df5-a526-5be1def7899b",
+  "name": "The Brothers' War Bundle",
+  "category": "bundle",
+  "releaseDate": "2022-11-18",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2261771",
+    "cardKingdomId": "267914",
+    "cardtraderId": "219840",
+    "mcmId": "677799",
+    "scgId": "SLD-MTG-BUN-BRO-EN",
+    "tcgplayerProductId": "282221",
+    "tntId": "1759346"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/837074a664c9fb9e",
+    "tcgplayer": "https://mtgjson.com/links/9ebd37c0ea90e87b"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Queen Kayla bin-Kroog",
+        "number": "379",
+        "set": "bro",
+        "uuid": "9862ad68-fe97-55e9-9884-9dc2c236eef1"
+      }
+    ],
+    "other": [
+      {
+        "name": "The Brothers' War Bundle Land Pack"
+      },
+      {
+        "name": "The Brothers' War Spindown Die"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "The Brothers' War Set Booster Pack",
+        "set": "bro",
+        "uuid": "104d4709-8535-5fdd-8dda-51b069cc4c0a"
+      }
+    ]
+  },
+  "setCode": "BRO",
+  "setName": "The Brothers' War",
+  "tcgcsvData": {
+    "product": {
+      "productId": 282221,
+      "name": "The Brothers' War - Bundle",
+      "cleanName": "The Brothers War Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/282221_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3157,
+      "url": "https://www.tcgplayer.com/product/282221/magic-the-brothers-war-the-brothers-war-bundle",
+      "modifiedOn": "2022-11-18T05:04:15.63",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-11-18T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Brothers’ War Bundle contains 8 The Brothers’ War Set Boosters—the best boosters to open just for fun—plus exclusive accessories, with 40 basic lands (20 traditional foils and 20 nonfoils), 1 Traditional Foil promo card with Bundle-exclusive alternate art, 1 oversized Spindown life counter (red or green), 1 card storage box, and 2 reference cards.\r\n<br>Each The Brothers’ War Set Booster contains 12 Magic cards, 1 Art Card, and 1 token/ad card or card from “The List” (a special card from Magic's history—found in 25% of packs), with a combination of 1–5 card(s) of rarity Rare or higher and 3–7 Uncommon, 3–6 Common, and 1 Land cards. Traditional Foil Land replaces basic land in 20% of Set Boosters. Foil-Stamped Signature Art Card replaces Art Card in 10% of Set Boosters.\r\n<br>\r\n<br>\r\nContents:\r\n<br>\r\n• 8 The Brothers’ War Set Boosters\r\n<br>\r\n• 1 foil alt-art promo card\r\n<br>\r\n• 40 basic land cards (20 foil + 20 nonfoil)\r\n<br>\r\n• Spindown life counter (red or green) + card storage box\r\n<br>\r\n• Travel back in time to command powerful artifacts and giant robots"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166151267"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 282221,
+        "lowPrice": 99.95,
+        "midPrice": 109.96,
+        "highPrice": 119.97,
+        "marketPrice": 68.7,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

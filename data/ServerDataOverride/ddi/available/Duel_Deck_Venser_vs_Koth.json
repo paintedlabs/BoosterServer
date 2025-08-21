@@ -1,0 +1,68 @@
+{
+  "uuid": "f287070a-ea92-57ac-915a-4e250e34e06d",
+  "name": "Duel Deck Venser vs Koth",
+  "category": "multiple_decks",
+  "subtype": "duel",
+  "identifiers": {
+    "abuId": "1100269",
+    "cardKingdomId": "186634",
+    "cardtraderId": "47717",
+    "csiId": "153923",
+    "mcmId": "253044",
+    "scgId": "SLD-MTG-BXS-DDI-EN",
+    "tcgplayerProductId": "58055",
+    "tntId": "331395"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/1e0aaa892a22ab3c",
+    "tcgplayer": "https://mtgjson.com/links/65c2b6bf73bf5436"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Duel Deck Venser vs Koth Koth Deck",
+        "set": "ddi",
+        "uuid": "3e9f6a81-4e2f-5da4-8913-ce471678baa4"
+      },
+      {
+        "count": 1,
+        "name": "Duel Deck Venser vs Koth Venser Deck",
+        "set": "ddi",
+        "uuid": "7aa6359b-cd5b-5673-88b3-314ee94d0e3a"
+      }
+    ]
+  },
+  "setCode": "DDI",
+  "setName": "Duel Decks: Venser vs. Koth",
+  "tcgcsvData": {
+    "product": {
+      "productId": 58055,
+      "name": "Duel Decks: Venser vs Koth - Box Set",
+      "cleanName": "Duel Decks Venser vs Koth Box Set",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/58055_200w.jpg",
+      "categoryId": 1,
+      "groupId": 367,
+      "url": "https://www.tcgplayer.com/product/58055/magic-duel-decks-venser-vs-koth-duel-decks-venser-vs-koth-box-set",
+      "modifiedOn": "2023-12-14T18:09:40.2",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 58055,
+        "lowPrice": 30.94,
+        "midPrice": 35.97,
+        "highPrice": 55.65,
+        "marketPrice": 32.03,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

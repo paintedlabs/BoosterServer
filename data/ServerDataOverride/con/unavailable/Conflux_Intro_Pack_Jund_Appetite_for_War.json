@@ -1,0 +1,73 @@
+{
+  "uuid": "7c19d4fb-6d27-5627-bc64-bb8b426a8824",
+  "name": "Conflux Intro Pack Jund Appetite for War",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100354",
+    "cardKingdomId": "126580",
+    "cardtraderId": "47349",
+    "mcmId": "244162",
+    "scgId": "SLD-MTG-INT-CFXINTRO-EN-JUND",
+    "tcgplayerProductId": "501422",
+    "tntId": "242002"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/1b72e895717991f0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Jund Appetite for War",
+        "set": "con"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Conflux Booster Pack",
+        "set": "con",
+        "uuid": "ee25fb77-38eb-56ce-8369-917cd2c0566b"
+      }
+    ]
+  },
+  "setCode": "CON",
+  "setName": "Conflux",
+  "tcgcsvData": {
+    "product": {
+      "productId": 501422,
+      "name": "Conflux - Intro Pack - Jund Appetite for War",
+      "cleanName": "Conflux Intro Pack Jund Appetite for War",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/501422_200w.jpg",
+      "categoryId": 1,
+      "groupId": 26,
+      "url": "https://www.tcgplayer.com/product/501422/magic-conflux-conflux-intro-pack-jund-appetite-for-war",
+      "modifiedOn": "2023-06-20T14:39:05.853",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Intro Pack contains a 41-card deck featuring 1 foil premium card."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 501422,
+        "lowPrice": 70,
+        "midPrice": 70,
+        "highPrice": 70,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

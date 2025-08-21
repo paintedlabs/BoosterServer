@@ -1,0 +1,66 @@
+{
+  "uuid": "b9dd83d8-9226-5bc0-8be1-fd8510eae960",
+  "name": "Foundations Bundle Case",
+  "category": "bundle_case",
+  "releaseDate": "2024-11-15",
+  "subtype": "default",
+  "identifiers": {
+    "tcgplayerProductId": "562126"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/26d5f70cc7a7e1c8"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Foundations Bundle",
+        "set": "fdn",
+        "uuid": "3c98d1d5-738b-5b9a-8f09-0d78e9085786"
+      }
+    ]
+  },
+  "setCode": "FDN",
+  "setName": "Foundations",
+  "tcgcsvData": {
+    "product": {
+      "productId": 562126,
+      "name": "Magic: The Gathering Foundations - Bundle Case",
+      "cleanName": "Magic The Gathering Foundations Bundle Case",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/562126_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23556,
+      "url": "https://www.tcgplayer.com/product/562126/magic-foundations-magic-the-gathering-foundations-bundle-case",
+      "modifiedOn": "2024-11-15T05:11:23.56",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2024-11-15T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The best time for your community's first Magic game is now. Dive into Foundations, and experience quintessential Magic: The Gathering by playing with and collecting cards selected to give every player the advantage. Whether a past, present, or future Magic player, Foundations invite you to share your spark!\r\n<br>\r\nThe Bundle is a great gift for Magic superfans and newcomers alike who visit your store. They contain a little bit of everything to get a player's collection off the ground, plus an oversized Spindown life counter themed after the set.\r\n<br>Contents:\r\n<br>• 6 Foundations Bundles"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166262017"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 562126,
+        "lowPrice": 349.99,
+        "midPrice": 396.38,
+        "highPrice": 442.76,
+        "marketPrice": 285.6,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

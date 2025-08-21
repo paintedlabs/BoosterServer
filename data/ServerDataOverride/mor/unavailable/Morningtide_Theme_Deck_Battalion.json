@@ -1,0 +1,64 @@
+{
+  "uuid": "fd08b94d-c430-51b9-a90e-0b3641815a3e",
+  "name": "Morningtide Theme Deck Battalion",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100900",
+    "cardKingdomId": "124463",
+    "cardtraderId": "47267",
+    "mcmId": "253639",
+    "tcgplayerProductId": "249987",
+    "tntId": "160546"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/065afc6db1da145b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Battalion",
+        "set": "mor"
+      }
+    ]
+  },
+  "setCode": "MOR",
+  "setName": "Morningtide",
+  "tcgcsvData": {
+    "product": {
+      "productId": 249987,
+      "name": "Morningtide Theme Deck - Battalion",
+      "cleanName": "Morningtide Theme Deck Battalion",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/249987_200w.jpg",
+      "categoryId": 1,
+      "groupId": 77,
+      "url": "https://www.tcgplayer.com/product/249987/magic-morningtide-morningtide-theme-deck-battalion",
+      "modifiedOn": "2021-09-23T21:58:35.37",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "When playing the \"Battalion\" deck, you'll marshal the military might of the Soldiers. It should be no surprise that you want to attack early and often. It might be a surprise that the finishing blow will often come from your air force!"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 249987,
+        "lowPrice": 34.99,
+        "midPrice": 36.99,
+        "highPrice": 38.99,
+        "marketPrice": 29.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

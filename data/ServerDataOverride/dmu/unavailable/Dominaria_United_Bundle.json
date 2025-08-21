@@ -1,0 +1,90 @@
+{
+  "uuid": "2893f4f4-daec-5b4d-b5ce-a4e9444cae84",
+  "name": "Dominaria United Bundle",
+  "category": "bundle",
+  "releaseDate": "2022-09-09",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2220755",
+    "cardKingdomId": "263988",
+    "cardtraderId": "218745",
+    "mcmId": "669037",
+    "scgId": "SLD-MTG-BUN-DMU-EN",
+    "tcgplayerProductId": "275414",
+    "tntId": "1751754"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/30b0bcca50d2af74",
+    "tcgplayer": "https://mtgjson.com/links/3557f222c3b21b89"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Herd Migration",
+        "number": "429",
+        "set": "dmu",
+        "uuid": "283b9728-31bf-58c9-924f-2159b6432943"
+      }
+    ],
+    "other": [
+      {
+        "name": "Dominaria United Bundle Land Pack"
+      },
+      {
+        "name": "Dominaria United Spindown"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Dominaria United Set Booster Pack",
+        "set": "dmu",
+        "uuid": "f5f30fc8-0b27-5c44-b9b1-43250ae3ebf1"
+      }
+    ]
+  },
+  "setCode": "DMU",
+  "setName": "Dominaria United",
+  "tcgcsvData": {
+    "product": {
+      "productId": 275414,
+      "name": "Dominaria United - Bundle",
+      "cleanName": "Dominaria United Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/275414_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3102,
+      "url": "https://www.tcgplayer.com/product/275414/magic-dominaria-united-dominaria-united-bundle",
+      "modifiedOn": "2022-09-09T04:03:30.233",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-09-09T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The <em>Dominaria United</em> Bundle contains 8 Dominaria United Set Boosters—the best boosters to open just for fun—plus exclusive accessories, with 40 basic lands (20 traditional foils and 20 nonfoils), 1 Traditional Foil promo card with Bundle-exclusive alternate art, 1 oversized Spindown life counter, 1 card storage box, and 2 reference cards.\r\n\r\n<br>Each <em>Dominaria United</em> Bundle contains 12 <em>Magic </em> cards, 1 Art Card, and 1 token/ad card or card from “The List” (a special card from Magic's history—found in 25% of packs), with a combination of 1–4 card(s) of rarity Rare or higher and 4–7 Uncommon, 3–6 Common, and 1 Land cards in every pack. Traditional Foil Land replaces Land card in 21% of Set Boosters. Foil-Stamped Signature Art Card replaces Art Card in 10% of Set Boosters.\r\n\r\n<br><strong>Contents:</strong>\r\n<br>• 8 <em>Dominaria United</em> Set Boosters\r\n<br>•1 foil alt-art promo card\r\n<br>• 40 basic land cards (20 foil + 20 nonfoil)\r\n<br>• Spindown life counter + card storage box\r\n<br>• Return to <em>Magic’s</em> home plane in a set full of your favorite MTG legends and heroes"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166127897"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 275414,
+        "lowPrice": 59.95,
+        "midPrice": 63.46,
+        "highPrice": 75,
+        "marketPrice": 56.61,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

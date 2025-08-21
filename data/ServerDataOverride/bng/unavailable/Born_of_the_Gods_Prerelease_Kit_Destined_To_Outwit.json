@@ -1,0 +1,88 @@
+{
+  "uuid": "394ef70c-5134-5455-9665-f0301b7b8a35",
+  "name": "Born of the Gods Prerelease Kit Destined To Outwit",
+  "category": "limited_aid_tool",
+  "cardCount": 15,
+  "releaseDate": "2007-01-01",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "1100198",
+    "cardtraderId": "48087",
+    "csiId": "200408",
+    "mcmId": "266425",
+    "tcgplayerProductId": "78291",
+    "tntId": "1182092"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ea8392b988a2f5ae"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Arbiter of the Ideal",
+        "number": "31★",
+        "set": "pbng",
+        "uuid": "d4bc6176-4b13-5296-9b08-4e346fe3bc28"
+      },
+      {
+        "name": "The Savant",
+        "number": "4b",
+        "set": "thp2",
+        "uuid": "d1eacde2-be06-5727-a8cc-7c93e6cd5482"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease-outwit",
+        "set": "bng"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Born of the Gods Booster Pack",
+        "set": "bng",
+        "uuid": "16e12027-2acd-5bfa-81e8-ed3bc5381334"
+      },
+      {
+        "count": 3,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "BNG",
+  "setName": "Born of the Gods",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78291,
+      "name": "Born of the Gods - Destined To Outwit (Prerelease)",
+      "cleanName": "Born of the Gods Destined To Outwit Prerelease",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78291_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1276,
+      "url": "https://www.tcgplayer.com/product/78291/magic-born-of-the-gods-born-of-the-gods-destined-to-outwit-prerelease",
+      "modifiedOn": "2022-12-23T13:35:44.99",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78291,
+        "lowPrice": 26.39,
+        "midPrice": 27.18,
+        "highPrice": 29.99,
+        "marketPrice": 25.48,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "uuid": "99f6ac66-be04-571b-bb65-c0f6a4e0e6e0",
+  "name": "Exodus Theme Deck Dominator",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100504",
+    "cardKingdomId": "1176",
+    "cardtraderId": "45419",
+    "mcmId": "244174",
+    "tcgplayerProductId": "116054",
+    "tntId": "106928"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/966210a817692c2b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dominator - Basic Deck",
+        "set": "exo"
+      }
+    ]
+  },
+  "setCode": "EXO",
+  "setName": "Exodus",
+  "tcgcsvData": {
+    "product": {
+      "productId": 116054,
+      "name": "Exodus Theme Deck - Dominator",
+      "cleanName": "Exodus Theme Deck Dominator",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/116054_200w.jpg",
+      "categoryId": 1,
+      "groupId": 40,
+      "url": "https://www.tcgplayer.com/product/116054/magic-exodus-exodus-theme-deck-dominator",
+      "modifiedOn": "2016-04-04T18:56:56.223",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 116054,
+        "lowPrice": 49.99,
+        "midPrice": 53,
+        "highPrice": 179.99,
+        "marketPrice": 45,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

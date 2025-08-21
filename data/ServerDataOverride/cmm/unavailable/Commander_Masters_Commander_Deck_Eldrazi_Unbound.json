@@ -1,0 +1,80 @@
+{
+  "uuid": "1ee1ed05-d68c-5926-9cda-6f3daf4eb355",
+  "name": "Commander Masters Commander Deck Eldrazi Unbound",
+  "category": "deck",
+  "cardCount": 100,
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2380015",
+    "cardKingdomId": "279445",
+    "cardtraderId": "238387",
+    "csiId": "357350",
+    "mcmId": "711915",
+    "scgId": "SLD-MTG-MLT-CMM-EN-ELDRAZI",
+    "tcgplayerProductId": "484931",
+    "tntId": "1774301"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/89fbe85514423f0a",
+    "tcgplayer": "https://mtgjson.com/links/95c35ce98a062680"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Eldrazi Unbound",
+        "set": "cmm"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander Masters Collector Booster Sample Pack",
+        "set": "cmm",
+        "uuid": "b2bbfbd2-13ee-5cf9-9c3a-8cf33204a839"
+      }
+    ]
+  },
+  "setCode": "CMM",
+  "setName": "Commander Masters",
+  "tcgcsvData": {
+    "product": {
+      "productId": 484931,
+      "name": "Commander Masters Commander Deck - Eldrazi Unbound",
+      "cleanName": "Commander Masters Commander Deck Eldrazi Unbound",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/484931_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23020,
+      "url": "https://www.tcgplayer.com/product/484931/magic-commander-masters-commander-masters-commander-deck-eldrazi-unbound",
+      "modifiedOn": "2023-08-15T20:18:07.717",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Commander Masters Commander Deck set includes 1 ready-to-play deck of 100 Magic cards (2 Traditional Foil Legendary Creature cards, 98 nonfoil cards), a 2-card Collector Booster Sample Pack, 1 foil-etched Display Commander (a thick cardstock copy of the commander card with foil etched into the card’s border and art), 10 tokens, 1 deck box (can hold 100 sleeved cards), 1 Life Wheel, 1 strategy insert, and 1 reference card.\r\n<br>\r\nContents:\r\n<br>\r\n• Powerful right out of the box—Take your Commander game to the next level with a high-powered, ready-to-play deck\r\n<br>\r\n• Play with Commander’s greatest hits—Turn heads with a deck stacked with reprints of some of the greatest cards to grace Magic’s most popular format\r\n<br>\r\n• Introduces 10 Commander cards—Each Commander deck also introduces 10 never-before-seen Magic: The Gathering cards\r\n<br>\r\n• Collect special treatment cards—Each deck comes with a 2-card Collector Booster Sample Pack containing 2 special treatment cards (1 Rare and 1 Rare or Mythic Rare) from the Commander Masters set\r\n<br>\r\n• Everything you need to play and more—Each deck also comes with a 2-card Collector Booster Sample Pack, 1 Foil-Etched Display Commander, 10 double-sided tokens, 1 Helper card, 1 life tracker, and 1 deck box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166216355"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 484931,
+        "lowPrice": 270.7,
+        "midPrice": 299.95,
+        "highPrice": 349.99,
+        "marketPrice": 268.67,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

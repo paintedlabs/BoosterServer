@@ -1,0 +1,65 @@
+{
+  "uuid": "ced406c1-c393-5955-92bb-8d6ecbca0fd4",
+  "name": "Innistrad Event Deck Deathfed",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "event",
+  "identifiers": {
+    "abuId": "1100597",
+    "cardKingdomId": "186163",
+    "cardtraderId": "47682",
+    "mcmId": "251812",
+    "scgId": "SLD-MTG-INT-ISDEVENT-EN-DEATHFED",
+    "tcgplayerProductId": "56987",
+    "tntId": "323595"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a821eb5ba21d74a1"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Deathfed",
+        "set": "isd"
+      }
+    ]
+  },
+  "setCode": "ISD",
+  "setName": "Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 56987,
+      "name": "Innistrad - Event Deck - Deathfed",
+      "cleanName": "Innistrad Event Deck Deathfed",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/56987_200w.jpg",
+      "categoryId": 1,
+      "groupId": 59,
+      "url": "https://www.tcgplayer.com/product/56987/magic-innistrad-innistrad-event-deck-deathfed",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 66446 8"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 56987,
+        "lowPrice": 44.99,
+        "midPrice": 57.49,
+        "highPrice": 69.99,
+        "marketPrice": 45.49,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

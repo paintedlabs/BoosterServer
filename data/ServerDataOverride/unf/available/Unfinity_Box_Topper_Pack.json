@@ -1,0 +1,153 @@
+{
+  "uuid": "4d3676f2-0f3e-576f-96df-e416e6a49b70",
+  "name": "Unfinity Box Topper Pack",
+  "category": "booster_pack",
+  "cardCount": 1,
+  "releaseDate": "2022-10-12",
+  "subtype": "topper",
+  "identifiers": {
+    "cardtraderId": "223410",
+    "mcmId": "679621",
+    "tcgplayerProductId": "450283"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/746f8767f7749ce7"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "box-topper",
+        "set": "unf"
+      }
+    ]
+  },
+  "setCode": "UNF",
+  "setName": "Unfinity",
+  "extendedData": {
+    "code": "unf-box-topper",
+    "boosters": [
+      {
+        "sheets": {
+          "foil_shockland": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "foil_shockland": {
+        "total_weight": 10,
+        "cards": [
+          {
+            "set": "unf",
+            "number": "277",
+            "weight": 1,
+            "foil": true,
+            "uuid": "cbfdc1b0-39c9-516f-8f03-70affcbe8506"
+          },
+          {
+            "set": "unf",
+            "number": "278",
+            "weight": 1,
+            "foil": true,
+            "uuid": "4f83f35e-ff54-55d1-a006-6e004d98e3d7"
+          },
+          {
+            "set": "unf",
+            "number": "279",
+            "weight": 1,
+            "foil": true,
+            "uuid": "de0be7e3-b0c1-5d35-8784-957f80616ac9"
+          },
+          {
+            "set": "unf",
+            "number": "280",
+            "weight": 1,
+            "foil": true,
+            "uuid": "d79eaece-b4b3-5252-b236-fc5d833b10c1"
+          },
+          {
+            "set": "unf",
+            "number": "281",
+            "weight": 1,
+            "foil": true,
+            "uuid": "22d7ef95-42b3-5cdf-8882-c070a4982dc3"
+          },
+          {
+            "set": "unf",
+            "number": "282",
+            "weight": 1,
+            "foil": true,
+            "uuid": "4e6acd3c-9f6e-566a-9261-e11cff0e2837"
+          },
+          {
+            "set": "unf",
+            "number": "283",
+            "weight": 1,
+            "foil": true,
+            "uuid": "73751bd4-20f9-595d-8078-2d1da506605b"
+          },
+          {
+            "set": "unf",
+            "number": "284",
+            "weight": 1,
+            "foil": true,
+            "uuid": "f16c3aad-8391-5384-8b67-1f657753e122"
+          },
+          {
+            "set": "unf",
+            "number": "285",
+            "weight": 1,
+            "foil": true,
+            "uuid": "a43a8e7e-2cb9-5ddb-b76f-0caad2177b47"
+          },
+          {
+            "set": "unf",
+            "number": "286",
+            "weight": 1,
+            "foil": true,
+            "uuid": "186fb101-5401-5627-9404-12aae0432571"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "unf"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 450283,
+      "name": "Unfinity - Box Topper Pack",
+      "cleanName": "Unfinity Box Topper Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/450283_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2958,
+      "url": "https://www.tcgplayer.com/product/450283/magic-unfinity-unfinity-box-topper-pack",
+      "modifiedOn": "2022-10-21T16:39:10.903",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Sealed Box Topper Pack contains 1 random foil box topper card."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 450283,
+        "lowPrice": 34.99,
+        "midPrice": 39.9,
+        "highPrice": 65,
+        "marketPrice": 36.57,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

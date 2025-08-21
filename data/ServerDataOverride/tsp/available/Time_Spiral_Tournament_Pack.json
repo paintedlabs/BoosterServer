@@ -1,0 +1,61 @@
+{
+  "uuid": "030eab89-c5f9-575d-940b-a5711cb224e9",
+  "name": "Time Spiral Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1108018",
+    "cardKingdomId": "121038",
+    "cardtraderId": "47161",
+    "csiId": "98237",
+    "mcmId": "248487",
+    "scgId": "SLD-MTG-PCK-TSPTOURNAMENT-EN",
+    "tcgplayerProductId": "118877",
+    "tntId": "141934"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/50db8a724d498a12",
+    "tcgplayer": "https://mtgjson.com/links/aa48f8497622dbe0"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "tsp"
+      }
+    ]
+  },
+  "setCode": "TSP",
+  "setName": "Time Spiral",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118877,
+      "name": "Time Spiral Tournament Pack",
+      "cleanName": "Time Spiral Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118877_200w.jpg",
+      "categoryId": 1,
+      "groupId": 110,
+      "url": "https://www.tcgplayer.com/product/118877/magic-time-spiral-time-spiral-tournament-pack",
+      "modifiedOn": "2016-06-06T15:17:48.03",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 118877,
+        "lowPrice": 41.99,
+        "midPrice": 74.98,
+        "highPrice": 99.99,
+        "marketPrice": 44.97,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

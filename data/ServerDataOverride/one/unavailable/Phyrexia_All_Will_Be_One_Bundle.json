@@ -1,0 +1,90 @@
+{
+  "uuid": "3f6005aa-7643-5790-83e1-f50c49c7b725",
+  "name": "Phyrexia All Will Be One Bundle",
+  "category": "bundle",
+  "releaseDate": "2023-02-10",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2299760",
+    "cardKingdomId": "273121",
+    "cardtraderId": "225472",
+    "mcmId": "683497",
+    "scgId": "SLD-MTG-BUN-ONE-EN",
+    "tcgplayerProductId": "451877",
+    "tntId": "1769459"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/db384479edf7f0d8",
+    "tcgplayer": "https://mtgjson.com/links/4dfd573daf8ae743"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Karumonix, the Rat King",
+        "number": "282",
+        "set": "one",
+        "uuid": "93749cb0-2d01-5b80-b630-ff97d25e5ffa"
+      }
+    ],
+    "other": [
+      {
+        "name": "Phyrexia All Will Be One Bundle Land Pack"
+      },
+      {
+        "name": "Phyrexia All Will Be One Spindown"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Phyrexia All Will Be One Set Booster Pack",
+        "set": "one",
+        "uuid": "0db8ec71-b700-5355-913d-285f11687911"
+      }
+    ]
+  },
+  "setCode": "ONE",
+  "setName": "Phyrexia: All Will Be One",
+  "tcgcsvData": {
+    "product": {
+      "productId": 451877,
+      "name": "Phyrexia: All Will Be One - Bundle",
+      "cleanName": "Phyrexia All Will Be One Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/451877_200w.jpg",
+      "categoryId": 1,
+      "groupId": 17684,
+      "url": "https://www.tcgplayer.com/product/451877/magic-phyrexia-all-will-be-one-phyrexia-all-will-be-one-bundle",
+      "modifiedOn": "2023-02-10T05:04:57.417",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2023-02-10T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Phyrexia: All Will Be One Bundle contains 8 Phyrexia: All Will Be One Set Boosters—the best boosters to open just for fun—plus accessories, with 1 traditional foil alternate-art promo card, 40 basic lands (20 traditional foils and 20 nonfoils), 1 oversized Spindown life counter, 1 card storage box, and 2 reference cards.\r\n<br>\r\nContents:\r\n<br>\r\n• 8 Phyrexia: All Will Be One Set Boosters\r\n<br>\r\n• 1 traditional foil alt-art promo card\r\n<br>\r\n• 40 basic land cards (20 foil + 20 nonfoil)\r\n<br>\r\n• Spindown life counter + card storage box\r\n<br>\r\n• Glory to Phyrexia—resist the Phyrexian invasion or forfeit your flesh to join them in perfection"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166185750"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 451877,
+        "lowPrice": 162.99,
+        "midPrice": 167.5,
+        "highPrice": 174.98,
+        "marketPrice": 146.9,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

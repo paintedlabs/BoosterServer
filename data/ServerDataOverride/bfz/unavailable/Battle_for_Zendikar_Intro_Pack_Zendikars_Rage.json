@@ -1,0 +1,72 @@
+{
+  "uuid": "92de7cd9-e3d7-5399-a511-a930d38a1c53",
+  "name": "Battle for Zendikar Intro Pack Zendikars Rage",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100154",
+    "cardKingdomId": "202475",
+    "cardtraderId": "48344",
+    "mcmId": "284348",
+    "tcgplayerProductId": "102722",
+    "tntId": "1079429"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/138999284974bf8a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Zendikar's Rage",
+        "set": "bfz"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Battle for Zendikar Booster Pack",
+        "set": "bfz",
+        "uuid": "37e28375-f5ba-51e8-8e11-b6830a33b669"
+      }
+    ]
+  },
+  "setCode": "BFZ",
+  "setName": "Battle for Zendikar",
+  "tcgcsvData": {
+    "product": {
+      "productId": 102722,
+      "name": "Battle for Zendikar - Intro Pack - Zendikar's Rage",
+      "cleanName": "Battle for Zendikar Intro Pack Zendikars Rage",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/102722_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1645,
+      "url": "https://www.tcgplayer.com/product/102722/magic-battle-for-zendikar-battle-for-zendikar-intro-pack-zendikars-rage",
+      "modifiedOn": "2021-08-05T13:52:01.553",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Battle for Zendikar booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 102722,
+        "lowPrice": 39.99,
+        "midPrice": 42,
+        "highPrice": 44,
+        "marketPrice": 23.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

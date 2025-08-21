@@ -1,0 +1,49 @@
+{
+  "uuid": "af8c0cbe-ecf4-5e7e-9b7f-a5f34f50d520",
+  "name": "Tenth Edition Sample Deck Jace Beleren",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47398",
+    "mcmId": "287568"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Blue Deck A",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Blue Deck B",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "10E",
+  "setName": "Tenth Edition"
+}

@@ -1,0 +1,65 @@
+{
+  "uuid": "0175f5b6-1f35-5d13-ad46-b27e077fb3af",
+  "name": "Scourge Theme Deck Pulverize",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1101126",
+    "cardKingdomId": "1542",
+    "cardtraderId": "46500",
+    "mcmId": "253710",
+    "scgId": "SLD-MTG-INT-SCGTHEME-JA-PULVERIZE",
+    "tcgplayerProductId": "174320",
+    "tntId": "108320"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/373c5c0515274ab5"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Pulverize",
+        "set": "scg"
+      }
+    ]
+  },
+  "setCode": "SCG",
+  "setName": "Scourge",
+  "tcgcsvData": {
+    "product": {
+      "productId": 174320,
+      "name": "Scourge Theme Deck - Pulverize",
+      "cleanName": "Scourge Theme Deck Pulverize",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/174320_200w.jpg",
+      "categoryId": 1,
+      "groupId": 101,
+      "url": "https://www.tcgplayer.com/product/174320/magic-scourge-scourge-theme-deck-pulverize",
+      "modifiedOn": "2019-11-20T16:44:44.957",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Imagine you're matched up once again with your nemesis, Fred. When Fred beats you, which seems to be just over half the time, he always gloats for hours afterward. This time, you're hoping to wipe the grin off his face. But it's not looking good. Fred has three 6/6 Beasts in play, and he's been applying the beats to your face for a couple of turns now. He didn't leave any creatures back to block, but he doesn't care. He has 20 life, and you're toast after one more attack. What could you possibly do in one turn? All you have in play are eight mountains and a Goblin Machinist."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 174320,
+        "lowPrice": 34.45,
+        "midPrice": 34.5,
+        "highPrice": 37.98,
+        "marketPrice": 34.6,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

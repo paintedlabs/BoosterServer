@@ -1,0 +1,82 @@
+{
+  "uuid": "1c293794-91af-50b1-b950-b6d3ef6ad8d5",
+  "name": "Commander 2018 Commander Deck Adaptive Enchantment",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2018-08-10",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1521716",
+    "cardKingdomId": "220771",
+    "cardtraderId": "44503",
+    "csiId": "254573",
+    "mcmId": "361704",
+    "scgId": "SLD-MTG-MLT-C18-EN-ADAPTIVE",
+    "tcgplayerProductId": "170285",
+    "tntId": "1182241"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/eb96cec48eae0e39",
+    "tcgplayer": "https://mtgjson.com/links/96ba397fd97f1661"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Adaptive Enchantment",
+        "set": "c18"
+      }
+    ],
+    "other": [
+      {
+        "name": "Foil Oversized Commander"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      },
+      {
+        "name": "Reference Card and Strategy Insert"
+      },
+      {
+        "name": "Deck Box"
+      }
+    ]
+  },
+  "setCode": "C18",
+  "setName": "Commander 2018",
+  "tcgcsvData": {
+    "product": {
+      "productId": 170285,
+      "name": "Commander 2018 Deck - Adaptive Enchantment",
+      "cleanName": "Commander 2018 Deck Adaptive Enchantment",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/170285_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2251,
+      "url": "https://www.tcgplayer.com/product/170285/magic-commander-2018-commander-2018-deck-adaptive-enchantment",
+      "modifiedOn": "2018-07-27T19:33:51.003",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-08-10T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Bant (White-Blue-Green) Enchantments \"Adaptive Enchantment\""
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 170285,
+        "lowPrice": 57.46,
+        "midPrice": 66.23,
+        "highPrice": 89.99,
+        "marketPrice": 66.46,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "uuid": "fdac09a3-55da-5e1c-b20d-2ec8cd541fd1",
+  "name": "Core Set 2019 Planeswalker Deck Ajani",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-07-13",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1511006",
+    "cardKingdomId": "220072",
+    "cardtraderId": "48704",
+    "mcmId": "359993",
+    "scgId": "SLD-MTG-INT-M19PWDECK-EN-AJANI",
+    "tcgplayerProductId": "169265",
+    "tntId": "1178165"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4e2c8be0e84ea738"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ajani",
+        "set": "m19"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2019 Booster Pack",
+        "set": "m19",
+        "uuid": "36d4765d-add1-5d6b-8bff-f342ef62a3d0"
+      }
+    ]
+  },
+  "setCode": "M19",
+  "setName": "Core Set 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 169265,
+      "name": "Core Set 2019 - Planeswalker Deck [Ajani]",
+      "cleanName": "Core Set 2019 Planeswalker Deck Ajani",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/169265_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2250,
+      "url": "https://www.tcgplayer.com/product/169265/magic-core-set-2019-core-set-2019-planeswalker-deck-ajani",
+      "modifiedOn": "2018-06-23T18:59:54.207",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-07-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck \r\n<br>• 1 Core 2019 booster pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 169265,
+        "lowPrice": 44.95,
+        "midPrice": 44.95,
+        "highPrice": 44.95,
+        "marketPrice": 44.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

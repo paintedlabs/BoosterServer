@@ -1,0 +1,81 @@
+{
+  "uuid": "efff4ac1-6793-5139-80eb-bca5f591e31b",
+  "name": "Planar Chaos Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1107967",
+    "cardKingdomId": "121873",
+    "cardtraderId": "47178",
+    "csiId": "98039",
+    "mcmId": "210167",
+    "scgId": "SLD-MTG-BUN-PLC-EN",
+    "tcgplayerProductId": "78325",
+    "tntId": "155130"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/24a8a93a9ba853a1"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "2 card deck boxes"
+      },
+      {
+        "name": "Player's Guide"
+      },
+      {
+        "name": "40 basic land cards"
+      },
+      {
+        "name": "Planar Chaos Spindown Life Counter"
+      },
+      {
+        "name": "1 Random Pro Tour player card from PT07 set"
+      },
+      {
+        "name": "Planar Chaos novel"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Planar Chaos Booster Pack",
+        "set": "plc",
+        "uuid": "43f94b29-3f40-5efe-a72d-e705118f0071"
+      }
+    ]
+  },
+  "setCode": "PLC",
+  "setName": "Planar Chaos",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78325,
+      "name": "Planar Chaos - Fat Pack",
+      "cleanName": "Planar Chaos Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78325_200w.jpg",
+      "categoryId": 1,
+      "groupId": 83,
+      "url": "https://www.tcgplayer.com/product/78325/magic-planar-chaos-planar-chaos-fat-pack",
+      "modifiedOn": "2014-01-07T16:46:57.307",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78325,
+        "lowPrice": 299.99,
+        "midPrice": 299.99,
+        "highPrice": 299.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

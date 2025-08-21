@@ -1,0 +1,78 @@
+{
+  "uuid": "3bc0ed87-059d-51b0-ad6e-1ae2d2cacee8",
+  "name": "Dragons Maze Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100412",
+    "cardKingdomId": "189561",
+    "cardtraderId": "47941",
+    "csiId": "183193",
+    "mcmId": "261118",
+    "scgId": "SLD-MTG-BUN-DGM-EN",
+    "tcgplayerProductId": "67754",
+    "tntId": "929157"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/08a30fb466bc3add"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Card Box"
+      },
+      {
+        "name": "Dragon's Maze Spindown Counter"
+      },
+      {
+        "name": "Player's Guide"
+      },
+      {
+        "name": "80-card Land Pack"
+      },
+      {
+        "name": "Learn to Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 9,
+        "name": "Dragons Maze Booster Pack",
+        "set": "dgm",
+        "uuid": "b9c1d8bb-29d1-5572-b3c3-26363ecfdada"
+      }
+    ]
+  },
+  "setCode": "DGM",
+  "setName": "Dragon's Maze",
+  "tcgcsvData": {
+    "product": {
+      "productId": 67754,
+      "name": "Dragon's Maze - Fat Pack",
+      "cleanName": "Dragons Maze Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/67754_200w.jpg",
+      "categoryId": 1,
+      "groupId": 570,
+      "url": "https://www.tcgplayer.com/product/67754/magic-dragons-maze-dragons-maze-fat-pack",
+      "modifiedOn": "2014-07-19T18:25:42.723",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 67754,
+        "lowPrice": 34,
+        "midPrice": 42.68,
+        "highPrice": 66.69,
+        "marketPrice": 42.86,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

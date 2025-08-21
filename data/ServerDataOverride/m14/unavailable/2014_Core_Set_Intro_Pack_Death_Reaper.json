@@ -1,0 +1,68 @@
+{
+  "uuid": "5ecaa279-8ed9-5de3-86ca-7309aa2caa94",
+  "name": "2014 Core Set Intro Pack Death Reaper",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100800",
+    "cardKingdomId": "190585",
+    "cardtraderId": "47990",
+    "csiId": "192758",
+    "mcmId": "263027",
+    "scgId": "SLD-MTG-INT-M14INTRO-EN-DEATH",
+    "tcgplayerProductId": "70078",
+    "tntId": "1028757"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/9f3238a574c27119"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Death Reaper",
+        "set": "m14"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2014 Core Set Booster Pack",
+        "set": "m14",
+        "uuid": "bef6b6e1-0a89-5b8d-b04b-64683af2b06b"
+      }
+    ]
+  },
+  "setCode": "M14",
+  "setName": "Magic 2014",
+  "tcgcsvData": {
+    "product": {
+      "productId": 70078,
+      "name": "Magic 2014 (M14) - Intro Pack - Death Reaper",
+      "cleanName": "Magic 2014 M14 Intro Pack Death Reaper",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70078_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1113,
+      "url": "https://www.tcgplayer.com/product/70078/magic-magic-2014-m14-magic-2014-m14-intro-pack-death-reaper",
+      "modifiedOn": "2014-01-31T21:18:41.803",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 70078,
+        "lowPrice": 18.99,
+        "midPrice": 19.49,
+        "highPrice": 19.98,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

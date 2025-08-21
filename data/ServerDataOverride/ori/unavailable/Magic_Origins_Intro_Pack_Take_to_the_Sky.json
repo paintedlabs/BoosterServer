@@ -1,0 +1,74 @@
+{
+  "uuid": "7db218a9-72f1-5f97-8525-732ad81a2439",
+  "name": "Magic Origins Intro Pack Take to the Sky",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2015-06-24",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100866",
+    "cardKingdomId": "201691",
+    "cardtraderId": "48301",
+    "mcmId": "283384",
+    "scgId": "SLD-MTG-INT-ORIINTRO-EN-TAKE",
+    "tcgplayerProductId": "100024",
+    "tntId": "1074497"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/9b1e215e23348a0e"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Take to the Sky",
+        "set": "ori"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Magic Origins Booster Pack",
+        "set": "ori",
+        "uuid": "bfb784dd-6f89-55b2-ae61-8506e0b29a61"
+      }
+    ]
+  },
+  "setCode": "ORI",
+  "setName": "Magic Origins",
+  "tcgcsvData": {
+    "product": {
+      "productId": 100024,
+      "name": "Magic Origins - Intro Pack - Take to the Sky",
+      "cleanName": "Magic Origins Intro Pack Take to the Sky",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/100024_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1512,
+      "url": "https://www.tcgplayer.com/product/100024/magic-magic-origins-magic-origins-intro-pack-take-to-the-sky",
+      "modifiedOn": "2021-08-05T16:47:28.13",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Magic Origins booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 100024,
+        "lowPrice": 17,
+        "midPrice": 20.29,
+        "highPrice": 25.19,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

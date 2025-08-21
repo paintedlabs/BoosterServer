@@ -1,0 +1,68 @@
+{
+  "uuid": "fd0f1ab1-d803-55d1-8740-404eb4aafc3d",
+  "name": "Duels of the Planeswalkers Thoughts of the Wind Jace Beleren Deck",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1100463",
+    "cardKingdomId": "131151",
+    "cardtraderId": "47499",
+    "csiId": "97566",
+    "mcmId": "240422",
+    "scgId": "SLD-MTG-INT-DPADECK-EN-JACE",
+    "tcgplayerProductId": "77283",
+    "tntId": "294701"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f35742f42c95ae8d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Thoughts of the Wind",
+        "set": "dpa"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "2010 Core Set Booster Pack",
+        "set": "m10",
+        "uuid": "f52aeac6-933a-55e2-a973-36421c155ea1"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77283,
+      "name": "DotP - Thoughts of the Wind Jace Beleren Deck",
+      "cleanName": "DotP Thoughts of the Wind Jace Beleren Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77283_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/77283/magic-duels-of-the-planeswalkers-dotp-thoughts-of-the-wind-jace-beleren-deck",
+      "modifiedOn": "2014-01-06T17:50:55.443",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77283,
+        "lowPrice": 49.99,
+        "midPrice": 50.19,
+        "highPrice": 54.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

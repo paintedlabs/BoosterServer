@@ -1,0 +1,58 @@
+{
+  "uuid": "9e5b2549-5f95-5014-a1dc-4dac9a276b23",
+  "name": "Invasion Theme Deck Heavy Duty",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100614",
+    "cardKingdomId": "1290",
+    "cardtraderId": "45741",
+    "mcmId": "253747",
+    "tcgplayerProductId": "93341",
+    "tntId": "106953"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/938bcfc1ce69db42"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Heavy Duty",
+        "set": "inv"
+      }
+    ]
+  },
+  "setCode": "INV",
+  "setName": "Invasion",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93341,
+      "name": "Invasion - Heavy Duty Theme Deck",
+      "cleanName": "Invasion Heavy Duty Theme Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93341_200w.jpg",
+      "categoryId": 1,
+      "groupId": 60,
+      "url": "https://www.tcgplayer.com/product/93341/magic-invasion-invasion-heavy-duty-theme-deck",
+      "modifiedOn": "2021-07-21T13:14:34.197",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 93341,
+        "lowPrice": 70,
+        "midPrice": 97.5,
+        "highPrice": 124.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

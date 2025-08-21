@@ -1,0 +1,77 @@
+{
+  "uuid": "a64d30bc-4483-59d2-9144-1219d5886fd3",
+  "name": "Bloomburrow Starter Kit",
+  "category": "multiple_decks",
+  "cardCount": 120,
+  "releaseDate": "2024-08-02",
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "abuId": "2514701",
+    "cardKingdomId": "298737",
+    "cardtraderId": "280425",
+    "csiId": "384253",
+    "mcmId": "774132",
+    "miniaturemarketId": "299657",
+    "scgId": "SLD-MTG-INT-BLBSTARTER-EN",
+    "tcgplayerProductId": "541243"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/ed773a9518501a67",
+    "tcgplayer": "https://mtgjson.com/links/78cd34ad598c81c7"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Otter Limits",
+        "set": "blb"
+      },
+      {
+        "name": "Hare Raising",
+        "set": "blb"
+      }
+    ]
+  },
+  "setCode": "BLB",
+  "setName": "Bloomburrow",
+  "tcgcsvData": {
+    "product": {
+      "productId": 541243,
+      "name": "Bloomburrow - Starter Kit",
+      "cleanName": "Bloomburrow Starter Kit",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/541243_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23447,
+      "url": "https://www.tcgplayer.com/product/541243/magic-bloomburrow-bloomburrow-starter-kit",
+      "modifiedOn": "2024-08-02T04:08:50.673",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2024-08-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Magic: The Gathering Starter Kit 2024 is ideal for any pair of new Magic players that walk through your doors, as they give newcomers the opportunity to dive into their first game in-person (and continue the fun online with redeemable Magic: The Gathering Arena code cards in select regions).\r\n<br>\r\nEverything your players need to play their first game of Magic: The Gathering is right here. Learn the essentials or teach friends and family with the included Play Guide booklet, then enter the fray with two pre-built 60-card decks.\r\n<br>\r\nContents:\r\n<br>\r\n• 2 Mythic Rare cards (1 per deck)\r\n<br>\r\n• 8 Rare cards (4 per deck)\r\n<br>\r\n• 2 MTG Arena code cards (1 per deck, only available in select regions)\r\n<br>\r\n• 2 deck boxes (1 per deck)\r\n<br>\r\n• 2 reference cards (1 per deck)\r\n<br>\r\n• 1 Play Guide booklet"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166257365"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 541243,
+        "lowPrice": 11.99,
+        "midPrice": 23.53,
+        "highPrice": 54.99,
+        "marketPrice": 17.85,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

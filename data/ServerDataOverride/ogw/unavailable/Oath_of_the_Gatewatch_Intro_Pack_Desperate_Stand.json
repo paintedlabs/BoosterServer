@@ -1,0 +1,66 @@
+{
+  "uuid": "e33de8f2-d79b-519f-80b1-cc7316af66e6",
+  "name": "Oath of the Gatewatch Intro Pack Desperate Stand",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100941",
+    "cardKingdomId": "205066",
+    "cardtraderId": "48378",
+    "mcmId": "287203",
+    "tcgplayerProductId": "110707",
+    "tntId": "1088358"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/5c158da632918c2d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Desperate Stand",
+        "set": "ogw"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Oath of the Gatewatch Booster Pack",
+        "set": "ogw",
+        "uuid": "a80b98ae-3781-5077-83a9-31907bd528e4"
+      }
+    ]
+  },
+  "setCode": "OGW",
+  "setName": "Oath of the Gatewatch",
+  "tcgcsvData": {
+    "product": {
+      "productId": 110707,
+      "name": "Oath of the Gatewatch Intro Pack - White",
+      "cleanName": "Oath of the Gatewatch Intro Pack White",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/110707_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1693,
+      "url": "https://www.tcgplayer.com/product/110707/magic-oath-of-the-gatewatch-oath-of-the-gatewatch-intro-pack-white",
+      "modifiedOn": "2022-11-10T15:05:41.507",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 110707,
+        "lowPrice": 17.99,
+        "midPrice": 20.95,
+        "highPrice": 25.53,
+        "marketPrice": 17.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

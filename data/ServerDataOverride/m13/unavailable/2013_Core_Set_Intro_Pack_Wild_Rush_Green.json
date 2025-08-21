@@ -1,0 +1,68 @@
+{
+  "uuid": "b512196d-efad-538a-81db-24863e3bf0e3",
+  "name": "2013 Core Set Intro Pack Wild Rush Green",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100784",
+    "cardKingdomId": "187708",
+    "cardtraderId": "47779",
+    "csiId": "279858",
+    "mcmId": "256766",
+    "scgId": "SLD-MTG-INT-M13INTRO-EN-WILD",
+    "tcgplayerProductId": "97817",
+    "tntId": "383301"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b2451d3c557872c4"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Wild Rush",
+        "set": "m13"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2013 Core Set Booster Pack",
+        "set": "m13",
+        "uuid": "294f45ab-a696-59c1-83be-53d286ede856"
+      }
+    ]
+  },
+  "setCode": "M13",
+  "setName": "Magic 2013",
+  "tcgcsvData": {
+    "product": {
+      "productId": 97817,
+      "name": "Magic 2013 Intro Pack - Wild Rush (Green)",
+      "cleanName": "Magic 2013 Intro Pack Wild Rush Green",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/97817_200w.jpg",
+      "categoryId": 1,
+      "groupId": 364,
+      "url": "https://www.tcgplayer.com/product/97817/magic-magic-2013-m13-magic-2013-intro-pack-wild-rush-green",
+      "modifiedOn": "2015-04-13T15:58:58.447",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 97817,
+        "lowPrice": 20,
+        "midPrice": 22.5,
+        "highPrice": 25,
+        "marketPrice": 23.33,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

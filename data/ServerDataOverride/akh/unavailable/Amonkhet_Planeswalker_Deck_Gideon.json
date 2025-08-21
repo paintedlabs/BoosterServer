@@ -1,0 +1,68 @@
+{
+  "uuid": "54945ed8-387d-5824-a8fa-2eb6971610a0",
+  "name": "Amonkhet Planeswalker Deck Gideon",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1476842",
+    "cardKingdomId": "211623",
+    "cardtraderId": "48528",
+    "csiId": "232568",
+    "mcmId": "295697",
+    "scgId": "SLD-MTG-INT-AKHPWDECK-EN-GIDEON",
+    "tcgplayerProductId": "127532",
+    "tntId": "1102273"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/fc03627aae091b76"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Gideon, Martial Paragon",
+        "set": "akh"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Amonkhet Booster Pack",
+        "set": "akh",
+        "uuid": "bdfaa43d-9ebd-502f-856b-11eadc97b026"
+      }
+    ]
+  },
+  "setCode": "AKH",
+  "setName": "Amonkhet",
+  "tcgcsvData": {
+    "product": {
+      "productId": 127532,
+      "name": "Amonkhet - Planeswalker Deck [Gideon]",
+      "cleanName": "Amonkhet Planeswalker Deck Gideon",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/127532_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1882,
+      "url": "https://www.tcgplayer.com/product/127532/magic-amonkhet-amonkhet-planeswalker-deck-gideon",
+      "modifiedOn": "2017-06-19T17:19:23.567",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 127532,
+        "lowPrice": 29.35,
+        "midPrice": 30,
+        "highPrice": 34.99,
+        "marketPrice": 29.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "uuid": "70800f19-b8c1-5801-8b74-115615edc5d3",
+  "name": "Amonkhet Booster Battle Pack",
+  "category": "multiple_decks",
+  "cardCount": 60,
+  "subtype": "battle_pack",
+  "identifiers": {
+    "tcgplayerProductId": "217689",
+    "tntId": "1643172"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/90dff1dc3eb428ab"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Amonkhet Booster Pack",
+        "set": "akh",
+        "uuid": "bdfaa43d-9ebd-502f-856b-11eadc97b026"
+      }
+    ],
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - White",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Blue",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - White",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Black",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - White",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Red",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - White",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Green",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Blue",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Black",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Blue",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Red",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Blue",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Green",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Black",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Red",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Black",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Green",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Red",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Green",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "AKH",
+  "setName": "Amonkhet"
+}

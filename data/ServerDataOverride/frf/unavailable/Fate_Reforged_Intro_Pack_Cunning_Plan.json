@@ -1,0 +1,73 @@
+{
+  "uuid": "bd45cafd-7cf2-5016-9c1f-02571e39a733",
+  "name": "Fate Reforged Intro Pack Cunning Plan",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100525",
+    "cardKingdomId": "198994",
+    "cardtraderId": "48226",
+    "mcmId": "271558",
+    "scgId": "SLD-MTG-INT-FRFINTRO-EN-CUNNING",
+    "tcgplayerProductId": "95261",
+    "tntId": "1065449"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4d852f70e946a15d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Cunning Plan",
+        "set": "frf"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Fate Reforged Booster Pack",
+        "set": "frf",
+        "uuid": "12abbe7b-f87a-5fbf-ab77-1e9edec8cf90"
+      }
+    ]
+  },
+  "setCode": "FRF",
+  "setName": "Fate Reforged",
+  "tcgcsvData": {
+    "product": {
+      "productId": 95261,
+      "name": "Fate Reforged - Intro Pack - Cunning Plan",
+      "cleanName": "Fate Reforged Intro Pack Cunning Plan",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/95261_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1497,
+      "url": "https://www.tcgplayer.com/product/95261/magic-fate-reforged-fate-reforged-intro-pack-cunning-plan",
+      "modifiedOn": "2021-08-05T14:08:59.127",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Fate Reforged booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 95261,
+        "lowPrice": 15.44,
+        "midPrice": 17.26,
+        "highPrice": 25.23,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

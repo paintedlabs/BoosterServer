@@ -1,0 +1,94 @@
+{
+  "uuid": "4e4ac911-3547-50d7-9323-04012f94a434",
+  "name": "Dominaria Bundle",
+  "category": "bundle",
+  "releaseDate": "2018-04-27",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1496685",
+    "cardKingdomId": "217680",
+    "cardtraderId": "48662",
+    "csiId": "244642",
+    "mcmId": "298743",
+    "scgId": "SLD-MTG-BUN-DOM-EN",
+    "tcgplayerProductId": "158426",
+    "tntId": "1158697"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/5af5274069b9c897",
+    "tcgplayer": "https://mtgjson.com/links/d546eae8d9efb19c"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "1 card box"
+      },
+      {
+        "name": "1 player’s guide"
+      },
+      {
+        "name": "80-card land pack"
+      },
+      {
+        "name": "1 learn-to-play insert"
+      },
+      {
+        "name": "1 Spindown™ life counter"
+      },
+      {
+        "name": "1 Menu booklet"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Dominaria Booster Pack",
+        "set": "dom",
+        "uuid": "2bfb8f04-072c-56e7-aa78-6ff5771c1db3"
+      }
+    ]
+  },
+  "setCode": "DOM",
+  "setName": "Dominaria",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158426,
+      "name": "Dominaria - Bundle",
+      "cleanName": "Dominaria Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158426_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2199,
+      "url": "https://www.tcgplayer.com/product/158426/magic-dominaria-dominaria-bundle",
+      "modifiedOn": "2018-02-27T15:49:07.187",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-04-27T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 10 Dominaria booster packs \r\n<br>• 1 card box \r\n<br>• 1 player’s guide \r\n<br>• 1 80-card land pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 Spindown™ life counter \r\n<br>• 1 Menu booklet"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509601424"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158426,
+        "lowPrice": 49.99,
+        "midPrice": 59.45,
+        "highPrice": 89.99,
+        "marketPrice": 51.1,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "uuid": "12b97cfa-03cc-5c80-b1f0-afd2b35a8b33",
+  "name": "Strixhaven School of Mages Theme Booster Set of 5",
+  "category": "subset",
+  "releaseDate": "2021-04-23",
+  "subtype": "theme",
+  "identifiers": {
+    "tcgplayerProductId": "233261"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/24025a28465162fd"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Strixhaven School of Mages Theme Booster Pack Lorehold",
+        "set": "stx",
+        "uuid": "0b2dfa2b-7262-5654-845d-44a464ecb18f"
+      },
+      {
+        "count": 1,
+        "name": "Strixhaven School of Mages Theme Booster Pack Prismari",
+        "set": "stx",
+        "uuid": "92fdf707-f2c4-514a-85c7-6def4170c2a2"
+      },
+      {
+        "count": 1,
+        "name": "Strixhaven School of Mages Theme Booster Pack Quandrix",
+        "set": "stx",
+        "uuid": "686bdf46-47ca-520a-b5db-156c45e56b60"
+      },
+      {
+        "count": 1,
+        "name": "Strixhaven School of Mages Theme Booster Pack Silverquill",
+        "set": "stx",
+        "uuid": "7e89f3e8-b7b4-5a44-935f-8166dd8fd511"
+      },
+      {
+        "count": 1,
+        "name": "Strixhaven School of Mages Theme Booster Pack Witherbloom",
+        "set": "stx",
+        "uuid": "608dbc7d-9ae2-5c72-a0a1-c52e954bacc0"
+      }
+    ]
+  },
+  "setCode": "STX",
+  "setName": "Strixhaven: School of Mages",
+  "tcgcsvData": {
+    "product": {
+      "productId": 233261,
+      "name": "Strixhaven: School of Mages - Theme Booster [Set of 5]",
+      "cleanName": "Strixhaven School of Mages Theme Booster Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/233261_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2773,
+      "url": "https://www.tcgplayer.com/product/233261/magic-strixhaven-school-of-mages-strixhaven-school-of-mages-theme-booster-set-of-5",
+      "modifiedOn": "2021-04-23T04:03:28.35",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-04-23T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each theme booster contains:\r\n<br>• 35 Magic: The Gathering cards, all based on a theme"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509957651"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 233261,
+        "lowPrice": 30.36,
+        "midPrice": 39.42,
+        "highPrice": 140,
+        "marketPrice": 38.48,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

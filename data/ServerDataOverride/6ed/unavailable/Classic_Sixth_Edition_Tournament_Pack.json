@@ -1,0 +1,67 @@
+{
+  "uuid": "55e22afb-ad7d-52cd-ab52-056e3a9705b0",
+  "name": "Classic Sixth Edition Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1107740",
+    "cardKingdomId": "1159",
+    "cardtraderId": "45478",
+    "csiId": "279841",
+    "mcmId": "248488",
+    "scgId": "SLD-MTG-PCK-6EDTOURNAMENT-EN",
+    "tcgplayerProductId": "118880",
+    "tntId": "94542"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/161f36ae2d7c8f72",
+    "tcgplayer": "https://mtgjson.com/links/7775c7a532194b97"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "6ed"
+      }
+    ]
+  },
+  "setCode": "6ED",
+  "setName": "Classic Sixth Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118880,
+      "name": "Classic Sixth Edition Tournament Pack",
+      "cleanName": "Classic Sixth Edition Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118880_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23,
+      "url": "https://www.tcgplayer.com/product/118880/magic-classic-sixth-edition-classic-sixth-edition-tournament-pack",
+      "modifiedOn": "2019-01-29T18:42:34.727",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Tournament packs contain 75 randomly assorted game cards and are specifically designed for sealed-deck play."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 118880,
+        "lowPrice": 94.99,
+        "midPrice": 100.47,
+        "highPrice": 116.87,
+        "marketPrice": 108.02,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

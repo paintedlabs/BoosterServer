@@ -1,0 +1,67 @@
+{
+  "uuid": "06db5c26-8fc7-53d2-b1a7-45727958e4c3",
+  "name": "Archenemy Theme Deck Scorch the World with Dragonfire",
+  "category": "deck",
+  "cardCount": 80,
+  "subtype": "archenemy",
+  "identifiers": {
+    "abuId": "1100117",
+    "cardKingdomId": "131305",
+    "cardtraderId": "47491",
+    "csiId": "97377",
+    "mcmId": "240527",
+    "scgId": "SLD-MTG-MLT-ARC-EN-SCORCH",
+    "tcgplayerProductId": "185141",
+    "tntId": "294688"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/0c95055a7e8359ba",
+    "tcgplayer": "https://mtgjson.com/links/141bb42ec48056f8"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Scorch The World With Dragonfire",
+        "set": "arc"
+      }
+    ]
+  },
+  "setCode": "ARC",
+  "setName": "Archenemy",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185141,
+      "name": "Archenemy - Theme Deck \"Scorch the World with Dragonfire\"",
+      "cleanName": "Archenemy Theme Deck Scorch the World with Dragonfire",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185141_200w.jpg",
+      "categoryId": 1,
+      "groupId": 12,
+      "url": "https://www.tcgplayer.com/product/185141/magic-archenemy-archenemy-theme-deck-scorch-the-world-with-dragonfire",
+      "modifiedOn": "2019-02-16T15:10:04.05",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each of the four Archenemy game packs contains a 60-card theme deck and 20 oversized Scheme cards."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185141,
+        "lowPrice": 180,
+        "midPrice": 189.99,
+        "highPrice": 189.99,
+        "marketPrice": 189.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

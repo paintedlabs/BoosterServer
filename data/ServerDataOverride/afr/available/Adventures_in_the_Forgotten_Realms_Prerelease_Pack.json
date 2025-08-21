@@ -1,0 +1,662 @@
+{
+  "uuid": "0696252c-893b-5a4a-b61f-01a9527be559",
+  "name": "Adventures in the Forgotten Realms Prerelease Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 1,
+  "releaseDate": "2021-07-23",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "2051802",
+    "cardKingdomId": "247765",
+    "cardtraderId": "155912",
+    "mcmId": "571986",
+    "tcgplayerProductId": "238845",
+    "tntId": "1758998"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ea1fb3e794427bb0"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Adventures in the Forgotten realms Prerelease Spindown"
+      },
+      {
+        "name": "3 Double-Sided Foil Dungeon Cards"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease",
+        "set": "afr"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Adventures in the Forgotten Realms Draft Booster Pack",
+        "set": "afr",
+        "uuid": "93fab1fe-dde0-5bfd-aae5-755c6e43bc3d"
+      }
+    ]
+  },
+  "setCode": "AFR",
+  "setName": "Adventures in the Forgotten Realms",
+  "extendedData": {
+    "code": "afr-prerelease",
+    "boosters": [
+      {
+        "sheets": {
+          "prerelease_promo": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "prerelease_promo": {
+        "total_weight": 140,
+        "cards": [
+          {
+            "set": "pafr",
+            "number": "4s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "515f53d5-4d1f-5f76-b38e-659527a263db"
+          },
+          {
+            "set": "pafr",
+            "number": "8s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2f63ff87-37aa-5eaa-adda-c8c8899dcb4a"
+          },
+          {
+            "set": "pafr",
+            "number": "15s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "17104525-a44b-5fd3-b8c3-39590ed9b88c"
+          },
+          {
+            "set": "pafr",
+            "number": "17s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "7f1f220d-81a7-5a33-b6a1-7fda93b6e7a6"
+          },
+          {
+            "set": "pafr",
+            "number": "18s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "21edf123-ff52-5a70-8124-4d2528425964"
+          },
+          {
+            "set": "pafr",
+            "number": "20s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "415e928a-cc9c-53c2-a0a2-b705f3bc1df7"
+          },
+          {
+            "set": "pafr",
+            "number": "23s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "68dc784b-2d1f-56a8-b5d7-d75408bb9c53"
+          },
+          {
+            "set": "pafr",
+            "number": "27s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "57fec781-ec0d-5948-9cd0-99378de5807e"
+          },
+          {
+            "set": "pafr",
+            "number": "28s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2c7e158a-aec4-5302-8be7-bc94f0da5321"
+          },
+          {
+            "set": "pafr",
+            "number": "29s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "18c311ce-e516-5c22-9dd7-f35b32502ce9"
+          },
+          {
+            "set": "pafr",
+            "number": "39s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "55caaa0e-38f1-5f20-b5af-f50410b8eba6"
+          },
+          {
+            "set": "pafr",
+            "number": "48s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f52da904-91f2-50a5-a371-bb6e50a286a2"
+          },
+          {
+            "set": "pafr",
+            "number": "53s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "26b71dd4-d38f-554a-b4ef-37ad954a7d2e"
+          },
+          {
+            "set": "pafr",
+            "number": "56s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "38860e73-5019-5aba-a673-9ca93853088f"
+          },
+          {
+            "set": "pafr",
+            "number": "60s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c7d7518f-885a-5e34-930f-fc416dbd3570"
+          },
+          {
+            "set": "pafr",
+            "number": "62s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "7c82a122-22ec-55bb-baac-8d128cc0ffd6"
+          },
+          {
+            "set": "pafr",
+            "number": "63s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "aa85e907-385c-55b3-b1a2-25c96d4b9a72"
+          },
+          {
+            "set": "pafr",
+            "number": "64s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "2b141cc9-7ef4-5b42-9708-8e03b7a924b0"
+          },
+          {
+            "set": "pafr",
+            "number": "78s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f71b1b78-c818-522e-bcd1-4413c280312a"
+          },
+          {
+            "set": "pafr",
+            "number": "80s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2ef9bed2-afc7-5a36-b55f-ae2b0ce5440c"
+          },
+          {
+            "set": "pafr",
+            "number": "82s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d4b10c35-2721-52cf-84e1-bf892912c07a"
+          },
+          {
+            "set": "pafr",
+            "number": "86s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5320810b-cb64-532f-9649-a19fcd635bd9"
+          },
+          {
+            "set": "pafr",
+            "number": "87s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "265e1342-b430-54aa-9906-2d07987127a6"
+          },
+          {
+            "set": "pafr",
+            "number": "88s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e87b727c-751a-5cbb-90c7-6622c100caf5"
+          },
+          {
+            "set": "pafr",
+            "number": "91s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "15ce808a-dc3c-5f60-a96e-df7dd9ee77b7"
+          },
+          {
+            "set": "pafr",
+            "number": "100s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "203931dd-b3bf-53de-ae88-8d96e9c1d30b"
+          },
+          {
+            "set": "pafr",
+            "number": "104s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5902d089-1385-5af1-b450-93df53426947"
+          },
+          {
+            "set": "pafr",
+            "number": "105s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "55d4bdc8-bc53-59d4-9721-0b14661d7eca"
+          },
+          {
+            "set": "pafr",
+            "number": "112s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "049e2184-5271-560f-ac8f-b223e29a375e"
+          },
+          {
+            "set": "pafr",
+            "number": "121s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "060af8c6-0829-5fdb-9395-c2973f135ae6"
+          },
+          {
+            "set": "pafr",
+            "number": "124s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "18d40224-88b6-556d-9064-ea54781b73bf"
+          },
+          {
+            "set": "pafr",
+            "number": "126s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5164bf62-6501-58cc-9843-5d6b8ac99ff0"
+          },
+          {
+            "set": "pafr",
+            "number": "127s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "75cd217f-0132-5fda-9881-2a5c9c753e8d"
+          },
+          {
+            "set": "pafr",
+            "number": "138s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c4caf32d-8db2-5c3f-9a8d-c1602d8b0d3a"
+          },
+          {
+            "set": "pafr",
+            "number": "143s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3c873557-dd0f-536e-93eb-420b5a53adfc"
+          },
+          {
+            "set": "pafr",
+            "number": "147s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2a5900b7-1a47-5b53-9871-9cdceb5ff3e1"
+          },
+          {
+            "set": "pafr",
+            "number": "151s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9015831a-402b-5cb4-a364-a6656a4921e8"
+          },
+          {
+            "set": "pafr",
+            "number": "155s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "29d3668a-207d-5272-ad32-887da4acaa61"
+          },
+          {
+            "set": "pafr",
+            "number": "156s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "0a185c29-185c-582c-9a67-80beedaf0f8f"
+          },
+          {
+            "set": "pafr",
+            "number": "157s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "588769a2-f4d0-5f6d-8451-4b1d7ef43ba4"
+          },
+          {
+            "set": "pafr",
+            "number": "166s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4049b666-106d-5297-b751-8818d3e4ae1f"
+          },
+          {
+            "set": "pafr",
+            "number": "167s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "50eb237b-ddd2-5ae8-af46-69683ca022dc"
+          },
+          {
+            "set": "pafr",
+            "number": "171s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1ad3746c-63aa-5bf4-a7e9-d261d3301c23"
+          },
+          {
+            "set": "pafr",
+            "number": "172s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3f18cab7-3d94-5118-bf37-5579a58f7385"
+          },
+          {
+            "set": "pafr",
+            "number": "176s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "0d7955e1-a3e5-5856-8571-8147c48dc299"
+          },
+          {
+            "set": "pafr",
+            "number": "181s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "8ab4ff72-c0fc-5f1b-b85f-5d5ccec387e7"
+          },
+          {
+            "set": "pafr",
+            "number": "184s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5efc8ded-6cc0-5511-9587-e73ae6b6ea45"
+          },
+          {
+            "set": "pafr",
+            "number": "190s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c9999823-a23d-58e7-9b46-839b1fbc7385"
+          },
+          {
+            "set": "pafr",
+            "number": "193s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "79627f39-49fb-52c0-87f0-e3e46447fb0b"
+          },
+          {
+            "set": "pafr",
+            "number": "196s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4384e5c8-a9ff-57a4-aad0-45714bd45841"
+          },
+          {
+            "set": "pafr",
+            "number": "197s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3d42f20b-4582-5150-ba34-4a877ebb788d"
+          },
+          {
+            "set": "pafr",
+            "number": "202s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7d1a017c-629d-512c-a727-4d2ba2e81113"
+          },
+          {
+            "set": "pafr",
+            "number": "207s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "34d21c9c-fa8a-5b27-b190-9faa8d231b74"
+          },
+          {
+            "set": "pafr",
+            "number": "209s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "58719079-22bf-5c2f-8d3c-a987bd87ea6d"
+          },
+          {
+            "set": "pafr",
+            "number": "211s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d8e90233-b6f3-5006-ba8d-8d22911dc38b"
+          },
+          {
+            "set": "pafr",
+            "number": "216s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c9367242-7a51-5126-8dad-5f226d8efb95"
+          },
+          {
+            "set": "pafr",
+            "number": "217s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2cd6b283-39a4-5237-b838-624072143207"
+          },
+          {
+            "set": "pafr",
+            "number": "220s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a69bf0bb-37c8-5265-9e2e-360f4c74a2fc"
+          },
+          {
+            "set": "pafr",
+            "number": "222s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9d5754ad-6153-52ea-89a1-782478760912"
+          },
+          {
+            "set": "pafr",
+            "number": "227s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ae2abb42-34ca-5a01-be3d-e4808a0fb213"
+          },
+          {
+            "set": "pafr",
+            "number": "228s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "01caf150-7eba-52ad-af97-9d5bc5a4dd0c"
+          },
+          {
+            "set": "pafr",
+            "number": "229s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "180eeae6-e104-598e-83c5-a85d31fec9da"
+          },
+          {
+            "set": "pafr",
+            "number": "230s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "32ed30d0-2bb0-5ffd-ac28-0c9a2e409bac"
+          },
+          {
+            "set": "pafr",
+            "number": "232s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "0dfbfbf0-d4a7-575e-ae05-5a3210ebfed4"
+          },
+          {
+            "set": "pafr",
+            "number": "233s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e895f21e-93cc-5fa1-be5b-1f4dba5336e6"
+          },
+          {
+            "set": "pafr",
+            "number": "235s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "acb413fd-6c36-5be5-9e52-9b862d7951ad"
+          },
+          {
+            "set": "pafr",
+            "number": "237s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2cb81c1f-adcb-59ec-8101-511f76e0b5f5"
+          },
+          {
+            "set": "pafr",
+            "number": "238s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "cfeebb13-7a7b-50c0-b016-684241a1c47f"
+          },
+          {
+            "set": "pafr",
+            "number": "239s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "cfa14014-166b-5a40-a8db-8387d65c247b"
+          },
+          {
+            "set": "pafr",
+            "number": "241s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "d740d6f2-af42-5bc2-ad8e-fd26592a64e2"
+          },
+          {
+            "set": "pafr",
+            "number": "243s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d4498fc4-a681-57b5-bb68-2772b35d174f"
+          },
+          {
+            "set": "pafr",
+            "number": "246s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "15d8fcd4-2adb-5bd6-8dd7-231965b71c24"
+          },
+          {
+            "set": "pafr",
+            "number": "252s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ad6da736-5881-5798-85cb-0b650a263413"
+          },
+          {
+            "set": "pafr",
+            "number": "253s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "56e7c2cb-ff13-50c1-8138-e6d7d7cab6ef"
+          },
+          {
+            "set": "pafr",
+            "number": "254s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d1fa4592-5eee-566d-972b-1b73eefc5de1"
+          },
+          {
+            "set": "pafr",
+            "number": "255s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7c9e1840-cc68-5f6a-9035-212030d5be72"
+          },
+          {
+            "set": "pafr",
+            "number": "257s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "21c61dae-4a3b-5978-a8c3-7bc27ace1607"
+          },
+          {
+            "set": "pafr",
+            "number": "258s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1688286d-73c8-57b9-8ef5-a2cf353f1412"
+          },
+          {
+            "set": "pafr",
+            "number": "259s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b72718bd-a58c-578a-a89c-1cd873a12b10"
+          },
+          {
+            "set": "pafr",
+            "number": "261s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "3f3193ab-cf02-5ace-a848-02e0765bb462"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "pafr"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 238845,
+      "name": "Adventures in the Forgotten Realms - Prerelease Pack",
+      "cleanName": "Adventures in the Forgotten Realms Prerelease Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/238845_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2823,
+      "url": "https://www.tcgplayer.com/product/238845/magic-adventures-in-the-forgotten-realms-adventures-in-the-forgotten-realms-prerelease-pack",
+      "modifiedOn": "2021-07-16T04:03:08.437",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-07-23T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>KEY PRODUCT FEATURES:</strong>\r\n<br>• 6 Adventures in the Forgotten Realms (AFR) Magic: The Gathering Draft Boosters\r\n<br>• 1 foil-stamped Rare or Mythic Rare from the set\r\n<br>• 3 double-sided foil dungeon cards\r\n<br>• Includes d20 and MTG card storage box\r\n<br>• Beloved Dungeons & Dragons heroes and monsters have ventured into Magic for the ultimate crossover!\r\n<br><br>DESCRIPTION:</strong>\r\n<br>The <em>Adventures in the Forgotten Realms</em> Prerelease Pack  contains 6 <em>Adventures in the Forgotten Realms</em> Draft Boosters, 1 foil-stamped Rare or Mythic Rare from the set, 3 double-sided foil dungeon cards (Tomb of Annihilation, Dungeon of the Mad Mage, and Lost Mines of Phandelver), 1 d20, and 1 card storage box.\r\n<br><br>Each <em>Adventures in the Forgotten Realms </em>Draft Booster contains 15 Magic cards and a token or ad card, with 1 Rare or Mythic Rare, 3 Uncommons, 10 Common cards, and 1 Land card. A traditional foil card of any rarity replaces a Common in 33% of Adventures in the Forgotten Realms Draft Boosters. Traditional foil Mythic Borderless Planeswalker in less than 1% of boosters."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 238845,
+        "lowPrice": 35,
+        "midPrice": 39.99,
+        "highPrice": 45.08,
+        "marketPrice": 37.75,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

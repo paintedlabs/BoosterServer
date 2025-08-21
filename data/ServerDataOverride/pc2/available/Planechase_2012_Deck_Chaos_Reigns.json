@@ -1,0 +1,70 @@
+{
+  "uuid": "4f793e23-170d-5a3c-8698-f91ace23191f",
+  "name": "Planechase 2012 Deck Chaos Reigns",
+  "category": "deck",
+  "cardCount": 80,
+  "releaseDate": "2012-06-01",
+  "subtype": "planechase",
+  "identifiers": {
+    "abuId": "1100988",
+    "cardKingdomId": "187251",
+    "cardtraderId": "47756",
+    "csiId": "153902",
+    "mcmId": "254930",
+    "scgId": "SLD-MTG-MLT-PC2-EN-CHAOS",
+    "tcgplayerProductId": "59115",
+    "tntId": "375629"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/5ba8168ae92d5059",
+    "tcgplayer": "https://mtgjson.com/links/38d4a97afc01a1f6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Chaos Reigns",
+        "set": "pc2"
+      }
+    ],
+    "other": [
+      {
+        "name": "Planechase 2012 Planar Die"
+      },
+      {
+        "name": "Strategy Insert"
+      }
+    ]
+  },
+  "setCode": "PC2",
+  "setName": "Planechase 2012",
+  "tcgcsvData": {
+    "product": {
+      "productId": 59115,
+      "name": "Planechase 2012 - Chaos Reigns Deck",
+      "cleanName": "Planechase 2012 Chaos Reigns Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/59115_200w.jpg",
+      "categoryId": 1,
+      "groupId": 363,
+      "url": "https://www.tcgplayer.com/product/59115/magic-planechase-2012-planechase-2012-chaos-reigns-deck",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-06-01T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 59115,
+        "lowPrice": 39.99,
+        "midPrice": 69.99,
+        "highPrice": 159.99,
+        "marketPrice": 42.49,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

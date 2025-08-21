@@ -1,0 +1,68 @@
+{
+  "uuid": "d6be2012-7243-5c8b-83f0-1124daa7b812",
+  "name": "Fifth Edition Starter Deck Display",
+  "category": "limited_aid_case",
+  "releaseDate": "2024-01-02",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "abuId": "1107728",
+    "cardKingdomId": "240091",
+    "cardtraderId": "272335",
+    "mcmId": "749684",
+    "scgId": "SLD-MTG-BBX-5EDSTARTER-EN",
+    "tcgplayerProductId": "184221",
+    "tntId": "79224"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/8bea0542129a20ae",
+    "tcgplayer": "https://mtgjson.com/links/97c4e1d87834f7e6"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 12,
+        "name": "Fifth Edition Starter Deck",
+        "set": "5ed",
+        "uuid": "ec6e6678-3869-57ab-ab9a-d210e16fbaa9"
+      }
+    ]
+  },
+  "setCode": "5ED",
+  "setName": "Fifth Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 184221,
+      "name": "Fifth Edition - Starter Deck Box",
+      "cleanName": "Fifth Edition Starter Deck Box",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/184221_200w.jpg",
+      "categoryId": 1,
+      "groupId": 44,
+      "url": "https://www.tcgplayer.com/product/184221/magic-fifth-edition-fifth-edition-starter-deck-box",
+      "modifiedOn": "2019-01-29T21:42:59.087",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contains 12 Fifth Edition - Starter Decks, each deck contains a pre-constructed 60-card deck."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 184221,
+        "lowPrice": 1234.92,
+        "midPrice": 1234.92,
+        "highPrice": 1234.92,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

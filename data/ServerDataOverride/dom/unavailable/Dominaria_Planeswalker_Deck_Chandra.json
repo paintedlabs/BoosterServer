@@ -1,0 +1,75 @@
+{
+  "uuid": "78c57364-5ee9-5c6f-b889-6c25e21dda07",
+  "name": "Dominaria Planeswalker Deck Chandra",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-03-01",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1496444",
+    "cardKingdomId": "217728",
+    "cardtraderId": "48664",
+    "csiId": "244640",
+    "mcmId": "319290",
+    "scgId": "SLD-MTG-INT-DOMPWDECK-EN-CHANDRA",
+    "tcgplayerProductId": "158427",
+    "tntId": "1158684"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b9740de7cfacaa26"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Chandra, Bold Pyromancer",
+        "set": "dom"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Dominaria Booster Pack",
+        "set": "dom",
+        "uuid": "2bfb8f04-072c-56e7-aa78-6ff5771c1db3"
+      }
+    ]
+  },
+  "setCode": "DOM",
+  "setName": "Dominaria",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158427,
+      "name": "Dominaria - Planeswalker Deck [Chandra]",
+      "cleanName": "Dominaria Planeswalker Deck Chandra",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158427_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2199,
+      "url": "https://www.tcgplayer.com/product/158427/magic-dominaria-dominaria-planeswalker-deck-chandra",
+      "modifiedOn": "2018-04-30T14:02:18.757",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck\r\n<br>• 2 Dominaria booster packs \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert\r\n<br><br>More information coming soon..."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158427,
+        "lowPrice": 24,
+        "midPrice": 31.2,
+        "highPrice": 33,
+        "marketPrice": 26.25,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

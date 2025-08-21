@@ -1,0 +1,79 @@
+{
+  "uuid": "0b887898-3a19-5bc7-89de-cc01aaad2428",
+  "name": "Challenger Deck 2019 Display",
+  "category": "deck_box",
+  "releaseDate": "2019-04-12",
+  "subtype": "challenger",
+  "identifiers": {
+    "tcgplayerProductId": "185030"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/75354e043d00afc2"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Challenger Deck 2019 Arcane Tempo",
+        "set": "q02",
+        "uuid": "a5272537-ce65-5563-93fa-f4fce5a407b0"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2019 Deadly Discovery",
+        "set": "q02",
+        "uuid": "9b0d6e07-d002-500e-889e-8f378bdab60b"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2019 Lightning Aggro",
+        "set": "q02",
+        "uuid": "344967c3-a83b-568a-816a-741e2b43fd31"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2019 United Assault",
+        "set": "q02",
+        "uuid": "078136dc-56fa-56c1-a69c-a34a3b54b481"
+      }
+    ]
+  },
+  "setCode": "Q02",
+  "setName": "Challenger Decks 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185030,
+      "name": "Challenger Deck 2019 Display",
+      "cleanName": "Challenger Deck 2019 Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185030_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/185030/magic-challenger-decks-challenger-deck-2019-display",
+      "modifiedOn": "2019-03-20T18:06:12.737",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "A Challenger Decks Display comes with two of each deck for a total of eight decks."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185030,
+        "lowPrice": 179.99,
+        "midPrice": 179.99,
+        "highPrice": 179.99,
+        "marketPrice": 115,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

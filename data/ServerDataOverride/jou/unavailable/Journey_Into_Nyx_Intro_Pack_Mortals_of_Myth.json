@@ -1,0 +1,74 @@
+{
+  "uuid": "cd2ed33a-573f-567f-a024-b388a32ab38d",
+  "name": "Journey Into Nyx Intro Pack Mortals of Myth",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100653",
+    "cardKingdomId": "193936",
+    "cardtraderId": "48110",
+    "csiId": "202685",
+    "mcmId": "266587",
+    "scgId": "SLD-MTG-INT-JOUINTRO-EN-MORTALS",
+    "tcgplayerProductId": "82553",
+    "tntId": "1053724"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0af5f3b6a1684b2b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mortals of Myth",
+        "set": "jou"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Journey Into Nyx Booster Pack",
+        "set": "jou",
+        "uuid": "ef8281b6-54ab-578a-baec-62f5c79977c0"
+      }
+    ]
+  },
+  "setCode": "JOU",
+  "setName": "Journey into Nyx",
+  "tcgcsvData": {
+    "product": {
+      "productId": 82553,
+      "name": "Journey Into Nyx - Intro Pack - Mortals of Myth",
+      "cleanName": "Journey Into Nyx Intro Pack Mortals of Myth",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/82553_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1277,
+      "url": "https://www.tcgplayer.com/product/82553/magic-journey-into-nyx-journey-into-nyx-intro-pack-mortals-of-myth",
+      "modifiedOn": "2021-08-05T14:26:52.757",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck, two Journey Into Nyx booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 82553,
+        "lowPrice": 12,
+        "midPrice": 19.99,
+        "highPrice": 39.99,
+        "marketPrice": 19.94,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

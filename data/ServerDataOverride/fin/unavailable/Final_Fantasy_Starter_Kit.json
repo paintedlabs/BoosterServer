@@ -1,0 +1,87 @@
+{
+  "uuid": "d5af9fb0-7ec3-53ca-90ad-af29c22b4608",
+  "name": "Final Fantasy Starter Kit",
+  "category": "multiple_decks",
+  "cardCount": 120,
+  "releaseDate": "2025-06-13",
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "abuId": "2594509",
+    "cardKingdomId": "312845",
+    "cardtraderId": "322111",
+    "mcmId": "812588",
+    "miniaturemarketId": "305711",
+    "scgId": "SLD-MTG-INT-FINSTARTER-EN",
+    "tcgplayerProductId": "618901"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/9ca0adc50278963a",
+    "tcgplayer": "https://mtgjson.com/links/cee4017692a0e254"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Blue-Black",
+        "set": "fin"
+      },
+      {
+        "name": "Red-White",
+        "set": "fin"
+      }
+    ],
+    "other": [
+      {
+        "name": "4 Double-Sided Tokens"
+      },
+      {
+        "name": "2 MTG Arena Code Cards"
+      },
+      {
+        "name": "2 Deck Boxes"
+      }
+    ]
+  },
+  "setCode": "FIN",
+  "setName": "Final Fantasy",
+  "tcgcsvData": {
+    "product": {
+      "productId": 618901,
+      "name": "FINAL FANTASY - Starter Kit",
+      "cleanName": "FINAL FANTASY Starter Kit",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/618901_200w.jpg",
+      "categoryId": 1,
+      "groupId": 24219,
+      "url": "https://www.tcgplayer.com/product/618901/magic-final-fantasy-final-fantasy-starter-kit",
+      "modifiedOn": "2025-06-13T04:11:45.897",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2025-06-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The entire FINAL FANTASY saga is here! Your players will step into the worlds of the beloved FINAL FANTASY RPG series' sixteen mainline games. They'll cast powerful spells, call upon classic summons, and even visit their favorite locations on the back of a Chocobo. Countless elements from the games are here for players to weave together their own stories.\r\n<br>\r\nFor players who want to play Cloud, Planet's Champion or Sephiroth, Planet's Heir decks, direct them to the Starter Kit! With two ready-to-play, 60-card decks, the Starter Kit helps guide new players through their first game of Magic while allowing them to explore characters and moments from various FINAL FANTASY games.\r\n<br>Contents:\r\n<br>• Two 60-card, ready-to-play Magic decks\r\n<br>• 2 Traditional Foil Mythic Rare cards (1 per deck)\r\n<br>• 2 Magic: The Gathering Arena code cards (1 per deck, only available in select regions)\r\n<br>• 2 deck boxes (1 per deck)\r\n<br>• 2 reference cards (1 per deck)\r\n<br>• 1 Play Guide booklet"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166271170"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 618901,
+        "lowPrice": 12.99,
+        "midPrice": 29.98,
+        "highPrice": 499.99,
+        "marketPrice": 17.08,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

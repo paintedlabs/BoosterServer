@@ -1,0 +1,67 @@
+{
+  "uuid": "bd162fa8-c37a-522a-b2f2-e6a97ef9dafb",
+  "name": "Archenemy Theme Deck Assemble the Doomsday Machine",
+  "category": "deck",
+  "cardCount": 80,
+  "subtype": "archenemy",
+  "identifiers": {
+    "abuId": "1100115",
+    "cardKingdomId": "131304",
+    "cardtraderId": "47489",
+    "csiId": "97375",
+    "mcmId": "240522",
+    "scgId": "SLD-MTG-MLT-ARC-EN-ASSEMBLE",
+    "tcgplayerProductId": "185138",
+    "tntId": "294686"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/66c645124f5240c3",
+    "tcgplayer": "https://mtgjson.com/links/25ea3a5cd1e54207"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Assemble The Doomsday Machine",
+        "set": "arc"
+      }
+    ]
+  },
+  "setCode": "ARC",
+  "setName": "Archenemy",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185138,
+      "name": "Archenemy - Theme Deck \"Assemble the Doomsday Machine\"",
+      "cleanName": "Archenemy Theme Deck Assemble the Doomsday Machine",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185138_200w.jpg",
+      "categoryId": 1,
+      "groupId": 12,
+      "url": "https://www.tcgplayer.com/product/185138/magic-archenemy-archenemy-theme-deck-assemble-the-doomsday-machine",
+      "modifiedOn": "2019-02-16T15:08:42.4",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each of the four Archenemy game packs contains a 60-card theme deck and 20 oversized Scheme cards."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185138,
+        "lowPrice": 200,
+        "midPrice": 248.99,
+        "highPrice": 399.48,
+        "marketPrice": 300,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "uuid": "5304a892-c6a7-5f53-9d89-94fdc441e7bd",
+  "name": "Aetherdrift Bundle",
+  "category": "bundle",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2573575",
+    "cardKingdomId": "307714",
+    "cardtraderId": "313990",
+    "mcmId": "803870",
+    "miniaturemarketId": "304733",
+    "scgId": "SLD-MTG-BUN-DFT-EN",
+    "tcgplayerProductId": "604256"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/74feec94fd877189",
+    "tcgplayer": "https://mtgjson.com/links/1b2b53ceeae09c86"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Lumbering Worldwagon",
+        "number": "422",
+        "set": "dft",
+        "uuid": "3393a82d-6427-5e80-ac12-c9838730bbc4"
+      }
+    ],
+    "other": [
+      {
+        "name": "40 Basic Lands Bundle"
+      },
+      {
+        "name": "2 Reference Cards"
+      },
+      {
+        "name": "1 Spindown Die"
+      },
+      {
+        "name": "Aetherdrift Card Storage Box"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 9,
+        "name": "Aetherdrift Play Booster Pack",
+        "set": "dft",
+        "uuid": "5dbd1955-aba1-56a0-ae24-9826ebde5301"
+      }
+    ]
+  },
+  "setCode": "DFT",
+  "setName": "Aetherdrift",
+  "tcgcsvData": {
+    "product": {
+      "productId": 604256,
+      "name": "Aetherdrift - Bundle",
+      "cleanName": "Aetherdrift Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/604256_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23874,
+      "url": "https://www.tcgplayer.com/product/604256/magic-aetherdrift-aetherdrift-bundle",
+      "modifiedOn": "2025-02-14T05:11:14.1",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2025-02-14T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Start your engines for a high-octane death race across the Multiverse! Swerve through three planes of mayhem, dodging dangerous obstacles and rival racers along the way. Crew up unique vehicles and mounts as you discover which racing team best suits your style, then hit max speed to claim the gold.\r\n<br>\r\nThe Bundle is a great gift for Magic superfans and newcomers alike who visit your store. Put pedal to the metal and accelerate into the world of Aetherdrift with a box full of 9 Play Boosters, 30 Land cards (including 10 Full-Art Lands), plus exclusive accessories.\r\n<br>\r\nContents:\r\n<br>• 9 Aetherdrift Play Boosters; each Play Booster contains 14 Magic: The Gathering cards\r\n<br>• 1 Traditional Foil card with Bundle-exclusive alternate-art\r\n<br>• 20 Traditional Foil Basic Land cards (5 with Full Art)\r\n<br>• 20 nonfoil Basic Land cards (5 with Full Art)\r\n<br>• 1 oversized Spindown life counter\r\n<br>• 1 card storage box\r\n<br>• 2 reference cards\r\n<br>• Each Play Booster may contain these cards: DFT 1–375; SPG 84–93. Includes 1–4 cards of rarity Rare or higher (2: 26%; 3: 2%; 4: <1%), and 3–5 Uncommon, 6–9 Common, and 1 Land cards. 1 card of any rarity is Traditional Foil. Foil Mythic Borderless Graffiti Giants card in <1% of boosters. Traditional Foil Land replaces a Land in 20% of boosters"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166278834"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 604256,
+        "lowPrice": 30,
+        "midPrice": 47.84,
+        "highPrice": 68.49,
+        "marketPrice": 31.63,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "uuid": "b6ea4890-4f5a-5db8-b67b-c554f054b52d",
+  "name": "Starter Commander Deck Chaos Incarnate",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-12-02",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2275525",
+    "cardKingdomId": "270186",
+    "cardtraderId": "224264",
+    "csiId": "349030",
+    "mcmId": "678615",
+    "miniaturemarketId": "287977",
+    "scgId": "SLD-MTG-MLT-SCD-EN-CHAOS",
+    "tcgplayerProductId": "448435",
+    "tntId": "1770669"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/43e82a6a8d75bc42",
+    "tcgplayer": "https://mtgjson.com/links/639c362620b5c690"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Chaos Incarnate",
+        "set": "scd"
+      }
+    ],
+    "other": [
+      {
+        "name": "10 double sided tokens"
+      }
+    ]
+  },
+  "setCode": "SCD",
+  "setName": "Starter Commander Decks",
+  "tcgcsvData": {
+    "product": {
+      "productId": 448435,
+      "name": "Starter Commander Deck - Chaos Incarnate",
+      "cleanName": "Starter Commander Deck Chaos Incarnate",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/448435_200w.jpg",
+      "categoryId": 1,
+      "groupId": 17662,
+      "url": "https://www.tcgplayer.com/product/448435/magic-starter-commander-decks-starter-commander-deck-chaos-incarnate",
+      "modifiedOn": "2022-12-02T05:03:12.74",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-12-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Details pending!\r\n<br>\r\nContents:\r\n<br>\r\n• 99 cards and 1 foil-etched card\r\n<br>\r\n• 10 double-sided tokens\r\n<br>\r\n• 1 deck box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166134543"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 448435,
+        "lowPrice": 25,
+        "midPrice": 35.5,
+        "highPrice": 60.27,
+        "marketPrice": 31.12,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

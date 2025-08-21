@@ -1,0 +1,75 @@
+{
+  "uuid": "d2f434d0-9f62-595d-8b84-aadaff035412",
+  "name": "Hour of Devastation Planeswalker Deck Nissa",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2017-07-14",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1477012",
+    "cardKingdomId": "212881",
+    "cardtraderId": "48561",
+    "csiId": "232591",
+    "mcmId": "298556",
+    "scgId": "SLD-MTG-INT-HOUPWDECK-EN-NISSA",
+    "tcgplayerProductId": "134895",
+    "tntId": "1102282"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/bd2dd0351c4ecdb1"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Nissa, Genesis Mage",
+        "set": "hou"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Hour of Devastation Booster Pack",
+        "set": "hou",
+        "uuid": "e3af734e-d2eb-557b-9187-cd487d9ae46c"
+      }
+    ]
+  },
+  "setCode": "HOU",
+  "setName": "Hour of Devastation",
+  "tcgcsvData": {
+    "product": {
+      "productId": 134895,
+      "name": "Hour of Devastation - Planeswalker Deck [Nissa]",
+      "cleanName": "Hour of Devastation Planeswalker Deck Nissa",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/134895_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1934,
+      "url": "https://www.tcgplayer.com/product/134895/magic-hour-of-devastation-hour-of-devastation-planeswalker-deck-nissa",
+      "modifiedOn": "2017-06-22T17:04:54.483",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-07-14T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring <a href=\"http://shop.tcgplayer.com/magic/hour-of-devastation/nissa-genesis-mage\">\"Nissa, Genesis Mage\"</a>. This deck contains the following:\r\n<br><ul>\r\n    <li>1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card </li>\r\n    <li>2 Hour of Devastation booster packs</li>\r\n    <li>1 Strategy insert</li>\r\n    <li>1 Magic learn-to-play guide</li>\r\n</ul>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 134895,
+        "lowPrice": 15.5,
+        "midPrice": 24.7,
+        "highPrice": 34.95,
+        "marketPrice": 20.85,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

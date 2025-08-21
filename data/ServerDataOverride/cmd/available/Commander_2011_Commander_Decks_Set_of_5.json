@@ -1,0 +1,82 @@
+{
+  "uuid": "8ddee433-57b1-5ee8-a247-8e0a594cb947",
+  "name": "Commander 2011 Commander Decks Set of 5",
+  "category": "subset",
+  "subtype": "commander",
+  "identifiers": {
+    "cardtraderId": "44781",
+    "mcmId": "246721",
+    "scgId": "SLD-MTG-MLT-CMD-EN-SET5",
+    "tcgplayerProductId": "42098",
+    "tntId": "325768"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4bec37c2911de492"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander 2011 Commander Deck Counterpunch",
+        "set": "cmd",
+        "uuid": "0be07f70-3930-59a3-9dff-6c46eaafc4c3"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2011 Commander Deck Devour for Power",
+        "set": "cmd",
+        "uuid": "252f4267-91d4-54f0-b49a-8b65a014d1c4"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2011 Commander Deck Heavenly Inferno",
+        "set": "cmd",
+        "uuid": "28ec7023-333f-5768-a8e2-061d16847766"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2011 Commander Deck Mirror Mastery",
+        "set": "cmd",
+        "uuid": "778214f1-3da3-5550-9504-acadae1203da"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2011 Commander Deck Political Puppets",
+        "set": "cmd",
+        "uuid": "0adbf7af-d90b-51a9-a32a-ee7049d09b17"
+      }
+    ]
+  },
+  "setCode": "CMD",
+  "setName": "Commander 2011",
+  "tcgcsvData": {
+    "product": {
+      "productId": 42098,
+      "name": "Commander - Set of 5",
+      "cleanName": "Commander Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/42098_200w.jpg",
+      "categoryId": 1,
+      "groupId": 25,
+      "url": "https://www.tcgplayer.com/product/42098/magic-commander-commander-set-of-5",
+      "modifiedOn": "2016-10-21T13:34:10.89",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 42098,
+        "lowPrice": 989,
+        "midPrice": 1499.99,
+        "highPrice": 1999.99,
+        "marketPrice": 976.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

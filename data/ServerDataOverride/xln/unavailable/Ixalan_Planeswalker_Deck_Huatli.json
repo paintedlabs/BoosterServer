@@ -1,0 +1,76 @@
+{
+  "uuid": "19d7748e-22b9-5648-ae25-a8ff548afae0",
+  "name": "Ixalan Planeswalker Deck Huatli",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2017-09-04",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1476990",
+    "cardKingdomId": "213983",
+    "cardtraderId": "48576",
+    "csiId": "241701",
+    "mcmId": "301283",
+    "scgId": "SLD-MTG-INT-XLNPWDECK-EN-HUATLI",
+    "tcgplayerProductId": "144694",
+    "tntId": "1115667"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/3355b2557516c145",
+    "tcgplayer": "https://mtgjson.com/links/26d44ab9343f2618"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Huatli, Dinosaur Knight",
+        "set": "xln"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Ixalan Booster Pack",
+        "set": "xln",
+        "uuid": "1ffd541f-99e2-509e-9c9e-49f383f03484"
+      }
+    ]
+  },
+  "setCode": "XLN",
+  "setName": "Ixalan",
+  "tcgcsvData": {
+    "product": {
+      "productId": 144694,
+      "name": "Ixalan - Planeswalker Deck [Huatli]",
+      "cleanName": "Ixalan Planeswalker Deck Huatli",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/144694_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2043,
+      "url": "https://www.tcgplayer.com/product/144694/magic-ixalan-ixalan-planeswalker-deck-huatli",
+      "modifiedOn": "2018-02-28T19:51:33.863",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring <a href=\"http://shop.tcgplayer.com/magic/ixalan/huatli-dinosaur-knight\">\"Huatli, Dinosaur Knight\"</a>. This deck contains the following:\r\n<br><ul>\r\n    <li>1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card </li>\r\n    <li>2 Ixalan booster packs</li>\r\n    <li>1 Strategy insert</li>\r\n    <li>1 Magic learn-to-play guide</li>\r\n</ul>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 144694,
+        "lowPrice": 55.84,
+        "midPrice": 55.84,
+        "highPrice": 55.84,
+        "marketPrice": 50.89,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

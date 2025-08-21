@@ -1,0 +1,67 @@
+{
+  "uuid": "fbb2f456-f94a-5084-9dba-02aad18dc27a",
+  "name": "Zendikar Rising Commander Deck Display",
+  "category": "deck_box",
+  "subtype": "commander",
+  "identifiers": {
+    "tcgplayerProductId": "452723",
+    "tntId": "1672300"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/bcf97ac0db32fa59"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 3,
+        "name": "Zendikar Rising Commander Deck Lands Wrath",
+        "set": "znc",
+        "uuid": "e52b4295-49ef-507a-ab56-023ab7b0d0a4"
+      },
+      {
+        "count": 3,
+        "name": "Zendikar Rising Commander Deck Sneak Attack",
+        "set": "znc",
+        "uuid": "b01552aa-529f-5924-a54e-a28fdf866a55"
+      }
+    ]
+  },
+  "setCode": "ZNC",
+  "setName": "Zendikar Rising Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 452723,
+      "name": "Zendikar Rising - Commander Deck Display Case",
+      "cleanName": "Zendikar Rising Commander Deck Display Case",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/452723_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2716,
+      "url": "https://www.tcgplayer.com/product/452723/magic-commander-zendikar-rising-zendikar-rising-commander-deck-display-case",
+      "modifiedOn": "2022-11-02T18:04:29.817",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Zendikar Rising Commander Case contains 6 commander decks themed for Zendikar Rising <em>(3 of each deck)</em>."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 452723,
+        "lowPrice": 140,
+        "midPrice": 153.99,
+        "highPrice": 283.69,
+        "marketPrice": 141.16,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

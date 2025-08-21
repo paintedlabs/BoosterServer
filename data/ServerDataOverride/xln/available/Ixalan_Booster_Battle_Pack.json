@@ -1,0 +1,253 @@
+{
+  "uuid": "76990768-d07f-50bc-8c66-be9f429ca8ba",
+  "name": "Ixalan Booster Battle Pack",
+  "category": "multiple_decks",
+  "cardCount": 60,
+  "subtype": "battle_pack",
+  "identifiers": {
+    "tcgplayerProductId": "217691",
+    "tntId": "1643173"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/e8eede003067ba9e"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Ixalan Booster Pack",
+        "set": "xln",
+        "uuid": "1ffd541f-99e2-509e-9c9e-49f383f03484"
+      }
+    ],
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - White",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Blue",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - White",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Black",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - White",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Red",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - White",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Green",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Blue",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Black",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Blue",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Red",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Blue",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Green",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Black",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Red",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Black",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Green",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Amonkhet Welcome Deck - Red",
+                "set": "w17"
+              },
+              {
+                "name": "Amonkhet Welcome Deck - Green",
+                "set": "w17"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "XLN",
+  "setName": "Ixalan",
+  "tcgcsvData": {
+    "product": {
+      "productId": 217691,
+      "name": "Ixalan - Booster Battle Pack",
+      "cleanName": "Ixalan Booster Battle Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/217691_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2043,
+      "url": "https://www.tcgplayer.com/product/217691/magic-ixalan-ixalan-booster-battle-pack",
+      "modifiedOn": "2020-07-02T20:57:37.08",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "This Booster Battle Pack has everything you need to start a Two-Player game right away.\r\n<br><br>Content of Box:\r\n<br>• 2 Single-color, 30-card Magic decks. \r\n<br>• 2 Ixalan, 15-card booster packs."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509048743"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 217691,
+        "lowPrice": 52.45,
+        "midPrice": 53.08,
+        "highPrice": 53.7,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

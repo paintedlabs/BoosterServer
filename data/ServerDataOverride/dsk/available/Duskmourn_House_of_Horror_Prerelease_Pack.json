@@ -1,0 +1,662 @@
+{
+  "uuid": "2606fe32-1d56-572c-a317-e73798c6458d",
+  "name": "Duskmourn House of Horror Prerelease Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 1,
+  "releaseDate": "2024-09-27",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "cardKingdomId": "300733",
+    "cardtraderId": "292186",
+    "mcmId": "776444",
+    "scgId": "SLD-MTG-INT-DSKPRE-EN",
+    "tcgplayerProductId": "557252"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/94d1d979680c8c44",
+    "tcgplayer": "https://mtgjson.com/links/07a81687683eca11"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Deck box"
+      },
+      {
+        "name": "Duskmourn spindown"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease",
+        "set": "dsk"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Duskmourn House of Horror Play Booster Pack",
+        "set": "dsk",
+        "uuid": "b87fe3be-3527-5767-a373-f3dc1cfe35b2"
+      }
+    ]
+  },
+  "setCode": "DSK",
+  "setName": "Duskmourn: House of Horror",
+  "extendedData": {
+    "code": "dsk-prerelease",
+    "boosters": [
+      {
+        "sheets": {
+          "prerelease_promo": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "prerelease_promo": {
+        "total_weight": 140,
+        "cards": [
+          {
+            "set": "pdsk",
+            "number": "3sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "26424141-de79-5014-8329-6d5dc4311b35"
+          },
+          {
+            "set": "pdsk",
+            "number": "4sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3dd9885d-31fd-5d99-98a9-c80088aaa3c7"
+          },
+          {
+            "set": "pdsk",
+            "number": "6s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "99581b8a-fc80-53e8-b5c3-fb30dfaf16a4"
+          },
+          {
+            "set": "pdsk",
+            "number": "13s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6163cb95-f14b-5110-ad77-52fc1f418b39"
+          },
+          {
+            "set": "pdsk",
+            "number": "18s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "8bc15a05-c8b6-5961-9020-64a743fbfd40"
+          },
+          {
+            "set": "pdsk",
+            "number": "23s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "5204c33b-9521-5c48-8c9f-857990d49f8a"
+          },
+          {
+            "set": "pdsk",
+            "number": "26s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7b000304-05a9-5fc5-bc28-581c4d54470c"
+          },
+          {
+            "set": "pdsk",
+            "number": "32s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b7021420-0e9c-5d86-996a-a2bb8defcc5f"
+          },
+          {
+            "set": "pdsk",
+            "number": "35s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d543e65a-2640-55e2-9101-285bb40e830c"
+          },
+          {
+            "set": "pdsk",
+            "number": "37s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "02c9f558-73d9-52b7-a0b3-3cd9fdddbcb2"
+          },
+          {
+            "set": "pdsk",
+            "number": "41s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "b3ae65b7-bfe9-5ac4-a256-1ce0e9c1f447"
+          },
+          {
+            "set": "pdsk",
+            "number": "42s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "1fa23063-9cac-55fe-8a96-be2be0bf55f7"
+          },
+          {
+            "set": "pdsk",
+            "number": "44sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "010b8d7d-0343-5b09-8ec0-72cdee43c0db"
+          },
+          {
+            "set": "pdsk",
+            "number": "51s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ad795d3b-31be-50e5-9bc1-64914444f2ec"
+          },
+          {
+            "set": "pdsk",
+            "number": "53s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "960f0bf5-09fa-5047-877a-052e00b8e9ea"
+          },
+          {
+            "set": "pdsk",
+            "number": "63s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4b2570e1-4248-5b15-b4a8-4a8e16acec7e"
+          },
+          {
+            "set": "pdsk",
+            "number": "64s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "196686e0-ad03-5cc1-9800-e3f0d4e91ad1"
+          },
+          {
+            "set": "pdsk",
+            "number": "66s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "88ae39cc-83eb-5ff9-a2be-2f42765caf31"
+          },
+          {
+            "set": "pdsk",
+            "number": "67sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "e7c4e509-8393-5c71-906e-02d394632340"
+          },
+          {
+            "set": "pdsk",
+            "number": "68s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "a97cc4f3-c6b5-56a1-9bc9-7b898f57180a"
+          },
+          {
+            "set": "pdsk",
+            "number": "72s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b965fb44-d332-5052-8329-0a869626e68c"
+          },
+          {
+            "set": "pdsk",
+            "number": "75s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a8754b74-cd9d-59db-bc91-524815bc3950"
+          },
+          {
+            "set": "pdsk",
+            "number": "86s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ccc5e1e1-9b6d-5d6c-bef2-51e989f431ec"
+          },
+          {
+            "set": "pdsk",
+            "number": "92s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "95be788d-fe18-5f7f-9c15-6d86005d4530"
+          },
+          {
+            "set": "pdsk",
+            "number": "94s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "8fe826fc-9897-5e37-a89d-0ca95c4ae167"
+          },
+          {
+            "set": "pdsk",
+            "number": "95s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b3a8be2e-844a-52ad-8d74-5b3792b6e9a0"
+          },
+          {
+            "set": "pdsk",
+            "number": "100sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "a38626c4-a0ac-5fbd-8c3e-30457b55b7ad"
+          },
+          {
+            "set": "pdsk",
+            "number": "102s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "3ed70172-610d-5186-bd6c-899a483d355d"
+          },
+          {
+            "set": "pdsk",
+            "number": "106s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f855c7fb-0c68-51a3-b922-c6eddb3909c9"
+          },
+          {
+            "set": "pdsk",
+            "number": "108s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "85b4561e-7685-5df2-84ed-ab735cad90bd"
+          },
+          {
+            "set": "pdsk",
+            "number": "113s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "4e412095-5a18-57f8-bad4-41f3d7ab2cfe"
+          },
+          {
+            "set": "pdsk",
+            "number": "118sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5bef3c6c-6a9b-5366-877e-ec98692f966a"
+          },
+          {
+            "set": "pdsk",
+            "number": "119s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "eba5ecfb-b9fd-5174-a967-6d9329bb6c4f"
+          },
+          {
+            "set": "pdsk",
+            "number": "120s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "c52c8926-9813-5953-b706-67f15f40bb93"
+          },
+          {
+            "set": "pdsk",
+            "number": "128s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "023fcf4a-5b44-5d98-a4c7-c3707d05974b"
+          },
+          {
+            "set": "pdsk",
+            "number": "129sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "b2840a8a-48f7-5379-94d6-ef8e8b5902ee"
+          },
+          {
+            "set": "pdsk",
+            "number": "131s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "81c1ea8b-049f-5394-a943-2135f07dea5d"
+          },
+          {
+            "set": "pdsk",
+            "number": "133s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "27d93b1e-34a5-5a04-a3cc-02937bc7ebfd"
+          },
+          {
+            "set": "pdsk",
+            "number": "136s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "fe071ca1-c335-56e3-b801-830964e653ae"
+          },
+          {
+            "set": "pdsk",
+            "number": "143s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "764abeaf-7729-5ac5-9adf-42940e86a4eb"
+          },
+          {
+            "set": "pdsk",
+            "number": "146s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "36b12e05-ec1d-5a64-b77c-bfc7e8ba73a3"
+          },
+          {
+            "set": "pdsk",
+            "number": "153s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7a80a255-a8d3-57ef-a220-431fa5624776"
+          },
+          {
+            "set": "pdsk",
+            "number": "155s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9bb1b70d-9f64-57b8-9baf-4815d9efb2ce"
+          },
+          {
+            "set": "pdsk",
+            "number": "157s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ec0a6db9-0a0a-59d2-89f0-07f633d3089a"
+          },
+          {
+            "set": "pdsk",
+            "number": "165s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "98632b89-7eaf-5fa1-8020-c9b27fa0f9ca"
+          },
+          {
+            "set": "pdsk",
+            "number": "168s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "27eec616-9de2-59b5-91e2-1e7fa1ba11b2"
+          },
+          {
+            "set": "pdsk",
+            "number": "176s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "318b4e9a-3642-5b58-8791-d8e56f481b98"
+          },
+          {
+            "set": "pdsk",
+            "number": "182s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "d12e4077-b608-598d-aa58-445cbdaf6761"
+          },
+          {
+            "set": "pdsk",
+            "number": "183s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4f0c34f5-ce10-5072-b758-73c7e2847c55"
+          },
+          {
+            "set": "pdsk",
+            "number": "187s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "aabdfea9-775c-5f8a-b545-37e3820e9236"
+          },
+          {
+            "set": "pdsk",
+            "number": "188s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a46187d3-245b-5416-afe6-a85eb1bef4a2"
+          },
+          {
+            "set": "pdsk",
+            "number": "192s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5ed225e4-2ec9-51cc-86c8-922c47124c57"
+          },
+          {
+            "set": "pdsk",
+            "number": "194s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "beefe2e4-6228-5156-8d71-a2c7062e3c48"
+          },
+          {
+            "set": "pdsk",
+            "number": "201s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "de486e53-0147-5f56-990d-17ec4473dd0a"
+          },
+          {
+            "set": "pdsk",
+            "number": "202s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "0612f364-c5d7-5798-9e13-6fbd7a6e5b3e"
+          },
+          {
+            "set": "pdsk",
+            "number": "204s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a0d1453f-1818-5d22-a014-093d0076bacf"
+          },
+          {
+            "set": "pdsk",
+            "number": "205sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "04a0ed92-ed5e-5dca-b836-9ca72db61d97"
+          },
+          {
+            "set": "pdsk",
+            "number": "219s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "83bbad03-5bd3-5c43-b933-618d7cec6e7f"
+          },
+          {
+            "set": "pdsk",
+            "number": "220s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "8bd79d04-b659-5651-a8c4-3fc7ab573dd3"
+          },
+          {
+            "set": "pdsk",
+            "number": "221s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "3d6380c0-7de2-524e-99a3-ccb9be972001"
+          },
+          {
+            "set": "pdsk",
+            "number": "223s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b52892f0-dbb9-5d2d-b480-c3631c1857fb"
+          },
+          {
+            "set": "pdsk",
+            "number": "224s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "b7ed310e-2e39-5f9b-ada0-14964661e6cf"
+          },
+          {
+            "set": "pdsk",
+            "number": "226s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "34c121c3-e488-50d9-9285-96d34fbf7662"
+          },
+          {
+            "set": "pdsk",
+            "number": "227sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d315ec99-9cb1-5553-b13b-73f61c1add13"
+          },
+          {
+            "set": "pdsk",
+            "number": "228s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "db94cf85-dc73-547f-a396-c9838abc6ce1"
+          },
+          {
+            "set": "pdsk",
+            "number": "230sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4b5b0536-1c3d-5424-9049-a2a020ce3cad"
+          },
+          {
+            "set": "pdsk",
+            "number": "236s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "42be2988-e3fd-5878-b721-5bf6de3dd637"
+          },
+          {
+            "set": "pdsk",
+            "number": "237s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "13536470-e4b0-528d-8d74-7356fb1ee8fd"
+          },
+          {
+            "set": "pdsk",
+            "number": "238s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "654e6272-e034-5e32-853e-a86a81f5649d"
+          },
+          {
+            "set": "pdsk",
+            "number": "240s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "962fc884-04e4-5820-9d0a-31f781cd487d"
+          },
+          {
+            "set": "pdsk",
+            "number": "241s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a2385781-aa37-5888-acf4-e9d08c16ce2e"
+          },
+          {
+            "set": "pdsk",
+            "number": "245s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9306039f-ccca-567b-8e9a-f16adc2dd8ca"
+          },
+          {
+            "set": "pdsk",
+            "number": "248s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "402a6004-33bb-56e5-8681-cf6071df0bf3"
+          },
+          {
+            "set": "pdsk",
+            "number": "253s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "19e8cb26-2b71-52e3-8532-afcb784074ad"
+          },
+          {
+            "set": "pdsk",
+            "number": "256s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "56e37e07-a5f3-595e-a4f6-0878f13d5839"
+          },
+          {
+            "set": "pdsk",
+            "number": "259s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b0acc0dc-ba04-5071-a459-3a17ce243948"
+          },
+          {
+            "set": "pdsk",
+            "number": "260s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1748a010-636e-5b6b-93e0-24cdb44d3257"
+          },
+          {
+            "set": "pdsk",
+            "number": "261s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a5a84aa2-1a38-539c-8897-5b2bba3ebe39"
+          },
+          {
+            "set": "pdsk",
+            "number": "270s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "8321d7c8-7822-5814-a3b7-f9eae5fad746"
+          },
+          {
+            "set": "pdsk",
+            "number": "271s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "37275838-a0b3-562b-9328-b8dcd3a8b13c"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "pdsk"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 557252,
+      "name": "Duskmourn: House of Horror - Prerelease Pack",
+      "cleanName": "Duskmourn House of Horror Prerelease Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/557252_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23550,
+      "url": "https://www.tcgplayer.com/product/557252/magic-duskmourn-house-of-horror-duskmourn-house-of-horror-prerelease-pack",
+      "modifiedOn": "2024-09-24T16:51:38.47",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Dare to enter Duskmourn, a plane-enveloping House that sets the scene for your opponent’s greatest fears to come to life!\r\n<br>\r\nPrerelease is your community’s first opportunity to get their hands on the newest Magic: The Gathering release and explore what the set has to offer, and Prerelease Packs are the perfect product to fuel the first events of this new set.\r\n<br>\r\nContents:\r\n<br>\r\n• 6  Duskmourn: House of Horror - Play Booster Packs (each containing 14 cards and 1 Token/Ad or Art Series card)\r\n<br>\r\n• 1 foil, year-stamped Rare or Mythic Rare\r\n<br>\r\n• 1Magic: The Gathering Arena code card (only available in select regions)\r\n<br>\r\n• 1 deck box\r\n<br>\r\n• 1 Spindown die"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 557252,
+        "lowPrice": 27,
+        "midPrice": 31.43,
+        "highPrice": 54.79,
+        "marketPrice": 30.67,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

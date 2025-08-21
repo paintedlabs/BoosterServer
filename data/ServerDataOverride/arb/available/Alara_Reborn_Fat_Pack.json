@@ -1,0 +1,78 @@
+{
+  "uuid": "896b8a1a-90cb-561d-bae9-901687a10c49",
+  "name": "Alara Reborn Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100095",
+    "cardKingdomId": "126732",
+    "cardtraderId": "47363",
+    "csiId": "97371",
+    "mcmId": "210157",
+    "scgId": "SLD-MTG-BUN-ARB-EN",
+    "tcgplayerProductId": "78302",
+    "tntId": "237696"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ffd4ca62e602faac"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Card Box"
+      },
+      {
+        "name": "The Alara Reborn Player's Guide"
+      },
+      {
+        "name": "Learn-to-play insert"
+      },
+      {
+        "name": "40 Basic land pack"
+      },
+      {
+        "name": "Alara Reborn Spindown"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Alara Reborn Booster Pack",
+        "set": "arb",
+        "uuid": "77285ba5-fa21-5d46-8037-8da7222bacd9"
+      }
+    ]
+  },
+  "setCode": "ARB",
+  "setName": "Alara Reborn",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78302,
+      "name": "Alara Reborn - Fat Pack",
+      "cleanName": "Alara Reborn Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78302_200w.jpg",
+      "categoryId": 1,
+      "groupId": 5,
+      "url": "https://www.tcgplayer.com/product/78302/magic-alara-reborn-alara-reborn-fat-pack",
+      "modifiedOn": "2014-01-07T15:23:08.133",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78302,
+        "lowPrice": 249.99,
+        "midPrice": 249.99,
+        "highPrice": 249.99,
+        "marketPrice": 228.19,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

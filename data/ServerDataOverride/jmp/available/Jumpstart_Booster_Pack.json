@@ -1,0 +1,73 @@
+{
+  "uuid": "ca9092e8-a921-5e37-ab9d-4b0f76bb0d01",
+  "name": "Jumpstart Booster Pack",
+  "category": "booster_pack",
+  "cardCount": 20,
+  "releaseDate": "2020-02-21",
+  "subtype": "jumpstart",
+  "identifiers": {
+    "abuId": "1874416",
+    "cardKingdomId": "233853",
+    "cardtraderId": "107812",
+    "csiId": "297740",
+    "mcmId": "441398",
+    "scgId": "SLD-MTG-PCK-JMP-EN",
+    "tcgplayerProductId": "214822",
+    "tntId": "1665302"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/59e29da9ef93ab42",
+    "tcgplayer": "https://mtgjson.com/links/3a3603d53759ba9f"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "jumpstart",
+        "set": "jmp"
+      }
+    ]
+  },
+  "setCode": "JMP",
+  "setName": "Jumpstart",
+  "tcgcsvData": {
+    "product": {
+      "productId": 214822,
+      "name": "Jumpstart - Booster Pack",
+      "cleanName": "Jumpstart Booster Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/214822_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2654,
+      "url": "https://www.tcgplayer.com/product/214822/magic-jumpstart-jumpstart-booster-pack",
+      "modifiedOn": "2022-10-07T16:56:41.773",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Jumpstart booster includes 20 cards. \r\n<br>\r\n<br><em>All 20 cards fit one of 46 possible themes, and most themes have multiple variations—enough to make 121 possible 20-card lists inside any given pack.</em>"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509 917709"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 214822,
+        "lowPrice": 4.49,
+        "midPrice": 6.71,
+        "highPrice": 9999.99,
+        "marketPrice": 5.8,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

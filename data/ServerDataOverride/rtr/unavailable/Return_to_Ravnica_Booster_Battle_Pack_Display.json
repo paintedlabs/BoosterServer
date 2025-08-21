@@ -1,0 +1,53 @@
+{
+  "uuid": "9db0a3bf-2fbd-5e0b-ad7d-c4bbff4ea050",
+  "name": "Return to Ravnica Booster Battle Pack Display",
+  "category": "deck_box",
+  "subtype": "battle_pack",
+  "identifiers": {
+    "cardtraderId": "47846",
+    "mcmId": "259467",
+    "tcgplayerProductId": "485935",
+    "tntId": "820220"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b7c6facf10b82997"
+  },
+  "setCode": "RTR",
+  "setName": "Return to Ravnica",
+  "tcgcsvData": {
+    "product": {
+      "productId": 485935,
+      "name": "Return to Ravnica Booster Battle Pack Display",
+      "cleanName": "Return to Ravnica Booster Battle Pack Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/485935_200w.jpg",
+      "categoryId": 1,
+      "groupId": 370,
+      "url": "https://www.tcgplayer.com/product/485935/magic-return-to-ravnica-return-to-ravnica-booster-battle-pack-display",
+      "modifiedOn": "2023-03-01T19:30:25.033",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "This display contains 12 Booster Battle Packs. Each Booster Battle Pack contains 2 Return to Ravnica Booster packs and a selection of other cards."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 485935,
+        "lowPrice": 134.95,
+        "midPrice": 134.95,
+        "highPrice": 134.95,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "uuid": "fc4e8ac6-b8dc-5ec3-b113-dd8e1e02221c",
+  "name": "Mirrodin Besieged Intro Pack Doom Inevitable",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100889",
+    "cardKingdomId": "137135",
+    "cardtraderId": "47576",
+    "mcmId": "245278",
+    "scgId": "SLD-MTG-INT-MBSINTRO-EN-DOOM",
+    "tcgplayerProductId": "39119",
+    "tntId": "299378"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b09a8c3d68ad1c6a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Doom Inevitable",
+        "set": "mbs"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Mirrodin Besieged Booster Pack",
+        "set": "mbs",
+        "uuid": "ba83ed00-67f1-523d-94be-831d0dd950ad"
+      }
+    ]
+  },
+  "setCode": "MBS",
+  "setName": "Mirrodin Besieged",
+  "tcgcsvData": {
+    "product": {
+      "productId": 39119,
+      "name": "Mirrodin Besieged - Intro Pack - Doom Inevitable",
+      "cleanName": "Mirrodin Besieged Intro Pack Doom Inevitable",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/39119_200w.jpg",
+      "categoryId": 1,
+      "groupId": 76,
+      "url": "https://www.tcgplayer.com/product/39119/magic-mirrodin-besieged-mirrodin-besieged-intro-pack-doom-inevitable",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 39119,
+        "lowPrice": 47.99,
+        "midPrice": 47.99,
+        "highPrice": 47.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

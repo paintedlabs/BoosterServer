@@ -1,0 +1,84 @@
+{
+  "uuid": "27d04f00-dab0-5fc7-afea-ae99d3cb8097",
+  "name": "Coldsnap Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1107819",
+    "cardKingdomId": "120635",
+    "cardtraderId": "47118",
+    "csiId": "97447",
+    "mcmId": "210169",
+    "scgId": "SLD-MTG-BUN-CSP-EN",
+    "tcgplayerProductId": "78306",
+    "tntId": "141892"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/dc7a896ecc7e89b1"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Two card boxes"
+      },
+      {
+        "name": "Coldsnap player guide"
+      },
+      {
+        "name": "1 Pro Player card"
+      },
+      {
+        "name": "6 color dividers for the card boxes"
+      },
+      {
+        "name": "1 Spindown life counter"
+      },
+      {
+        "name": "1 40 card Basic Land pack (all snow-covered!)"
+      },
+      {
+        "name": "Jeff Grub's Ice Age novel The Gathering Dark"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Coldsnap Booster Pack",
+        "set": "csp",
+        "uuid": "8e9110d1-4028-5a78-9d19-a65d287d18c1"
+      }
+    ]
+  },
+  "setCode": "CSP",
+  "setName": "Coldsnap",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78306,
+      "name": "Coldsnap - Fat Pack",
+      "cleanName": "Coldsnap Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78306_200w.jpg",
+      "categoryId": 1,
+      "groupId": 24,
+      "url": "https://www.tcgplayer.com/product/78306/magic-coldsnap-coldsnap-fat-pack",
+      "modifiedOn": "2014-01-07T15:26:34.247",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78306,
+        "lowPrice": 329.95,
+        "midPrice": 337.43,
+        "highPrice": 344.9,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

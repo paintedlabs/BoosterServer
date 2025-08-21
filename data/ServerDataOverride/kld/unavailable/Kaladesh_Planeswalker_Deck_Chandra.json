@@ -1,0 +1,75 @@
+{
+  "uuid": "559b6d6c-fe2f-5a4b-8f39-b0a70f279148",
+  "name": "Kaladesh Planeswalker Deck Chandra",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-09-06",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1100685",
+    "cardKingdomId": "209421",
+    "cardtraderId": "48471",
+    "csiId": "228463",
+    "mcmId": "292528",
+    "scgId": "SLD-MTG-INT-KLDPWDECK-EN-CHANDRA",
+    "tcgplayerProductId": "122682",
+    "tntId": "1098354"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ca9a0850a8e525f0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Chandra, Pyrogenius",
+        "set": "kld"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Kaladesh Booster Pack",
+        "set": "kld",
+        "uuid": "cf0f8060-bd6a-5d26-994c-202112e5177c"
+      }
+    ]
+  },
+  "setCode": "KLD",
+  "setName": "Kaladesh",
+  "tcgcsvData": {
+    "product": {
+      "productId": 122682,
+      "name": "Kaladesh - Planeswalker Deck [Chandra]",
+      "cleanName": "Kaladesh Planeswalker Deck Chandra",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/122682_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1791,
+      "url": "https://www.tcgplayer.com/product/122682/magic-kaladesh-kaladesh-planeswalker-deck-chandra",
+      "modifiedOn": "2017-06-19T17:19:38.7",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring <a href=\"http://shop.tcgplayer.com/magic/kaladesh/chandra-pyrogenius\">Chandra, Pyrogenius</a>. This deck contains the following:\r\n<br>\r\n<br><b>-</b> 1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card \r\n<br><b>-</b> 2 Kaladesh booster packs\r\n<br><b>-</b> 1 Strategy insert\r\n<br><b>-</b> 1 Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 122682,
+        "lowPrice": 39.95,
+        "midPrice": 48.89,
+        "highPrice": 49.97,
+        "marketPrice": 49.97,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

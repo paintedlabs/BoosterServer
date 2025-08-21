@@ -1,0 +1,75 @@
+{
+  "uuid": "d5b88a15-274d-55ab-b48d-12b100aca265",
+  "name": "Theros Intro Pack Devotion to Darkness",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101214",
+    "cardKingdomId": "191125",
+    "cardtraderId": "48033",
+    "mcmId": "264172",
+    "scgId": "SLD-MTG-INT-THSINTRO-EN-DEVOTION",
+    "tcgplayerProductId": "70982",
+    "tntId": "1043364"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0d6e38c82c4f5c09"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Devotion to Darkness",
+        "set": "ths"
+      }
+    ],
+    "other": [
+      {
+        "name": "Magic Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn-to-Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "THS",
+  "setName": "Theros",
+  "tcgcsvData": {
+    "product": {
+      "productId": 70982,
+      "name": "Theros - Intro Pack - Abhorrent Overlord",
+      "cleanName": "Theros Intro Pack Abhorrent Overlord",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70982_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1144,
+      "url": "https://www.tcgplayer.com/product/70982/magic-theros-theros-intro-pack-abhorrent-overlord",
+      "modifiedOn": "2014-01-06T17:47:06.52",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 70982,
+        "lowPrice": 31.15,
+        "midPrice": 31.15,
+        "highPrice": 31.15,
+        "marketPrice": 14.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

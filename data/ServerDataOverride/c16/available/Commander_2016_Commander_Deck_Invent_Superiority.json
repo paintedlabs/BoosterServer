@@ -1,0 +1,62 @@
+{
+  "uuid": "9cb4bacd-bdd8-5023-a1a9-0d33d765a330",
+  "name": "Commander 2016 Commander Deck Invent Superiority",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2016-05-30",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1100341",
+    "cardKingdomId": "209489",
+    "cardtraderId": "44746",
+    "csiId": "228448",
+    "mcmId": "290520",
+    "scgId": "SLD-MTG-MLT-C16-EN-INVENT",
+    "tcgplayerProductId": "123970",
+    "tntId": "1105639"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/91daaf3708d7b04c",
+    "tcgplayer": "https://mtgjson.com/links/8a977196ddd7e70d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Invent Superiority",
+        "set": "c16"
+      }
+    ]
+  },
+  "setCode": "C16",
+  "setName": "Commander 2016",
+  "tcgcsvData": {
+    "product": {
+      "productId": 123970,
+      "name": "Commander 2016 Deck - Invent Superiority (WUBR)",
+      "cleanName": "Commander 2016 Deck Invent Superiority WUBR",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/123970_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1792,
+      "url": "https://www.tcgplayer.com/product/123970/magic-commander-2016-commander-2016-deck-invent-superiority-wubr",
+      "modifiedOn": "2016-11-04T19:17:50.847",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2016-11-11T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 123970,
+        "lowPrice": 201.71,
+        "midPrice": 213.73,
+        "highPrice": 484.45,
+        "marketPrice": 201.71,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "uuid": "895a1791-f4b8-57a6-91e0-f43f044423ea",
+  "name": "Challenger Deck 2020 Set of 4",
+  "category": "subset",
+  "releaseDate": "2020-02-17",
+  "subtype": "challenger",
+  "identifiers": {
+    "cardtraderId": "107839",
+    "csiId": "294799",
+    "mcmId": "440353",
+    "tcgplayerProductId": "209424",
+    "tntId": "1659277"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/09879e657464ada3"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Challenger Deck 2020 Allied Fires",
+        "set": "q04",
+        "uuid": "f900867d-05eb-56bc-a5af-4e61ddb85fe1"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2020 Cavalcade Charge",
+        "set": "q04",
+        "uuid": "80133799-1750-588b-84e1-0ed143a3c2b5"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2020 Final Adventure",
+        "set": "q04",
+        "uuid": "468bc4c6-9ccc-526d-8dab-8f0d5ab7cdd7"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2020 Flash of Ferocity",
+        "set": "q04",
+        "uuid": "d0b31bb5-4cea-555c-a63d-512ffa4774ea"
+      }
+    ]
+  },
+  "setCode": "Q04",
+  "setName": "Challenger Decks 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 209424,
+      "name": "Challenger Deck 2020 (Set of 4)",
+      "cleanName": "Challenger Deck 2020 Set of 4",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/209424_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/209424/magic-challenger-decks-challenger-deck-2020-set-of-4",
+      "modifiedOn": "2020-03-30T18:05:40.477",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect each one of the 2020 Challenger decks: Allied Fires, Cavalade Charge, Final Adventure & Flash of Ferocity."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509926152"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 209424,
+        "lowPrice": 103.96,
+        "midPrice": 112.5,
+        "highPrice": 149.99,
+        "marketPrice": 84.32,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

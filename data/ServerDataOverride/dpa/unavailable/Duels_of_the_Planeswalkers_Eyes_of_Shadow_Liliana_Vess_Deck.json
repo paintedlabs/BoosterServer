@@ -1,0 +1,68 @@
+{
+  "uuid": "97f492e4-9457-5fb3-b25c-17d20e7f2d0b",
+  "name": "Duels of the Planeswalkers Eyes of Shadow Liliana Vess Deck",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1100464",
+    "cardKingdomId": "131152",
+    "cardtraderId": "47495",
+    "csiId": "97563",
+    "mcmId": "240424",
+    "scgId": "SLD-MTG-INT-DPADECK-EN-LILIANA",
+    "tcgplayerProductId": "77285",
+    "tntId": "294703"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8172a5275a010461"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Eyes of Shadow",
+        "set": "dpa"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "2010 Core Set Booster Pack",
+        "set": "m10",
+        "uuid": "f52aeac6-933a-55e2-a973-36421c155ea1"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77285,
+      "name": "DotP - Eyes of Shadow Liliana Vess Deck",
+      "cleanName": "DotP Eyes of Shadow Liliana Vess Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77285_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/77285/magic-duels-of-the-planeswalkers-dotp-eyes-of-shadow-liliana-vess-deck",
+      "modifiedOn": "2014-01-06T17:50:10.15",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77285,
+        "lowPrice": 59.99,
+        "midPrice": 63.98,
+        "highPrice": 92.38,
+        "marketPrice": 35,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

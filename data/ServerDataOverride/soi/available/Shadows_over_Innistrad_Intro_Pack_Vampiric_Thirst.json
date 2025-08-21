@@ -1,0 +1,73 @@
+{
+  "uuid": "e48c8c2d-e1d4-581a-995f-2886965534b0",
+  "name": "Shadows over Innistrad Intro Pack Vampiric Thirst",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-03-15",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1108001",
+    "cardKingdomId": "227625",
+    "cardtraderId": "48402",
+    "mcmId": "288897",
+    "tcgplayerProductId": "112956",
+    "tntId": "1092933"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/719388535ea19a22"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Vampiric Thirst",
+        "set": "soi"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Shadows over Innistrad Booster Pack",
+        "set": "soi",
+        "uuid": "a06fe76f-0b7f-59cc-b2b9-04b4c436df10"
+      }
+    ]
+  },
+  "setCode": "SOI",
+  "setName": "Shadows over Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 112956,
+      "name": "Shadows over Innistrad Intro Pack - Vampiric Thirst (B)",
+      "cleanName": "Shadows over Innistrad Intro Pack Vampiric Thirst B",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/112956_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1708,
+      "url": "https://www.tcgplayer.com/product/112956/magic-shadows-over-innistrad-shadows-over-innistrad-intro-pack-vampiric-thirst-b",
+      "modifiedOn": "2018-08-10T13:36:21.887",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Intro packs are the perfect first purchase for a new Magic player.\r\n<br>Contains:\r\n<br>• Ready-to-play 60-card deck featuring a foil premium card\r\n<br>• 2 Shadows over Innistrad 15-card booster packs\r\n<br>• Strategy Insert\r\n<br>• Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 112956,
+        "lowPrice": 89.9,
+        "midPrice": 89.99,
+        "highPrice": 99.94,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "uuid": "688b6d53-b1ad-5bed-a83a-357fc8b2b865",
+  "name": "Commander 2017 Commander Deck Vampiric Bloodlust",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2017-08-25",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1476997",
+    "cardKingdomId": "213483",
+    "cardtraderId": "44562",
+    "csiId": "242593",
+    "mcmId": "300283",
+    "scgId": "SLD-MTG-MLT-C17-EN-VAMPIRIC",
+    "tcgplayerProductId": "139781",
+    "tntId": "1126926"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/51016425c4e26a38",
+    "tcgplayer": "https://mtgjson.com/links/1500273f0e15eb30"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Vampiric Bloodlust",
+        "set": "c17"
+      }
+    ]
+  },
+  "setCode": "C17",
+  "setName": "Commander 2017",
+  "tcgcsvData": {
+    "product": {
+      "productId": 139781,
+      "name": "Commander 2017 Deck - Vampiric Bloodlust",
+      "cleanName": "Commander 2017 Deck Vampiric Bloodlust",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/139781_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2009,
+      "url": "https://www.tcgplayer.com/product/139781/magic-commander-2017-commander-2017-deck-vampiric-bloodlust",
+      "modifiedOn": "2017-08-17T17:33:49.613",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-08-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "As the sole origin of their bloodline, Edgar Markov commands the Markov vampires of Innistrad. With his tremendous influence, Edgar continually expands his vampire army, overwhelming foes with his ageless legion."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 139781,
+        "lowPrice": 389.99,
+        "midPrice": 404.94,
+        "highPrice": 679.99,
+        "marketPrice": 407.56,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

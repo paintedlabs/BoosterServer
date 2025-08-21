@@ -1,0 +1,81 @@
+{
+  "uuid": "06876ad7-678e-5986-8929-6d51491eb49f",
+  "name": "Conflux Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100353",
+    "cardKingdomId": "126255",
+    "cardtraderId": "47345",
+    "csiId": "97466",
+    "mcmId": "210159",
+    "scgId": "SLD-MTG-BUN-CFX-EN",
+    "tcgplayerProductId": "78307",
+    "tntId": "237692"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/63171dca50d3a705"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "One card box"
+      },
+      {
+        "name": "The Conflux Player's Guide"
+      },
+      {
+        "name": "A learn-to-play insert"
+      },
+      {
+        "name": "A sample chapter from Agents of Artifice"
+      },
+      {
+        "name": "A pack of 40 basic land"
+      },
+      {
+        "name": "Conflux Spindown Life Counter"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Conflux Booster Pack",
+        "set": "con",
+        "uuid": "ee25fb77-38eb-56ce-8369-917cd2c0566b"
+      }
+    ]
+  },
+  "setCode": "CON",
+  "setName": "Conflux",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78307,
+      "name": "Conflux - Fat Pack",
+      "cleanName": "Conflux Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78307_200w.jpg",
+      "categoryId": 1,
+      "groupId": 26,
+      "url": "https://www.tcgplayer.com/product/78307/magic-conflux-conflux-fat-pack",
+      "modifiedOn": "2014-01-07T15:30:34.86",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78307,
+        "lowPrice": 174.75,
+        "midPrice": 187.49,
+        "highPrice": 449.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

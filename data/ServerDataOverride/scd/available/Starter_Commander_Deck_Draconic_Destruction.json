@@ -1,0 +1,79 @@
+{
+  "uuid": "eda5f16c-19f2-517e-80b7-0a50d48a91d9",
+  "name": "Starter Commander Deck Draconic Destruction",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-12-02",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2275526",
+    "cardKingdomId": "270187",
+    "cardtraderId": "224265",
+    "csiId": "349031",
+    "mcmId": "678617",
+    "miniaturemarketId": "287978",
+    "scgId": "SLD-MTG-MLT-SCD-EN-DRACONIC",
+    "tcgplayerProductId": "448436",
+    "tntId": "1770667"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/03c2251d3f138a93",
+    "tcgplayer": "https://mtgjson.com/links/5bcce06dba9bff00"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Draconic Destruction",
+        "set": "scd"
+      }
+    ],
+    "other": [
+      {
+        "name": "10 double sided tokens"
+      }
+    ]
+  },
+  "setCode": "SCD",
+  "setName": "Starter Commander Decks",
+  "tcgcsvData": {
+    "product": {
+      "productId": 448436,
+      "name": "Starter Commander Deck - Draconic Destruction",
+      "cleanName": "Starter Commander Deck Draconic Destruction",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/448436_200w.jpg",
+      "categoryId": 1,
+      "groupId": 17662,
+      "url": "https://www.tcgplayer.com/product/448436/magic-starter-commander-decks-starter-commander-deck-draconic-destruction",
+      "modifiedOn": "2022-12-02T05:03:12.74",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-12-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Details pending!\r\n<br>\r\nContents:\r\n<br>\r\n• 99 cards and 1 foil-etched card\r\n<br>\r\n• 10 double-sided tokens\r\n<br>\r\n• 1 deck box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166134543"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 448436,
+        "lowPrice": 36,
+        "midPrice": 55,
+        "highPrice": 101.92,
+        "marketPrice": 43.25,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

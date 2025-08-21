@@ -1,0 +1,82 @@
+{
+  "uuid": "84ac02a9-323d-55f4-8d6b-9d390094b894",
+  "name": "Guilds of Ravnica Guild Kit Izzet",
+  "category": "kit",
+  "cardCount": 60,
+  "releaseDate": "2018-11-02",
+  "subtype": "guild_kit",
+  "identifiers": {
+    "abuId": "1537292",
+    "cardKingdomId": "222339",
+    "cardtraderId": "169305",
+    "csiId": "263963",
+    "mcmId": "364605",
+    "scgId": "SLD-MTG-BXS-GK1-EN-IZZET",
+    "tcgplayerProductId": "173369",
+    "tntId": "1194095"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/7375283ec8fa23a4",
+    "tcgplayer": "https://mtgjson.com/links/5feeefbfbc38d4e8"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Izzet",
+        "set": "gk1"
+      }
+    ],
+    "other": [
+      {
+        "name": "Guild Kit Spindown"
+      },
+      {
+        "name": "Official Izzet Guild Pin"
+      },
+      {
+        "name": "Izzet Symbol Sticker"
+      },
+      {
+        "name": "Insert With Mission Instructions"
+      }
+    ]
+  },
+  "setCode": "GK1",
+  "setName": "GRN Guild Kit",
+  "tcgcsvData": {
+    "product": {
+      "productId": 173369,
+      "name": "Guilds of Ravnica - Guild Kit: Izzet",
+      "cleanName": "Guilds of Ravnica Guild Kit Izzet",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/173369_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2334,
+      "url": "https://www.tcgplayer.com/product/173369/magic-guilds-of-ravnica-guild-kits-guilds-of-ravnica-guild-kit-izzet",
+      "modifiedOn": "2018-09-26T15:32:52.853",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-11-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "On Ravnica, whoever you are—soldier or scientist, merchant or spy—your guild is the core of your identity. It provides structure and greater purpose. Now, the time has come to defend it.\r\n<br>\r\n<br>Contains:\r\n<br>• 1 ready-to-play 60-card Izzet (blue/red) deck\r\n<br>• 1 Spindown life counter\r\n<br>• 1 official Izzet guild pin\r\n<br>• 1 Izzet guild symbol sticker\r\n<br>• 1 insert with mission instructions"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 173369,
+        "lowPrice": 29.99,
+        "midPrice": 44.94,
+        "highPrice": 64.95,
+        "marketPrice": 39.55,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

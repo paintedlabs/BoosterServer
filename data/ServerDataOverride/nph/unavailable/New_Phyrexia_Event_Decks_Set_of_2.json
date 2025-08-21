@@ -1,0 +1,63 @@
+{
+  "uuid": "ec8376e6-c00b-5a22-93c8-cd8c7d4c0b73",
+  "name": "New Phyrexia Event Decks Set of 2",
+  "category": "subset",
+  "subtype": "event",
+  "identifiers": {
+    "abuId": "1100917",
+    "cardtraderId": "47616",
+    "mcmId": "246676",
+    "tcgplayerProductId": "42101"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a33958f0a5937013"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "New Phyrexia Event Deck War of Attrition",
+        "set": "nph",
+        "uuid": "9664a8f2-e9dc-5225-971c-d4775cb26c77"
+      },
+      {
+        "count": 1,
+        "name": "New Phyrexia Event Deck Rot from Within",
+        "set": "nph",
+        "uuid": "fe5118a1-e1cf-537b-8419-e18fd0afd4c0"
+      }
+    ]
+  },
+  "setCode": "NPH",
+  "setName": "New Phyrexia",
+  "tcgcsvData": {
+    "product": {
+      "productId": 42101,
+      "name": "New Phyrexia - Event Deck - Set of Two",
+      "cleanName": "New Phyrexia Event Deck Set of Two",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/42101_200w.jpg",
+      "categoryId": 1,
+      "groupId": 79,
+      "url": "https://www.tcgplayer.com/product/42101/magic-new-phyrexia-new-phyrexia-event-deck-set-of-two",
+      "modifiedOn": "2015-12-14T14:44:39.393",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 42101,
+        "lowPrice": 194.95,
+        "midPrice": 194.95,
+        "highPrice": 194.95,
+        "marketPrice": 194.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "uuid": "f82f8fcf-4049-5b05-a1c9-27770d625ba1",
+  "name": "Commander 2017 Commander Deck Arcane Wizardry",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2017-08-25",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1476994",
+    "cardKingdomId": "213482",
+    "cardtraderId": "44561",
+    "csiId": "242590",
+    "mcmId": "300284",
+    "scgId": "SLD-MTG-MLT-C17-EN-ARCANE",
+    "tcgplayerProductId": "139843",
+    "tntId": "1126927"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/d371887dc6416c5e",
+    "tcgplayer": "https://mtgjson.com/links/3f04672c572a4a5a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Arcane Wizardry",
+        "set": "c17"
+      }
+    ]
+  },
+  "setCode": "C17",
+  "setName": "Commander 2017",
+  "tcgcsvData": {
+    "product": {
+      "productId": 139843,
+      "name": "Commander 2017 Deck - Arcane Wizardry",
+      "cleanName": "Commander 2017 Deck Arcane Wizardry",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/139843_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2009,
+      "url": "https://www.tcgplayer.com/product/139843/magic-commander-2017-commander-2017-deck-arcane-wizardry",
+      "modifiedOn": "2017-08-17T17:32:52.117",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-08-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Inalla, Archmage Ritualist delves into arcane mysteries in pursuit of forbidden dark magic. Gathering an inner circle of loyal acolytes to her cause, Inalla harnesses their collective power to extract the life force from her enemies."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 139843,
+        "lowPrice": 108.85,
+        "midPrice": 116.81,
+        "highPrice": 179.98,
+        "marketPrice": 109.71,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

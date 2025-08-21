@@ -1,0 +1,79 @@
+{
+  "uuid": "a7fa406e-78f9-5bee-ae80-0059efd9ace4",
+  "name": "Core Set 2019 Planeswalker Deck Tezzeret",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-07-13",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1511007",
+    "cardKingdomId": "219807",
+    "cardtraderId": "48707",
+    "mcmId": "319292",
+    "scgId": "SLD-MTG-INT-M19PWDECK-EN-TEZZERET",
+    "tcgplayerProductId": "166560",
+    "tntId": "1178166"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a05daf285fa429c9"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Tezzeret",
+        "set": "m19"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2019 Booster Pack",
+        "set": "m19",
+        "uuid": "36d4765d-add1-5d6b-8bff-f342ef62a3d0"
+      }
+    ]
+  },
+  "setCode": "M19",
+  "setName": "Core Set 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 166560,
+      "name": "Core Set 2019 - Planeswalker Deck [Tezzeret]",
+      "cleanName": "Core Set 2019 Planeswalker Deck Tezzeret",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/166560_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2250,
+      "url": "https://www.tcgplayer.com/product/166560/magic-core-set-2019-core-set-2019-planeswalker-deck-tezzeret",
+      "modifiedOn": "2018-06-23T19:22:08.07",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-07-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck \r\n<br>• 1 Core 2019 booster pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509661299"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 166560,
+        "lowPrice": 22.99,
+        "midPrice": 29.48,
+        "highPrice": 32.96,
+        "marketPrice": 27.97,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

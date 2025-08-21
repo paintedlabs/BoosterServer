@@ -1,0 +1,65 @@
+{
+  "uuid": "f6a6ea25-c806-542a-82e5-5c4ad645c32e",
+  "name": "Duels of the Planeswalkers 2014 PS3 Promo Pack",
+  "category": "booster_pack",
+  "cardCount": 6,
+  "subtype": "promotional",
+  "identifiers": {
+    "cardtraderId": "51097",
+    "mcmId": "262405",
+    "tcgplayerProductId": "77291",
+    "tntId": "1660321"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7160258602129db0"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Ogre Battledriver",
+        "number": "2",
+        "set": "pdp14",
+        "uuid": "47ccb61a-3662-5dde-968d-24ae77e072c5"
+      }
+    ],
+    "pack": [
+      {
+        "code": "duelspromo",
+        "set": "m14"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77291,
+      "name": "Duels of the Planeswalkers 2014 PS3 Promo Pack",
+      "cleanName": "Duels of the Planeswalkers 2014 PS3 Promo Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77291_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/77291/magic-duels-of-the-planeswalkers-duels-of-the-planeswalkers-2014-ps3-promo-pack",
+      "modifiedOn": "2020-08-18T18:01:00.783",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77291,
+        "lowPrice": 9.95,
+        "midPrice": 16.72,
+        "highPrice": 27.79,
+        "marketPrice": 9.5,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

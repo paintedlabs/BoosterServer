@@ -1,0 +1,92 @@
+{
+  "uuid": "ae9ef0cb-c344-534f-94c0-fc2b0138d19e",
+  "name": "Commander Legends Battle for Baldurs Gate Commander Deck Party Time",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-06-10",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2195740",
+    "cardKingdomId": "260608",
+    "cardtraderId": "208733",
+    "csiId": "334348",
+    "mcmId": "651788",
+    "scgId": "SLD-MTG-MLT-CLB-EN-PARTY",
+    "tcgplayerProductId": "267025",
+    "tntId": "1747121"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/f25e53183b64ec69",
+    "tcgplayer": "https://mtgjson.com/links/b6ac3246f355e2c0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Party Time",
+        "set": "clb"
+      }
+    ],
+    "other": [
+      {
+        "name": "Cardstock Display Commander"
+      },
+      {
+        "name": "Life Tracker"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander Legends Battle for Baldurs Gate Collector Booster Sample Pack",
+        "set": "clb",
+        "uuid": "d72b8065-9cc3-531b-a4e6-16edfdec49bf"
+      }
+    ]
+  },
+  "setCode": "CLB",
+  "setName": "Commander Legends: Battle for Baldur's Gate",
+  "tcgcsvData": {
+    "product": {
+      "productId": 267025,
+      "name": "Commander Legends: Battle for Baldur's Gate - Party Time Commander Deck",
+      "cleanName": "Commander Legends Battle for Baldurs Gate Party Time Commander Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/267025_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3047,
+      "url": "https://www.tcgplayer.com/product/267025/magic-commander-legends-battle-for-baldurs-gate-commander-legends-battle-for-baldurs-gate-party-time-commander-deck",
+      "modifiedOn": "2022-06-10T04:03:55.07",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-06-10T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Play epic multiplayer games in the world of Dungeons & Dragons. The Party Time Commander Legends: Battle for Baldur’s Gate Commander Deck includes 1 ready-to-play White-Black deck of 100 Magic cards (3 traditional foil, 97 nonfoil), a 2-card Collector Booster Sample Pack, 1 foil-etched Display Commander (a thick cardstock copy of the commander card with foil etched into the card’s border and art), 10 double-sided tokens, 1 deck box (can hold 100 sleeved cards), 1 life tracker, and 1 reference card. Introduces 10 MTG cards not found in the main CLB set."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166181844"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 267025,
+        "lowPrice": 129.38,
+        "midPrice": 139.39,
+        "highPrice": 229.99,
+        "marketPrice": 125.3,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

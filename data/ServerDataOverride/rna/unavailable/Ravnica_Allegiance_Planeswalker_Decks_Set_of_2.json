@@ -1,0 +1,69 @@
+{
+  "uuid": "d10acfe7-d5de-5538-a2ac-45c0f0edeb60",
+  "name": "Ravnica Allegiance Planeswalker Decks Set of 2",
+  "category": "subset",
+  "releaseDate": "2019-01-25",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1551806",
+    "scgId": "SLD-MTG-INT-RNAPWDECK-EN-SET2",
+    "tcgplayerProductId": "182132"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/27933ed2e02a309d"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Planeswalker Deck Domri",
+        "set": "rna",
+        "uuid": "03e8c8c4-7557-5da9-9ecd-b41fedd88138"
+      },
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Planeswalker Deck Dovin",
+        "set": "rna",
+        "uuid": "2f9f6ac4-8a94-529c-8a0b-a5dd0e2e141d"
+      }
+    ]
+  },
+  "setCode": "RNA",
+  "setName": "Ravnica Allegiance",
+  "tcgcsvData": {
+    "product": {
+      "productId": 182132,
+      "name": "Ravnica Allegiance - Planeswalker Deck [Set of 2]",
+      "cleanName": "Ravnica Allegiance Planeswalker Deck Set of 2",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/182132_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2366,
+      "url": "https://www.tcgplayer.com/product/182132/magic-ravnica-allegiance-ravnica-allegiance-planeswalker-deck-set-of-2",
+      "modifiedOn": "2019-01-23T13:22:52.99",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-01-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 2 60-card decks\r\n<br>• 2 premium cards\r\n<br>• 4 Ravnica Allegiance booster packs"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 182132,
+        "lowPrice": 38,
+        "midPrice": 40.85,
+        "highPrice": 43.69,
+        "marketPrice": 35.96,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

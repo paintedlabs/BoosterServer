@@ -1,0 +1,71 @@
+{
+  "uuid": "468bc4c6-9ccc-526d-8dab-8f0d5ab7cdd7",
+  "name": "Challenger Deck 2020 Final Adventure",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2020-02-17",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1828133",
+    "cardKingdomId": "231908",
+    "cardtraderId": "107670",
+    "csiId": "294795",
+    "mcmId": "440338",
+    "tcgplayerProductId": "209421",
+    "tntId": "1659273"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7a467597719f0c49"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Final Adventure",
+        "set": "q04"
+      }
+    ]
+  },
+  "setCode": "Q04",
+  "setName": "Challenger Decks 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 209421,
+      "name": "Challenger Deck 2020: Final Adventure",
+      "cleanName": "Challenger Deck 2020 Final Adventure",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/209421_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/209421/magic-challenger-decks-challenger-deck-2020-final-adventure",
+      "modifiedOn": "2020-03-30T18:06:11.52",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains:\r\n<br>• 60-card main deck\r\n<br>• 15-card sideboard\r\n<br>• A box capable of holding 75 sleeved cards\r\n<br>• Spindown life counter\r\n<br>• Quick reference guide"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509926152"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 209421,
+        "lowPrice": 18,
+        "midPrice": 24.48,
+        "highPrice": 36.9,
+        "marketPrice": 20.67,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

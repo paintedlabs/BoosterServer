@@ -1,0 +1,74 @@
+{
+  "uuid": "8f1fcc1c-d6aa-5e8e-989d-0db882750641",
+  "name": "Journey Into Nyx Intro Pack Fates Foreseen",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100652",
+    "cardKingdomId": "193937",
+    "cardtraderId": "48107",
+    "csiId": "202687",
+    "mcmId": "266588",
+    "scgId": "SLD-MTG-INT-JOUINTRO-EN-FATES",
+    "tcgplayerProductId": "82550",
+    "tntId": "1053725"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/93b443d402317cfa"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Fates Foreseen",
+        "set": "jou"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Journey Into Nyx Booster Pack",
+        "set": "jou",
+        "uuid": "ef8281b6-54ab-578a-baec-62f5c79977c0"
+      }
+    ]
+  },
+  "setCode": "JOU",
+  "setName": "Journey into Nyx",
+  "tcgcsvData": {
+    "product": {
+      "productId": 82550,
+      "name": "Journey Into Nyx - Intro Pack - Fates Foreseen",
+      "cleanName": "Journey Into Nyx Intro Pack Fates Foreseen",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/82550_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1277,
+      "url": "https://www.tcgplayer.com/product/82550/magic-journey-into-nyx-journey-into-nyx-intro-pack-fates-foreseen",
+      "modifiedOn": "2021-08-05T14:25:43.98",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck, two Journey Into Nyx booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 82550,
+        "lowPrice": 12,
+        "midPrice": 19.92,
+        "highPrice": 19.99,
+        "marketPrice": 19.93,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

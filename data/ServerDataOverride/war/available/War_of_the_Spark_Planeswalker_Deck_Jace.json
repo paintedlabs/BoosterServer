@@ -1,0 +1,75 @@
+{
+  "uuid": "e45aa0c7-35b9-59b6-88eb-9bdba320097e",
+  "name": "War of the Spark Planeswalker Deck Jace",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2019-04-01",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1568035",
+    "cardKingdomId": "224029",
+    "cardtraderId": "56902",
+    "csiId": "272416",
+    "mcmId": "371860",
+    "scgId": "SLD-MTG-INT-WARPWDECK-EN-JACE",
+    "tcgplayerProductId": "187179",
+    "tntId": "1469262"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/9b384f858f6e2bbd"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Jace, Arcane Strategist",
+        "set": "war"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "War of the Spark Booster Pack",
+        "set": "war",
+        "uuid": "3020fb4c-6968-514c-81da-09f7f6a907ec"
+      }
+    ]
+  },
+  "setCode": "WAR",
+  "setName": "War of the Spark",
+  "tcgcsvData": {
+    "product": {
+      "productId": 187179,
+      "name": "War of the Spark - Planeswalker Deck [Jace]",
+      "cleanName": "War of the Spark Planeswalker Deck Jace",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/187179_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2418,
+      "url": "https://www.tcgplayer.com/product/187179/magic-war-of-the-spark-war-of-the-spark-planeswalker-deck-jace",
+      "modifiedOn": "2019-05-08T18:39:37.663",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck\r\n<br>• 2 War of the Spark booster packs \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert\r\n<br><br>More information coming soon..."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 187179,
+        "lowPrice": 32.99,
+        "midPrice": 39.99,
+        "highPrice": 44.99,
+        "marketPrice": 39.98,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "uuid": "0fe78218-2825-5bac-aab4-3c1a5cf9c37f",
+  "name": "Guilds of Ravnica Guild Kit Selesnya",
+  "category": "kit",
+  "cardCount": 60,
+  "releaseDate": "2018-11-02",
+  "subtype": "guild_kit",
+  "identifiers": {
+    "abuId": "1537072",
+    "cardKingdomId": "222342",
+    "cardtraderId": "169309",
+    "csiId": "263964",
+    "mcmId": "364608",
+    "scgId": "SLD-MTG-BXS-GK1-EN-SELESNYA",
+    "tcgplayerProductId": "173370",
+    "tntId": "1194086"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/9d3eeeea631ce3ee",
+    "tcgplayer": "https://mtgjson.com/links/4a8a2c7ad6e9d41f"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Selesnya",
+        "set": "gk1"
+      }
+    ],
+    "other": [
+      {
+        "name": "Guild Kit Spindown"
+      },
+      {
+        "name": "Official Selesnya Guild Pin"
+      },
+      {
+        "name": "Selesnya Symbol Sticker"
+      },
+      {
+        "name": "Insert With Mission Instructions"
+      }
+    ]
+  },
+  "setCode": "GK1",
+  "setName": "GRN Guild Kit",
+  "tcgcsvData": {
+    "product": {
+      "productId": 173370,
+      "name": "Guilds of Ravnica - Guild Kit: Selesnya",
+      "cleanName": "Guilds of Ravnica Guild Kit Selesnya",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/173370_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2334,
+      "url": "https://www.tcgplayer.com/product/173370/magic-guilds-of-ravnica-guild-kits-guilds-of-ravnica-guild-kit-selesnya",
+      "modifiedOn": "2018-09-26T15:33:07.083",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-11-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "On Ravnica, whoever you are—soldier or scientist, merchant or spy—your guild is the core of your identity. It provides structure and greater purpose. Now, the time has come to defend it.\r\n<br>\r\n<br>Contains:\r\n<br>• 1 ready-to-play 60-card Selesnya (white/green) deck\r\n<br>• 1 Spindown life counter\r\n<br>• 1 official Selesnya guild pin\r\n<br>• 1 Selesnya guild symbol sticker\r\n<br>• 1 insert with mission instructions"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 173370,
+        "lowPrice": 39.89,
+        "midPrice": 44.89,
+        "highPrice": 54.95,
+        "marketPrice": 33.29,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "uuid": "cfe928b7-159b-5a35-8367-994668083850",
+  "name": "Ixalan Planeswalker Decks Set of 2",
+  "category": "subset",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1476992",
+    "scgId": "SLD-MTG-INT-XLNPWDECK-EN-SET2",
+    "tcgplayerProductId": "145218"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7cf80807fe0f0ab6"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Ixalan Planeswalker Deck Jace",
+        "set": "xln",
+        "uuid": "0c47809b-6fb9-5f53-9d28-f9f868de627b"
+      },
+      {
+        "count": 1,
+        "name": "Ixalan Planeswalker Deck Huatli",
+        "set": "xln",
+        "uuid": "19d7748e-22b9-5648-ae25-a8ff548afae0"
+      }
+    ]
+  },
+  "setCode": "XLN",
+  "setName": "Ixalan",
+  "tcgcsvData": {
+    "product": {
+      "productId": 145218,
+      "name": "Ixalan - Planeswalker Deck [Set of 2]",
+      "cleanName": "Ixalan Planeswalker Deck Set of 2",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/145218_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2043,
+      "url": "https://www.tcgplayer.com/product/145218/magic-ixalan-ixalan-planeswalker-deck-set-of-2",
+      "modifiedOn": "2018-02-28T19:51:44.697",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect both Planeswalker decks that feature <a href=\"http://shop.tcgplayer.com/magic/ixalan/huatli-dinosaur-knight\">\"Huatli, Dinosaur Knight\"</a> and <a href=\"http://shop.tcgplayer.com/magic/ixalan/jace-ingenious-mind-mage\">\"Jace, Ingenious Mind-Mage\"</a>. \r\n<Br>\r\n<br>Each deck contains the following:\r\n<br>\r\n<br><b>-</b> 1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card \r\n<br><b>-</b> 2 Ixalan booster packs\r\n<br><b>-</b> 1 Strategy insert\r\n<br><b>-</b> 1 Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 145218,
+        "lowPrice": 89.77,
+        "midPrice": 92.39,
+        "highPrice": 95,
+        "marketPrice": 85,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

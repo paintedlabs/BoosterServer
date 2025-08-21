@@ -1,0 +1,73 @@
+{
+  "uuid": "6d8f6897-1a42-554f-91bb-b01e7deed9e8",
+  "name": "Commander Legends Commander Deck Display",
+  "category": "deck_box",
+  "releaseDate": "2020-11-20",
+  "subtype": "commander",
+  "identifiers": {
+    "tcgplayerProductId": "224546",
+    "tntId": "1677719"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0c7c88e785367bbd"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 3,
+        "name": "Commander Legends Commander Deck Arm for Battle",
+        "set": "cmr",
+        "uuid": "da9a12a1-1e59-5672-b16f-15cb6b45ac66"
+      },
+      {
+        "count": 3,
+        "name": "Commander Legends Commander Deck Reap the Tides",
+        "set": "cmr",
+        "uuid": "94dead0e-794d-5b29-bd99-222f54d519e0"
+      }
+    ]
+  },
+  "setCode": "CMR",
+  "setName": "Commander Legends",
+  "tcgcsvData": {
+    "product": {
+      "productId": 224546,
+      "name": "Commander Legends - Commander Deck Display",
+      "cleanName": "Commander Legends Commander Deck Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/224546_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2708,
+      "url": "https://www.tcgplayer.com/product/224546/magic-commander-legends-commander-legends-commander-deck-display",
+      "modifiedOn": "2020-11-20T05:03:27.68",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-11-20T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "100-card ready to play deck. Designed as an introduction to Commander, these decks are ready-to-play right out of the box, without sacrificing the richness and depth that's made Magic iconic.\r\n<br>Three cards printed for the first time. These Commander decks debut three cards each, plus they're loaded with reprints to kickstart the Commander experience.\r\n<br>Contents of each deck: 1 ready-to-play deck of 99 Magic: The Gathering cards, 1 legendary foil commander card, 10 tokens, 1 deck box (can hold 100 sleeved cards), 1 life tracker\r\n<br>Configuration: 6 decks (3 of each deck)"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509928965"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 224546,
+        "lowPrice": 449.95,
+        "midPrice": 449.95,
+        "highPrice": 449.95,
+        "marketPrice": 392.5,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

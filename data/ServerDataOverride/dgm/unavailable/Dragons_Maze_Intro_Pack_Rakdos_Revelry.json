@@ -1,0 +1,74 @@
+{
+  "uuid": "b74eea76-9cf2-5aa8-b4fe-b03712f16c94",
+  "name": "Dragons Maze Intro Pack Rakdos Revelry",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100418",
+    "cardKingdomId": "189630",
+    "cardtraderId": "47943",
+    "csiId": "192764",
+    "mcmId": "261683",
+    "scgId": "SLD-MTG-INT-DGMINTRO-EN-RAKDOS",
+    "tcgplayerProductId": "68030",
+    "tntId": "1026692"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d56619cf1140e62a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Rakdos Revelry",
+        "set": "dgm"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Dragons Maze Booster Pack",
+        "set": "dgm",
+        "uuid": "b9c1d8bb-29d1-5572-b3c3-26363ecfdada"
+      }
+    ]
+  },
+  "setCode": "DGM",
+  "setName": "Dragon's Maze",
+  "tcgcsvData": {
+    "product": {
+      "productId": 68030,
+      "name": "Dragon's Maze - Intro Pack - Rakdos Revelry",
+      "cleanName": "Dragons Maze Intro Pack Rakdos Revelry",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/68030_200w.jpg",
+      "categoryId": 1,
+      "groupId": 570,
+      "url": "https://www.tcgplayer.com/product/68030/magic-dragons-maze-dragons-maze-intro-pack-rakdos-revelry",
+      "modifiedOn": "2014-01-06T17:28:21.493",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 82207 3"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 68030,
+        "lowPrice": 20.93,
+        "midPrice": 20.93,
+        "highPrice": 20.99,
+        "marketPrice": 20.93,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

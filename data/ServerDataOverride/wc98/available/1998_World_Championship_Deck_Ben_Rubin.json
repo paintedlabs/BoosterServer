@@ -1,0 +1,67 @@
+{
+  "uuid": "60578129-6080-50e2-8ae2-8fc5f6784381",
+  "name": "1998 World Championship Deck Ben Rubin",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100227",
+    "cardKingdomId": "240322",
+    "cardtraderId": "39898",
+    "csiId": "97853",
+    "mcmId": "250158",
+    "scgId": "SLD-MTG-BXS-WCH1998-EN-BENRUBIN",
+    "tcgplayerProductId": "158281",
+    "tntId": "79193"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/e96f6ab4cfc34ccd",
+    "tcgplayer": "https://mtgjson.com/links/3b795a98fa892028"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ben Rubin - Sligh",
+        "set": "wc98"
+      }
+    ]
+  },
+  "setCode": "WC98",
+  "setName": "World Championship Decks 1998",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158281,
+      "name": "World Championship Deck: 1998 Seattle - Ben Rubin, Finalist",
+      "cleanName": "World Championship Deck 1998 Seattle Ben Rubin Finalist",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158281_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/158281/magic-world-championship-decks-world-championship-deck-1998-seattle-ben-rubin-finalist",
+      "modifiedOn": "2018-02-07T13:35:09.067",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>\"Ben Rubin's archetypal red weenie deck took him all the way to the World Championship Finals. This aggressive Sligh deck consists of roughly equal parts direct damage, aggressive creatures, and land.\"</em>\r\n<br>\r\n<br><strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158281,
+        "lowPrice": 99.95,
+        "midPrice": 137.29,
+        "highPrice": 174.63,
+        "marketPrice": 89.56,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

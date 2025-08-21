@@ -1,0 +1,66 @@
+{
+  "uuid": "9ff89c71-310a-5921-b9c5-6ef1c5bfcfca",
+  "name": "2003 World Championship Deck Daniel Zink",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100241",
+    "cardKingdomId": "240333",
+    "cardtraderId": "39917",
+    "csiId": "97875",
+    "mcmId": "250179",
+    "scgId": "SLD-MTG-BXS-WCH2003-EN-DANIELZINK",
+    "tcgplayerProductId": "158305",
+    "tntId": "112088"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/41193262547f29b2"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Daniel Zink - White-Blue-Green Wake",
+        "set": "wc03"
+      }
+    ]
+  },
+  "setCode": "WC03",
+  "setName": "World Championship Decks 2003",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158305,
+      "name": "World Championship Deck: 2003 Berlin - Daniel Zink, World Champion",
+      "cleanName": "World Championship Deck 2003 Berlin Daniel Zink World Champion",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158305_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/158305/magic-world-championship-decks-world-championship-deck-2003-berlin-daniel-zink-world-champion",
+      "modifiedOn": "2018-02-06T14:54:24.303",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>\"Daniel Zink's white-blue-green 'Wake' deck is a control deck at heart. Once the powerful enchantment Mirari's Wake is in play, the deck produces more mana, draws more cards, counters more spells, and makes more Soldiers than opponents can possibly handle.\"</em>\r\n<br>\r\n<br><strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158305,
+        "lowPrice": 149.99,
+        "midPrice": 198.75,
+        "highPrice": 247.5,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

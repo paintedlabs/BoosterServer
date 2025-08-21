@@ -1,0 +1,59 @@
+{
+  "uuid": "d1348419-58c5-550d-a23d-6e681596dbcd",
+  "name": "Nemesis Theme Deck Replicator",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100913",
+    "cardKingdomId": "1167",
+    "cardtraderId": "45622",
+    "csiId": "279777",
+    "mcmId": "253756",
+    "tcgplayerProductId": "116045",
+    "tntId": "106924"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/58ae0c1661deeeba"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Replicator",
+        "set": "nem"
+      }
+    ]
+  },
+  "setCode": "NEM",
+  "setName": "Nemesis",
+  "tcgcsvData": {
+    "product": {
+      "productId": 116045,
+      "name": "Nemesis Theme Deck - Replicator",
+      "cleanName": "Nemesis Theme Deck Replicator",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/116045_200w.jpg",
+      "categoryId": 1,
+      "groupId": 78,
+      "url": "https://www.tcgplayer.com/product/116045/magic-nemesis-nemesis-theme-deck-replicator",
+      "modifiedOn": "2016-03-23T17:06:19.71",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 116045,
+        "lowPrice": 54.99,
+        "midPrice": 54.99,
+        "highPrice": 54.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

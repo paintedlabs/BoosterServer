@@ -1,0 +1,74 @@
+{
+  "uuid": "a78bd391-ba28-5133-bc98-afe2cd878c0a",
+  "name": "Core Set 2019 Planeswalker Deck Vivien",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-07-13",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1511010",
+    "cardKingdomId": "220070",
+    "cardtraderId": "48705",
+    "mcmId": "359978",
+    "scgId": "SLD-MTG-INT-M19PWDECK-EN-VIVIEN",
+    "tcgplayerProductId": "169267",
+    "tntId": "1178936"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d5df1835e6c70c1c"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Vivien",
+        "set": "m19"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2019 Booster Pack",
+        "set": "m19",
+        "uuid": "36d4765d-add1-5d6b-8bff-f342ef62a3d0"
+      }
+    ]
+  },
+  "setCode": "M19",
+  "setName": "Core Set 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 169267,
+      "name": "Core Set 2019 - Planeswalker Deck [Vivien]",
+      "cleanName": "Core Set 2019 Planeswalker Deck Vivien",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/169267_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2250,
+      "url": "https://www.tcgplayer.com/product/169267/magic-core-set-2019-core-set-2019-planeswalker-deck-vivien",
+      "modifiedOn": "2018-06-23T19:00:43.52",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-07-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck \r\n<br>• 1 Core 2019 booster pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 169267,
+        "lowPrice": 39.96,
+        "midPrice": 40.46,
+        "highPrice": 45.95,
+        "marketPrice": 19.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

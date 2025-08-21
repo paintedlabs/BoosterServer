@@ -1,0 +1,75 @@
+{
+  "uuid": "8bc6fefa-db82-5fa6-a9ed-432dba8c8915",
+  "name": "War of the Spark Planeswalker Deck Gideon",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2019-04-01",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1568032",
+    "cardKingdomId": "224028",
+    "cardtraderId": "56903",
+    "csiId": "272415",
+    "mcmId": "371859",
+    "scgId": "SLD-MTG-INT-WARPWDECK-EN-GIDEON",
+    "tcgplayerProductId": "187178",
+    "tntId": "1469261"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ced449ac61aee0eb"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Gideon, the Oathsworn",
+        "set": "war"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "War of the Spark Booster Pack",
+        "set": "war",
+        "uuid": "3020fb4c-6968-514c-81da-09f7f6a907ec"
+      }
+    ]
+  },
+  "setCode": "WAR",
+  "setName": "War of the Spark",
+  "tcgcsvData": {
+    "product": {
+      "productId": 187178,
+      "name": "War of the Spark - Planeswalker Deck [Gideon]",
+      "cleanName": "War of the Spark Planeswalker Deck Gideon",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/187178_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2418,
+      "url": "https://www.tcgplayer.com/product/187178/magic-war-of-the-spark-war-of-the-spark-planeswalker-deck-gideon",
+      "modifiedOn": "2019-05-08T18:39:26.59",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck\r\n<br>• 2 War of the Spark booster packs \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert\r\n<br><br>More information coming soon..."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 187178,
+        "lowPrice": 15.99,
+        "midPrice": 21.74,
+        "highPrice": 29.99,
+        "marketPrice": 21.74,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

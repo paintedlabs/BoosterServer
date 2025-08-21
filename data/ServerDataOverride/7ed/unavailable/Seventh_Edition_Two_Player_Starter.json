@@ -1,0 +1,99 @@
+{
+  "uuid": "49b42259-471a-53ca-882b-53fa55afc7af",
+  "name": "Seventh Edition Two Player Starter",
+  "category": "multiple_decks",
+  "cardCount": 60,
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "abuId": "1100067",
+    "cardKingdomId": "213505",
+    "cardtraderId": "45964",
+    "mcmId": "254936",
+    "tcgplayerProductId": "244394",
+    "tntId": "112136"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d85a0d500b608be8"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Thorn Elemental",
+        "number": "273★",
+        "set": "7ed",
+        "uuid": "bf0c2b85-2e3d-5e12-80bb-c10a552feb2d"
+      }
+    ],
+    "deck": [
+      {
+        "name": "Gold Deck",
+        "set": "7ed"
+      },
+      {
+        "name": "Silver Deck",
+        "set": "7ed"
+      }
+    ],
+    "other": [
+      {
+        "name": "Two playmats"
+      },
+      {
+        "name": "Two cardboard life counters"
+      },
+      {
+        "name": "Two player guides which cover one demo game"
+      },
+      {
+        "name": "One enhanced rule book"
+      },
+      {
+        "name": "One CD with additional test games"
+      },
+      {
+        "name": "One consumer response card"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Seventh Edition Advanced Booster",
+        "set": "7ed",
+        "uuid": "6b50f546-01d9-57c5-84d9-b0663cd13329"
+      }
+    ]
+  },
+  "setCode": "7ED",
+  "setName": "Seventh Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 244394,
+      "name": "7th Edition - 2-Player Starter",
+      "cleanName": "7th Edition 2 Player Starter",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/244394_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2,
+      "url": "https://www.tcgplayer.com/product/244394/magic-7th-edition-7th-edition-2-player-starter",
+      "modifiedOn": "2021-09-10T14:18:04.233",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 244394,
+        "lowPrice": 45.99,
+        "midPrice": 45.99,
+        "highPrice": 45.99,
+        "marketPrice": 39.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

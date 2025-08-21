@@ -1,0 +1,62 @@
+{
+  "uuid": "46ab39d9-82a7-5536-a1aa-2a7ea5140237",
+  "name": "Commander 2015 Commander Deck Seize Control",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2015-11-13",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1100333",
+    "cardKingdomId": "203168",
+    "cardtraderId": "44755",
+    "csiId": "218256",
+    "mcmId": "285769",
+    "scgId": "SLD-MTG-MLT-C15-EN-SEIZE",
+    "tcgplayerProductId": "107625",
+    "tntId": "1082815"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/389fcb0234facaa2",
+    "tcgplayer": "https://mtgjson.com/links/81f1d317128a29f4"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Seize Control",
+        "set": "c15"
+      }
+    ]
+  },
+  "setCode": "C15",
+  "setName": "Commander 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 107625,
+      "name": "Commander 2015 - Seize Control",
+      "cleanName": "Commander 2015 Seize Control",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/107625_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1673,
+      "url": "https://www.tcgplayer.com/product/107625/magic-commander-2015-commander-2015-seize-control",
+      "modifiedOn": "2015-11-12T12:53:24.557",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2015-11-13T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 107625,
+        "lowPrice": 66.99,
+        "midPrice": 73.99,
+        "highPrice": 113.44,
+        "marketPrice": 66.43,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,614 @@
+{
+  "uuid": "352c30fb-ea85-5cba-a6fd-a538cf361be9",
+  "name": "Prophecy Booster Pack",
+  "category": "booster_pack",
+  "cardCount": 15,
+  "subtype": "draft",
+  "identifiers": {
+    "abuId": "1476931",
+    "cardKingdomId": "1226",
+    "cardtraderId": "45633",
+    "csiId": "98047",
+    "mcmId": "210032",
+    "scgId": "SLD-MTG-PCK-PCY-EN",
+    "tcgplayerProductId": "27363",
+    "tntId": "86993"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/0cee2004d7e2b9f4",
+    "tcgplayer": "https://mtgjson.com/links/1fdc4b6e4e2ba63d"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "draft",
+        "set": "pcy"
+      }
+    ]
+  },
+  "setCode": "PCY",
+  "setName": "Prophecy",
+  "extendedData": {
+    "code": "pcy-fat-pack",
+    "boosters": [
+      {
+        "sheets": {
+          "foil_basic": 1,
+          "foil_common": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "foil_basic": {
+        "total_weight": 20,
+        "cards": [
+          {
+            "set": "mmq",
+            "number": "331",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3c75e5ee-810f-54ae-968d-3e42d270a023"
+          },
+          {
+            "set": "mmq",
+            "number": "332",
+            "weight": 1,
+            "foil": true,
+            "uuid": "de345860-f1ed-5fe4-806e-ffda52466c37"
+          },
+          {
+            "set": "mmq",
+            "number": "333",
+            "weight": 1,
+            "foil": true,
+            "uuid": "1ff3b87f-6358-5690-b3c9-a3d8aa6e0e34"
+          },
+          {
+            "set": "mmq",
+            "number": "334",
+            "weight": 1,
+            "foil": true,
+            "uuid": "046ca9b7-5b11-5f77-9dda-8f329c9e24b7"
+          },
+          {
+            "set": "mmq",
+            "number": "335",
+            "weight": 1,
+            "foil": true,
+            "uuid": "21ff94c9-782c-5f66-b85b-db1228c188c6"
+          },
+          {
+            "set": "mmq",
+            "number": "336",
+            "weight": 1,
+            "foil": true,
+            "uuid": "c1f855e1-40b6-5437-85ef-2d04a3b1d58c"
+          },
+          {
+            "set": "mmq",
+            "number": "337",
+            "weight": 1,
+            "foil": true,
+            "uuid": "1eabfcbf-ae04-5290-b5d3-f23785430fe8"
+          },
+          {
+            "set": "mmq",
+            "number": "338",
+            "weight": 1,
+            "foil": true,
+            "uuid": "0619e868-e046-54ad-8188-331e386b3912"
+          },
+          {
+            "set": "mmq",
+            "number": "339",
+            "weight": 1,
+            "foil": true,
+            "uuid": "94a2fb92-ebb8-5f9f-8683-38e9518e7331"
+          },
+          {
+            "set": "mmq",
+            "number": "340",
+            "weight": 1,
+            "foil": true,
+            "uuid": "e341f86f-6b40-5e23-91a0-01f80597e73c"
+          },
+          {
+            "set": "mmq",
+            "number": "341",
+            "weight": 1,
+            "foil": true,
+            "uuid": "1ca6a99e-0980-5a34-b0f6-79cf08ba2f51"
+          },
+          {
+            "set": "mmq",
+            "number": "342",
+            "weight": 1,
+            "foil": true,
+            "uuid": "24635263-dfc2-5e04-9f58-808fb97ae799"
+          },
+          {
+            "set": "mmq",
+            "number": "343",
+            "weight": 1,
+            "foil": true,
+            "uuid": "d103e41a-10e4-5d13-9366-0321a4412d1b"
+          },
+          {
+            "set": "mmq",
+            "number": "344",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3a5253fc-53dd-544e-8782-7a7ea09e838c"
+          },
+          {
+            "set": "mmq",
+            "number": "345",
+            "weight": 1,
+            "foil": true,
+            "uuid": "49508501-518b-5ebd-a756-c5033194fffa"
+          },
+          {
+            "set": "mmq",
+            "number": "346",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ec26167c-d263-578c-b42b-e0cd6ac35a13"
+          },
+          {
+            "set": "mmq",
+            "number": "347",
+            "weight": 1,
+            "foil": true,
+            "uuid": "d0ce4b65-ae5c-5393-9714-d5ae0eac2ad0"
+          },
+          {
+            "set": "mmq",
+            "number": "348",
+            "weight": 1,
+            "foil": true,
+            "uuid": "233c7c1a-bec5-54e9-95f2-2c69f210111f"
+          },
+          {
+            "set": "mmq",
+            "number": "349",
+            "weight": 1,
+            "foil": true,
+            "uuid": "e2ebdd87-99ae-55f4-89fa-6c2903e1d996"
+          },
+          {
+            "set": "mmq",
+            "number": "350",
+            "weight": 1,
+            "foil": true,
+            "uuid": "da0abe46-d341-5aa2-9be1-3ea5ec0e8147"
+          }
+        ]
+      },
+      "foil_common": {
+        "total_weight": 55,
+        "cards": [
+          {
+            "set": "pcy",
+            "number": "2",
+            "weight": 1,
+            "foil": true,
+            "uuid": "db67c6ad-9b6c-5387-ae08-f36a06ca744e"
+          },
+          {
+            "set": "pcy",
+            "number": "6",
+            "weight": 1,
+            "foil": true,
+            "uuid": "14246ce5-a4a8-50be-b6ea-525de2e61e98"
+          },
+          {
+            "set": "pcy",
+            "number": "8",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3b68af8d-b4d7-5723-8a72-f918b9e37d39"
+          },
+          {
+            "set": "pcy",
+            "number": "11",
+            "weight": 1,
+            "foil": true,
+            "uuid": "fb7bd218-c8fe-5781-bc5a-551dcbbf4b0a"
+          },
+          {
+            "set": "pcy",
+            "number": "14",
+            "weight": 1,
+            "foil": true,
+            "uuid": "8106611f-4f4a-534c-a003-1c9048e04c2d"
+          },
+          {
+            "set": "pcy",
+            "number": "16",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9e5658ee-4b68-5d39-8264-a1ff8462fef3"
+          },
+          {
+            "set": "pcy",
+            "number": "19",
+            "weight": 1,
+            "foil": true,
+            "uuid": "7d723ae4-f0a4-5043-8c75-a7c6777211e8"
+          },
+          {
+            "set": "pcy",
+            "number": "20",
+            "weight": 1,
+            "foil": true,
+            "uuid": "da170a78-1238-5866-9c0a-5084c6038b3c"
+          },
+          {
+            "set": "pcy",
+            "number": "24",
+            "weight": 1,
+            "foil": true,
+            "uuid": "5a6ede04-3a2b-511e-b4b3-4b73735a7c4e"
+          },
+          {
+            "set": "pcy",
+            "number": "26",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9c0b8eed-51ec-5654-b6e1-f767b799837c"
+          },
+          {
+            "set": "pcy",
+            "number": "27",
+            "weight": 1,
+            "foil": true,
+            "uuid": "1756a098-dc54-5ca9-8e10-9591c236a0e0"
+          },
+          {
+            "set": "pcy",
+            "number": "29",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ef453da7-2bb3-55ab-97cb-9b91b452a386"
+          },
+          {
+            "set": "pcy",
+            "number": "31",
+            "weight": 1,
+            "foil": true,
+            "uuid": "00fb62e4-8a9f-54b6-ba2d-af4993b25649"
+          },
+          {
+            "set": "pcy",
+            "number": "35",
+            "weight": 1,
+            "foil": true,
+            "uuid": "8b6d009c-af82-580b-84b0-76bcef43daa3"
+          },
+          {
+            "set": "pcy",
+            "number": "36",
+            "weight": 1,
+            "foil": true,
+            "uuid": "43f9b3db-d2c6-562b-a6cd-9ffc6502ca18"
+          },
+          {
+            "set": "pcy",
+            "number": "42",
+            "weight": 1,
+            "foil": true,
+            "uuid": "e460f26f-4e88-5654-9b1a-f92ae9fc790a"
+          },
+          {
+            "set": "pcy",
+            "number": "43",
+            "weight": 1,
+            "foil": true,
+            "uuid": "14e02779-f514-510b-a8b8-b8004e031cf9"
+          },
+          {
+            "set": "pcy",
+            "number": "45",
+            "weight": 1,
+            "foil": true,
+            "uuid": "7691887a-48cf-523b-bd19-c94a756392a2"
+          },
+          {
+            "set": "pcy",
+            "number": "46",
+            "weight": 1,
+            "foil": true,
+            "uuid": "17f9a9bc-fee1-5110-8677-04f4a1fdc20b"
+          },
+          {
+            "set": "pcy",
+            "number": "49",
+            "weight": 1,
+            "foil": true,
+            "uuid": "2dd559a6-ca10-58ff-9b36-6d0efb239bd2"
+          },
+          {
+            "set": "pcy",
+            "number": "50",
+            "weight": 1,
+            "foil": true,
+            "uuid": "88160909-d8ac-56e0-8bed-cbff6ceaa863"
+          },
+          {
+            "set": "pcy",
+            "number": "54",
+            "weight": 1,
+            "foil": true,
+            "uuid": "01f91513-95a1-5a33-a1fc-4eed13e8e4cd"
+          },
+          {
+            "set": "pcy",
+            "number": "55",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9d5fad89-1025-52ea-b355-b3c425f6eb37"
+          },
+          {
+            "set": "pcy",
+            "number": "58",
+            "weight": 1,
+            "foil": true,
+            "uuid": "6d18d1f5-bde4-5324-8a70-eb82a589384a"
+          },
+          {
+            "set": "pcy",
+            "number": "61",
+            "weight": 1,
+            "foil": true,
+            "uuid": "f13379de-5ab4-501e-9bc4-4d5688554e09"
+          },
+          {
+            "set": "pcy",
+            "number": "62",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9f498048-1a99-575b-a46d-ae59b37336a0"
+          },
+          {
+            "set": "pcy",
+            "number": "64",
+            "weight": 1,
+            "foil": true,
+            "uuid": "bac1b5e5-1aa5-52cb-8379-0defda5c8455"
+          },
+          {
+            "set": "pcy",
+            "number": "65",
+            "weight": 1,
+            "foil": true,
+            "uuid": "cd49daa6-fd33-566b-b2b5-24d884d5818c"
+          },
+          {
+            "set": "pcy",
+            "number": "67",
+            "weight": 1,
+            "foil": true,
+            "uuid": "db0255d3-4b50-5a3f-a087-c9bc05089282"
+          },
+          {
+            "set": "pcy",
+            "number": "73",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ce246379-e5f2-5f7b-92f3-c9cf1de55abd"
+          },
+          {
+            "set": "pcy",
+            "number": "78",
+            "weight": 1,
+            "foil": true,
+            "uuid": "74093bc9-e08d-5aba-9d8f-ceb4ad8cfea1"
+          },
+          {
+            "set": "pcy",
+            "number": "79",
+            "weight": 1,
+            "foil": true,
+            "uuid": "d1363d84-b47a-5029-9579-f0a998230aa6"
+          },
+          {
+            "set": "pcy",
+            "number": "81",
+            "weight": 1,
+            "foil": true,
+            "uuid": "72534716-6fb6-5609-a75d-00af189294e9"
+          },
+          {
+            "set": "pcy",
+            "number": "84",
+            "weight": 1,
+            "foil": true,
+            "uuid": "5abdb7bb-fa0d-51e1-830f-2bb794c6e260"
+          },
+          {
+            "set": "pcy",
+            "number": "87",
+            "weight": 1,
+            "foil": true,
+            "uuid": "380eff64-9dc7-5eb3-ac0f-f9f6a7c43f1e"
+          },
+          {
+            "set": "pcy",
+            "number": "88",
+            "weight": 1,
+            "foil": true,
+            "uuid": "25af13e3-873c-5ac8-aa7f-1fc63d03f7ad"
+          },
+          {
+            "set": "pcy",
+            "number": "91",
+            "weight": 1,
+            "foil": true,
+            "uuid": "4619f7ad-5321-5817-9885-3ad20a8c3ecd"
+          },
+          {
+            "set": "pcy",
+            "number": "93",
+            "weight": 1,
+            "foil": true,
+            "uuid": "066b7401-0bec-5bc3-a989-3400668fae0b"
+          },
+          {
+            "set": "pcy",
+            "number": "96",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9bf560bb-0cde-5a16-bb0a-179f7682a639"
+          },
+          {
+            "set": "pcy",
+            "number": "98",
+            "weight": 1,
+            "foil": true,
+            "uuid": "4a132604-de61-5b78-bfa6-6d7dfb42eef7"
+          },
+          {
+            "set": "pcy",
+            "number": "99",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ef55a20e-8aab-55a3-882c-5854f387328f"
+          },
+          {
+            "set": "pcy",
+            "number": "100",
+            "weight": 1,
+            "foil": true,
+            "uuid": "2e10f471-3546-52a1-9dae-61faaa1fe2cb"
+          },
+          {
+            "set": "pcy",
+            "number": "104",
+            "weight": 1,
+            "foil": true,
+            "uuid": "530fe78d-b7bb-52f0-8732-42d6e815caa4"
+          },
+          {
+            "set": "pcy",
+            "number": "108",
+            "weight": 1,
+            "foil": true,
+            "uuid": "f861a59a-d0ff-5712-a38b-02cc88827df4"
+          },
+          {
+            "set": "pcy",
+            "number": "110",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ef584f9b-d6fb-5b43-9c0e-a1e2c9fb1f2c"
+          },
+          {
+            "set": "pcy",
+            "number": "116",
+            "weight": 1,
+            "foil": true,
+            "uuid": "afca6947-a88d-5e82-9a37-e203bffe550b"
+          },
+          {
+            "set": "pcy",
+            "number": "118",
+            "weight": 1,
+            "foil": true,
+            "uuid": "a85fbd67-5ad5-5c98-ac68-c87a19ffa461"
+          },
+          {
+            "set": "pcy",
+            "number": "120",
+            "weight": 1,
+            "foil": true,
+            "uuid": "196eee60-8e8f-58a9-b9b6-491d49e4dd4b"
+          },
+          {
+            "set": "pcy",
+            "number": "121",
+            "weight": 1,
+            "foil": true,
+            "uuid": "96b33813-f4d9-5bed-83d9-08aff0ebd162"
+          },
+          {
+            "set": "pcy",
+            "number": "123",
+            "weight": 1,
+            "foil": true,
+            "uuid": "80fbefb6-97b7-5073-980a-77afb7ef80f9"
+          },
+          {
+            "set": "pcy",
+            "number": "126",
+            "weight": 1,
+            "foil": true,
+            "uuid": "b2ff5fa4-a337-57d8-809f-c4cc90bc3344"
+          },
+          {
+            "set": "pcy",
+            "number": "128",
+            "weight": 1,
+            "foil": true,
+            "uuid": "302b107e-278e-5769-8a59-b52664fdb376"
+          },
+          {
+            "set": "pcy",
+            "number": "129",
+            "weight": 1,
+            "foil": true,
+            "uuid": "2a4965ba-beff-55b8-9968-5ec13b9bd666"
+          },
+          {
+            "set": "pcy",
+            "number": "131",
+            "weight": 1,
+            "foil": true,
+            "uuid": "1e9177ce-0395-5a6b-85b1-a39a61aed2a6"
+          },
+          {
+            "set": "pcy",
+            "number": "134",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3ce6999a-df4b-5673-b4a4-f15f809e1974"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "mmq",
+      "pcy"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 27363,
+      "name": "Prophecy - Booster Pack",
+      "cleanName": "Prophecy Booster Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/27363_200w.jpg",
+      "categoryId": 1,
+      "groupId": 94,
+      "url": "https://www.tcgplayer.com/product/27363/magic-prophecy-prophecy-booster-pack",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 27363,
+        "lowPrice": 39,
+        "midPrice": 42,
+        "highPrice": 49.99,
+        "marketPrice": 37.44,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -21,7 +21,12 @@ import {
   CombinedSealedProduct,
 } from "../types";
 import { TCGCSVProduct, TCGCSVPrice } from "../types/tcgcsv";
-import { NotFoundError } from "../utils/errors";
+import {
+  NotFoundError,
+  PackGenerationError,
+  DataIntegrityError,
+  IncompletePackError,
+} from "../utils/errors";
 import { TCGCSVService } from "./tcgcsvService";
 import * as path from "path";
 
@@ -31,9 +36,10 @@ export class MTGDataService implements DataService {
   private combinedCards: Record<string, CombinedCard> = {};
   private tcgcsvService: TCGCSVService;
 
-  // Pre-processed set mappings for fast lookups
+  // Caching for performance
   private setInfoMap: Map<string, any> = new Map();
   private enhancedProductsMap: Map<string, any[]> = new Map();
+  private validationMapCache: Map<string, Record<string, boolean>> = new Map();
 
   // New combined sealed products that prioritize AllPrintings
   private combinedSealedProducts: Map<string, CombinedSealedProduct> =
@@ -348,8 +354,103 @@ export class MTGDataService implements DataService {
    * Get pre-processed set information (O(1) lookup)
    */
   getSetInfo(setCode: string): any | null {
-    const setCodeUpper = setCode.toUpperCase();
-    return this.setInfoMap.get(setCodeUpper) || null;
+    return this.setInfoMap.get(setCode) || null;
+  }
+
+  /**
+   * Generate and cache validation map for a product
+   */
+  private generateValidationMap(
+    product: ExtendedSealedData
+  ): Record<string, boolean> {
+    const cacheKey = `${product.code}-${product.source_set_codes.join(",")}`;
+
+    // Check cache first
+    if (this.validationMapCache.has(cacheKey)) {
+      return this.validationMapCache.get(cacheKey)!;
+    }
+
+    const localMap: Record<string, boolean> = {};
+    const missingSets: string[] = [];
+
+    for (let code of product.source_set_codes) {
+      code = code.toUpperCase();
+      const setObj = this.allPrintings?.data[code];
+      if (!setObj) {
+        missingSets.push(code);
+        logger.warn(`Set code '${code}' not found in AllPrintings`);
+        continue;
+      }
+      for (const c of setObj.cards) {
+        localMap[c.uuid] = true;
+      }
+    }
+
+    // Log missing sets for debugging
+    if (missingSets.length > 0) {
+      logger.warn(
+        `Missing sets for product ${product.code}: ${missingSets.join(", ")}`
+      );
+    }
+
+    // Cache the result
+    this.validationMapCache.set(cacheKey, localMap);
+    return localMap;
+  }
+
+  /**
+   * Validate sheet weights for consistency
+   */
+  private validateSheetWeights(
+    sheet: ExtendedSealedData["sheets"][string]
+  ): boolean {
+    if (!sheet.cards || sheet.cards.length === 0) {
+      return false;
+    }
+
+    const calculatedWeight = sheet.cards.reduce(
+      (sum, card) => sum + card.weight,
+      0
+    );
+    const isValid = Math.abs(calculatedWeight - sheet.total_weight) < 0.01; // Allow small floating point differences
+
+    if (!isValid) {
+      logger.warn(
+        `Sheet weight mismatch: calculated=${calculatedWeight}, declared=${sheet.total_weight}`
+      );
+    }
+
+    return isValid;
+  }
+
+  /**
+   * Improved card selection with retry logic
+   */
+  private pickCardFromSheetWithRetry(
+    sheet: ExtendedSealedData["sheets"][string],
+    maxRetries: number = 10
+  ): string | null {
+    // Validate sheet weights first
+    if (!this.validateSheetWeights(sheet)) {
+      logger.error(
+        `Invalid sheet weights for sheet with ${sheet.cards?.length || 0} cards`
+      );
+      return null;
+    }
+
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+      const pickedUUID = this.pickCardFromSheet(sheet);
+      if (pickedUUID) {
+        return pickedUUID;
+      }
+
+      logger.warn(
+        `Card selection failed on attempt ${attempt + 1}/${maxRetries}`
+      );
+    }
+
+    logger.error(`Failed to pick card from sheet after ${maxRetries} attempts`);
+    return null;
   }
 
   /**
@@ -421,24 +522,144 @@ export class MTGDataService implements DataService {
       throw new NotFoundError(`Sealed product with UUID ${uuid} not found`);
     }
 
-    // If we have extended data, use it for pack generation
-    if (product.extendedData) {
-      const extendedProduct: ExtendedSealedData = {
-        name: product.name,
-        code: product.extendedData.code,
-        set_code: product.setCode,
-        set_name: product.setName,
-        boosters: product.extendedData.boosters,
-        sheets: product.extendedData.sheets,
-        source_set_codes: product.extendedData.source_set_codes,
+    const allCards: Array<{
+      sheet: string;
+      allPrintingsData: any;
+      scryfallData?: ScryfallTypes.IScryfallCard;
+      tcgcsvData?: {
+        product: TCGCSVProduct;
+        prices: TCGCSVPrice[];
       };
-      const pack = this.generatePack(extendedProduct);
-      return { pack };
+    }> = [];
+
+    // Process nested sealed products (recursively)
+    if (product.contents?.sealed && product.contents.sealed.length > 0) {
+      for (const sealedItem of product.contents.sealed) {
+        try {
+          // Find the nested product by UUID
+          const nestedProduct = this.combinedSealedProducts.get(
+            sealedItem.uuid
+          );
+          if (nestedProduct) {
+            // Recursively open the nested product multiple times to get unique cards each time
+            let totalCardsAdded = 0;
+            for (let i = 0; i < sealedItem.count; i++) {
+              const nestedResult = this.openCombinedSealedProduct(
+                sealedItem.uuid
+              );
+              if (nestedResult.pack) {
+                allCards.push(...nestedResult.pack);
+                totalCardsAdded += nestedResult.pack.length;
+              }
+            }
+            logger.info(
+              `Added ${totalCardsAdded} cards from ${sealedItem.count}x ${sealedItem.name} (${totalCardsAdded / sealedItem.count} cards per item)`
+            );
+          } else {
+            logger.warn(
+              `Nested product with UUID ${sealedItem.uuid} not found`
+            );
+          }
+        } catch (error) {
+          logger.error(
+            `Error opening nested product ${sealedItem.uuid}:`,
+            error
+          );
+        }
+      }
     }
 
-    // Otherwise, try to generate pack from AllPrintings contents
-    const pack = this.generatePackFromAllPrintings(product);
-    return { pack };
+    // Process pack contents (like prerelease promos, box toppers, etc.)
+    if (product.contents?.pack && product.contents.pack.length > 0) {
+      for (const packItem of product.contents.pack) {
+        try {
+          // Find the nested pack product by code and set
+          const nestedPack = this.findNestedSealedProduct(
+            packItem.code,
+            packItem.set
+          );
+
+          if (nestedPack) {
+            // Generate cards from the nested pack product
+            const packCards = this.generatePackFromAllPrintings(nestedPack);
+            if (packCards && packCards.length > 0) {
+              allCards.push(...packCards);
+            }
+          } else {
+            logger.warn(
+              `Could not find nested pack: ${packItem.code} from set ${packItem.set}`
+            );
+          }
+        } catch (error) {
+          logger.error(
+            `Error generating pack from code ${packItem.code}:`,
+            error
+          );
+        }
+      }
+    }
+
+    // Process specific card contents
+    if (product.contents?.card && product.contents.card.length > 0) {
+      for (const cardItem of product.contents.card) {
+        try {
+          // Get the specific card by UUID from the combined cards
+          const allCombinedCards = this.getCombinedCards();
+          const card = allCombinedCards[cardItem.uuid];
+          if (card) {
+            // Convert CombinedCard to PackCard format by adding the required sheet property
+            const packCard = {
+              sheet: "card", // Use 'card' as the sheet identifier for specific cards
+              allPrintingsData: card.allPrintingsData,
+              ...(card.scryfallData && { scryfallData: card.scryfallData }),
+              ...(card.tcgcsvData && { tcgcsvData: card.tcgcsvData }),
+            };
+            allCards.push(packCard);
+          } else {
+            logger.warn(`Card with UUID ${cardItem.uuid} not found`);
+          }
+        } catch (error) {
+          logger.error(`Error getting card ${cardItem.uuid}:`, error);
+        }
+      }
+    }
+
+    // If we have extended data, also generate cards from the main product
+    if (product.extendedData) {
+      try {
+        const extendedProduct: ExtendedSealedData = {
+          name: product.name,
+          code: product.extendedData.code,
+          set_code: product.setCode,
+          set_name: product.setName,
+          boosters: product.extendedData.boosters,
+          sheets: product.extendedData.sheets,
+          source_set_codes: product.extendedData.source_set_codes,
+        };
+        const mainPack = this.generatePack(extendedProduct);
+        allCards.push(...mainPack);
+      } catch (error) {
+        logger.error(
+          `Error generating pack from extended data for ${product.name}:`,
+          error
+        );
+      }
+    }
+
+    // If we still have no cards, try to generate from AllPrintings contents
+    if (allCards.length === 0) {
+      try {
+        const pack = this.generatePackFromAllPrintings(product);
+        allCards.push(...pack);
+      } catch (error) {
+        logger.error(
+          `Error generating pack from AllPrintings for ${product.name}:`,
+          error
+        );
+      }
+    }
+
+    return { pack: allCards };
   }
 
   /**
@@ -452,49 +673,181 @@ export class MTGDataService implements DataService {
       throw new NotFoundError(`Sealed product with UUID ${uuid} not found`);
     }
 
-    // If we have extended data, use it for pack generation
-    if (product.extendedData) {
-      const extendedProduct: ExtendedSealedData = {
-        name: product.name,
-        code: product.extendedData.code,
-        set_code: product.setCode,
-        set_name: product.setName,
-        boosters: product.extendedData.boosters,
-        sheets: product.extendedData.sheets,
-        source_set_codes: product.extendedData.source_set_codes,
+    const allCards: Array<{
+      sheet: string;
+      allPrintingsData: any;
+      scryfallData?: ScryfallTypes.IScryfallCard;
+      tcgcsvData?: {
+        product: TCGCSVProduct;
+        prices: TCGCSVPrice[];
       };
-      const pack = await this.generatePackWithTCGCSV(extendedProduct);
+    }> = [];
 
-      // Calculate pricing information
-      let totalValue = 0;
-
-      for (const card of pack) {
-        if (card.tcgcsvData) {
-          const bestPrice = this.tcgcsvService.getBestPrice(
-            card.tcgcsvData.product,
-            card.tcgcsvData.prices
+    // Process nested sealed products (recursively)
+    if (product.contents?.sealed && product.contents.sealed.length > 0) {
+      for (const sealedItem of product.contents.sealed) {
+        try {
+          // Find the nested product by UUID
+          const nestedProduct = this.combinedSealedProducts.get(
+            sealedItem.uuid
           );
-          if (bestPrice) {
-            totalValue += bestPrice;
+          if (nestedProduct) {
+            // Recursively open the nested product with pricing
+            // Recursively open the nested product multiple times to get unique cards each time
+            let totalCardsAdded = 0;
+            for (let i = 0; i < sealedItem.count; i++) {
+              const nestedResult =
+                await this.openCombinedSealedProductWithPricing(
+                  sealedItem.uuid
+                );
+              if (nestedResult.pack) {
+                allCards.push(...nestedResult.pack);
+                totalCardsAdded += nestedResult.pack.length;
+              }
+            }
+            logger.info(
+              `Added ${totalCardsAdded} cards from ${sealedItem.count}x ${sealedItem.name} (${totalCardsAdded / sealedItem.count} cards per item)`
+            );
+          } else {
+            logger.warn(
+              `Nested product with UUID ${sealedItem.uuid} not found`
+            );
           }
+        } catch (error) {
+          logger.error(
+            `Error opening nested product ${sealedItem.uuid}:`,
+            error
+          );
         }
       }
-
-      return {
-        pack,
-        pricing: {
-          ...(product.tcgcsvData?.product.productId && {
-            productId: product.tcgcsvData.product.productId,
-          }),
-          ...(totalValue > 0 && { priceStats: { marketPrice: totalValue } }),
-          lastUpdated: new Date().toISOString(),
-        },
-      };
     }
 
-    // Otherwise, try to generate pack from AllPrintings contents
-    const pack = await this.generatePackFromAllPrintingsWithPricing(product);
-    return pack;
+    // Process pack contents (like prerelease promos, box toppers, etc.)
+    if (product.contents?.pack && product.contents.pack.length > 0) {
+      for (const packItem of product.contents.pack) {
+        try {
+          // Find the nested pack product by code and set
+          const nestedPack = this.findNestedSealedProduct(
+            packItem.code,
+            packItem.set
+          );
+
+          if (nestedPack) {
+            // Generate cards from the nested pack product with pricing
+            const packCards =
+              await this.generatePackFromAllPrintingsWithPricing(nestedPack);
+            if (packCards.pack && packCards.pack.length > 0) {
+              allCards.push(...packCards.pack);
+            }
+          } else {
+            // If no nested pack found, this might be a pack type indicator
+            // that should use the product's own extendedData
+            if (product.extendedData) {
+              logger.info(
+                `No nested pack found for ${packItem.code}, but product has extendedData. Using extendedData for pack generation.`
+              );
+              // The extendedData will be processed later in the method
+              continue;
+            } else {
+              logger.warn(
+                `Could not find nested pack: ${packItem.code} from set ${packItem.set}`
+              );
+            }
+          }
+        } catch (error) {
+          logger.error(
+            `Error generating pack from code ${packItem.code}:`,
+            error
+          );
+        }
+      }
+    }
+
+    // Process specific card contents
+    if (product.contents?.card && product.contents.card.length > 0) {
+      for (const cardItem of product.contents.card) {
+        try {
+          // Get the specific card by UUID from the combined cards
+          const allCombinedCards = this.getCombinedCards();
+          const card = allCombinedCards[cardItem.uuid];
+          if (card) {
+            // Convert CombinedCard to PackCard format by adding the required sheet property
+            const packCard = {
+              sheet: "card", // Use 'card' as the sheet identifier for specific cards
+              allPrintingsData: card.allPrintingsData,
+              ...(card.scryfallData && { scryfallData: card.scryfallData }),
+              ...(card.tcgcsvData && { tcgcsvData: card.tcgcsvData }),
+            };
+            allCards.push(packCard);
+          } else {
+            logger.warn(`Card with UUID ${cardItem.uuid} not found`);
+          }
+        } catch (error) {
+          logger.error(`Error getting card ${cardItem.uuid}:`, error);
+        }
+      }
+    }
+
+    // If we have extended data, also generate cards from the main product
+    if (product.extendedData) {
+      try {
+        const extendedProduct: ExtendedSealedData = {
+          name: product.name,
+          code: product.extendedData.code,
+          set_code: product.setCode,
+          set_name: product.setName,
+          boosters: product.extendedData.boosters,
+          sheets: product.extendedData.sheets,
+          source_set_codes: product.extendedData.source_set_codes,
+        };
+        const mainPack = await this.generatePackWithTCGCSV(extendedProduct);
+        allCards.push(...mainPack);
+      } catch (error) {
+        logger.error(
+          `Error generating pack from extended data for ${product.name}:`,
+          error
+        );
+      }
+    }
+
+    // If we still have no cards, try to generate from AllPrintings contents
+    if (allCards.length === 0) {
+      try {
+        const pack =
+          await this.generatePackFromAllPrintingsWithPricing(product);
+        allCards.push(...pack.pack);
+      } catch (error) {
+        logger.error(
+          `Error generating pack from AllPrintings for ${product.name}:`,
+          error
+        );
+      }
+    }
+
+    // Calculate total pricing information
+    let totalValue = 0;
+    for (const card of allCards) {
+      if (card.tcgcsvData) {
+        const bestPrice = this.tcgcsvService.getBestPrice(
+          card.tcgcsvData.product,
+          card.tcgcsvData.prices
+        );
+        if (bestPrice) {
+          totalValue += bestPrice;
+        }
+      }
+    }
+
+    return {
+      pack: allCards,
+      pricing: {
+        ...(product.tcgcsvData?.product.productId && {
+          productId: product.tcgcsvData.product.productId,
+        }),
+        ...(totalValue > 0 && { priceStats: { marketPrice: totalValue } }),
+        lastUpdated: new Date().toISOString(),
+      },
+    };
   }
 
   private async ensureAllPrintingsUnzipped(): Promise<void> {
@@ -1069,6 +1422,9 @@ export class MTGDataService implements DataService {
 
           // TCGCSV data (if available)
           ...(tcgcsvData && { tcgcsvData }),
+
+          // Set availability flag based on current logic: unavailable if has TCGCSV but no ExtendedData
+          isUnavailable: !!(tcgcsvData && !validExtendedProduct),
         };
 
         this.combinedSealedProducts.set(sealedProduct.uuid, combinedProduct);
@@ -1095,6 +1451,7 @@ export class MTGDataService implements DataService {
 
   /**
    * Load server data overrides from the ServerDataOverride folder
+   * New structure: Each set has its own folder with individual product JSON files
    */
   private async loadServerDataOverrides(): Promise<Record<
     string,
@@ -1108,36 +1465,102 @@ export class MTGDataService implements DataService {
         return null;
       }
 
-      const files = fs.readdirSync(overrideDir);
-      if (files.length === 0) {
-        logger.info("ServerDataOverride directory is empty");
+      const setFolders = fs
+        .readdirSync(overrideDir, { withFileTypes: true })
+        .filter((dirent) => dirent.isDirectory())
+        .map((dirent) => dirent.name)
+        .filter((name): name is string => name !== undefined);
+
+      if (setFolders.length === 0) {
+        logger.info(
+          "ServerDataOverride directory is empty or contains no set folders"
+        );
         return null;
       }
 
       const overrideData: Record<string, CombinedSealedProduct[]> = {};
 
-      for (const file of files) {
-        if (!file.endsWith(".json")) continue;
-
-        const setCode = file.replace(".json", "").toUpperCase();
-        const filePath = path.join(overrideDir, file);
+      for (const setFolder of setFolders) {
+        const setCode = setFolder.toUpperCase();
+        const setDir = path.join(overrideDir, setFolder);
 
         try {
-          const fileContent = fs.readFileSync(filePath, "utf8");
-          const products = JSON.parse(fileContent);
+          const products: CombinedSealedProduct[] = [];
 
-          if (Array.isArray(products)) {
+          // Check for available and unavailable subfolders
+          const availableDir = path.join(setDir, "available");
+          const unavailableDir = path.join(setDir, "unavailable");
+
+          // Load products from available folder
+          if (fs.existsSync(availableDir)) {
+            const availableFiles = fs
+              .readdirSync(availableDir)
+              .filter((file) => file.endsWith(".json"));
+
+            for (const productFile of availableFiles) {
+              const productPath = path.join(availableDir, productFile);
+
+              try {
+                const fileContent = fs.readFileSync(productPath, "utf8");
+                const product = JSON.parse(fileContent);
+
+                if (product && typeof product === "object" && product.uuid) {
+                  product.availability = "available";
+                  product.isUnavailable = false;
+                  products.push(product);
+                } else {
+                  logger.warn(
+                    `Invalid product file format in ${setCode}/available/${productFile}: missing uuid or invalid structure`
+                  );
+                }
+              } catch (error) {
+                logger.error(
+                  `Error loading product file ${setCode}/available/${productFile}:`,
+                  error
+                );
+              }
+            }
+          }
+
+          // Load products from unavailable folder
+          if (fs.existsSync(unavailableDir)) {
+            const unavailableFiles = fs
+              .readdirSync(unavailableDir)
+              .filter((file) => file.endsWith(".json"));
+
+            for (const productFile of unavailableFiles) {
+              const productPath = path.join(unavailableDir, productFile);
+
+              try {
+                const fileContent = fs.readFileSync(productPath, "utf8");
+                const product = JSON.parse(fileContent);
+
+                if (product && typeof product === "object" && product.uuid) {
+                  product.availability = "unavailable";
+                  product.isUnavailable = true;
+                  products.push(product);
+                } else {
+                  logger.warn(
+                    `Invalid product file format in ${setCode}/unavailable/${productFile}: missing uuid or invalid structure`
+                  );
+                }
+              } catch (error) {
+                logger.error(
+                  `Error loading product file ${setCode}/unavailable/${productFile}:`,
+                  error
+                );
+              }
+            }
+          }
+
+          if (products.length > 0) {
             overrideData[setCode] = products;
             logger.info(
               `Loaded override data for set ${setCode}: ${products.length} products`
             );
-          } else {
-            logger.warn(
-              `Invalid override file format for ${setCode}: expected array`
-            );
           }
         } catch (error) {
-          logger.error(`Error loading override file ${file}:`, error);
+          logger.error(`Error processing set folder ${setCode}:`, error);
         }
       }
 
@@ -1173,6 +1596,7 @@ export class MTGDataService implements DataService {
 
   /**
    * Create server data override files with current combined sealed products data
+   * New structure: Each set has its own folder with available/unavailable subfolders and product name-based files
    */
   private async createServerDataOverrides(buildStats: {
     totalProducts: number;
@@ -1193,13 +1617,40 @@ export class MTGDataService implements DataService {
         setCode,
         products,
       ] of this.combinedSealedProductsBySet.entries()) {
-        const filePath = path.join(
-          overrideDir,
-          `${setCode.toLowerCase()}.json`
-        );
-        fs.writeFileSync(filePath, JSON.stringify(products, null, 2));
+        const setDir = path.join(overrideDir, setCode.toLowerCase());
+
+        // Create set directory if it doesn't exist
+        if (!fs.existsSync(setDir)) {
+          fs.mkdirSync(setDir, { recursive: true });
+        }
+
+        // Create available and unavailable subdirectories
+        const availableDir = path.join(setDir, "available");
+        const unavailableDir = path.join(setDir, "unavailable");
+
+        if (!fs.existsSync(availableDir)) {
+          fs.mkdirSync(availableDir, { recursive: true });
+        }
+        if (!fs.existsSync(unavailableDir)) {
+          fs.mkdirSync(unavailableDir, { recursive: true });
+        }
+
+        // Write individual product files
+        for (const product of products) {
+          // Create a safe filename from the product name
+          const safeName = this.createSafeFilename(product.name);
+          const fileName = `${safeName}.json`;
+
+          // Determine if product is available (you can customize this logic)
+          const isAvailable = this.isProductAvailable(product);
+          const targetDir = isAvailable ? availableDir : unavailableDir;
+          const filePath = path.join(targetDir, fileName);
+
+          fs.writeFileSync(filePath, JSON.stringify(product, null, 2));
+        }
+
         logger.info(
-          `Created override file for set ${setCode}: ${products.length} products`
+          `Created override files for set ${setCode}: ${products.length} products in ${setDir}`
         );
       }
 
@@ -1214,6 +1665,27 @@ export class MTGDataService implements DataService {
     }
   }
 
+  /**
+   * Create a safe filename from a product name
+   */
+  private createSafeFilename(name: string): string {
+    return name
+      .replace(/[^a-zA-Z0-9\s\-_]/g, "") // Remove special characters except spaces, hyphens, and underscores
+      .replace(/\s+/g, " ") // Normalize multiple spaces to single space
+      .trim()
+      .replace(/\s/g, "_"); // Replace spaces with underscores
+  }
+
+  /**
+   * Determine if a product is available (customize this logic as needed)
+   */
+  private isProductAvailable(_product: CombinedSealedProduct): boolean {
+    // Default logic: consider all products available
+    // You can customize this based on your business logic
+    // For example, check if the product has purchase URLs, is in stock, etc.
+    return true;
+  }
+
   private generatePack(product: ExtendedSealedData): Array<{
     sheet: string;
     allPrintingsData: any;
@@ -1223,22 +1695,14 @@ export class MTGDataService implements DataService {
       prices: TCGCSVPrice[];
     };
   }> {
-    const localMap: Record<string, boolean> = {};
-    for (let code of product.source_set_codes) {
-      code = code.toUpperCase();
-      const setObj = this.allPrintings?.data[code];
-      if (!setObj) {
-        logger.warn(`Set code '${code}' not found in AllPrintings`);
-        continue;
-      }
-      for (const c of setObj.cards) {
-        localMap[c.uuid] = true;
-      }
-    }
+    // Generate validation map with caching
+    const localMap = this.generateValidationMap(product);
 
     const chosenBooster = this.pickBooster(product.boosters);
     if (!chosenBooster) {
-      return [];
+      throw new PackGenerationError(
+        `No valid booster found for product ${product.code}`
+      );
     }
 
     const pack: Array<{
@@ -1251,6 +1715,12 @@ export class MTGDataService implements DataService {
       };
     }> = [];
 
+    const expectedCardCount = Object.values(chosenBooster.sheets).reduce(
+      (sum, count) => sum + count,
+      0
+    );
+    let actualCardCount = 0;
+
     for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
       const sheet = product.sheets[sheetName];
       if (!sheet) {
@@ -1261,17 +1731,33 @@ export class MTGDataService implements DataService {
       }
 
       for (let i = 0; i < count; i++) {
-        const pickedUUID = this.pickCardFromSheet(sheet);
-        if (!pickedUUID) continue;
+        const pickedUUID = this.pickCardFromSheetWithRetry(sheet);
+        if (!pickedUUID) {
+          logger.error(
+            `Failed to pick card from sheet '${sheetName}' for product ${product.code}`
+          );
+          throw new PackGenerationError(
+            `Failed to pick card from sheet '${sheetName}'`
+          );
+        }
 
         const combined = this.combinedCards[pickedUUID];
         if (!combined) {
-          logger.warn(`No combined data for card uuid=${pickedUUID}`);
-          continue;
+          logger.error(
+            `No combined data for card uuid=${pickedUUID} in product ${product.code}`
+          );
+          throw new DataIntegrityError(
+            `Missing combined data for card ${pickedUUID}`
+          );
         }
+
         if (!localMap[pickedUUID]) {
-          logger.warn(`Card uuid=${pickedUUID} not in source_set_codes?`);
-          continue;
+          logger.error(
+            `Card uuid=${pickedUUID} not in source_set_codes for product ${product.code}`
+          );
+          throw new DataIntegrityError(
+            `Card ${pickedUUID} not found in source sets`
+          );
         }
 
         pack.push({
@@ -1280,9 +1766,23 @@ export class MTGDataService implements DataService {
           ...(combined.scryfallData && { scryfallData: combined.scryfallData }),
           ...(combined.tcgcsvData && { tcgcsvData: combined.tcgcsvData }),
         });
+        actualCardCount++;
       }
     }
 
+    // Validate pack completeness
+    if (actualCardCount !== expectedCardCount) {
+      logger.error(
+        `Pack completeness mismatch for product ${product.code}: expected=${expectedCardCount}, actual=${actualCardCount}`
+      );
+      throw new IncompletePackError(
+        `Generated pack has ${actualCardCount} cards, expected ${expectedCardCount}`
+      );
+    }
+
+    logger.info(
+      `Successfully generated pack for product ${product.code} with ${actualCardCount} cards`
+    );
     return pack;
   }
 
@@ -1298,22 +1798,14 @@ export class MTGDataService implements DataService {
       };
     }>
   > {
-    const localMap: Record<string, boolean> = {};
-    for (let code of product.source_set_codes) {
-      code = code.toUpperCase();
-      const setObj = this.allPrintings?.data[code];
-      if (!setObj) {
-        logger.warn(`Set code '${code}' not found in AllPrintings`);
-        continue;
-      }
-      for (const c of setObj.cards) {
-        localMap[c.uuid] = true;
-      }
-    }
+    // Generate validation map with caching
+    const localMap = this.generateValidationMap(product);
 
     const chosenBooster = this.pickBooster(product.boosters);
     if (!chosenBooster) {
-      return [];
+      throw new PackGenerationError(
+        `No valid booster found for product ${product.code}`
+      );
     }
 
     const pack: Array<{
@@ -1326,6 +1818,12 @@ export class MTGDataService implements DataService {
       };
     }> = [];
 
+    const expectedCardCount = Object.values(chosenBooster.sheets).reduce(
+      (sum, count) => sum + count,
+      0
+    );
+    let actualCardCount = 0;
+
     for (const [sheetName, count] of Object.entries(chosenBooster.sheets)) {
       const sheet = product.sheets[sheetName];
       if (!sheet) {
@@ -1336,18 +1834,34 @@ export class MTGDataService implements DataService {
       }
 
       for (let i = 0; i < count; i++) {
-        const pickedUUID = this.pickCardFromSheet(sheet);
-        if (!pickedUUID) continue;
+        const pickedUUID = this.pickCardFromSheetWithRetry(sheet);
+        if (!pickedUUID) {
+          logger.error(
+            `Failed to pick card from sheet '${sheetName}' for product ${product.code}`
+          );
+          throw new PackGenerationError(
+            `Failed to pick card from sheet '${sheetName}'`
+          );
+        }
 
         // Get card with TCGCSV data
         const combined = await this.getCardWithTCGCSV(pickedUUID);
         if (!combined) {
-          logger.warn(`No combined data for card uuid=${pickedUUID}`);
-          continue;
+          logger.error(
+            `No combined data for card uuid=${pickedUUID} in product ${product.code}`
+          );
+          throw new DataIntegrityError(
+            `Missing combined data for card ${pickedUUID}`
+          );
         }
+
         if (!localMap[pickedUUID]) {
-          logger.warn(`Card uuid=${pickedUUID} not in source_set_codes?`);
-          continue;
+          logger.error(
+            `Card uuid=${pickedUUID} not in source_set_codes for product ${product.code}`
+          );
+          throw new DataIntegrityError(
+            `Card ${pickedUUID} not found in source sets`
+          );
         }
 
         pack.push({
@@ -1356,9 +1870,23 @@ export class MTGDataService implements DataService {
           ...(combined.scryfallData && { scryfallData: combined.scryfallData }),
           ...(combined.tcgcsvData && { tcgcsvData: combined.tcgcsvData }),
         });
+        actualCardCount++;
       }
     }
 
+    // Validate pack completeness
+    if (actualCardCount !== expectedCardCount) {
+      logger.error(
+        `Pack completeness mismatch for product ${product.code}: expected=${expectedCardCount}, actual=${actualCardCount}`
+      );
+      throw new IncompletePackError(
+        `Generated pack has ${actualCardCount} cards, expected ${expectedCardCount}`
+      );
+    }
+
+    logger.info(
+      `Successfully generated pack with TCGCSV data for product ${product.code} with ${actualCardCount} cards`
+    );
     return pack;
   }
 
@@ -1494,7 +2022,9 @@ export class MTGDataService implements DataService {
   ): string | null {
     if (!sheet.cards || sheet.cards.length === 0 || sheet.total_weight <= 0)
       return null;
-    const rand = Math.floor(Math.random() * sheet.total_weight);
+
+    // Use more precise random number generation
+    const rand = Math.random() * sheet.total_weight;
     let cumulative = 0;
     for (const c of sheet.cards) {
       cumulative += c.weight;
@@ -1502,6 +2032,17 @@ export class MTGDataService implements DataService {
         return c.uuid;
       }
     }
+
+    // Fallback: if we somehow didn't pick anything, return the last card
+    // This should rarely happen with proper weight validation
+    if (sheet.cards && sheet.cards.length > 0) {
+      logger.warn(
+        `Weight-based selection failed, falling back to last card in sheet`
+      );
+      const lastCard = sheet.cards[sheet.cards.length - 1];
+      return lastCard?.uuid || null;
+    }
+
     return null;
   }
 
@@ -1981,9 +2522,19 @@ export class MTGDataService implements DataService {
               this.generatePackFromAllPrintings(nestedPack);
             pack.push(...nestedPackCards);
           } else {
-            logger.warn(
-              `Could not find nested pack: ${packContent.code} from set ${packContent.set}`
-            );
+            // If no nested pack found, this might be a pack type indicator
+            // that should use the product's own extendedData
+            if (product.extendedData) {
+              logger.info(
+                `No nested pack found for ${packContent.code}, but product has extendedData. Using extendedData for pack generation.`
+              );
+              // The extendedData will be processed later in the method
+              continue;
+            } else {
+              logger.warn(
+                `Could not find nested pack: ${packContent.code} from set ${packContent.set}`
+              );
+            }
           }
         } catch (error) {
           logger.error(`Error opening nested pack ${packContent.code}:`, error);

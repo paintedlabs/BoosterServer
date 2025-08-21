@@ -1,0 +1,82 @@
+{
+  "uuid": "5a9868f9-7ff5-5386-8e3c-592b909f98f3",
+  "name": "Guilds of Ravnica Guild Kit Boros",
+  "category": "kit",
+  "cardCount": 60,
+  "releaseDate": "2018-11-02",
+  "subtype": "guild_kit",
+  "identifiers": {
+    "abuId": "1537069",
+    "cardKingdomId": "222341",
+    "cardtraderId": "169308",
+    "csiId": "263960",
+    "mcmId": "364607",
+    "scgId": "SLD-MTG-BXS-GK1-EN-BOROS",
+    "tcgplayerProductId": "173366",
+    "tntId": "1194089"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/c3a49d89636f25c9",
+    "tcgplayer": "https://mtgjson.com/links/ef162dd33a6070c6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Boros",
+        "set": "gk1"
+      }
+    ],
+    "other": [
+      {
+        "name": "Guild Kit Spindown"
+      },
+      {
+        "name": "Official Boros Guild Pin"
+      },
+      {
+        "name": "Boros Symbol Sticker"
+      },
+      {
+        "name": "Insert With Mission Instructions"
+      }
+    ]
+  },
+  "setCode": "GK1",
+  "setName": "GRN Guild Kit",
+  "tcgcsvData": {
+    "product": {
+      "productId": 173366,
+      "name": "Guilds of Ravnica - Guild Kit: Boros",
+      "cleanName": "Guilds of Ravnica Guild Kit Boros",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/173366_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2334,
+      "url": "https://www.tcgplayer.com/product/173366/magic-guilds-of-ravnica-guild-kits-guilds-of-ravnica-guild-kit-boros",
+      "modifiedOn": "2018-09-26T15:31:33.9",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-11-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "On Ravnica, whoever you are—soldier or scientist, merchant or spy—your guild is the core of your identity. It provides structure and greater purpose. Now, the time has come to defend it.\r\n<br>\r\n<br>Contains:\r\n<br>• 1 ready-to-play 60-card Boros (white/red) deck\r\n<br>• 1 Spindown life counter\r\n<br>• 1 official Boros guild pin\r\n<br>• 1 Boros guild symbol sticker\r\n<br>• 1 insert with mission instructions"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 173366,
+        "lowPrice": 56.89,
+        "midPrice": 57.48,
+        "highPrice": 59.99,
+        "marketPrice": 57.46,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

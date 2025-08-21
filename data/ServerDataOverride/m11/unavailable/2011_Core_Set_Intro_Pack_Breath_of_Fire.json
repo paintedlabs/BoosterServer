@@ -1,0 +1,68 @@
+{
+  "uuid": "7dcfedad-5e00-5e21-904f-5d9cce7451ce",
+  "name": "2011 Core Set Intro Pack Breath of Fire",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100749",
+    "cardKingdomId": "131453",
+    "cardtraderId": "47512",
+    "csiId": "279847",
+    "mcmId": "241798",
+    "scgId": "SLD-MTG-INT-M11INTRO-EN-BREATH",
+    "tcgplayerProductId": "35379",
+    "tntId": "289835"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8c920eb3c76d45e0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Breath of Fire",
+        "set": "m11"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "2011 Core Set Booster Pack",
+        "set": "m11",
+        "uuid": "e5030b38-4fc1-5304-8ca8-365af9f4a9de"
+      }
+    ]
+  },
+  "setCode": "M11",
+  "setName": "Magic 2011",
+  "tcgcsvData": {
+    "product": {
+      "productId": 35379,
+      "name": "Magic 2011 (M11) - Intro Pack - Breath of Fire",
+      "cleanName": "Magic 2011 M11 Intro Pack Breath of Fire",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/35379_200w.jpg",
+      "categoryId": 1,
+      "groupId": 69,
+      "url": "https://www.tcgplayer.com/product/35379/magic-magic-2011-m11-magic-2011-m11-intro-pack-breath-of-fire",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 35379,
+        "lowPrice": 45,
+        "midPrice": 48.95,
+        "highPrice": 52.9,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

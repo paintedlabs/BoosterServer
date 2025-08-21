@@ -1,0 +1,67 @@
+{
+  "uuid": "4465f07e-3276-5210-a4a7-c41d608370ae",
+  "name": "Shards of Alara Intro Pack Esper Artifice",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1108008",
+    "cardKingdomId": "126133",
+    "cardtraderId": "47326",
+    "mcmId": "244170",
+    "scgId": "SLD-MTG-INT-ALAINTRO-EN-ESPER",
+    "tcgplayerProductId": "278891",
+    "tntId": "183791"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/e4d3c3caede4dc53"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Esper Artifice",
+        "set": "ala"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Shards of Alara Booster Pack",
+        "set": "ala",
+        "uuid": "53db9568-de5e-5a95-9882-b3b16ad4931c"
+      }
+    ]
+  },
+  "setCode": "ALA",
+  "setName": "Shards of Alara",
+  "tcgcsvData": {
+    "product": {
+      "productId": 278891,
+      "name": "Shards of Alara - Intro Pack - Esper Artifice",
+      "cleanName": "Shards of Alara Intro Pack Esper Artifice",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/278891_200w.jpg",
+      "categoryId": 1,
+      "groupId": 103,
+      "url": "https://www.tcgplayer.com/product/278891/magic-shards-of-alara-shards-of-alara-intro-pack-esper-artifice",
+      "modifiedOn": "2022-07-06T20:51:39.363",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 278891,
+        "lowPrice": 59.99,
+        "midPrice": 90,
+        "highPrice": 120,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

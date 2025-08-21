@@ -1,0 +1,90 @@
+{
+  "uuid": "477044e0-8db7-5d10-96b0-9c4f6f90efb7",
+  "name": "Innistrad Midnight Hunt Bundle",
+  "category": "bundle",
+  "releaseDate": "2021-09-24",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2092999",
+    "cardKingdomId": "249857",
+    "cardtraderId": "164060",
+    "mcmId": "573786",
+    "scgId": "SLD-MTG-BUN-MID-EN",
+    "tcgplayerProductId": "244382",
+    "tntId": "1726532"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/b9b7c6f40e9fc295",
+    "tcgplayer": "https://mtgjson.com/links/4d47ef1069e97f14"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Triskaidekaphile",
+        "number": "386",
+        "set": "mid",
+        "uuid": "7d723124-a3ff-5e96-be73-12a3dc44b91f"
+      }
+    ],
+    "other": [
+      {
+        "name": "Innistrad Midnight Hunt Land Bundle"
+      },
+      {
+        "name": "Innistrad Midnight Hunt Spindown"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Innistrad Midnight Hunt Set Booster Pack",
+        "set": "mid",
+        "uuid": "ee4bdb5b-4ce5-5ead-8b70-1b717641f4e3"
+      }
+    ]
+  },
+  "setCode": "MID",
+  "setName": "Innistrad: Midnight Hunt",
+  "tcgcsvData": {
+    "product": {
+      "productId": 244382,
+      "name": "Innistrad: Midnight Hunt - Bundle",
+      "cleanName": "Innistrad Midnight Hunt Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/244382_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2864,
+      "url": "https://www.tcgplayer.com/product/244382/magic-innistrad-midnight-hunt-innistrad-midnight-hunt-bundle",
+      "modifiedOn": "2021-09-24T04:03:31.593",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-09-24T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>KEY PRODUCT FEATURES:</strong>\r\n<br>• 8 Innistrad: Midnight Hunt MTG Set Boosters\r\n<br>• 1 foil alt-art promo card\r\n<br>• 40 basic land cards (20 foil + 20 nonfoil)\r\n<br>• Spindown life counter + card storage box\r\n<br>• Become what you fear in a gothic horror set overrun with werewolves, warlocks, and spooky mechanics\r\n<br><br><strong>DESCRIPTION:</strong>\r\n<br>The Innistrad: Midnight Hunt Bundle contains 8 Innistrad: Midnight Hunt Set Boosters—the best boosters to open just for fun—plus exclusive accessories, with 40 basic lands (20 traditional foils and 20 nonfoils), 1 traditional foil alt-art promo card, 1 oversized Spindown life counter, 1 card storage box, and 2 reference cards.\r\n<br><br>Each Set Booster contains 12 Magic cards, 1 Art Card, and 1 token, ad card, Helper card, or special card from Magic's history (a card from \"The List\"), with a combination of 1–4 Rares or Mythic Rares, 2–7 Uncommons, 3–8 Commons, and 1 Land card in every pack."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509987085"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 244382,
+        "lowPrice": 72.95,
+        "midPrice": 73,
+        "highPrice": 80.09,
+        "marketPrice": 63.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

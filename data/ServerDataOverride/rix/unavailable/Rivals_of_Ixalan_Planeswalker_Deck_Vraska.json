@@ -1,0 +1,75 @@
+{
+  "uuid": "b146e6c1-eea1-571c-8d51-b18aa4efd1dc",
+  "name": "Rivals of Ixalan Planeswalker Deck Vraska",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-01-19",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1486379",
+    "cardKingdomId": "216001",
+    "cardtraderId": "48628",
+    "csiId": "244212",
+    "mcmId": "314998",
+    "scgId": "SLD-MTG-INT-RIXPWDECK-EN-VRASKA",
+    "tcgplayerProductId": "154415",
+    "tntId": "1145975"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a4802d057d85201c"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Vraska, Scheming Gorgon",
+        "set": "rix"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Rivals of Ixalan Booster Pack",
+        "set": "rix",
+        "uuid": "307394ca-be46-5a6c-a688-2f351a3f75db"
+      }
+    ]
+  },
+  "setCode": "RIX",
+  "setName": "Rivals of Ixalan",
+  "tcgcsvData": {
+    "product": {
+      "productId": 154415,
+      "name": "Rivals of Ixalan - Planeswalker Deck [Vraska]",
+      "cleanName": "Rivals of Ixalan Planeswalker Deck Vraska",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/154415_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2098,
+      "url": "https://www.tcgplayer.com/product/154415/magic-rivals-of-ixalan-rivals-of-ixalan-planeswalker-deck-vraska",
+      "modifiedOn": "2017-12-22T14:16:47.257",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-01-19T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring <a href=\"https://shop.tcgplayer.com/magic/rivals-of-ixalan/vraska-scheming-gorgon\">\"Vraska, Scheming Gorgon\"</a>. This deck contains the following:\r\n<br>\r\n<br>• 1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card\r\n<br>• 2 Rivals of Ixalan booster packs\r\n<br>• 1 Strategy insert\r\n<br>• 1 Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 154415,
+        "lowPrice": 25.47,
+        "midPrice": 25.5,
+        "highPrice": 36.99,
+        "marketPrice": 25.5,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

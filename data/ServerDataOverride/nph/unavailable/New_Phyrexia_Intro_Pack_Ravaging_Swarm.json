@@ -1,0 +1,67 @@
+{
+  "uuid": "3ddf5d74-e280-537d-b596-fec998fc9d79",
+  "name": "New Phyrexia Intro Pack Ravaging Swarm",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100929",
+    "cardKingdomId": "184461",
+    "cardtraderId": "47615",
+    "mcmId": "246240",
+    "scgId": "SLD-MTG-INT-NPHINTRO-EN-RAVAGING",
+    "tcgplayerProductId": "39404",
+    "tntId": "319970"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4922cc28be98e61a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ravaging Swarm",
+        "set": "nph"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "New Phyrexia Booster Pack",
+        "set": "nph",
+        "uuid": "13798a31-0146-563b-aab8-33ae1b104684"
+      }
+    ]
+  },
+  "setCode": "NPH",
+  "setName": "New Phyrexia",
+  "tcgcsvData": {
+    "product": {
+      "productId": 39404,
+      "name": "New Phyrexia - Intro Pack - Ravaging Swarm",
+      "cleanName": "New Phyrexia Intro Pack Ravaging Swarm",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/39404_200w.jpg",
+      "categoryId": 1,
+      "groupId": 79,
+      "url": "https://www.tcgplayer.com/product/39404/magic-new-phyrexia-new-phyrexia-intro-pack-ravaging-swarm",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 39404,
+        "lowPrice": 69.99,
+        "midPrice": 75.24,
+        "highPrice": 80.48,
+        "marketPrice": 69.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

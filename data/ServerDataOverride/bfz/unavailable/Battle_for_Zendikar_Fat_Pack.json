@@ -1,0 +1,76 @@
+{
+  "uuid": "3d2d022e-edcd-53e4-ba67-e2fe9b80aec1",
+  "name": "Battle for Zendikar Fat Pack",
+  "category": "bundle",
+  "releaseDate": "2015-10-02",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100149",
+    "cardKingdomId": "202429",
+    "cardtraderId": "48343",
+    "csiId": "213628",
+    "mcmId": "284303",
+    "scgId": "SLD-MTG-BUN-BFZ-EN",
+    "tcgplayerProductId": "102801",
+    "tntId": "1075325"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/55ef55df77d89e18"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Battle for Zendikar Player's Guide"
+      },
+      {
+        "name": "Battle for Zendikar Card Box"
+      },
+      {
+        "name": "Battle for Zendikar Basic Land Bundle"
+      },
+      {
+        "name": "Battle for Zendikar Premium Spindown"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 9,
+        "name": "Battle for Zendikar Booster Pack",
+        "set": "bfz",
+        "uuid": "37e28375-f5ba-51e8-8e11-b6830a33b669"
+      }
+    ]
+  },
+  "setCode": "BFZ",
+  "setName": "Battle for Zendikar",
+  "tcgcsvData": {
+    "product": {
+      "productId": 102801,
+      "name": "Battle for Zendikar - Fat Pack",
+      "cleanName": "Battle for Zendikar Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/102801_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1645,
+      "url": "https://www.tcgplayer.com/product/102801/magic-battle-for-zendikar-battle-for-zendikar-fat-pack",
+      "modifiedOn": "2015-09-08T17:31:05.26",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2015-10-02T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 102801,
+        "lowPrice": 53.5,
+        "midPrice": 62.72,
+        "highPrice": 99.99,
+        "marketPrice": 57.06,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

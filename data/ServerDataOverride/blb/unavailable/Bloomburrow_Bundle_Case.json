@@ -1,0 +1,66 @@
+{
+  "uuid": "4ac9006c-cd21-563c-9e3b-8fb6905434dd",
+  "name": "Bloomburrow Bundle Case",
+  "category": "bundle_case",
+  "releaseDate": "2024-08-02",
+  "subtype": "default",
+  "identifiers": {
+    "tcgplayerProductId": "541242"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/1803d96283681101"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Bloomburrow Bundle",
+        "set": "blb",
+        "uuid": "ec99d990-704c-5ad3-ae7f-f1dbc5fd5ceb"
+      }
+    ]
+  },
+  "setCode": "BLB",
+  "setName": "Bloomburrow",
+  "tcgcsvData": {
+    "product": {
+      "productId": 541242,
+      "name": "Bloomburrow - Bundle Case",
+      "cleanName": "Bloomburrow Bundle Case",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/541242_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23447,
+      "url": "https://www.tcgplayer.com/product/541242/magic-bloomburrow-bloomburrow-bundle-case",
+      "modifiedOn": "2024-08-02T04:08:50.673",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2024-08-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "In Bloomburrow™, the Valley is threatened by elemental forces raging out of control, and salvation falls on the shoulders of its smallest protectors. Players will put their best paws forward, fighting alongside mice, frogs, bats, birds, and myriad other critters to restore the balance of peace—and prove bravery comes in all sizes.\r\n<br>\r\nThe Bundle is a great gift for Magic superfans visiting your store. They contain a little bit of everything to get a player's collection off the ground, plus an oversized Spindown life counter themed after the set.\r\n<br>\r\nContents:\r\n<br>\r\n• 6 Bloomburrow Bundles"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166257211"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 541242,
+        "lowPrice": 599.98,
+        "midPrice": 599.99,
+        "highPrice": 600,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

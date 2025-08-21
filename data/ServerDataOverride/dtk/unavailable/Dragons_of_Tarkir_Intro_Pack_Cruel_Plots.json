@@ -1,0 +1,82 @@
+{
+  "uuid": "485b2247-ae4d-551e-8a1d-bb7e0a02932f",
+  "name": "Dragons of Tarkir Intro Pack Cruel Plots",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100450",
+    "cardKingdomId": "199656",
+    "cardtraderId": "48262",
+    "csiId": "209790",
+    "mcmId": "273073",
+    "scgId": "SLD-MTG-INT-DTKINTRO-EN-CRUEL",
+    "tcgplayerProductId": "96411",
+    "tntId": "1068561"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a7c3b394ea2b8c8a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Cruel Plots",
+        "set": "dtk"
+      }
+    ],
+    "other": [
+      {
+        "name": "Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn to Play Magic Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Dragons of Tarkir Booster Pack",
+        "set": "dtk",
+        "uuid": "1075193b-2991-5302-b1e0-e452a5010ceb"
+      }
+    ]
+  },
+  "setCode": "DTK",
+  "setName": "Dragons of Tarkir",
+  "tcgcsvData": {
+    "product": {
+      "productId": 96411,
+      "name": "Dragons of Tarkir - Intro Pack - Cruel Plots",
+      "cleanName": "Dragons of Tarkir Intro Pack Cruel Plots",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/96411_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1515,
+      "url": "https://www.tcgplayer.com/product/96411/magic-dragons-of-tarkir-dragons-of-tarkir-intro-pack-cruel-plots",
+      "modifiedOn": "2021-08-05T14:03:15.897",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Dragons of Tarkir booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 96411,
+        "lowPrice": 51.62,
+        "midPrice": 52.4,
+        "highPrice": 53.17,
+        "marketPrice": 44.9,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "uuid": "f29c96f3-daf8-5475-9093-e54e80c6e279",
+  "name": "Amonkhet Planeswalker Decks Set of 2",
+  "category": "subset",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "scgId": "SLD-MTG-INT-AKHPWDECK-EN-SET2",
+    "tcgplayerProductId": "131217"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ae0383e1595917b4"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Amonkhet Planeswalker Deck Gideon",
+        "set": "akh",
+        "uuid": "54945ed8-387d-5824-a8fa-2eb6971610a0"
+      },
+      {
+        "count": 1,
+        "name": "Amonkhet Planeswalker Deck Liliana",
+        "set": "akh",
+        "uuid": "d4e272d1-115b-5e97-98e2-39c855ddc0b6"
+      }
+    ]
+  },
+  "setCode": "AKH",
+  "setName": "Amonkhet",
+  "tcgcsvData": {
+    "product": {
+      "productId": 131217,
+      "name": "Amonkhet - Planeswalker Deck [Set of 2]",
+      "cleanName": "Amonkhet Planeswalker Deck Set of 2",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/131217_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1882,
+      "url": "https://www.tcgplayer.com/product/131217/magic-amonkhet-amonkhet-planeswalker-deck-set-of-2",
+      "modifiedOn": "2017-05-05T11:23:01.873",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 131217,
+        "lowPrice": 199.99,
+        "midPrice": 199.99,
+        "highPrice": 199.99,
+        "marketPrice": 67.64,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

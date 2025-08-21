@@ -1,0 +1,74 @@
+{
+  "uuid": "2eed6c87-2ecd-5dfc-b6f0-1e7bf551a552",
+  "name": "Dark Ascension Intro Pack Swift Justice",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2012-02-03",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100379",
+    "cardKingdomId": "186296",
+    "cardtraderId": "47707",
+    "mcmId": "252506",
+    "scgId": "SLD-MTG-INT-DKAINTRO-EN-SWIFT",
+    "tcgplayerProductId": "57625",
+    "tntId": "329606"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c16c5d6b9068a299"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Swift Justice",
+        "set": "dka"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Dark Ascension Booster Pack",
+        "set": "dka",
+        "uuid": "e52ef13e-32e0-5b18-853d-4c36283f4743"
+      }
+    ]
+  },
+  "setCode": "DKA",
+  "setName": "Dark Ascension",
+  "tcgcsvData": {
+    "product": {
+      "productId": 57625,
+      "name": "Dark Ascension - Intro Pack - Swift Justice",
+      "cleanName": "Dark Ascension Intro Pack Swift Justice",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/57625_200w.jpg",
+      "categoryId": 1,
+      "groupId": 125,
+      "url": "https://www.tcgplayer.com/product/57625/magic-dark-ascension-dark-ascension-intro-pack-swift-justice",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-02-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "653569695363"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 57625,
+        "lowPrice": 19.11,
+        "midPrice": 24.93,
+        "highPrice": 24.98,
+        "marketPrice": 23.64,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "uuid": "f8c1403e-9a69-5a15-9076-64ca760b3bfb",
+  "name": "Commander Legends Battle for Baldurs Gate Commander Deck Exit from Exile",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-06-10",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2195743",
+    "cardKingdomId": "260611",
+    "cardtraderId": "208730",
+    "csiId": "334916",
+    "mcmId": "651791",
+    "scgId": "SLD-MTG-MLT-CLB-EN-EXILE",
+    "tcgplayerProductId": "267031",
+    "tntId": "1747119"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/3e3271068ce5ffcc",
+    "tcgplayer": "https://mtgjson.com/links/0a5d09b619819571"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Exit from Exile",
+        "set": "clb"
+      }
+    ],
+    "other": [
+      {
+        "name": "Cardstock Display Commander"
+      },
+      {
+        "name": "Life Tracker"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander Legends Battle for Baldurs Gate Collector Booster Sample Pack",
+        "set": "clb",
+        "uuid": "d72b8065-9cc3-531b-a4e6-16edfdec49bf"
+      }
+    ]
+  },
+  "setCode": "CLB",
+  "setName": "Commander Legends: Battle for Baldur's Gate",
+  "tcgcsvData": {
+    "product": {
+      "productId": 267031,
+      "name": "Commander Legends: Battle for Baldur's Gate - Exit from Exile Commander Deck",
+      "cleanName": "Commander Legends Battle for Baldurs Gate Exit from Exile Commander Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/267031_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3047,
+      "url": "https://www.tcgplayer.com/product/267031/magic-commander-legends-battle-for-baldurs-gate-commander-legends-battle-for-baldurs-gate-exit-from-exile-commander-deck",
+      "modifiedOn": "2022-06-10T04:03:55.07",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-06-10T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Play epic multiplayer games in the world of Dungeons & Dragons. The Exit from Exile Commander Legends: Battle for Baldur’s Gate Commander Deck includes 1 ready-to-play Red-Green deck of 100 Magic cards (3 traditional foil, 97 nonfoil), a 2-card Collector Booster Sample Pack, 1 foil-etched Display Commander (a thick cardstock copy of the commander card with foil etched into the card’s border and art), 10 double-sided tokens, 1 deck box (can hold 100 sleeved cards), 1 life tracker, and 1 reference card. Introduces 10 MTG cards not found in the main CLB set."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166181844"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 267031,
+        "lowPrice": 129.79,
+        "midPrice": 139.95,
+        "highPrice": 209.99,
+        "marketPrice": 110.32,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

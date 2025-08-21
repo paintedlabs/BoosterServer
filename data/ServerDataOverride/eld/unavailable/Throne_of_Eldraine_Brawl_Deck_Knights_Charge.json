@@ -1,0 +1,73 @@
+{
+  "uuid": "e00980ac-f97d-57d5-acf1-a298dd12a0ae",
+  "name": "Throne of Eldraine Brawl Deck Knights Charge",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2019-10-04",
+  "subtype": "brawl",
+  "identifiers": {
+    "abuId": "1596563",
+    "cardKingdomId": "227304",
+    "cardtraderId": "59638",
+    "csiId": "285170",
+    "mcmId": "399074",
+    "scgId": "SLD-MTG-INT-ELDBRAWL-EN-A",
+    "tcgplayerProductId": "194911",
+    "tntId": "1604226"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/6bbec6930f2a3163",
+    "tcgplayer": "https://mtgjson.com/links/eea18121d3ad38f6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Knights' Charge",
+        "set": "eld"
+      }
+    ],
+    "other": [
+      {
+        "name": "Eldraine Brawl Life Wheel"
+      }
+    ]
+  },
+  "setCode": "ELD",
+  "setName": "Throne of Eldraine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 194911,
+      "name": "Throne of Eldraine - Brawl Deck \"Knights' Charge\"",
+      "cleanName": "Throne of Eldraine Brawl Deck Knights Charge",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/194911_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2494,
+      "url": "https://www.tcgplayer.com/product/194911/magic-throne-of-eldraine-throne-of-eldraine-brawl-deck-knights-charge",
+      "modifiedOn": "2019-09-30T14:10:54.763",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-10-04T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Brawl Decks are 60-card ready-to-play decks, all Standard-legal, and designed specifically for the Brawl format. There are four decks available, and each has seven Standard-legal cards not available in Throne of Eldraine booster packs.\r\n<br><br>\r\n<strong>Contents:</strong>\r\n<br>• 60-card Standard-legal singleton deck (no more than 1 copy of a given card, except basic lands)\r\n<br>• 7 Standard-legal cards not found in traditional Throne of Eldraine booster packs\r\n<br>• 1 foil legendary creature not found in Throne of Eldraine booster packs\r\n<br>• 1 Life Wheel\r\n<br>• 1 Strategy insert"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 194911,
+        "lowPrice": 22.99,
+        "midPrice": 30.24,
+        "highPrice": 59.99,
+        "marketPrice": 30.47,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

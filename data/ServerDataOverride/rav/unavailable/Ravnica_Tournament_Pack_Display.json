@@ -1,0 +1,67 @@
+{
+  "uuid": "363407f0-695e-5989-8088-16a094880eed",
+  "name": "Ravnica Tournament Pack Display",
+  "category": "limited_aid_case",
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1101055",
+    "cardKingdomId": "240194",
+    "cardtraderId": "47066",
+    "mcmId": "253862",
+    "scgId": "SLD-MTG-BBX-RAVTOURNAMENT-EN",
+    "tcgplayerProductId": "265603",
+    "tntId": "128859"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/9195c94e750ec82c",
+    "tcgplayer": "https://mtgjson.com/links/179f76fad69ca939"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 12,
+        "name": "Ravnica Tournament Pack",
+        "set": "rav",
+        "uuid": "303d70f4-790d-5ccf-af92-fb6fe17c2311"
+      }
+    ]
+  },
+  "setCode": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "tcgcsvData": {
+    "product": {
+      "productId": 265603,
+      "name": "Ravnica Tournament Pack Display",
+      "cleanName": "Ravnica Tournament Pack Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/265603_200w.jpg",
+      "categoryId": 1,
+      "groupId": 95,
+      "url": "https://www.tcgplayer.com/product/265603/magic-ravnica-city-of-guilds-ravnica-tournament-pack-display",
+      "modifiedOn": "2022-03-10T21:57:51.887",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "In the largest metropolis of a city-covered plane, perspectives will clash and laws will be tested. From the depths under the city to its lofty spires above, Ravnica's citizens eke out an existence even as all around them ancient guilds vie for control and power.\r\n<br>Contains 12 Tournament Packs\r\n<br>Each tournament pack contains 75 cards."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 265603,
+        "lowPrice": 949.99,
+        "midPrice": 1149.95,
+        "highPrice": 1720.34,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

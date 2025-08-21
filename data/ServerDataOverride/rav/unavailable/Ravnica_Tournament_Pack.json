@@ -1,0 +1,60 @@
+{
+  "uuid": "303d70f4-790d-5ccf-af92-fb6fe17c2311",
+  "name": "Ravnica Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1101058",
+    "cardKingdomId": "118356",
+    "cardtraderId": "47064",
+    "mcmId": "248484",
+    "scgId": "SLD-MTG-PCK-RAVTOURNAMENT-EN",
+    "tcgplayerProductId": "118876",
+    "tntId": "128860"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/bda144c783b9695e",
+    "tcgplayer": "https://mtgjson.com/links/236b4dce02dedf5a"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "rav"
+      }
+    ]
+  },
+  "setCode": "RAV",
+  "setName": "Ravnica: City of Guilds",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118876,
+      "name": "Ravnica Tournament Pack",
+      "cleanName": "Ravnica Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118876_200w.jpg",
+      "categoryId": 1,
+      "groupId": 95,
+      "url": "https://www.tcgplayer.com/product/118876/magic-ravnica-city-of-guilds-ravnica-tournament-pack",
+      "modifiedOn": "2016-06-06T15:17:09.277",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 118876,
+        "lowPrice": 64.98,
+        "midPrice": 74.97,
+        "highPrice": 149.95,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

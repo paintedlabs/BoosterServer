@@ -1,0 +1,84 @@
+{
+  "uuid": "7f2c27aa-95cb-5864-bbca-e064f6aa7417",
+  "name": "Kaladesh Gift Box",
+  "category": "bundle",
+  "releaseDate": "2016-10-07",
+  "subtype": "gift_bundle",
+  "identifiers": {
+    "abuId": "1101194",
+    "cardKingdomId": "210348",
+    "cardtraderId": "48475",
+    "csiId": "229097",
+    "mcmId": "293173",
+    "tcgplayerProductId": "125323",
+    "tntId": "1102288"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2026be74b516158b"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Chief of the Foundry",
+        "number": "200",
+        "set": "pkld",
+        "uuid": "e822b78b-f699-56df-ad90-83a7acae81c9"
+      }
+    ],
+    "other": [
+      {
+        "name": "Kaladesh 20-card Basic Land Bundle"
+      },
+      {
+        "name": "Card Storage Box"
+      },
+      {
+        "name": "Six Illustrated Plastic Dividers"
+      },
+      {
+        "name": "Kaladesh Sticker Sheet"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 5,
+        "name": "Kaladesh Booster Pack",
+        "set": "kld",
+        "uuid": "cf0f8060-bd6a-5d26-994c-202112e5177c"
+      }
+    ]
+  },
+  "setCode": "KLD",
+  "setName": "Kaladesh",
+  "tcgcsvData": {
+    "product": {
+      "productId": 125323,
+      "name": "Kaladesh Gift Box",
+      "cleanName": "Kaladesh Gift Box",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/125323_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2084,
+      "url": "https://www.tcgplayer.com/product/125323/magic-gift-boxes-and-promos-kaladesh-gift-box",
+      "modifiedOn": "2017-10-23T15:04:17.837",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 125323,
+        "lowPrice": 81.01,
+        "midPrice": 107.47,
+        "highPrice": 269.69,
+        "marketPrice": 93.65,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

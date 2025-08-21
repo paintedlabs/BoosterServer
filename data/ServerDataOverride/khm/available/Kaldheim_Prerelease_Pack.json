@@ -1,0 +1,679 @@
+{
+  "uuid": "950a1927-2cbc-58ea-90c4-8da404ebd93b",
+  "name": "Kaldheim Prerelease Pack",
+  "category": "limited_aid_tool",
+  "releaseDate": "2021-01-07",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "1962690",
+    "cardKingdomId": "240255",
+    "cardtraderId": "151900",
+    "csiId": "308023",
+    "mcmId": "529287",
+    "tcgplayerProductId": "230377",
+    "tntId": "1182105"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/95a34e99c52f1915",
+    "tcgplayer": "https://mtgjson.com/links/933951173acbb1f7"
+  },
+  "setCode": "KHM",
+  "setName": "Kaldheim",
+  "extendedData": {
+    "code": "khm-prerelease",
+    "boosters": [
+      {
+        "sheets": {
+          "prerelease_promo": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "prerelease_promo": {
+        "total_weight": 149,
+        "cards": [
+          {
+            "set": "pkhm",
+            "number": "1",
+            "weight": 1,
+            "foil": true,
+            "uuid": "01eef418-a9d3-5bba-bc44-9917ffa49b80"
+          },
+          {
+            "set": "pkhm",
+            "number": "9s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a9d5ccf8-19cd-5289-ab48-c82eefe7567a"
+          },
+          {
+            "set": "pkhm",
+            "number": "12s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c74ee01d-d890-5c56-ac0b-b1f93c33e3cf"
+          },
+          {
+            "set": "pkhm",
+            "number": "15sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "b09ae70d-b9ad-5115-8e72-3edf36849455"
+          },
+          {
+            "set": "pkhm",
+            "number": "20s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "caa3dfb0-817f-579a-ac01-d9bd98b517c8"
+          },
+          {
+            "set": "pkhm",
+            "number": "21sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "31ea3d0a-3b48-5d0b-a936-a694bee243d8"
+          },
+          {
+            "set": "pkhm",
+            "number": "22s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "57e9392c-8a9f-59a3-88ea-c07ba7e7efc0"
+          },
+          {
+            "set": "pkhm",
+            "number": "24s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "32719932-ed0a-58e0-9291-0e94ca0019be"
+          },
+          {
+            "set": "pkhm",
+            "number": "26s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "bdfd4973-588f-5279-8ec6-eede126cc926"
+          },
+          {
+            "set": "pkhm",
+            "number": "27s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a4d717e3-2a08-58ee-81d7-ed71b0cce052"
+          },
+          {
+            "set": "pkhm",
+            "number": "29s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9ffb2bbf-d0d9-5d63-871c-1b630bbb73ba"
+          },
+          {
+            "set": "pkhm",
+            "number": "33s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "a431f0b3-0c10-54ff-b991-c840d3e8b826"
+          },
+          {
+            "set": "pkhm",
+            "number": "40sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "efa4aa83-a2e0-5080-bc7b-13795c13d1b4"
+          },
+          {
+            "set": "pkhm",
+            "number": "41s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9ab95b0c-2ea8-536e-83bf-460c11d3a24d"
+          },
+          {
+            "set": "pkhm",
+            "number": "43s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "175a9c9c-eb45-5c4b-b58e-174a2554acaa"
+          },
+          {
+            "set": "pkhm",
+            "number": "50sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "82c8cc90-d4b1-5364-a62f-5c22bc4e3d32"
+          },
+          {
+            "set": "pkhm",
+            "number": "51s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7ff4a0cb-0839-5b53-8dd9-064f99176d81"
+          },
+          {
+            "set": "pkhm",
+            "number": "52s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "0aca6999-f6a6-5435-996a-191ca97d46c3"
+          },
+          {
+            "set": "pkhm",
+            "number": "61s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c836fae3-5a44-59b5-9b26-4a6079bb670d"
+          },
+          {
+            "set": "pkhm",
+            "number": "63s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a655b461-07af-5368-a132-eb8411a7150f"
+          },
+          {
+            "set": "pkhm",
+            "number": "69s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "927e0d6e-5747-57b8-8423-d6970376bdec"
+          },
+          {
+            "set": "pkhm",
+            "number": "70s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3c38402d-8c0c-57ee-a443-f29ec94ee073"
+          },
+          {
+            "set": "pkhm",
+            "number": "73s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "919d85de-c7ce-579a-8b54-06f083c2f083"
+          },
+          {
+            "set": "pkhm",
+            "number": "79s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f9b4ae75-c114-578b-afe8-240854050273"
+          },
+          {
+            "set": "pkhm",
+            "number": "81s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "cd45bf59-2955-5d23-8d8f-325da1a646bf"
+          },
+          {
+            "set": "pkhm",
+            "number": "82s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4f1ea5e9-cab7-5ea7-9441-cd6553433937"
+          },
+          {
+            "set": "pkhm",
+            "number": "86s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f757f36a-cebd-5640-b6ef-70ec03fbea75"
+          },
+          {
+            "set": "pkhm",
+            "number": "90s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f368ec1b-895f-5fc9-a32f-f3ccc5f21abc"
+          },
+          {
+            "set": "pkhm",
+            "number": "92sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e28848e5-6cd1-55cd-8b8b-1244f47edd82"
+          },
+          {
+            "set": "pkhm",
+            "number": "94s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "c456b7a9-b627-589e-bab5-5083c14b0cdc"
+          },
+          {
+            "set": "pkhm",
+            "number": "98s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "b93f7544-46e0-5f71-af1b-f38d235e15af"
+          },
+          {
+            "set": "pkhm",
+            "number": "107s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "bded8156-042b-569a-a747-13f35e8c93f6"
+          },
+          {
+            "set": "pkhm",
+            "number": "109s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2318cecf-0fee-51cc-8297-05bb560f4a84"
+          },
+          {
+            "set": "pkhm",
+            "number": "112sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "547875ef-f19d-5d38-aef9-e2331d1d33d5"
+          },
+          {
+            "set": "pkhm",
+            "number": "114sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ae02c448-f999-5854-839a-c6a576da13d8"
+          },
+          {
+            "set": "pkhm",
+            "number": "115s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "0e51085d-993b-5d99-82b2-e047b6368032"
+          },
+          {
+            "set": "pkhm",
+            "number": "120s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7100c52f-c3dd-5e5b-9dfc-386fea45959a"
+          },
+          {
+            "set": "pkhm",
+            "number": "123sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "8e1dfd86-0b71-5a97-9b74-532b314dcb90"
+          },
+          {
+            "set": "pkhm",
+            "number": "125s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "416b947d-ea47-5f11-8aaf-4a3bb1621ce1"
+          },
+          {
+            "set": "pkhm",
+            "number": "131s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "de6e0b19-cb3d-5046-a7ee-91c0bb5754af"
+          },
+          {
+            "set": "pkhm",
+            "number": "139s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "8fcb1e0e-602f-52c1-b8f5-311ad0135554"
+          },
+          {
+            "set": "pkhm",
+            "number": "142s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "8cf56c7a-ea46-5225-9da4-dc34aab524d9"
+          },
+          {
+            "set": "pkhm",
+            "number": "145s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "5137ad62-ecbd-5ddc-b63d-79cbe9f67016"
+          },
+          {
+            "set": "pkhm",
+            "number": "146s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "dfac124b-17ec-53da-921a-ef784c1d2113"
+          },
+          {
+            "set": "pkhm",
+            "number": "153s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b4b25953-5d21-5fce-83d4-3e85c4657668"
+          },
+          {
+            "set": "pkhm",
+            "number": "154sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "bd01b451-0c7a-5f39-b0de-5f88aa8ce0fd"
+          },
+          {
+            "set": "pkhm",
+            "number": "156s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b792821e-67fb-5bb6-8891-94067401bb36"
+          },
+          {
+            "set": "pkhm",
+            "number": "160s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "e5d2830f-669d-5800-8fe0-ab2010863c05"
+          },
+          {
+            "set": "pkhm",
+            "number": "161s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "91aa47c2-a563-5cb7-90ce-9a24acb7431e"
+          },
+          {
+            "set": "pkhm",
+            "number": "167s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "dfab00a2-a597-5797-9dd1-7f85efe559a4"
+          },
+          {
+            "set": "pkhm",
+            "number": "168sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "5311962c-e748-5347-8c70-dedb798ce131"
+          },
+          {
+            "set": "pkhm",
+            "number": "169s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d2c2fdba-057a-5a1a-9c7f-317ddaa6e46e"
+          },
+          {
+            "set": "pkhm",
+            "number": "177s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e0c61bf9-c31c-5660-9c3a-5f57db54bf99"
+          },
+          {
+            "set": "pkhm",
+            "number": "179sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6adf3f1f-b9b2-5c4d-b608-fe84e32fb5bb"
+          },
+          {
+            "set": "pkhm",
+            "number": "181sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d959e8ef-3a3f-59e2-94ee-c1e390588a72"
+          },
+          {
+            "set": "pkhm",
+            "number": "185s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6de6ba93-2b9a-5a47-a12c-d8b03af433b3"
+          },
+          {
+            "set": "pkhm",
+            "number": "188s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "66124810-2a79-5c4f-a43f-181400aa8c4f"
+          },
+          {
+            "set": "pkhm",
+            "number": "197s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "25a2de6f-b2cd-5cb3-b575-587880e84f5e"
+          },
+          {
+            "set": "pkhm",
+            "number": "198s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "291ff1f2-43ad-5532-8ed0-e2097c01a493"
+          },
+          {
+            "set": "pkhm",
+            "number": "199s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "9c8ebd33-66e6-55af-9516-7a935980e7da"
+          },
+          {
+            "set": "pkhm",
+            "number": "203s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "659372d5-c9da-5e00-a132-9665599f3ffb"
+          },
+          {
+            "set": "pkhm",
+            "number": "204s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2800bf6e-8939-5912-9ba0-a6bbd79205c9"
+          },
+          {
+            "set": "pkhm",
+            "number": "205s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ca5fabbe-abd8-59af-8e26-99f26bf3b54c"
+          },
+          {
+            "set": "pkhm",
+            "number": "207s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "462a098d-a916-5a4d-ac61-e5bcdafc0ec6"
+          },
+          {
+            "set": "pkhm",
+            "number": "210s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "619a7762-7a78-5b14-b271-35881739f39d"
+          },
+          {
+            "set": "pkhm",
+            "number": "213s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "93a9a62c-90f8-57ae-a006-0de3d5e5e70d"
+          },
+          {
+            "set": "pkhm",
+            "number": "214s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "765b018a-f2db-5906-bf2f-51c75d2e571c"
+          },
+          {
+            "set": "pkhm",
+            "number": "218s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "dda4d6d8-a607-5790-93f1-56f4e4477b90"
+          },
+          {
+            "set": "pkhm",
+            "number": "219s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "67858280-ef81-5c49-8756-595ffd2fb347"
+          },
+          {
+            "set": "pkhm",
+            "number": "221s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "f9330f9b-709b-52b9-958c-cfdadc1e79dd"
+          },
+          {
+            "set": "pkhm",
+            "number": "225s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "0d6f0e39-87a5-57b4-892a-9b611c07c179"
+          },
+          {
+            "set": "pkhm",
+            "number": "227s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e22abceb-6852-56be-8643-ab116de7ba53"
+          },
+          {
+            "set": "pkhm",
+            "number": "228s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4b044cf9-4866-50ce-989b-5140ef487573"
+          },
+          {
+            "set": "pkhm",
+            "number": "229s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a5b69e59-a2a6-5b06-b418-da982df34dcc"
+          },
+          {
+            "set": "pkhm",
+            "number": "234s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7063674f-9e3b-5cdf-a622-ea66d8403e8d"
+          },
+          {
+            "set": "pkhm",
+            "number": "237s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b95942a8-a145-5b27-91ec-f00cdb29f4c2"
+          },
+          {
+            "set": "pkhm",
+            "number": "240s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "16d79599-4712-5ce4-aa50-92ce297ef492"
+          },
+          {
+            "set": "pkhm",
+            "number": "241s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "40490ece-c71f-5a36-bb7d-de3e95908b30"
+          },
+          {
+            "set": "pkhm",
+            "number": "251sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "78e7de3f-4697-5312-88a3-8cac3f931d7e"
+          },
+          {
+            "set": "pkhm",
+            "number": "252sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b4ac8ba2-368f-5d5e-a95e-c7202c01fe26"
+          },
+          {
+            "set": "pkhm",
+            "number": "254sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "150fbe68-d3c0-5d54-8ac4-63de89b53fee"
+          },
+          {
+            "set": "pkhm",
+            "number": "255s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "57232eae-dc07-5267-8872-8c870b334212"
+          },
+          {
+            "set": "pkhm",
+            "number": "260sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e208844c-a3ca-524f-b0e5-482b55519f3c"
+          },
+          {
+            "set": "pkhm",
+            "number": "272s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5e554636-454c-53ea-9a13-f4e07f34c489"
+          },
+          {
+            "set": "pkhm",
+            "number": "275s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9779fa02-f2c6-5651-8d6d-780f82e62fa7"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "pkhm"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 230377,
+      "name": "Kaldheim - Prerelease Pack",
+      "cleanName": "Kaldheim Prerelease Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/230377_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2750,
+      "url": "https://www.tcgplayer.com/product/230377/magic-kaldheim-kaldheim-prerelease-pack",
+      "modifiedOn": "2022-06-13T17:25:46.14",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contents: \r\n<br>• 6 Kaldheim booster packs\r\n<br>• 1 foil promo-stamped rare or mythic rare from Kaldheim\r\n<br>• 1 MTG Arena code card\r\n<br>• 1 Spindown life counter"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509922192"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 230377,
+        "lowPrice": 32.99,
+        "midPrice": 35,
+        "highPrice": 43.95,
+        "marketPrice": 30.54,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

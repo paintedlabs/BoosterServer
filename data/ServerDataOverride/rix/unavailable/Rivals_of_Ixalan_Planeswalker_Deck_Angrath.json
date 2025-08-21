@@ -1,0 +1,75 @@
+{
+  "uuid": "0da24da5-ff1a-503a-bc0b-4314a4e5077f",
+  "name": "Rivals of Ixalan Planeswalker Deck Angrath",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-01-19",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1486346",
+    "cardKingdomId": "216002",
+    "cardtraderId": "48629",
+    "csiId": "244213",
+    "mcmId": "314997",
+    "scgId": "SLD-MTG-INT-RIXPWDECK-EN-ANGRATH",
+    "tcgplayerProductId": "154414",
+    "tntId": "1145976"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/461cac6b350ecd1b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Angrath, Minotaur Pirate",
+        "set": "rix"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Rivals of Ixalan Booster Pack",
+        "set": "rix",
+        "uuid": "307394ca-be46-5a6c-a688-2f351a3f75db"
+      }
+    ]
+  },
+  "setCode": "RIX",
+  "setName": "Rivals of Ixalan",
+  "tcgcsvData": {
+    "product": {
+      "productId": 154414,
+      "name": "Rivals of Ixalan - Planeswalker Deck [Angrath]",
+      "cleanName": "Rivals of Ixalan Planeswalker Deck Angrath",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/154414_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2098,
+      "url": "https://www.tcgplayer.com/product/154414/magic-rivals-of-ixalan-rivals-of-ixalan-planeswalker-deck-angrath",
+      "modifiedOn": "2017-12-22T14:17:07.373",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-01-19T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring <a href=\"Angrath, Minotaur Pirate\">\"Angrath, Minotaur Pirate\"</a>. This deck contains the following:\r\n<br>\r\n<br>• 1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card\r\n<br>• 2 Rivals of Ixalan booster packs\r\n<br>• 1 Strategy insert\r\n<br>• 1 Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 154414,
+        "lowPrice": 43.32,
+        "midPrice": 43.32,
+        "highPrice": 43.32,
+        "marketPrice": 43.32,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

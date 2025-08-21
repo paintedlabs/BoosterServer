@@ -1,0 +1,1665 @@
+{
+  "uuid": "4584305b-2b1a-5ffd-a4b6-16a65d0985f7",
+  "name": "Dominaria United Jumpstart Booster Pack",
+  "category": "booster_pack",
+  "cardCount": 20,
+  "releaseDate": "2022-09-09",
+  "subtype": "jumpstart",
+  "identifiers": {
+    "abuId": "2220757",
+    "cardKingdomId": "263995",
+    "cardtraderId": "219839",
+    "mcmId": "657409",
+    "scgId": "SLD-MTG-PCK-DMUJUMPSTART-EN",
+    "tcgplayerProductId": "275425",
+    "tntId": "1751766"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/088467755d5fb490",
+    "tcgplayer": "https://mtgjson.com/links/bef9705688bc6fc4"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "jumpstart",
+        "set": "dmu"
+      }
+    ]
+  },
+  "setCode": "DMU",
+  "setName": "Dominaria United",
+  "extendedData": {
+    "code": "dmu-jumpstart",
+    "boosters": [
+      {
+        "sheets": {
+          "arcane_mischief": 17,
+          "arcane_mischief_foils": 2,
+          "rare_mythic_blue": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "beast_territory": 17,
+          "beast_territory_foils": 2,
+          "rare_mythic_green": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "coalition_corps": 17,
+          "coalition_corps_foils": 2,
+          "rare_mythic_white": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "coalition_legion": 17,
+          "coalition_legion_foils": 2,
+          "rare_mythic_white": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "monster_territory": 17,
+          "monster_territory_foils": 2,
+          "rare_mythic_green": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "mystic_mischief": 17,
+          "mystic_mischief_foils": 2,
+          "rare_mythic_blue": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "ready_to_attack": 17,
+          "ready_to_attack_foils": 2,
+          "rare_mythic_red": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "ready_to_charge": 17,
+          "ready_to_charge_foils": 2,
+          "rare_mythic_red": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "totally_merciless": 17,
+          "totally_merciless_foils": 2,
+          "rare_mythic_black": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "totally_ruthless": 17,
+          "totally_ruthless_foils": 2,
+          "rare_mythic_black": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "arcane_mischief": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "41",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8ff06a3c-b956-5f31-8df6-6ec20c57d72d"
+          },
+          {
+            "set": "dmu",
+            "number": "44",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ea0bf2ff-e4f0-56ab-8658-a9ca13671148"
+          },
+          {
+            "set": "dmu",
+            "number": "47",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cde032cf-96a9-5ea9-94f4-8dc30ae3926a"
+          },
+          {
+            "set": "dmu",
+            "number": "51",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a2d504b1-e8cb-5bb8-a6d8-fdb868fa599a"
+          },
+          {
+            "set": "dmu",
+            "number": "53",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8aae24ec-32e1-542d-97be-d027c0e26b2d"
+          },
+          {
+            "set": "dmu",
+            "number": "54",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f4abebf3-6ef3-5e03-9f67-2af3287ed4f3"
+          },
+          {
+            "set": "dmu",
+            "number": "55",
+            "weight": 1,
+            "foil": false,
+            "uuid": "64c40e9f-024c-5f55-ae43-4da7f2c42321"
+          },
+          {
+            "set": "dmu",
+            "number": "64",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3a2e73fb-71b1-56ad-9d1d-169981db6c9a"
+          },
+          {
+            "set": "dmu",
+            "number": "66",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2758d906-f551-5c62-8069-fc7f9ced5914"
+          },
+          {
+            "set": "dmu",
+            "number": "68",
+            "weight": 1,
+            "foil": false,
+            "uuid": "43b20c58-7366-595a-b846-24930b1f2406"
+          },
+          {
+            "set": "dmu",
+            "number": "265",
+            "weight": 5,
+            "foil": false,
+            "uuid": "db2b0bb2-19ec-565f-992b-4380a22e25d4"
+          },
+          {
+            "set": "dmu",
+            "number": "278",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2b02c3a5-2bc7-56da-8566-1688432e78ce"
+          },
+          {
+            "set": "dmu",
+            "number": "283",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b2e212ad-d8c0-52ce-b2ff-f02facd4bd31"
+          }
+        ]
+      },
+      "arcane_mischief_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "265",
+            "weight": 2,
+            "foil": true,
+            "uuid": "db2b0bb2-19ec-565f-992b-4380a22e25d4"
+          }
+        ]
+      },
+      "rare_mythic_blue": {
+        "total_weight": 16,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "40",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d4a2c823-c95b-5bf1-b30c-958b73244f1f"
+          },
+          {
+            "set": "dmu",
+            "number": "42",
+            "weight": 2,
+            "foil": false,
+            "uuid": "5029812a-03c4-5e9d-a171-b89ba78207e3"
+          },
+          {
+            "set": "dmu",
+            "number": "46",
+            "weight": 2,
+            "foil": false,
+            "uuid": "47ab9225-7054-5d17-8b37-3477d7350991"
+          },
+          {
+            "set": "dmu",
+            "number": "52",
+            "weight": 2,
+            "foil": false,
+            "uuid": "1f8955a0-3406-5d6c-a7ee-bbaf446efc8b"
+          },
+          {
+            "set": "dmu",
+            "number": "59",
+            "weight": 2,
+            "foil": false,
+            "uuid": "b0a93b6d-c2c3-5f67-baf7-ccf7c2667f70"
+          },
+          {
+            "set": "dmu",
+            "number": "65",
+            "weight": 2,
+            "foil": false,
+            "uuid": "38f09b3d-55b5-51d7-81d2-4243810aeac2"
+          },
+          {
+            "set": "dmu",
+            "number": "67",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2a8db1da-eeee-57a3-a7f7-ffa21d13499c"
+          },
+          {
+            "set": "dmu",
+            "number": "73",
+            "weight": 1,
+            "foil": false,
+            "uuid": "84cc007a-da37-50e5-9c1d-eacb5febf7e4"
+          },
+          {
+            "set": "dmu",
+            "number": "75",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d6837816-e595-597e-bbf0-d0736de595fb"
+          }
+        ]
+      },
+      "beast_territory": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "155",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4ea28ed4-6096-5661-8b4c-edfb744906df"
+          },
+          {
+            "set": "dmu",
+            "number": "157",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4d1f2203-341d-50ec-b03f-ce512af86f7f"
+          },
+          {
+            "set": "dmu",
+            "number": "159",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5bbae107-15f5-5edd-a910-c670cfaf44c3"
+          },
+          {
+            "set": "dmu",
+            "number": "163",
+            "weight": 1,
+            "foil": false,
+            "uuid": "098eee21-80ef-5fa3-a33b-5f1e4c9d660f"
+          },
+          {
+            "set": "dmu",
+            "number": "168",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8611289d-4af4-5fb2-b32d-095209b71b1e"
+          },
+          {
+            "set": "dmu",
+            "number": "172",
+            "weight": 1,
+            "foil": false,
+            "uuid": "42955759-64d0-5ab0-8ac5-e6b3783226f3"
+          },
+          {
+            "set": "dmu",
+            "number": "173",
+            "weight": 1,
+            "foil": false,
+            "uuid": "578dce8e-6929-5d72-91e6-242ed50d6bb1"
+          },
+          {
+            "set": "dmu",
+            "number": "178",
+            "weight": 1,
+            "foil": false,
+            "uuid": "aa0f861f-f4c0-58b8-be63-76d9c266b987"
+          },
+          {
+            "set": "dmu",
+            "number": "181",
+            "weight": 1,
+            "foil": false,
+            "uuid": "148b963d-f2c0-51bf-8341-f5ecf4cbb0b7"
+          },
+          {
+            "set": "dmu",
+            "number": "184",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e382d955-cfe0-5c9c-9b14-61cef061cdd3"
+          },
+          {
+            "set": "dmu",
+            "number": "248",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f23783ec-de54-5622-b167-7dcac60b76f2"
+          },
+          {
+            "set": "dmu",
+            "number": "253",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0a46cf8f-c403-5a1e-8901-12769faddec7"
+          },
+          {
+            "set": "dmu",
+            "number": "258",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b9a185a2-c687-5b00-b5f7-a1fb815c68ab"
+          },
+          {
+            "set": "dmu",
+            "number": "260",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a55c6894-120c-5454-bc7d-8756438a281c"
+          },
+          {
+            "set": "dmu",
+            "number": "274",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ed4fa28d-0be9-5a85-a4d9-355d7081bc6f"
+          },
+          {
+            "set": "dmu",
+            "number": "281",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bb51b61e-943a-5c7c-a801-a4b276251f76"
+          },
+          {
+            "set": "dmu",
+            "number": "286",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5a8edb6d-3f60-5b77-847d-4cc87cecc89d"
+          }
+        ]
+      },
+      "beast_territory_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "274",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ed4fa28d-0be9-5a85-a4d9-355d7081bc6f"
+          }
+        ]
+      },
+      "rare_mythic_green": {
+        "total_weight": 16,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "160",
+            "weight": 2,
+            "foil": false,
+            "uuid": "9b1c5b2c-e5f4-543b-9ee1-1b1bae6e7ad5"
+          },
+          {
+            "set": "dmu",
+            "number": "165",
+            "weight": 2,
+            "foil": false,
+            "uuid": "5a1ab7c0-49b5-5047-9af6-4177832d89af"
+          },
+          {
+            "set": "dmu",
+            "number": "167",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a920b7d5-ab85-5844-a743-464942470011"
+          },
+          {
+            "set": "dmu",
+            "number": "169",
+            "weight": 2,
+            "foil": false,
+            "uuid": "c3d87915-2115-5e38-a283-02c26b951e6d"
+          },
+          {
+            "set": "dmu",
+            "number": "170",
+            "weight": 2,
+            "foil": false,
+            "uuid": "21fa8ab2-4ac5-5771-b06b-d66854f21911"
+          },
+          {
+            "set": "dmu",
+            "number": "175",
+            "weight": 2,
+            "foil": false,
+            "uuid": "6bb27875-aace-54cf-b5e0-293c6a68e0f6"
+          },
+          {
+            "set": "dmu",
+            "number": "177",
+            "weight": 1,
+            "foil": false,
+            "uuid": "eb457a4c-d1ef-5549-89a3-1fe4bc313db5"
+          },
+          {
+            "set": "dmu",
+            "number": "185",
+            "weight": 2,
+            "foil": false,
+            "uuid": "4eeec8fc-85ea-5c45-8d42-4ee84c662831"
+          },
+          {
+            "set": "dmu",
+            "number": "189",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a1a94d8a-499f-5cef-95ea-52eacc228adf"
+          }
+        ]
+      },
+      "coalition_corps": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "4",
+            "weight": 1,
+            "foil": false,
+            "uuid": "70e7b490-3f26-58c3-878d-ae20f345121a"
+          },
+          {
+            "set": "dmu",
+            "number": "5",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cd9efe31-9150-5501-b355-450324c03ea9"
+          },
+          {
+            "set": "dmu",
+            "number": "9",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7c90ec50-e572-514a-9efe-bfc4b58c4c8e"
+          },
+          {
+            "set": "dmu",
+            "number": "10",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7377a85f-bd4d-56d3-b271-521f3f2cfcd6"
+          },
+          {
+            "set": "dmu",
+            "number": "13",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a52e5e51-98ae-5d07-b5ff-629c8d249ffc"
+          },
+          {
+            "set": "dmu",
+            "number": "18",
+            "weight": 1,
+            "foil": false,
+            "uuid": "74d0d38f-8276-58de-95ea-a471a7b35a86"
+          },
+          {
+            "set": "dmu",
+            "number": "21",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f04462f9-cb41-5aba-bbc4-d6a443e7f95b"
+          },
+          {
+            "set": "dmu",
+            "number": "25",
+            "weight": 1,
+            "foil": false,
+            "uuid": "73e33c97-d77d-5023-8265-4fa7f48df847"
+          },
+          {
+            "set": "dmu",
+            "number": "28",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f8c05897-9041-5574-a02d-5cfb15da3625"
+          },
+          {
+            "set": "dmu",
+            "number": "29",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c886886a-810c-5a5a-a8bd-7a6d4b152c23"
+          },
+          {
+            "set": "dmu",
+            "number": "262",
+            "weight": 5,
+            "foil": false,
+            "uuid": "a949620d-6fec-5115-b260-199c34f7f769"
+          },
+          {
+            "set": "dmu",
+            "number": "277",
+            "weight": 1,
+            "foil": false,
+            "uuid": "413e9e4d-9d1b-5486-8551-b06236e7f4a5"
+          },
+          {
+            "set": "dmu",
+            "number": "282",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c7eff468-154e-5848-b8a1-9b88080568f7"
+          }
+        ]
+      },
+      "coalition_corps_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "262",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a949620d-6fec-5115-b260-199c34f7f769"
+          }
+        ]
+      },
+      "rare_mythic_white": {
+        "total_weight": 18,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "1",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c55d896f-66d1-5e26-ac69-049d5d996a75"
+          },
+          {
+            "set": "dmu",
+            "number": "2",
+            "weight": 2,
+            "foil": false,
+            "uuid": "77c57a1e-026b-5304-9f6d-c3ca7bfb368d"
+          },
+          {
+            "set": "dmu",
+            "number": "15",
+            "weight": 2,
+            "foil": false,
+            "uuid": "6f933a66-8049-564c-adda-9d04d22b68b2"
+          },
+          {
+            "set": "dmu",
+            "number": "16",
+            "weight": 2,
+            "foil": false,
+            "uuid": "77403f19-61f2-55db-87fd-a93eb5671d49"
+          },
+          {
+            "set": "dmu",
+            "number": "19",
+            "weight": 2,
+            "foil": false,
+            "uuid": "b0e7e1c5-d5ae-566e-a489-0750d039b677"
+          },
+          {
+            "set": "dmu",
+            "number": "24",
+            "weight": 2,
+            "foil": false,
+            "uuid": "ed16b24f-2e06-55e1-85a8-06abae69424b"
+          },
+          {
+            "set": "dmu",
+            "number": "32",
+            "weight": 1,
+            "foil": false,
+            "uuid": "902d10c4-03fa-59b9-ad5d-46ce3898e3cc"
+          },
+          {
+            "set": "dmu",
+            "number": "36",
+            "weight": 2,
+            "foil": false,
+            "uuid": "1252c2e5-5728-5057-b5e7-2299260b8492"
+          },
+          {
+            "set": "dmu",
+            "number": "37",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d8031971-fd92-50bc-809c-c21ac9397daa"
+          },
+          {
+            "set": "dmu",
+            "number": "38",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a2d1a644-479c-5974-8b63-9bf88c489d28"
+          }
+        ]
+      },
+      "coalition_legion": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "4",
+            "weight": 1,
+            "foil": false,
+            "uuid": "70e7b490-3f26-58c3-878d-ae20f345121a"
+          },
+          {
+            "set": "dmu",
+            "number": "7",
+            "weight": 1,
+            "foil": false,
+            "uuid": "247341b0-f5b1-5a3a-bb90-ce3c4850edba"
+          },
+          {
+            "set": "dmu",
+            "number": "10",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7377a85f-bd4d-56d3-b271-521f3f2cfcd6"
+          },
+          {
+            "set": "dmu",
+            "number": "18",
+            "weight": 1,
+            "foil": false,
+            "uuid": "74d0d38f-8276-58de-95ea-a471a7b35a86"
+          },
+          {
+            "set": "dmu",
+            "number": "21",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f04462f9-cb41-5aba-bbc4-d6a443e7f95b"
+          },
+          {
+            "set": "dmu",
+            "number": "23",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e5e80711-3836-5081-8000-5199f08b2309"
+          },
+          {
+            "set": "dmu",
+            "number": "25",
+            "weight": 1,
+            "foil": false,
+            "uuid": "73e33c97-d77d-5023-8265-4fa7f48df847"
+          },
+          {
+            "set": "dmu",
+            "number": "28",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f8c05897-9041-5574-a02d-5cfb15da3625"
+          },
+          {
+            "set": "dmu",
+            "number": "31",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d5ff4cfb-3d38-5261-abd1-42ac1530e157"
+          },
+          {
+            "set": "dmu",
+            "number": "35",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c68e07dc-166f-5e70-9823-f040a0626e5f"
+          },
+          {
+            "set": "dmu",
+            "number": "262",
+            "weight": 5,
+            "foil": false,
+            "uuid": "a949620d-6fec-5115-b260-199c34f7f769"
+          },
+          {
+            "set": "dmu",
+            "number": "277",
+            "weight": 1,
+            "foil": false,
+            "uuid": "413e9e4d-9d1b-5486-8551-b06236e7f4a5"
+          },
+          {
+            "set": "dmu",
+            "number": "282",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c7eff468-154e-5848-b8a1-9b88080568f7"
+          }
+        ]
+      },
+      "coalition_legion_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "262",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a949620d-6fec-5115-b260-199c34f7f769"
+          }
+        ]
+      },
+      "monster_territory": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "155",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4ea28ed4-6096-5661-8b4c-edfb744906df"
+          },
+          {
+            "set": "dmu",
+            "number": "163",
+            "weight": 1,
+            "foil": false,
+            "uuid": "098eee21-80ef-5fa3-a33b-5f1e4c9d660f"
+          },
+          {
+            "set": "dmu",
+            "number": "164",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f6da7e2f-0a32-544d-9f39-b533a5375a50"
+          },
+          {
+            "set": "dmu",
+            "number": "172",
+            "weight": 1,
+            "foil": false,
+            "uuid": "42955759-64d0-5ab0-8ac5-e6b3783226f3"
+          },
+          {
+            "set": "dmu",
+            "number": "174",
+            "weight": 1,
+            "foil": false,
+            "uuid": "27a4cb61-bead-52c0-988d-ffe9c2b1e44b"
+          },
+          {
+            "set": "dmu",
+            "number": "178",
+            "weight": 1,
+            "foil": false,
+            "uuid": "aa0f861f-f4c0-58b8-be63-76d9c266b987"
+          },
+          {
+            "set": "dmu",
+            "number": "181",
+            "weight": 1,
+            "foil": false,
+            "uuid": "148b963d-f2c0-51bf-8341-f5ecf4cbb0b7"
+          },
+          {
+            "set": "dmu",
+            "number": "184",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e382d955-cfe0-5c9c-9b14-61cef061cdd3"
+          },
+          {
+            "set": "dmu",
+            "number": "188",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ba98fa51-4dcd-5817-9366-c9ccf449076b"
+          },
+          {
+            "set": "dmu",
+            "number": "191",
+            "weight": 1,
+            "foil": false,
+            "uuid": "357e3ea6-541c-55af-b177-5d36d2b92422"
+          },
+          {
+            "set": "dmu",
+            "number": "248",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f23783ec-de54-5622-b167-7dcac60b76f2"
+          },
+          {
+            "set": "dmu",
+            "number": "253",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0a46cf8f-c403-5a1e-8901-12769faddec7"
+          },
+          {
+            "set": "dmu",
+            "number": "258",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b9a185a2-c687-5b00-b5f7-a1fb815c68ab"
+          },
+          {
+            "set": "dmu",
+            "number": "260",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a55c6894-120c-5454-bc7d-8756438a281c"
+          },
+          {
+            "set": "dmu",
+            "number": "274",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ed4fa28d-0be9-5a85-a4d9-355d7081bc6f"
+          },
+          {
+            "set": "dmu",
+            "number": "281",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bb51b61e-943a-5c7c-a801-a4b276251f76"
+          },
+          {
+            "set": "dmu",
+            "number": "286",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5a8edb6d-3f60-5b77-847d-4cc87cecc89d"
+          }
+        ]
+      },
+      "monster_territory_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "274",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ed4fa28d-0be9-5a85-a4d9-355d7081bc6f"
+          }
+        ]
+      },
+      "mystic_mischief": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "41",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8ff06a3c-b956-5f31-8df6-6ec20c57d72d"
+          },
+          {
+            "set": "dmu",
+            "number": "45",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e4edb9eb-0487-5400-bc22-06210caf0b44"
+          },
+          {
+            "set": "dmu",
+            "number": "48",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4b2fa8c4-fd42-50a1-80f3-f848a8105dbe"
+          },
+          {
+            "set": "dmu",
+            "number": "50",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8059c4c4-825f-560f-88ec-2caab2ab3079"
+          },
+          {
+            "set": "dmu",
+            "number": "51",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a2d504b1-e8cb-5bb8-a6d8-fdb868fa599a"
+          },
+          {
+            "set": "dmu",
+            "number": "54",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f4abebf3-6ef3-5e03-9f67-2af3287ed4f3"
+          },
+          {
+            "set": "dmu",
+            "number": "55",
+            "weight": 1,
+            "foil": false,
+            "uuid": "64c40e9f-024c-5f55-ae43-4da7f2c42321"
+          },
+          {
+            "set": "dmu",
+            "number": "66",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2758d906-f551-5c62-8069-fc7f9ced5914"
+          },
+          {
+            "set": "dmu",
+            "number": "68",
+            "weight": 1,
+            "foil": false,
+            "uuid": "43b20c58-7366-595a-b846-24930b1f2406"
+          },
+          {
+            "set": "dmu",
+            "number": "72",
+            "weight": 1,
+            "foil": false,
+            "uuid": "10c88fdc-6c79-5a57-83a2-509a51c74fec"
+          },
+          {
+            "set": "dmu",
+            "number": "265",
+            "weight": 5,
+            "foil": false,
+            "uuid": "db2b0bb2-19ec-565f-992b-4380a22e25d4"
+          },
+          {
+            "set": "dmu",
+            "number": "278",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2b02c3a5-2bc7-56da-8566-1688432e78ce"
+          },
+          {
+            "set": "dmu",
+            "number": "283",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b2e212ad-d8c0-52ce-b2ff-f02facd4bd31"
+          }
+        ]
+      },
+      "mystic_mischief_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "265",
+            "weight": 2,
+            "foil": true,
+            "uuid": "db2b0bb2-19ec-565f-992b-4380a22e25d4"
+          }
+        ]
+      },
+      "ready_to_attack": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "118",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b83919af-1c51-5881-8831-8a4c185377fb"
+          },
+          {
+            "set": "dmu",
+            "number": "120",
+            "weight": 1,
+            "foil": false,
+            "uuid": "743bec4c-81a5-57f4-a5c2-bcf2b46400e0"
+          },
+          {
+            "set": "dmu",
+            "number": "122",
+            "weight": 1,
+            "foil": false,
+            "uuid": "dec6252f-610c-58de-8ab1-6b14a1445ac0"
+          },
+          {
+            "set": "dmu",
+            "number": "125",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0e69a5c7-a746-57e5-a19f-7ce684d793fe"
+          },
+          {
+            "set": "dmu",
+            "number": "128",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e489e427-87e8-5cde-94a8-47b0404a04a2"
+          },
+          {
+            "set": "dmu",
+            "number": "129",
+            "weight": 1,
+            "foil": false,
+            "uuid": "82aa51bb-72f3-50da-a15e-4a7d542dbe17"
+          },
+          {
+            "set": "dmu",
+            "number": "134",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b8572a21-2e62-5bb5-bd24-bd100badb246"
+          },
+          {
+            "set": "dmu",
+            "number": "137",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b83e1618-3bf5-570b-96d4-8403eeb6ee6a"
+          },
+          {
+            "set": "dmu",
+            "number": "140",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ea192a33-d92d-5225-9ac7-2d8755ebdd2a"
+          },
+          {
+            "set": "dmu",
+            "number": "149",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3aae8e92-b516-56ad-b3db-bd263f845f16"
+          },
+          {
+            "set": "dmu",
+            "number": "271",
+            "weight": 5,
+            "foil": false,
+            "uuid": "1ab4f93c-757e-5fbf-b107-f402b81d83d7"
+          },
+          {
+            "set": "dmu",
+            "number": "280",
+            "weight": 1,
+            "foil": false,
+            "uuid": "64d3d573-4513-5acf-9715-2f85641497c0"
+          },
+          {
+            "set": "dmu",
+            "number": "285",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5b2eac0a-56d8-5fca-9f99-0c8556176aab"
+          }
+        ]
+      },
+      "ready_to_attack_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "271",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1ab4f93c-757e-5fbf-b107-f402b81d83d7"
+          }
+        ]
+      },
+      "rare_mythic_red": {
+        "total_weight": 16,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "117",
+            "weight": 2,
+            "foil": false,
+            "uuid": "95569009-36c5-5baa-a2fb-7640b3105328"
+          },
+          {
+            "set": "dmu",
+            "number": "119",
+            "weight": 2,
+            "foil": false,
+            "uuid": "25fe0c1d-03e2-51d1-babe-5b7b3aa86b1a"
+          },
+          {
+            "set": "dmu",
+            "number": "121",
+            "weight": 2,
+            "foil": false,
+            "uuid": "5ce2110b-fa4a-5826-9a84-bec4cc9c77fb"
+          },
+          {
+            "set": "dmu",
+            "number": "133",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b797ce1d-974d-59cc-b407-91081e35a039"
+          },
+          {
+            "set": "dmu",
+            "number": "135",
+            "weight": 2,
+            "foil": false,
+            "uuid": "5eb122b6-018f-5cad-bc79-91a5e935a805"
+          },
+          {
+            "set": "dmu",
+            "number": "141",
+            "weight": 2,
+            "foil": false,
+            "uuid": "6c902234-0629-5a47-8038-8269fb722ea4"
+          },
+          {
+            "set": "dmu",
+            "number": "142",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a68fb89c-70d0-544f-84ae-08ec55676baf"
+          },
+          {
+            "set": "dmu",
+            "number": "143",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9530479f-e32e-5d11-af58-16d3e794f654"
+          },
+          {
+            "set": "dmu",
+            "number": "146",
+            "weight": 2,
+            "foil": false,
+            "uuid": "9ca7f193-71d3-5e5e-a802-5026846344e9"
+          }
+        ]
+      },
+      "ready_to_charge": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "116",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b3818efd-0067-5935-8f21-ce28e2c85551"
+          },
+          {
+            "set": "dmu",
+            "number": "118",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b83919af-1c51-5881-8831-8a4c185377fb"
+          },
+          {
+            "set": "dmu",
+            "number": "120",
+            "weight": 1,
+            "foil": false,
+            "uuid": "743bec4c-81a5-57f4-a5c2-bcf2b46400e0"
+          },
+          {
+            "set": "dmu",
+            "number": "122",
+            "weight": 1,
+            "foil": false,
+            "uuid": "dec6252f-610c-58de-8ab1-6b14a1445ac0"
+          },
+          {
+            "set": "dmu",
+            "number": "124",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3f73b267-126f-55de-9c1a-64d4349d5937"
+          },
+          {
+            "set": "dmu",
+            "number": "126",
+            "weight": 1,
+            "foil": false,
+            "uuid": "705711cf-c814-54ea-973e-447a16f04f81"
+          },
+          {
+            "set": "dmu",
+            "number": "134",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b8572a21-2e62-5bb5-bd24-bd100badb246"
+          },
+          {
+            "set": "dmu",
+            "number": "139",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5b324bd9-d0e5-5a04-8a1d-afbbec99e5ff"
+          },
+          {
+            "set": "dmu",
+            "number": "149",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3aae8e92-b516-56ad-b3db-bd263f845f16"
+          },
+          {
+            "set": "dmu",
+            "number": "152",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2caafa8e-412b-5f72-8550-db8da65cf6eb"
+          },
+          {
+            "set": "dmu",
+            "number": "271",
+            "weight": 5,
+            "foil": false,
+            "uuid": "1ab4f93c-757e-5fbf-b107-f402b81d83d7"
+          },
+          {
+            "set": "dmu",
+            "number": "280",
+            "weight": 1,
+            "foil": false,
+            "uuid": "64d3d573-4513-5acf-9715-2f85641497c0"
+          },
+          {
+            "set": "dmu",
+            "number": "285",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5b2eac0a-56d8-5fca-9f99-0c8556176aab"
+          }
+        ]
+      },
+      "ready_to_charge_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "271",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1ab4f93c-757e-5fbf-b107-f402b81d83d7"
+          }
+        ]
+      },
+      "totally_merciless": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "80",
+            "weight": 1,
+            "foil": false,
+            "uuid": "67160731-f865-519a-92c9-8bf8acb51972"
+          },
+          {
+            "set": "dmu",
+            "number": "85",
+            "weight": 1,
+            "foil": false,
+            "uuid": "823adee3-3e64-55b7-a02f-5cf65e554765"
+          },
+          {
+            "set": "dmu",
+            "number": "92",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2c0461d7-b84e-5f69-876c-803c41683731"
+          },
+          {
+            "set": "dmu",
+            "number": "94",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9a8d75dc-0f19-5771-8cf2-ea43d8727028"
+          },
+          {
+            "set": "dmu",
+            "number": "96",
+            "weight": 1,
+            "foil": false,
+            "uuid": "715a05c4-7274-5eb1-879f-57786d1f1bff"
+          },
+          {
+            "set": "dmu",
+            "number": "99",
+            "weight": 1,
+            "foil": false,
+            "uuid": "45244e11-d857-5241-9b94-ea585fdf28f1"
+          },
+          {
+            "set": "dmu",
+            "number": "100",
+            "weight": 1,
+            "foil": false,
+            "uuid": "13d410bd-a829-547a-8205-147ba4c00607"
+          },
+          {
+            "set": "dmu",
+            "number": "102",
+            "weight": 1,
+            "foil": false,
+            "uuid": "23dc7046-5c89-55d3-afc6-03091df8be22"
+          },
+          {
+            "set": "dmu",
+            "number": "104",
+            "weight": 1,
+            "foil": false,
+            "uuid": "af541e77-516e-599e-9a00-75af7681da0b"
+          },
+          {
+            "set": "dmu",
+            "number": "115",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4e414276-e1bf-5489-8eb4-b87ba30ddc33"
+          },
+          {
+            "set": "dmu",
+            "number": "268",
+            "weight": 5,
+            "foil": false,
+            "uuid": "9d8d4d04-3442-5608-822a-1b483a838d92"
+          },
+          {
+            "set": "dmu",
+            "number": "279",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1fcbadcb-600a-5553-9c52-86d2ee061a9a"
+          },
+          {
+            "set": "dmu",
+            "number": "284",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9e7bdc2d-d4c6-5bc6-b084-dd671681a852"
+          }
+        ]
+      },
+      "totally_merciless_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "268",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9d8d4d04-3442-5608-822a-1b483a838d92"
+          }
+        ]
+      },
+      "rare_mythic_black": {
+        "total_weight": 16,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "84",
+            "weight": 2,
+            "foil": false,
+            "uuid": "0bf470a2-5d71-5df4-bd0a-d9331d1f791b"
+          },
+          {
+            "set": "dmu",
+            "number": "87",
+            "weight": 2,
+            "foil": false,
+            "uuid": "39faf307-25d2-5c54-a852-16f7cc0a0ae4"
+          },
+          {
+            "set": "dmu",
+            "number": "90",
+            "weight": 2,
+            "foil": false,
+            "uuid": "3c8407c4-9fa9-5f14-b031-af68a85d45e5"
+          },
+          {
+            "set": "dmu",
+            "number": "91",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a91edcde-c241-59a1-b726-d8e151e5eec3"
+          },
+          {
+            "set": "dmu",
+            "number": "93",
+            "weight": 2,
+            "foil": false,
+            "uuid": "66665ece-84f7-51c5-834e-5c09bcb2eea1"
+          },
+          {
+            "set": "dmu",
+            "number": "103",
+            "weight": 2,
+            "foil": false,
+            "uuid": "e3cc8442-68cb-56e0-aaa7-59cae59d51a2"
+          },
+          {
+            "set": "dmu",
+            "number": "106",
+            "weight": 2,
+            "foil": false,
+            "uuid": "9cd26ae5-037f-5c85-acf9-317f83f8ba2e"
+          },
+          {
+            "set": "dmu",
+            "number": "107",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9408edd9-f629-5231-b827-1ea1211d1d90"
+          },
+          {
+            "set": "dmu",
+            "number": "242",
+            "weight": 1,
+            "foil": false,
+            "uuid": "00605bc0-86d5-58bb-8007-1ef050832405"
+          }
+        ]
+      },
+      "totally_ruthless": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "80",
+            "weight": 1,
+            "foil": false,
+            "uuid": "67160731-f865-519a-92c9-8bf8acb51972"
+          },
+          {
+            "set": "dmu",
+            "number": "83",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6183cba4-c188-5829-85e6-1f36e1455fc4"
+          },
+          {
+            "set": "dmu",
+            "number": "85",
+            "weight": 1,
+            "foil": false,
+            "uuid": "823adee3-3e64-55b7-a02f-5cf65e554765"
+          },
+          {
+            "set": "dmu",
+            "number": "88",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b3f598df-fe18-5b24-a3b9-b1e37469463b"
+          },
+          {
+            "set": "dmu",
+            "number": "89",
+            "weight": 1,
+            "foil": false,
+            "uuid": "472fa0d9-aedb-5fd6-a3b9-89b784208904"
+          },
+          {
+            "set": "dmu",
+            "number": "95",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7acf0f67-d1ac-573d-a0b4-b79db34e9ff1"
+          },
+          {
+            "set": "dmu",
+            "number": "99",
+            "weight": 1,
+            "foil": false,
+            "uuid": "45244e11-d857-5241-9b94-ea585fdf28f1"
+          },
+          {
+            "set": "dmu",
+            "number": "100",
+            "weight": 1,
+            "foil": false,
+            "uuid": "13d410bd-a829-547a-8205-147ba4c00607"
+          },
+          {
+            "set": "dmu",
+            "number": "104",
+            "weight": 1,
+            "foil": false,
+            "uuid": "af541e77-516e-599e-9a00-75af7681da0b"
+          },
+          {
+            "set": "dmu",
+            "number": "109",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f4c630f4-088d-5802-b6dd-d54d64fd14ed"
+          },
+          {
+            "set": "dmu",
+            "number": "268",
+            "weight": 5,
+            "foil": false,
+            "uuid": "9d8d4d04-3442-5608-822a-1b483a838d92"
+          },
+          {
+            "set": "dmu",
+            "number": "279",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1fcbadcb-600a-5553-9c52-86d2ee061a9a"
+          },
+          {
+            "set": "dmu",
+            "number": "284",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9e7bdc2d-d4c6-5bc6-b084-dd671681a852"
+          }
+        ]
+      },
+      "totally_ruthless_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "dmu",
+            "number": "268",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9d8d4d04-3442-5608-822a-1b483a838d92"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "dmu"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 275425,
+      "name": "Dominaria United - Jumpstart Booster Pack",
+      "cleanName": "Dominaria United Jumpstart Booster Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/275425_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3102,
+      "url": "https://www.tcgplayer.com/product/275425/magic-dominaria-united-dominaria-united-jumpstart-booster-pack",
+      "modifiedOn": "2022-09-09T04:03:30.233",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-09-09T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each <em>Dominaria United</em> Jumpstart Booster has a theme, like Mystic Mischief or Totally Ruthless. Just grab two packs and shuffle them together for wild combos and a fun, unique, easy gameplay experience.\r\n\r\n<br><em>Dominaria United</em> Jumpstart Boosters contain 20 <em>Magic</em> cards (including all the lands you need to play). In every pack, you’ll find 2 Rare cards, 1 of which may be a Mythic Rare, and 2 Land cards that are Traditional Foil.\r\n\r\nIf you’re looking to maximize your mash-up, <em>Dominaria United</em> Jumpstart Boosters are compatible with all other Jumpstart products.\r\n\r\n<br><strong>Contents:</strong>\r\n<br>• 20 <em>Magic: The Gathering</em> cards in each Jumpstart Booster\r\n\r\n<br>• 2 Traditional Foil Land cards in every pack\r\n\r\n<br>• 2 Rare cards in every pack—including 1 new card not found in the DMU main set\r\n\r\n<br>• Each pack contains cards of a certain theme—mix and match for wild mashups\r\n\r\n<br>• Grab 2 Jumpstart packs, shuffle, and you’re ready to rumble"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166127606"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 275425,
+        "lowPrice": 3.14,
+        "midPrice": 6.55,
+        "highPrice": 10,
+        "marketPrice": 5.8,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

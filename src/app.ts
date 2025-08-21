@@ -5,6 +5,7 @@ import { createProductsRouter } from "./routes/products";
 import { createImagesRouter } from "./routes/images";
 import { createTCGCSVRouter } from "./routes/tcgcsv";
 import { createCombinedProductsRouter } from "./routes/combinedProducts";
+
 import { DataService, ImageService } from "./types";
 import logger from "./utils/logger";
 
@@ -31,6 +32,7 @@ export function createApp(
   app.use("/products", createProductsRouter(dataService));
   app.use("/tcgcsv", createTCGCSVRouter((dataService as any).tcgcsvService));
   app.use("/combined-products", createCombinedProductsRouter(dataService));
+
   app.use("/", createImagesRouter(imageService));
 
   // Setup error handling (must be last)

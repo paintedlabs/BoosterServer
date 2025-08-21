@@ -1,0 +1,214 @@
+{
+  "uuid": "1f60d907-1bfa-5efa-b288-72b523570628",
+  "name": "Kaladesh Two Player Booster Battle Pack",
+  "category": "multiple_decks",
+  "cardCount": 60,
+  "releaseDate": "2016-09-06",
+  "subtype": "battle_pack",
+  "identifiers": {
+    "cardtraderId": "48472",
+    "mcmId": "292530",
+    "tcgplayerProductId": "122681"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c541005b22db952f"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Kaladesh Booster Pack",
+        "set": "kld",
+        "uuid": "cf0f8060-bd6a-5d26-994c-202112e5177c"
+      }
+    ],
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "White Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Blue Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "White Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Black Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "White Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Red Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "White Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Green Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Blue Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Black Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Blue Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Red Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Blue Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Green Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Black Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Red Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Black Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Green Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Red Deck",
+                "set": "w16"
+              },
+              {
+                "name": "Green Deck",
+                "set": "w16"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "KLD",
+  "setName": "Kaladesh"
+}

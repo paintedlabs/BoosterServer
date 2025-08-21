@@ -321,4 +321,7 @@ export interface CombinedSealedProduct {
     product: TCGCSVProduct;
     prices: TCGCSVPrice[];
   };
+
+  // Availability flag - can be explicitly set to mark products as unavailable
+  isUnavailable?: boolean;
 }

@@ -1,0 +1,65 @@
+{
+  "uuid": "aa125eaf-d21d-5f1e-ad97-ae27f50e49d3",
+  "name": "Dragons Maze Prerelease Guild Kit Dimir",
+  "category": "limited_aid_tool",
+  "cardCount": 30,
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "cardtraderId": "47952",
+    "mcmId": "261878",
+    "tcgplayerProductId": "183292"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/fb50c51546f05879"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "prerelease-dimir",
+        "set": "gtc"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 4,
+        "name": "Dragons Maze Booster Pack",
+        "set": "dgm",
+        "uuid": "b9c1d8bb-29d1-5572-b3c3-26363ecfdada"
+      }
+    ],
+    "variable": [
+      {
+        "configs": [
+          {
+            "pack": [
+              {
+                "code": "prerelease-azorius",
+                "set": "rtr"
+              },
+              {
+                "code": "prerelease-izzet",
+                "set": "rtr"
+              },
+              {
+                "code": "prerelease-rakdos",
+                "set": "rtr"
+              },
+              {
+                "code": "prerelease-golgari",
+                "set": "rtr"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "DGM",
+  "setName": "Dragon's Maze"
+}

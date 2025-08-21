@@ -1,0 +1,88 @@
+{
+  "uuid": "7408094e-358b-5d59-abf1-40daee2e76ba",
+  "name": "Born of the Gods Prerelease Kit Destined To Dominate",
+  "category": "limited_aid_tool",
+  "cardCount": 15,
+  "releaseDate": "2007-01-01",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "1100209",
+    "cardtraderId": "48085",
+    "csiId": "200409",
+    "mcmId": "266423",
+    "tcgplayerProductId": "78292",
+    "tntId": "1182090"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/adf38dd128cfea65"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Eater of Hope",
+        "number": "66★",
+        "set": "pbng",
+        "uuid": "28a8695f-950a-5a9f-a158-9e7524186de8"
+      },
+      {
+        "name": "The Tyrant",
+        "number": "4c",
+        "set": "thp2",
+        "uuid": "1f02f9be-ebec-5f19-90e2-7ce79acee738"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease-dominate",
+        "set": "bng"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Born of the Gods Booster Pack",
+        "set": "bng",
+        "uuid": "16e12027-2acd-5bfa-81e8-ed3bc5381334"
+      },
+      {
+        "count": 3,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "BNG",
+  "setName": "Born of the Gods",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78292,
+      "name": "Born of the Gods - Destined To Dominate (Prerelease)",
+      "cleanName": "Born of the Gods Destined To Dominate Prerelease",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78292_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1276,
+      "url": "https://www.tcgplayer.com/product/78292/magic-born-of-the-gods-born-of-the-gods-destined-to-dominate-prerelease",
+      "modifiedOn": "2022-12-23T13:35:35.057",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78292,
+        "lowPrice": 30.39,
+        "midPrice": 35.42,
+        "highPrice": 37.03,
+        "marketPrice": 25.48,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

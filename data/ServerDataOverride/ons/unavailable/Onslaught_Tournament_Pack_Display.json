@@ -1,0 +1,67 @@
+{
+  "uuid": "535b3369-d9ba-5930-bba1-d95f0f73983b",
+  "name": "Onslaught Tournament Pack Display",
+  "category": "limited_aid_case",
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1100960",
+    "cardKingdomId": "240180",
+    "cardtraderId": "46323",
+    "mcmId": "253859",
+    "scgId": "SLD-MTG-BBX-ONSTOURNAMENT-EN",
+    "tcgplayerProductId": "544192",
+    "tntId": "104434"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/4f8be40177f7f31c",
+    "tcgplayer": "https://mtgjson.com/links/73be63147b27e32b"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 12,
+        "name": "Onslaught Tournament Pack",
+        "set": "ons",
+        "uuid": "de0877c3-6604-50cc-a2e5-50d47d05fa29"
+      }
+    ]
+  },
+  "setCode": "ONS",
+  "setName": "Onslaught",
+  "tcgcsvData": {
+    "product": {
+      "productId": 544192,
+      "name": "Onslaught Tournament Deck Box",
+      "cleanName": "Onslaught Tournament Deck Box",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/544192_200w.jpg",
+      "categoryId": 1,
+      "groupId": 81,
+      "url": "https://www.tcgplayer.com/product/544192/magic-onslaught-onslaught-tournament-deck-box",
+      "modifiedOn": "2024-03-26T13:38:30.667",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Onslaught Tournament Deck box comes with 12 decks. Each deck contains 75 mint collectible trading cards including 2 rares, 10 uncommon, 32 common, 30 lands, and a rulebook."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 544192,
+        "lowPrice": 1999.92,
+        "midPrice": 1999.92,
+        "highPrice": 1999.92,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "uuid": "6b03ebce-61da-578b-8e6f-07dba1246603",
+  "name": "Khans of Tarkir Intro Pack Abzan Siege",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100705",
+    "cardKingdomId": "196179",
+    "cardtraderId": "48193",
+    "mcmId": "269599",
+    "scgId": "SLD-MTG-INT-KTKINTRO-EN-ABZAN",
+    "tcgplayerProductId": "93315",
+    "tntId": "1060253"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/693610699204e4e8"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Abzan Siege",
+        "set": "ktk"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Khans of Tarkir Booster Pack",
+        "set": "ktk",
+        "uuid": "82ebffce-506f-50bd-880a-82439e47861c"
+      }
+    ]
+  },
+  "setCode": "KTK",
+  "setName": "Khans of Tarkir",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93315,
+      "name": "Khans of Tarkir - Intro Pack - Abzan Siege",
+      "cleanName": "Khans of Tarkir Intro Pack Abzan Siege",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93315_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1356,
+      "url": "https://www.tcgplayer.com/product/93315/magic-khans-of-tarkir-khans-of-tarkir-intro-pack-abzan-siege",
+      "modifiedOn": "2021-08-05T14:29:25.727",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Khans of Tarkir booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 93315,
+        "lowPrice": 49.94,
+        "midPrice": 49.95,
+        "highPrice": 51.44,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

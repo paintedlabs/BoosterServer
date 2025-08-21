@@ -1,0 +1,74 @@
+{
+  "uuid": "8ff986b3-cc7f-5a36-a4a3-ada7a3124845",
+  "name": "Eldritch Moon Intro Pack Weapons and Wards",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-06-29",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100484",
+    "cardKingdomId": "209453",
+    "cardtraderId": "48437",
+    "csiId": "224507",
+    "mcmId": "290945",
+    "tcgplayerProductId": "118397",
+    "tntId": "1099831"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/5220039415bf07fc"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Weapons and Wards",
+        "set": "emn"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Eldritch Moon Booster Pack",
+        "set": "emn",
+        "uuid": "4253efbd-cc76-53e3-a54c-9f4012f3c097"
+      }
+    ]
+  },
+  "setCode": "EMN",
+  "setName": "Eldritch Moon",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118397,
+      "name": "Eldritch Moon - Intro Pack - Weapons and Wards",
+      "cleanName": "Eldritch Moon Intro Pack Weapons and Wards",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118397_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1790,
+      "url": "https://www.tcgplayer.com/product/118397/magic-eldritch-moon-eldritch-moon-intro-pack-weapons-and-wards",
+      "modifiedOn": "2021-08-05T14:22:48.36",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Eldritch Moon booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 118397,
+        "lowPrice": 24.95,
+        "midPrice": 24.95,
+        "highPrice": 24.95,
+        "marketPrice": 22.45,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "uuid": "c6c28758-a9f5-5001-b61f-b014d19adc69",
+  "name": "Zendikar Rising Bundle Gift Edition",
+  "category": "bundle",
+  "releaseDate": "2020-09-25",
+  "subtype": "gift_bundle",
+  "identifiers": {
+    "abuId": "1917560",
+    "cardKingdomId": "238663",
+    "cardtraderId": "62573",
+    "mcmId": "495234",
+    "scgId": "SLD-MTG-BUN-ZNRGIFT-EN",
+    "tcgplayerProductId": "221918",
+    "tntId": "1677678"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/98202f28682e4e1c",
+    "tcgplayer": "https://mtgjson.com/links/401fd13b407d5e34"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Charix, the Raging Isle",
+        "number": "386",
+        "set": "znr",
+        "uuid": "b335008d-c678-52cd-8f87-7fc71832365b"
+      }
+    ],
+    "other": [
+      {
+        "name": "1 reusable storage box"
+      },
+      {
+        "name": "20 foil basic lands"
+      },
+      {
+        "name": "20 non-foil basic lands"
+      },
+      {
+        "name": "1 oversized spindown counter"
+      },
+      {
+        "name": "2 reference cards"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Zendikar Rising Draft Booster Pack",
+        "set": "znr",
+        "uuid": "f3736d50-8967-5f09-89be-3b7a4eddb948"
+      },
+      {
+        "count": 1,
+        "name": "Zendikar Rising Collector Booster Pack",
+        "set": "znr",
+        "uuid": "a23f1a83-e1de-5b30-8276-745cffbbaba3"
+      }
+    ]
+  },
+  "setCode": "ZNR",
+  "setName": "Zendikar Rising",
+  "tcgcsvData": {
+    "product": {
+      "productId": 221918,
+      "name": "Zendikar Rising - Bundle Gift Edition",
+      "cleanName": "Zendikar Rising Bundle Gift Edition",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/221918_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2648,
+      "url": "https://www.tcgplayer.com/product/221918/magic-zendikar-rising-zendikar-rising-bundle-gift-edition",
+      "modifiedOn": "2020-11-13T05:03:37.443",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-09-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents</strong>: 10 Zendikar Rising Draft Booster packs, 1 Zendikar Rising Collector Booster, 40 regular-frame lands (20 foil, 20 non-foil), 1 promo alternate art card, 1 oversized spindown life counter, 2 double sided reference cards."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 30509 91962 8"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 221918,
+        "lowPrice": 56,
+        "midPrice": 63.82,
+        "highPrice": 79.99,
+        "marketPrice": 61.6,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

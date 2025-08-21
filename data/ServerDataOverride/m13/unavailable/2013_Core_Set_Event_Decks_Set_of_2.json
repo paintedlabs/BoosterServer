@@ -1,0 +1,63 @@
+{
+  "uuid": "3b916982-1fbd-51d0-a362-fc8c8ea71a4a",
+  "name": "2013 Core Set Event Decks Set of 2",
+  "category": "subset",
+  "subtype": "event",
+  "identifiers": {
+    "abuId": "1100772",
+    "cardtraderId": "47782",
+    "mcmId": "257498",
+    "tcgplayerProductId": "60111"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/72a5c8b926557047"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "2013 Core Set Event Deck Repeat Performance",
+        "set": "m13",
+        "uuid": "137747d0-c755-5630-b101-90db53513418"
+      },
+      {
+        "count": 1,
+        "name": "2013 Core Set Event Deck Sweet Revenge",
+        "set": "m13",
+        "uuid": "5ddd7a76-c9fb-57d2-b3c4-dc2e000986d2"
+      }
+    ]
+  },
+  "setCode": "M13",
+  "setName": "Magic 2013",
+  "tcgcsvData": {
+    "product": {
+      "productId": 60111,
+      "name": "Magic 2013 (M13) - Event Deck - Set of Two",
+      "cleanName": "Magic 2013 M13 Event Deck Set of Two",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/60111_200w.jpg",
+      "categoryId": 1,
+      "groupId": 364,
+      "url": "https://www.tcgplayer.com/product/60111/magic-magic-2013-m13-magic-2013-m13-event-deck-set-of-two",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 60111,
+        "lowPrice": 78.8,
+        "midPrice": 85.05,
+        "highPrice": 91.3,
+        "marketPrice": 78.8,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

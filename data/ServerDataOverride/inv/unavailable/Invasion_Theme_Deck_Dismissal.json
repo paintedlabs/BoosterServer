@@ -1,0 +1,58 @@
+{
+  "uuid": "119c72e6-1a36-5768-abba-9c690b4c0024",
+  "name": "Invasion Theme Deck Dismissal",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100612",
+    "cardKingdomId": "1288",
+    "cardtraderId": "45739",
+    "mcmId": "253746",
+    "tcgplayerProductId": "93342",
+    "tntId": "106936"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7ae9f44140e3a29a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dismissal",
+        "set": "inv"
+      }
+    ]
+  },
+  "setCode": "INV",
+  "setName": "Invasion",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93342,
+      "name": "Invasion - Dismissal Theme Deck",
+      "cleanName": "Invasion Dismissal Theme Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93342_200w.jpg",
+      "categoryId": 1,
+      "groupId": 60,
+      "url": "https://www.tcgplayer.com/product/93342/magic-invasion-invasion-dismissal-theme-deck",
+      "modifiedOn": "2018-09-04T11:15:08.947",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 93342,
+        "lowPrice": 43.99,
+        "midPrice": 43.99,
+        "highPrice": 43.99,
+        "marketPrice": 49.97,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

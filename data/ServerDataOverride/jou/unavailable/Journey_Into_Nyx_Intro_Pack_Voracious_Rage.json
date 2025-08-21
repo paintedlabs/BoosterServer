@@ -1,0 +1,74 @@
+{
+  "uuid": "2317e07f-838d-5964-a43f-5012985e3076",
+  "name": "Journey Into Nyx Intro Pack Voracious Rage",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100657",
+    "cardKingdomId": "193939",
+    "cardtraderId": "48109",
+    "csiId": "202688",
+    "mcmId": "266590",
+    "scgId": "SLD-MTG-INT-JOUINTRO-EN-VORACIOUS",
+    "tcgplayerProductId": "82552",
+    "tntId": "1053727"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/33c337bcd4a17366"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Voracious Rage",
+        "set": "jou"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Journey Into Nyx Booster Pack",
+        "set": "jou",
+        "uuid": "ef8281b6-54ab-578a-baec-62f5c79977c0"
+      }
+    ]
+  },
+  "setCode": "JOU",
+  "setName": "Journey into Nyx",
+  "tcgcsvData": {
+    "product": {
+      "productId": 82552,
+      "name": "Journey Into Nyx - Intro Pack - Voracious Rage",
+      "cleanName": "Journey Into Nyx Intro Pack Voracious Rage",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/82552_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1277,
+      "url": "https://www.tcgplayer.com/product/82552/magic-journey-into-nyx-journey-into-nyx-intro-pack-voracious-rage",
+      "modifiedOn": "2021-08-05T14:27:23.937",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck, two Journey Into Nyx booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 82552,
+        "lowPrice": 12,
+        "midPrice": 19.99,
+        "highPrice": 27.95,
+        "marketPrice": 14.97,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

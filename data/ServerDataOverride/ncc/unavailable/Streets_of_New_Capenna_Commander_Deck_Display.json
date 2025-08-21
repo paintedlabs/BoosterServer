@@ -1,0 +1,90 @@
+{
+  "uuid": "ecbb336b-1fdd-575a-b929-523b5fe96bba",
+  "name": "Streets of New Capenna Commander Deck Display",
+  "category": "deck_box",
+  "releaseDate": "2022-04-29",
+  "subtype": "commander",
+  "identifiers": {
+    "tcgplayerProductId": "265391"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a2876fd29ef19242"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Streets of New Capenna Commander Deck Bedecked Brokers",
+        "set": "ncc",
+        "uuid": "d2def311-b67d-593a-b314-5a7b65afde65"
+      },
+      {
+        "count": 1,
+        "name": "Streets of New Capenna Commander Deck Cabaretti Cacophony",
+        "set": "ncc",
+        "uuid": "04ab49ac-7d0b-5100-8571-a836eb621c1d"
+      },
+      {
+        "count": 1,
+        "name": "Streets of New Capenna Commander Deck Maestros Massacre",
+        "set": "ncc",
+        "uuid": "cc49a2ad-7068-5fe4-ac02-d0abf3acf451"
+      },
+      {
+        "count": 1,
+        "name": "Streets of New Capenna Commander Deck Obscura Operation",
+        "set": "ncc",
+        "uuid": "d0dfec66-d58a-5e71-910c-09424f9f5a42"
+      },
+      {
+        "count": 1,
+        "name": "Streets of New Capenna Commander Deck Riveteers Rampage",
+        "set": "ncc",
+        "uuid": "6ce9546b-3a8d-5283-ac09-b0782d61db8a"
+      }
+    ]
+  },
+  "setCode": "NCC",
+  "setName": "New Capenna Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 265391,
+      "name": "Streets of New Capenna - Commander Deck Display",
+      "cleanName": "Streets of New Capenna Commander Deck Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/265391_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3031,
+      "url": "https://www.tcgplayer.com/product/265391/magic-commander-streets-of-new-capenna-streets-of-new-capenna-commander-deck-display",
+      "modifiedOn": "2022-04-29T04:03:42.517",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-04-29T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each display contains 5 of the <em>Streets of New Capenna</em> Commander Decks."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166121475"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 265391,
+        "lowPrice": 240,
+        "midPrice": 299.79,
+        "highPrice": 435.69,
+        "marketPrice": 236.78,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

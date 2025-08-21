@@ -1,0 +1,62 @@
+{
+  "uuid": "2cbcd933-ee5e-5285-9d18-3e3ac2a04fb7",
+  "name": "Commander 2016 Commander Deck Stalwart Unity",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2016-05-30",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1100343",
+    "cardKingdomId": "209485",
+    "cardtraderId": "44747",
+    "csiId": "228446",
+    "mcmId": "290523",
+    "scgId": "SLD-MTG-MLT-C16-EN-STALWART",
+    "tcgplayerProductId": "123969",
+    "tntId": "1105637"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/7810f60e154cb9f5",
+    "tcgplayer": "https://mtgjson.com/links/d9b46a3f7de3a723"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Stalwart Unity",
+        "set": "c16"
+      }
+    ]
+  },
+  "setCode": "C16",
+  "setName": "Commander 2016",
+  "tcgcsvData": {
+    "product": {
+      "productId": 123969,
+      "name": "Commander 2016 Deck - Stalwart Unity (RGWU)",
+      "cleanName": "Commander 2016 Deck Stalwart Unity RGWU",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/123969_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1792,
+      "url": "https://www.tcgplayer.com/product/123969/magic-commander-2016-commander-2016-deck-stalwart-unity-rgwu",
+      "modifiedOn": "2016-11-04T19:18:02.073",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2016-11-11T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 123969,
+        "lowPrice": 173.99,
+        "midPrice": 185.42,
+        "highPrice": 200,
+        "marketPrice": 172.37,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

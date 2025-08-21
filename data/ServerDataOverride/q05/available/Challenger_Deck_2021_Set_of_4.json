@@ -1,0 +1,87 @@
+{
+  "uuid": "78cbfbba-9382-598d-b459-e96e1d470cb2",
+  "name": "Challenger Deck 2021 Set of 4",
+  "category": "subset",
+  "releaseDate": "2021-02-17",
+  "subtype": "challenger",
+  "identifiers": {
+    "cardtraderId": "153215",
+    "csiId": "312088",
+    "mcmId": "540241",
+    "tcgplayerProductId": "232755"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7cdefe30e0cfce61"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Challenger Deck 2021 Azorius Control",
+        "set": "q05",
+        "uuid": "c6f5f120-41e4-572e-8e6c-2b033b464bcf"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2021 Dimir Rogues",
+        "set": "q05",
+        "uuid": "a680a179-aa91-5c01-9f83-6265131cfdfe"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2021 Mono Green Stompy",
+        "set": "q05",
+        "uuid": "e0d88354-2e1a-54b7-88bd-63a8a629df80"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2021 Mono Red Aggro",
+        "set": "q05",
+        "uuid": "fde63a47-9596-54e4-9947-93c68a27d7a2"
+      }
+    ]
+  },
+  "setCode": "Q05",
+  "setName": "Challenger Decks 2021",
+  "tcgcsvData": {
+    "product": {
+      "productId": 232755,
+      "name": "Challenger Deck 2021 (Set of 4)",
+      "cleanName": "Challenger Deck 2021 Set of 4",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232755_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/232755/magic-challenger-decks-challenger-deck-2021-set-of-4",
+      "modifiedOn": "2021-03-26T04:03:11.753",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "A Challenger Decks (set of 4) comes with one of each deck. Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509997053"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 232755,
+        "lowPrice": 88.69,
+        "midPrice": 119.89,
+        "highPrice": 140,
+        "marketPrice": 81.47,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

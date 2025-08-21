@@ -1,0 +1,84 @@
+{
+  "uuid": "19ffb039-7a1c-5abb-a5f0-09ac8be02751",
+  "name": "Challenger Deck 2019 Set of 4",
+  "category": "subset",
+  "releaseDate": "2019-04-12",
+  "subtype": "challenger",
+  "identifiers": {
+    "cardtraderId": "54752",
+    "csiId": "273870",
+    "mcmId": "371229",
+    "scgId": "SLD-MTG-INT-Q02-EN-SET4",
+    "tcgplayerProductId": "185029",
+    "tntId": "1470659"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8b0b2c1f0666fb5c"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Challenger Deck 2019 Arcane Tempo",
+        "set": "q02",
+        "uuid": "a5272537-ce65-5563-93fa-f4fce5a407b0"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2019 Deadly Discovery",
+        "set": "q02",
+        "uuid": "9b0d6e07-d002-500e-889e-8f378bdab60b"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2019 Lightning Aggro",
+        "set": "q02",
+        "uuid": "344967c3-a83b-568a-816a-741e2b43fd31"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2019 United Assault",
+        "set": "q02",
+        "uuid": "078136dc-56fa-56c1-a69c-a34a3b54b481"
+      }
+    ]
+  },
+  "setCode": "Q02",
+  "setName": "Challenger Decks 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185029,
+      "name": "Challenger Deck 2019 (Set of 4)",
+      "cleanName": "Challenger Deck 2019 Set of 4",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185029_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/185029/magic-challenger-decks-challenger-deck-2019-set-of-4",
+      "modifiedOn": "2019-03-18T18:03:51.533",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect all 4 of the new Challenger Decks 2019."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185029,
+        "lowPrice": 66.82,
+        "midPrice": 86.4,
+        "highPrice": 140,
+        "marketPrice": 66.82,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

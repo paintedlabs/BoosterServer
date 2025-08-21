@@ -1,0 +1,49 @@
+{
+  "uuid": "9651b315-c5b9-50b4-99e1-5e63df688b63",
+  "name": "2011 Core Set Sample Deck Liliana Vess",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47520",
+    "mcmId": "287574"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Black Deck A",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Black Deck B",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "M11",
+  "setName": "Magic 2011"
+}

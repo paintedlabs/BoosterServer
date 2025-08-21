@@ -1,0 +1,66 @@
+{
+  "uuid": "69fddb2b-2272-52f1-baf3-7381700e968e",
+  "name": "Oath of the Gatewatch Intro Pack Concerted Effort",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100940",
+    "cardKingdomId": "205070",
+    "cardtraderId": "48377",
+    "mcmId": "287201",
+    "tcgplayerProductId": "110705",
+    "tntId": "1088362"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/cf0c42acdcaf971a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Concerted Effort",
+        "set": "ogw"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Oath of the Gatewatch Booster Pack",
+        "set": "ogw",
+        "uuid": "a80b98ae-3781-5077-83a9-31907bd528e4"
+      }
+    ]
+  },
+  "setCode": "OGW",
+  "setName": "Oath of the Gatewatch",
+  "tcgcsvData": {
+    "product": {
+      "productId": 110705,
+      "name": "Oath of the Gatewatch Intro Pack - Green",
+      "cleanName": "Oath of the Gatewatch Intro Pack Green",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/110705_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1693,
+      "url": "https://www.tcgplayer.com/product/110705/magic-oath-of-the-gatewatch-oath-of-the-gatewatch-intro-pack-green",
+      "modifiedOn": "2022-11-10T15:04:38.543",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 110705,
+        "lowPrice": 17.99,
+        "midPrice": 22.96,
+        "highPrice": 25.99,
+        "marketPrice": 17.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

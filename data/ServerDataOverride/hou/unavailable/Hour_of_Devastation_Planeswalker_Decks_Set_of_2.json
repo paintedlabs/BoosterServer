@@ -1,0 +1,68 @@
+{
+  "uuid": "cccc5c81-2b44-5729-b9f2-b4fa6c13c67b",
+  "name": "Hour of Devastation Planeswalker Decks Set of 2",
+  "category": "subset",
+  "releaseDate": "2017-07-14",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "scgId": "SLD-MTG-INT-HOUPWDECK-EN-SET2",
+    "tcgplayerProductId": "134896"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/52a9c6222798bb24"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Hour of Devastation Planeswalker Deck Nicol Bolas",
+        "set": "hou",
+        "uuid": "5ebd9311-3598-5473-acdd-5c5ae603f366"
+      },
+      {
+        "count": 1,
+        "name": "Hour of Devastation Planeswalker Deck Nissa",
+        "set": "hou",
+        "uuid": "d2f434d0-9f62-595d-8b84-aadaff035412"
+      }
+    ]
+  },
+  "setCode": "HOU",
+  "setName": "Hour of Devastation",
+  "tcgcsvData": {
+    "product": {
+      "productId": 134896,
+      "name": "Hour of Devastation - Planeswalker Deck [Set of 2]",
+      "cleanName": "Hour of Devastation Planeswalker Deck Set of 2",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/134896_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1934,
+      "url": "https://www.tcgplayer.com/product/134896/magic-hour-of-devastation-hour-of-devastation-planeswalker-deck-set-of-2",
+      "modifiedOn": "2017-06-22T17:05:11.087",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-07-14T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "One of each Planeswalker Deck featuring <a href=\"http://shop.tcgplayer.com/magic/hour-of-devastation/nissa-genesis-mage\">\"Nissa, Genesis Mage\"</a> and <a href=\"http://shop.tcgplayer.com/magic/hour-of-devastation/nicol-bolas-the-deceiver\">\"Nicol Bolas, the Deceiver\"</a>. This deck contains the following:\r\n<br><ul>\r\n    <li>1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card </li>\r\n    <li>2 Hour of Devastation booster packs</li>\r\n    <li>1 Strategy insert</li>\r\n    <li>1 Magic learn-to-play guide</li>\r\n</ul>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 134896,
+        "lowPrice": 120,
+        "midPrice": 127.38,
+        "highPrice": 134.75,
+        "marketPrice": 105.96,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "uuid": "dba0b628-9426-594c-a71a-02c003e7f63b",
+  "name": "Tenth Edition Sample Deck Chandra Nalaar",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47396",
+    "mcmId": "287566"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Red Deck A",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Red Deck B",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "10E",
+  "setName": "Tenth Edition"
+}

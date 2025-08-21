@@ -1,0 +1,67 @@
+{
+  "uuid": "acb6c300-0c1d-5e4d-b6a0-7bc2e12b72dd",
+  "name": "2013 Core Set Intro Pack Mob Rule Red",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100778",
+    "cardKingdomId": "187707",
+    "cardtraderId": "47776",
+    "mcmId": "256765",
+    "scgId": "SLD-MTG-INT-M13INTRO-EN-MOB",
+    "tcgplayerProductId": "97816",
+    "tntId": "383300"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f4eb5428ef0678c8"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mob Rule",
+        "set": "m13"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2013 Core Set Booster Pack",
+        "set": "m13",
+        "uuid": "294f45ab-a696-59c1-83be-53d286ede856"
+      }
+    ]
+  },
+  "setCode": "M13",
+  "setName": "Magic 2013",
+  "tcgcsvData": {
+    "product": {
+      "productId": 97816,
+      "name": "Magic 2013 Intro Pack - Mob Rule (Red)",
+      "cleanName": "Magic 2013 Intro Pack Mob Rule Red",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/97816_200w.jpg",
+      "categoryId": 1,
+      "groupId": 364,
+      "url": "https://www.tcgplayer.com/product/97816/magic-magic-2013-m13-magic-2013-intro-pack-mob-rule-red",
+      "modifiedOn": "2015-04-13T15:58:14.05",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 97816,
+        "lowPrice": 159.95,
+        "midPrice": 159.95,
+        "highPrice": 159.95,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

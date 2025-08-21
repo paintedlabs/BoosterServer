@@ -1,0 +1,75 @@
+{
+  "uuid": "c69d6542-40e7-5c3b-912b-abf8c07efd45",
+  "name": "Core Set 2020 Planeswalker Deck Sorin",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2019-07-12",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1580840",
+    "cardKingdomId": "225557",
+    "cardtraderId": "169301",
+    "csiId": "276715",
+    "mcmId": "378285",
+    "scgId": "SLD-MTG-INT-M20PWDECK-EN-SORIN",
+    "tcgplayerProductId": "192512",
+    "tntId": "1480290"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2b5c4286148816e4"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Sorin, Vampire Lord",
+        "set": "m20"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2020 Booster Pack",
+        "set": "m20",
+        "uuid": "98ee4589-78f8-5b48-ac57-ef50d8ff8f1c"
+      }
+    ]
+  },
+  "setCode": "M20",
+  "setName": "Core Set 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 192512,
+      "name": "Core Set 2020 - Planeswalker Deck [Sorin]",
+      "cleanName": "Core Set 2020 Planeswalker Deck Sorin",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/192512_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2441,
+      "url": "https://www.tcgplayer.com/product/192512/magic-core-set-2020-core-set-2020-planeswalker-deck-sorin",
+      "modifiedOn": "2024-08-02T15:26:27.757",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 preconstructed 60-card deck \r\n<br>• 1 Core 2020 booster pack \r\n<br>• 1 Magic reference guide\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card <em>(varies by region)</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 192512,
+        "lowPrice": 59.99,
+        "midPrice": 69.99,
+        "highPrice": 79.99,
+        "marketPrice": 15,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

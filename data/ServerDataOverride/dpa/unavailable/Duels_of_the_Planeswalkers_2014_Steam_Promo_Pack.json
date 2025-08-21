@@ -1,0 +1,64 @@
+{
+  "uuid": "20b9c793-01c3-5dc8-a4cd-adff58df3a50",
+  "name": "Duels of the Planeswalkers 2014 Steam Promo Pack",
+  "category": "booster_pack",
+  "cardCount": 6,
+  "subtype": "promotional",
+  "identifiers": {
+    "cardtraderId": "51092",
+    "mcmId": "262408",
+    "tcgplayerProductId": "77292"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/819f3e47316e8611"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Scavenging Ooze",
+        "number": "3",
+        "set": "pdp14",
+        "uuid": "b4ea5f31-5506-5595-a2a3-95dac162a8f2"
+      }
+    ],
+    "pack": [
+      {
+        "code": "duelspromo",
+        "set": "m14"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77292,
+      "name": "Duels of the Planeswalkers 2014 Steam Promo Pack",
+      "cleanName": "Duels of the Planeswalkers 2014 Steam Promo Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77292_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/77292/magic-duels-of-the-planeswalkers-duels-of-the-planeswalkers-2014-steam-promo-pack",
+      "modifiedOn": "2020-08-18T18:01:04.71",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77292,
+        "lowPrice": 23,
+        "midPrice": 23,
+        "highPrice": 23,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

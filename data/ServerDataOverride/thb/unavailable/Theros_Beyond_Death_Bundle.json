@@ -1,0 +1,94 @@
+{
+  "uuid": "41c9a348-1885-5401-a192-e68688655475",
+  "name": "Theros Beyond Death Bundle",
+  "category": "bundle",
+  "releaseDate": "2020-01-24",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1797814",
+    "cardKingdomId": "230635",
+    "cardtraderId": "62419",
+    "csiId": "287291",
+    "mcmId": "410979",
+    "scgId": "SLD-MTG-BUN-THB-EN",
+    "tcgplayerProductId": "202300",
+    "tntId": "1605701"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/fcf9684ec000f525",
+    "tcgplayer": "https://mtgjson.com/links/d5ce645610753da9"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Arasta of the Endless Web",
+        "number": "352",
+        "set": "thb",
+        "uuid": "911c3ff3-8068-5580-bb92-049bb5a67deb"
+      }
+    ],
+    "other": [
+      {
+        "name": "Theros Beyond Death 40-card Land Bundle"
+      },
+      {
+        "name": "Oversized Theros Spindown"
+      },
+      {
+        "name": "Reusable Card Storage Box"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Theros Beyond Death Draft Booster Pack",
+        "set": "thb",
+        "uuid": "089080a6-6828-50c3-9101-7dde35781608"
+      }
+    ]
+  },
+  "setCode": "THB",
+  "setName": "Theros Beyond Death",
+  "tcgcsvData": {
+    "product": {
+      "productId": 202300,
+      "name": "Theros Beyond Death - Bundle",
+      "cleanName": "Theros Beyond Death Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/202300_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2568,
+      "url": "https://www.tcgplayer.com/product/202300/magic-theros-beyond-death-theros-beyond-death-bundle",
+      "modifiedOn": "2019-12-17T20:42:01.123",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-01-24T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Bundles are a great way for players to fully immerse themselves in the new set and update their decks for the new Standard environment. With plenty of lands and Draft Boosters, plus a life counter and reference cards, the Bundle also makes a great way for newer players to start building their decks.\r\n<br><br>\r\n<strong>Contents:</strong>\r\n<br>• 10 Theros Beyond Death booster packs\r\n<br>• 20 foil land pack\r\n<br>• 20 regular land pack\r\n<br>• 1 foil promo card\r\n<br>• 1 oversized Spindown life counter (1.5\")\r\n<br>• 2 reference cards\r\n<br>• 1 reusable card storage box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509792429"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 202300,
+        "lowPrice": 56.95,
+        "midPrice": 69.99,
+        "highPrice": 99.99,
+        "marketPrice": 66.37,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "uuid": "8f2ed953-52f3-5171-9ecd-90de3a262f63",
+  "name": "Aether Revolt Bundle",
+  "category": "bundle",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1476821",
+    "cardKingdomId": "210380",
+    "cardtraderId": "48500",
+    "csiId": "228470",
+    "mcmId": "293337",
+    "scgId": "SLD-MTG-BUN-AER-EN",
+    "tcgplayerProductId": "125797",
+    "tntId": "1096473"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/63cc24b458c04c0f",
+    "tcgplayer": "https://mtgjson.com/links/aaeb338c61aef33c"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Aether Revolt Player's Guide"
+      },
+      {
+        "name": "80 Basic Land Pack"
+      },
+      {
+        "name": "Magic Learn-to-play Guide"
+      },
+      {
+        "name": "Aether Revolt Spindown"
+      },
+      {
+        "name": "2 Deck Boxes"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Aether Revolt Booster Pack",
+        "set": "aer",
+        "uuid": "b32a55d0-c4f8-5c16-b1ab-66ab627a25a2"
+      }
+    ]
+  },
+  "setCode": "AER",
+  "setName": "Aether Revolt",
+  "tcgcsvData": {
+    "product": {
+      "productId": 125797,
+      "name": "Aether Revolt - Bundle",
+      "cleanName": "Aether Revolt Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/125797_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1857,
+      "url": "https://www.tcgplayer.com/product/125797/magic-aether-revolt-aether-revolt-bundle",
+      "modifiedOn": "2017-01-20T05:13:52",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Aether Revolt Bundle contains the following:\r\n<br>\r\n<br><b>-</b> 10 Aether Revolt booster packs\r\n<br><b>-</b> 1 Card box\r\n<br><b>-</b> 1 Player's Guide with complete visual encyclopedia for Aether Revolt\r\n<br><b>-</b> 80 Basic land cards\r\n<br><b>-</b> 1 Magic learn-to-play guide\r\n<br><b>-</b> 1 Spindown life counter\r\n<br><b>-</b> 2 Deck boxes"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 125797,
+        "lowPrice": 49.5,
+        "midPrice": 56.82,
+        "highPrice": 99.97,
+        "marketPrice": 56.85,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

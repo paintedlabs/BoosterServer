@@ -1,0 +1,87 @@
+{
+  "uuid": "62bc5578-451c-5306-9d63-b28b002445b4",
+  "name": "Journey Into Nyx Prerelease Kit Set of 5",
+  "category": "subset",
+  "releaseDate": "2015-03-02",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "cardtraderId": "48118",
+    "mcmId": "273048",
+    "tcgplayerProductId": "199837"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/1768cd71e8e3254f"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Journey Into Nyx Prerelease Forged in Glory",
+        "set": "jou",
+        "uuid": "90eabe22-5651-5988-9c22-5fec8dc95e2e"
+      },
+      {
+        "count": 1,
+        "name": "Journey Into Nyx Prerelease Forged in Intellect",
+        "set": "jou",
+        "uuid": "84896144-1b61-58db-b63d-97a9a2f3de2e"
+      },
+      {
+        "count": 1,
+        "name": "Journey Into Nyx Prerelease Forged in Pursuit",
+        "set": "jou",
+        "uuid": "ba2b383c-9939-537a-b47e-a896228f6438"
+      },
+      {
+        "count": 1,
+        "name": "Journey Into Nyx Prerelease Forged in Tyranny",
+        "set": "jou",
+        "uuid": "3f1acaa1-45ac-5d06-af8b-6b81b1e75e9d"
+      },
+      {
+        "count": 1,
+        "name": "Journey Into Nyx Prerelease Forged in War",
+        "set": "jou",
+        "uuid": "020643ce-9c35-5414-ae12-38cadb0de8cc"
+      }
+    ]
+  },
+  "setCode": "JOU",
+  "setName": "Journey into Nyx",
+  "tcgcsvData": {
+    "product": {
+      "productId": 199837,
+      "name": "Journey Into Nyx - Prerelease Kit (Set of 5)",
+      "cleanName": "Journey Into Nyx Prerelease Kit Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/199837_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1277,
+      "url": "https://www.tcgplayer.com/product/199837/magic-journey-into-nyx-journey-into-nyx-prerelease-kit-set-of-5",
+      "modifiedOn": "2019-09-24T20:11:52.087",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contains one of each Journey Into Nyx Prerelease Kit."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 199837,
+        "lowPrice": 136.88,
+        "midPrice": 136.99,
+        "highPrice": 137.97,
+        "marketPrice": 136.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

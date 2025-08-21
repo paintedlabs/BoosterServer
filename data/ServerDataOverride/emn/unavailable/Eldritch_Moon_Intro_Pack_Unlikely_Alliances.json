@@ -1,0 +1,72 @@
+{
+  "uuid": "fb09bd92-94fe-5d91-86d0-5d46c845fa51",
+  "name": "Eldritch Moon Intro Pack Unlikely Alliances",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-06-29",
+  "subtype": "intro",
+  "identifiers": {
+    "cardKingdomId": "209449",
+    "cardtraderId": "48436",
+    "mcmId": "290946",
+    "tcgplayerProductId": "118399",
+    "tntId": "1099827"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/113df3b54c989eba"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Unlikely Alliances",
+        "set": "emn"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Eldritch Moon Booster Pack",
+        "set": "emn",
+        "uuid": "4253efbd-cc76-53e3-a54c-9f4012f3c097"
+      }
+    ]
+  },
+  "setCode": "EMN",
+  "setName": "Eldritch Moon",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118399,
+      "name": "Eldritch Moon - Intro Pack - Unlikely Alliances",
+      "cleanName": "Eldritch Moon Intro Pack Unlikely Alliances",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118399_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1790,
+      "url": "https://www.tcgplayer.com/product/118399/magic-eldritch-moon-eldritch-moon-intro-pack-unlikely-alliances",
+      "modifiedOn": "2021-08-05T14:23:23.263",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Eldritch Moon booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 118399,
+        "lowPrice": 33,
+        "midPrice": 37.95,
+        "highPrice": 37.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

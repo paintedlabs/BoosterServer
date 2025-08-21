@@ -1,0 +1,546 @@
+{
+  "uuid": "f01c5017-d75d-5ec1-a69a-c5fe34409b68",
+  "name": "Innistrad Crimson Vow Theme Booster Blue",
+  "category": "booster_pack",
+  "cardCount": 35,
+  "releaseDate": "2021-11-19",
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "2111065",
+    "cardKingdomId": "252195",
+    "cardtraderId": "172272",
+    "mcmId": "581620",
+    "tcgplayerProductId": "253824",
+    "tntId": "1734496"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ec171fb32e3326f0"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "theme-u",
+        "set": "vow"
+      }
+    ]
+  },
+  "setCode": "VOW",
+  "setName": "Innistrad: Crimson Vow",
+  "extendedData": {
+    "code": "vow-theme-u",
+    "boosters": [
+      {
+        "sheets": {
+          "uncommon": 10,
+          "common": 24,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 9,
+          "common": 24,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 11,
+          "common": 23,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 10,
+          "common": 23,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 12,
+          "common": 22,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 11,
+          "common": 22,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 13,
+          "common": 21,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 12,
+          "common": 21,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "uncommon": {
+        "allow_duplicates": true,
+        "total_weight": 59,
+        "cards": [
+          {
+            "set": "vow",
+            "number": "49a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "abdd3364-cd0c-5411-8f07-dbaed5c3044e"
+          },
+          {
+            "set": "vow",
+            "number": "52",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b32f35e1-56b2-5a26-bb82-49f42533aa5d"
+          },
+          {
+            "set": "vow",
+            "number": "56",
+            "weight": 4,
+            "foil": false,
+            "uuid": "4496523f-c57e-5006-b87c-875462038114"
+          },
+          {
+            "set": "vow",
+            "number": "60",
+            "weight": 4,
+            "foil": false,
+            "uuid": "82a71dd9-14f6-5377-955c-4a93cdaf0f97"
+          },
+          {
+            "set": "vow",
+            "number": "62a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c8df5dc9-75a2-5e40-b096-2f8db9973ca0"
+          },
+          {
+            "set": "vow",
+            "number": "67",
+            "weight": 4,
+            "foil": false,
+            "uuid": "3c209370-48f6-5351-a493-cd8f9af15567"
+          },
+          {
+            "set": "vow",
+            "number": "69a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d12f2d2e-bbc5-5888-b58c-ff309fded097"
+          },
+          {
+            "set": "vow",
+            "number": "75",
+            "weight": 4,
+            "foil": false,
+            "uuid": "5c4bed81-1276-5ae6-85c8-611031583d5d"
+          },
+          {
+            "set": "vow",
+            "number": "79a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "885bcad2-125d-5733-9eec-0c09785a2a08"
+          },
+          {
+            "set": "vow",
+            "number": "82",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c31d5b4c-c831-5921-a70a-2ef479f115c5"
+          },
+          {
+            "set": "vow",
+            "number": "85",
+            "weight": 4,
+            "foil": false,
+            "uuid": "1a7c0af7-5017-5e54-8fb3-3a51b67eda15"
+          },
+          {
+            "set": "vow",
+            "number": "87",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c6bb7348-fc09-5d73-acea-0b64c4e15b89"
+          },
+          {
+            "set": "vow",
+            "number": "88",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c1cdfd9d-b1c2-52fc-bc44-88276c38418d"
+          },
+          {
+            "set": "vow",
+            "number": "90",
+            "weight": 4,
+            "foil": false,
+            "uuid": "53ddb642-d650-54d2-9b14-64a39ff62146"
+          },
+          {
+            "set": "vow",
+            "number": "253",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8d5dcadd-d8ac-5cb8-91ae-1196dbd9b799"
+          },
+          {
+            "set": "vow",
+            "number": "256a",
+            "weight": 1,
+            "foil": false,
+            "uuid": "22d2d2b0-3299-5d32-94f5-f88717e0c2c4"
+          },
+          {
+            "set": "vow",
+            "number": "259",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5aae641c-323f-5cd1-b2b3-1928bccd2f68"
+          }
+        ]
+      },
+      "common": {
+        "allow_duplicates": true,
+        "total_weight": 81,
+        "cards": [
+          {
+            "set": "vow",
+            "number": "47",
+            "weight": 4,
+            "foil": false,
+            "uuid": "e38824d5-483c-5aa7-909a-cee8100bbcce"
+          },
+          {
+            "set": "vow",
+            "number": "48a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "cec10798-3fdb-526c-948f-5bea71c99f0e"
+          },
+          {
+            "set": "vow",
+            "number": "51",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a9a7ba6d-5533-54d3-8583-600153df7674"
+          },
+          {
+            "set": "vow",
+            "number": "54",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9b778fb4-f81b-57ff-aed0-6e492588bdd9"
+          },
+          {
+            "set": "vow",
+            "number": "55",
+            "weight": 4,
+            "foil": false,
+            "uuid": "bb3f9a24-4fbb-5aa9-a1de-335c08a10e50"
+          },
+          {
+            "set": "vow",
+            "number": "57",
+            "weight": 4,
+            "foil": false,
+            "uuid": "5e65540b-92d2-5f16-8673-4c3cf96f5ceb"
+          },
+          {
+            "set": "vow",
+            "number": "59",
+            "weight": 4,
+            "foil": false,
+            "uuid": "e2fd18de-def4-55ec-82cf-27399fc668f2"
+          },
+          {
+            "set": "vow",
+            "number": "66a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "f4f0b664-c2e7-5dfe-991a-c115627f8f7c"
+          },
+          {
+            "set": "vow",
+            "number": "73",
+            "weight": 4,
+            "foil": false,
+            "uuid": "1e0305c7-7664-59fc-8a1a-ddb2ca3cacfa"
+          },
+          {
+            "set": "vow",
+            "number": "74",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a1a7f6f7-d879-5f0d-afac-9f87e5b266bb"
+          },
+          {
+            "set": "vow",
+            "number": "76",
+            "weight": 4,
+            "foil": false,
+            "uuid": "f789d77c-f8f8-5058-8723-3172559a69c8"
+          },
+          {
+            "set": "vow",
+            "number": "77",
+            "weight": 4,
+            "foil": false,
+            "uuid": "05de4376-3bf6-5d14-b72b-c7a3b76b2c7f"
+          },
+          {
+            "set": "vow",
+            "number": "78",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9fad1682-6718-52b4-bda3-92fca004f539"
+          },
+          {
+            "set": "vow",
+            "number": "80",
+            "weight": 4,
+            "foil": false,
+            "uuid": "28d9ca66-722e-537d-b035-4b59ba02d2a9"
+          },
+          {
+            "set": "vow",
+            "number": "81",
+            "weight": 4,
+            "foil": false,
+            "uuid": "64f7152e-00fb-5ff0-9a7e-c35bbfbe343b"
+          },
+          {
+            "set": "vow",
+            "number": "83",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6b3066fc-d7df-5981-9ea2-3eadd12b6f27"
+          },
+          {
+            "set": "vow",
+            "number": "84",
+            "weight": 4,
+            "foil": false,
+            "uuid": "fc7f19b4-e73e-5e01-9d6d-08531d50eb77"
+          },
+          {
+            "set": "vow",
+            "number": "86",
+            "weight": 4,
+            "foil": false,
+            "uuid": "8129a5b3-52c2-5deb-ae3f-75875d595116"
+          },
+          {
+            "set": "vow",
+            "number": "91",
+            "weight": 4,
+            "foil": false,
+            "uuid": "7c6ba013-373b-5141-a963-5a16c72897b4"
+          },
+          {
+            "set": "vow",
+            "number": "252",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d416771c-1334-575c-b20f-92eb070155b5"
+          },
+          {
+            "set": "vow",
+            "number": "254",
+            "weight": 1,
+            "foil": false,
+            "uuid": "90ac6fd9-1d9f-50e5-a5f6-5a175a9c8c2f"
+          },
+          {
+            "set": "vow",
+            "number": "257",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e2d366ce-a5af-5485-949a-88a0d37e9d5d"
+          },
+          {
+            "set": "vow",
+            "number": "260",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1f458628-afd9-5384-94db-5dd8b859ec79"
+          },
+          {
+            "set": "vow",
+            "number": "263",
+            "weight": 1,
+            "foil": false,
+            "uuid": "57984d21-ccfe-58a9-a4be-d0f147cbf031"
+          }
+        ]
+      },
+      "rare_mythic": {
+        "total_weight": 41,
+        "cards": [
+          {
+            "set": "vow",
+            "number": "50",
+            "weight": 2,
+            "foil": false,
+            "uuid": "14a942aa-929a-5c37-b5a1-ab02b1302c51"
+          },
+          {
+            "set": "vow",
+            "number": "53",
+            "weight": 4,
+            "foil": false,
+            "uuid": "5fa7a08e-b7f8-5b3e-9649-97bb95d5ab5c"
+          },
+          {
+            "set": "vow",
+            "number": "58",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c52ff1dc-4236-525a-ac81-cee87c3219c6"
+          },
+          {
+            "set": "vow",
+            "number": "61",
+            "weight": 4,
+            "foil": false,
+            "uuid": "e7e5109b-9668-52a0-9175-e0d9f4df9772"
+          },
+          {
+            "set": "vow",
+            "number": "63",
+            "weight": 4,
+            "foil": false,
+            "uuid": "2533b340-5fe5-59e6-804d-e3e7fe0e3f32"
+          },
+          {
+            "set": "vow",
+            "number": "64",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d5d0f3bc-7caa-5775-ad07-af8fb716c065"
+          },
+          {
+            "set": "vow",
+            "number": "65a",
+            "weight": 2,
+            "foil": false,
+            "uuid": "34e30c28-282b-5510-bf00-a2dbc571e5d2"
+          },
+          {
+            "set": "vow",
+            "number": "68a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "57a2fdb2-8f63-5652-a756-5aaae838fccf"
+          },
+          {
+            "set": "vow",
+            "number": "70",
+            "weight": 2,
+            "foil": false,
+            "uuid": "eee0e4ed-17c8-5d1d-8dde-277007a572dd"
+          },
+          {
+            "set": "vow",
+            "number": "71",
+            "weight": 4,
+            "foil": false,
+            "uuid": "308006ca-fe84-589b-9364-f725b19e7fd1"
+          },
+          {
+            "set": "vow",
+            "number": "72",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d33dde45-88f9-5298-a885-5bfb5c51ebd1"
+          },
+          {
+            "set": "vow",
+            "number": "255",
+            "weight": 1,
+            "foil": false,
+            "uuid": "66b52eff-8cf5-5054-a4f0-c828fcca3cdd"
+          },
+          {
+            "set": "vow",
+            "number": "258",
+            "weight": 1,
+            "foil": false,
+            "uuid": "10a4e7eb-5884-51b4-ad19-98e30d63e3ec"
+          },
+          {
+            "set": "vow",
+            "number": "267",
+            "weight": 1,
+            "foil": false,
+            "uuid": "23df94c4-ae72-5f0f-bc7a-a450bb55b08f"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "vow"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 253824,
+      "name": "Innistrad: Crimson Vow - Theme Booster [Blue]",
+      "cleanName": "Innistrad Crimson Vow Theme Booster Blue",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/253824_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2862,
+      "url": "https://www.tcgplayer.com/product/253824/magic-innistrad-crimson-vow-innistrad-crimson-vow-theme-booster-blue",
+      "modifiedOn": "2021-11-19T05:03:32.157",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-11-19T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contents: \r\n<br>• 35 Magic: The Gathering cards, all based on a theme"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509993987"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 253824,
+        "lowPrice": 5.99,
+        "midPrice": 7.99,
+        "highPrice": 24.99,
+        "marketPrice": 4.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

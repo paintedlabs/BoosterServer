@@ -1,0 +1,92 @@
+{
+  "uuid": "6ce9546b-3a8d-5283-ac09-b0782d61db8a",
+  "name": "Streets of New Capenna Commander Deck Riveteers Rampage",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-04-29",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2179035",
+    "cardKingdomId": "258199",
+    "cardtraderId": "208727",
+    "csiId": "333094",
+    "mcmId": "611293",
+    "scgId": "SLD-MTG-MLT-NCC-EN-RIVETEERS",
+    "tcgplayerProductId": "265394",
+    "tntId": "1743753"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/ca613e5f2528f727",
+    "tcgplayer": "https://mtgjson.com/links/c0abb6ef0935cb20"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Riveteers Rampage",
+        "set": "ncc"
+      }
+    ],
+    "other": [
+      {
+        "name": "10 Double Sided Tokens"
+      },
+      {
+        "name": "Streets of New Capenna Life Wheel"
+      },
+      {
+        "name": "Foil Etched Cardstock Display Commander"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Streets of New Capenna Collector Booster Sample Pack",
+        "set": "snc",
+        "uuid": "b04ae6cd-0c32-52e1-ad57-40d1cc8d26ef"
+      }
+    ]
+  },
+  "setCode": "NCC",
+  "setName": "New Capenna Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 265394,
+      "name": "Streets of New Capenna Commander Deck - Riveteers Rampage",
+      "cleanName": "Streets of New Capenna Commander Deck Riveteers Rampage",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/265394_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3031,
+      "url": "https://www.tcgplayer.com/product/265394/magic-commander-streets-of-new-capenna-streets-of-new-capenna-commander-deck-riveteers-rampage",
+      "modifiedOn": "2022-04-29T04:03:42.517",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-04-29T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Riveteers Rampage Streets of New Capenna Commander Deck set includes 1 ready-to-play deck of 100 Magic cards (2 traditional foil, 98 nonfoil), 1 foil-etched Display Commander (a thick cardstock copy of the commander card with textured foil etched into the card’s border and art), 10 double-sided tokens, 1 deck box (can hold 100 sleeved cards), 1 life tracker, and 1 reference card.\r\n<br><strong>Key Features:</strong>\r\n<br>• 100-card ready-to-play Streets of New Capenna Commander deck\r\n<br>• Deck includes 2 traditional foils + 98 nonfoil cards\r\n<br>• 1 foil-etched Display Commander\r\n<br>• 10 double-sided tokens + life tracker and deck box\r\n<br>• Introduces 15 MTG cards not found in the main set"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166121468"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 265394,
+        "lowPrice": 69.03,
+        "midPrice": 77.95,
+        "highPrice": 85.99,
+        "marketPrice": 69.39,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

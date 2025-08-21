@@ -1,0 +1,75 @@
+{
+  "uuid": "1cecd7b3-25f5-5e07-ad86-e3b139669c7e",
+  "name": "Guilds of Ravnica Planeswalker Deck Ral",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-10-05",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1534101",
+    "cardKingdomId": "221369",
+    "cardtraderId": "48731",
+    "csiId": "259703",
+    "mcmId": "363628",
+    "scgId": "SLD-MTG-INT-GRNPWDECK-EN-RAL",
+    "tcgplayerProductId": "176692",
+    "tntId": "1188183"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b1c7fc62a7f6e5b8"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ral, Caller of Storms",
+        "set": "grn"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Booster Pack",
+        "set": "grn",
+        "uuid": "dbecee60-807c-5627-9090-d2114a897fcd"
+      }
+    ]
+  },
+  "setCode": "GRN",
+  "setName": "Guilds of Ravnica",
+  "tcgcsvData": {
+    "product": {
+      "productId": 176692,
+      "name": "Guilds of Ravnica - Planeswalker Deck [Ral]",
+      "cleanName": "Guilds of Ravnica Planeswalker Deck Ral",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/176692_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2290,
+      "url": "https://www.tcgplayer.com/product/176692/magic-guilds-of-ravnica-guilds-of-ravnica-planeswalker-deck-ral",
+      "modifiedOn": "2018-09-19T17:43:00.223",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-10-05T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck\r\n<br>• 2 Guilds of Ravnica booster packs \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert\r\n<br><br>More information coming soon..."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 176692,
+        "lowPrice": 21.99,
+        "midPrice": 30,
+        "highPrice": 49.99,
+        "marketPrice": 24.29,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

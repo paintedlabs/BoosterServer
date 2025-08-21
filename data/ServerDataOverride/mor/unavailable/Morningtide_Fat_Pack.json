@@ -1,0 +1,81 @@
+{
+  "uuid": "4f3dade8-afa3-5ff0-ab93-1ee40ffec8f9",
+  "name": "Morningtide Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100899",
+    "cardKingdomId": "124156",
+    "cardtraderId": "47264",
+    "csiId": "97937",
+    "mcmId": "210163",
+    "scgId": "SLD-MTG-BUN-MOR-EN",
+    "tcgplayerProductId": "78321",
+    "tntId": "160544"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/9e721760c57e55d4"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "40 Basic Land Bundle"
+      },
+      {
+        "name": "2 Card Storage Boxes"
+      },
+      {
+        "name": "Morningtide Spindown"
+      },
+      {
+        "name": "One random Pro Tour Player Card"
+      },
+      {
+        "name": "The Morningtide novel"
+      },
+      {
+        "name": "Six color-coded plastic card dividers"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Morningtide Booster Pack",
+        "set": "mor",
+        "uuid": "86fe9759-a1eb-5a78-a014-531b1b670cde"
+      }
+    ]
+  },
+  "setCode": "MOR",
+  "setName": "Morningtide",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78321,
+      "name": "Morningtide - Fat Pack",
+      "cleanName": "Morningtide Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78321_200w.jpg",
+      "categoryId": 1,
+      "groupId": 77,
+      "url": "https://www.tcgplayer.com/product/78321/magic-morningtide-morningtide-fat-pack",
+      "modifiedOn": "2014-01-07T15:35:08.243",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78321,
+        "lowPrice": 499.99,
+        "midPrice": 499.99,
+        "highPrice": 499.99,
+        "marketPrice": 349.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

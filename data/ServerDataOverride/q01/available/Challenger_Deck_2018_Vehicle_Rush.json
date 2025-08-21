@@ -1,0 +1,67 @@
+{
+  "uuid": "c693cb5b-1236-5581-8e99-a7acdb515bca",
+  "name": "Challenger Deck 2018 Vehicle Rush",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2018-02-23",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1495919",
+    "cardKingdomId": "217623",
+    "cardtraderId": "54734",
+    "csiId": "254890",
+    "mcmId": "318969",
+    "scgId": "SLD-MTG-INT-Q01-EN-VEHICLE",
+    "tcgplayerProductId": "161413",
+    "tntId": "1159418"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4e5835ca55e91b5b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Vehicle Rush",
+        "set": "q01"
+      }
+    ]
+  },
+  "setCode": "Q01",
+  "setName": "Challenger Decks 2018",
+  "tcgcsvData": {
+    "product": {
+      "productId": 161413,
+      "name": "Challenger Deck 2018: Vehicle Rush",
+      "cleanName": "Challenger Deck 2018 Vehicle Rush",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/161413_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/161413/magic-challenger-decks-challenger-deck-2018-vehicle-rush",
+      "modifiedOn": "2019-02-14T16:49:37.047",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains:\r\n<br>• 60-card main deck\r\n<br>• 15-card sideboard\r\n<br>• A box capable of holding 75 sleeved cards\r\n<br>• Spindown life counter\r\n<br>• Quick reference guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 161413,
+        "lowPrice": 9.94,
+        "midPrice": 22.3,
+        "highPrice": 49.99,
+        "marketPrice": 17.26,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

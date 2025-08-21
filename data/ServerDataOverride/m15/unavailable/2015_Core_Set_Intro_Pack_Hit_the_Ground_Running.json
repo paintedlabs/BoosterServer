@@ -1,0 +1,82 @@
+{
+  "uuid": "0d740982-d6fb-5e4b-be8b-efd477ca0c39",
+  "name": "2015 Core Set Intro Pack Hit the Ground Running",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100829",
+    "cardKingdomId": "195220",
+    "cardtraderId": "48149",
+    "csiId": "199295",
+    "mcmId": "267972",
+    "scgId": "SLD-MTG-INT-M15INTRO-EN-HIT",
+    "tcgplayerProductId": "91075",
+    "tntId": "1057455"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8bfb31f02057f966"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Hit The Ground Running",
+        "set": "m15"
+      }
+    ],
+    "other": [
+      {
+        "name": "Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn to Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2015 Core Set Booster Pack",
+        "set": "m15",
+        "uuid": "0643f6ea-0eab-5f7d-8b6a-4ade23f44afd"
+      }
+    ]
+  },
+  "setCode": "M15",
+  "setName": "Magic 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 91075,
+      "name": "Magic 2015 (M15) - Intro Pack - Hit the Ground Running",
+      "cleanName": "Magic 2015 M15 Intro Pack Hit the Ground Running",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/91075_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1293,
+      "url": "https://www.tcgplayer.com/product/91075/magic-magic-2015-m15-magic-2015-m15-intro-pack-hit-the-ground-running",
+      "modifiedOn": "2021-08-05T16:37:03.047",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Magic 2015 (M15) booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 91075,
+        "lowPrice": 20.49,
+        "midPrice": 22.72,
+        "highPrice": 24.94,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

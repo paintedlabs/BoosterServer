@@ -1,0 +1,90 @@
+{
+  "uuid": "9ae9feb8-beb6-51ce-be04-4e6c641f9fe1",
+  "name": "March of the Machine Bundle",
+  "category": "bundle",
+  "releaseDate": "2023-04-21",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2323036",
+    "cardKingdomId": "274980",
+    "cardtraderId": "231982",
+    "mcmId": "689787",
+    "scgId": "SLD-MTG-BUN-MOM-EN",
+    "tcgplayerProductId": "475586",
+    "tntId": "1774260"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/1f78ff1e7d5a6a03",
+    "tcgplayer": "https://mtgjson.com/links/37f3b79445892f29"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Ghalta and Mavren",
+        "number": "386",
+        "set": "mom",
+        "uuid": "c9f3a2e0-0e85-5fd0-92a2-9d7f273cb871"
+      }
+    ],
+    "other": [
+      {
+        "name": "March of the Machine Land Bundle"
+      },
+      {
+        "name": "March of the Machine 20-sided die"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "March of the Machine Set Booster Pack",
+        "set": "mom",
+        "uuid": "ffe20569-1726-5abf-921a-7667d2fbe138"
+      }
+    ]
+  },
+  "setCode": "MOM",
+  "setName": "March of the Machine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 475586,
+      "name": "March of the Machine - Bundle",
+      "cleanName": "March of the Machine Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/475586_200w.jpg",
+      "categoryId": 1,
+      "groupId": 22875,
+      "url": "https://www.tcgplayer.com/product/475586/magic-march-of-the-machine-march-of-the-machine-bundle",
+      "modifiedOn": "2023-04-21T04:04:54.413",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2023-04-21T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The March of the Machine Bundle contains 8 March of the Machine Set Boosters—the best boosters to open just for fun—plus accessories, with 1 traditional foil alternate-art promo card, 40 basic lands (20 traditional foils and 20 nonfoils), 1 oversized Spindown life counter, 1 card storage box, and 2 reference cards.\r\n<br>\r\nEach Set Booster contains 12 Magic cards, 1 Art Card, and 1 token/ad card, Helper card, or card from “The List” (a special card from Magic's history—found in 25% of packs). Every pack includes a combination of 1–5 card(s) of rarity Rare or higher, and 3–8 Uncommon, 2–7 Common, and 1 Land cards. 1 non–Art Card and non–Land card of any rarity is foil. Traditional Foil Borderless Mythic Planeswalker in <1% of boosters. Foil-Stamped Signature Art Card replaces Art Card in 10% of boosters.\r\n<br>\r\nContents:\r\n<br>\r\n• 8 March of the Machine Set Boosters\r\n<br>\r\n• 1 traditional foil alt-art promo card\r\n<br>\r\n• 40 basic land cards (20 foil + 20 nonfoil)\r\n<br>\r\n• Spindown life counter + card storage box\r\n<br>\r\n• Battle the Machine Legion as Phyrexians invade planes across the Multiverse"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166208473"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 475586,
+        "lowPrice": 58.59,
+        "midPrice": 66.94,
+        "highPrice": 90,
+        "marketPrice": 62.15,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

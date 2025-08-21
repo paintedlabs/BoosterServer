@@ -1,0 +1,56 @@
+{
+  "uuid": "3645020d-1644-5b80-8579-ab271e23a82c",
+  "name": "Journey Into Nyx Event Deck Display",
+  "category": "deck_box",
+  "releaseDate": "2014-05-02",
+  "subtype": "event",
+  "identifiers": {
+    "tcgplayerProductId": "80850",
+    "tntId": "1054506"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/255aa360002406db"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Journey Into Nyx Event Deck Wrath of the Mortals",
+        "set": "jou",
+        "uuid": "fdef6207-3d4e-5221-8afc-3689e907e8a9"
+      }
+    ]
+  },
+  "setCode": "JOU",
+  "setName": "Journey into Nyx",
+  "tcgcsvData": {
+    "product": {
+      "productId": 80850,
+      "name": "Journey Into Nyx - Event Deck Display (6)",
+      "cleanName": "Journey Into Nyx Event Deck Display 6",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/80850_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1277,
+      "url": "https://www.tcgplayer.com/product/80850/magic-journey-into-nyx-journey-into-nyx-event-deck-display-6",
+      "modifiedOn": "2014-03-12T13:12:47.603",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2014-05-02T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 80850,
+        "lowPrice": 70.99,
+        "midPrice": 70.99,
+        "highPrice": 99.95,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

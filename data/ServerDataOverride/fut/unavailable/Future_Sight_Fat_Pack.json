@@ -1,0 +1,80 @@
+{
+  "uuid": "30088e1c-451c-5a12-89d0-18f600dfbcf7",
+  "name": "Future Sight Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "cardKingdomId": "122310",
+    "cardtraderId": "47195",
+    "csiId": "97638",
+    "mcmId": "210166",
+    "scgId": "SLD-MTG-BUN-FUT-EN",
+    "tcgplayerProductId": "78312",
+    "tntId": "155241"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ffb15333ea57048f"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "40 Basic Land Pack"
+      },
+      {
+        "name": "2 Card Storage Boxes"
+      },
+      {
+        "name": "Future Sight Spindown"
+      },
+      {
+        "name": "Future Sight Novel"
+      },
+      {
+        "name": "Random Pro Tour Player Card"
+      },
+      {
+        "name": "Six Color-Coded Mana Dividers"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Future Sight Booster Pack",
+        "set": "fut",
+        "uuid": "e6e772ad-c2d8-5030-891b-897766e58924"
+      }
+    ]
+  },
+  "setCode": "FUT",
+  "setName": "Future Sight",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78312,
+      "name": "Future Sight - Fat Pack",
+      "cleanName": "Future Sight Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78312_200w.jpg",
+      "categoryId": 1,
+      "groupId": 51,
+      "url": "https://www.tcgplayer.com/product/78312/magic-future-sight-future-sight-fat-pack",
+      "modifiedOn": "2019-10-11T12:17:26.907",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78312,
+        "lowPrice": 289.81,
+        "midPrice": 394.18,
+        "highPrice": 500,
+        "marketPrice": 289.79,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

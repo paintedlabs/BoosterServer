@@ -1,0 +1,91 @@
+{
+  "uuid": "96402342-c54a-5a6a-a484-0e2a181cee38",
+  "name": "Guilds of Ravnica Bundle",
+  "category": "bundle",
+  "releaseDate": "2018-10-05",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1528601",
+    "cardKingdomId": "221359",
+    "cardtraderId": "48729",
+    "csiId": "262294",
+    "mcmId": "361219",
+    "scgId": "SLD-MTG-BUN-GRN-EN",
+    "tcgplayerProductId": "173365",
+    "tntId": "1188181"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/2cca4838d6b432c8",
+    "tcgplayer": "https://mtgjson.com/links/3e0d1140ad195e15"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "1 card box"
+      },
+      {
+        "name": "1 player’s guide"
+      },
+      {
+        "name": "80-card land pack (1 foil, 7 nonfoil for each type)"
+      },
+      {
+        "name": "1 learn-to-play insert"
+      },
+      {
+        "name": "1 Spindown life counter"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Guilds of Ravnica Booster Pack",
+        "set": "grn",
+        "uuid": "dbecee60-807c-5627-9090-d2114a897fcd"
+      }
+    ]
+  },
+  "setCode": "GRN",
+  "setName": "Guilds of Ravnica",
+  "tcgcsvData": {
+    "product": {
+      "productId": 173365,
+      "name": "Guilds of Ravnica - Bundle",
+      "cleanName": "Guilds of Ravnica Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/173365_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2290,
+      "url": "https://www.tcgplayer.com/product/173365/magic-guilds-of-ravnica-guilds-of-ravnica-bundle",
+      "modifiedOn": "2018-09-04T17:29:25.587",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-10-05T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "On Ravnica, whoever you are—soldier or scientist, merchant or spy—your guild is the core of your identity. It provides structure and greater purpose. Now, the time has come to defend it.\r\n<br>\r\n<br>Contains:\r\n<br>• 10 Guilds of Ravnica booster packs \r\n<br>• 1 card box \r\n<br>• 1 player’s guide \r\n<br>• 1 80-card land pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 Spindown life counter"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509686667"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 173365,
+        "lowPrice": 54.95,
+        "midPrice": 61.33,
+        "highPrice": 64.99,
+        "marketPrice": 54.51,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

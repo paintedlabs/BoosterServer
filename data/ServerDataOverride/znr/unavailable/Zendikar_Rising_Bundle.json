@@ -1,0 +1,100 @@
+{
+  "uuid": "4d9d262a-6ab5-5e25-a933-e7876ebe86d4",
+  "name": "Zendikar Rising Bundle",
+  "category": "bundle",
+  "releaseDate": "2020-09-25",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1911713",
+    "cardKingdomId": "236809",
+    "cardtraderId": "145664",
+    "csiId": "302485",
+    "mcmId": "486969",
+    "scgId": "SLD-MTG-BUN-ZNR-EN",
+    "tcgplayerProductId": "220426",
+    "tntId": "1605704"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/aa0ab35f88a01c49",
+    "tcgplayer": "https://mtgjson.com/links/85330dbcff0acf16"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Charix, the Raging Isle",
+        "number": "386",
+        "set": "znr",
+        "uuid": "b335008d-c678-52cd-8f87-7fc71832365b"
+      }
+    ],
+    "other": [
+      {
+        "name": "1 reusable storage box"
+      },
+      {
+        "name": "20 foil basic lands"
+      },
+      {
+        "name": "20 non-foil basic lands"
+      },
+      {
+        "name": "1 oversized spindown counter"
+      },
+      {
+        "name": "2 reference cards"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Zendikar Rising Draft Booster Pack",
+        "set": "znr",
+        "uuid": "f3736d50-8967-5f09-89be-3b7a4eddb948"
+      }
+    ]
+  },
+  "setCode": "ZNR",
+  "setName": "Zendikar Rising",
+  "tcgcsvData": {
+    "product": {
+      "productId": 220426,
+      "name": "Zendikar Rising - Bundle",
+      "cleanName": "Zendikar Rising Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/220426_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2648,
+      "url": "https://www.tcgplayer.com/product/220426/magic-zendikar-rising-zendikar-rising-bundle",
+      "modifiedOn": "2020-09-25T04:04:33.053",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-09-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Bundles are a great way for players to fully immerse themselves in the new set and update their decks for the new Standard environment. With plenty of lands and Draft Boosters, plus a life counter and reference cards, the Bundle also makes a great way for newer players to start building their decks.\r\n<br><strong>Contents</strong>\r\n<br>• 10 <em>Zendikar Rising</em> Draft Boosters\r\n<br>• 1 reusable storage box\r\n<br>• 20 foil basic lands\r\n<br>• 20 non-foil basic lands\r\n<br>• 1 foil promo card\r\n<br>• 1 oversized spindown counter\r\n<br>• 2 reference cards"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509921584"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 220426,
+        "lowPrice": 27.96,
+        "midPrice": 40.95,
+        "highPrice": 59.99,
+        "marketPrice": 36.82,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "uuid": "5e3b9b4c-fbe9-5bf4-80e3-0d19c21ed508",
+  "name": "Dominaria Planeswalker Decks Set of 2",
+  "category": "subset",
+  "releaseDate": "2018-04-27",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "scgId": "SLD-MTG-INT-DOMPWDECK-EN-SET2",
+    "tcgplayerProductId": "158429"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/474341a281be4bd7"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Dominaria Planeswalker Deck Chandra",
+        "set": "dom",
+        "uuid": "78c57364-5ee9-5c6f-b889-6c25e21dda07"
+      },
+      {
+        "count": 1,
+        "name": "Dominaria Planeswalker Deck Teferi",
+        "set": "dom",
+        "uuid": "1fcf9d33-9f4a-5483-aa48-a0a715f8da1a"
+      }
+    ]
+  },
+  "setCode": "DOM",
+  "setName": "Dominaria",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158429,
+      "name": "Dominaria - Planeswalker Deck [Set of 2]",
+      "cleanName": "Dominaria Planeswalker Deck Set of 2",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158429_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2199,
+      "url": "https://www.tcgplayer.com/product/158429/magic-dominaria-dominaria-planeswalker-deck-set-of-2",
+      "modifiedOn": "2018-04-12T18:59:19.587",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-04-27T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 2 60-card decks\r\n<br>• 2 premium cards\r\n<br>• 4 Dominaria booster packs"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158429,
+        "lowPrice": 53.94,
+        "midPrice": 53.94,
+        "highPrice": 53.94,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

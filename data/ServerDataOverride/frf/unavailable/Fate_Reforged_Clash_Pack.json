@@ -1,0 +1,63 @@
+{
+  "uuid": "c676bc86-c455-5cc9-8d11-016569846580",
+  "name": "Fate Reforged Clash Pack",
+  "category": "multiple_decks",
+  "cardCount": 120,
+  "subtype": "clash",
+  "identifiers": {
+    "abuId": "1100521",
+    "cardKingdomId": "198429",
+    "cardtraderId": "48224",
+    "mcmId": "271577",
+    "scgId": "SLD-MTG-INT-FRFCLASH-EN",
+    "tcgplayerProductId": "95035",
+    "tntId": "1062944"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/347053e4531baa6e"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Profit",
+        "set": "frf"
+      },
+      {
+        "name": "Power",
+        "set": "frf"
+      }
+    ]
+  },
+  "setCode": "FRF",
+  "setName": "Fate Reforged",
+  "tcgcsvData": {
+    "product": {
+      "productId": 95035,
+      "name": "Fate Reforged - Clash Pack",
+      "cleanName": "Fate Reforged Clash Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/95035_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1497,
+      "url": "https://www.tcgplayer.com/product/95035/magic-fate-reforged-fate-reforged-clash-pack",
+      "modifiedOn": "2015-01-28T14:33:20.38",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 95035,
+        "lowPrice": 21.49,
+        "midPrice": 27.85,
+        "highPrice": 39.99,
+        "marketPrice": 23.73,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

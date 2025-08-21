@@ -1,0 +1,72 @@
+{
+  "uuid": "ccebaec4-b1e3-5737-b739-e9b064799ba6",
+  "name": "Battle for Zendikar Intro Pack Call of Blood",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1107775",
+    "cardKingdomId": "202474",
+    "cardtraderId": "48345",
+    "mcmId": "284346",
+    "tcgplayerProductId": "102721",
+    "tntId": "1079427"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/54a0eb948a594a2a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Call of Blood",
+        "set": "bfz"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Battle for Zendikar Booster Pack",
+        "set": "bfz",
+        "uuid": "37e28375-f5ba-51e8-8e11-b6830a33b669"
+      }
+    ]
+  },
+  "setCode": "BFZ",
+  "setName": "Battle for Zendikar",
+  "tcgcsvData": {
+    "product": {
+      "productId": 102721,
+      "name": "Battle for Zendikar - Intro Pack - Call of Blood",
+      "cleanName": "Battle for Zendikar Intro Pack Call of Blood",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/102721_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1645,
+      "url": "https://www.tcgplayer.com/product/102721/magic-battle-for-zendikar-battle-for-zendikar-intro-pack-call-of-blood",
+      "modifiedOn": "2021-08-05T13:51:49.313",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Battle for Zendikar booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 102721,
+        "lowPrice": 18,
+        "midPrice": 23.95,
+        "highPrice": 23.96,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

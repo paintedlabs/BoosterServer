@@ -1,0 +1,61 @@
+{
+  "uuid": "778214f1-3da3-5550-9504-acadae1203da",
+  "name": "Commander 2011 Commander Deck Mirror Mastery",
+  "category": "deck",
+  "cardCount": 100,
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1100348",
+    "cardKingdomId": "184648",
+    "cardtraderId": "44779",
+    "csiId": "97502",
+    "mcmId": "246717",
+    "scgId": "SLD-MTG-MLT-CMD-EN-MIRROR",
+    "tcgplayerProductId": "42094",
+    "tntId": "319879"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/e32233b1fc880dcb",
+    "tcgplayer": "https://mtgjson.com/links/726db4a95a361f51"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mirror Mastery",
+        "set": "cmd"
+      }
+    ]
+  },
+  "setCode": "CMD",
+  "setName": "Commander 2011",
+  "tcgcsvData": {
+    "product": {
+      "productId": 42094,
+      "name": "Commander - Mirror Mastery Deck",
+      "cleanName": "Commander Mirror Mastery Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/42094_200w.jpg",
+      "categoryId": 1,
+      "groupId": 25,
+      "url": "https://www.tcgplayer.com/product/42094/magic-commander-commander-mirror-mastery-deck",
+      "modifiedOn": "2014-01-13T19:47:24.103",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 42094,
+        "lowPrice": 212.02,
+        "midPrice": 245,
+        "highPrice": 264.97,
+        "marketPrice": 221.84,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

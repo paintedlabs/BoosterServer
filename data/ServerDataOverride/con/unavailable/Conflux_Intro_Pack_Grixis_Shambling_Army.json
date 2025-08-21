@@ -1,0 +1,73 @@
+{
+  "uuid": "7ece5dae-4de1-5c71-95e0-722ec9cdef3c",
+  "name": "Conflux Intro Pack Grixis Shambling Army",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100338",
+    "cardKingdomId": "126578",
+    "cardtraderId": "47348",
+    "mcmId": "244161",
+    "scgId": "SLD-MTG-INT-CFXINTRO-EN-GRIXIS",
+    "tcgplayerProductId": "501420",
+    "tntId": "242001"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a6d5822b3b599e32"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Grixis Shambling Army",
+        "set": "con"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Conflux Booster Pack",
+        "set": "con",
+        "uuid": "ee25fb77-38eb-56ce-8369-917cd2c0566b"
+      }
+    ]
+  },
+  "setCode": "CON",
+  "setName": "Conflux",
+  "tcgcsvData": {
+    "product": {
+      "productId": 501420,
+      "name": "Conflux - Intro Pack - Grixis Shambling Army",
+      "cleanName": "Conflux Intro Pack Grixis Shambling Army",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/501420_200w.jpg",
+      "categoryId": 1,
+      "groupId": 26,
+      "url": "https://www.tcgplayer.com/product/501420/magic-conflux-conflux-intro-pack-grixis-shambling-army",
+      "modifiedOn": "2023-06-20T14:34:01.283",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Intro Pack contains a 41-card deck featuring 1 foil premium card."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 501420,
+        "lowPrice": 70,
+        "midPrice": 70,
+        "highPrice": 70,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

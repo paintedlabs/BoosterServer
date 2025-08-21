@@ -1,0 +1,88 @@
+{
+  "uuid": "a86a2bee-752f-543c-9f96-c7e64c3cab8d",
+  "name": "Fallout Commander Deck Scrappy Survivors",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2024-03-08",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2470355",
+    "cardKingdomId": "291467",
+    "cardtraderId": "265026",
+    "csiId": "374364",
+    "mcmId": "745336",
+    "miniaturemarketId": "296507",
+    "scgId": "SLD-MTG-MLT-PIP-EN-SCRAPPY",
+    "tcgplayerProductId": "522899",
+    "tntId": "1801792"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/bf817a6330b69cb4",
+    "tcgplayer": "https://mtgjson.com/links/17fb6f3edc58bfff"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Scrappy Survivors",
+        "set": "pip"
+      }
+    ],
+    "other": [
+      {
+        "name": "Foil etched display commander"
+      },
+      {
+        "name": "10 double sided tokens"
+      },
+      {
+        "name": "life wheel"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Fallout Collector Booster Sample Pack",
+        "set": "pip",
+        "uuid": "7a584835-af39-59bb-826f-32152df22ca5"
+      }
+    ]
+  },
+  "setCode": "PIP",
+  "setName": "Fallout",
+  "tcgcsvData": {
+    "product": {
+      "productId": 522899,
+      "name": "Universes Beyond: Fallout - Scrappy Survivors Commander Deck",
+      "cleanName": "Universes Beyond Fallout Scrappy Survivors Commander Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/522899_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23337,
+      "url": "https://www.tcgplayer.com/product/522899/magic-universes-beyond-fallout-universes-beyond-fallout-scrappy-survivors-commander-deck",
+      "modifiedOn": "2024-03-08T05:03:35.12",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2024-03-08T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Featuring the goodest of boys, Dogmeat, as your commander, this deck focuses on scavenging for tools, Food tokens, and allies. It also introduces Junk tokens, which can be sacrificed to draw cards. If you enjoy tokens and suiting up your creatures with Auras and Equipment, then this is the deck for you."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 522899,
+        "lowPrice": 47,
+        "midPrice": 59.98,
+        "highPrice": 85,
+        "marketPrice": 56.33,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

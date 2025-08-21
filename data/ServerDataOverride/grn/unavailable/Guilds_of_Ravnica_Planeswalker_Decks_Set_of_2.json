@@ -1,0 +1,67 @@
+{
+  "uuid": "ee60e59e-7c97-5e1e-997a-294e1d557539",
+  "name": "Guilds of Ravnica Planeswalker Decks Set of 2",
+  "category": "subset",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "scgId": "SLD-MTG-INT-GRNPWDECK-EN-SET2",
+    "tcgplayerProductId": "176693"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/889fdc185a7f8437"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Planeswalker Deck Ral",
+        "set": "grn",
+        "uuid": "1cecd7b3-25f5-5e07-ad86-e3b139669c7e"
+      },
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Planeswalker Deck Vraska",
+        "set": "grn",
+        "uuid": "ceb9dc37-df20-5ea6-884d-c41ecf4b7a4d"
+      }
+    ]
+  },
+  "setCode": "GRN",
+  "setName": "Guilds of Ravnica",
+  "tcgcsvData": {
+    "product": {
+      "productId": 176693,
+      "name": "Guilds of Ravnica - Planeswalker Deck [Set of 2]",
+      "cleanName": "Guilds of Ravnica Planeswalker Deck Set of 2",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/176693_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2290,
+      "url": "https://www.tcgplayer.com/product/176693/magic-guilds-of-ravnica-guilds-of-ravnica-planeswalker-deck-set-of-2",
+      "modifiedOn": "2018-10-15T12:37:36.127",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 2 60-card decks\r\n<br>• 2 premium cards\r\n<br>• 4 Guidls of Ravnica booster packs"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 176693,
+        "lowPrice": 44.95,
+        "midPrice": 49.97,
+        "highPrice": 59.99,
+        "marketPrice": 44.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

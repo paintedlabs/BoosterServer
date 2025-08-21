@@ -1,0 +1,73 @@
+{
+  "uuid": "1cd7b7a7-5ee2-5502-8dce-f32c7af50657",
+  "name": "Throne of Eldraine Planeswalker Deck Display",
+  "category": "deck_box",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "cardKingdomId": "240226",
+    "tcgplayerProductId": "194898",
+    "tntId": "1585801"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d2583dbe3e8ce7b9"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 3,
+        "name": "Throne of Eldraine Planeswalker Deck Oko",
+        "set": "eld",
+        "uuid": "dbd24487-7f84-5b1a-b209-df79ed99f18c"
+      },
+      {
+        "count": 3,
+        "name": "Throne of Eldraine Planeswalker Deck Rowan",
+        "set": "eld",
+        "uuid": "b01ef320-c521-57c6-a569-6d8486feb017"
+      }
+    ]
+  },
+  "setCode": "ELD",
+  "setName": "Throne of Eldraine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 194898,
+      "name": "Throne of Eldraine - Planeswalker Deck Display",
+      "cleanName": "Throne of Eldraine Planeswalker Deck Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/194898_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2494,
+      "url": "https://www.tcgplayer.com/product/194898/magic-throne-of-eldraine-throne-of-eldraine-planeswalker-deck-display",
+      "modifiedOn": "2019-10-09T18:49:57.24",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>Throne of Eldraine</em> Planeswalker Decks come in displays of 6 (2 decks, 3 copies each).\r\n<br>Each individual deck contains:\r\n<br>• 1 ready-to-play 60-card deck featuring a foil Planeswalker card\r\n<br>•2 Throne of Eldraine booster packs\r\n<br>•1 strategy insert\r\n<br>•1 MTG Arena code card*"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509787029"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 194898,
+        "lowPrice": 146.75,
+        "midPrice": 146.97,
+        "highPrice": 147.19,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

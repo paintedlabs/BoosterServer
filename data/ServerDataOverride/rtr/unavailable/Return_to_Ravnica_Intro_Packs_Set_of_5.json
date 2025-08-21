@@ -1,0 +1,83 @@
+{
+  "uuid": "a42b6ed3-994d-5587-9223-97a620cfad4f",
+  "name": "Return to Ravnica Intro Packs Set of 5",
+  "category": "subset",
+  "releaseDate": "2012-10-05",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101084",
+    "cardtraderId": "47845",
+    "mcmId": "258184",
+    "scgId": "SLD-MTG-INT-RTRINTRO-EN-SET5",
+    "tcgplayerProductId": "60118"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/e426980e419624cd"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Return to Ravnica Intro Pack Azorius Advance",
+        "set": "rtr",
+        "uuid": "83bbced3-60e5-5523-a1ab-38f3752cb3a2"
+      },
+      {
+        "count": 1,
+        "name": "Return to Ravnica Intro Pack Golgari Growth",
+        "set": "rtr",
+        "uuid": "b1b7c4a8-d09b-5dbb-9cee-66bdd73347c2"
+      },
+      {
+        "count": 1,
+        "name": "Return to Ravnica Intro Pack Izzet Ingenuity",
+        "set": "rtr",
+        "uuid": "a1e82ace-6abf-5521-90ee-abae2335c8c3"
+      },
+      {
+        "count": 1,
+        "name": "Return to Ravnica Intro Pack Rakdos Raid",
+        "set": "rtr",
+        "uuid": "fdeac9ff-eb4f-596d-8b10-5c9951fbe442"
+      },
+      {
+        "count": 1,
+        "name": "Return to Ravnica Intro Pack Selesnya Surge",
+        "set": "rtr",
+        "uuid": "1a93ef7e-622d-5271-911f-70ec59e93f9a"
+      }
+    ]
+  },
+  "setCode": "RTR",
+  "setName": "Return to Ravnica",
+  "tcgcsvData": {
+    "product": {
+      "productId": 60118,
+      "name": "Return to Ravnica - All 5 Intro Packs",
+      "cleanName": "Return to Ravnica All 5 Intro Packs",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/60118_200w.jpg",
+      "categoryId": 1,
+      "groupId": 370,
+      "url": "https://www.tcgplayer.com/product/60118/magic-return-to-ravnica-return-to-ravnica-all-5-intro-packs",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-10-05T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 60118,
+        "lowPrice": 116,
+        "midPrice": 116,
+        "highPrice": 116,
+        "marketPrice": 132.45,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

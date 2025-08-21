@@ -1,0 +1,519 @@
+{
+  "uuid": "cfd2e310-8096-5753-815e-edf54141186b",
+  "name": "Innistrad Midnight Hunt Theme Booster Blue",
+  "category": "booster_pack",
+  "cardCount": 35,
+  "releaseDate": "2021-07-14",
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "2092987",
+    "cardKingdomId": "249866",
+    "cardtraderId": "167190",
+    "mcmId": "576142",
+    "miniaturemarketId": "280221",
+    "tcgplayerProductId": "247377",
+    "tntId": "1732441"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/32001276c095e57d"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "theme-u",
+        "set": "mid"
+      }
+    ]
+  },
+  "setCode": "MID",
+  "setName": "Innistrad: Midnight Hunt",
+  "extendedData": {
+    "code": "mid-theme-u",
+    "boosters": [
+      {
+        "sheets": {
+          "uncommon": 10,
+          "common": 24,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 9,
+          "common": 24,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 11,
+          "common": 23,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 10,
+          "common": 23,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 12,
+          "common": 22,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 11,
+          "common": 22,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 13,
+          "common": 21,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 12,
+          "common": 21,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "uncommon": {
+        "allow_duplicates": true,
+        "total_weight": 51,
+        "cards": [
+          {
+            "set": "mid",
+            "number": "45a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b65a9471-c70f-5301-9f83-b166b8de8538"
+          },
+          {
+            "set": "mid",
+            "number": "47a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d69f5a61-fe28-5677-8a33-5b092b332384"
+          },
+          {
+            "set": "mid",
+            "number": "49",
+            "weight": 4,
+            "foil": false,
+            "uuid": "553df376-6655-5792-826f-aa95cd0c4ddb"
+          },
+          {
+            "set": "mid",
+            "number": "51",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a36ce463-0ec4-5006-9359-07f7ff04cd94"
+          },
+          {
+            "set": "mid",
+            "number": "53",
+            "weight": 4,
+            "foil": false,
+            "uuid": "106e0b72-aaad-5fd0-bf3b-f6ec8178e498"
+          },
+          {
+            "set": "mid",
+            "number": "63a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "79525cf3-7def-59a3-915f-3bbbb7a76eb8"
+          },
+          {
+            "set": "mid",
+            "number": "64",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6388141e-c971-507b-8ad7-d117c0dcdfc7"
+          },
+          {
+            "set": "mid",
+            "number": "65",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d4fcdcce-861a-53ef-ae61-6c578c8d9ac2"
+          },
+          {
+            "set": "mid",
+            "number": "68a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "dddfeab5-6c74-5ce8-8cd5-1ab3c9d3b922"
+          },
+          {
+            "set": "mid",
+            "number": "70",
+            "weight": 4,
+            "foil": false,
+            "uuid": "0de7483a-3fa2-59bd-af3c-a6f99a1abf55"
+          },
+          {
+            "set": "mid",
+            "number": "75",
+            "weight": 4,
+            "foil": false,
+            "uuid": "45b02210-a7cd-5080-926f-2530b1e3dfc2"
+          },
+          {
+            "set": "mid",
+            "number": "83",
+            "weight": 4,
+            "foil": false,
+            "uuid": "12d64263-ad40-5b61-acda-0583b0e1cfdf"
+          },
+          {
+            "set": "mid",
+            "number": "255",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b6b5758c-a97a-5b69-bc76-acc21b8aaf08"
+          },
+          {
+            "set": "mid",
+            "number": "256a",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ea6f4366-b2b0-5bd8-ac96-497f5d728053"
+          },
+          {
+            "set": "mid",
+            "number": "262",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9e79b341-6d00-55e0-be68-e6a748eadcbf"
+          }
+        ]
+      },
+      "common": {
+        "allow_duplicates": true,
+        "total_weight": 81,
+        "cards": [
+          {
+            "set": "mid",
+            "number": "42a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a3f7eeea-918b-50c5-82b5-3a9bc03c0329"
+          },
+          {
+            "set": "mid",
+            "number": "43",
+            "weight": 4,
+            "foil": false,
+            "uuid": "985ee93c-16df-5e13-b3b2-59b1988ac0d9"
+          },
+          {
+            "set": "mid",
+            "number": "44",
+            "weight": 4,
+            "foil": false,
+            "uuid": "f50da26d-f479-51bd-a946-7230e27cb0fe"
+          },
+          {
+            "set": "mid",
+            "number": "48",
+            "weight": 4,
+            "foil": false,
+            "uuid": "29ff5371-5959-517b-b67f-2696aea94e00"
+          },
+          {
+            "set": "mid",
+            "number": "50",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6664281e-83d9-5443-b2b2-086739e2535d"
+          },
+          {
+            "set": "mid",
+            "number": "52",
+            "weight": 4,
+            "foil": false,
+            "uuid": "8a2e3354-2fcd-5047-b61a-43187fab3995"
+          },
+          {
+            "set": "mid",
+            "number": "54",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6e141203-87ac-58bb-9379-7e3a9c9b53b6"
+          },
+          {
+            "set": "mid",
+            "number": "55a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "352d1c55-678f-566c-8ce0-25acd9f8b5c3"
+          },
+          {
+            "set": "mid",
+            "number": "56",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6450471f-494c-53c1-b869-7f059ab254b1"
+          },
+          {
+            "set": "mid",
+            "number": "58",
+            "weight": 4,
+            "foil": false,
+            "uuid": "f640fa71-5a11-57c6-a3bc-c4b2b7e29c9d"
+          },
+          {
+            "set": "mid",
+            "number": "60",
+            "weight": 4,
+            "foil": false,
+            "uuid": "dc2bb006-7f3d-5885-b010-8abf46602b52"
+          },
+          {
+            "set": "mid",
+            "number": "66",
+            "weight": 4,
+            "foil": false,
+            "uuid": "4e48def6-8c1d-572a-af25-24671ef6de8b"
+          },
+          {
+            "set": "mid",
+            "number": "67",
+            "weight": 4,
+            "foil": false,
+            "uuid": "eba77cde-5080-5dd2-877f-dcaa2b7b0ea4"
+          },
+          {
+            "set": "mid",
+            "number": "72",
+            "weight": 4,
+            "foil": false,
+            "uuid": "aad14172-0916-5288-86ed-e0b93ff6495a"
+          },
+          {
+            "set": "mid",
+            "number": "73",
+            "weight": 4,
+            "foil": false,
+            "uuid": "36232801-3227-5177-8fc2-90e1e2d0be51"
+          },
+          {
+            "set": "mid",
+            "number": "74",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d1a801a7-bfd3-53ba-aa90-10cb48e96579"
+          },
+          {
+            "set": "mid",
+            "number": "78",
+            "weight": 4,
+            "foil": false,
+            "uuid": "ae07bc34-bff9-567b-8cfd-0b8f641a6435"
+          },
+          {
+            "set": "mid",
+            "number": "79",
+            "weight": 4,
+            "foil": false,
+            "uuid": "56bbd7ec-2e7a-503a-8c98-f1d6128c1003"
+          },
+          {
+            "set": "mid",
+            "number": "82",
+            "weight": 4,
+            "foil": false,
+            "uuid": "ab5d5b44-922b-585d-bd13-6f0efa3a57ae"
+          },
+          {
+            "set": "mid",
+            "number": "253",
+            "weight": 1,
+            "foil": false,
+            "uuid": "141d1f58-946a-5630-bdf1-9df88e80010e"
+          },
+          {
+            "set": "mid",
+            "number": "254",
+            "weight": 1,
+            "foil": false,
+            "uuid": "41faef03-46c3-5383-91af-1441066834ed"
+          },
+          {
+            "set": "mid",
+            "number": "258",
+            "weight": 1,
+            "foil": false,
+            "uuid": "757f1e1a-076f-5742-afab-5659af57dd9f"
+          },
+          {
+            "set": "mid",
+            "number": "259",
+            "weight": 1,
+            "foil": false,
+            "uuid": "003cf175-385c-5e76-b62a-04ff30703fbc"
+          },
+          {
+            "set": "mid",
+            "number": "261",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ba05d48d-8b06-5598-8d61-971b6fa899ea"
+          }
+        ]
+      },
+      "rare_mythic": {
+        "total_weight": 36,
+        "cards": [
+          {
+            "set": "mid",
+            "number": "46",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b15a71f6-5940-5c9f-9d02-21197e8179a9"
+          },
+          {
+            "set": "mid",
+            "number": "57",
+            "weight": 4,
+            "foil": false,
+            "uuid": "89d20b1a-e989-504c-b41d-90f72870e0cd"
+          },
+          {
+            "set": "mid",
+            "number": "59",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f02ee053-d0f7-5821-9120-8638487a9b6b"
+          },
+          {
+            "set": "mid",
+            "number": "61a",
+            "weight": 4,
+            "foil": false,
+            "uuid": "92b79f11-5b30-5de3-b27a-c062d6731386"
+          },
+          {
+            "set": "mid",
+            "number": "62",
+            "weight": 4,
+            "foil": false,
+            "uuid": "234ba496-bd60-56db-acc5-0f7d851ed14c"
+          },
+          {
+            "set": "mid",
+            "number": "69",
+            "weight": 4,
+            "foil": false,
+            "uuid": "62a16a17-5e83-5311-9722-a81f64adfc8c"
+          },
+          {
+            "set": "mid",
+            "number": "71a",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a0329187-f970-562c-bba2-bb0194634d4a"
+          },
+          {
+            "set": "mid",
+            "number": "76",
+            "weight": 4,
+            "foil": false,
+            "uuid": "afa03201-81a4-5109-8a67-b16e2f3e0c4f"
+          },
+          {
+            "set": "mid",
+            "number": "77",
+            "weight": 2,
+            "foil": false,
+            "uuid": "11931050-93b1-596e-a3f8-2056a0f8313e"
+          },
+          {
+            "set": "mid",
+            "number": "81",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b9eedd3b-ab15-5671-88d6-7773e648e656"
+          },
+          {
+            "set": "mid",
+            "number": "252",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bc06cbe5-e4ff-54d9-b504-a5c7b3333124"
+          },
+          {
+            "set": "mid",
+            "number": "257",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fa514288-97e0-5ea7-8fd2-0c9272f6e19b"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "mid"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 247377,
+      "name": "Innistrad: Midnight Hunt - Theme Booster [Blue]",
+      "cleanName": "Innistrad Midnight Hunt Theme Booster Blue",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/247377_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2864,
+      "url": "https://www.tcgplayer.com/product/247377/magic-innistrad-midnight-hunt-innistrad-midnight-hunt-theme-booster-blue",
+      "modifiedOn": "2021-09-24T04:03:31.593",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-09-24T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contents: \r\n<br>• 35 Magic: The Gathering cards, all based on a theme"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509987122"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 247377,
+        "lowPrice": 5.72,
+        "midPrice": 5.77,
+        "highPrice": 22,
+        "marketPrice": 5.72,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

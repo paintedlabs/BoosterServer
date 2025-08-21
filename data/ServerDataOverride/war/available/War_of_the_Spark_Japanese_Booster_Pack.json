@@ -1,0 +1,3808 @@
+{
+  "uuid": "822c97c7-59f1-572d-8650-3d5b1a81380e",
+  "name": "War of the Spark Japanese Booster Pack",
+  "category": "booster_pack",
+  "cardCount": 15,
+  "releaseDate": "2019-05-03",
+  "subtype": "draft",
+  "identifiers": {
+    "cardKingdomId": "310746",
+    "csiId": "277364",
+    "tntId": "1642780"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/3b9ebd1ba749a56a"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "jp",
+        "set": "war"
+      }
+    ]
+  },
+  "setCode": "WAR",
+  "setName": "War of the Spark",
+  "extendedData": {
+    "code": "war-draft",
+    "boosters": [
+      {
+        "sheets": {
+          "basic": 1,
+          "common": 10,
+          "nonplaneswalker_uncommon": 3,
+          "planeswalker_rare_mythic": 1
+        },
+        "weight": 899
+      },
+      {
+        "sheets": {
+          "basic": 1,
+          "common": 9,
+          "foil": 1,
+          "nonplaneswalker_uncommon": 3,
+          "planeswalker_rare_mythic": 1
+        },
+        "weight": 261
+      },
+      {
+        "sheets": {
+          "basic": 1,
+          "common": 10,
+          "nonplaneswalker_uncommon": 2,
+          "planeswalker_uncommon": 1,
+          "nonplaneswalker_rare_mythic": 1
+        },
+        "weight": 2852
+      },
+      {
+        "sheets": {
+          "basic": 1,
+          "common": 9,
+          "foil": 1,
+          "nonplaneswalker_uncommon": 2,
+          "planeswalker_uncommon": 1,
+          "nonplaneswalker_rare_mythic": 1
+        },
+        "weight": 828
+      }
+    ],
+    "sheets": {
+      "basic": {
+        "total_weight": 15,
+        "cards": [
+          {
+            "set": "war",
+            "number": "250",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f752014a-4084-5cf0-8ad8-ef1abbc42ee6"
+          },
+          {
+            "set": "war",
+            "number": "251",
+            "weight": 1,
+            "foil": false,
+            "uuid": "84f7df64-3236-5564-af46-d92f8bf3d82c"
+          },
+          {
+            "set": "war",
+            "number": "252",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6398dfb7-92c3-514e-9dcd-56eb5cf61407"
+          },
+          {
+            "set": "war",
+            "number": "253",
+            "weight": 1,
+            "foil": false,
+            "uuid": "00ec69b3-2ee6-505c-a5aa-190713ce2342"
+          },
+          {
+            "set": "war",
+            "number": "254",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ffc37bdd-e379-5cad-851a-b18eeee2d857"
+          },
+          {
+            "set": "war",
+            "number": "255",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b641bd1b-2b9d-5354-9c63-d47ed4aa3741"
+          },
+          {
+            "set": "war",
+            "number": "256",
+            "weight": 1,
+            "foil": false,
+            "uuid": "29c0a93a-31d3-5e34-a3e1-dfe16c7979c4"
+          },
+          {
+            "set": "war",
+            "number": "257",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3cef4025-fecf-5c80-aa2d-e01726d40852"
+          },
+          {
+            "set": "war",
+            "number": "258",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e604ae3d-dde1-50d6-b3f2-b05995c79cf3"
+          },
+          {
+            "set": "war",
+            "number": "259",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9a3c07b1-7f17-582c-a32f-711c63fd7023"
+          },
+          {
+            "set": "war",
+            "number": "260",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8a7eda3c-35ce-58d2-8a46-51f5a0fae7e0"
+          },
+          {
+            "set": "war",
+            "number": "261",
+            "weight": 1,
+            "foil": false,
+            "uuid": "27ecba1a-6dd3-5611-9054-5be611b73349"
+          },
+          {
+            "set": "war",
+            "number": "262",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3ff03579-4891-5929-8e6d-516c9e18fffb"
+          },
+          {
+            "set": "war",
+            "number": "263",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ffc29ec9-5994-5857-8963-37987b5ff2da"
+          },
+          {
+            "set": "war",
+            "number": "264",
+            "weight": 1,
+            "foil": false,
+            "uuid": "02ef4428-b7c7-55b2-84ed-e07e26d44bcc"
+          }
+        ]
+      },
+      "common": {
+        "balance_colors": true,
+        "total_weight": 101,
+        "cards": [
+          {
+            "set": "war",
+            "number": "5",
+            "weight": 1,
+            "foil": false,
+            "uuid": "470332c9-e7d4-5b11-b0ca-4c9f877f8e5c"
+          },
+          {
+            "set": "war",
+            "number": "7",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4b60a0b8-ddee-5a88-a578-22fb009c117e"
+          },
+          {
+            "set": "war",
+            "number": "8",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4bae03de-a6cb-59a5-a470-b5a57c0e2f9b"
+          },
+          {
+            "set": "war",
+            "number": "9",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fe669d77-6304-5ff9-a9cd-e0e2d23b8b96"
+          },
+          {
+            "set": "war",
+            "number": "10",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2cfc2f2d-d3a3-5875-b24a-102bd414bae5"
+          },
+          {
+            "set": "war",
+            "number": "11",
+            "weight": 1,
+            "foil": false,
+            "uuid": "01013cab-be73-532f-b6bf-0f24d0c3792f"
+          },
+          {
+            "set": "war",
+            "number": "14",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5ec4ceb6-405c-559b-986e-fb76bfea5b6b"
+          },
+          {
+            "set": "war",
+            "number": "19",
+            "weight": 1,
+            "foil": false,
+            "uuid": "19f9723e-e36d-5df8-82ab-27f3a1e19453"
+          },
+          {
+            "set": "war",
+            "number": "20",
+            "weight": 1,
+            "foil": false,
+            "uuid": "44dcd2cf-ffac-5df5-9538-06a3ec158573"
+          },
+          {
+            "set": "war",
+            "number": "21",
+            "weight": 1,
+            "foil": false,
+            "uuid": "242791b2-926a-5865-b28f-66143021c5a2"
+          },
+          {
+            "set": "war",
+            "number": "22",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d0192592-1b1a-5ee7-b5c8-291a71431618"
+          },
+          {
+            "set": "war",
+            "number": "23",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e306e8bc-7b20-5f95-b625-53a41a654b68"
+          },
+          {
+            "set": "war",
+            "number": "25",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a9705de7-bdc9-5859-a738-d0d85c136684"
+          },
+          {
+            "set": "war",
+            "number": "29",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c203b669-c6e0-517c-a032-bde4aa972d7f"
+          },
+          {
+            "set": "war",
+            "number": "33",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5de7f2c0-626c-5c8e-8e25-705f9806c0fe"
+          },
+          {
+            "set": "war",
+            "number": "35",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b7e80a1e-1cd4-5bbb-aac2-03b95d44d624"
+          },
+          {
+            "set": "war",
+            "number": "36",
+            "weight": 1,
+            "foil": false,
+            "uuid": "349613bc-3594-564e-b95d-1ecaa92e6cb2"
+          },
+          {
+            "set": "war",
+            "number": "38",
+            "weight": 1,
+            "foil": false,
+            "uuid": "248cb87f-8fa4-5e2d-8ae9-fdb7ca09cb23"
+          },
+          {
+            "set": "war",
+            "number": "39",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2e95c376-f7f2-5453-9092-3e9d9045ffa8"
+          },
+          {
+            "set": "war",
+            "number": "40",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7b4e809a-ca53-5a72-a89a-81e2c665ebfe"
+          },
+          {
+            "set": "war",
+            "number": "42",
+            "weight": 1,
+            "foil": false,
+            "uuid": "10d6434f-4d3e-5497-ab53-92018c1c8efd"
+          },
+          {
+            "set": "war",
+            "number": "44",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fac498b3-76a0-5fdb-8533-247b33457aa7"
+          },
+          {
+            "set": "war",
+            "number": "46",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ae99fe47-f3b6-54b9-a206-1081e18779cd"
+          },
+          {
+            "set": "war",
+            "number": "47",
+            "weight": 1,
+            "foil": false,
+            "uuid": "46bd1799-9a0a-5fd1-93d6-708a585dc71b"
+          },
+          {
+            "set": "war",
+            "number": "48",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cadda636-34e1-5556-a9fb-ac9f76ead093"
+          },
+          {
+            "set": "war",
+            "number": "57",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9197605c-a8cd-59f3-9ec4-8ee58a904e09"
+          },
+          {
+            "set": "war",
+            "number": "58",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0d49a203-86df-536e-abdd-38193187f5ff"
+          },
+          {
+            "set": "war",
+            "number": "60",
+            "weight": 1,
+            "foil": false,
+            "uuid": "557e146d-0f14-54b2-8cb8-f202621c56c3"
+          },
+          {
+            "set": "war",
+            "number": "63",
+            "weight": 1,
+            "foil": false,
+            "uuid": "61fa7145-af2b-59a2-92dd-48d19be60152"
+          },
+          {
+            "set": "war",
+            "number": "64",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0abe85a1-668c-50cd-a669-1453d00c2f33"
+          },
+          {
+            "set": "war",
+            "number": "67",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1c74cb7d-39f3-527a-b3d1-9dea4a7287ff"
+          },
+          {
+            "set": "war",
+            "number": "69",
+            "weight": 1,
+            "foil": false,
+            "uuid": "93487570-31c1-5213-91a0-fdce2928e9a0"
+          },
+          {
+            "set": "war",
+            "number": "70",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4a99f85f-5d1f-5870-b5a0-2eccb277f384"
+          },
+          {
+            "set": "war",
+            "number": "71",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b42398ff-b92c-5eec-8fb2-7e0e5e40ec3d"
+          },
+          {
+            "set": "war",
+            "number": "72",
+            "weight": 1,
+            "foil": false,
+            "uuid": "eb459f4b-50c6-5a93-a773-1f88d168d971"
+          },
+          {
+            "set": "war",
+            "number": "73",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f5014458-218e-5625-bbbc-f1895a9509e9"
+          },
+          {
+            "set": "war",
+            "number": "74",
+            "weight": 1,
+            "foil": false,
+            "uuid": "08f8bb29-6091-50d2-afab-6b80087ce067"
+          },
+          {
+            "set": "war",
+            "number": "75",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7610bd8e-d995-51a9-a46a-6e295f9488a2"
+          },
+          {
+            "set": "war",
+            "number": "76",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d11acd0d-21cc-5dbb-bbe8-2603146a20ca"
+          },
+          {
+            "set": "war",
+            "number": "77",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fc0f3291-22a4-58e5-b03e-b971c5403c53"
+          },
+          {
+            "set": "war",
+            "number": "81",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5f61c1b9-63ad-5a82-9438-360edd6eea85"
+          },
+          {
+            "set": "war",
+            "number": "84",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1fb4ee52-0ee4-5117-bf54-538f17eb9822"
+          },
+          {
+            "set": "war",
+            "number": "88",
+            "weight": 1,
+            "foil": false,
+            "uuid": "73e28193-a44b-5c38-bb10-82e832bec6a9"
+          },
+          {
+            "set": "war",
+            "number": "93",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d2b2455f-2026-5384-875b-8958d85207a9"
+          },
+          {
+            "set": "war",
+            "number": "94",
+            "weight": 1,
+            "foil": false,
+            "uuid": "315620f5-2920-574f-b428-feafdf9e885b"
+          },
+          {
+            "set": "war",
+            "number": "95",
+            "weight": 1,
+            "foil": false,
+            "uuid": "793a2190-c40b-5ee8-8736-d03a778e1e9a"
+          },
+          {
+            "set": "war",
+            "number": "96",
+            "weight": 1,
+            "foil": false,
+            "uuid": "17a987be-195f-58a4-8e0f-a8d1979d0337"
+          },
+          {
+            "set": "war",
+            "number": "101",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4310b589-7fd2-597e-bdd4-1be54c5af6da"
+          },
+          {
+            "set": "war",
+            "number": "103",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a370d47d-42a3-546f-b2bc-743d0cef6035"
+          },
+          {
+            "set": "war",
+            "number": "104",
+            "weight": 1,
+            "foil": false,
+            "uuid": "49c8722b-11e4-5007-a871-a88e56ea1bdd"
+          },
+          {
+            "set": "war",
+            "number": "105",
+            "weight": 1,
+            "foil": false,
+            "uuid": "89ba71fa-c8c6-55f3-a1df-138cbd5a4319"
+          },
+          {
+            "set": "war",
+            "number": "106",
+            "weight": 1,
+            "foil": false,
+            "uuid": "50350615-04ba-5d26-aaff-578314d2d25a"
+          },
+          {
+            "set": "war",
+            "number": "107",
+            "weight": 1,
+            "foil": false,
+            "uuid": "79e7cdeb-5d82-53e4-888b-afd2173658cf"
+          },
+          {
+            "set": "war",
+            "number": "108",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cb61867b-e6af-5d15-aed9-5200e89ea040"
+          },
+          {
+            "set": "war",
+            "number": "109",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1d18dedb-2446-5b68-965c-fc5a7ec53c33"
+          },
+          {
+            "set": "war",
+            "number": "110",
+            "weight": 1,
+            "foil": false,
+            "uuid": "349a59bc-cc3e-5402-b2a5-6e30442befe8"
+          },
+          {
+            "set": "war",
+            "number": "112",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ce6a2697-5f3a-5857-ab1b-ac015d9f32f3"
+          },
+          {
+            "set": "war",
+            "number": "113",
+            "weight": 1,
+            "foil": false,
+            "uuid": "40d6739e-7d71-559a-8756-35d42dcac450"
+          },
+          {
+            "set": "war",
+            "number": "114",
+            "weight": 1,
+            "foil": false,
+            "uuid": "19827ebf-3b49-5021-ac7f-f6c125a3bdd6"
+          },
+          {
+            "set": "war",
+            "number": "117",
+            "weight": 1,
+            "foil": false,
+            "uuid": "42909c0b-ed28-5e9f-abe2-d8abc284f7c0"
+          },
+          {
+            "set": "war",
+            "number": "118",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e2b23487-2a53-5b2d-a4f7-ca6a487fc388"
+          },
+          {
+            "set": "war",
+            "number": "120",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4c926dd3-a5d5-5fa3-80b0-c0f61110ea7f"
+          },
+          {
+            "set": "war",
+            "number": "123",
+            "weight": 1,
+            "foil": false,
+            "uuid": "483cf41b-2659-5bee-a737-5f70b394bdfc"
+          },
+          {
+            "set": "war",
+            "number": "128",
+            "weight": 1,
+            "foil": false,
+            "uuid": "249cf960-24ec-5fca-9a48-fe636c2e51ad"
+          },
+          {
+            "set": "war",
+            "number": "129",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fd401566-339d-5cb8-aa09-7a4b47f60c4d"
+          },
+          {
+            "set": "war",
+            "number": "130",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c062dba2-9085-5a97-803d-5529a4b11a49"
+          },
+          {
+            "set": "war",
+            "number": "131",
+            "weight": 1,
+            "foil": false,
+            "uuid": "da9c6cbe-b7c9-502d-a3d9-9b26b30b5279"
+          },
+          {
+            "set": "war",
+            "number": "132",
+            "weight": 1,
+            "foil": false,
+            "uuid": "39c545fc-99ba-5d4b-b11a-346639422041"
+          },
+          {
+            "set": "war",
+            "number": "134",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f689a73c-545b-59a0-b9cd-389445c8a848"
+          },
+          {
+            "set": "war",
+            "number": "136",
+            "weight": 1,
+            "foil": false,
+            "uuid": "41d8d564-27fa-5ea0-8131-b51d2d26a39e"
+          },
+          {
+            "set": "war",
+            "number": "139",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9b55ced1-064b-593d-a8bb-c1317291b08a"
+          },
+          {
+            "set": "war",
+            "number": "141",
+            "weight": 1,
+            "foil": false,
+            "uuid": "38d1637f-7c7e-555d-b059-a740f3350962"
+          },
+          {
+            "set": "war",
+            "number": "142",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6f16a789-102e-553d-a5ed-3fbe5d3fdf93"
+          },
+          {
+            "set": "war",
+            "number": "144",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ad2365f6-b11b-5ba1-b1c8-9d80b95e04ab"
+          },
+          {
+            "set": "war",
+            "number": "145",
+            "weight": 1,
+            "foil": false,
+            "uuid": "173caa83-8aef-5c07-aa0c-7b78d428ef63"
+          },
+          {
+            "set": "war",
+            "number": "148",
+            "weight": 1,
+            "foil": false,
+            "uuid": "33f4cc82-7b2f-5462-a355-41007862577e"
+          },
+          {
+            "set": "war",
+            "number": "149",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ff209b2c-1d8c-5749-8659-43ddf24a3320"
+          },
+          {
+            "set": "war",
+            "number": "151",
+            "weight": 1,
+            "foil": false,
+            "uuid": "67df542e-fb46-5268-a7ae-c73ec7bc357a"
+          },
+          {
+            "set": "war",
+            "number": "153",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c3116d5f-3040-51b0-9780-5cd11be0283e"
+          },
+          {
+            "set": "war",
+            "number": "154",
+            "weight": 1,
+            "foil": false,
+            "uuid": "30aa01b9-f697-56ee-92fc-0502fb15bf8f"
+          },
+          {
+            "set": "war",
+            "number": "156",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6b9bb917-3152-537a-94d6-6addecbb7495"
+          },
+          {
+            "set": "war",
+            "number": "158",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e63d7d93-9b27-5d7f-8743-a852299595a5"
+          },
+          {
+            "set": "war",
+            "number": "161",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2e3c42d4-d1d8-590e-a2a4-4fafe2c592e5"
+          },
+          {
+            "set": "war",
+            "number": "162",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a503cb41-a414-576e-97c4-40d64a3a91c0"
+          },
+          {
+            "set": "war",
+            "number": "165",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6f2d2422-ae83-5836-a3de-3f309753ba05"
+          },
+          {
+            "set": "war",
+            "number": "166",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d8798669-f034-5a9a-a481-7b559a4baef5"
+          },
+          {
+            "set": "war",
+            "number": "168",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1ae82207-e017-5539-ac71-5ecdb5d1b7d9"
+          },
+          {
+            "set": "war",
+            "number": "173",
+            "weight": 1,
+            "foil": false,
+            "uuid": "633f54dd-6b69-5eb6-b1fe-6a144a207a73"
+          },
+          {
+            "set": "war",
+            "number": "174",
+            "weight": 1,
+            "foil": false,
+            "uuid": "caa87172-dc22-5c72-be26-7046068aae01"
+          },
+          {
+            "set": "war",
+            "number": "175",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ed015dda-2818-5ea2-a4ad-2eb3d498c00f"
+          },
+          {
+            "set": "war",
+            "number": "176",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b4d70fe7-e3f2-55f5-9f92-a1820bb6e270"
+          },
+          {
+            "set": "war",
+            "number": "177",
+            "weight": 1,
+            "foil": false,
+            "uuid": "211a1eee-e2d2-5f01-8f15-35c6d5d2ca52"
+          },
+          {
+            "set": "war",
+            "number": "179",
+            "weight": 1,
+            "foil": false,
+            "uuid": "31d92cfc-8aee-5596-be49-f7d73201575a"
+          },
+          {
+            "set": "war",
+            "number": "182",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e249f978-c9bf-5895-a844-7b6cd601fc4c"
+          },
+          {
+            "set": "war",
+            "number": "183",
+            "weight": 1,
+            "foil": false,
+            "uuid": "083a4a7d-220e-586f-a7c8-4647bf258c33"
+          },
+          {
+            "set": "war",
+            "number": "239",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7246a4e8-0537-5016-b07a-433c59c2c285"
+          },
+          {
+            "set": "war",
+            "number": "240",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7c489a49-7bb9-5573-a464-00e33fc95e8f"
+          },
+          {
+            "set": "war",
+            "number": "241",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0cd9f299-f255-5114-9297-da3fa19f29f1"
+          },
+          {
+            "set": "war",
+            "number": "242",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a3aca765-02a0-51c7-8cc5-f5687723a88c"
+          },
+          {
+            "set": "war",
+            "number": "243",
+            "weight": 1,
+            "foil": false,
+            "uuid": "104f39bb-55d3-56d4-82d4-f6b1c34975f3"
+          },
+          {
+            "set": "war",
+            "number": "246",
+            "weight": 1,
+            "foil": false,
+            "uuid": "867dc5ee-8945-5d55-8ddc-28adf77d7c1d"
+          }
+        ]
+      },
+      "nonplaneswalker_uncommon": {
+        "total_weight": 60,
+        "cards": [
+          {
+            "set": "war",
+            "number": "3",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e796a3c2-b34f-5b13-888b-45ff0c94ef57"
+          },
+          {
+            "set": "war",
+            "number": "4",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d451691b-6cc7-5ea7-968b-2abae1beb622"
+          },
+          {
+            "set": "war",
+            "number": "6",
+            "weight": 1,
+            "foil": false,
+            "uuid": "50f8a302-b981-5940-823c-e5892ef630ed"
+          },
+          {
+            "set": "war",
+            "number": "15",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a9183560-ed4a-5744-bcc0-2ca2b20d1487"
+          },
+          {
+            "set": "war",
+            "number": "17",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7f3c0e8a-b5d1-53d9-bfd3-6c66968599f5"
+          },
+          {
+            "set": "war",
+            "number": "26",
+            "weight": 1,
+            "foil": false,
+            "uuid": "35d1b37b-b29e-5bb7-b0b6-282284664c8c"
+          },
+          {
+            "set": "war",
+            "number": "27",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8681699e-1abb-5f39-a615-777eb2670653"
+          },
+          {
+            "set": "war",
+            "number": "31",
+            "weight": 1,
+            "foil": false,
+            "uuid": "150f54d6-43b9-5b9a-9c1c-300b4d989f2b"
+          },
+          {
+            "set": "war",
+            "number": "41",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0aca5931-a2f4-5710-9087-ca9fdf1fea16"
+          },
+          {
+            "set": "war",
+            "number": "43",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f578a3e3-fb93-53f3-bfa8-9ce139ac0643"
+          },
+          {
+            "set": "war",
+            "number": "49",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6526da20-d411-520b-863d-64604f79b30e"
+          },
+          {
+            "set": "war",
+            "number": "52",
+            "weight": 1,
+            "foil": false,
+            "uuid": "62322fa3-842a-5665-a121-a21340b70710"
+          },
+          {
+            "set": "war",
+            "number": "55",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a1d983f9-e380-5457-bb91-a5fdd8426a19"
+          },
+          {
+            "set": "war",
+            "number": "59",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bd1e3301-e099-5695-928f-76c8b06db444"
+          },
+          {
+            "set": "war",
+            "number": "65",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1c659d00-2878-587f-9347-64a900ca1440"
+          },
+          {
+            "set": "war",
+            "number": "78",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bed79a7b-995f-5103-8b6f-d626053b4203"
+          },
+          {
+            "set": "war",
+            "number": "80",
+            "weight": 1,
+            "foil": false,
+            "uuid": "56a30d0f-fb9d-554f-bbab-61c863e41169"
+          },
+          {
+            "set": "war",
+            "number": "87",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0736085a-62ee-58bf-aa23-fef2afef4e43"
+          },
+          {
+            "set": "war",
+            "number": "90",
+            "weight": 1,
+            "foil": false,
+            "uuid": "71b101c1-e8cf-5f25-93b3-534bb11f285b"
+          },
+          {
+            "set": "war",
+            "number": "98",
+            "weight": 1,
+            "foil": false,
+            "uuid": "88b9bd21-a393-5aa8-bc37-3c2a4ec676d1"
+          },
+          {
+            "set": "war",
+            "number": "102",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0cc0f683-bb90-56ca-a34a-4f47eeba1bac"
+          },
+          {
+            "set": "war",
+            "number": "111",
+            "weight": 1,
+            "foil": false,
+            "uuid": "077ea8a8-24b7-575b-9c34-ba7f54fb5099"
+          },
+          {
+            "set": "war",
+            "number": "115",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5af182ba-dc7c-5177-961e-bcc07ee1f180"
+          },
+          {
+            "set": "war",
+            "number": "116",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cb422986-4248-54ca-8a3a-d5e842ecd0ec"
+          },
+          {
+            "set": "war",
+            "number": "121",
+            "weight": 1,
+            "foil": false,
+            "uuid": "176681b6-28dd-5e3c-b5dc-02e8b9117371"
+          },
+          {
+            "set": "war",
+            "number": "122",
+            "weight": 1,
+            "foil": false,
+            "uuid": "eb8d5ba3-3eb1-5a20-8451-2d52fb4d3353"
+          },
+          {
+            "set": "war",
+            "number": "124",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f92874f5-a27c-5f8e-951b-5b21af4ab78b"
+          },
+          {
+            "set": "war",
+            "number": "126",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7db415c9-fd0a-509b-a5a8-44da6b18e496"
+          },
+          {
+            "set": "war",
+            "number": "147",
+            "weight": 1,
+            "foil": false,
+            "uuid": "22532515-400f-5649-8969-05cfbc008ef5"
+          },
+          {
+            "set": "war",
+            "number": "155",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9e7999e1-62ba-5968-8c1a-f19d39fa35e2"
+          },
+          {
+            "set": "war",
+            "number": "157",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e476bc1e-6a4a-5f49-8d58-0daa0500edf1"
+          },
+          {
+            "set": "war",
+            "number": "159",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2634269a-6457-5157-a2d0-27415ee848d8"
+          },
+          {
+            "set": "war",
+            "number": "167",
+            "weight": 1,
+            "foil": false,
+            "uuid": "aeffa888-35eb-5855-b3d6-a211cbd2c86a"
+          },
+          {
+            "set": "war",
+            "number": "170",
+            "weight": 1,
+            "foil": false,
+            "uuid": "65b241eb-8093-580e-aac6-7b47e993795f"
+          },
+          {
+            "set": "war",
+            "number": "171",
+            "weight": 1,
+            "foil": false,
+            "uuid": "462a3159-19c3-5506-992f-e264e634bcd3"
+          },
+          {
+            "set": "war",
+            "number": "178",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7370a76b-f407-5105-9d7c-f0dec075fe09"
+          },
+          {
+            "set": "war",
+            "number": "185",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4e17b405-08e8-5d22-88ce-3e8e37ad27cf"
+          },
+          {
+            "set": "war",
+            "number": "188",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1ee550f8-ee51-5a89-b121-5af6c7d73d95"
+          },
+          {
+            "set": "war",
+            "number": "189",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b61d5f96-30c1-5bcd-ac30-84960831339a"
+          },
+          {
+            "set": "war",
+            "number": "190",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2105a674-59b9-57c5-b7fd-18ccbf2cdf06"
+          },
+          {
+            "set": "war",
+            "number": "192",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e0e05e4f-a336-5625-b3a9-5c86e15dd8cf"
+          },
+          {
+            "set": "war",
+            "number": "193",
+            "weight": 1,
+            "foil": false,
+            "uuid": "830832c9-2b37-56b6-8200-f1415923f139"
+          },
+          {
+            "set": "war",
+            "number": "195",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3602f881-3a52-5449-abc0-e4dbb76294dd"
+          },
+          {
+            "set": "war",
+            "number": "198",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4dd2b6e8-4999-5c70-b9b1-6b89c1245ecb"
+          },
+          {
+            "set": "war",
+            "number": "199",
+            "weight": 1,
+            "foil": false,
+            "uuid": "63289f00-b5b2-5c16-ada5-fe6e05be49a5"
+          },
+          {
+            "set": "war",
+            "number": "200",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f1c4e98d-80f7-5ddc-a3c2-0f70eba20150"
+          },
+          {
+            "set": "war",
+            "number": "201",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fea4fd6f-cd52-59d1-ba38-2b418edb5954"
+          },
+          {
+            "set": "war",
+            "number": "202",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b47b3aee-0384-574b-a750-1ef2704e1251"
+          },
+          {
+            "set": "war",
+            "number": "204",
+            "weight": 1,
+            "foil": false,
+            "uuid": "489b4151-9369-5706-9de2-10327e6b6f46"
+          },
+          {
+            "set": "war",
+            "number": "205",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3b1a9e81-b53d-5d0c-a248-7e4a3a2d8fb2"
+          },
+          {
+            "set": "war",
+            "number": "206",
+            "weight": 1,
+            "foil": false,
+            "uuid": "01e31b26-7b7f-5c89-9099-ba2df6f2d343"
+          },
+          {
+            "set": "war",
+            "number": "210",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3041ff06-b062-5b9e-84a4-4ef50f01b298"
+          },
+          {
+            "set": "war",
+            "number": "212",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0ebc529b-6c1e-5d96-8f98-fda74777f386"
+          },
+          {
+            "set": "war",
+            "number": "215",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d3fcf363-1b10-595d-b906-a4d75dfdc6a3"
+          },
+          {
+            "set": "war",
+            "number": "222",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9f44df25-b9b4-58bd-9394-e55752aead75"
+          },
+          {
+            "set": "war",
+            "number": "225",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ec637ce6-77cf-588b-b6a2-128f375565a8"
+          },
+          {
+            "set": "war",
+            "number": "237",
+            "weight": 1,
+            "foil": false,
+            "uuid": "49cb18a1-3ebd-5f6c-b0c3-e4434cd5aa38"
+          },
+          {
+            "set": "war",
+            "number": "238",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8a6db6ec-f645-510c-9cfb-e52827ad748f"
+          },
+          {
+            "set": "war",
+            "number": "245",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b632cecc-63a2-5589-b49d-8b17dad0493f"
+          },
+          {
+            "set": "war",
+            "number": "247",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cd13979a-8623-5460-b4a4-b9eb503a0682"
+          }
+        ]
+      },
+      "planeswalker_rare_mythic": {
+        "total_weight": 29,
+        "cards": [
+          {
+            "set": "war",
+            "number": "1",
+            "weight": 2,
+            "foil": false,
+            "uuid": "0a679f46-9f50-5ac1-a6bf-c802c67fc0a0"
+          },
+          {
+            "set": "war",
+            "number": "2",
+            "weight": 2,
+            "foil": false,
+            "uuid": "52b531a3-d0eb-58ee-af14-c69f6a05b327"
+          },
+          {
+            "set": "war",
+            "number": "13",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d6e42c74-0bb6-5036-a6a9-3746d7ed223c"
+          },
+          {
+            "set": "war",
+            "number": "54",
+            "weight": 2,
+            "foil": false,
+            "uuid": "de19d916-8688-5083-9608-5f09f09be8f0"
+          },
+          {
+            "set": "war",
+            "number": "97",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8f8ae2ff-0bcc-575d-bb3e-4f26b0bc7b62"
+          },
+          {
+            "set": "war",
+            "number": "119",
+            "weight": 2,
+            "foil": false,
+            "uuid": "638fe5e4-2dbe-5aee-9f9a-f7b47ee3275a"
+          },
+          {
+            "set": "war",
+            "number": "143",
+            "weight": 2,
+            "foil": false,
+            "uuid": "b822babc-a8a1-575b-9cf2-ef7478b554be"
+          },
+          {
+            "set": "war",
+            "number": "169",
+            "weight": 2,
+            "foil": false,
+            "uuid": "ffccf80c-e56f-5bc2-9838-d77166da4eb6"
+          },
+          {
+            "set": "war",
+            "number": "180",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f4f7168b-127e-57f3-af5c-9f5320dbcb83"
+          },
+          {
+            "set": "war",
+            "number": "184",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d52aebee-9ea7-5bf6-897f-e34c45e5edb2"
+          },
+          {
+            "set": "war",
+            "number": "191",
+            "weight": 2,
+            "foil": false,
+            "uuid": "cf65b0d5-04d2-53f5-a0e8-bb0b07e9f7ca"
+          },
+          {
+            "set": "war",
+            "number": "207",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ad06d0fe-1d5c-5d62-9134-e97294333d90"
+          },
+          {
+            "set": "war",
+            "number": "211",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d26a1c5d-25a3-56fd-9559-bc3a0e910e8c"
+          },
+          {
+            "set": "war",
+            "number": "217",
+            "weight": 2,
+            "foil": false,
+            "uuid": "aa4ef53e-b4fb-5baa-9b1f-ca98b5e9a108"
+          },
+          {
+            "set": "war",
+            "number": "220",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f5d4e818-4fe5-557f-8967-e41be29a8edd"
+          },
+          {
+            "set": "war",
+            "number": "221",
+            "weight": 2,
+            "foil": false,
+            "uuid": "643aea97-faaa-5cf2-8f7d-4b07d5c45e9e"
+          }
+        ]
+      },
+      "foil": {
+        "total_weight": 1122880,
+        "cards": [
+          {
+            "set": "war",
+            "number": "1",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "0a679f46-9f50-5ac1-a6bf-c802c67fc0a0"
+          },
+          {
+            "set": "war",
+            "number": "2",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "52b531a3-d0eb-58ee-af14-c69f6a05b327"
+          },
+          {
+            "set": "war",
+            "number": "3",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "e796a3c2-b34f-5b13-888b-45ff0c94ef57"
+          },
+          {
+            "set": "war",
+            "number": "4",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "d451691b-6cc7-5ea7-968b-2abae1beb622"
+          },
+          {
+            "set": "war",
+            "number": "5",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "470332c9-e7d4-5b11-b0ca-4c9f877f8e5c"
+          },
+          {
+            "set": "war",
+            "number": "6",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "50f8a302-b981-5940-823c-e5892ef630ed"
+          },
+          {
+            "set": "war",
+            "number": "7",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "4b60a0b8-ddee-5a88-a578-22fb009c117e"
+          },
+          {
+            "set": "war",
+            "number": "8",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "4bae03de-a6cb-59a5-a470-b5a57c0e2f9b"
+          },
+          {
+            "set": "war",
+            "number": "9",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "fe669d77-6304-5ff9-a9cd-e0e2d23b8b96"
+          },
+          {
+            "set": "war",
+            "number": "10",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "2cfc2f2d-d3a3-5875-b24a-102bd414bae5"
+          },
+          {
+            "set": "war",
+            "number": "11",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "01013cab-be73-532f-b6bf-0f24d0c3792f"
+          },
+          {
+            "set": "war",
+            "number": "12",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "981628d3-14b8-55fe-b9b8-d6d2afd78bc8"
+          },
+          {
+            "set": "war",
+            "number": "13",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "d6e42c74-0bb6-5036-a6a9-3746d7ed223c"
+          },
+          {
+            "set": "war",
+            "number": "14",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "5ec4ceb6-405c-559b-986e-fb76bfea5b6b"
+          },
+          {
+            "set": "war",
+            "number": "15",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "a9183560-ed4a-5744-bcc0-2ca2b20d1487"
+          },
+          {
+            "set": "war",
+            "number": "16",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "3712322d-1c14-5840-b9ce-c6e5949842ea"
+          },
+          {
+            "set": "war",
+            "number": "17",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "7f3c0e8a-b5d1-53d9-bfd3-6c66968599f5"
+          },
+          {
+            "set": "war",
+            "number": "18",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "fb88ffcc-0821-5a08-80e7-3caeef0fc6c0"
+          },
+          {
+            "set": "war",
+            "number": "19",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "19f9723e-e36d-5df8-82ab-27f3a1e19453"
+          },
+          {
+            "set": "war",
+            "number": "20",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "44dcd2cf-ffac-5df5-9538-06a3ec158573"
+          },
+          {
+            "set": "war",
+            "number": "21",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "242791b2-926a-5865-b28f-66143021c5a2"
+          },
+          {
+            "set": "war",
+            "number": "22",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "d0192592-1b1a-5ee7-b5c8-291a71431618"
+          },
+          {
+            "set": "war",
+            "number": "23",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "e306e8bc-7b20-5f95-b625-53a41a654b68"
+          },
+          {
+            "set": "war",
+            "number": "24",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "8e4d50a9-f385-570b-a73a-d7883284d42a"
+          },
+          {
+            "set": "war",
+            "number": "25",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "a9705de7-bdc9-5859-a738-d0d85c136684"
+          },
+          {
+            "set": "war",
+            "number": "26",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "35d1b37b-b29e-5bb7-b0b6-282284664c8c"
+          },
+          {
+            "set": "war",
+            "number": "27",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "8681699e-1abb-5f39-a615-777eb2670653"
+          },
+          {
+            "set": "war",
+            "number": "28",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "6880451e-b6bb-5284-9974-fefd56bb0cae"
+          },
+          {
+            "set": "war",
+            "number": "29",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "c203b669-c6e0-517c-a032-bde4aa972d7f"
+          },
+          {
+            "set": "war",
+            "number": "30",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "9bf42aa4-962f-5269-aa17-af5866e0818b"
+          },
+          {
+            "set": "war",
+            "number": "31",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "150f54d6-43b9-5b9a-9c1c-300b4d989f2b"
+          },
+          {
+            "set": "war",
+            "number": "32",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "5991b55d-ae2e-5ffc-8afd-5930507ddd91"
+          },
+          {
+            "set": "war",
+            "number": "33",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "5de7f2c0-626c-5c8e-8e25-705f9806c0fe"
+          },
+          {
+            "set": "war",
+            "number": "34",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "097cd96b-1043-5905-a227-1fa2e91cc59b"
+          },
+          {
+            "set": "war",
+            "number": "35",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "b7e80a1e-1cd4-5bbb-aac2-03b95d44d624"
+          },
+          {
+            "set": "war",
+            "number": "36",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "349613bc-3594-564e-b95d-1ecaa92e6cb2"
+          },
+          {
+            "set": "war",
+            "number": "37",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "c1e62a67-65b3-5c9b-8045-94ae5bdbbfb3"
+          },
+          {
+            "set": "war",
+            "number": "38",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "248cb87f-8fa4-5e2d-8ae9-fdb7ca09cb23"
+          },
+          {
+            "set": "war",
+            "number": "39",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "2e95c376-f7f2-5453-9092-3e9d9045ffa8"
+          },
+          {
+            "set": "war",
+            "number": "40",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "7b4e809a-ca53-5a72-a89a-81e2c665ebfe"
+          },
+          {
+            "set": "war",
+            "number": "41",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "0aca5931-a2f4-5710-9087-ca9fdf1fea16"
+          },
+          {
+            "set": "war",
+            "number": "42",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "10d6434f-4d3e-5497-ab53-92018c1c8efd"
+          },
+          {
+            "set": "war",
+            "number": "43",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "f578a3e3-fb93-53f3-bfa8-9ce139ac0643"
+          },
+          {
+            "set": "war",
+            "number": "44",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "fac498b3-76a0-5fdb-8533-247b33457aa7"
+          },
+          {
+            "set": "war",
+            "number": "45",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "6be49a63-db65-5954-a5da-68bc29ede7e5"
+          },
+          {
+            "set": "war",
+            "number": "46",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "ae99fe47-f3b6-54b9-a206-1081e18779cd"
+          },
+          {
+            "set": "war",
+            "number": "47",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "46bd1799-9a0a-5fd1-93d6-708a585dc71b"
+          },
+          {
+            "set": "war",
+            "number": "48",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "cadda636-34e1-5556-a9fb-ac9f76ead093"
+          },
+          {
+            "set": "war",
+            "number": "49",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "6526da20-d411-520b-863d-64604f79b30e"
+          },
+          {
+            "set": "war",
+            "number": "50",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "ccefb41c-79d7-5103-866b-6ec1116a0719"
+          },
+          {
+            "set": "war",
+            "number": "51",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "aaa8f0c2-5bd4-567a-96fc-36a6bbae6e1e"
+          },
+          {
+            "set": "war",
+            "number": "52",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "62322fa3-842a-5665-a121-a21340b70710"
+          },
+          {
+            "set": "war",
+            "number": "53",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "14bde121-71a2-5ea9-8145-6022b329c24c"
+          },
+          {
+            "set": "war",
+            "number": "54",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "de19d916-8688-5083-9608-5f09f09be8f0"
+          },
+          {
+            "set": "war",
+            "number": "55",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "a1d983f9-e380-5457-bb91-a5fdd8426a19"
+          },
+          {
+            "set": "war",
+            "number": "56",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "0fe56d65-a3e6-559c-8c89-068f4694d32c"
+          },
+          {
+            "set": "war",
+            "number": "57",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "9197605c-a8cd-59f3-9ec4-8ee58a904e09"
+          },
+          {
+            "set": "war",
+            "number": "58",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "0d49a203-86df-536e-abdd-38193187f5ff"
+          },
+          {
+            "set": "war",
+            "number": "59",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "bd1e3301-e099-5695-928f-76c8b06db444"
+          },
+          {
+            "set": "war",
+            "number": "60",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "557e146d-0f14-54b2-8cb8-f202621c56c3"
+          },
+          {
+            "set": "war",
+            "number": "61",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "4fa9e9f5-c36f-507e-abbb-0c90f4fd8772"
+          },
+          {
+            "set": "war",
+            "number": "62",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "bc654c56-bae4-5998-9c1d-ec43537eed6e"
+          },
+          {
+            "set": "war",
+            "number": "63",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "61fa7145-af2b-59a2-92dd-48d19be60152"
+          },
+          {
+            "set": "war",
+            "number": "64",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "0abe85a1-668c-50cd-a669-1453d00c2f33"
+          },
+          {
+            "set": "war",
+            "number": "65",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "1c659d00-2878-587f-9347-64a900ca1440"
+          },
+          {
+            "set": "war",
+            "number": "66",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "05444e76-0331-53d6-a734-12eaee10b5f3"
+          },
+          {
+            "set": "war",
+            "number": "67",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "1c74cb7d-39f3-527a-b3d1-9dea4a7287ff"
+          },
+          {
+            "set": "war",
+            "number": "68",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "2411ffb6-b1ef-52c5-865e-c87e30460d3c"
+          },
+          {
+            "set": "war",
+            "number": "69",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "93487570-31c1-5213-91a0-fdce2928e9a0"
+          },
+          {
+            "set": "war",
+            "number": "70",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "4a99f85f-5d1f-5870-b5a0-2eccb277f384"
+          },
+          {
+            "set": "war",
+            "number": "71",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "b42398ff-b92c-5eec-8fb2-7e0e5e40ec3d"
+          },
+          {
+            "set": "war",
+            "number": "72",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "eb459f4b-50c6-5a93-a773-1f88d168d971"
+          },
+          {
+            "set": "war",
+            "number": "73",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "f5014458-218e-5625-bbbc-f1895a9509e9"
+          },
+          {
+            "set": "war",
+            "number": "74",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "08f8bb29-6091-50d2-afab-6b80087ce067"
+          },
+          {
+            "set": "war",
+            "number": "75",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "7610bd8e-d995-51a9-a46a-6e295f9488a2"
+          },
+          {
+            "set": "war",
+            "number": "76",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "d11acd0d-21cc-5dbb-bbe8-2603146a20ca"
+          },
+          {
+            "set": "war",
+            "number": "77",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "fc0f3291-22a4-58e5-b03e-b971c5403c53"
+          },
+          {
+            "set": "war",
+            "number": "78",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "bed79a7b-995f-5103-8b6f-d626053b4203"
+          },
+          {
+            "set": "war",
+            "number": "79",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "4ae50b85-70ab-5cc3-b836-dd273375f5ee"
+          },
+          {
+            "set": "war",
+            "number": "80",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "56a30d0f-fb9d-554f-bbab-61c863e41169"
+          },
+          {
+            "set": "war",
+            "number": "81",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "5f61c1b9-63ad-5a82-9438-360edd6eea85"
+          },
+          {
+            "set": "war",
+            "number": "82",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "b132e71e-617c-5a0d-acef-c27efce402ce"
+          },
+          {
+            "set": "war",
+            "number": "83",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "450bcf93-03fd-59f8-a8ed-1ac506f2786c"
+          },
+          {
+            "set": "war",
+            "number": "84",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "1fb4ee52-0ee4-5117-bf54-538f17eb9822"
+          },
+          {
+            "set": "war",
+            "number": "85",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "b7c73fc0-f175-57df-9b59-01dfd2ec8e2a"
+          },
+          {
+            "set": "war",
+            "number": "86",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "5589028d-25c2-556b-9aa5-dff384ae6200"
+          },
+          {
+            "set": "war",
+            "number": "87",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "0736085a-62ee-58bf-aa23-fef2afef4e43"
+          },
+          {
+            "set": "war",
+            "number": "88",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "73e28193-a44b-5c38-bb10-82e832bec6a9"
+          },
+          {
+            "set": "war",
+            "number": "89",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "be75eb27-bb09-589b-8115-102852c8baf7"
+          },
+          {
+            "set": "war",
+            "number": "90",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "71b101c1-e8cf-5f25-93b3-534bb11f285b"
+          },
+          {
+            "set": "war",
+            "number": "91",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "3e448b1f-26b7-54e4-b0e2-ba9555b19d79"
+          },
+          {
+            "set": "war",
+            "number": "92",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "7877d2ca-9220-5e0d-840e-68c6b5975b52"
+          },
+          {
+            "set": "war",
+            "number": "93",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "d2b2455f-2026-5384-875b-8958d85207a9"
+          },
+          {
+            "set": "war",
+            "number": "94",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "315620f5-2920-574f-b428-feafdf9e885b"
+          },
+          {
+            "set": "war",
+            "number": "95",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "793a2190-c40b-5ee8-8736-d03a778e1e9a"
+          },
+          {
+            "set": "war",
+            "number": "96",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "17a987be-195f-58a4-8e0f-a8d1979d0337"
+          },
+          {
+            "set": "war",
+            "number": "97",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "8f8ae2ff-0bcc-575d-bb3e-4f26b0bc7b62"
+          },
+          {
+            "set": "war",
+            "number": "98",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "88b9bd21-a393-5aa8-bc37-3c2a4ec676d1"
+          },
+          {
+            "set": "war",
+            "number": "99",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "0092adb5-ab0a-5315-baa0-c389c994f52f"
+          },
+          {
+            "set": "war",
+            "number": "100",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "745de871-6f1e-5f41-95ca-069289359d8c"
+          },
+          {
+            "set": "war",
+            "number": "101",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "4310b589-7fd2-597e-bdd4-1be54c5af6da"
+          },
+          {
+            "set": "war",
+            "number": "102",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "0cc0f683-bb90-56ca-a34a-4f47eeba1bac"
+          },
+          {
+            "set": "war",
+            "number": "103",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "a370d47d-42a3-546f-b2bc-743d0cef6035"
+          },
+          {
+            "set": "war",
+            "number": "104",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "49c8722b-11e4-5007-a871-a88e56ea1bdd"
+          },
+          {
+            "set": "war",
+            "number": "105",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "89ba71fa-c8c6-55f3-a1df-138cbd5a4319"
+          },
+          {
+            "set": "war",
+            "number": "106",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "50350615-04ba-5d26-aaff-578314d2d25a"
+          },
+          {
+            "set": "war",
+            "number": "107",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "79e7cdeb-5d82-53e4-888b-afd2173658cf"
+          },
+          {
+            "set": "war",
+            "number": "108",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "cb61867b-e6af-5d15-aed9-5200e89ea040"
+          },
+          {
+            "set": "war",
+            "number": "109",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "1d18dedb-2446-5b68-965c-fc5a7ec53c33"
+          },
+          {
+            "set": "war",
+            "number": "110",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "349a59bc-cc3e-5402-b2a5-6e30442befe8"
+          },
+          {
+            "set": "war",
+            "number": "111",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "077ea8a8-24b7-575b-9c34-ba7f54fb5099"
+          },
+          {
+            "set": "war",
+            "number": "112",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "ce6a2697-5f3a-5857-ab1b-ac015d9f32f3"
+          },
+          {
+            "set": "war",
+            "number": "113",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "40d6739e-7d71-559a-8756-35d42dcac450"
+          },
+          {
+            "set": "war",
+            "number": "114",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "19827ebf-3b49-5021-ac7f-f6c125a3bdd6"
+          },
+          {
+            "set": "war",
+            "number": "115",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "5af182ba-dc7c-5177-961e-bcc07ee1f180"
+          },
+          {
+            "set": "war",
+            "number": "116",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "cb422986-4248-54ca-8a3a-d5e842ecd0ec"
+          },
+          {
+            "set": "war",
+            "number": "117",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "42909c0b-ed28-5e9f-abe2-d8abc284f7c0"
+          },
+          {
+            "set": "war",
+            "number": "118",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "e2b23487-2a53-5b2d-a4f7-ca6a487fc388"
+          },
+          {
+            "set": "war",
+            "number": "119",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "638fe5e4-2dbe-5aee-9f9a-f7b47ee3275a"
+          },
+          {
+            "set": "war",
+            "number": "120",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "4c926dd3-a5d5-5fa3-80b0-c0f61110ea7f"
+          },
+          {
+            "set": "war",
+            "number": "121",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "176681b6-28dd-5e3c-b5dc-02e8b9117371"
+          },
+          {
+            "set": "war",
+            "number": "122",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "eb8d5ba3-3eb1-5a20-8451-2d52fb4d3353"
+          },
+          {
+            "set": "war",
+            "number": "123",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "483cf41b-2659-5bee-a737-5f70b394bdfc"
+          },
+          {
+            "set": "war",
+            "number": "124",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "f92874f5-a27c-5f8e-951b-5b21af4ab78b"
+          },
+          {
+            "set": "war",
+            "number": "125",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "f9c065dc-1677-52a6-891c-0130e443c624"
+          },
+          {
+            "set": "war",
+            "number": "126",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "7db415c9-fd0a-509b-a5a8-44da6b18e496"
+          },
+          {
+            "set": "war",
+            "number": "127",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "6f6fdec6-cbe0-594b-bd8f-582ff3a14aa5"
+          },
+          {
+            "set": "war",
+            "number": "128",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "249cf960-24ec-5fca-9a48-fe636c2e51ad"
+          },
+          {
+            "set": "war",
+            "number": "129",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "fd401566-339d-5cb8-aa09-7a4b47f60c4d"
+          },
+          {
+            "set": "war",
+            "number": "130",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "c062dba2-9085-5a97-803d-5529a4b11a49"
+          },
+          {
+            "set": "war",
+            "number": "131",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "da9c6cbe-b7c9-502d-a3d9-9b26b30b5279"
+          },
+          {
+            "set": "war",
+            "number": "132",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "39c545fc-99ba-5d4b-b11a-346639422041"
+          },
+          {
+            "set": "war",
+            "number": "133",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "055930a7-4004-551d-82f0-60686ba51ab1"
+          },
+          {
+            "set": "war",
+            "number": "134",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "f689a73c-545b-59a0-b9cd-389445c8a848"
+          },
+          {
+            "set": "war",
+            "number": "135",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "79c77484-155c-5e8f-88b5-ba8912ab5b79"
+          },
+          {
+            "set": "war",
+            "number": "136",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "41d8d564-27fa-5ea0-8131-b51d2d26a39e"
+          },
+          {
+            "set": "war",
+            "number": "137",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "df73e10a-6b0b-5b2e-9ed9-2a9d3bcb936e"
+          },
+          {
+            "set": "war",
+            "number": "138",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "69ce976f-1371-5256-9f61-1b0345f9137f"
+          },
+          {
+            "set": "war",
+            "number": "139",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "9b55ced1-064b-593d-a8bb-c1317291b08a"
+          },
+          {
+            "set": "war",
+            "number": "140",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "f7cb76de-5710-5b2c-b6e1-5abf4d88b55b"
+          },
+          {
+            "set": "war",
+            "number": "141",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "38d1637f-7c7e-555d-b059-a740f3350962"
+          },
+          {
+            "set": "war",
+            "number": "142",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "6f16a789-102e-553d-a5ed-3fbe5d3fdf93"
+          },
+          {
+            "set": "war",
+            "number": "143",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "b822babc-a8a1-575b-9cf2-ef7478b554be"
+          },
+          {
+            "set": "war",
+            "number": "144",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "ad2365f6-b11b-5ba1-b1c8-9d80b95e04ab"
+          },
+          {
+            "set": "war",
+            "number": "145",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "173caa83-8aef-5c07-aa0c-7b78d428ef63"
+          },
+          {
+            "set": "war",
+            "number": "146",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "c28a0e0b-6f52-5249-99d1-9222bb3e9e39"
+          },
+          {
+            "set": "war",
+            "number": "147",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "22532515-400f-5649-8969-05cfbc008ef5"
+          },
+          {
+            "set": "war",
+            "number": "148",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "33f4cc82-7b2f-5462-a355-41007862577e"
+          },
+          {
+            "set": "war",
+            "number": "149",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "ff209b2c-1d8c-5749-8659-43ddf24a3320"
+          },
+          {
+            "set": "war",
+            "number": "150",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "9c2c42d5-6cf3-5298-a7e9-9b14d6503d52"
+          },
+          {
+            "set": "war",
+            "number": "151",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "67df542e-fb46-5268-a7ae-c73ec7bc357a"
+          },
+          {
+            "set": "war",
+            "number": "152",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "6739063b-938e-5bfb-ae02-9a10a9cdac1f"
+          },
+          {
+            "set": "war",
+            "number": "153",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "c3116d5f-3040-51b0-9780-5cd11be0283e"
+          },
+          {
+            "set": "war",
+            "number": "154",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "30aa01b9-f697-56ee-92fc-0502fb15bf8f"
+          },
+          {
+            "set": "war",
+            "number": "155",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "9e7999e1-62ba-5968-8c1a-f19d39fa35e2"
+          },
+          {
+            "set": "war",
+            "number": "156",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "6b9bb917-3152-537a-94d6-6addecbb7495"
+          },
+          {
+            "set": "war",
+            "number": "157",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "e476bc1e-6a4a-5f49-8d58-0daa0500edf1"
+          },
+          {
+            "set": "war",
+            "number": "158",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "e63d7d93-9b27-5d7f-8743-a852299595a5"
+          },
+          {
+            "set": "war",
+            "number": "159",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "2634269a-6457-5157-a2d0-27415ee848d8"
+          },
+          {
+            "set": "war",
+            "number": "160",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "76f9f095-f516-5dfd-899e-75ba4a662630"
+          },
+          {
+            "set": "war",
+            "number": "161",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "2e3c42d4-d1d8-590e-a2a4-4fafe2c592e5"
+          },
+          {
+            "set": "war",
+            "number": "162",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "a503cb41-a414-576e-97c4-40d64a3a91c0"
+          },
+          {
+            "set": "war",
+            "number": "163",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "56788492-50a1-54f5-b6ef-85e18365290a"
+          },
+          {
+            "set": "war",
+            "number": "164",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "f3db8dfc-2fb4-539f-aca5-2d61eca652c2"
+          },
+          {
+            "set": "war",
+            "number": "165",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "6f2d2422-ae83-5836-a3de-3f309753ba05"
+          },
+          {
+            "set": "war",
+            "number": "166",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "d8798669-f034-5a9a-a481-7b559a4baef5"
+          },
+          {
+            "set": "war",
+            "number": "167",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "aeffa888-35eb-5855-b3d6-a211cbd2c86a"
+          },
+          {
+            "set": "war",
+            "number": "168",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "1ae82207-e017-5539-ac71-5ecdb5d1b7d9"
+          },
+          {
+            "set": "war",
+            "number": "169",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "ffccf80c-e56f-5bc2-9838-d77166da4eb6"
+          },
+          {
+            "set": "war",
+            "number": "170",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "65b241eb-8093-580e-aac6-7b47e993795f"
+          },
+          {
+            "set": "war",
+            "number": "171",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "462a3159-19c3-5506-992f-e264e634bcd3"
+          },
+          {
+            "set": "war",
+            "number": "172",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "d9737859-bb86-5455-abe2-8f6159d7e0e6"
+          },
+          {
+            "set": "war",
+            "number": "173",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "633f54dd-6b69-5eb6-b1fe-6a144a207a73"
+          },
+          {
+            "set": "war",
+            "number": "174",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "caa87172-dc22-5c72-be26-7046068aae01"
+          },
+          {
+            "set": "war",
+            "number": "175",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "ed015dda-2818-5ea2-a4ad-2eb3d498c00f"
+          },
+          {
+            "set": "war",
+            "number": "176",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "b4d70fe7-e3f2-55f5-9f92-a1820bb6e270"
+          },
+          {
+            "set": "war",
+            "number": "177",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "211a1eee-e2d2-5f01-8f15-35c6d5d2ca52"
+          },
+          {
+            "set": "war",
+            "number": "178",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "7370a76b-f407-5105-9d7c-f0dec075fe09"
+          },
+          {
+            "set": "war",
+            "number": "179",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "31d92cfc-8aee-5596-be49-f7d73201575a"
+          },
+          {
+            "set": "war",
+            "number": "180",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "f4f7168b-127e-57f3-af5c-9f5320dbcb83"
+          },
+          {
+            "set": "war",
+            "number": "181",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "93ef91a8-df9c-5705-b1f0-df3abe2e2b0d"
+          },
+          {
+            "set": "war",
+            "number": "182",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "e249f978-c9bf-5895-a844-7b6cd601fc4c"
+          },
+          {
+            "set": "war",
+            "number": "183",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "083a4a7d-220e-586f-a7c8-4647bf258c33"
+          },
+          {
+            "set": "war",
+            "number": "184",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "d52aebee-9ea7-5bf6-897f-e34c45e5edb2"
+          },
+          {
+            "set": "war",
+            "number": "185",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "4e17b405-08e8-5d22-88ce-3e8e37ad27cf"
+          },
+          {
+            "set": "war",
+            "number": "186",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "73b21bac-d5fd-5361-9f93-25515b696afc"
+          },
+          {
+            "set": "war",
+            "number": "187",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "51c2c882-b31c-5d30-b647-6ae98db12925"
+          },
+          {
+            "set": "war",
+            "number": "188",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "1ee550f8-ee51-5a89-b121-5af6c7d73d95"
+          },
+          {
+            "set": "war",
+            "number": "189",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "b61d5f96-30c1-5bcd-ac30-84960831339a"
+          },
+          {
+            "set": "war",
+            "number": "190",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "2105a674-59b9-57c5-b7fd-18ccbf2cdf06"
+          },
+          {
+            "set": "war",
+            "number": "191",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "cf65b0d5-04d2-53f5-a0e8-bb0b07e9f7ca"
+          },
+          {
+            "set": "war",
+            "number": "192",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "e0e05e4f-a336-5625-b3a9-5c86e15dd8cf"
+          },
+          {
+            "set": "war",
+            "number": "193",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "830832c9-2b37-56b6-8200-f1415923f139"
+          },
+          {
+            "set": "war",
+            "number": "194",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "d5233d3e-5fd2-5731-9a1e-d392629c539e"
+          },
+          {
+            "set": "war",
+            "number": "195",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "3602f881-3a52-5449-abc0-e4dbb76294dd"
+          },
+          {
+            "set": "war",
+            "number": "196",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "be4eef08-4518-53f7-8d86-e380aaabe591"
+          },
+          {
+            "set": "war",
+            "number": "197",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "9c936b88-a365-576d-b074-e8a8d9b1f6d9"
+          },
+          {
+            "set": "war",
+            "number": "198",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "4dd2b6e8-4999-5c70-b9b1-6b89c1245ecb"
+          },
+          {
+            "set": "war",
+            "number": "199",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "63289f00-b5b2-5c16-ada5-fe6e05be49a5"
+          },
+          {
+            "set": "war",
+            "number": "200",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "f1c4e98d-80f7-5ddc-a3c2-0f70eba20150"
+          },
+          {
+            "set": "war",
+            "number": "201",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "fea4fd6f-cd52-59d1-ba38-2b418edb5954"
+          },
+          {
+            "set": "war",
+            "number": "202",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "b47b3aee-0384-574b-a750-1ef2704e1251"
+          },
+          {
+            "set": "war",
+            "number": "203",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "2378f517-597d-56f0-bf47-b26c54c17577"
+          },
+          {
+            "set": "war",
+            "number": "204",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "489b4151-9369-5706-9de2-10327e6b6f46"
+          },
+          {
+            "set": "war",
+            "number": "205",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "3b1a9e81-b53d-5d0c-a248-7e4a3a2d8fb2"
+          },
+          {
+            "set": "war",
+            "number": "206",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "01e31b26-7b7f-5c89-9099-ba2df6f2d343"
+          },
+          {
+            "set": "war",
+            "number": "207",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "ad06d0fe-1d5c-5d62-9134-e97294333d90"
+          },
+          {
+            "set": "war",
+            "number": "208",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "eb76191d-5004-5735-a618-663b3411898e"
+          },
+          {
+            "set": "war",
+            "number": "209",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "d14b23fb-7a3c-5d0a-84d6-9993338710e7"
+          },
+          {
+            "set": "war",
+            "number": "210",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "3041ff06-b062-5b9e-84a4-4ef50f01b298"
+          },
+          {
+            "set": "war",
+            "number": "211",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "d26a1c5d-25a3-56fd-9559-bc3a0e910e8c"
+          },
+          {
+            "set": "war",
+            "number": "212",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "0ebc529b-6c1e-5d96-8f98-fda74777f386"
+          },
+          {
+            "set": "war",
+            "number": "213",
+            "weight": 1392,
+            "foil": true,
+            "uuid": "057bb70b-58de-5f49-8e50-1f45f548f519"
+          },
+          {
+            "set": "war",
+            "number": "214",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "fc24aaad-c086-589a-b869-f38c18b35193"
+          },
+          {
+            "set": "war",
+            "number": "215",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "d3fcf363-1b10-595d-b906-a4d75dfdc6a3"
+          },
+          {
+            "set": "war",
+            "number": "216",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "8d5e4d8d-581d-5ae0-b40c-2ba55337c619"
+          },
+          {
+            "set": "war",
+            "number": "217",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "aa4ef53e-b4fb-5baa-9b1f-ca98b5e9a108"
+          },
+          {
+            "set": "war",
+            "number": "218",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "da466d68-ad03-578d-a86a-75d84007ba0b"
+          },
+          {
+            "set": "war",
+            "number": "219",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "62891624-ecec-50f4-92ce-bb0b3593f595"
+          },
+          {
+            "set": "war",
+            "number": "220",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "f5d4e818-4fe5-557f-8967-e41be29a8edd"
+          },
+          {
+            "set": "war",
+            "number": "221",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "643aea97-faaa-5cf2-8f7d-4b07d5c45e9e"
+          },
+          {
+            "set": "war",
+            "number": "222",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "9f44df25-b9b4-58bd-9394-e55752aead75"
+          },
+          {
+            "set": "war",
+            "number": "223",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "52a150fe-a4b9-5e4c-9dad-55e5e6dd7ecc"
+          },
+          {
+            "set": "war",
+            "number": "224",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "6200a999-c695-5023-813f-fb1f031775fa"
+          },
+          {
+            "set": "war",
+            "number": "225",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "ec637ce6-77cf-588b-b6a2-128f375565a8"
+          },
+          {
+            "set": "war",
+            "number": "226",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "45f14f0b-c356-5cb0-9292-2f3adb722418"
+          },
+          {
+            "set": "war",
+            "number": "227",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "438ea174-d61e-5373-802b-aefeb468d6e2"
+          },
+          {
+            "set": "war",
+            "number": "228",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "77b1743c-77f0-500a-bd82-3edb82b71ea2"
+          },
+          {
+            "set": "war",
+            "number": "229",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "79ad285b-2485-50ff-aad2-a1320cff715b"
+          },
+          {
+            "set": "war",
+            "number": "230",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "00d36b0f-e866-54df-b4aa-447ba0f681e2"
+          },
+          {
+            "set": "war",
+            "number": "231",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "d5220486-1689-5ada-8838-7999645b000b"
+          },
+          {
+            "set": "war",
+            "number": "232",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "7220bde9-27de-5afd-bda5-dc94bec60ac2"
+          },
+          {
+            "set": "war",
+            "number": "233",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "6c4f3a22-7a6a-53c1-9bdc-bbf5210b654e"
+          },
+          {
+            "set": "war",
+            "number": "234",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "9db8bfe0-8f19-5575-b36d-0d822c8b1929"
+          },
+          {
+            "set": "war",
+            "number": "235",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "9a4bc4b2-4b62-513d-a25d-e941c2d3e00f"
+          },
+          {
+            "set": "war",
+            "number": "236",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "a0c99852-b08e-5f09-9f48-317f2253df15"
+          },
+          {
+            "set": "war",
+            "number": "237",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "49cb18a1-3ebd-5f6c-b0c3-e4434cd5aa38"
+          },
+          {
+            "set": "war",
+            "number": "238",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "8a6db6ec-f645-510c-9cfb-e52827ad748f"
+          },
+          {
+            "set": "war",
+            "number": "239",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "7246a4e8-0537-5016-b07a-433c59c2c285"
+          },
+          {
+            "set": "war",
+            "number": "240",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "7c489a49-7bb9-5573-a464-00e33fc95e8f"
+          },
+          {
+            "set": "war",
+            "number": "241",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "0cd9f299-f255-5114-9297-da3fa19f29f1"
+          },
+          {
+            "set": "war",
+            "number": "242",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "a3aca765-02a0-51c7-8cc5-f5687723a88c"
+          },
+          {
+            "set": "war",
+            "number": "243",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "104f39bb-55d3-56d4-82d4-f6b1c34975f3"
+          },
+          {
+            "set": "war",
+            "number": "244",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "c5571152-b10a-5f16-8c80-11bf0122910a"
+          },
+          {
+            "set": "war",
+            "number": "245",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "b632cecc-63a2-5589-b49d-8b17dad0493f"
+          },
+          {
+            "set": "war",
+            "number": "246",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "867dc5ee-8945-5d55-8ddc-28adf77d7c1d"
+          },
+          {
+            "set": "war",
+            "number": "247",
+            "weight": 3509,
+            "foil": true,
+            "uuid": "cd13979a-8623-5460-b4a4-b9eb503a0682"
+          },
+          {
+            "set": "war",
+            "number": "248",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "be235975-8cc2-5d04-9413-cb24078a10c6"
+          },
+          {
+            "set": "war",
+            "number": "249",
+            "weight": 2784,
+            "foil": true,
+            "uuid": "9e0bac4f-5eb9-5bdb-ba4c-fb3ef2495485"
+          },
+          {
+            "set": "war",
+            "number": "250",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "f752014a-4084-5cf0-8ad8-ef1abbc42ee6"
+          },
+          {
+            "set": "war",
+            "number": "251",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "84f7df64-3236-5564-af46-d92f8bf3d82c"
+          },
+          {
+            "set": "war",
+            "number": "252",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "6398dfb7-92c3-514e-9dcd-56eb5cf61407"
+          },
+          {
+            "set": "war",
+            "number": "253",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "00ec69b3-2ee6-505c-a5aa-190713ce2342"
+          },
+          {
+            "set": "war",
+            "number": "254",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "ffc37bdd-e379-5cad-851a-b18eeee2d857"
+          },
+          {
+            "set": "war",
+            "number": "255",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "b641bd1b-2b9d-5354-9c63-d47ed4aa3741"
+          },
+          {
+            "set": "war",
+            "number": "256",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "29c0a93a-31d3-5e34-a3e1-dfe16c7979c4"
+          },
+          {
+            "set": "war",
+            "number": "257",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "3cef4025-fecf-5c80-aa2d-e01726d40852"
+          },
+          {
+            "set": "war",
+            "number": "258",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "e604ae3d-dde1-50d6-b3f2-b05995c79cf3"
+          },
+          {
+            "set": "war",
+            "number": "259",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "9a3c07b1-7f17-582c-a32f-711c63fd7023"
+          },
+          {
+            "set": "war",
+            "number": "260",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "8a7eda3c-35ce-58d2-8a46-51f5a0fae7e0"
+          },
+          {
+            "set": "war",
+            "number": "261",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "27ecba1a-6dd3-5611-9054-5be611b73349"
+          },
+          {
+            "set": "war",
+            "number": "262",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "3ff03579-4891-5929-8e6d-516c9e18fffb"
+          },
+          {
+            "set": "war",
+            "number": "263",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "ffc29ec9-5994-5857-8963-37987b5ff2da"
+          },
+          {
+            "set": "war",
+            "number": "264",
+            "weight": 5808,
+            "foil": true,
+            "uuid": "02ef4428-b7c7-55b2-84ed-e07e26d44bcc"
+          }
+        ]
+      },
+      "planeswalker_uncommon": {
+        "total_weight": 20,
+        "cards": [
+          {
+            "set": "war",
+            "number": "32",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5991b55d-ae2e-5ffc-8afd-5930507ddd91"
+          },
+          {
+            "set": "war",
+            "number": "37",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c1e62a67-65b3-5c9b-8045-94ae5bdbbfb3"
+          },
+          {
+            "set": "war",
+            "number": "56",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0fe56d65-a3e6-559c-8c89-068f4694d32c"
+          },
+          {
+            "set": "war",
+            "number": "61",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4fa9e9f5-c36f-507e-abbb-0c90f4fd8772"
+          },
+          {
+            "set": "war",
+            "number": "83",
+            "weight": 1,
+            "foil": false,
+            "uuid": "450bcf93-03fd-59f8-a8ed-1ac506f2786c"
+          },
+          {
+            "set": "war",
+            "number": "100",
+            "weight": 1,
+            "foil": false,
+            "uuid": "745de871-6f1e-5f41-95ca-069289359d8c"
+          },
+          {
+            "set": "war",
+            "number": "135",
+            "weight": 1,
+            "foil": false,
+            "uuid": "79c77484-155c-5e8f-88b5-ba8912ab5b79"
+          },
+          {
+            "set": "war",
+            "number": "146",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c28a0e0b-6f52-5249-99d1-9222bb3e9e39"
+          },
+          {
+            "set": "war",
+            "number": "150",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9c2c42d5-6cf3-5298-a7e9-9b14d6503d52"
+          },
+          {
+            "set": "war",
+            "number": "164",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f3db8dfc-2fb4-539f-aca5-2d61eca652c2"
+          },
+          {
+            "set": "war",
+            "number": "227",
+            "weight": 1,
+            "foil": false,
+            "uuid": "438ea174-d61e-5373-802b-aefeb468d6e2"
+          },
+          {
+            "set": "war",
+            "number": "228",
+            "weight": 1,
+            "foil": false,
+            "uuid": "77b1743c-77f0-500a-bd82-3edb82b71ea2"
+          },
+          {
+            "set": "war",
+            "number": "229",
+            "weight": 1,
+            "foil": false,
+            "uuid": "79ad285b-2485-50ff-aad2-a1320cff715b"
+          },
+          {
+            "set": "war",
+            "number": "230",
+            "weight": 1,
+            "foil": false,
+            "uuid": "00d36b0f-e866-54df-b4aa-447ba0f681e2"
+          },
+          {
+            "set": "war",
+            "number": "231",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d5220486-1689-5ada-8838-7999645b000b"
+          },
+          {
+            "set": "war",
+            "number": "232",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7220bde9-27de-5afd-bda5-dc94bec60ac2"
+          },
+          {
+            "set": "war",
+            "number": "233",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6c4f3a22-7a6a-53c1-9bdc-bbf5210b654e"
+          },
+          {
+            "set": "war",
+            "number": "234",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9db8bfe0-8f19-5575-b36d-0d822c8b1929"
+          },
+          {
+            "set": "war",
+            "number": "235",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9a4bc4b2-4b62-513d-a25d-e941c2d3e00f"
+          },
+          {
+            "set": "war",
+            "number": "236",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a0c99852-b08e-5f09-9f48-317f2253df15"
+          }
+        ]
+      },
+      "nonplaneswalker_rare_mythic": {
+        "total_weight": 92,
+        "cards": [
+          {
+            "set": "war",
+            "number": "12",
+            "weight": 1,
+            "foil": false,
+            "uuid": "981628d3-14b8-55fe-b9b8-d6d2afd78bc8"
+          },
+          {
+            "set": "war",
+            "number": "16",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3712322d-1c14-5840-b9ce-c6e5949842ea"
+          },
+          {
+            "set": "war",
+            "number": "18",
+            "weight": 2,
+            "foil": false,
+            "uuid": "fb88ffcc-0821-5a08-80e7-3caeef0fc6c0"
+          },
+          {
+            "set": "war",
+            "number": "24",
+            "weight": 2,
+            "foil": false,
+            "uuid": "8e4d50a9-f385-570b-a73a-d7883284d42a"
+          },
+          {
+            "set": "war",
+            "number": "28",
+            "weight": 2,
+            "foil": false,
+            "uuid": "6880451e-b6bb-5284-9974-fefd56bb0cae"
+          },
+          {
+            "set": "war",
+            "number": "30",
+            "weight": 2,
+            "foil": false,
+            "uuid": "9bf42aa4-962f-5269-aa17-af5866e0818b"
+          },
+          {
+            "set": "war",
+            "number": "34",
+            "weight": 2,
+            "foil": false,
+            "uuid": "097cd96b-1043-5905-a227-1fa2e91cc59b"
+          },
+          {
+            "set": "war",
+            "number": "45",
+            "weight": 2,
+            "foil": false,
+            "uuid": "6be49a63-db65-5954-a5da-68bc29ede7e5"
+          },
+          {
+            "set": "war",
+            "number": "50",
+            "weight": 2,
+            "foil": false,
+            "uuid": "ccefb41c-79d7-5103-866b-6ec1116a0719"
+          },
+          {
+            "set": "war",
+            "number": "51",
+            "weight": 1,
+            "foil": false,
+            "uuid": "aaa8f0c2-5bd4-567a-96fc-36a6bbae6e1e"
+          },
+          {
+            "set": "war",
+            "number": "53",
+            "weight": 1,
+            "foil": false,
+            "uuid": "14bde121-71a2-5ea9-8145-6022b329c24c"
+          },
+          {
+            "set": "war",
+            "number": "62",
+            "weight": 2,
+            "foil": false,
+            "uuid": "bc654c56-bae4-5998-9c1d-ec43537eed6e"
+          },
+          {
+            "set": "war",
+            "number": "66",
+            "weight": 2,
+            "foil": false,
+            "uuid": "05444e76-0331-53d6-a734-12eaee10b5f3"
+          },
+          {
+            "set": "war",
+            "number": "68",
+            "weight": 2,
+            "foil": false,
+            "uuid": "2411ffb6-b1ef-52c5-865e-c87e30460d3c"
+          },
+          {
+            "set": "war",
+            "number": "79",
+            "weight": 2,
+            "foil": false,
+            "uuid": "4ae50b85-70ab-5cc3-b836-dd273375f5ee"
+          },
+          {
+            "set": "war",
+            "number": "82",
+            "weight": 2,
+            "foil": false,
+            "uuid": "b132e71e-617c-5a0d-acef-c27efce402ce"
+          },
+          {
+            "set": "war",
+            "number": "85",
+            "weight": 2,
+            "foil": false,
+            "uuid": "b7c73fc0-f175-57df-9b59-01dfd2ec8e2a"
+          },
+          {
+            "set": "war",
+            "number": "86",
+            "weight": 2,
+            "foil": false,
+            "uuid": "5589028d-25c2-556b-9aa5-dff384ae6200"
+          },
+          {
+            "set": "war",
+            "number": "89",
+            "weight": 2,
+            "foil": false,
+            "uuid": "be75eb27-bb09-589b-8115-102852c8baf7"
+          },
+          {
+            "set": "war",
+            "number": "91",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3e448b1f-26b7-54e4-b0e2-ba9555b19d79"
+          },
+          {
+            "set": "war",
+            "number": "92",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7877d2ca-9220-5e0d-840e-68c6b5975b52"
+          },
+          {
+            "set": "war",
+            "number": "99",
+            "weight": 2,
+            "foil": false,
+            "uuid": "0092adb5-ab0a-5315-baa0-c389c994f52f"
+          },
+          {
+            "set": "war",
+            "number": "125",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f9c065dc-1677-52a6-891c-0130e443c624"
+          },
+          {
+            "set": "war",
+            "number": "127",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6f6fdec6-cbe0-594b-bd8f-582ff3a14aa5"
+          },
+          {
+            "set": "war",
+            "number": "133",
+            "weight": 1,
+            "foil": false,
+            "uuid": "055930a7-4004-551d-82f0-60686ba51ab1"
+          },
+          {
+            "set": "war",
+            "number": "137",
+            "weight": 2,
+            "foil": false,
+            "uuid": "df73e10a-6b0b-5b2e-9ed9-2a9d3bcb936e"
+          },
+          {
+            "set": "war",
+            "number": "138",
+            "weight": 2,
+            "foil": false,
+            "uuid": "69ce976f-1371-5256-9f61-1b0345f9137f"
+          },
+          {
+            "set": "war",
+            "number": "140",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f7cb76de-5710-5b2c-b6e1-5abf4d88b55b"
+          },
+          {
+            "set": "war",
+            "number": "152",
+            "weight": 2,
+            "foil": false,
+            "uuid": "6739063b-938e-5bfb-ae02-9a10a9cdac1f"
+          },
+          {
+            "set": "war",
+            "number": "160",
+            "weight": 1,
+            "foil": false,
+            "uuid": "76f9f095-f516-5dfd-899e-75ba4a662630"
+          },
+          {
+            "set": "war",
+            "number": "163",
+            "weight": 1,
+            "foil": false,
+            "uuid": "56788492-50a1-54f5-b6ef-85e18365290a"
+          },
+          {
+            "set": "war",
+            "number": "172",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d9737859-bb86-5455-abe2-8f6159d7e0e6"
+          },
+          {
+            "set": "war",
+            "number": "181",
+            "weight": 2,
+            "foil": false,
+            "uuid": "93ef91a8-df9c-5705-b1f0-df3abe2e2b0d"
+          },
+          {
+            "set": "war",
+            "number": "186",
+            "weight": 2,
+            "foil": false,
+            "uuid": "73b21bac-d5fd-5361-9f93-25515b696afc"
+          },
+          {
+            "set": "war",
+            "number": "187",
+            "weight": 2,
+            "foil": false,
+            "uuid": "51c2c882-b31c-5d30-b647-6ae98db12925"
+          },
+          {
+            "set": "war",
+            "number": "194",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d5233d3e-5fd2-5731-9a1e-d392629c539e"
+          },
+          {
+            "set": "war",
+            "number": "196",
+            "weight": 2,
+            "foil": false,
+            "uuid": "be4eef08-4518-53f7-8d86-e380aaabe591"
+          },
+          {
+            "set": "war",
+            "number": "197",
+            "weight": 2,
+            "foil": false,
+            "uuid": "9c936b88-a365-576d-b074-e8a8d9b1f6d9"
+          },
+          {
+            "set": "war",
+            "number": "203",
+            "weight": 2,
+            "foil": false,
+            "uuid": "2378f517-597d-56f0-bf47-b26c54c17577"
+          },
+          {
+            "set": "war",
+            "number": "208",
+            "weight": 1,
+            "foil": false,
+            "uuid": "eb76191d-5004-5735-a618-663b3411898e"
+          },
+          {
+            "set": "war",
+            "number": "209",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d14b23fb-7a3c-5d0a-84d6-9993338710e7"
+          },
+          {
+            "set": "war",
+            "number": "213",
+            "weight": 1,
+            "foil": false,
+            "uuid": "057bb70b-58de-5f49-8e50-1f45f548f519"
+          },
+          {
+            "set": "war",
+            "number": "214",
+            "weight": 2,
+            "foil": false,
+            "uuid": "fc24aaad-c086-589a-b869-f38c18b35193"
+          },
+          {
+            "set": "war",
+            "number": "216",
+            "weight": 2,
+            "foil": false,
+            "uuid": "8d5e4d8d-581d-5ae0-b40c-2ba55337c619"
+          },
+          {
+            "set": "war",
+            "number": "218",
+            "weight": 2,
+            "foil": false,
+            "uuid": "da466d68-ad03-578d-a86a-75d84007ba0b"
+          },
+          {
+            "set": "war",
+            "number": "219",
+            "weight": 2,
+            "foil": false,
+            "uuid": "62891624-ecec-50f4-92ce-bb0b3593f595"
+          },
+          {
+            "set": "war",
+            "number": "223",
+            "weight": 2,
+            "foil": false,
+            "uuid": "52a150fe-a4b9-5e4c-9dad-55e5e6dd7ecc"
+          },
+          {
+            "set": "war",
+            "number": "224",
+            "weight": 2,
+            "foil": false,
+            "uuid": "6200a999-c695-5023-813f-fb1f031775fa"
+          },
+          {
+            "set": "war",
+            "number": "226",
+            "weight": 2,
+            "foil": false,
+            "uuid": "45f14f0b-c356-5cb0-9292-2f3adb722418"
+          },
+          {
+            "set": "war",
+            "number": "244",
+            "weight": 2,
+            "foil": false,
+            "uuid": "c5571152-b10a-5f16-8c80-11bf0122910a"
+          },
+          {
+            "set": "war",
+            "number": "248",
+            "weight": 2,
+            "foil": false,
+            "uuid": "be235975-8cc2-5d04-9413-cb24078a10c6"
+          },
+          {
+            "set": "war",
+            "number": "249",
+            "weight": 2,
+            "foil": false,
+            "uuid": "9e0bac4f-5eb9-5bdb-ba4c-fb3ef2495485"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "war"
+    ]
+  }
+}

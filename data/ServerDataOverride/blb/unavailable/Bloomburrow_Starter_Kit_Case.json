@@ -1,0 +1,66 @@
+{
+  "uuid": "4e61923f-6dc4-5105-979e-8bbcaad82262",
+  "name": "Bloomburrow Starter Kit Case",
+  "category": "deck_box",
+  "releaseDate": "2024-08-02",
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "tcgplayerProductId": "541244"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/fc4e8562f823ec45"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 12,
+        "name": "Bloomburrow Starter Kit",
+        "set": "blb",
+        "uuid": "a64d30bc-4483-59d2-9144-1219d5886fd3"
+      }
+    ]
+  },
+  "setCode": "BLB",
+  "setName": "Bloomburrow",
+  "tcgcsvData": {
+    "product": {
+      "productId": 541244,
+      "name": "Bloomburrow - Starter Kit Case",
+      "cleanName": "Bloomburrow Starter Kit Case",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/541244_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23447,
+      "url": "https://www.tcgplayer.com/product/541244/magic-bloomburrow-bloomburrow-starter-kit-case",
+      "modifiedOn": "2024-08-02T04:08:50.673",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2024-08-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Magic: The Gathering Starter Kit 2024 is ideal for any pair of new Magic players that walk through your doors, as they give newcomers the opportunity to dive into their first game in-person (and continue the fun online with redeemable Magic: The Gathering Arena code cards in select regions).\r\n<br>\r\nEverything your players need to play their first game of Magic: The Gathering is right here. Learn the essentials or teach friends and family with the included Play Guide booklet, then enter the fray with two pre-built 60-card decks.\r\n<br>\r\nContents:\r\n<br>\r\n• 12 Bloomburrow Starter Kits"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166257372"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 541244,
+        "lowPrice": 182.45,
+        "midPrice": 207.43,
+        "highPrice": 208,
+        "marketPrice": 196.74,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

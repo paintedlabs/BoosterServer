@@ -1,0 +1,82 @@
+{
+  "uuid": "0060dafa-bfca-5496-8319-b02e091fbb45",
+  "name": "Commander 2019 Commander Deck Mystic Intellect",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2019-08-23",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1588339",
+    "cardKingdomId": "226723",
+    "cardtraderId": "59162",
+    "csiId": "277481",
+    "mcmId": "390287",
+    "scgId": "SLD-MTG-MLT-C19-EN-MYSTIC",
+    "tcgplayerProductId": "196281",
+    "tntId": "1543882"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/306abccb9df65d5f",
+    "tcgplayer": "https://mtgjson.com/links/b4fd566391e94829"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mystic Intellect",
+        "set": "c19"
+      }
+    ],
+    "other": [
+      {
+        "name": "Foil Oversized Commander"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      },
+      {
+        "name": "Reference Card and Strategy Insert"
+      },
+      {
+        "name": "Deck Box"
+      }
+    ]
+  },
+  "setCode": "C19",
+  "setName": "Commander 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 196281,
+      "name": "Commander 2019 Deck - Mystic Intellect",
+      "cleanName": "Commander 2019 Deck Mystic Intellect",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/196281_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2481,
+      "url": "https://www.tcgplayer.com/product/196281/magic-commander-2019-commander-2019-deck-mystic-intellect",
+      "modifiedOn": "2019-08-08T19:19:57.157",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-08-23T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Jeskai (Blue-Red-White) Flashback deck \"Mystic Intellect\" featuring Sevinne, the Chronoclasm."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 196281,
+        "lowPrice": 29.94,
+        "midPrice": 50,
+        "highPrice": 189,
+        "marketPrice": 36.71,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

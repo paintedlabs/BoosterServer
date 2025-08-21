@@ -1,0 +1,66 @@
+{
+  "uuid": "d4e272d1-115b-5e97-98e2-39c855ddc0b6",
+  "name": "Amonkhet Planeswalker Deck Liliana",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1476843",
+    "cardKingdomId": "211624",
+    "cardtraderId": "48529",
+    "mcmId": "295698",
+    "scgId": "SLD-MTG-INT-AKHPWDECK-EN-LILIANA",
+    "tcgplayerProductId": "127533"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/e45b8f4af28b1067"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Liliana, Death Wielder",
+        "set": "akh"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Amonkhet Booster Pack",
+        "set": "akh",
+        "uuid": "bdfaa43d-9ebd-502f-856b-11eadc97b026"
+      }
+    ]
+  },
+  "setCode": "AKH",
+  "setName": "Amonkhet",
+  "tcgcsvData": {
+    "product": {
+      "productId": 127533,
+      "name": "Amonkhet - Planeswalker Deck [Liliana]",
+      "cleanName": "Amonkhet Planeswalker Deck Liliana",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/127533_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1882,
+      "url": "https://www.tcgplayer.com/product/127533/magic-amonkhet-amonkhet-planeswalker-deck-liliana",
+      "modifiedOn": "2017-06-19T17:19:26.857",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 127533,
+        "lowPrice": 49,
+        "midPrice": 51,
+        "highPrice": 70.96,
+        "marketPrice": 48.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

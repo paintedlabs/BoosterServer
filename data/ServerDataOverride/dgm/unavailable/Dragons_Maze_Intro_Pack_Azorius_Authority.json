@@ -1,0 +1,74 @@
+{
+  "uuid": "c43df94f-8063-508e-94f3-a6f66c25a753",
+  "name": "Dragons Maze Intro Pack Azorius Authority",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100413",
+    "cardKingdomId": "189628",
+    "cardtraderId": "47944",
+    "csiId": "192760",
+    "mcmId": "261681",
+    "scgId": "SLD-MTG-INT-DGMINTRO-EN-AZORIUS",
+    "tcgplayerProductId": "68028",
+    "tntId": "1026690"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0c501fee5b23737e"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Azorius Authority",
+        "set": "dgm"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Dragons Maze Booster Pack",
+        "set": "dgm",
+        "uuid": "b9c1d8bb-29d1-5572-b3c3-26363ecfdada"
+      }
+    ]
+  },
+  "setCode": "DGM",
+  "setName": "Dragon's Maze",
+  "tcgcsvData": {
+    "product": {
+      "productId": 68028,
+      "name": "Dragon's Maze - Intro Pack - Azorius Authority",
+      "cleanName": "Dragons Maze Intro Pack Azorius Authority",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/68028_200w.jpg",
+      "categoryId": 1,
+      "groupId": 570,
+      "url": "https://www.tcgplayer.com/product/68028/magic-dragons-maze-dragons-maze-intro-pack-azorius-authority",
+      "modifiedOn": "2014-01-06T17:28:02.35",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 82207 3"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 68028,
+        "lowPrice": 13.7,
+        "midPrice": 19.29,
+        "highPrice": 29.99,
+        "marketPrice": 16.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

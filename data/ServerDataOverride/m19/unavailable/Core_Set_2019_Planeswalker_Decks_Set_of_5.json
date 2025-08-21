@@ -1,0 +1,87 @@
+{
+  "uuid": "5001db0c-3819-57ab-b7d0-9c62fc9335b1",
+  "name": "Core Set 2019 Planeswalker Decks Set of 5",
+  "category": "subset",
+  "releaseDate": "2018-07-13",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "csiId": "258078",
+    "scgId": "SLD-MTG-INT-M19PWDECK-EN-SET5",
+    "tcgplayerProductId": "169269"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/3c455eac2b137ba6"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2019 Planeswalker Deck Ajani",
+        "set": "m19",
+        "uuid": "fdac09a3-55da-5e1c-b20d-2ec8cd541fd1"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2019 Planeswalker Deck Liliana",
+        "set": "m19",
+        "uuid": "9967011a-b908-5af9-8f17-77fbe3810564"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2019 Planeswalker Deck Sarkhan",
+        "set": "m19",
+        "uuid": "54ac2139-1043-5f7d-9e84-0c18ad249879"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2019 Planeswalker Deck Tezzeret",
+        "set": "m19",
+        "uuid": "a7fa406e-78f9-5bee-ae80-0059efd9ace4"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2019 Planeswalker Deck Vivien",
+        "set": "m19",
+        "uuid": "a78bd391-ba28-5133-bc98-afe2cd878c0a"
+      }
+    ]
+  },
+  "setCode": "M19",
+  "setName": "Core Set 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 169269,
+      "name": "Core Set 2019 - Planeswalker Deck [Set of 5]",
+      "cleanName": "Core Set 2019 Planeswalker Deck Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/169269_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2250,
+      "url": "https://www.tcgplayer.com/product/169269/magic-core-set-2019-core-set-2019-planeswalker-deck-set-of-5",
+      "modifiedOn": "2018-06-25T21:47:25.57",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-07-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Set of all 5 Planeswalker Decks for Core 2019:\r\n<br>Ajani\r\n<br>Liliana\r\n<br>Sarkhan\r\n<br>Tezzeret\r\n<br>Vivien"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 169269,
+        "lowPrice": 199.35,
+        "midPrice": 199.35,
+        "highPrice": 199.35,
+        "marketPrice": 221.5,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

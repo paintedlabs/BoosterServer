@@ -1,0 +1,67 @@
+{
+  "uuid": "c2b389b9-1d23-500a-ac6a-169497093dcd",
+  "name": "Mirrodin Besieged Event Deck Infect and Defile",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "event",
+  "identifiers": {
+    "abuId": "1100885",
+    "cardKingdomId": "147764",
+    "cardtraderId": "47580",
+    "mcmId": "245281",
+    "scgId": "SLD-MTG-INT-MBSEVENT-EN-INFECT",
+    "tcgplayerProductId": "141938",
+    "tntId": "306950"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/73dfa14f7fa0eb7b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Infect & Defile",
+        "set": "mbs"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Mirrodin Besieged Booster Pack",
+        "set": "mbs",
+        "uuid": "ba83ed00-67f1-523d-94be-831d0dd950ad"
+      }
+    ]
+  },
+  "setCode": "MBS",
+  "setName": "Mirrodin Besieged",
+  "tcgcsvData": {
+    "product": {
+      "productId": 141938,
+      "name": "Mirrodin Besieged Event Deck - Infect & Defile",
+      "cleanName": "Mirrodin Besieged Event Deck Infect and Defile",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/141938_200w.jpg",
+      "categoryId": 1,
+      "groupId": 76,
+      "url": "https://www.tcgplayer.com/product/141938/magic-mirrodin-besieged-mirrodin-besieged-event-deck-infect-and-defile",
+      "modifiedOn": "2017-08-25T17:52:19.77",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 141938,
+        "lowPrice": 69,
+        "midPrice": 74.5,
+        "highPrice": 79.99,
+        "marketPrice": 76.24,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

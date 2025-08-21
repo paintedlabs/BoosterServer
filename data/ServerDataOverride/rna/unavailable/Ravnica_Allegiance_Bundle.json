@@ -1,0 +1,91 @@
+{
+  "uuid": "71fc3b4e-27bd-58fe-bd71-1e0a44058964",
+  "name": "Ravnica Allegiance Bundle",
+  "category": "bundle",
+  "releaseDate": "2019-01-25",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1551805",
+    "cardKingdomId": "223066",
+    "cardtraderId": "48900",
+    "csiId": "266867",
+    "mcmId": "367072",
+    "scgId": "SLD-MTG-BUN-RNA-EN",
+    "tcgplayerProductId": "180736",
+    "tntId": "1419453"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/02d130b03efc1fde",
+    "tcgplayer": "https://mtgjson.com/links/4a226185239ced5d"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "1 card box"
+      },
+      {
+        "name": "1 player’s guide"
+      },
+      {
+        "name": "80-card land pack (1 foil, 7 nonfoil for each type)"
+      },
+      {
+        "name": "1 learn-to-play insert"
+      },
+      {
+        "name": "1 Spindown life counter"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Ravnica Allegiance Booster Pack",
+        "set": "rna",
+        "uuid": "7987f0d7-43b4-59c7-80fd-2c34507af71d"
+      }
+    ]
+  },
+  "setCode": "RNA",
+  "setName": "Ravnica Allegiance",
+  "tcgcsvData": {
+    "product": {
+      "productId": 180736,
+      "name": "Ravnica Allegiance - Bundle",
+      "cleanName": "Ravnica Allegiance Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/180736_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2366,
+      "url": "https://www.tcgplayer.com/product/180736/magic-ravnica-allegiance-ravnica-allegiance-bundle",
+      "modifiedOn": "2018-12-17T17:32:56.29",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-01-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Darkness is coming to Ravnica. A conflict that could tear apart the world itself looms large, and the fragile peace between the guilds is strained to its breaking point. Now, with everything on the line, it's time to step up, prove your loyalty, and fight for your guild.\r\n<br>\r\n<br>Contains:\r\n<br>• 10 Ravnica Allegiance booster packs \r\n<br>• 1 card box \r\n<br>• 1 player’s guide \r\n<br>• 1 80-card land pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 Spindown life counter"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509688296"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 180736,
+        "lowPrice": 50,
+        "midPrice": 59.99,
+        "highPrice": 79.99,
+        "marketPrice": 52.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

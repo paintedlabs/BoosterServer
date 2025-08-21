@@ -1,0 +1,71 @@
+{
+  "uuid": "220a5e02-5213-5d46-a9d1-d322b74f05a6",
+  "name": "Lorwyn Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1100733",
+    "cardKingdomId": "123487",
+    "cardtraderId": "47249",
+    "mcmId": "248479",
+    "scgId": "SLD-MTG-PCK-LRWTOURNAMENT-EN",
+    "tcgplayerProductId": "118878",
+    "tntId": "160534"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/ccb6c70c4551a6ac",
+    "tcgplayer": "https://mtgjson.com/links/8da6e781e8175537"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "lrw"
+      }
+    ]
+  },
+  "setCode": "LRW",
+  "setName": "Lorwyn",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118878,
+      "name": "Lorwyn - Tournament Pack",
+      "cleanName": "Lorwyn Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118878_200w.jpg",
+      "categoryId": 1,
+      "groupId": 67,
+      "url": "https://www.tcgplayer.com/product/118878/magic-lorwyn-lorwyn-tournament-pack",
+      "modifiedOn": "2025-07-07T17:09:11.097",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Welcome to Lorwyn, a world preserved in eternal midsummer, where creatures of fable thrive in nature's pristine wilds.\r\n<br>CONTENTS\r\n<br> 45 randomly inserted game cards, 30 basic land cards, and a Lorwyn rules insert provide the foundation for exciting Sealed Deck play. Includes a random Pro Tour Player card. Rulebook not included.\r\n<!--ISBN: 978-0-7869-4378-4-->"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "653569223078"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 118878,
+        "lowPrice": 59.75,
+        "midPrice": 89.84,
+        "highPrice": 102.8,
+        "marketPrice": 73.21,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

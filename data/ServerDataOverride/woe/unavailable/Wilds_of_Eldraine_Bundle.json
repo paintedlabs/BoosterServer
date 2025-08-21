@@ -1,0 +1,96 @@
+{
+  "uuid": "a49596af-fcd5-5789-9b8c-5f02d1eb8ccb",
+  "name": "Wilds of Eldraine Bundle",
+  "category": "bundle",
+  "releaseDate": "2023-09-08",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2394715",
+    "cardKingdomId": "281236",
+    "cardtraderId": "246962",
+    "mcmId": "719687",
+    "scgId": "SLD-MTG-BUN-WOE-EN",
+    "tcgplayerProductId": "496046",
+    "tntId": "1786373"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/c1aed6b02cc3f60f",
+    "tcgplayer": "https://mtgjson.com/links/df56cf52e2f34d1d"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Lich-Knights' Conquest",
+        "number": "380",
+        "set": "woe",
+        "uuid": "9e160b1e-06ad-58c9-a6bc-55bae755f3e8"
+      }
+    ],
+    "other": [
+      {
+        "name": "40 basic lands (20 Traditional Foil + 20 nonfoil)"
+      },
+      {
+        "name": "Spindown life counter"
+      },
+      {
+        "name": "card storage box"
+      },
+      {
+        "name": "2 reference cards"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Wilds of Eldraine Set Booster Pack",
+        "set": "woe",
+        "uuid": "86ab9007-922a-5f13-8ffa-aaa8b775c06c"
+      }
+    ]
+  },
+  "setCode": "WOE",
+  "setName": "Wilds of Eldraine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 496046,
+      "name": "Wilds of Eldraine - Bundle",
+      "cleanName": "Wilds of Eldraine Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/496046_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23163,
+      "url": "https://www.tcgplayer.com/product/496046/magic-wilds-of-eldraine-wilds-of-eldraine-bundle",
+      "modifiedOn": "2023-09-08T04:03:58.997",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2023-09-08T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Eldraine is a plane of wonderful chaos and contradictions—your players will be invited to start their own storybook adventure, enveloped in a fantastical fairytale with a twist to break the curse of an endless slumber.\r\n<br>\r\nThe Bundle is a great gift for the Magic superfans visiting your store. They contain a little bit of everything to get a player's collection off the ground, plus a unique oversized Spindown life counter themed after the set.\r\n<br>\r\nContents:\r\n<br>\r\n• 8 Wilds of Eldraine Set Boosters; each Set Booster contains 12 Magic: The Gathering cards\r\n<br>\r\n• 1 Traditional Foil alt-art promo card\r\n<br>\r\n• 40 basic lands (20 Traditional Foil + 20 nonfoil)\r\n<br>\r\n• 1 Spindown life counter\r\n<br>\r\n• 1 card storage box\r\n<br>\r\n• 2 reference cards"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166232096"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 496046,
+        "lowPrice": 112.99,
+        "midPrice": 125,
+        "highPrice": 280,
+        "marketPrice": 129.52,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

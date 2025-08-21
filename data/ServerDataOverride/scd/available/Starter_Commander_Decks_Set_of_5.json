@@ -1,0 +1,98 @@
+{
+  "uuid": "243a7bae-a44f-56f3-b193-8b6b5197aec9",
+  "name": "Starter Commander Decks Set of 5",
+  "category": "subset",
+  "releaseDate": "2022-12-02",
+  "subtype": "commander",
+  "identifiers": {
+    "cardKingdomId": "270189",
+    "cardtraderId": "226601",
+    "csiId": "349034",
+    "mcmId": "681788",
+    "miniaturemarketId": "287974",
+    "scgId": "SLD-MTG-MLT-SCD-EN-SET5",
+    "tcgplayerProductId": "448437",
+    "tntId": "1770670"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/fe9547c95f078ced",
+    "tcgplayer": "https://mtgjson.com/links/d5d822908efb7c0b"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Starter Commander Deck Chaos Incarnate",
+        "set": "scd",
+        "uuid": "b6ea4890-4f5a-5db8-b67b-c554f054b52d"
+      },
+      {
+        "count": 1,
+        "name": "Starter Commander Deck Draconic Destruction",
+        "set": "scd",
+        "uuid": "eda5f16c-19f2-517e-80b7-0a50d48a91d9"
+      },
+      {
+        "count": 1,
+        "name": "Starter Commander Deck First Flight",
+        "set": "scd",
+        "uuid": "bd1bb123-37d6-5961-ad5b-f14453add9b0"
+      },
+      {
+        "count": 1,
+        "name": "Starter Commander Deck Grave Danger",
+        "set": "scd",
+        "uuid": "a3e4cfc8-ace6-5518-affc-1331aa2c5ac3"
+      },
+      {
+        "count": 1,
+        "name": "Starter Commander Deck Token Triumph",
+        "set": "scd",
+        "uuid": "c9e98362-8c81-5f65-bf35-faeb51d5961f"
+      }
+    ]
+  },
+  "setCode": "SCD",
+  "setName": "Starter Commander Decks",
+  "tcgcsvData": {
+    "product": {
+      "productId": 448437,
+      "name": "Starter Commander Deck - Set of 5",
+      "cleanName": "Starter Commander Deck Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/448437_200w.jpg",
+      "categoryId": 1,
+      "groupId": 17662,
+      "url": "https://www.tcgplayer.com/product/448437/magic-starter-commander-decks-starter-commander-deck-set-of-5",
+      "modifiedOn": "2022-12-02T05:03:12.74",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-12-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect one of each of the 5 Starter Commander Decks!\r\n<br>\r\nDetails pending!\r\n<br>\r\nContents:\r\n<br>\r\n• 99 cards and 1 foil-etched card\r\n<br>\r\n• 10 double-sided tokens\r\n<br>\r\n• 1 deck box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166134543"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 448437,
+        "lowPrice": 108.89,
+        "midPrice": 120.94,
+        "highPrice": 239.99,
+        "marketPrice": 111.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

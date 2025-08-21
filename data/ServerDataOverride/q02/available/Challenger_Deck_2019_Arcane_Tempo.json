@@ -1,0 +1,67 @@
+{
+  "uuid": "a5272537-ce65-5563-93fa-f4fce5a407b0",
+  "name": "Challenger Deck 2019 Arcane Tempo",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2019-04-12",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1567937",
+    "cardKingdomId": "223978",
+    "cardtraderId": "54746",
+    "csiId": "273875",
+    "mcmId": "371228",
+    "scgId": "SLD-MTG-INT-Q02-EN-ARCANE",
+    "tcgplayerProductId": "186435",
+    "tntId": "1470663"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c2a877ef45f18215"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Arcane Tempo",
+        "set": "q02"
+      }
+    ]
+  },
+  "setCode": "Q02",
+  "setName": "Challenger Decks 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 186435,
+      "name": "Challenger Deck 2019: Arcane Tempo",
+      "cleanName": "Challenger Deck 2019 Arcane Tempo",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/186435_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/186435/magic-challenger-decks-challenger-deck-2019-arcane-tempo",
+      "modifiedOn": "2019-03-20T16:44:05.74",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains:\r\n<br>• 60-card main deck\r\n<br>• 15-card sideboard\r\n<br>• A box capable of holding 75 sleeved cards\r\n<br>• Spindown life counter\r\n<br>• Quick reference guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 186435,
+        "lowPrice": 34.96,
+        "midPrice": 37.96,
+        "highPrice": 39.99,
+        "marketPrice": 26.69,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

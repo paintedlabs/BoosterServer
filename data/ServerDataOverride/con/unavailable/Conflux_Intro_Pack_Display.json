@@ -1,0 +1,87 @@
+{
+  "uuid": "2549c308-b8ad-5e36-91cc-ed7b12a03a80",
+  "name": "Conflux Intro Pack Display",
+  "category": "deck_box",
+  "subtype": "intro",
+  "identifiers": {
+    "cardtraderId": "47351",
+    "mcmId": "210205",
+    "tcgplayerProductId": "536267",
+    "tntId": "237689"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b0734488fb004d18"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Conflux Intro Pack Bant on the March",
+        "set": "con",
+        "uuid": "9164ff6d-93f7-5069-b67d-06eb82ceca98"
+      },
+      {
+        "count": 1,
+        "name": "Conflux Intro Pack Esper Air Assault",
+        "set": "con",
+        "uuid": "5f1dfd55-f9c9-5ca2-8df6-390487c9b268"
+      },
+      {
+        "count": 1,
+        "name": "Conflux Intro Pack Grixis Shambling Army",
+        "set": "con",
+        "uuid": "7ece5dae-4de1-5c71-95e0-722ec9cdef3c"
+      },
+      {
+        "count": 1,
+        "name": "Conflux Intro Pack Jund Appetite for War",
+        "set": "con",
+        "uuid": "7c19d4fb-6d27-5627-bc64-bb8b426a8824"
+      },
+      {
+        "count": 1,
+        "name": "Conflux Intro Pack Naya Domain",
+        "set": "con",
+        "uuid": "50619c98-2442-5dc6-8a8e-55c845ecca1a"
+      }
+    ]
+  },
+  "setCode": "CON",
+  "setName": "Conflux",
+  "tcgcsvData": {
+    "product": {
+      "productId": 536267,
+      "name": "Conflux - Intro Pack Display",
+      "cleanName": "Conflux Intro Pack Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/536267_200w.jpg",
+      "categoryId": 1,
+      "groupId": 26,
+      "url": "https://www.tcgplayer.com/product/536267/magic-conflux-conflux-intro-pack-display",
+      "modifiedOn": "2024-02-26T19:46:06.48",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contents:\r\n<br>\r\n• 1 each of the 5 Conflux Intro Packs."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 536267,
+        "lowPrice": 340,
+        "midPrice": 340,
+        "highPrice": 340,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

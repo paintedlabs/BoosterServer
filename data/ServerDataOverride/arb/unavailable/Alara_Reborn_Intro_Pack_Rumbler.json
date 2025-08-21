@@ -1,0 +1,67 @@
+{
+  "uuid": "bc6972ef-2fc6-5e37-a628-3ce15df6387f",
+  "name": "Alara Reborn Intro Pack Rumbler",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100099",
+    "cardKingdomId": "127030",
+    "cardtraderId": "47368",
+    "mcmId": "244167",
+    "scgId": "SLD-MTG-INT-ARBINTRO-EN-RUMBLER",
+    "tcgplayerProductId": "96434",
+    "tntId": "247404"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2b85f51164593ead"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Rumbler",
+        "set": "arb"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Alara Reborn Booster Pack",
+        "set": "arb",
+        "uuid": "77285ba5-fa21-5d46-8037-8da7222bacd9"
+      }
+    ]
+  },
+  "setCode": "ARB",
+  "setName": "Alara Reborn",
+  "tcgcsvData": {
+    "product": {
+      "productId": 96434,
+      "name": "Alara Reborn - Intro Pack - Rumbler",
+      "cleanName": "Alara Reborn Intro Pack Rumbler",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/96434_200w.jpg",
+      "categoryId": 1,
+      "groupId": 5,
+      "url": "https://www.tcgplayer.com/product/96434/magic-alara-reborn-alara-reborn-intro-pack-rumbler",
+      "modifiedOn": "2022-06-10T12:27:06.19",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 96434,
+        "lowPrice": 26.9,
+        "midPrice": 26.9,
+        "highPrice": 26.9,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

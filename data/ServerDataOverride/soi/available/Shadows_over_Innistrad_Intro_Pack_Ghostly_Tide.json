@@ -1,0 +1,73 @@
+{
+  "uuid": "1f41eb8c-0cd4-5c94-bb45-e05015237600",
+  "name": "Shadows over Innistrad Intro Pack Ghostly Tide",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-03-15",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101152",
+    "cardKingdomId": "227623",
+    "cardtraderId": "48404",
+    "mcmId": "288893",
+    "tcgplayerProductId": "112960",
+    "tntId": "1092931"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/45bf2524c0d49c12"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ghostly Tide",
+        "set": "soi"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Shadows over Innistrad Booster Pack",
+        "set": "soi",
+        "uuid": "a06fe76f-0b7f-59cc-b2b9-04b4c436df10"
+      }
+    ]
+  },
+  "setCode": "SOI",
+  "setName": "Shadows over Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 112960,
+      "name": "Shadows over Innistrad Intro Pack - Ghostly Tide (W)",
+      "cleanName": "Shadows over Innistrad Intro Pack Ghostly Tide W",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/112960_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1708,
+      "url": "https://www.tcgplayer.com/product/112960/magic-shadows-over-innistrad-shadows-over-innistrad-intro-pack-ghostly-tide-w",
+      "modifiedOn": "2018-08-10T13:29:45.733",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Intro packs are the perfect first purchase for a new Magic player.\r\n<br>Contains:\r\n<br>• Ready-to-play 60-card deck featuring a foil premium card\r\n<br>• 2 Shadows over Innistrad 15-card booster packs\r\n<br>• Strategy Insert\r\n<br>• Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 112960,
+        "lowPrice": 14.99,
+        "midPrice": 20,
+        "highPrice": 23.06,
+        "marketPrice": 22.25,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

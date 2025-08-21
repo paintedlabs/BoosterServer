@@ -1,0 +1,76 @@
+{
+  "uuid": "8dc8da23-e40e-5e17-9314-db536dafe847",
+  "name": "Kaldheim Commander Decks Set of 2",
+  "category": "subset",
+  "releaseDate": "2021-02-05",
+  "subtype": "commander",
+  "identifiers": {
+    "cardtraderId": "151550",
+    "csiId": "302501",
+    "mcmId": "527715",
+    "scgId": "SLD-MTG-MLT-KHC-EN-SET2",
+    "tcgplayerProductId": "229375"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ae7e23a848c7925f"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Kaldheim Commander Deck Elven Empire",
+        "set": "khc",
+        "uuid": "c44e86b2-bd49-5658-8554-ea92828c4ace"
+      },
+      {
+        "count": 1,
+        "name": "Kaldheim Commander Deck Phantom Premonition",
+        "set": "khc",
+        "uuid": "b92f39f9-8df0-59ef-920d-3b066bc84766"
+      }
+    ]
+  },
+  "setCode": "KHC",
+  "setName": "Kaldheim Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 229375,
+      "name": "Kaldheim - Commander Deck [Set of 2]",
+      "cleanName": "Kaldheim Commander Deck Set of 2",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/229375_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2766,
+      "url": "https://www.tcgplayer.com/product/229375/magic-commander-kaldheim-kaldheim-commander-deck-set-of-2",
+      "modifiedOn": "2021-02-05T05:03:27.47",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-02-05T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect each of the 2 Kaldheim Commander Decks. Each deck contains:\r\n<br>• 99-card deck\r\n<br>• 1 foil Commander\r\n<br>• 10 double-sided tokens\r\n<br>• 1 Life Wheel"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "00630509922314"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 229375,
+        "lowPrice": 153.99,
+        "midPrice": 160,
+        "highPrice": 175,
+        "marketPrice": 153.55,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

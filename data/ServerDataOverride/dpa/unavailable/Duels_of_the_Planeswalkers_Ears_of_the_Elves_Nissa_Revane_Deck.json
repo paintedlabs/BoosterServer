@@ -1,0 +1,68 @@
+{
+  "uuid": "ef24e368-e1c8-56d6-85ec-7289c91d0a4d",
+  "name": "Duels of the Planeswalkers Ears of the Elves Nissa Revane Deck",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1100466",
+    "cardKingdomId": "131153",
+    "cardtraderId": "47496",
+    "csiId": "97562",
+    "mcmId": "240423",
+    "scgId": "SLD-MTG-INT-DPADECK-EN-NISSA",
+    "tcgplayerProductId": "77284",
+    "tntId": "294704"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/42115b85dc483331"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ears of the Elves",
+        "set": "dpa"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "2010 Core Set Booster Pack",
+        "set": "m10",
+        "uuid": "f52aeac6-933a-55e2-a973-36421c155ea1"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77284,
+      "name": "DotP - Ears of the Elves Nissa Revane Deck",
+      "cleanName": "DotP Ears of the Elves Nissa Revane Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77284_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/77284/magic-duels-of-the-planeswalkers-dotp-ears-of-the-elves-nissa-revane-deck",
+      "modifiedOn": "2014-01-06T17:49:59.82",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77284,
+        "lowPrice": 89.99,
+        "midPrice": 89.99,
+        "highPrice": 89.99,
+        "marketPrice": 87.77,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

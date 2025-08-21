@@ -1,0 +1,93 @@
+{
+  "uuid": "378dd83c-121e-5b5a-b303-2bd7ad263313",
+  "name": "Core Set 2020 Deck Builders Toolkit",
+  "category": "kit",
+  "cardCount": 225,
+  "releaseDate": "2019-07-12",
+  "subtype": "deck_builders_toolkit",
+  "identifiers": {
+    "abuId": "1580843",
+    "cardKingdomId": "225521",
+    "cardtraderId": "164547",
+    "csiId": "276712",
+    "mcmId": "380322",
+    "scgId": "SLD-MTG-INT-M20TOOLKIT-EN",
+    "tcgplayerProductId": "185681",
+    "tntId": "1480292"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/fb088c4d06df0e33"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Deck Builder's Toolkit",
+        "set": "m20"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2020 Booster Pack",
+        "set": "m20",
+        "uuid": "98ee4589-78f8-5b48-ac57-ef50d8ff8f1c"
+      },
+      {
+        "count": 1,
+        "name": "War of the Spark Booster Pack",
+        "set": "war",
+        "uuid": "3020fb4c-6968-514c-81da-09f7f6a907ec"
+      },
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Booster Pack",
+        "set": "rna",
+        "uuid": "7987f0d7-43b4-59c7-80fd-2c34507af71d"
+      },
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Booster Pack",
+        "set": "grn",
+        "uuid": "dbecee60-807c-5627-9090-d2114a897fcd"
+      }
+    ]
+  },
+  "setCode": "M20",
+  "setName": "Core Set 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185681,
+      "name": "Core Set 2020 - Deck Builder's Toolkit",
+      "cleanName": "Core Set 2020 Deck Builders Toolkit",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185681_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2441,
+      "url": "https://www.tcgplayer.com/product/185681/magic-core-set-2020-core-set-2020-deck-builders-toolkit",
+      "modifiedOn": "2019-06-24T14:58:05.663",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-07-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Once a new player understands Magic's basic rules, the Deck Builder's Toolkit jumpstarts their collection and introduces them to deckbuilding.\r\n<br>\r\n<br><strong>Contents:</strong>\r\n<br>• 1 pack of 125 cards (included cards are the same in every Deck Builder's Toolkit)\r\n<br>• 4 fifteen-card booster packs from recent Magic sets\r\n<br>• 100 basic land cards\r\n<br>• 1 deck builder's guide\r\n<br>• 1 Magic quick reference booklet\r\n<br>• 1 reusable card storage box"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185681,
+        "lowPrice": 54.64,
+        "midPrice": 58.85,
+        "highPrice": 58.87,
+        "marketPrice": 58.85,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

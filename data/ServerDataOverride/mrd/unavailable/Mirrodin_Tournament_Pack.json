@@ -1,0 +1,60 @@
+{
+  "uuid": "7cfad63e-4577-5f7d-b4b9-ea5e0110a06f",
+  "name": "Mirrodin Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1100879",
+    "cardKingdomId": "1564",
+    "cardtraderId": "46522",
+    "mcmId": "248481",
+    "scgId": "SLD-MTG-PCK-MRDTOURNAMENT-EN",
+    "tcgplayerProductId": "127431",
+    "tntId": "110755"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/3c6b6be0c7f64a5e",
+    "tcgplayer": "https://mtgjson.com/links/576c530abb0d4e07"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "mrd"
+      }
+    ]
+  },
+  "setCode": "MRD",
+  "setName": "Mirrodin",
+  "tcgcsvData": {
+    "product": {
+      "productId": 127431,
+      "name": "Mirrodin Tournament Pack",
+      "cleanName": "Mirrodin Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/127431_200w.jpg",
+      "categoryId": 1,
+      "groupId": 75,
+      "url": "https://www.tcgplayer.com/product/127431/magic-mirrodin-mirrodin-tournament-pack",
+      "modifiedOn": "2017-02-14T14:11:11.253",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 127431,
+        "lowPrice": 79.8,
+        "midPrice": 85.95,
+        "highPrice": 155.99,
+        "marketPrice": 81.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

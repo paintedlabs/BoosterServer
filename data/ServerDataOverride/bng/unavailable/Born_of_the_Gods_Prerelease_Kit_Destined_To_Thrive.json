@@ -1,0 +1,88 @@
+{
+  "uuid": "e57fc1fc-c8f8-5a61-8764-2ce45b8f381a",
+  "name": "Born of the Gods Prerelease Kit Destined To Thrive",
+  "category": "limited_aid_tool",
+  "cardCount": 15,
+  "releaseDate": "2007-01-01",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "1100204",
+    "cardtraderId": "48088",
+    "csiId": "200407",
+    "mcmId": "266424",
+    "tcgplayerProductId": "78294",
+    "tntId": "1182093"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/47d26cbedc2653d6"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Nessian Wilds Ravager",
+        "number": "129★",
+        "set": "pbng",
+        "uuid": "05aa062c-8bc6-542d-ba6e-d5d66b196a6e"
+      },
+      {
+        "name": "The Provider",
+        "number": "4e",
+        "set": "thp2",
+        "uuid": "da83564e-6dac-58af-b243-5aefaf20e007"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease-thrive",
+        "set": "bng"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Born of the Gods Booster Pack",
+        "set": "bng",
+        "uuid": "16e12027-2acd-5bfa-81e8-ed3bc5381334"
+      },
+      {
+        "count": 3,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "BNG",
+  "setName": "Born of the Gods",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78294,
+      "name": "Born of the Gods - Destined To Thrive (Prerelease)",
+      "cleanName": "Born of the Gods Destined To Thrive Prerelease",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78294_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1276,
+      "url": "https://www.tcgplayer.com/product/78294/magic-born-of-the-gods-born-of-the-gods-destined-to-thrive-prerelease",
+      "modifiedOn": "2022-12-23T13:35:50.46",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78294,
+        "lowPrice": 29.59,
+        "midPrice": 35.22,
+        "highPrice": 35.45,
+        "marketPrice": 25.48,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "uuid": "21f90d20-1427-5e2b-8a25-c30fa77d8998",
+  "name": "Challenger Deck 2018 Hazoret Aggro",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2018-02-23",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1495827",
+    "cardKingdomId": "217621",
+    "cardtraderId": "54728",
+    "csiId": "254122",
+    "mcmId": "318968",
+    "scgId": "SLD-MTG-INT-Q01-EN-HAZORET",
+    "tcgplayerProductId": "161412",
+    "tntId": "1159417"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/67472c9a1acf5986"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Hazoret Aggro",
+        "set": "q01"
+      }
+    ]
+  },
+  "setCode": "Q01",
+  "setName": "Challenger Decks 2018",
+  "tcgcsvData": {
+    "product": {
+      "productId": 161412,
+      "name": "Challenger Deck 2018: Hazoret Aggro",
+      "cleanName": "Challenger Deck 2018 Hazoret Aggro",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/161412_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/161412/magic-challenger-decks-challenger-deck-2018-hazoret-aggro",
+      "modifiedOn": "2019-02-14T16:49:29.39",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains:\r\n<br>• 60-card main deck\r\n<br>• 15-card sideboard\r\n<br>• A box capable of holding 75 sleeved cards\r\n<br>• Spindown life counter\r\n<br>• Quick reference guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 161412,
+        "lowPrice": 29.99,
+        "midPrice": 41.72,
+        "highPrice": 71.99,
+        "marketPrice": 34.79,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

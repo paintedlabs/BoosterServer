@@ -1,0 +1,73 @@
+{
+  "uuid": "45b4aa0d-c7d0-5d72-afc6-8dbe425a84d2",
+  "name": "Eldritch Moon Intro Pack Shallow Graves",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-06-29",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100481",
+    "cardKingdomId": "209451",
+    "cardtraderId": "48433",
+    "mcmId": "290949",
+    "tcgplayerProductId": "118395",
+    "tntId": "1099829"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/62c89512c3a51835"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Shallow Graves",
+        "set": "emn"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Eldritch Moon Booster Pack",
+        "set": "emn",
+        "uuid": "4253efbd-cc76-53e3-a54c-9f4012f3c097"
+      }
+    ]
+  },
+  "setCode": "EMN",
+  "setName": "Eldritch Moon",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118395,
+      "name": "Eldritch Moon - Intro Pack - Shallow Graves",
+      "cleanName": "Eldritch Moon Intro Pack Shallow Graves",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118395_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1790,
+      "url": "https://www.tcgplayer.com/product/118395/magic-eldritch-moon-eldritch-moon-intro-pack-shallow-graves",
+      "modifiedOn": "2021-08-05T14:22:00.503",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Eldritch Moon booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 118395,
+        "lowPrice": 99.99,
+        "midPrice": 99.99,
+        "highPrice": 99.99,
+        "marketPrice": 54.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "uuid": "679f110a-9bbb-5288-816a-e97ecb8ceb71",
+  "name": "Throne of Eldraine Deluxe Collection",
+  "category": "box_set",
+  "releaseDate": "2019-09-20",
+  "subtype": "premium",
+  "identifiers": {
+    "cardKingdomId": "228238",
+    "cardtraderId": "60094",
+    "mcmId": "402789",
+    "tcgplayerProductId": "199489"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/8553dbfca48f1dbd",
+    "tcgplayer": "https://mtgjson.com/links/f1848a38471ada4c"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Garruk, Cursed Huntsman",
+        "number": "270",
+        "set": "eld",
+        "uuid": "6f6a1a8c-be54-5003-bcf2-5d7412678d3c"
+      },
+      {
+        "name": "Kenrith, the Returned King",
+        "number": "303",
+        "set": "eld",
+        "uuid": "b716ea42-01fa-5f8d-af42-efaecf77a748"
+      }
+    ],
+    "other": [
+      {
+        "name": "Eldraine Set Themed Binder"
+      },
+      {
+        "name": "Art Print of Borderless Garruk, Cursed Huntsman"
+      },
+      {
+        "name": "3x3 Card Strip of a Foil Sheet of Throne of Eldraine"
+      },
+      {
+        "name": "MTG Arena Mega Code"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 16,
+        "name": "Throne of Eldraine Collector Booster Pack",
+        "set": "eld",
+        "uuid": "61cb35b0-215b-5d52-bcd9-6f55e1769ab2"
+      }
+    ]
+  },
+  "setCode": "ELD",
+  "setName": "Throne of Eldraine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 199489,
+      "name": "Throne of Eldraine Deluxe Collection",
+      "cleanName": "Throne of Eldraine Deluxe Collection",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/199489_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2494,
+      "url": "https://www.tcgplayer.com/product/199489/magic-throne-of-eldraine-throne-of-eldraine-deluxe-collection",
+      "modifiedOn": "2019-10-15T15:24:52.667",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Throne of Eldraine Deluxe Collection will contain the following, all packaged in a premium box:\r\n<br>\r\n<br>• 16 Throne of Eldraine Collector Boosters\r\n<br>• 1 Set-themed binder\r\n<br>• 1 Foil Garruk, Cursed Huntsman borderless planeswalker card\r\n<br>• 1 Art print of the borderless Garruk, Cursed Huntsman\r\n<br>• 1 Non-foil version of the Buy-a-Box Kenrith, the Returned King\r\n<br>• 1 3x3 card strip from a foil sheet of Throne of Eldraine\r\n<br><br>1 MTG Arena mega-code card, which grants:\r\n<br>• A digital Garruk exquisite sleeve\r\n<br>One copy of each of the following cards, plus a card style for each:\r\n<br>• Garruk, Cursed Huntsman\r\n<br>• Charming Prince\r\n<br>• The Magic Mirror\r\n<br>• Witch's Vengeance\r\n<br>• Bonecrusher Giant\r\n<br>• Questing Beast"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 199489,
+        "lowPrice": 377.99,
+        "midPrice": 487.25,
+        "highPrice": 1999.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "uuid": "a8ad8e44-90e9-5575-84f2-9f77d93e3a57",
+  "name": "2014 Core Set Intro Pack Fire Surge",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100801",
+    "cardKingdomId": "190588",
+    "cardtraderId": "47989",
+    "csiId": "192756",
+    "mcmId": "263026",
+    "scgId": "SLD-MTG-INT-M14INTRO-EN-FIRE",
+    "tcgplayerProductId": "70079",
+    "tntId": "1028754"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/38178f89aad2faeb"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Fire Surge",
+        "set": "m14"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2014 Core Set Booster Pack",
+        "set": "m14",
+        "uuid": "bef6b6e1-0a89-5b8d-b04b-64683af2b06b"
+      }
+    ]
+  },
+  "setCode": "M14",
+  "setName": "Magic 2014",
+  "tcgcsvData": {
+    "product": {
+      "productId": 70079,
+      "name": "Magic 2014 (M14) - Intro Pack - Fire Surge",
+      "cleanName": "Magic 2014 M14 Intro Pack Fire Surge",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70079_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1113,
+      "url": "https://www.tcgplayer.com/product/70079/magic-magic-2014-m14-magic-2014-m14-intro-pack-fire-surge",
+      "modifiedOn": "2014-01-31T21:19:04.42",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 70079,
+        "lowPrice": 14.99,
+        "midPrice": 19.48,
+        "highPrice": 34.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

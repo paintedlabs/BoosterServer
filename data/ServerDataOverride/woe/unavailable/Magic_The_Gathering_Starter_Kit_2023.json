@@ -1,0 +1,81 @@
+{
+  "uuid": "3b8b7203-e424-5ee2-a6e0-239a75b73e07",
+  "name": "Magic The Gathering Starter Kit 2023",
+  "category": "multiple_decks",
+  "cardCount": 120,
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "cardKingdomId": "281249",
+    "mcmId": "728134",
+    "miniaturemarketId": "293206",
+    "scgId": "SLD-MTG-INT-2023STARTER-EN",
+    "tcgplayerProductId": "496049"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/453eed64e8a4f4ab",
+    "tcgplayer": "https://mtgjson.com/links/b7fcbb3467414460"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Day of the Dragon",
+        "set": "woe"
+      },
+      {
+        "name": "Backup Beatdown",
+        "set": "woe"
+      }
+    ],
+    "other": [
+      {
+        "name": "Two deck boxes"
+      },
+      {
+        "name": "Arena redemption code"
+      }
+    ]
+  },
+  "setCode": "WOE",
+  "setName": "Wilds of Eldraine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 496049,
+      "name": "2023 Arena Starter Kit",
+      "cleanName": "2023 Arena Starter Kit",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/496049_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3176,
+      "url": "https://www.tcgplayer.com/product/496049/magic-arena-starter-kit-2023-arena-starter-kit",
+      "modifiedOn": "2023-09-08T04:03:58.997",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2023-09-08T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Magic: The Gathering Starter Kit 2023 is ideal for any pair of new Magic players that walk through your doors, as they give newcomers the opportunity to dive into their first game in-person (and continue the fun online with redeemable Magic: The Gathering Arena code cards in select regions).\r\n<br>\r\nEverything your players need to play their first game of Magic: The Gathering is right here. Learn the essentials or teach friends and family with the included Play Guide booklet, then enter the fray with two pre-built 60-card decks—Day of the Dragon (a Blue-Red deck) and Backup Beatdown (a Green-White deck).\r\n<br>\r\nContents:\r\n<br>\r\n• 4 Mythic Rare cards (2 per deck)\r\n<br>\r\n• 12 Rare cards (6 per deck)\r\n<br>\r\n• 2 Traditional Foil Rare cards (1 per deck)\r\n<br>\r\n• 2 MTG Arena code cards (1 per deck, only available in select regions)\r\n<br>\r\n• 2 deck boxes (1 per deck)\r\n<br>\r\n• 4 double-sided tokens (2 per deck)\r\n<br>\r\n• 2 reference cards (1 per deck)"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166232324"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 496049,
+        "lowPrice": 20.5,
+        "midPrice": 22.1,
+        "highPrice": 23.7,
+        "marketPrice": 23.85,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

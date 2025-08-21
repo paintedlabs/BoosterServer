@@ -1,0 +1,73 @@
+{
+  "uuid": "b89670b7-5c08-5599-94a0-5e92f7609248",
+  "name": "Zendikar Intro Pack Black Rise of the Vampires",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100212",
+    "cardKingdomId": "127773",
+    "cardtraderId": "47433",
+    "mcmId": "210148",
+    "scgId": "SLD-MTG-INT-ZENINTRO-EN-RISE",
+    "tcgplayerProductId": "32796",
+    "tntId": "279890"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/5b729d6da6594616"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Rise of the Vampires",
+        "set": "zen"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Zendikar Booster Pack",
+        "set": "zen",
+        "uuid": "a2630e5d-f1ae-53b8-b5e2-938d77123f73"
+      }
+    ]
+  },
+  "setCode": "ZEN",
+  "setName": "Zendikar",
+  "tcgcsvData": {
+    "product": {
+      "productId": 32796,
+      "name": "Zendikar - Intro Pack - Black - Rise of the Vampires",
+      "cleanName": "Zendikar Intro Pack Black Rise of the Vampires",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32796_200w.jpg",
+      "categoryId": 1,
+      "groupId": 124,
+      "url": "https://www.tcgplayer.com/product/32796/magic-zendikar-zendikar-intro-pack-black-rise-of-the-vampires",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Zendikar is a new world for Magic: The Gathering, and is the first set in the Zendikar block. It features 249 black-bordered cards, including randomly inserted premium versions of all cards in the set. It will be available in booster packs, intro packs, and fat packs.<br><br><strong>Deadly Perils, Priceless Treasures </strong><br>Enter a plane filled with lethal risks and priceless rewards. On Zendikar, mana works in ways never before experienced. This mana is Zendikar's unique treasure, one that planeswalkers from across the Multiverse risk their lives to acquire. Dare to join them.<br><br>Zendikar is a world of adventure and reward for those with the courage to brave its perils."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 32796,
+        "lowPrice": 79.99,
+        "midPrice": 79.99,
+        "highPrice": 79.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

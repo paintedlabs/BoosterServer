@@ -1,0 +1,82 @@
+{
+  "uuid": "2e2fa533-c4c8-550e-97cb-b3a4ea1584aa",
+  "name": "Commander 2019 Commander Deck Merciless Rage",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2019-08-23",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1588293",
+    "cardKingdomId": "226722",
+    "cardtraderId": "59154",
+    "csiId": "277483",
+    "mcmId": "390297",
+    "scgId": "SLD-MTG-MLT-C19-EN-MERCILESS",
+    "tcgplayerProductId": "196280",
+    "tntId": "1543881"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/68379fbf0cd34591",
+    "tcgplayer": "https://mtgjson.com/links/d8777e6ca93d819c"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Merciless Rage",
+        "set": "c19"
+      }
+    ],
+    "other": [
+      {
+        "name": "Foil Oversized Commander"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      },
+      {
+        "name": "Reference Card and Strategy Insert"
+      },
+      {
+        "name": "Deck Box"
+      }
+    ]
+  },
+  "setCode": "C19",
+  "setName": "Commander 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 196280,
+      "name": "Commander 2019 Deck - Merciless Rage",
+      "cleanName": "Commander 2019 Deck Merciless Rage",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/196280_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2481,
+      "url": "https://www.tcgplayer.com/product/196280/magic-commander-2019-commander-2019-deck-merciless-rage",
+      "modifiedOn": "2019-08-08T19:19:10.323",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-08-23T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Rakdos (Black-Red) Madness deck \"Merciless Rage\" featuring Anje Falkenrath."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 196280,
+        "lowPrice": 36.49,
+        "midPrice": 48.44,
+        "highPrice": 58.97,
+        "marketPrice": 43.91,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

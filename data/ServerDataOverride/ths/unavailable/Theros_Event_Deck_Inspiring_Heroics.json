@@ -1,0 +1,65 @@
+{
+  "uuid": "94695fd0-265f-5256-81be-95df2e6701df",
+  "name": "Theros Event Deck Inspiring Heroics",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "event",
+  "identifiers": {
+    "abuId": "1101208",
+    "cardKingdomId": "191728",
+    "cardtraderId": "48030",
+    "mcmId": "264769",
+    "scgId": "SLD-MTG-INT-THSEVENT-EN",
+    "tcgplayerProductId": "70986",
+    "tntId": "1043367"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f4f244dada11bf3d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Inspiring Heroics",
+        "set": "ths"
+      }
+    ]
+  },
+  "setCode": "THS",
+  "setName": "Theros",
+  "tcgcsvData": {
+    "product": {
+      "productId": 70986,
+      "name": "Theros - Event Deck - Inspiring Heroics",
+      "cleanName": "Theros Event Deck Inspiring Heroics",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70986_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1144,
+      "url": "https://www.tcgplayer.com/product/70986/magic-theros-theros-event-deck-inspiring-heroics",
+      "modifiedOn": "2021-08-05T13:27:37.147",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Theros Event Deck is called \"Inspiring Heroics.\" WIth this deck, you'll command an organized assault, using military prowess and powerful enchantments to win.\r\n<br><br>Each event deck contains a preconstructed 60-card deck, 10 rares, and a 15-card sideboard."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 70986,
+        "lowPrice": 21.51,
+        "midPrice": 25.57,
+        "highPrice": 29.99,
+        "marketPrice": 13.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -16,10 +16,24 @@ export function createCombinedProductsRouter(dataService: DataService): Router {
       return res.status(400).json({ error: "Set code is required" });
     }
 
-    logger.info(`Received GET /combined-products/sets/${setCode} request`);
+    const hideUnavailable = req.query["hideUnavailable"] === "true";
+
+    logger.info(
+      `Received GET /combined-products/sets/${setCode} request${hideUnavailable ? " (hideUnavailable=true)" : ""}`
+    );
 
     try {
-      const products = dataService.getCombinedSealedProducts(setCode);
+      let products = dataService.getCombinedSealedProducts(setCode);
+
+      // Filter out unavailable products if requested
+      if (hideUnavailable) {
+        const originalCount = products.length;
+        products = products.filter((product) => !product.isUnavailable);
+        logger.info(
+          `Filtered ${originalCount - products.length} unavailable products from set ${setCode}`
+        );
+      }
+
       logger.info(
         `Returning ${products.length} combined sealed products for set ${setCode}`
       );

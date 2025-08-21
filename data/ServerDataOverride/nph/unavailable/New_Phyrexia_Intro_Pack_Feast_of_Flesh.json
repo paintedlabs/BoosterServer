@@ -1,0 +1,67 @@
+{
+  "uuid": "e965bc0c-286d-53db-b169-ac1728bc18a3",
+  "name": "New Phyrexia Intro Pack Feast of Flesh",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100923",
+    "cardKingdomId": "184459",
+    "cardtraderId": "47611",
+    "mcmId": "246238",
+    "scgId": "SLD-MTG-INT-NPHINTRO-EN-FEAST",
+    "tcgplayerProductId": "39406",
+    "tntId": "319972"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/52f1e511fa5cde2b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Feast of Flesh",
+        "set": "nph"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "New Phyrexia Booster Pack",
+        "set": "nph",
+        "uuid": "13798a31-0146-563b-aab8-33ae1b104684"
+      }
+    ]
+  },
+  "setCode": "NPH",
+  "setName": "New Phyrexia",
+  "tcgcsvData": {
+    "product": {
+      "productId": 39406,
+      "name": "New Phyrexia - Intro Pack - Feast of Flesh",
+      "cleanName": "New Phyrexia Intro Pack Feast of Flesh",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/39406_200w.jpg",
+      "categoryId": 1,
+      "groupId": 79,
+      "url": "https://www.tcgplayer.com/product/39406/magic-new-phyrexia-new-phyrexia-intro-pack-feast-of-flesh",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 39406,
+        "lowPrice": 93.95,
+        "midPrice": 95.94,
+        "highPrice": 99.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

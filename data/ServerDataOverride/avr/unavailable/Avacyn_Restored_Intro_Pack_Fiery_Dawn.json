@@ -1,0 +1,68 @@
+{
+  "uuid": "a49e505e-a3bb-5012-bd72-4b5fe38b6571",
+  "name": "Avacyn Restored Intro Pack Fiery Dawn",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2012-05-04",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100131",
+    "cardKingdomId": "186996",
+    "cardtraderId": "47738",
+    "mcmId": "254193",
+    "scgId": "SLD-MTG-INT-AVRINTRO-EN-FIERY",
+    "tcgplayerProductId": "58265",
+    "tntId": "374482"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c5b4dfe43a1ee2d0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Fiery Dawn",
+        "set": "avr"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Avacyn Restored Booster Pack",
+        "set": "avr",
+        "uuid": "b5137aa5-dd29-5f60-92fb-aa2c39a65a03"
+      }
+    ]
+  },
+  "setCode": "AVR",
+  "setName": "Avacyn Restored",
+  "tcgcsvData": {
+    "product": {
+      "productId": 58265,
+      "name": "Avacyn Restored - Intro Pack - Fiery Dawn",
+      "cleanName": "Avacyn Restored Intro Pack Fiery Dawn",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/58265_200w.jpg",
+      "categoryId": 1,
+      "groupId": 362,
+      "url": "https://www.tcgplayer.com/product/58265/magic-avacyn-restored-avacyn-restored-intro-pack-fiery-dawn",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-05-04T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 58265,
+        "lowPrice": 100,
+        "midPrice": 100,
+        "highPrice": 100,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

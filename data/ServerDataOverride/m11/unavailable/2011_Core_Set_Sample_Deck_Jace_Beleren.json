@@ -1,0 +1,49 @@
+{
+  "uuid": "0a81606c-70e4-5253-aa34-9d78738b09a3",
+  "name": "2011 Core Set Sample Deck Jace Beleren",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47519",
+    "mcmId": "287573"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Blue Deck A",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Blue Deck B",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "M11",
+  "setName": "Magic 2011"
+}

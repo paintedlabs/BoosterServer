@@ -1,0 +1,73 @@
+{
+  "uuid": "e3bf0b9a-2ef8-58c3-b051-a4cfa6db558d",
+  "name": "Worldwake Intro Pack Brute Force",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1107781",
+    "cardKingdomId": "129941",
+    "cardtraderId": "47456",
+    "mcmId": "210198",
+    "scgId": "SLD-MTG-INT-WWKINTRO-EN-BRUTE",
+    "tcgplayerProductId": "196799",
+    "tntId": "287101"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c42885fd2ef71bca"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Brute Force",
+        "set": "wwk"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Worldwake Booster Pack",
+        "set": "wwk",
+        "uuid": "d40674d1-34ff-5855-8dad-7718eaa462aa"
+      }
+    ]
+  },
+  "setCode": "WWK",
+  "setName": "Worldwake",
+  "tcgcsvData": {
+    "product": {
+      "productId": 196799,
+      "name": "Worldwake Intro Pack - Brute Force",
+      "cleanName": "Worldwake Intro Pack Brute Force",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/196799_200w.jpg",
+      "categoryId": 1,
+      "groupId": 122,
+      "url": "https://www.tcgplayer.com/product/196799/magic-worldwake-worldwake-intro-pack-brute-force",
+      "modifiedOn": "2021-03-31T13:19:42.953",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The \"Brute Force\" deck gives you the reins of Zendikar's largest monsters. Use them to stomp the competition into the ground!\r\n<br>\r\n<br>Each intro pack includes:\r\n<br>• 1 Premium card\r\n<br>• 40-card preconstructed deck\r\n<br>• One Worldwake booster pack\r\n<br>• A strategy and mechanics guide\r\n<br>• A learn-to-play insert for new players"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 196799,
+        "lowPrice": 39.99,
+        "midPrice": 54.97,
+        "highPrice": 64.94,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

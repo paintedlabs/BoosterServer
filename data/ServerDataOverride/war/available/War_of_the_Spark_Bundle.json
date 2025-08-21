@@ -1,0 +1,91 @@
+{
+  "uuid": "432cae17-5209-5c02-9442-cf6ad72a81eb",
+  "name": "War of the Spark Bundle",
+  "category": "bundle",
+  "releaseDate": "2019-05-03",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1567940",
+    "cardKingdomId": "224023",
+    "cardtraderId": "56901",
+    "csiId": "272413",
+    "mcmId": "370645",
+    "scgId": "SLD-MTG-BUN-WAR-EN",
+    "tcgplayerProductId": "185678",
+    "tntId": "1469259"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/ee28a0adc3aa03a9",
+    "tcgplayer": "https://mtgjson.com/links/e1fb3a72a1bf87f1"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "1 card box"
+      },
+      {
+        "name": "1 player’s guide"
+      },
+      {
+        "name": "80-card land pack"
+      },
+      {
+        "name": "1 learn-to-play insert"
+      },
+      {
+        "name": "1 Spindown life counter"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "War of the Spark Booster Pack",
+        "set": "war",
+        "uuid": "3020fb4c-6968-514c-81da-09f7f6a907ec"
+      }
+    ]
+  },
+  "setCode": "WAR",
+  "setName": "War of the Spark",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185678,
+      "name": "War of the Spark - Bundle",
+      "cleanName": "War of the Spark Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185678_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2418,
+      "url": "https://www.tcgplayer.com/product/185678/magic-war-of-the-spark-war-of-the-spark-bundle",
+      "modifiedOn": "2019-04-01T15:28:18.41",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-05-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "]Contains:\r\n<br>• 10 War of the Spark booster packs \r\n<br>• 1 card box \r\n<br>• 1 player’s guide \r\n<br>• 1 80-card land pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 Spindown life counter"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509753369"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185678,
+        "lowPrice": 64,
+        "midPrice": 78.65,
+        "highPrice": 101.19,
+        "marketPrice": 75.18,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

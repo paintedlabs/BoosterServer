@@ -1,0 +1,49 @@
+{
+  "uuid": "2200f8b2-75f6-5d45-a377-7e35b06427cc",
+  "name": "2011 Core Set Sample Deck Chandra Nalaar",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47517",
+    "mcmId": "287571"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Red Deck A",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Red Deck B",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "M11",
+  "setName": "Magic 2011"
+}

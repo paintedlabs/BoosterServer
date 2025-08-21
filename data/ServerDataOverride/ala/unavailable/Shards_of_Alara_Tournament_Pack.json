@@ -1,0 +1,60 @@
+{
+  "uuid": "f0fe45b8-af2c-5ff4-9376-85e32cec4172",
+  "name": "Shards of Alara Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1101164",
+    "cardKingdomId": "125623",
+    "cardtraderId": "47330",
+    "mcmId": "248486",
+    "scgId": "SLD-MTG-PCK-ALATOURNAMENT-EN",
+    "tcgplayerProductId": "118881",
+    "tntId": "183787"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/44b82213ae472576",
+    "tcgplayer": "https://mtgjson.com/links/ec4cf4595430bb5a"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "ala"
+      }
+    ]
+  },
+  "setCode": "ALA",
+  "setName": "Shards of Alara",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118881,
+      "name": "Shards of Alara Tournament Pack",
+      "cleanName": "Shards of Alara Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118881_200w.jpg",
+      "categoryId": 1,
+      "groupId": 103,
+      "url": "https://www.tcgplayer.com/product/118881/magic-shards-of-alara-shards-of-alara-tournament-pack",
+      "modifiedOn": "2016-06-06T15:22:32.837",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 118881,
+        "lowPrice": 49.99,
+        "midPrice": 99.99,
+        "highPrice": 149.99,
+        "marketPrice": 52.49,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

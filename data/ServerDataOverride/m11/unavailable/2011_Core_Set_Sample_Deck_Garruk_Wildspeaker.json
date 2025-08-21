@@ -1,0 +1,49 @@
+{
+  "uuid": "ab50bceb-299c-5cdb-a01d-d66bdf9a2b7c",
+  "name": "2011 Core Set Sample Deck Garruk Wildspeaker",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47518",
+    "mcmId": "287572"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Green Deck A",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Green Deck B",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "M11",
+  "setName": "Magic 2011"
+}

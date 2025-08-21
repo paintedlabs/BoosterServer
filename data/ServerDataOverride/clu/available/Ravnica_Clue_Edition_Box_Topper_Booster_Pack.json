@@ -1,0 +1,61 @@
+{
+  "uuid": "fc7fa0da-7c80-5336-8f94-75bc24fec1f6",
+  "name": "Ravnica Clue Edition Box Topper Booster Pack",
+  "category": "booster_pack",
+  "cardCount": 1,
+  "subtype": "topper",
+  "identifiers": {
+    "cardtraderId": "270502",
+    "mcmId": "749353",
+    "tcgplayerProductId": "618918"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b433063e07c88ba0"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "box-topper",
+        "set": "clu"
+      }
+    ]
+  },
+  "setCode": "CLU",
+  "setName": "Ravnica: Clue Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 618918,
+      "name": "Ravnica: Clue Edition - Shock Land Box Topper",
+      "cleanName": "Ravnica Clue Edition Shock Land Box Topper",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/618918_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23362,
+      "url": "https://www.tcgplayer.com/product/618918/magic-ravnica-clue-edition-ravnica-clue-edition-shock-land-box-topper",
+      "modifiedOn": "2025-02-19T15:38:49.78",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each sealed Shock Land Box Topper pack contains 1 special art card."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 618918,
+        "lowPrice": 27,
+        "midPrice": 28.95,
+        "highPrice": 46,
+        "marketPrice": 26.57,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}
