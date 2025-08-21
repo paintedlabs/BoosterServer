@@ -81,15 +81,9 @@ The existing single-file structure has been automatically migrated to this new f
 1. `scripts/migrate-overrides.js` - Converted from single files to individual product files
 2. `scripts/migrate-to-new-structure.js` - Converted from UUID-based filenames to name-based filenames with availability subfolders
 
-## API Endpoints
+## File Management
 
-The server provides the following endpoints for managing overrides:
-
-- `GET /admin/overrides` - List all overrides
-- `GET /admin/overrides/:setCode` - Get products for a specific set
-- `POST /admin/overrides` - Create a new override set
-- `PUT /admin/overrides/:setCode` - Update an existing override set
-- `DELETE /admin/overrides/:setCode` - Delete an override set
+Server data overrides are managed through the file system structure. The system automatically loads and monitors changes to these files.
 
 ## Adding New Products
 
@@ -114,7 +108,6 @@ To edit an existing product:
 The system determines product availability using the `isProductAvailable()` function. By default, all products are considered available. You can customize this logic by modifying the function in:
 
 - `src/services/dataService.ts` - For the main data service
-- `src/routes/admin.ts` - For the admin API
 
 Common criteria for availability might include:
 - Presence of purchase URLs
