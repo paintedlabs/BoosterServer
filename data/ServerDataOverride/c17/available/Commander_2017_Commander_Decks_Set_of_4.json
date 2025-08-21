@@ -1,0 +1,84 @@
+{
+  "uuid": "05bfddd4-4705-5cd3-80a2-25ad25091a86",
+  "name": "Commander 2017 Commander Decks Set of 4",
+  "category": "subset",
+  "releaseDate": "2017-08-25",
+  "subtype": "commander",
+  "identifiers": {
+    "cardtraderId": "44565",
+    "csiId": "242588",
+    "mcmId": "297871",
+    "scgId": "SLD-MTG-MLT-C17-EN-SET4",
+    "tcgplayerProductId": "139103",
+    "tntId": "1126478"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/477c96fc3b95b8b9"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander 2017 Commander Deck Arcane Wizardry",
+        "set": "c17",
+        "uuid": "f82f8fcf-4049-5b05-a1c9-27770d625ba1"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2017 Commander Deck Draconic Domination",
+        "set": "c17",
+        "uuid": "a92e9f52-f3a2-5db6-9e4c-c88fd4ec0c8e"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2017 Commander Deck Feline Ferocity",
+        "set": "c17",
+        "uuid": "ad66640b-ed92-5eb5-b603-ff2130d6af92"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2017 Commander Deck Vampiric Bloodlust",
+        "set": "c17",
+        "uuid": "688b6d53-b1ad-5bed-a83a-357fc8b2b865"
+      }
+    ]
+  },
+  "setCode": "C17",
+  "setName": "Commander 2017",
+  "tcgcsvData": {
+    "product": {
+      "productId": 139103,
+      "name": "Commander 2017 - Set of 4",
+      "cleanName": "Commander 2017 Set of 4",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/139103_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2009,
+      "url": "https://www.tcgplayer.com/product/139103/magic-commander-2017-commander-2017-set-of-4",
+      "modifiedOn": "2017-08-17T17:32:44.737",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-08-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect each one of the new Commander 2017 Decks. Commander returns with four new tribal-themed, 100-card decks, featuring 56 all-new Magic cards legal in Eternal formats (Vintage and Legacy). Cards from Commander (2017 Edition) will be featured and distributed in connection with a future offering on Magic Online."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 139103,
+        "lowPrice": 970.01,
+        "midPrice": 1300,
+        "highPrice": 1975,
+        "marketPrice": 960,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

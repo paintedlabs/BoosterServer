@@ -1,0 +1,73 @@
+{
+  "uuid": "5f1dfd55-f9c9-5ca2-8df6-390487c9b268",
+  "name": "Conflux Intro Pack Esper Air Assault",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100334",
+    "cardKingdomId": "126577",
+    "cardtraderId": "47346",
+    "mcmId": "244160",
+    "scgId": "SLD-MTG-INT-CFXINTRO-EN-ESPER",
+    "tcgplayerProductId": "501362",
+    "tntId": "242000"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c7b4eaa3906c6c49"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Esper Air Assault",
+        "set": "con"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Conflux Booster Pack",
+        "set": "con",
+        "uuid": "ee25fb77-38eb-56ce-8369-917cd2c0566b"
+      }
+    ]
+  },
+  "setCode": "CON",
+  "setName": "Conflux",
+  "tcgcsvData": {
+    "product": {
+      "productId": 501362,
+      "name": "Conflux - Intro Pack - Esper Air Assault",
+      "cleanName": "Conflux Intro Pack Esper Air Assault",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/501362_200w.jpg",
+      "categoryId": 1,
+      "groupId": 26,
+      "url": "https://www.tcgplayer.com/product/501362/magic-conflux-conflux-intro-pack-esper-air-assault",
+      "modifiedOn": "2023-06-16T13:06:17.65",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Intro Pack contains 41-card deck featuring 1 foil premium card."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 501362,
+        "lowPrice": 70,
+        "midPrice": 70,
+        "highPrice": 70,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

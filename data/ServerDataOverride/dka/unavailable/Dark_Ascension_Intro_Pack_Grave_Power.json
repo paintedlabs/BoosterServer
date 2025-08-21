@@ -1,0 +1,74 @@
+{
+  "uuid": "b516152d-556c-53ef-a78f-0e594ed604d3",
+  "name": "Dark Ascension Intro Pack Grave Power",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2012-02-03",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100363",
+    "cardKingdomId": "186293",
+    "cardtraderId": "47704",
+    "mcmId": "252510",
+    "scgId": "SLD-MTG-INT-DKAINTRO-EN-GRAVE",
+    "tcgplayerProductId": "57629",
+    "tntId": "329610"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d80afb1eac28f64d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Grave Power",
+        "set": "dka"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Dark Ascension Booster Pack",
+        "set": "dka",
+        "uuid": "e52ef13e-32e0-5b18-853d-4c36283f4743"
+      }
+    ]
+  },
+  "setCode": "DKA",
+  "setName": "Dark Ascension",
+  "tcgcsvData": {
+    "product": {
+      "productId": 57629,
+      "name": "Dark Ascension - Intro Pack - Grave Power",
+      "cleanName": "Dark Ascension Intro Pack Grave Power",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/57629_200w.jpg",
+      "categoryId": 1,
+      "groupId": 125,
+      "url": "https://www.tcgplayer.com/product/57629/magic-dark-ascension-dark-ascension-intro-pack-grave-power",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-02-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "653569695363"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 57629,
+        "lowPrice": 25.97,
+        "midPrice": 25.97,
+        "highPrice": 25.97,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

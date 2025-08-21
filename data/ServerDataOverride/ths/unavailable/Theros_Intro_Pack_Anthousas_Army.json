@@ -1,0 +1,75 @@
+{
+  "uuid": "9f0b05fb-9902-5f4f-8860-c6fc25c23ae0",
+  "name": "Theros Intro Pack Anthousas Army",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101211",
+    "cardKingdomId": "191126",
+    "cardtraderId": "48031",
+    "mcmId": "264174",
+    "scgId": "SLD-MTG-INT-THSINTRO-EN-ANTHOUSA",
+    "tcgplayerProductId": "70984",
+    "tntId": "1043366"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/6227fc40c202aa9e"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Anthousa's Army",
+        "set": "ths"
+      }
+    ],
+    "other": [
+      {
+        "name": "Magic Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn-to-Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "THS",
+  "setName": "Theros",
+  "tcgcsvData": {
+    "product": {
+      "productId": 70984,
+      "name": "Theros - Intro Pack - Anthousa, Setessan Hero",
+      "cleanName": "Theros Intro Pack Anthousa Setessan Hero",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70984_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1144,
+      "url": "https://www.tcgplayer.com/product/70984/magic-theros-theros-intro-pack-anthousa-setessan-hero",
+      "modifiedOn": "2014-01-06T17:47:10.187",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 70984,
+        "lowPrice": 14.99,
+        "midPrice": 20.74,
+        "highPrice": 59.99,
+        "marketPrice": 18.29,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

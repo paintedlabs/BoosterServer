@@ -1,0 +1,65 @@
+{
+  "uuid": "2a48ac0a-57ff-5d3d-a8f0-84447ca6084c",
+  "name": "Magic Origins Clash Pack",
+  "category": "multiple_decks",
+  "cardCount": 120,
+  "releaseDate": "2015-07-17",
+  "subtype": "clash",
+  "identifiers": {
+    "abuId": "1100856",
+    "cardKingdomId": "201586",
+    "cardtraderId": "48302",
+    "csiId": "212325",
+    "mcmId": "283381",
+    "scgId": "SLD-MTG-INT-ORICLASH-EN",
+    "tcgplayerProductId": "96150",
+    "tntId": "1074722"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/57c15054443614de"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Armed",
+        "set": "ori"
+      },
+      {
+        "name": "Dangerous",
+        "set": "ori"
+      }
+    ]
+  },
+  "setCode": "ORI",
+  "setName": "Magic Origins",
+  "tcgcsvData": {
+    "product": {
+      "productId": 96150,
+      "name": "Magic Origins - Clash Pack",
+      "cleanName": "Magic Origins Clash Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/96150_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1512,
+      "url": "https://www.tcgplayer.com/product/96150/magic-magic-origins-magic-origins-clash-pack",
+      "modifiedOn": "2015-07-13T16:47:58.633",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2015-07-17T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 96150,
+        "lowPrice": 18.87,
+        "midPrice": 24.84,
+        "highPrice": 49.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

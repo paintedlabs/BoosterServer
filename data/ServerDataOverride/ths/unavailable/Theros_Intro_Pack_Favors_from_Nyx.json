@@ -1,0 +1,75 @@
+{
+  "uuid": "517d3eba-0168-5ead-8642-768c65b9631f",
+  "name": "Theros Intro Pack Favors from Nyx",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101215",
+    "cardKingdomId": "191122",
+    "cardtraderId": "48034",
+    "mcmId": "264170",
+    "scgId": "SLD-MTG-INT-THSINTRO-EN-FAVORS",
+    "tcgplayerProductId": "70980",
+    "tntId": "1043362"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4572e3a6aa321e2d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Favors From Nyx",
+        "set": "ths"
+      }
+    ],
+    "other": [
+      {
+        "name": "Magic Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn-to-Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "THS",
+  "setName": "Theros",
+  "tcgcsvData": {
+    "product": {
+      "productId": 70980,
+      "name": "Theros - Intro Pack - Celestial Archon",
+      "cleanName": "Theros Intro Pack Celestial Archon",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70980_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1144,
+      "url": "https://www.tcgplayer.com/product/70980/magic-theros-theros-intro-pack-celestial-archon",
+      "modifiedOn": "2014-01-06T17:47:14.273",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 70980,
+        "lowPrice": 14.99,
+        "midPrice": 20,
+        "highPrice": 23,
+        "marketPrice": 16.65,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

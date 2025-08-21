@@ -1,0 +1,83 @@
+{
+  "uuid": "992286d3-0fd1-524e-88f5-c050d1714a61",
+  "name": "Core Set 2019 Spellslinger Starter Kit",
+  "category": "multiple_decks",
+  "cardCount": 120,
+  "releaseDate": "2018-10-05",
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "abuId": "1534232",
+    "cardKingdomId": "222236",
+    "csiId": "263991",
+    "mcmId": "362757",
+    "scgId": "SLD-MTG-INT-M19SPELLSLINGER-EN",
+    "tcgplayerProductId": "174136",
+    "tntId": "1189134"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/196ed3b189697380"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Black-Green Deck",
+        "set": "m19"
+      },
+      {
+        "name": "Red-White Deck",
+        "set": "m19"
+      }
+    ],
+    "other": [
+      {
+        "name": "Rules and World of Magic Booklet"
+      },
+      {
+        "name": "2 Spellslinger Spindowns"
+      }
+    ]
+  },
+  "setCode": "M19",
+  "setName": "Core Set 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 174136,
+      "name": "Spellslinger Starter Kit",
+      "cleanName": "Spellslinger Starter Kit",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/174136_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2307,
+      "url": "https://www.tcgplayer.com/product/174136/magic-spellslinger-starter-kit-spellslinger-starter-kit",
+      "modifiedOn": "2019-06-24T14:28:02.02",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Spellslinger Starter Kit is a new option for beginners to get a smooth introduction into Magic. It comes with two Standard-legal 60-card decks—designed to create an interactive learning experience for two.\r\n<br>Contents: \r\n<br>• 2 60-card, Standard-legal decks\r\n<br>• 2 Quick-start guides\r\n<br>• Rules and world-of-Magic booklet\r\n<br>• 2 “do no shuffle”/\"on your turn\" cards\r\n<br>• Two Spindown life counters"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509741069"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 174136,
+        "lowPrice": 30,
+        "midPrice": 34.69,
+        "highPrice": 39.99,
+        "marketPrice": 33.03,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

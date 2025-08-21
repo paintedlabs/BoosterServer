@@ -1,0 +1,97 @@
+{
+  "uuid": "2d5382ed-92c6-574e-980a-3b7e7f5837f8",
+  "name": "Throne of Eldraine Bundle",
+  "category": "bundle",
+  "releaseDate": "2019-10-04",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1596554",
+    "cardKingdomId": "227294",
+    "cardtraderId": "59125",
+    "csiId": "281873",
+    "mcmId": "389642",
+    "scgId": "SLD-MTG-BUN-ELD-EN",
+    "tcgplayerProductId": "194894",
+    "tntId": "1585800"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/44b94afaef417c07",
+    "tcgplayer": "https://mtgjson.com/links/50097a7eab9cc505"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Piper of the Swarm",
+        "number": "392",
+        "set": "eld",
+        "uuid": "37fdc0d7-976d-5e5e-af6c-ee6b50795454"
+      }
+    ],
+    "other": [
+      {
+        "name": "20 foil basic lands"
+      },
+      {
+        "name": "20 nonfoil basic lands"
+      },
+      {
+        "name": "Throne of Eldraine oversized spindown"
+      },
+      {
+        "name": "Reusable card storage box"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Throne of Eldraine Draft Booster Pack",
+        "set": "eld",
+        "uuid": "21d471fb-dfea-5778-99ff-65a3e2264501"
+      }
+    ]
+  },
+  "setCode": "ELD",
+  "setName": "Throne of Eldraine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 194894,
+      "name": "Throne of Eldraine - Bundle",
+      "cleanName": "Throne of Eldraine Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/194894_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2494,
+      "url": "https://www.tcgplayer.com/product/194894/magic-throne-of-eldraine-throne-of-eldraine-bundle",
+      "modifiedOn": "2019-07-22T15:34:50.737",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-10-04T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Throne of Eldraine Bundle lets fans dive into the new set with boosters and other accessories to help update their decks for the new Standard environment.\r\n<br><br>\r\n<strong>Contents:</strong>\r\n<br>• 10 Throne of Eldraine booster packs\r\n<br>• 20 foil land pack\r\n<br>• 20 regular land pack\r\n<br>• 1 foil promo card\r\n<br>• 1 oversized Spindown life counter (1.5\")\r\n<br>• 2 reference cards\r\n<br>• 1 reusable card storage box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509786305"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 194894,
+        "lowPrice": 87.92,
+        "midPrice": 90,
+        "highPrice": 199.99,
+        "marketPrice": 87.01,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

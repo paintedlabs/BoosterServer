@@ -1,0 +1,75 @@
+{
+  "uuid": "2364f3c8-beb5-532f-abeb-5c7314130ec1",
+  "name": "Theros Intro Pack Blazing Beasts of Myth",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101213",
+    "cardKingdomId": "191124",
+    "cardtraderId": "48032",
+    "mcmId": "264173",
+    "scgId": "SLD-MTG-INT-THSINTRO-EN-BLAZING",
+    "tcgplayerProductId": "70983",
+    "tntId": "1043365"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/846b66f9ecb9dd28"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Blazing Beasts of Myth",
+        "set": "ths"
+      }
+    ],
+    "other": [
+      {
+        "name": "Magic Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn-to-Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "THS",
+  "setName": "Theros",
+  "tcgcsvData": {
+    "product": {
+      "productId": 70983,
+      "name": "Theros - Intro Pack - Ember Swallower",
+      "cleanName": "Theros Intro Pack Ember Swallower",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70983_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1144,
+      "url": "https://www.tcgplayer.com/product/70983/magic-theros-theros-intro-pack-ember-swallower",
+      "modifiedOn": "2014-01-06T17:47:18.217",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 70983,
+        "lowPrice": 14.99,
+        "midPrice": 23.32,
+        "highPrice": 52.24,
+        "marketPrice": 15.38,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -27,6 +27,24 @@ export class ValidationError extends AppError {
   }
 }
 
+export class PackGenerationError extends AppError {
+  constructor(message: string = "Failed to generate pack") {
+    super(message, 500);
+  }
+}
+
+export class IncompletePackError extends AppError {
+  constructor(message: string = "Generated pack is incomplete") {
+    super(message, 500);
+  }
+}
+
+export class DataIntegrityError extends AppError {
+  constructor(message: string = "Data integrity check failed") {
+    super(message, 500);
+  }
+}
+
 export class InternalServerError extends AppError {
   constructor(message: string = "Internal server error") {
     super(message, 500, false);

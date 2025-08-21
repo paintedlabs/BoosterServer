@@ -1,0 +1,67 @@
+{
+  "uuid": "5b668c61-62fa-572a-ab0d-19234b47614e",
+  "name": "Alara Reborn Intro Pack Unnatural Schemes",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100100",
+    "cardKingdomId": "127031",
+    "cardtraderId": "47364",
+    "mcmId": "244165",
+    "scgId": "SLD-MTG-INT-ARBINTRO-EN-UNNATURAL",
+    "tcgplayerProductId": "96432",
+    "tntId": "247408"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7d73d362c2c286b6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Unnatural Schemes",
+        "set": "arb"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Alara Reborn Booster Pack",
+        "set": "arb",
+        "uuid": "77285ba5-fa21-5d46-8037-8da7222bacd9"
+      }
+    ]
+  },
+  "setCode": "ARB",
+  "setName": "Alara Reborn",
+  "tcgcsvData": {
+    "product": {
+      "productId": 96432,
+      "name": "Alara Reborn - Intro Pack - Unnatural Schemes",
+      "cleanName": "Alara Reborn Intro Pack Unnatural Schemes",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/96432_200w.jpg",
+      "categoryId": 1,
+      "groupId": 5,
+      "url": "https://www.tcgplayer.com/product/96432/magic-alara-reborn-alara-reborn-intro-pack-unnatural-schemes",
+      "modifiedOn": "2021-08-05T13:28:59.693",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 96432,
+        "lowPrice": 50,
+        "midPrice": 58,
+        "highPrice": 63.21,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

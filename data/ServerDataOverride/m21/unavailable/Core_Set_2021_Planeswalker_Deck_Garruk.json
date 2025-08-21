@@ -1,0 +1,74 @@
+{
+  "uuid": "c3fb860d-a205-5fa8-a121-c962efe554b9",
+  "name": "Core Set 2021 Planeswalker Deck Garruk",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2020-07-03",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1878061",
+    "cardKingdomId": "233867",
+    "cardtraderId": "133975",
+    "csiId": "297732",
+    "mcmId": "467349",
+    "tcgplayerProductId": "215465",
+    "tntId": "1605727"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/6cebf0ed5fb91f00"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Garruk, Savage Herald",
+        "set": "m21"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2021 Draft Booster Pack",
+        "set": "m21",
+        "uuid": "61ee3ba9-54d4-55e6-8c49-3977d922f30e"
+      }
+    ]
+  },
+  "setCode": "M21",
+  "setName": "Core Set 2021",
+  "tcgcsvData": {
+    "product": {
+      "productId": 215465,
+      "name": "Core Set 2021 - Planeswalker Deck [Garruk]",
+      "cleanName": "Core Set 2021 Planeswalker Deck Garruk",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/215465_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2653,
+      "url": "https://www.tcgplayer.com/product/215465/magic-core-set-2021-core-set-2021-planeswalker-deck-garruk",
+      "modifiedOn": "2020-06-06T16:41:00.95",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-07-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contents:\r\n<br>• 1 ready-to-play 60-card deck featuring a foil planeswalker card\r\n<br>• 1 Core Set 2021 Draft Booster\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card*\r\n<br><em>*Available only in certain regions</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 215465,
+        "lowPrice": 14.99,
+        "midPrice": 24.97,
+        "highPrice": 24.99,
+        "marketPrice": 21.24,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

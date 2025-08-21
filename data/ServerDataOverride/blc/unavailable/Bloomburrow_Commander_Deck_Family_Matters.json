@@ -1,0 +1,92 @@
+{
+  "uuid": "8e163096-61b2-56fb-911b-ec87b164cb92",
+  "name": "Bloomburrow Commander Deck Family Matters",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2024-08-02",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2514709",
+    "cardKingdomId": "298738",
+    "cardtraderId": "280702",
+    "csiId": "384255",
+    "mcmId": "774135",
+    "miniaturemarketId": "299653",
+    "scgId": "SLD-MTG-MLT-BLC-EN-FAMILY",
+    "tcgplayerProductId": "541247"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/4b8414786c4f4b32",
+    "tcgplayer": "https://mtgjson.com/links/6c964f4fe5aa0e89"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Family Matters",
+        "set": "blc"
+      }
+    ],
+    "other": [
+      {
+        "name": "Spinning life counter"
+      },
+      {
+        "name": "10 double sided tokens"
+      },
+      {
+        "name": "Paper deck box"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Bloomburrow Collector Booster Sample Pack",
+        "set": "blb",
+        "uuid": "f71cc023-917a-5853-8363-9a040ad5e22a"
+      }
+    ]
+  },
+  "setCode": "BLC",
+  "setName": "Bloomburrow Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 541247,
+      "name": "Bloomburrow Commander Deck - Family Matters",
+      "cleanName": "Bloomburrow Commander Deck Family Matters",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/541247_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23448,
+      "url": "https://www.tcgplayer.com/product/541247/magic-commander-bloomburrow-bloomburrow-commander-deck-family-matters",
+      "modifiedOn": "2024-08-02T04:09:20.543",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2024-08-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "In Bloomburrow™, the Valley is threatened by elemental forces raging out of control, and salvation falls on the shoulders of its smallest protectors. Players will put their best paws forward, fighting alongside mice, frogs, bats, birds, and myriad other critters to restore the balance of peace—and prove bravery comes in all sizes.\r\n<br>\r\nIn Commander, four players come together to show their strength and strategy, with one player coming out on top. Each 100-card ready-to-play Bloomburrow™ Commander Deck makes it easy for Commander fans in your store to grab a deck and play right away.\r\n<br>\r\nContents:\r\n<br>\r\n• 1 ready-to-play deck of 100 Magic cards (1 Borderless Foil Face Card, 1 Borderless Imagine: Courageous Critters Foil Card, 98 nonfoil cards)\r\n<br>\r\n• 2-card Collector Booster Sample Pack\r\n<br>\r\n• 15 new-to-Magic cards\r\n<br>\r\n• 10 double-sided tokens\r\n<br>\r\n• 1 deck box (can hold 100 sleeved cards)\r\n<br>\r\n• 1 Life Wheel\r\n<br>\r\n• 1 strategy insert\r\n<br>\r\n• 1 reference card"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166257181"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 541247,
+        "lowPrice": 34.99,
+        "midPrice": 45,
+        "highPrice": 85,
+        "marketPrice": 42.32,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

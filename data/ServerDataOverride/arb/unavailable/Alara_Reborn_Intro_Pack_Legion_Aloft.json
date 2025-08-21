@@ -1,0 +1,67 @@
+{
+  "uuid": "9c45e2b2-58ec-5e6d-90b4-92ab1ce9588d",
+  "name": "Alara Reborn Intro Pack Legion Aloft",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100098",
+    "cardKingdomId": "127029",
+    "cardtraderId": "47367",
+    "mcmId": "244164",
+    "scgId": "SLD-MTG-INT-ARBINTRO-EN-LEGION",
+    "tcgplayerProductId": "96431",
+    "tntId": "247407"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d22a6d7aa7d758c1"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Legion Aloft",
+        "set": "arb"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Alara Reborn Booster Pack",
+        "set": "arb",
+        "uuid": "77285ba5-fa21-5d46-8037-8da7222bacd9"
+      }
+    ]
+  },
+  "setCode": "ARB",
+  "setName": "Alara Reborn",
+  "tcgcsvData": {
+    "product": {
+      "productId": 96431,
+      "name": "Alara Reborn - Intro Pack - Legion Aloft",
+      "cleanName": "Alara Reborn Intro Pack Legion Aloft",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/96431_200w.jpg",
+      "categoryId": 1,
+      "groupId": 5,
+      "url": "https://www.tcgplayer.com/product/96431/magic-alara-reborn-alara-reborn-intro-pack-legion-aloft",
+      "modifiedOn": "2021-08-05T13:28:48.893",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 96431,
+        "lowPrice": 55,
+        "midPrice": 55,
+        "highPrice": 55,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

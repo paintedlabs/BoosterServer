@@ -1,0 +1,73 @@
+{
+  "uuid": "1f0ac974-90e0-5159-91ac-f067c316d32a",
+  "name": "Aether Revolt Planeswalker Deck Tezzeret",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1476823",
+    "cardKingdomId": "210377",
+    "cardtraderId": "48502",
+    "mcmId": "294546",
+    "scgId": "SLD-MTG-INT-AERPWDECK-EN-TEZZERET",
+    "tcgplayerProductId": "125799",
+    "tntId": "1098351"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/e94c28aba4dbaa69"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Tezzeret, Master of Metal",
+        "set": "aer"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Aether Revolt Booster Pack",
+        "set": "aer",
+        "uuid": "b32a55d0-c4f8-5c16-b1ab-66ab627a25a2"
+      }
+    ]
+  },
+  "setCode": "AER",
+  "setName": "Aether Revolt",
+  "tcgcsvData": {
+    "product": {
+      "productId": 125799,
+      "name": "Aether Revolt - Planeswalker Deck [Tezzeret]",
+      "cleanName": "Aether Revolt Planeswalker Deck Tezzeret",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/125799_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1857,
+      "url": "https://www.tcgplayer.com/product/125799/magic-aether-revolt-aether-revolt-planeswalker-deck-tezzeret",
+      "modifiedOn": "2017-06-19T17:19:15.017",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring \"Tezzeret, Master of Metal\". This deck contains the following:\r\n<br>\r\n<br><b>-</b> 1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card \r\n<br><b>-</b> 2 Aether Revolt booster packs\r\n<br><b>-</b> 1 Strategy insert\r\n<br><b>-</b> 1 Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 125799,
+        "lowPrice": 20,
+        "midPrice": 23.28,
+        "highPrice": 34.95,
+        "marketPrice": 23.32,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

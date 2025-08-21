@@ -1,0 +1,92 @@
+{
+  "uuid": "41886388-9392-5ba3-bb68-2e029fe9ed4b",
+  "name": "Commander Legends Battle for Baldurs Gate Commander Deck Draconic Dissent",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-06-10",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2195742",
+    "cardKingdomId": "260610",
+    "cardtraderId": "208731",
+    "csiId": "334915",
+    "mcmId": "651790",
+    "scgId": "SLD-MTG-MLT-CLB-EN-DRACONIC",
+    "tcgplayerProductId": "267030",
+    "tntId": "1747118"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/d84cc8561d20feac",
+    "tcgplayer": "https://mtgjson.com/links/df1a8bd368d48000"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Draconic Dissent",
+        "set": "clb"
+      }
+    ],
+    "other": [
+      {
+        "name": "Cardstock Display Commander"
+      },
+      {
+        "name": "Life Tracker"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander Legends Battle for Baldurs Gate Collector Booster Sample Pack",
+        "set": "clb",
+        "uuid": "d72b8065-9cc3-531b-a4e6-16edfdec49bf"
+      }
+    ]
+  },
+  "setCode": "CLB",
+  "setName": "Commander Legends: Battle for Baldur's Gate",
+  "tcgcsvData": {
+    "product": {
+      "productId": 267030,
+      "name": "Commander Legends: Battle for Baldur's Gate - Draconic Dissent Commander Deck",
+      "cleanName": "Commander Legends Battle for Baldurs Gate Draconic Dissent Commander Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/267030_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3047,
+      "url": "https://www.tcgplayer.com/product/267030/magic-commander-legends-battle-for-baldurs-gate-commander-legends-battle-for-baldurs-gate-draconic-dissent-commander-deck",
+      "modifiedOn": "2022-06-10T04:03:55.07",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-06-10T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Play epic multiplayer games in the world of Dungeons & Dragons. The Draconic Dissent Commander Legends: Battle for Baldur’s Gate Commander Deck includes 1 ready-to-play Blue-Red deck of 100 Magic cards (3 traditional foil, 97 nonfoil), a 2-card Collector Booster Sample Pack, 1 foil-etched Display Commander (a thick cardstock copy of the commander card with foil etched into the card’s border and art), 10 double-sided tokens, 1 deck box (can hold 100 sleeved cards), 1 life tracker, and 1 reference card. Introduces 10 MTG cards not found in the main CLB set."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166181844"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 267030,
+        "lowPrice": 100,
+        "midPrice": 109.75,
+        "highPrice": 259.99,
+        "marketPrice": 93.36,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

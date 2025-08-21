@@ -1,0 +1,68 @@
+{
+  "uuid": "2fb0453a-e1fc-55e2-ab77-42aa9a2aec40",
+  "name": "Gatecrash Intro Pack Simic Synthesis",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2013-02-01",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100572",
+    "cardKingdomId": "188888",
+    "cardtraderId": "47890",
+    "mcmId": "259877",
+    "scgId": "SLD-MTG-INT-GTCINTRO-EN-SIMIC",
+    "tcgplayerProductId": "67389",
+    "tntId": "1012440"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/5d4ae208d18f8856"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Simic Synthesis",
+        "set": "gtc"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Gatecrash Booster Pack",
+        "set": "gtc",
+        "uuid": "11a63195-ea42-5624-95e9-206d788c9650"
+      }
+    ]
+  },
+  "setCode": "GTC",
+  "setName": "Gatecrash",
+  "tcgcsvData": {
+    "product": {
+      "productId": 67389,
+      "name": "Gatecrash - Intro Pack - Simic Synthesis",
+      "cleanName": "Gatecrash Intro Pack Simic Synthesis",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/67389_200w.jpg",
+      "categoryId": 1,
+      "groupId": 569,
+      "url": "https://www.tcgplayer.com/product/67389/magic-gatecrash-gatecrash-intro-pack-simic-synthesis",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2013-02-01T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 67389,
+        "lowPrice": 15,
+        "midPrice": 21.22,
+        "highPrice": 24.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

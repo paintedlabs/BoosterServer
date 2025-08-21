@@ -1,0 +1,65 @@
+{
+  "uuid": "5dab8fa5-9eaf-5ceb-845e-8ebde4f69066",
+  "name": "Jumpstart Multipack 4 Pack",
+  "category": "limited_aid_tool",
+  "subtype": "draft_set",
+  "identifiers": {
+    "tcgplayerProductId": "228819"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/fef631048577317d"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 4,
+        "name": "Jumpstart Booster Pack",
+        "set": "jmp",
+        "uuid": "ca9092e8-a921-5e37-ab9d-4b0f76bb0d01"
+      }
+    ]
+  },
+  "setCode": "JMP",
+  "setName": "Jumpstart",
+  "tcgcsvData": {
+    "product": {
+      "productId": 228819,
+      "name": "Jumpstart - Multipack (4-Pack)",
+      "cleanName": "Jumpstart Multipack 4 Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/228819_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2654,
+      "url": "https://www.tcgplayer.com/product/228819/magic-jumpstart-jumpstart-multipack-4-pack",
+      "modifiedOn": "2020-12-04T15:33:19.5",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Jumpstart Multipack includes 4 20-card booster packs, enough for you and a friend to open your packs and get straight into the action—no deckbuilding required.\r\n<br>Grab two boosters, shuffle them together, and you’re ready to go. Jumpstart is a unique way to play Magic: The Gathering (MTG) that lets you assemble a 40-card deck and start battling in minutes.\r\n<br>Contains:\r\n<br>• Four (4) Jumpstart Booster Packs\r\n<br>• Play guide"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509916597"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 228819,
+        "lowPrice": 24.99,
+        "midPrice": 52.48,
+        "highPrice": 9999.99,
+        "marketPrice": 29.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "uuid": "2887b6ac-5b7b-5e43-a6ed-34d842476706",
+  "name": "Archenemy Theme Deck Bring About the Undead Apocalypse",
+  "category": "deck",
+  "cardCount": 80,
+  "subtype": "archenemy",
+  "identifiers": {
+    "abuId": "1100116",
+    "cardKingdomId": "131302",
+    "cardtraderId": "47490",
+    "csiId": "97374",
+    "mcmId": "240523",
+    "scgId": "SLD-MTG-MLT-ARC-EN-BRINGABOUT",
+    "tcgplayerProductId": "185139",
+    "tntId": "294685"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/28ef5d3338a9083d",
+    "tcgplayer": "https://mtgjson.com/links/fdf2df446fa72dfc"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Bring About The Undead Apocalypse",
+        "set": "arc"
+      }
+    ]
+  },
+  "setCode": "ARC",
+  "setName": "Archenemy",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185139,
+      "name": "Archenemy - Theme Deck \"Bring About the Undead Apocalypse\"",
+      "cleanName": "Archenemy Theme Deck Bring About the Undead Apocalypse",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185139_200w.jpg",
+      "categoryId": 1,
+      "groupId": 12,
+      "url": "https://www.tcgplayer.com/product/185139/magic-archenemy-archenemy-theme-deck-bring-about-the-undead-apocalypse",
+      "modifiedOn": "2019-02-16T15:09:13.453",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each of the four Archenemy game packs contains a 60-card theme deck and 20 oversized Scheme cards."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185139,
+        "lowPrice": 172.95,
+        "midPrice": 172.99,
+        "highPrice": 592.54,
+        "marketPrice": 160,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

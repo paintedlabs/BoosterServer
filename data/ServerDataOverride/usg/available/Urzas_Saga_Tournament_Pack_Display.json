@@ -1,0 +1,72 @@
+{
+  "uuid": "dc86671d-1710-5773-90ae-d9883d621bfe",
+  "name": "Urzas Saga Tournament Pack Display",
+  "category": "limited_aid_case",
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1107802",
+    "cardKingdomId": "240235",
+    "cardtraderId": "45448",
+    "mcmId": "253854",
+    "scgId": "SLD-MTG-BBX-USGTOURNAMENT-EN",
+    "tcgplayerProductId": "234726",
+    "tntId": "90185"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/063531acec84f7f3",
+    "tcgplayer": "https://mtgjson.com/links/66721fee14da9c37"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 12,
+        "name": "Urzas Saga Tournament Pack",
+        "set": "usg",
+        "uuid": "96772e6d-0aba-5362-ab10-d5f3f6d23634"
+      }
+    ]
+  },
+  "setCode": "USG",
+  "setName": "Urza's Saga",
+  "tcgcsvData": {
+    "product": {
+      "productId": 234726,
+      "name": "Urza's Saga Tournament Pack Display",
+      "cleanName": "Urzas Saga Tournament Pack Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/234726_200w.jpg",
+      "categoryId": 1,
+      "groupId": 118,
+      "url": "https://www.tcgplayer.com/product/234726/magic-urzas-saga-urzas-saga-tournament-pack-display",
+      "modifiedOn": "2021-03-18T18:36:47.487",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "This box contains 12 tournament packs, each with 75 random game cards and an Urza's Saga rules insert."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "0742818165211"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 234726,
+        "lowPrice": 9000,
+        "midPrice": 9299.98,
+        "highPrice": 14499,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

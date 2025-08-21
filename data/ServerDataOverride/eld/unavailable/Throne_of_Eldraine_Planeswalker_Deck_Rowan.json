@@ -1,0 +1,80 @@
+{
+  "uuid": "b01ef320-c521-57c6-a569-6d8486feb017",
+  "name": "Throne of Eldraine Planeswalker Deck Rowan",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2019-10-04",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1596555",
+    "cardKingdomId": "227293",
+    "cardtraderId": "59642",
+    "csiId": "281876",
+    "mcmId": "399079",
+    "scgId": "SLD-MTG-INT-ELDPWDECK-EN-A",
+    "tcgplayerProductId": "194895",
+    "tntId": "1585802"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/cd8b7cf100c3b348"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Rowan, Fearless Sparkmage",
+        "set": "eld"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Throne of Eldraine Draft Booster Pack",
+        "set": "eld",
+        "uuid": "21d471fb-dfea-5778-99ff-65a3e2264501"
+      }
+    ]
+  },
+  "setCode": "ELD",
+  "setName": "Throne of Eldraine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 194895,
+      "name": "Throne of Eldraine - Planeswalker Deck [Rowan]",
+      "cleanName": "Throne of Eldraine Planeswalker Deck Rowan",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/194895_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2494,
+      "url": "https://www.tcgplayer.com/product/194895/magic-throne-of-eldraine-throne-of-eldraine-planeswalker-deck-rowan",
+      "modifiedOn": "2019-09-11T19:09:35.233",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-10-04T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Decks familiarize players who are interested in Magic with basic strategy, plus the game’s setting, characters, and mechanics of the latest set. Each deck comes with a foil Planeswalker card not found in traditional Throne of Eldraine booster packs.\r\n<br><br>\r\n<strong>Contents:</strong>\r\n<br>• 1 ready-to-play 60-card deck featuring a foil Planeswalker card\r\n<br>• 2 Throne of Eldraine booster packs\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card*"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509787029"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 194895,
+        "lowPrice": 17.81,
+        "midPrice": 22.98,
+        "highPrice": 28.99,
+        "marketPrice": 19.48,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "uuid": "4461ca6a-6da3-57cc-99c9-287fccfb6689",
+  "name": "Tenth Edition Sample Deck Garruk Wildspeaker",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47397",
+    "mcmId": "287567"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Green Deck A",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Green Deck B",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "10E",
+  "setName": "Tenth Edition"
+}

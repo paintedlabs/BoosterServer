@@ -1,0 +1,67 @@
+{
+  "uuid": "080a4cde-840f-5f4f-8dd2-721d57a42bc9",
+  "name": "Shards of Alara Intro Pack Bant Exalted",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101158",
+    "cardKingdomId": "126131",
+    "cardtraderId": "47325",
+    "mcmId": "244169",
+    "scgId": "SLD-MTG-INT-ALAINTRO-EN-BANT",
+    "tcgplayerProductId": "278889",
+    "tntId": "227271"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/673022ca3743ebfa"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Bant Exalted",
+        "set": "ala"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Shards of Alara Booster Pack",
+        "set": "ala",
+        "uuid": "53db9568-de5e-5a95-9882-b3b16ad4931c"
+      }
+    ]
+  },
+  "setCode": "ALA",
+  "setName": "Shards of Alara",
+  "tcgcsvData": {
+    "product": {
+      "productId": 278889,
+      "name": "Shards of Alara - Intro Pack - Bant Exalted",
+      "cleanName": "Shards of Alara Intro Pack Bant Exalted",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/278889_200w.jpg",
+      "categoryId": 1,
+      "groupId": 103,
+      "url": "https://www.tcgplayer.com/product/278889/magic-shards-of-alara-shards-of-alara-intro-pack-bant-exalted",
+      "modifiedOn": "2022-07-06T20:50:25.307",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 278889,
+        "lowPrice": 110,
+        "midPrice": 110,
+        "highPrice": 110,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

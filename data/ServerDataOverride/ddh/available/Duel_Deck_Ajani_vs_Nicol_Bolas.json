@@ -1,0 +1,68 @@
+{
+  "uuid": "166e7b39-4a81-5fd1-bcd1-15cdd6b0282b",
+  "name": "Duel Deck Ajani vs Nicol Bolas",
+  "category": "multiple_decks",
+  "subtype": "duel",
+  "identifiers": {
+    "abuId": "1100091",
+    "cardKingdomId": "185510",
+    "cardtraderId": "47657",
+    "csiId": "97330",
+    "mcmId": "248748",
+    "scgId": "SLD-MTG-BXS-DDH-EN",
+    "tcgplayerProductId": "48162",
+    "tntId": "320237"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/d191e3cfa41d7f00",
+    "tcgplayer": "https://mtgjson.com/links/66de6aab1b19b322"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Duel Deck Ajani vs Nicol Bolas Ajani Deck",
+        "set": "ddh",
+        "uuid": "447164ba-fd00-5c6d-aedd-b09906972552"
+      },
+      {
+        "count": 1,
+        "name": "Duel Deck Ajani vs Nicol Bolas Nicol Bolas Deck",
+        "set": "ddh",
+        "uuid": "fc3f0fc9-6a27-5796-8cb4-958e51d157bc"
+      }
+    ]
+  },
+  "setCode": "DDH",
+  "setName": "Duel Decks: Ajani vs. Nicol Bolas",
+  "tcgcsvData": {
+    "product": {
+      "productId": 48162,
+      "name": "Duel Decks: Ajani vs Nicol Bolas - Box Set",
+      "cleanName": "Duel Decks Ajani vs Nicol Bolas Box Set",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/48162_200w.jpg",
+      "categoryId": 1,
+      "groupId": 30,
+      "url": "https://www.tcgplayer.com/product/48162/magic-duel-decks-ajani-vs-nicol-bolas-duel-decks-ajani-vs-nicol-bolas-box-set",
+      "modifiedOn": "2014-07-27T16:51:35.36",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 48162,
+        "lowPrice": 64,
+        "midPrice": 75,
+        "highPrice": 129.99,
+        "marketPrice": 72.48,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

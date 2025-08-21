@@ -1,0 +1,64 @@
+{
+  "uuid": "c545b70b-5e17-5a77-a225-fc3609203c67",
+  "name": "Judgment Theme Deck Air Razers",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100664",
+    "cardKingdomId": "1497",
+    "cardtraderId": "46017",
+    "mcmId": "253720",
+    "tcgplayerProductId": "175068",
+    "tntId": "104015"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4cb08aeba2782bd3"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Air Razers",
+        "set": "jud"
+      }
+    ]
+  },
+  "setCode": "JUD",
+  "setName": "Judgment",
+  "tcgcsvData": {
+    "product": {
+      "productId": 175068,
+      "name": "Judgment Theme Deck - Air Razers",
+      "cleanName": "Judgment Theme Deck Air Razers",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/175068_200w.jpg",
+      "categoryId": 1,
+      "groupId": 63,
+      "url": "https://www.tcgplayer.com/product/175068/magic-judgment-judgment-theme-deck-air-razers",
+      "modifiedOn": "2019-11-20T16:37:04.627",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The \"Air Razers\" deck has a simple philosophy: Whatever it can't fly over, it burns out of the way. The deck comes equipped with fliers, fliers, and more fliers, plus a healthy amount of red direct damage. This deck wins quickly and viciously."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 175068,
+        "lowPrice": 48.15,
+        "midPrice": 48.15,
+        "highPrice": 48.15,
+        "marketPrice": 33.32,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

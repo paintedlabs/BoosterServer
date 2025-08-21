@@ -1,0 +1,136 @@
+{
+  "uuid": "a1099d5b-8730-5a48-ac12-5f1e172c060f",
+  "name": "War of the Spark Mythic Edition",
+  "category": "bundle",
+  "cardCount": 8,
+  "releaseDate": "2019-04-24",
+  "subtype": "premium",
+  "identifiers": {
+    "cardKingdomId": "224825",
+    "cardtraderId": "56836",
+    "mcmId": "372921",
+    "tcgplayerProductId": "188892",
+    "tntId": "1642826"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/b29a8ba4b391ee6c",
+    "tcgplayer": "https://mtgjson.com/links/12c33a2d58b76230"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Ugin, the Spirit Dragon",
+        "number": "WS1",
+        "set": "med",
+        "uuid": "2154afed-2238-5b9b-b277-f3fb8dd39ba0"
+      },
+      {
+        "foil": true,
+        "name": "Gideon Blackblade",
+        "number": "WS2",
+        "set": "med",
+        "uuid": "d4bad60b-1918-5272-aba2-7cc13ae92c4a"
+      },
+      {
+        "foil": true,
+        "name": "Jace, the Mind Sculptor",
+        "number": "WS3",
+        "set": "med",
+        "uuid": "3315c2be-3ebc-54fd-b146-ae762ad83df7"
+      },
+      {
+        "foil": true,
+        "name": "Tezzeret the Seeker",
+        "number": "WS4",
+        "set": "med",
+        "uuid": "82400545-32cc-5108-9add-f870cc1221ef"
+      },
+      {
+        "foil": true,
+        "name": "Garruk, Apex Predator",
+        "number": "WS5",
+        "set": "med",
+        "uuid": "111f533a-7ada-5f67-95a9-304326960e72"
+      },
+      {
+        "foil": true,
+        "name": "Nicol Bolas, Dragon-God",
+        "number": "WS6",
+        "set": "med",
+        "uuid": "19196970-524b-5a17-a52e-13e888bf788b"
+      },
+      {
+        "foil": true,
+        "name": "Nahiri, the Harbinger",
+        "number": "WS7",
+        "set": "med",
+        "uuid": "fd86bf3d-af3b-5cbf-9c93-3eb67b99b6ff"
+      },
+      {
+        "foil": true,
+        "name": "Sarkhan Unbroken",
+        "number": "WS8",
+        "set": "med",
+        "uuid": "b5e726d5-0d30-5300-9140-4ea42fa51f26"
+      }
+    ],
+    "other": [
+      {
+        "name": "Beast Token"
+      },
+      {
+        "name": "Dragon Token"
+      },
+      {
+        "name": "Garruk, Apex Predator Emblem"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 24,
+        "name": "War of the Spark Booster Pack",
+        "set": "war",
+        "uuid": "3020fb4c-6968-514c-81da-09f7f6a907ec"
+      }
+    ]
+  },
+  "setCode": "WAR",
+  "setName": "War of the Spark",
+  "tcgcsvData": {
+    "product": {
+      "productId": 188892,
+      "name": "War of the Spark: Mythic Edition",
+      "cleanName": "War of the Spark Mythic Edition",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/188892_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2444,
+      "url": "https://www.tcgplayer.com/product/188892/magic-mythic-edition-war-of-the-spark-war-of-the-spark-mythic-edition",
+      "modifiedOn": "2019-05-01T20:34:53.283",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Draft-sized (24 pack) box of War of the Spark, with the twist that eight packs (they'll be clearly marked) will each come with one of 8 different foil planeswalker cards inside the pack (plus the normal rare or mythic rare card). You will know which packs have these special planeswalkers, so this can make for an exciting Draft experience. <em>War of the Spark Mythic Edition will be limited to only 12,000 units.</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 188892,
+        "lowPrice": 293.19,
+        "midPrice": 357.39,
+        "highPrice": 910.94,
+        "marketPrice": 343.3,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

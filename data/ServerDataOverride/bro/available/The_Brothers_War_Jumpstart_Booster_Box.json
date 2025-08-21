@@ -1,0 +1,1606 @@
+{
+  "uuid": "d6faf393-c3e0-5e0b-ae7e-dd49bd4a5627",
+  "name": "The Brothers' War Jumpstart Booster Box",
+  "category": "booster_box",
+  "releaseDate": "2022-11-18",
+  "subtype": "jumpstart",
+  "identifiers": {
+    "abuId": "2261766",
+    "cardKingdomId": "267921",
+    "cardtraderId": "219837",
+    "csiId": "346446",
+    "mcmId": "677808",
+    "scgId": "SLD-MTG-BBX-BROJUMPSTART-EN",
+    "tcgplayerProductId": "449719",
+    "tntId": "1764214"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/cdb3cb712b9ce205",
+    "tcgplayer": "https://mtgjson.com/links/bbb17775638b6eef"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 18,
+        "name": "The Brothers' War Jumpstart Booster Pack",
+        "set": "bro",
+        "uuid": "4278c6c0-f7ca-5c8b-abfc-5a4537315a22"
+      }
+    ]
+  },
+  "setCode": "BRO",
+  "setName": "The Brothers' War",
+  "extendedData": {
+    "code": "bro-jumpstart",
+    "boosters": [
+      {
+        "sheets": {
+          "infantry_1": 17,
+          "infantry_1_foils": 2,
+          "rare_mythic_white": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "infantry_2": 17,
+          "infantry_2_foils": 2,
+          "rare_mythic_white": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "powerstones_1": 17,
+          "powerstones_1_foils": 2,
+          "rare_mythic_blue": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "powerstones_2": 17,
+          "powerstones_2_foils": 2,
+          "rare_mythic_blue": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "titanic_1": 17,
+          "titanic_1_foils": 2,
+          "rare_mythic_green": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "titanic_2": 17,
+          "titanic_2_foils": 2,
+          "rare_mythic_green": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "unearthed_1": 17,
+          "unearthed_1_foils": 2,
+          "rare_mythic_black": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "unearthed_2": 17,
+          "unearthed_2_foils": 2,
+          "rare_mythic_black": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "welded_1": 17,
+          "welded_1_foils": 2,
+          "rare_mythic_red": 1
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "welded_2": 17,
+          "welded_2_foils": 2,
+          "rare_mythic_red": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "infantry_1": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "1",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6ff98307-b89c-5a43-bc3c-3f81d803617d"
+          },
+          {
+            "set": "bro",
+            "number": "2",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e4d66ec1-7ba2-5c80-a9c1-e33500cfdbb5"
+          },
+          {
+            "set": "bro",
+            "number": "11",
+            "weight": 1,
+            "foil": false,
+            "uuid": "75daa469-6ba9-5c9b-a5e3-9509cfb6cf62"
+          },
+          {
+            "set": "bro",
+            "number": "19",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5fbfd67f-dd8a-5e5c-9a83-93701d1ccf49"
+          },
+          {
+            "set": "bro",
+            "number": "22",
+            "weight": 1,
+            "foil": false,
+            "uuid": "afbdb5e1-6bcf-5953-867f-e7611515ba93"
+          },
+          {
+            "set": "bro",
+            "number": "23",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9e9dbe89-2cd8-5e3c-9e2f-09f7171993aa"
+          },
+          {
+            "set": "bro",
+            "number": "27",
+            "weight": 1,
+            "foil": false,
+            "uuid": "09371945-5baf-5ec4-8f9c-7836bfe41789"
+          },
+          {
+            "set": "bro",
+            "number": "32",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a4aa5ae5-0639-5ff9-adce-76f84c188bca"
+          },
+          {
+            "set": "bro",
+            "number": "41",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4cb62e4e-d548-57c6-b130-da8f8e0599fe"
+          },
+          {
+            "set": "bro",
+            "number": "242",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fd8a3125-d584-5d26-9aea-c257e971a938"
+          },
+          {
+            "set": "bro",
+            "number": "268",
+            "weight": 6,
+            "foil": false,
+            "uuid": "9ae1ab61-b907-5f63-992c-424bf6bcd3a2"
+          },
+          {
+            "set": "bro",
+            "number": "288",
+            "weight": 1,
+            "foil": false,
+            "uuid": "421fb941-5bb8-582b-99e7-d59aa251f2bf"
+          }
+        ]
+      },
+      "infantry_1_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "268",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9ae1ab61-b907-5f63-992c-424bf6bcd3a2"
+          }
+        ]
+      },
+      "rare_mythic_white": {
+        "total_weight": 20,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "8",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ada20bab-ada6-5bed-9d45-d87790233c25"
+          },
+          {
+            "set": "bro",
+            "number": "9",
+            "weight": 2,
+            "foil": false,
+            "uuid": "64155ae3-130f-5da4-9360-ee9bb617e25b"
+          },
+          {
+            "set": "bro",
+            "number": "10",
+            "weight": 2,
+            "foil": false,
+            "uuid": "47fd005b-6e60-5024-a08a-428a150f89ef"
+          },
+          {
+            "set": "bro",
+            "number": "12",
+            "weight": 2,
+            "foil": false,
+            "uuid": "04e54bdf-b04f-52d8-8503-4ca1fce8688e"
+          },
+          {
+            "set": "bro",
+            "number": "18",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7e666059-3fbc-59ca-ade0-0ed75abb1584"
+          },
+          {
+            "set": "bro",
+            "number": "25",
+            "weight": 2,
+            "foil": false,
+            "uuid": "b6be96d4-e937-59b7-bd1b-a1edf15e3eea"
+          },
+          {
+            "set": "bro",
+            "number": "26",
+            "weight": 2,
+            "foil": false,
+            "uuid": "c26dd17d-fdbc-5c78-bc0e-75037167eeee"
+          },
+          {
+            "set": "bro",
+            "number": "30",
+            "weight": 2,
+            "foil": false,
+            "uuid": "7d046c74-975d-5346-bdb9-6a5b562dcc06"
+          },
+          {
+            "set": "bro",
+            "number": "34",
+            "weight": 2,
+            "foil": false,
+            "uuid": "5530e090-4ccf-5586-820f-155ef62f98dd"
+          },
+          {
+            "set": "bro",
+            "number": "36",
+            "weight": 1,
+            "foil": false,
+            "uuid": "26fa24a0-20f0-525c-903b-d50a0e0aa680"
+          },
+          {
+            "set": "bro",
+            "number": "38",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d9f29611-757d-594b-85d4-b6b6e0359e69"
+          },
+          {
+            "set": "bro",
+            "number": "40",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4690bfdc-d744-562f-ae90-4151108eb0ee"
+          }
+        ]
+      },
+      "infantry_2": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "1",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6ff98307-b89c-5a43-bc3c-3f81d803617d"
+          },
+          {
+            "set": "bro",
+            "number": "3",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8d065ec5-4e7f-50f6-92c8-277673a6fb19"
+          },
+          {
+            "set": "bro",
+            "number": "11",
+            "weight": 1,
+            "foil": false,
+            "uuid": "75daa469-6ba9-5c9b-a5e3-9509cfb6cf62"
+          },
+          {
+            "set": "bro",
+            "number": "19",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5fbfd67f-dd8a-5e5c-9a83-93701d1ccf49"
+          },
+          {
+            "set": "bro",
+            "number": "27",
+            "weight": 1,
+            "foil": false,
+            "uuid": "09371945-5baf-5ec4-8f9c-7836bfe41789"
+          },
+          {
+            "set": "bro",
+            "number": "29",
+            "weight": 1,
+            "foil": false,
+            "uuid": "52ac19cc-f469-59cc-bac2-21a416227986"
+          },
+          {
+            "set": "bro",
+            "number": "32",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a4aa5ae5-0639-5ff9-adce-76f84c188bca"
+          },
+          {
+            "set": "bro",
+            "number": "37",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7b7d0872-b1c9-5f44-94a2-309fca1b2c27"
+          },
+          {
+            "set": "bro",
+            "number": "41",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4cb62e4e-d548-57c6-b130-da8f8e0599fe"
+          },
+          {
+            "set": "bro",
+            "number": "42",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6249d867-06d9-5d40-b0d3-53281b51ca7e"
+          },
+          {
+            "set": "bro",
+            "number": "268",
+            "weight": 6,
+            "foil": false,
+            "uuid": "9ae1ab61-b907-5f63-992c-424bf6bcd3a2"
+          },
+          {
+            "set": "bro",
+            "number": "288",
+            "weight": 1,
+            "foil": false,
+            "uuid": "421fb941-5bb8-582b-99e7-d59aa251f2bf"
+          }
+        ]
+      },
+      "infantry_2_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "268",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9ae1ab61-b907-5f63-992c-424bf6bcd3a2"
+          }
+        ]
+      },
+      "powerstones_1": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "55",
+            "weight": 1,
+            "foil": false,
+            "uuid": "00b98aba-64c7-5ed2-b913-ec4d8220cd7d"
+          },
+          {
+            "set": "bro",
+            "number": "64",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3eee28ec-10fb-5f37-9abc-6b6a7a6463ff"
+          },
+          {
+            "set": "bro",
+            "number": "65",
+            "weight": 1,
+            "foil": false,
+            "uuid": "33fd266e-62df-5296-a2d5-322b216670a1"
+          },
+          {
+            "set": "bro",
+            "number": "67",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b70f3d29-fdf8-5203-8adc-51c918e2fdbd"
+          },
+          {
+            "set": "bro",
+            "number": "68",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0aa26dee-74d7-504a-a080-7af3dce0ada1"
+          },
+          {
+            "set": "bro",
+            "number": "69",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8bae54a4-9288-5ea9-aa63-b1628df29522"
+          },
+          {
+            "set": "bro",
+            "number": "71",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1130add5-7160-5229-8478-4914bb83cd8e"
+          },
+          {
+            "set": "bro",
+            "number": "72",
+            "weight": 1,
+            "foil": false,
+            "uuid": "aadf7223-9df6-541d-8c72-64d2b6335aa6"
+          },
+          {
+            "set": "bro",
+            "number": "77",
+            "weight": 1,
+            "foil": false,
+            "uuid": "15f083e6-50d8-5ae8-a989-e9ae292d5dd8"
+          },
+          {
+            "set": "bro",
+            "number": "80",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9130bfbc-ce82-5bb0-bb01-b8d324281643"
+          },
+          {
+            "set": "bro",
+            "number": "270",
+            "weight": 6,
+            "foil": false,
+            "uuid": "02dec623-655b-5a5a-9869-f97d19cbeb5c"
+          },
+          {
+            "set": "bro",
+            "number": "289",
+            "weight": 1,
+            "foil": false,
+            "uuid": "00a2b46d-8f74-56e1-bee2-6d7a7b9c323e"
+          }
+        ]
+      },
+      "powerstones_1_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "270",
+            "weight": 2,
+            "foil": true,
+            "uuid": "02dec623-655b-5a5a-9869-f97d19cbeb5c"
+          }
+        ]
+      },
+      "rare_mythic_blue": {
+        "total_weight": 18,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "47",
+            "weight": 2,
+            "foil": false,
+            "uuid": "0774f54e-77f9-5aa3-bf8d-0a542c420607"
+          },
+          {
+            "set": "bro",
+            "number": "51",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d8a5211c-798e-5ac8-b096-ff71914c06fb"
+          },
+          {
+            "set": "bro",
+            "number": "52",
+            "weight": 2,
+            "foil": false,
+            "uuid": "9c5059ff-b8f5-5005-8172-25c21cf3a8c0"
+          },
+          {
+            "set": "bro",
+            "number": "59",
+            "weight": 1,
+            "foil": false,
+            "uuid": "91f74e4d-1391-53fe-a12b-20f721a6a813"
+          },
+          {
+            "set": "bro",
+            "number": "62",
+            "weight": 2,
+            "foil": false,
+            "uuid": "8a42bf3e-cdc4-53a1-8563-df025b229066"
+          },
+          {
+            "set": "bro",
+            "number": "66",
+            "weight": 1,
+            "foil": false,
+            "uuid": "835faa90-e4a1-5564-a88e-6b61c63f70d8"
+          },
+          {
+            "set": "bro",
+            "number": "70",
+            "weight": 2,
+            "foil": false,
+            "uuid": "0f4988ce-d720-536c-a7e8-b237e474f5cb"
+          },
+          {
+            "set": "bro",
+            "number": "75",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7047d44f-0eb7-5a0b-9a2b-7ef51448bb16"
+          },
+          {
+            "set": "bro",
+            "number": "81",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cb94121c-119f-599a-86d2-b3bb975c36ab"
+          },
+          {
+            "set": "bro",
+            "number": "82",
+            "weight": 2,
+            "foil": false,
+            "uuid": "48ae69fb-5a74-5ce1-ab9b-27f0380c2f89"
+          },
+          {
+            "set": "bro",
+            "number": "83",
+            "weight": 2,
+            "foil": false,
+            "uuid": "4fec2fa3-1a45-52f1-8b81-24c0d1239793"
+          }
+        ]
+      },
+      "powerstones_2": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "53",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5f337d77-c71c-53a2-b97e-96e76fe93a2d"
+          },
+          {
+            "set": "bro",
+            "number": "55",
+            "weight": 1,
+            "foil": false,
+            "uuid": "00b98aba-64c7-5ed2-b913-ec4d8220cd7d"
+          },
+          {
+            "set": "bro",
+            "number": "56",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4f8688b3-9df6-50f0-94f4-7d873db143bd"
+          },
+          {
+            "set": "bro",
+            "number": "58",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1d8cbd80-5292-5212-86dc-3f5547e5eedb"
+          },
+          {
+            "set": "bro",
+            "number": "64",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3eee28ec-10fb-5f37-9abc-6b6a7a6463ff"
+          },
+          {
+            "set": "bro",
+            "number": "68",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0aa26dee-74d7-504a-a080-7af3dce0ada1"
+          },
+          {
+            "set": "bro",
+            "number": "69",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8bae54a4-9288-5ea9-aa63-b1628df29522"
+          },
+          {
+            "set": "bro",
+            "number": "72",
+            "weight": 1,
+            "foil": false,
+            "uuid": "aadf7223-9df6-541d-8c72-64d2b6335aa6"
+          },
+          {
+            "set": "bro",
+            "number": "77",
+            "weight": 1,
+            "foil": false,
+            "uuid": "15f083e6-50d8-5ae8-a989-e9ae292d5dd8"
+          },
+          {
+            "set": "bro",
+            "number": "79",
+            "weight": 1,
+            "foil": false,
+            "uuid": "019970ca-fe45-5866-bc30-d7978b9ce8fd"
+          },
+          {
+            "set": "bro",
+            "number": "270",
+            "weight": 6,
+            "foil": false,
+            "uuid": "02dec623-655b-5a5a-9869-f97d19cbeb5c"
+          },
+          {
+            "set": "bro",
+            "number": "289",
+            "weight": 1,
+            "foil": false,
+            "uuid": "00a2b46d-8f74-56e1-bee2-6d7a7b9c323e"
+          }
+        ]
+      },
+      "powerstones_2_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "270",
+            "weight": 2,
+            "foil": true,
+            "uuid": "02dec623-655b-5a5a-9869-f97d19cbeb5c"
+          }
+        ]
+      },
+      "titanic_1": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "167",
+            "weight": 1,
+            "foil": false,
+            "uuid": "97ae6f61-f18a-591b-b3e4-e695792465c4"
+          },
+          {
+            "set": "bro",
+            "number": "172",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7247d9dc-4a21-5445-8581-863a0d1ad376"
+          },
+          {
+            "set": "bro",
+            "number": "174",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e3a4342f-3269-5a42-8649-66f3aba2b352"
+          },
+          {
+            "set": "bro",
+            "number": "182",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d1117672-0188-5448-8816-e1c05e115cc4"
+          },
+          {
+            "set": "bro",
+            "number": "183",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5bf95967-9b61-556d-ab34-e5f95409a41d"
+          },
+          {
+            "set": "bro",
+            "number": "189",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8b1e24f2-e131-54b6-adbe-2607d3d6f3f6"
+          },
+          {
+            "set": "bro",
+            "number": "190",
+            "weight": 1,
+            "foil": false,
+            "uuid": "40bf36df-6265-571f-8d67-4f8101fa9be8"
+          },
+          {
+            "set": "bro",
+            "number": "198",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2cf7fc0a-0543-559f-ab34-4fbc00528e1f"
+          },
+          {
+            "set": "bro",
+            "number": "200",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0d9b74f3-200b-56a7-87f2-ef9f6686860c"
+          },
+          {
+            "set": "bro",
+            "number": "204",
+            "weight": 1,
+            "foil": false,
+            "uuid": "184e1578-4318-568c-9bd7-121f98ca9d3d"
+          },
+          {
+            "set": "bro",
+            "number": "276",
+            "weight": 6,
+            "foil": false,
+            "uuid": "2c28ab78-255f-538a-af7a-6153c75718cb"
+          },
+          {
+            "set": "bro",
+            "number": "292",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a89e0ffd-5b3b-5227-8818-e4270e8f06d4"
+          }
+        ]
+      },
+      "titanic_1_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "276",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2c28ab78-255f-538a-af7a-6153c75718cb"
+          }
+        ]
+      },
+      "rare_mythic_green": {
+        "total_weight": 19,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "170",
+            "weight": 1,
+            "foil": false,
+            "uuid": "314fc60c-69ab-593d-8b90-2607bfc9bc7c"
+          },
+          {
+            "set": "bro",
+            "number": "177",
+            "weight": 2,
+            "foil": false,
+            "uuid": "caf578d5-3349-5335-a06f-bcc5d5d9c1e4"
+          },
+          {
+            "set": "bro",
+            "number": "179",
+            "weight": 2,
+            "foil": false,
+            "uuid": "61fdcf9c-4ed3-51e6-ba87-f643b2ae83ee"
+          },
+          {
+            "set": "bro",
+            "number": "185",
+            "weight": 2,
+            "foil": false,
+            "uuid": "20c40ff1-79fe-54c2-9fd9-e291a958710d"
+          },
+          {
+            "set": "bro",
+            "number": "192",
+            "weight": 2,
+            "foil": false,
+            "uuid": "2bc9fb4b-da7f-56dc-a166-20b2facf2dcc"
+          },
+          {
+            "set": "bro",
+            "number": "193",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0790c50f-12b7-5cfb-9527-17e0ffc97580"
+          },
+          {
+            "set": "bro",
+            "number": "194",
+            "weight": 2,
+            "foil": false,
+            "uuid": "e56f4544-f67c-5233-b921-19333dbf47f4"
+          },
+          {
+            "set": "bro",
+            "number": "202",
+            "weight": 2,
+            "foil": false,
+            "uuid": "89919133-f7c6-5da5-b9d5-6e50f2da65e3"
+          },
+          {
+            "set": "bro",
+            "number": "203",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5ea8ee46-f5ce-53a8-8465-4b6addb949bc"
+          },
+          {
+            "set": "bro",
+            "number": "205",
+            "weight": 2,
+            "foil": false,
+            "uuid": "5154d2db-cc4c-52a7-b9a9-86d1ea614496"
+          },
+          {
+            "set": "bro",
+            "number": "256a",
+            "weight": 2,
+            "foil": false,
+            "uuid": "39396ccd-e82b-59a3-9bdf-764cc8c17f23"
+          }
+        ]
+      },
+      "titanic_2": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "168",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bf113b54-578e-5a44-a10c-2b4192fe3f96"
+          },
+          {
+            "set": "bro",
+            "number": "174",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e3a4342f-3269-5a42-8649-66f3aba2b352"
+          },
+          {
+            "set": "bro",
+            "number": "176",
+            "weight": 1,
+            "foil": false,
+            "uuid": "23ef6d8a-0429-5197-89f1-f7d1c7b28c2f"
+          },
+          {
+            "set": "bro",
+            "number": "188",
+            "weight": 1,
+            "foil": false,
+            "uuid": "49246e91-908f-57d0-8984-c1ae5d4988aa"
+          },
+          {
+            "set": "bro",
+            "number": "189",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8b1e24f2-e131-54b6-adbe-2607d3d6f3f6"
+          },
+          {
+            "set": "bro",
+            "number": "190",
+            "weight": 1,
+            "foil": false,
+            "uuid": "40bf36df-6265-571f-8d67-4f8101fa9be8"
+          },
+          {
+            "set": "bro",
+            "number": "191",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cbf28c20-39fe-5b7f-8e58-e6152b3ac1fd"
+          },
+          {
+            "set": "bro",
+            "number": "198",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2cf7fc0a-0543-559f-ab34-4fbc00528e1f"
+          },
+          {
+            "set": "bro",
+            "number": "200",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0d9b74f3-200b-56a7-87f2-ef9f6686860c"
+          },
+          {
+            "set": "bro",
+            "number": "204",
+            "weight": 1,
+            "foil": false,
+            "uuid": "184e1578-4318-568c-9bd7-121f98ca9d3d"
+          },
+          {
+            "set": "bro",
+            "number": "276",
+            "weight": 6,
+            "foil": false,
+            "uuid": "2c28ab78-255f-538a-af7a-6153c75718cb"
+          },
+          {
+            "set": "bro",
+            "number": "292",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a89e0ffd-5b3b-5227-8818-e4270e8f06d4"
+          }
+        ]
+      },
+      "titanic_2_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "276",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2c28ab78-255f-538a-af7a-6153c75718cb"
+          }
+        ]
+      },
+      "unearthed_1": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "85",
+            "weight": 1,
+            "foil": false,
+            "uuid": "feb12e81-c070-5a1c-b96e-178a908b34f8"
+          },
+          {
+            "set": "bro",
+            "number": "102",
+            "weight": 1,
+            "foil": false,
+            "uuid": "67542236-53d8-5f03-bdf4-0b100361890c"
+          },
+          {
+            "set": "bro",
+            "number": "103",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cdb0ebd6-e07a-5e88-8eb7-a45eb09c8d5f"
+          },
+          {
+            "set": "bro",
+            "number": "106",
+            "weight": 1,
+            "foil": false,
+            "uuid": "186ddb34-0355-5c13-b6ed-2c28d1a38ec5"
+          },
+          {
+            "set": "bro",
+            "number": "109",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a188e94b-90ab-53f0-b052-ff841258730b"
+          },
+          {
+            "set": "bro",
+            "number": "113",
+            "weight": 1,
+            "foil": false,
+            "uuid": "912af102-4fc5-510f-83fc-99f62841b6e3"
+          },
+          {
+            "set": "bro",
+            "number": "115",
+            "weight": 1,
+            "foil": false,
+            "uuid": "055805a3-7883-5fc0-b8de-c03af6d48525"
+          },
+          {
+            "set": "bro",
+            "number": "117",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b712d4de-7f45-5c43-9762-43886a709ad1"
+          },
+          {
+            "set": "bro",
+            "number": "118",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5c159b6b-bc26-5704-870e-fae650100a3e"
+          },
+          {
+            "set": "bro",
+            "number": "123",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cf3cea5e-c033-5414-9295-d5cb884b614a"
+          },
+          {
+            "set": "bro",
+            "number": "272",
+            "weight": 6,
+            "foil": false,
+            "uuid": "752304e1-c429-5e37-b7d0-961c6061f03e"
+          },
+          {
+            "set": "bro",
+            "number": "290",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d3ef8a19-4b2a-5ca6-a08a-e93915119d6a"
+          }
+        ]
+      },
+      "unearthed_1_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "272",
+            "weight": 2,
+            "foil": true,
+            "uuid": "752304e1-c429-5e37-b7d0-961c6061f03e"
+          }
+        ]
+      },
+      "rare_mythic_black": {
+        "total_weight": 22,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "84",
+            "weight": 2,
+            "foil": false,
+            "uuid": "ee495376-282a-5d74-9c39-c6dea2be21ec"
+          },
+          {
+            "set": "bro",
+            "number": "89",
+            "weight": 2,
+            "foil": false,
+            "uuid": "7c7b5d32-5d02-54d8-bd2d-14617045d866"
+          },
+          {
+            "set": "bro",
+            "number": "94",
+            "weight": 2,
+            "foil": false,
+            "uuid": "72b41357-920e-5eef-b950-407073dbf5d8"
+          },
+          {
+            "set": "bro",
+            "number": "95",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e9b50125-62d1-5dea-bc7c-5ed5c1ca239c"
+          },
+          {
+            "set": "bro",
+            "number": "97",
+            "weight": 2,
+            "foil": false,
+            "uuid": "c9fdec83-848c-5f75-938a-51bcffa70524"
+          },
+          {
+            "set": "bro",
+            "number": "99",
+            "weight": 2,
+            "foil": false,
+            "uuid": "8525e87c-d49c-5ecf-840c-0e1674c96470"
+          },
+          {
+            "set": "bro",
+            "number": "105",
+            "weight": 2,
+            "foil": false,
+            "uuid": "209c7eb3-cc3c-560f-b734-14c567184d6d"
+          },
+          {
+            "set": "bro",
+            "number": "107",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f4f98343-a7e3-5c64-9e09-39ee25c248e4"
+          },
+          {
+            "set": "bro",
+            "number": "111",
+            "weight": 2,
+            "foil": false,
+            "uuid": "4ee85284-88e4-5168-aa63-9ab8cb74c7d2"
+          },
+          {
+            "set": "bro",
+            "number": "121",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a2729f74-a4cd-5e76-b2b7-2c7552ce41d0"
+          },
+          {
+            "set": "bro",
+            "number": "122",
+            "weight": 2,
+            "foil": false,
+            "uuid": "c6dc221e-bf69-5e21-8878-610217966484"
+          },
+          {
+            "set": "bro",
+            "number": "125",
+            "weight": 2,
+            "foil": false,
+            "uuid": "b048468a-ae5e-5a2a-8944-543736e6df6f"
+          }
+        ]
+      },
+      "unearthed_2": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "100",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3e161a51-8262-5aae-b456-fa1f3e89f2e6"
+          },
+          {
+            "set": "bro",
+            "number": "101",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d934252a-9310-51b2-8934-7f8209deb5e9"
+          },
+          {
+            "set": "bro",
+            "number": "103",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cdb0ebd6-e07a-5e88-8eb7-a45eb09c8d5f"
+          },
+          {
+            "set": "bro",
+            "number": "110",
+            "weight": 1,
+            "foil": false,
+            "uuid": "080beaae-6561-5edd-b687-da779a3a85ff"
+          },
+          {
+            "set": "bro",
+            "number": "113",
+            "weight": 1,
+            "foil": false,
+            "uuid": "912af102-4fc5-510f-83fc-99f62841b6e3"
+          },
+          {
+            "set": "bro",
+            "number": "115",
+            "weight": 1,
+            "foil": false,
+            "uuid": "055805a3-7883-5fc0-b8de-c03af6d48525"
+          },
+          {
+            "set": "bro",
+            "number": "117",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b712d4de-7f45-5c43-9762-43886a709ad1"
+          },
+          {
+            "set": "bro",
+            "number": "119",
+            "weight": 1,
+            "foil": false,
+            "uuid": "afd6f93b-9f42-5bf5-8020-bd4961dbb56b"
+          },
+          {
+            "set": "bro",
+            "number": "123",
+            "weight": 1,
+            "foil": false,
+            "uuid": "cf3cea5e-c033-5414-9295-d5cb884b614a"
+          },
+          {
+            "set": "bro",
+            "number": "124",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6f2000fe-162c-539a-a481-e72c664473f9"
+          },
+          {
+            "set": "bro",
+            "number": "272",
+            "weight": 6,
+            "foil": false,
+            "uuid": "752304e1-c429-5e37-b7d0-961c6061f03e"
+          },
+          {
+            "set": "bro",
+            "number": "290",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d3ef8a19-4b2a-5ca6-a08a-e93915119d6a"
+          }
+        ]
+      },
+      "unearthed_2_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "272",
+            "weight": 2,
+            "foil": true,
+            "uuid": "752304e1-c429-5e37-b7d0-961c6061f03e"
+          }
+        ]
+      },
+      "welded_1": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "127",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bb4c6914-7243-5321-bb6b-e1658cc7a9af"
+          },
+          {
+            "set": "bro",
+            "number": "134",
+            "weight": 1,
+            "foil": false,
+            "uuid": "852af449-1fb2-5a2c-8fc5-09e12fc31d2c"
+          },
+          {
+            "set": "bro",
+            "number": "138",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d4a7c7a8-4560-5154-b1d5-0c47e497abca"
+          },
+          {
+            "set": "bro",
+            "number": "140",
+            "weight": 1,
+            "foil": false,
+            "uuid": "27af9f0f-bba8-59e0-ad46-9e826774a976"
+          },
+          {
+            "set": "bro",
+            "number": "145",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4f5cf6bd-9492-5b05-b521-09a475e567dd"
+          },
+          {
+            "set": "bro",
+            "number": "155",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e6ab5bd7-c7cd-5217-882d-c3ae7f44bb05"
+          },
+          {
+            "set": "bro",
+            "number": "157",
+            "weight": 1,
+            "foil": false,
+            "uuid": "086fa39d-8406-5503-a2ae-bd90b4ac878e"
+          },
+          {
+            "set": "bro",
+            "number": "159",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fd946a7d-759e-58c5-92d9-8824fb360bcd"
+          },
+          {
+            "set": "bro",
+            "number": "161",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0389cce5-ceeb-5f1b-a9ec-3033872af362"
+          },
+          {
+            "set": "bro",
+            "number": "164",
+            "weight": 1,
+            "foil": false,
+            "uuid": "40fd4f3f-e274-56c3-bd09-16c0366dca3a"
+          },
+          {
+            "set": "bro",
+            "number": "274",
+            "weight": 6,
+            "foil": false,
+            "uuid": "3c268a24-8845-5c9e-88d0-56c4377c6e23"
+          },
+          {
+            "set": "bro",
+            "number": "291",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5228982e-997d-5edc-9d3d-a29252504277"
+          }
+        ]
+      },
+      "welded_1_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "274",
+            "weight": 2,
+            "foil": true,
+            "uuid": "3c268a24-8845-5c9e-88d0-56c4377c6e23"
+          }
+        ]
+      },
+      "rare_mythic_red": {
+        "total_weight": 18,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "128",
+            "weight": 2,
+            "foil": false,
+            "uuid": "75f61232-8129-5ca8-8a8b-4f997eece2d1"
+          },
+          {
+            "set": "bro",
+            "number": "130",
+            "weight": 1,
+            "foil": false,
+            "uuid": "436e7988-635e-53f0-92ff-388e110a89b8"
+          },
+          {
+            "set": "bro",
+            "number": "135",
+            "weight": 2,
+            "foil": false,
+            "uuid": "b466129f-9f09-5f8e-ae20-15dd8f846303"
+          },
+          {
+            "set": "bro",
+            "number": "139",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f4a94ab7-9014-59d3-96ea-7958a4aea87a"
+          },
+          {
+            "set": "bro",
+            "number": "141",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a08863ce-af1c-50e6-8094-54e53ec56859"
+          },
+          {
+            "set": "bro",
+            "number": "146",
+            "weight": 2,
+            "foil": false,
+            "uuid": "0703631b-8ad9-59e8-a462-e59e05600520"
+          },
+          {
+            "set": "bro",
+            "number": "154",
+            "weight": 2,
+            "foil": false,
+            "uuid": "e3f37554-cdb7-5053-9526-5b4a102a590c"
+          },
+          {
+            "set": "bro",
+            "number": "156",
+            "weight": 2,
+            "foil": false,
+            "uuid": "7fb9f9e3-df5d-57ec-bbc2-aff651002431"
+          },
+          {
+            "set": "bro",
+            "number": "163a",
+            "weight": 2,
+            "foil": false,
+            "uuid": "1fed551b-5e52-56bb-943d-0d42937e98bb"
+          },
+          {
+            "set": "bro",
+            "number": "165",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bcdfe769-d83d-5680-901a-27a6e4dd161f"
+          }
+        ]
+      },
+      "welded_2": {
+        "fixed": true,
+        "total_weight": 17,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "132",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5831d344-544b-5181-a190-59543831a3f9"
+          },
+          {
+            "set": "bro",
+            "number": "138",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d4a7c7a8-4560-5154-b1d5-0c47e497abca"
+          },
+          {
+            "set": "bro",
+            "number": "140",
+            "weight": 1,
+            "foil": false,
+            "uuid": "27af9f0f-bba8-59e0-ad46-9e826774a976"
+          },
+          {
+            "set": "bro",
+            "number": "143",
+            "weight": 1,
+            "foil": false,
+            "uuid": "b7ebaeff-7a7b-5d65-809b-772627c10206"
+          },
+          {
+            "set": "bro",
+            "number": "153",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d2753000-fcdd-5e40-861b-655f88702140"
+          },
+          {
+            "set": "bro",
+            "number": "155",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e6ab5bd7-c7cd-5217-882d-c3ae7f44bb05"
+          },
+          {
+            "set": "bro",
+            "number": "159",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fd946a7d-759e-58c5-92d9-8824fb360bcd"
+          },
+          {
+            "set": "bro",
+            "number": "161",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0389cce5-ceeb-5f1b-a9ec-3033872af362"
+          },
+          {
+            "set": "bro",
+            "number": "162",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6d4c37b1-193d-55f4-874f-58e9d934641d"
+          },
+          {
+            "set": "bro",
+            "number": "164",
+            "weight": 1,
+            "foil": false,
+            "uuid": "40fd4f3f-e274-56c3-bd09-16c0366dca3a"
+          },
+          {
+            "set": "bro",
+            "number": "274",
+            "weight": 6,
+            "foil": false,
+            "uuid": "3c268a24-8845-5c9e-88d0-56c4377c6e23"
+          },
+          {
+            "set": "bro",
+            "number": "291",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5228982e-997d-5edc-9d3d-a29252504277"
+          }
+        ]
+      },
+      "welded_2_foils": {
+        "fixed": true,
+        "total_weight": 2,
+        "cards": [
+          {
+            "set": "bro",
+            "number": "274",
+            "weight": 2,
+            "foil": true,
+            "uuid": "3c268a24-8845-5c9e-88d0-56c4377c6e23"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "bro"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 449719,
+      "name": "The Brothers' War - Jumpstart Booster Display",
+      "cleanName": "The Brothers War Jumpstart Booster Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/449719_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3157,
+      "url": "https://www.tcgplayer.com/product/449719/magic-the-brothers-war-the-brothers-war-jumpstart-booster-display",
+      "modifiedOn": "2022-11-18T05:04:15.63",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-11-18T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Brothers’ War Jumpstart Booster Box contains 18 The Brothers’ War Jumpstart Boosters. Each booster has a theme. Just grab two packs and shuffle them together for wild combos and a unique gameplay experience that’s great for a quick, casual game, for older players looking to jump back in, or for giving new players a fun, simple way to learn the game.\r\n<br>\r\n<br>The Brothers’ War Jumpstart Boosters contain 20 Magic cards (including all the lands you need to play). In every pack, you’ll find 2 Rare cards, 1 of which may be a Mythic Rare, and 2 Land cards that are Traditional Foil.\r\n<br>\r\n<br>If you’re looking to maximize your mash-up, The Brothers’ War Jumpstart Boosters are compatible with all other Jumpstart products.\r\n<br>• 18 The Brothers’ War Jumpstart Boosters—20 Magic cards per booster\r\n<br>• 2 Traditional Foil Land cards in every pack\r\n<br>• 2 Rare cards in every pack—including 1 card from a pool of Rares not found in the BRO main set\r\n<br>• Each pack has 1 of 5 possible themes and each theme comes in 2 variants—mix and match for wild mashups\r\n<br>• Grab 2 Jumpstart packs, shuffle, and you’re ready to rumble"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 449719,
+        "lowPrice": 53.99,
+        "midPrice": 82.97,
+        "highPrice": 136.99,
+        "marketPrice": 61.36,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

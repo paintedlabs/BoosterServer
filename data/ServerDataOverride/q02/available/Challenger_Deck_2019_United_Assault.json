@@ -1,0 +1,67 @@
+{
+  "uuid": "078136dc-56fa-56c1-a69c-a34a3b54b481",
+  "name": "Challenger Deck 2019 United Assault",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2019-04-12",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1567935",
+    "cardKingdomId": "223981",
+    "cardtraderId": "54740",
+    "csiId": "273872",
+    "mcmId": "371225",
+    "scgId": "SLD-MTG-INT-Q02-EN-UNITED",
+    "tcgplayerProductId": "186432",
+    "tntId": "1470660"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/e800a9b9fb89f994"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "United Assault",
+        "set": "q02"
+      }
+    ]
+  },
+  "setCode": "Q02",
+  "setName": "Challenger Decks 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 186432,
+      "name": "Challenger Deck 2019: United Assault",
+      "cleanName": "Challenger Deck 2019 United Assault",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/186432_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/186432/magic-challenger-decks-challenger-deck-2019-united-assault",
+      "modifiedOn": "2019-03-20T16:43:45.333",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains:\r\n<br>• 60-card main deck\r\n<br>• 15-card sideboard\r\n<br>• A box capable of holding 75 sleeved cards\r\n<br>• Spindown life counter\r\n<br>• Quick reference guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 186432,
+        "lowPrice": 11.96,
+        "midPrice": 19.95,
+        "highPrice": 49.99,
+        "marketPrice": 13.24,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

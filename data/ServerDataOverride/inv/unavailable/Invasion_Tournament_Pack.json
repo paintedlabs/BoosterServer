@@ -1,0 +1,60 @@
+{
+  "uuid": "1971eacc-6305-5c8c-914d-663ae422c379",
+  "name": "Invasion Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1100600",
+    "cardKingdomId": "1286",
+    "cardtraderId": "45743",
+    "mcmId": "248478",
+    "scgId": "SLD-MTG-PCK-INVTOURNAMENT-EN",
+    "tcgplayerProductId": "93344",
+    "tntId": "84075"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/863bc76657a48a48",
+    "tcgplayer": "https://mtgjson.com/links/da16f420a85ba142"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "inv"
+      }
+    ]
+  },
+  "setCode": "INV",
+  "setName": "Invasion",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93344,
+      "name": "Invasion - Tournament Pack",
+      "cleanName": "Invasion Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93344_200w.jpg",
+      "categoryId": 1,
+      "groupId": 60,
+      "url": "https://www.tcgplayer.com/product/93344/magic-invasion-invasion-tournament-pack",
+      "modifiedOn": "2014-09-23T20:12:16.34",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 93344,
+        "lowPrice": 94.74,
+        "midPrice": 97.47,
+        "highPrice": 100,
+        "marketPrice": 94.68,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

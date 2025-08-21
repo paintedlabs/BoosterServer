@@ -1,0 +1,766 @@
+{
+  "uuid": "ea7e13c0-2ebb-58c5-b578-7c07c3e42e4b",
+  "name": "March of the Machine Prerelease Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 2,
+  "releaseDate": "2023-04-21",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "cardKingdomId": "274987",
+    "cardtraderId": "231983",
+    "csiId": "354587",
+    "mcmId": "689790",
+    "tcgplayerProductId": "475588"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/fcb58c76e4371073"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "March of the Machine Prerelease Spindown"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease",
+        "set": "mom"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "March of the Machine Draft Booster Pack",
+        "set": "mom",
+        "uuid": "8acde1c9-b392-57c3-a2e4-27f7c1c9ab46"
+      }
+    ]
+  },
+  "setCode": "MOM",
+  "setName": "March of the Machine",
+  "extendedData": {
+    "code": "mom-prerelease",
+    "boosters": [
+      {
+        "sheets": {
+          "promo_teamup": 1,
+          "prerelease_promo": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "promo_teamup_foil": 1,
+          "prerelease_promo": 1
+        },
+        "weight": 2
+      }
+    ],
+    "sheets": {
+      "promo_teamup": {
+        "total_weight": 9,
+        "cards": [
+          {
+            "set": "moc",
+            "number": "445",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a24bd0d0-0bca-5970-b12b-6587f7745561"
+          },
+          {
+            "set": "moc",
+            "number": "446",
+            "weight": 2,
+            "foil": false,
+            "uuid": "d6ba7d47-c905-51f9-8dfa-89b38b431566"
+          },
+          {
+            "set": "moc",
+            "number": "447",
+            "weight": 2,
+            "foil": false,
+            "uuid": "26e68b95-39a1-5d9d-a444-e998e93cdd1f"
+          },
+          {
+            "set": "moc",
+            "number": "448",
+            "weight": 1,
+            "foil": false,
+            "uuid": "299bd0f7-15c0-512b-96b0-341bf45f7d64"
+          },
+          {
+            "set": "moc",
+            "number": "449",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3c5fa5d4-e005-5108-b0ba-f70cd10f344f"
+          },
+          {
+            "set": "moc",
+            "number": "450",
+            "weight": 1,
+            "foil": false,
+            "uuid": "6d322dc3-2fc7-573e-b37f-6901d238f03e"
+          }
+        ]
+      },
+      "prerelease_promo": {
+        "total_weight": 140,
+        "cards": [
+          {
+            "set": "pmom",
+            "number": "1sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "fdd13bfd-abdc-52fb-b3ab-546cd976d7db"
+          },
+          {
+            "set": "pmom",
+            "number": "6s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ff769fd3-efbb-5872-b9e4-339d4e35c958"
+          },
+          {
+            "set": "pmom",
+            "number": "9s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a3e5c068-c814-5f57-9e59-adf20eb2018a"
+          },
+          {
+            "set": "pmom",
+            "number": "11s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a380400d-c7c0-56f0-8576-da474db59d39"
+          },
+          {
+            "set": "pmom",
+            "number": "12sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "cc914d29-c4e3-5230-baa7-51ffbb90cf6d"
+          },
+          {
+            "set": "pmom",
+            "number": "16s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ea1e6803-094e-5987-be50-59710fd6e20d"
+          },
+          {
+            "set": "pmom",
+            "number": "17sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "96d2d87a-d1c5-5d84-9345-40cd2e3298f9"
+          },
+          {
+            "set": "pmom",
+            "number": "22sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d2514eab-e330-58f2-9363-04d44f1cd9b9"
+          },
+          {
+            "set": "pmom",
+            "number": "23sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "043f6611-4bc4-55e5-b95c-095fe273b56a"
+          },
+          {
+            "set": "pmom",
+            "number": "26s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "0769e650-eb5b-5198-8b09-98ea2bad20cb"
+          },
+          {
+            "set": "pmom",
+            "number": "28s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "81faa910-e8bf-57e8-8bbe-cec6ae6a3afa"
+          },
+          {
+            "set": "pmom",
+            "number": "32s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b2dfe4a3-4d7e-5b1f-9a24-234d320bb097"
+          },
+          {
+            "set": "pmom",
+            "number": "40s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7a56d367-0e64-5825-ac9d-bbb7f7ab43e9"
+          },
+          {
+            "set": "pmom",
+            "number": "51s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "67513685-3199-5d02-a2ee-2f84908ef810"
+          },
+          {
+            "set": "pmom",
+            "number": "52s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f7f4ff98-382f-5979-b7aa-2a6f57b020d5"
+          },
+          {
+            "set": "pmom",
+            "number": "58s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b898f667-23cb-5425-83fb-e967fb002851"
+          },
+          {
+            "set": "pmom",
+            "number": "61sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "fb5ea6fe-638c-5324-97ad-58948ced677d"
+          },
+          {
+            "set": "pmom",
+            "number": "63sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2b4075a4-76f9-553f-839d-a41508aa0011"
+          },
+          {
+            "set": "pmom",
+            "number": "65sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "690ecef0-9f3c-5ac2-850b-07e7a03f8803"
+          },
+          {
+            "set": "pmom",
+            "number": "75sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "3b6da8a5-00e5-529e-8c10-74a8acdcc423"
+          },
+          {
+            "set": "pmom",
+            "number": "77s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "82ca92e6-baed-5979-a898-7863d7534401"
+          },
+          {
+            "set": "pmom",
+            "number": "83s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e4ba0ecb-da27-5e79-af41-fcd845ca645e"
+          },
+          {
+            "set": "pmom",
+            "number": "86s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "0f2abcf4-6e5c-5022-9a05-c79966214fb1"
+          },
+          {
+            "set": "pmom",
+            "number": "89s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "8d2382f3-0c36-513a-a3a1-7988637b0a88"
+          },
+          {
+            "set": "pmom",
+            "number": "90sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "90e4d4f6-a42f-5b58-ad03-317e33b8bf86"
+          },
+          {
+            "set": "pmom",
+            "number": "93s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6e630c58-d4fd-5920-9a4d-6822c358a653"
+          },
+          {
+            "set": "pmom",
+            "number": "94s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "81ae88fa-b0d9-5161-ab31-d7cc55fc5402"
+          },
+          {
+            "set": "pmom",
+            "number": "109s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6e791908-f601-5a34-9c63-33ea29b825a6"
+          },
+          {
+            "set": "pmom",
+            "number": "110s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c119c416-7290-5797-b023-0b5a62657431"
+          },
+          {
+            "set": "pmom",
+            "number": "114sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5129660d-d0b9-5965-9352-02bd73652181"
+          },
+          {
+            "set": "pmom",
+            "number": "115sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "68f46c49-39f7-5f33-934d-98cf2e24e020"
+          },
+          {
+            "set": "pmom",
+            "number": "122s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2ad1ae91-e45f-5033-acfe-c4da4a389fe0"
+          },
+          {
+            "set": "pmom",
+            "number": "125sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "22cefa94-b5e0-5c24-9d59-7283b6d6c6d4"
+          },
+          {
+            "set": "pmom",
+            "number": "132s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "03606664-a94d-556a-b7d3-b8ccf13994a3"
+          },
+          {
+            "set": "pmom",
+            "number": "134s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "b3e6129e-6079-5bf0-9292-7b70be97cd75"
+          },
+          {
+            "set": "pmom",
+            "number": "135s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ffc82f44-7289-5f96-acb9-b0a7c81a0906"
+          },
+          {
+            "set": "pmom",
+            "number": "137sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "366afce7-624e-5b45-b7ab-42661e1cf4d2"
+          },
+          {
+            "set": "pmom",
+            "number": "144s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "160c0e09-6545-5211-b3a0-cad4a72b8489"
+          },
+          {
+            "set": "pmom",
+            "number": "145sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "088b0aab-2525-5bce-991f-d55a8f5b442f"
+          },
+          {
+            "set": "pmom",
+            "number": "146sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a1bcf799-381d-559d-b7eb-439ac30694a8"
+          },
+          {
+            "set": "pmom",
+            "number": "149sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "671f5596-dfe8-506b-9be2-a7f8f99fab36"
+          },
+          {
+            "set": "pmom",
+            "number": "155s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "acdf75f5-d35a-5a5e-b5f4-c1b5bb3c9cb1"
+          },
+          {
+            "set": "pmom",
+            "number": "160s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7e948c5d-c397-5bf1-a9cc-316f3b41cc11"
+          },
+          {
+            "set": "pmom",
+            "number": "169sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "c6034fe9-6d6a-5a89-9b13-bf8854e1be34"
+          },
+          {
+            "set": "pmom",
+            "number": "171s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2ccb208d-0123-556d-b2bf-457e03da16aa"
+          },
+          {
+            "set": "pmom",
+            "number": "174s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "bb4a0c33-177d-563c-88e0-376fbf480af8"
+          },
+          {
+            "set": "pmom",
+            "number": "184s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a8e1dfd4-c6cc-5614-b24a-511e8ce787e2"
+          },
+          {
+            "set": "pmom",
+            "number": "185s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a78fd240-202b-5890-80cf-9097f057d00e"
+          },
+          {
+            "set": "pmom",
+            "number": "187s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "977021f9-710e-548f-86d3-1f6ebfe8301b"
+          },
+          {
+            "set": "pmom",
+            "number": "190sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "44f945ae-bdaa-56e1-9918-e29fbf566d50"
+          },
+          {
+            "set": "pmom",
+            "number": "191sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "59d6a120-2544-58fc-b2fd-bc81d369fa28"
+          },
+          {
+            "set": "pmom",
+            "number": "193sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "d2cad96d-dbf2-54fe-8303-e12cd2cc31e4"
+          },
+          {
+            "set": "pmom",
+            "number": "198s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "693e8fb3-df87-59ee-9b57-bef7c7682d8f"
+          },
+          {
+            "set": "pmom",
+            "number": "200sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "02c36173-0f5f-5f83-9c6f-118c1b9988f7"
+          },
+          {
+            "set": "pmom",
+            "number": "211s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1db36491-8207-52e0-aa12-f68598a2acc8"
+          },
+          {
+            "set": "pmom",
+            "number": "213sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "585c5617-b77a-529a-a4da-531c06d872bf"
+          },
+          {
+            "set": "pmom",
+            "number": "217s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "a1862ba3-dff6-5877-a8b4-6b131f098362"
+          },
+          {
+            "set": "pmom",
+            "number": "218s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6c5abc3b-a91b-524a-b942-812f3f2e33b2"
+          },
+          {
+            "set": "pmom",
+            "number": "219s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "c84dfb41-bf33-56b3-b42e-3e3e1cc35b24"
+          },
+          {
+            "set": "pmom",
+            "number": "221s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "44d9f42d-7ca7-58c7-9537-bd60f8783bc1"
+          },
+          {
+            "set": "pmom",
+            "number": "222s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "fb0c8fe9-ddc6-5c7c-aac6-5d52bcdb6e10"
+          },
+          {
+            "set": "pmom",
+            "number": "224s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5a31b110-9ce7-5dc9-a489-cdf855460f61"
+          },
+          {
+            "set": "pmom",
+            "number": "225s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6e436b5d-a302-514d-bb76-327b99fac59f"
+          },
+          {
+            "set": "pmom",
+            "number": "226s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "298ce27a-8cca-51c0-a5dc-314a57f635a0"
+          },
+          {
+            "set": "pmom",
+            "number": "228s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "16b39288-a3e2-514f-bca4-2f5d336614c8"
+          },
+          {
+            "set": "pmom",
+            "number": "229s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "bf853d3a-b5bd-5783-ad43-bde55897c9a1"
+          },
+          {
+            "set": "pmom",
+            "number": "230sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "02172a89-231f-5235-b198-7e993962256a"
+          },
+          {
+            "set": "pmom",
+            "number": "239sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "e487a9b1-29dc-5e74-8f36-3dfd9b0cda82"
+          },
+          {
+            "set": "pmom",
+            "number": "241sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ed8d33cf-66d7-5d72-8c67-7823ab21f862"
+          },
+          {
+            "set": "pmom",
+            "number": "244s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "bf822c26-e5f6-55f8-9dbc-4d77cc57a661"
+          },
+          {
+            "set": "pmom",
+            "number": "245s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "0524bf03-bea0-531b-9f73-9c4a44fbf15b"
+          },
+          {
+            "set": "pmom",
+            "number": "249s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d37c5909-049c-50cb-802b-6272afcd71c5"
+          },
+          {
+            "set": "pmom",
+            "number": "250s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "66d73814-815b-513e-8d67-fcb31e187ea1"
+          },
+          {
+            "set": "pmom",
+            "number": "252s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "81b2776a-92ec-56e7-bda0-fbb9c1cbb281"
+          },
+          {
+            "set": "pmom",
+            "number": "255s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "15de704b-01ab-52e2-8078-f7cfb4ad63d6"
+          },
+          {
+            "set": "pmom",
+            "number": "256s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ea508359-30d4-5312-8273-d22e84ca02fe"
+          },
+          {
+            "set": "pmom",
+            "number": "257s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "4b606775-925b-5d86-97bf-7c3dc5c72d22"
+          },
+          {
+            "set": "pmom",
+            "number": "258s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3ae3c380-a20b-588d-8beb-245334ae8fb4"
+          },
+          {
+            "set": "pmom",
+            "number": "263s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "47aa9e36-d0fa-5a62-a9bc-b89d3241757f"
+          },
+          {
+            "set": "pmom",
+            "number": "265s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "cd9295a8-e604-54bf-a8a4-270f599234c5"
+          }
+        ]
+      },
+      "promo_teamup_foil": {
+        "total_weight": 9,
+        "cards": [
+          {
+            "set": "moc",
+            "number": "445",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a24bd0d0-0bca-5970-b12b-6587f7745561"
+          },
+          {
+            "set": "moc",
+            "number": "446",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d6ba7d47-c905-51f9-8dfa-89b38b431566"
+          },
+          {
+            "set": "moc",
+            "number": "447",
+            "weight": 2,
+            "foil": true,
+            "uuid": "26e68b95-39a1-5d9d-a444-e998e93cdd1f"
+          },
+          {
+            "set": "moc",
+            "number": "448",
+            "weight": 1,
+            "foil": true,
+            "uuid": "299bd0f7-15c0-512b-96b0-341bf45f7d64"
+          },
+          {
+            "set": "moc",
+            "number": "449",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3c5fa5d4-e005-5108-b0ba-f70cd10f344f"
+          },
+          {
+            "set": "moc",
+            "number": "450",
+            "weight": 1,
+            "foil": true,
+            "uuid": "6d322dc3-2fc7-573e-b37f-6901d238f03e"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "moc",
+      "pmom"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 475588,
+      "name": "March of the Machine - Prerelease Pack",
+      "cleanName": "March of the Machine Prerelease Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/475588_200w.jpg",
+      "categoryId": 1,
+      "groupId": 22875,
+      "url": "https://www.tcgplayer.com/product/475588/magic-march-of-the-machine-march-of-the-machine-prerelease-pack",
+      "modifiedOn": "2023-04-15T04:03:07.87",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2023-04-21T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The March of the Machine Prerelease Pack contains 6 March of the Machine Draft Boosters, 1 Traditional Foil, year-stamped Rare or Mythic rare card, 1 new Mythic Rare card (Traditional Foil in 18% of Prerelease Packs), 1 code card to unlock 6 March of the Machine boosters in Magic: The Gathering Arena (only available in select regions), 1 deck box, and 1 Spindown life counter.\r\n<br>\r\nContents:\r\n<br>\r\n• 6 March of the Machine Draft Boosters\r\n<br>\r\n• 1 Traditional Foil, year-stamped Rare or Mythic Rare\r\n<br>\r\n• 1 new Mythic Rare card (Traditional Foil in 18% of Prerelease Packs)\r\n<br>\r\n• 1 MTG Arena code card (only available in select regions)\r\n<br>\r\n• 1 deck box\r\n<br>\r\n• 1 Spindown die"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166208510"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 475588,
+        "lowPrice": 19.99,
+        "midPrice": 31.43,
+        "highPrice": 40,
+        "marketPrice": 26.16,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

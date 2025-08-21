@@ -1,0 +1,78 @@
+{
+  "uuid": "763a8c4f-c542-59a9-820e-60f4e7970cc7",
+  "name": "2011 Core Set Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100746",
+    "cardKingdomId": "131450",
+    "cardtraderId": "47510",
+    "csiId": "97794",
+    "mcmId": "241076",
+    "scgId": "SLD-MTG-BUN-M11-EN",
+    "tcgplayerProductId": "35382",
+    "tntId": "289830"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/14336a0099425821"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Magic 2011 Card Box"
+      },
+      {
+        "name": "Magic 2011 Player's Guide"
+      },
+      {
+        "name": "Learn-to-Play Insert"
+      },
+      {
+        "name": "Magic 2011 40-card Basic Land Bundle"
+      },
+      {
+        "name": "Magic 2011 Spindown Life Counter"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "2011 Core Set Booster Pack",
+        "set": "m11",
+        "uuid": "e5030b38-4fc1-5304-8ca8-365af9f4a9de"
+      }
+    ]
+  },
+  "setCode": "M11",
+  "setName": "Magic 2011",
+  "tcgcsvData": {
+    "product": {
+      "productId": 35382,
+      "name": "Magic 2011 (M11) - Fat Pack",
+      "cleanName": "Magic 2011 M11 Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/35382_200w.jpg",
+      "categoryId": 1,
+      "groupId": 69,
+      "url": "https://www.tcgplayer.com/product/35382/magic-magic-2011-m11-magic-2011-m11-fat-pack",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 35382,
+        "lowPrice": 120,
+        "midPrice": 133.98,
+        "highPrice": 155.7,
+        "marketPrice": 119,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

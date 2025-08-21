@@ -1,0 +1,73 @@
+{
+  "uuid": "fe1fabf5-8294-5a1d-9f00-c554c3087851",
+  "name": "Worldwake Intro Pack Flyover",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1107791",
+    "cardKingdomId": "129945",
+    "cardtraderId": "47458",
+    "mcmId": "210202",
+    "scgId": "SLD-MTG-INT-WWKINTRO-EN-FLYOVER",
+    "tcgplayerProductId": "196796",
+    "tntId": "287105"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/aa2401556c6d0901"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Flyover",
+        "set": "wwk"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Worldwake Booster Pack",
+        "set": "wwk",
+        "uuid": "d40674d1-34ff-5855-8dad-7718eaa462aa"
+      }
+    ]
+  },
+  "setCode": "WWK",
+  "setName": "Worldwake",
+  "tcgcsvData": {
+    "product": {
+      "productId": 196796,
+      "name": "Worldwake Intro Pack - Flyover",
+      "cleanName": "Worldwake Intro Pack Flyover",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/196796_200w.jpg",
+      "categoryId": 1,
+      "groupId": 122,
+      "url": "https://www.tcgplayer.com/product/196796/magic-worldwake-worldwake-intro-pack-flyover",
+      "modifiedOn": "2021-03-31T13:20:18.243",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The \"Flyover\" deck puts you in command of a squadron of flying creatures. Halt your opponents' ground assaults and let loose a reign of terror from the air!\r\n<br>\r\n<br>Each intro pack includes:\r\n<br>• 1 Premium card\r\n<br>• 40-card preconstructed deck\r\n<br>• One Worldwake booster pack\r\n<br>• A strategy and mechanics guide\r\n<br>• A learn-to-play insert for new players"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 196796,
+        "lowPrice": 39.99,
+        "midPrice": 43.99,
+        "highPrice": 47.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

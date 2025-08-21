@@ -1,0 +1,74 @@
+{
+  "uuid": "f14fd22f-e6d9-50d1-aad5-a50af215efe7",
+  "name": "Dragons Maze Intro Pack Gruul Siege",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100415",
+    "cardKingdomId": "189631",
+    "cardtraderId": "47942",
+    "csiId": "192763",
+    "mcmId": "261684",
+    "scgId": "SLD-MTG-INT-DGMINTRO-EN-GRUUL",
+    "tcgplayerProductId": "68031",
+    "tntId": "1026693"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/5117238598b0c791"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Gruul Siege",
+        "set": "dgm"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Dragons Maze Booster Pack",
+        "set": "dgm",
+        "uuid": "b9c1d8bb-29d1-5572-b3c3-26363ecfdada"
+      }
+    ]
+  },
+  "setCode": "DGM",
+  "setName": "Dragon's Maze",
+  "tcgcsvData": {
+    "product": {
+      "productId": 68031,
+      "name": "Dragon's Maze - Intro Pack - Gruul Siege",
+      "cleanName": "Dragons Maze Intro Pack Gruul Siege",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/68031_200w.jpg",
+      "categoryId": 1,
+      "groupId": 570,
+      "url": "https://www.tcgplayer.com/product/68031/magic-dragons-maze-dragons-maze-intro-pack-gruul-siege",
+      "modifiedOn": "2014-01-06T17:28:09.87",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 82207 3"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 68031,
+        "lowPrice": 20.31,
+        "midPrice": 20.32,
+        "highPrice": 29.99,
+        "marketPrice": 20.32,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

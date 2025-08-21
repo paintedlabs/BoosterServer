@@ -1,0 +1,79 @@
+{
+  "uuid": "a4bdf136-6fc7-5ad0-9b18-a009bfa430e4",
+  "name": "Born of the Gods Fat Pack",
+  "category": "bundle",
+  "releaseDate": "2014-02-07",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100193",
+    "cardKingdomId": "193121",
+    "cardtraderId": "48075",
+    "csiId": "187121",
+    "mcmId": "265525",
+    "scgId": "SLD-MTG-BUN-BNG-EN",
+    "tcgplayerProductId": "77981",
+    "tntId": "1048619"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d04523fa61d40a63"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Player's guide with encyclopedia"
+      },
+      {
+        "name": "Born of the Gods card box"
+      },
+      {
+        "name": "80-card basic land pack"
+      },
+      {
+        "name": "Special edition spindown life counter"
+      },
+      {
+        "name": "Two deck boxes"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 9,
+        "name": "Born of the Gods Booster Pack",
+        "set": "bng",
+        "uuid": "16e12027-2acd-5bfa-81e8-ed3bc5381334"
+      }
+    ]
+  },
+  "setCode": "BNG",
+  "setName": "Born of the Gods",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77981,
+      "name": "Born of the Gods - Fat Pack",
+      "cleanName": "Born of the Gods Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77981_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1276,
+      "url": "https://www.tcgplayer.com/product/77981/magic-born-of-the-gods-born-of-the-gods-fat-pack",
+      "modifiedOn": "2014-01-14T13:55:50.76",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2014-02-07T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77981,
+        "lowPrice": 40,
+        "midPrice": 49.99,
+        "highPrice": 66.59,
+        "marketPrice": 46.4,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

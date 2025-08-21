@@ -1,0 +1,87 @@
+{
+  "uuid": "3bb20628-c58b-5d00-bb39-54200ea72838",
+  "name": "Core Set 2020 Planeswalker Decks Set of 5",
+  "category": "subset",
+  "releaseDate": "2019-07-12",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1580487",
+    "scgId": "SLD-MTG-INT-M20PWDECK-EN-SET5",
+    "tcgplayerProductId": "188222"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/41284dc75942257a"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2020 Planeswalker Deck Ajani",
+        "set": "m20",
+        "uuid": "7a941771-db73-5364-b7c5-231cc451a9b2"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2020 Planeswalker Deck Chandra",
+        "set": "m20",
+        "uuid": "4d20c174-dbe1-5717-b915-9bd8602d72f5"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2020 Planeswalker Deck Sorin",
+        "set": "m20",
+        "uuid": "c69d6542-40e7-5c3b-912b-abf8c07efd45"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2020 Planeswalker Deck Vivien",
+        "set": "m20",
+        "uuid": "e2481cbc-1d13-59fb-860a-e2515512214d"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2020 Planeswalker Deck Yanling",
+        "set": "m20",
+        "uuid": "899d7a93-0e77-5375-9813-099591dcbd4e"
+      }
+    ]
+  },
+  "setCode": "M20",
+  "setName": "Core Set 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 188222,
+      "name": "Core Set 2020 - Planeswalker Deck [Set of 5]",
+      "cleanName": "Core Set 2020 Planeswalker Deck Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/188222_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2441,
+      "url": "https://www.tcgplayer.com/product/188222/magic-core-set-2020-core-set-2020-planeswalker-deck-set-of-5",
+      "modifiedOn": "2019-06-27T13:03:50.05",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-07-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect one each of the five Core Set 2020 Planeswalker Decks."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 188222,
+        "lowPrice": 139,
+        "midPrice": 154.99,
+        "highPrice": 159.98,
+        "marketPrice": 159.98,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "uuid": "abf2df9f-7186-5255-b984-c34904bfbd63",
+  "name": "Commander Legends Commander Decks Set of 2",
+  "category": "subset",
+  "releaseDate": "2020-11-20",
+  "subtype": "commander",
+  "identifiers": {
+    "cardtraderId": "151471",
+    "csiId": "305691",
+    "mcmId": "509115",
+    "scgId": "SLD-MTG-MLT-CMC-EN-SET2",
+    "tcgplayerProductId": "224545"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/aec58dbb901a3e65"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander Legends Commander Deck Arm for Battle",
+        "set": "cmr",
+        "uuid": "da9a12a1-1e59-5672-b16f-15cb6b45ac66"
+      },
+      {
+        "count": 1,
+        "name": "Commander Legends Commander Deck Reap the Tides",
+        "set": "cmr",
+        "uuid": "94dead0e-794d-5b29-bd99-222f54d519e0"
+      }
+    ]
+  },
+  "setCode": "CMR",
+  "setName": "Commander Legends",
+  "tcgcsvData": {
+    "product": {
+      "productId": 224545,
+      "name": "Commander Legends - Commander Deck [Set of 2]",
+      "cleanName": "Commander Legends Commander Deck Set of 2",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/224545_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2708,
+      "url": "https://www.tcgplayer.com/product/224545/magic-commander-legends-commander-legends-commander-deck-set-of-2",
+      "modifiedOn": "2020-11-20T05:03:27.68",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-11-20T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Commander Legends Commander Deck Contains: 1 ready-to-play deck of 99 Magic: The Gathering cards, 1 legendary foil commander card, 10 tokens, 1 deck box (can hold 100 sleeved cards), 1 life tracker"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 224545,
+        "lowPrice": 160,
+        "midPrice": 193,
+        "highPrice": 199.95,
+        "marketPrice": 132.56,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

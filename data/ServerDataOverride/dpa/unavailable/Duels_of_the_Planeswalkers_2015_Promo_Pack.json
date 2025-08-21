@@ -1,0 +1,70 @@
+{
+  "uuid": "25dfcd00-df7b-57e2-a748-8590fc64202a",
+  "name": "Duels of the Planeswalkers 2015 Promo Pack",
+  "category": "booster_pack",
+  "cardCount": 6,
+  "subtype": "promotional",
+  "identifiers": {
+    "cardtraderId": "51091",
+    "mcmId": "268123",
+    "tcgplayerProductId": "264779"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/14adab474f12998b"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Soul of Zendikar",
+        "number": "2",
+        "set": "pdp15",
+        "uuid": "81fbc224-69b2-5065-9eef-5a17fda89ae6"
+      }
+    ],
+    "pack": [
+      {
+        "code": "duelspromo",
+        "set": "m15"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 264779,
+      "name": "Duels of the Planeswalkers 2015 Promo Pack",
+      "cleanName": "Duels of the Planeswalkers 2015 Promo Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/264779_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/264779/magic-duels-of-the-planeswalkers-duels-of-the-planeswalkers-2015-promo-pack",
+      "modifiedOn": "2022-02-25T21:25:51.66",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>This promo pack was for all non-XBOX consoles including iPad, PC via Steam, Android tablet via the Amazon App Store, and Google Play.</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 264779,
+        "lowPrice": 9.95,
+        "midPrice": 9.95,
+        "highPrice": 9.95,
+        "marketPrice": 4.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

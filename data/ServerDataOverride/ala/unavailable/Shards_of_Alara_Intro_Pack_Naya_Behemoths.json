@@ -1,0 +1,67 @@
+{
+  "uuid": "4c711672-8ab4-50e6-863f-03a93d5292ff",
+  "name": "Shards of Alara Intro Pack Naya Behemoths",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101162",
+    "cardKingdomId": "126134",
+    "cardtraderId": "47328",
+    "mcmId": "244173",
+    "scgId": "SLD-MTG-INT-ALAINTRO-EN-NAYA",
+    "tcgplayerProductId": "278895",
+    "tntId": "183792"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d9503d5d8b8d79ef"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Naya Behemoths",
+        "set": "ala"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Shards of Alara Booster Pack",
+        "set": "ala",
+        "uuid": "53db9568-de5e-5a95-9882-b3b16ad4931c"
+      }
+    ]
+  },
+  "setCode": "ALA",
+  "setName": "Shards of Alara",
+  "tcgcsvData": {
+    "product": {
+      "productId": 278895,
+      "name": "Shards of Alara - Intro Pack - Naya Behemoths",
+      "cleanName": "Shards of Alara Intro Pack Naya Behemoths",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/278895_200w.jpg",
+      "categoryId": 1,
+      "groupId": 103,
+      "url": "https://www.tcgplayer.com/product/278895/magic-shards-of-alara-shards-of-alara-intro-pack-naya-behemoths",
+      "modifiedOn": "2022-07-06T20:53:53.49",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 278895,
+        "lowPrice": 44.99,
+        "midPrice": 72.5,
+        "highPrice": 100,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

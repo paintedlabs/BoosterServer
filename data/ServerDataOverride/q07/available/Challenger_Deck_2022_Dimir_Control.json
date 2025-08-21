@@ -1,0 +1,72 @@
+{
+  "uuid": "291b4274-beee-53d5-b4db-309f05d696a5",
+  "name": "Challenger Deck 2022 Dimir Control",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2022-01-26",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "2167836",
+    "cardKingdomId": "257493",
+    "cardtraderId": "206982",
+    "csiId": "328756",
+    "mcmId": "611305",
+    "miniaturemarketId": "283478",
+    "tcgplayerProductId": "263165",
+    "tntId": "1745656"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/50a7023c680018ec"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dimir Control",
+        "set": "q07"
+      }
+    ]
+  },
+  "setCode": "Q07",
+  "setName": "Challenger Decks 2022",
+  "tcgcsvData": {
+    "product": {
+      "productId": 263165,
+      "name": "Challenger Deck 2022: Dimir Control",
+      "cleanName": "Challenger Deck 2022 Dimir Control",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263165_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/263165/magic-challenger-decks-challenger-deck-2022-dimir-control",
+      "modifiedOn": "2022-04-01T04:03:13.61",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166138817"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 263165,
+        "lowPrice": 23.45,
+        "midPrice": 32.45,
+        "highPrice": 64.99,
+        "marketPrice": 23.7,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

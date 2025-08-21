@@ -1,0 +1,72 @@
+{
+  "uuid": "3486b605-60ec-54af-8ab1-265e1d01c688",
+  "name": "Challenger Deck 2022 Gruul Stompy",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2022-03-06",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "2167837",
+    "cardKingdomId": "257495",
+    "cardtraderId": "206981",
+    "csiId": "328758",
+    "mcmId": "611306",
+    "miniaturemarketId": "283476",
+    "tcgplayerProductId": "263166",
+    "tntId": "1745657"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2b8e1fb8f320c9c8"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Gruul Stompy",
+        "set": "q07"
+      }
+    ]
+  },
+  "setCode": "Q07",
+  "setName": "Challenger Decks 2022",
+  "tcgcsvData": {
+    "product": {
+      "productId": 263166,
+      "name": "Challenger Deck 2022: Gruul Stompy",
+      "cleanName": "Challenger Deck 2022 Gruul Stompy",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263166_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/263166/magic-challenger-decks-challenger-deck-2022-gruul-stompy",
+      "modifiedOn": "2022-04-01T04:03:13.61",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166138817"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 263166,
+        "lowPrice": 23.01,
+        "midPrice": 34.39,
+        "highPrice": 39.99,
+        "marketPrice": 23.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

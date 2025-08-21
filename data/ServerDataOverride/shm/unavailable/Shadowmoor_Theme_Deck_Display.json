@@ -1,0 +1,280 @@
+{
+  "uuid": "ea7263dd-e8b2-5622-bff7-9516d1ee8e51",
+  "name": "Shadowmoor Theme Deck Display",
+  "category": "deck_box",
+  "releaseDate": "2007-01-01",
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1108000",
+    "cardtraderId": "47309",
+    "mcmId": "210208",
+    "scgId": "SLD-MTG-INT-SHMTHEME-JA",
+    "tcgplayerProductId": "644349",
+    "tntId": "178626"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8730cef8f11879ec"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Shadowmoor Theme Deck Army of Entropy",
+        "set": "shm",
+        "uuid": "b28fb6ae-7902-50bc-b94e-9785923102a8"
+      },
+      {
+        "count": 2,
+        "name": "Shadowmoor Theme Deck Aura Mastery",
+        "set": "shm",
+        "uuid": "2e0b234f-7e27-5dd8-a2f6-b2375944e6a1"
+      },
+      {
+        "count": 2,
+        "name": "Shadowmoor Theme Deck Mortal Coil",
+        "set": "shm",
+        "uuid": "81739fd5-ec33-55ea-8817-e5834373b8a4"
+      },
+      {
+        "count": 2,
+        "name": "Shadowmoor Theme Deck Overkill",
+        "set": "shm",
+        "uuid": "4cda9a63-1a36-593f-b5cd-13ea75c77823"
+      },
+      {
+        "count": 2,
+        "name": "Shadowmoor Theme Deck Turnabout",
+        "set": "shm",
+        "uuid": "223b4316-b8bc-5a66-891f-f7656a2f2f66"
+      }
+    ],
+    "variable": [
+      {
+        "configs": [
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Army of Entropy",
+                "set": "shm",
+                "uuid": "b28fb6ae-7902-50bc-b94e-9785923102a8"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Aura Mastery",
+                "set": "shm",
+                "uuid": "2e0b234f-7e27-5dd8-a2f6-b2375944e6a1"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Army of Entropy",
+                "set": "shm",
+                "uuid": "b28fb6ae-7902-50bc-b94e-9785923102a8"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Mortal Coil",
+                "set": "shm",
+                "uuid": "81739fd5-ec33-55ea-8817-e5834373b8a4"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Army of Entropy",
+                "set": "shm",
+                "uuid": "b28fb6ae-7902-50bc-b94e-9785923102a8"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Overkill",
+                "set": "shm",
+                "uuid": "4cda9a63-1a36-593f-b5cd-13ea75c77823"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Army of Entropy",
+                "set": "shm",
+                "uuid": "b28fb6ae-7902-50bc-b94e-9785923102a8"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Turnabout",
+                "set": "shm",
+                "uuid": "223b4316-b8bc-5a66-891f-f7656a2f2f66"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Aura Mastery",
+                "set": "shm",
+                "uuid": "2e0b234f-7e27-5dd8-a2f6-b2375944e6a1"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Mortal Coil",
+                "set": "shm",
+                "uuid": "81739fd5-ec33-55ea-8817-e5834373b8a4"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Aura Mastery",
+                "set": "shm",
+                "uuid": "2e0b234f-7e27-5dd8-a2f6-b2375944e6a1"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Overkill",
+                "set": "shm",
+                "uuid": "4cda9a63-1a36-593f-b5cd-13ea75c77823"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Aura Mastery",
+                "set": "shm",
+                "uuid": "2e0b234f-7e27-5dd8-a2f6-b2375944e6a1"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Turnabout",
+                "set": "shm",
+                "uuid": "223b4316-b8bc-5a66-891f-f7656a2f2f66"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Mortal Coil",
+                "set": "shm",
+                "uuid": "81739fd5-ec33-55ea-8817-e5834373b8a4"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Overkill",
+                "set": "shm",
+                "uuid": "4cda9a63-1a36-593f-b5cd-13ea75c77823"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Mortal Coil",
+                "set": "shm",
+                "uuid": "81739fd5-ec33-55ea-8817-e5834373b8a4"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Turnabout",
+                "set": "shm",
+                "uuid": "223b4316-b8bc-5a66-891f-f7656a2f2f66"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Overkill",
+                "set": "shm",
+                "uuid": "4cda9a63-1a36-593f-b5cd-13ea75c77823"
+              },
+              {
+                "count": 1,
+                "name": "Shadowmoor Theme Deck Turnabout",
+                "set": "shm",
+                "uuid": "223b4316-b8bc-5a66-891f-f7656a2f2f66"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "SHM",
+  "setName": "Shadowmoor"
+}

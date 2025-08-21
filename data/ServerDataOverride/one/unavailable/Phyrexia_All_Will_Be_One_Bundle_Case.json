@@ -1,0 +1,66 @@
+{
+  "uuid": "5280c1f5-8d88-56fa-9531-bc27517fa5ec",
+  "name": "Phyrexia All Will Be One Bundle Case",
+  "category": "bundle_case",
+  "releaseDate": "2023-02-10",
+  "subtype": "default",
+  "identifiers": {
+    "tcgplayerProductId": "451878"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/18f0efda96f7b49e"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Phyrexia All Will Be One Bundle",
+        "set": "one",
+        "uuid": "3f6005aa-7643-5790-83e1-f50c49c7b725"
+      }
+    ]
+  },
+  "setCode": "ONE",
+  "setName": "Phyrexia: All Will Be One",
+  "tcgcsvData": {
+    "product": {
+      "productId": 451878,
+      "name": "Phyrexia: All Will Be One - Bundle Case",
+      "cleanName": "Phyrexia All Will Be One Bundle Case",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/451878_200w.jpg",
+      "categoryId": 1,
+      "groupId": 17684,
+      "url": "https://www.tcgplayer.com/product/451878/magic-phyrexia-all-will-be-one-phyrexia-all-will-be-one-bundle-case",
+      "modifiedOn": "2023-02-10T05:04:57.417",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2023-02-10T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each unopened case contains 6 Phyrexia: All Will Be One - Bundles."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166185767"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 451878,
+        "lowPrice": 959.99,
+        "midPrice": 959.99,
+        "highPrice": 959.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

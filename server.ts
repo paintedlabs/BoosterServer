@@ -60,12 +60,13 @@ const app = express();
 app.use(
   cors({
     origin: "*", // Allow only this origin
-    methods: ["GET", "POST"], // Allow only GET and POST methods
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allow all methods
   })
 );
 
 // -------------- MIDDLEWARE --------------
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 // -------------- INTERFACES --------------
 interface AllPrintings {

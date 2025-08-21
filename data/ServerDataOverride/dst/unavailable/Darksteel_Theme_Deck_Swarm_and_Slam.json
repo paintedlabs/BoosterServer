@@ -1,0 +1,64 @@
+{
+  "uuid": "83f2499c-bb40-5ab2-a9ca-a61f1baf3eaf",
+  "name": "Darksteel Theme Deck Swarm and Slam",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100383",
+    "cardKingdomId": "110499",
+    "cardtraderId": "46537",
+    "mcmId": "253702",
+    "tcgplayerProductId": "208248",
+    "tntId": "112354"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/bcad8d0217818468"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Swarm & Slam",
+        "set": "dst"
+      }
+    ]
+  },
+  "setCode": "DST",
+  "setName": "Darksteel",
+  "tcgcsvData": {
+    "product": {
+      "productId": 208248,
+      "name": "Darksteel Theme Deck - Swarm & Slam",
+      "cleanName": "Darksteel Theme Deck Swarm and Slam",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/208248_200w.jpg",
+      "categoryId": 1,
+      "groupId": 27,
+      "url": "https://www.tcgplayer.com/product/208248/magic-darksteel-darksteel-theme-deck-swarm-and-slam",
+      "modifiedOn": "2020-01-27T15:27:26.727",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Darksteel theme deck contains a 60 card prebuilt deck and strategy guide."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 208248,
+        "lowPrice": 60,
+        "midPrice": 65,
+        "highPrice": 69.99,
+        "marketPrice": 60,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

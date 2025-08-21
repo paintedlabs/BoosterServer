@@ -1,0 +1,83 @@
+{
+  "uuid": "be64e179-494c-505f-8608-901827f26450",
+  "name": "Commander 2016 Commander Decks Set of 5",
+  "category": "subset",
+  "releaseDate": "2016-05-30",
+  "subtype": "commander",
+  "identifiers": {
+    "cardtraderId": "44751",
+    "mcmId": "290525",
+    "scgId": "SLD-MTG-MLT-C16-EN-SET5",
+    "tcgplayerProductId": "123971",
+    "tntId": "1102289"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/24cc57047a326a54"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander 2016 Commander Deck Breed Lethality",
+        "set": "c16",
+        "uuid": "82b078cc-2c54-5961-aacc-b5b41ac41324"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2016 Commander Deck Entropic Uprising",
+        "set": "c16",
+        "uuid": "446f5f69-98bd-55bc-a509-abd91b185a25"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2016 Commander Deck Invent Superiority",
+        "set": "c16",
+        "uuid": "9cb4bacd-bdd8-5023-a1a9-0d33d765a330"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2016 Commander Deck Open Hostility",
+        "set": "c16",
+        "uuid": "747c8f6c-8f24-5612-80f1-ad23fd50ef7a"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2016 Commander Deck Stalwart Unity",
+        "set": "c16",
+        "uuid": "2cbcd933-ee5e-5285-9d18-3e3ac2a04fb7"
+      }
+    ]
+  },
+  "setCode": "C16",
+  "setName": "Commander 2016",
+  "tcgcsvData": {
+    "product": {
+      "productId": 123971,
+      "name": "Commander 2016 - Set of 5",
+      "cleanName": "Commander 2016 Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/123971_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1792,
+      "url": "https://www.tcgplayer.com/product/123971/magic-commander-2016-commander-2016-set-of-5",
+      "modifiedOn": "2016-11-04T19:16:35.07",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2016-11-11T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 123971,
+        "lowPrice": 1099.99,
+        "midPrice": 1100,
+        "highPrice": 1100,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

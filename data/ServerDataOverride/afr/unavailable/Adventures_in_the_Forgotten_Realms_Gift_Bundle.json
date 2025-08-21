@@ -1,0 +1,99 @@
+{
+  "uuid": "1bd41588-010c-5a6e-929d-cf29753d5408",
+  "name": "Adventures in the Forgotten Realms Gift Bundle",
+  "category": "bundle",
+  "releaseDate": "2021-07-23",
+  "subtype": "gift_bundle",
+  "identifiers": {
+    "abuId": "2064450",
+    "cardKingdomId": "249634",
+    "cardtraderId": "160504",
+    "mcmId": "572033",
+    "scgId": "SLD-MTG-BUN-AFRGIFT-EN",
+    "tcgplayerProductId": "243658",
+    "tntId": "1727156"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/9588cca958200e1a",
+    "tcgplayer": "https://mtgjson.com/links/8512e21047e93483"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Treasure Chest",
+        "number": "397",
+        "set": "afr",
+        "uuid": "aa88ec58-662d-5c34-b261-fc988ba8a133"
+      }
+    ],
+    "other": [
+      {
+        "name": "Adventures in the Forgotten Realms 40-card Basic Land Bundle"
+      },
+      {
+        "name": "Adventures in the Forgotten Realms Premium Spindown"
+      },
+      {
+        "name": "3 Oversized Dungeon Cards"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Adventures in the Forgotten Realms Draft Booster Pack",
+        "set": "afr",
+        "uuid": "93fab1fe-dde0-5bfd-aae5-755c6e43bc3d"
+      },
+      {
+        "count": 1,
+        "name": "Adventures in the Forgotten Realms Collector Booster Pack",
+        "set": "afr",
+        "uuid": "d5512a78-bb11-5566-a634-7c9e4fa91396"
+      }
+    ]
+  },
+  "setCode": "AFR",
+  "setName": "Adventures in the Forgotten Realms",
+  "tcgcsvData": {
+    "product": {
+      "productId": 243658,
+      "name": "Adventures in the Forgotten Realms - Bundle Gift Edition",
+      "cleanName": "Adventures in the Forgotten Realms Bundle Gift Edition",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/243658_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2823,
+      "url": "https://www.tcgplayer.com/product/243658/magic-adventures-in-the-forgotten-realms-adventures-in-the-forgotten-realms-bundle-gift-edition",
+      "modifiedOn": "2021-08-06T04:03:12.97",
+      "imageCount": 3,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-07-23T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>KEY PRODUCT FEATURES:</strong>\r\n<br>• 10 Adventures in the Forgotten Realms (AFR) Magic: The Gathering Draft Boosters\r\n<br>• 1 AFR Collector Booster full of foils, rares, and special treatments\r\n<br>• 1 foil alt-art promo card—Treasure Chest\r\n<br>• 3 oversized dungeon cards + 40 basic lands (20 foil, 20 nonfoil)\r\n<br>• 1 special Gift Bundle d20 and foil card storage box\r\n<br>• Beloved Dungeons & Dragons heroes and monsters have ventured into Magic for the ultimate crossover!\r\n<br><br><strong>DESCRIPTION:</strong>\r\n<br>The <em>Adventures in the Forgotten Realms </em>Gift Bundle contains 10 Adventures in the Forgotten Realms Draft Boosters—the best boosters for drafting, plus 1 Adventures in the Forgotten Realms Collector Booster full of foils (total of 10 traditional foil cards), special card treatments (4–5 Showcase or Borderless cards, 2–3 Extended-Art cards), and 5 Rare and/or Mythic Rare cards. It also includes 3 oversized dungeon cards (Tomb of Annihilation, Dungeon of the Mad Mage, and Lost Mine of Phandelver), 40 basic lands (20 traditional foils and 20 nonfoils), 1 traditional foil alt-art promo card—Treasure Chest, 1 oversized Gift Edition d20, 1 special foil card storage box, and 2 reference cards."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509983285"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 243658,
+        "lowPrice": 95.09,
+        "midPrice": 99.97,
+        "highPrice": 129.99,
+        "marketPrice": 92.75,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

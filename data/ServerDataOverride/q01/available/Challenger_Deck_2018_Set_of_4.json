@@ -1,0 +1,85 @@
+{
+  "uuid": "b29fcac3-f537-59a6-941f-a8f4dc7c2e3f",
+  "name": "Challenger Deck 2018 Set of 4",
+  "category": "subset",
+  "releaseDate": "2018-03-06",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1495922",
+    "cardtraderId": "54754",
+    "csiId": "254893",
+    "mcmId": "319709",
+    "scgId": "SLD-MTG-INT-Q01-EN-SET4",
+    "tcgplayerProductId": "161417",
+    "tntId": "1159421"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/62f8da41852c2daf"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Challenger Deck 2018 Counter Surge",
+        "set": "q01",
+        "uuid": "6f25c48c-a690-5842-9d29-9ffb1495c919"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2018 Hazoret Aggro",
+        "set": "q01",
+        "uuid": "21f90d20-1427-5e2b-8a25-c30fa77d8998"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2018 Second Sun Control",
+        "set": "q01",
+        "uuid": "55a2ef53-0387-5f64-a9a6-b7d0e4806409"
+      },
+      {
+        "count": 1,
+        "name": "Challenger Deck 2018 Vehicle Rush",
+        "set": "q01",
+        "uuid": "c693cb5b-1236-5581-8e99-a7acdb515bca"
+      }
+    ]
+  },
+  "setCode": "Q01",
+  "setName": "Challenger Decks 2018",
+  "tcgcsvData": {
+    "product": {
+      "productId": 161417,
+      "name": "Challenger Deck 2018 (Set of 4)",
+      "cleanName": "Challenger Deck 2018 Set of 4",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/161417_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/161417/magic-challenger-decks-challenger-deck-2018-set-of-4",
+      "modifiedOn": "2019-02-27T16:17:42.493",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect all 4 of the following Challenger Decks:\r\n<br>• <a href=\"https://shop.tcgplayer.com/magic/challenger-decks/challenger-deck-counter-surge\">Counter Surge</a>\r\n<br>• <a href=\"https://shop.tcgplayer.com/magic/challenger-decks/challenger-deck-hazoret-aggro\">Hazoret Aggro</a>\r\n<br>• <a href=\"https://shop.tcgplayer.com/magic/challenger-decks/challenger-deck-second-sun-control\">Second Sun Control</a>\r\n<br>• <a href=\"https://shop.tcgplayer.com/magic/challenger-decks/challenger-deck-vehicle-rush\">Vehicle Rush</a>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 161417,
+        "lowPrice": 99,
+        "midPrice": 149.99,
+        "highPrice": 194.94,
+        "marketPrice": 109.88,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "uuid": "2541a749-9841-5f4d-80f3-c3d9c3a15712",
+  "name": "Theros Beyond Death Planeswalker Deck Display",
+  "category": "deck_box",
+  "releaseDate": "2020-01-24",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "cardtraderId": "171572",
+    "tcgplayerProductId": "202301",
+    "tntId": "1605717"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/088f5d8b98d0d881"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 3,
+        "name": "Theros Beyond Death Planeswalker Deck Elspeth",
+        "set": "thb",
+        "uuid": "7cd4cff1-cbd9-5201-9d65-13cea278c479"
+      },
+      {
+        "count": 3,
+        "name": "Theros Beyond Death Planeswalker Deck Ashiok",
+        "set": "thb",
+        "uuid": "cf7400d3-0127-5cb9-912f-b2b9df4d68fc"
+      }
+    ]
+  },
+  "setCode": "THB",
+  "setName": "Theros Beyond Death",
+  "tcgcsvData": {
+    "product": {
+      "productId": 202301,
+      "name": "Theros Beyond Death - Planeswalker Deck Display",
+      "cleanName": "Theros Beyond Death Planeswalker Deck Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/202301_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2568,
+      "url": "https://www.tcgplayer.com/product/202301/magic-theros-beyond-death-theros-beyond-death-planeswalker-deck-display",
+      "modifiedOn": "2020-01-20T14:26:24.603",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-01-24T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>Theros Beyond Death</em> Planeswalker Decks come in displays of <strong>6</strong><em> (2 decks, 3 copies each)</em>.\r\n<br>Each individual deck contains:\r\n<br>• 1 ready-to-play 60-card deck featuring a foil Planeswalker card\r\n<br>• 2 Throne of Eldraine booster packs\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card*"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509793129"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 202301,
+        "lowPrice": 89.99,
+        "midPrice": 124.5,
+        "highPrice": 159,
+        "marketPrice": 79.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

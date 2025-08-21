@@ -1,0 +1,1681 @@
+{
+  "uuid": "2a7a9617-635b-501a-bf0a-14b43801eae6",
+  "name": "Ikoria Lair of Behemoths Theme Booster Monsters",
+  "category": "booster_pack",
+  "cardCount": 35,
+  "releaseDate": "2020-05-15",
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1829797",
+    "cardtraderId": "108576",
+    "mcmId": "452073",
+    "tcgplayerProductId": "212110",
+    "tntId": "1664532"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/fe8dcb2653a4000c"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "theme-monsters",
+        "set": "iko"
+      }
+    ]
+  },
+  "setCode": "IKO",
+  "setName": "Ikoria: Lair of Behemoths",
+  "extendedData": {
+    "code": "iko-theme-monsters",
+    "boosters": [
+      {
+        "sheets": {
+          "uncommon": 10,
+          "common": 24,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 9,
+          "common": 24,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 11,
+          "common": 23,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 10,
+          "common": 23,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 12,
+          "common": 22,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 11,
+          "common": 22,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      },
+      {
+        "sheets": {
+          "uncommon": 13,
+          "common": 21,
+          "rare_mythic": 1
+        },
+        "weight": 9
+      },
+      {
+        "sheets": {
+          "uncommon": 12,
+          "common": 21,
+          "rare_mythic": 2
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "uncommon": {
+        "allow_duplicates": true,
+        "total_weight": 62,
+        "cards": [
+          {
+            "set": "iko",
+            "number": "12",
+            "weight": 1,
+            "foil": false,
+            "uuid": "75311d84-76ee-5b04-b382-156ff443bcdb"
+          },
+          {
+            "set": "iko",
+            "number": "13",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8e2f9c84-fd93-503e-87f4-f842bad9569c"
+          },
+          {
+            "set": "iko",
+            "number": "16",
+            "weight": 1,
+            "foil": false,
+            "uuid": "585f1a62-cd0b-5d30-8fd5-3e74f95ea1ce"
+          },
+          {
+            "set": "iko",
+            "number": "22",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5b2871e7-63f0-53fa-afeb-db3dea3b28bb"
+          },
+          {
+            "set": "iko",
+            "number": "28",
+            "weight": 1,
+            "foil": false,
+            "uuid": "059af630-c21d-5684-afc3-8ee50b501862"
+          },
+          {
+            "set": "iko",
+            "number": "32",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ceebc01d-402c-58e3-8cf3-f5f438d41d57"
+          },
+          {
+            "set": "iko",
+            "number": "34",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4353d0d5-d5a8-541e-a3d3-5d36d5404397"
+          },
+          {
+            "set": "iko",
+            "number": "35",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d2cd94e6-6b94-5ab9-b4d2-e1fb9d6fb9c9"
+          },
+          {
+            "set": "iko",
+            "number": "38",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1b1bcc70-a0c0-5b64-8ff1-3fd8cb49be27"
+          },
+          {
+            "set": "iko",
+            "number": "41",
+            "weight": 1,
+            "foil": false,
+            "uuid": "65d4b44a-86e8-54be-8880-73b29c653834"
+          },
+          {
+            "set": "iko",
+            "number": "42",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7aeac403-5fb4-5ca2-ae87-117d8ae18ad6"
+          },
+          {
+            "set": "iko",
+            "number": "43",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7443819c-67d8-56b6-94a5-122a88e53752"
+          },
+          {
+            "set": "iko",
+            "number": "48",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8540ff2d-cb92-5dd7-8c70-db705397019c"
+          },
+          {
+            "set": "iko",
+            "number": "57",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f4e7def7-6be0-5cad-8794-86744b48acbe"
+          },
+          {
+            "set": "iko",
+            "number": "59",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4cc87779-ba91-5824-a5c6-6d7b1fbce572"
+          },
+          {
+            "set": "iko",
+            "number": "61",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7d31e624-2cd0-5b37-a432-b4cc4cbc06f9"
+          },
+          {
+            "set": "iko",
+            "number": "63",
+            "weight": 1,
+            "foil": false,
+            "uuid": "233db185-ba73-50fa-a8b6-b36976a0a770"
+          },
+          {
+            "set": "iko",
+            "number": "64",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3ba6b275-197e-5c04-99d1-1e04f984f360"
+          },
+          {
+            "set": "iko",
+            "number": "65",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3181822e-5828-5fb5-af83-ebf01f99eec9"
+          },
+          {
+            "set": "iko",
+            "number": "73",
+            "weight": 1,
+            "foil": false,
+            "uuid": "603cba6d-572b-52db-822f-2f096b08f039"
+          },
+          {
+            "set": "iko",
+            "number": "78",
+            "weight": 1,
+            "foil": false,
+            "uuid": "06d17c40-e524-5b03-a6ee-0edceca5730a"
+          },
+          {
+            "set": "iko",
+            "number": "80",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5437928c-138e-539c-a46b-63efffb6db7b"
+          },
+          {
+            "set": "iko",
+            "number": "87",
+            "weight": 1,
+            "foil": false,
+            "uuid": "65801db8-4a90-5e61-830d-6af547269832"
+          },
+          {
+            "set": "iko",
+            "number": "90",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3263bab7-7d1c-594a-a204-aa4ef58510bf"
+          },
+          {
+            "set": "iko",
+            "number": "91",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9765302f-7eb2-5f70-8d1a-95c53b492b45"
+          },
+          {
+            "set": "iko",
+            "number": "93",
+            "weight": 1,
+            "foil": false,
+            "uuid": "dda806e1-a2e9-5436-8436-fa0e1a0f6907"
+          },
+          {
+            "set": "iko",
+            "number": "101",
+            "weight": 1,
+            "foil": false,
+            "uuid": "28280ba9-cb20-52c8-a132-2fa210e5ac19"
+          },
+          {
+            "set": "iko",
+            "number": "104",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e2fb0a41-862d-5872-b87b-26ce48a48964"
+          },
+          {
+            "set": "iko",
+            "number": "106",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fe65b63c-5e63-5bd9-87d2-0d21ced18d6a"
+          },
+          {
+            "set": "iko",
+            "number": "109",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3ac10a7d-419a-578e-a047-3c5fd983fac9"
+          },
+          {
+            "set": "iko",
+            "number": "111",
+            "weight": 1,
+            "foil": false,
+            "uuid": "17b71251-5a61-5671-b6bf-59888a332634"
+          },
+          {
+            "set": "iko",
+            "number": "117",
+            "weight": 1,
+            "foil": false,
+            "uuid": "136e00ed-9b7f-57a6-9c3c-5039228e17c7"
+          },
+          {
+            "set": "iko",
+            "number": "118",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3759805e-0d98-5a71-9eb2-134695354852"
+          },
+          {
+            "set": "iko",
+            "number": "126",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ca31b7fc-03bf-526a-9c10-8f2f60d01cb8"
+          },
+          {
+            "set": "iko",
+            "number": "128",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a971530c-47a6-593c-a13b-118c1b25d19a"
+          },
+          {
+            "set": "iko",
+            "number": "132",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d7f614a9-12af-5ebf-a62a-4775787639e7"
+          },
+          {
+            "set": "iko",
+            "number": "133",
+            "weight": 1,
+            "foil": false,
+            "uuid": "842a9e81-ac38-50d6-b575-0d080590f332"
+          },
+          {
+            "set": "iko",
+            "number": "135",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bc794588-6e67-55ee-8c6d-a43047cdbb65"
+          },
+          {
+            "set": "iko",
+            "number": "140",
+            "weight": 1,
+            "foil": false,
+            "uuid": "377f94bd-0dd7-5c2c-a2e9-026e34168125"
+          },
+          {
+            "set": "iko",
+            "number": "144",
+            "weight": 1,
+            "foil": false,
+            "uuid": "aedf0bf6-d36e-564a-9d2d-8a6fe01069e3"
+          },
+          {
+            "set": "iko",
+            "number": "145",
+            "weight": 1,
+            "foil": false,
+            "uuid": "56c4aaeb-7d62-516d-9160-a70706651987"
+          },
+          {
+            "set": "iko",
+            "number": "147",
+            "weight": 1,
+            "foil": false,
+            "uuid": "13b25102-77c8-54ae-a360-63f66b47ee30"
+          },
+          {
+            "set": "iko",
+            "number": "151",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e737042c-0e62-5fef-8057-96336b57b870"
+          },
+          {
+            "set": "iko",
+            "number": "156",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4a1ce1e7-1762-5ba4-bbca-02edf4511be1"
+          },
+          {
+            "set": "iko",
+            "number": "161",
+            "weight": 1,
+            "foil": false,
+            "uuid": "397d416b-c473-50ee-9322-c793e089201a"
+          },
+          {
+            "set": "iko",
+            "number": "163",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e2d5f174-b324-51a4-b334-debd13570880"
+          },
+          {
+            "set": "iko",
+            "number": "164",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d79467e9-930e-53dd-9bc8-0128a346631e"
+          },
+          {
+            "set": "iko",
+            "number": "166",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8c2f1a9f-6bd7-5840-ad24-5aed4ee8e561"
+          },
+          {
+            "set": "iko",
+            "number": "174",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8c9f38a6-4e08-5d56-a07c-aa39f211d0e3"
+          },
+          {
+            "set": "iko",
+            "number": "177",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7c87d0da-939b-505a-984e-526f254ca0e8"
+          },
+          {
+            "set": "iko",
+            "number": "178",
+            "weight": 1,
+            "foil": false,
+            "uuid": "2f2b609d-b867-5091-9498-e29c1c301471"
+          },
+          {
+            "set": "iko",
+            "number": "180",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e70df510-8c9c-5968-ae01-927db32851a4"
+          },
+          {
+            "set": "iko",
+            "number": "183",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f02b95df-5856-5db7-8659-a1029d0b150f"
+          },
+          {
+            "set": "iko",
+            "number": "194",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9e3c6d03-12e9-5a50-bb09-6adfea01bebc"
+          },
+          {
+            "set": "iko",
+            "number": "196",
+            "weight": 1,
+            "foil": false,
+            "uuid": "01b418a4-f982-57f8-bd75-8874e3c7fd2b"
+          },
+          {
+            "set": "iko",
+            "number": "199",
+            "weight": 1,
+            "foil": false,
+            "uuid": "be0e5b03-253c-52ef-b71c-403a45dc85a9"
+          },
+          {
+            "set": "iko",
+            "number": "200",
+            "weight": 1,
+            "foil": false,
+            "uuid": "490673db-70ac-5cc7-95c3-385f020d8f94"
+          },
+          {
+            "set": "iko",
+            "number": "202",
+            "weight": 1,
+            "foil": false,
+            "uuid": "59e38a29-d0b7-5450-b867-dfdac5c17072"
+          },
+          {
+            "set": "iko",
+            "number": "205",
+            "weight": 1,
+            "foil": false,
+            "uuid": "239980f4-b020-585f-96aa-edda4a32dcbe"
+          },
+          {
+            "set": "iko",
+            "number": "211",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f3a94132-ce71-5556-bfd3-1461601a810d"
+          },
+          {
+            "set": "iko",
+            "number": "213",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e9e82e36-bf89-5b5d-bf33-2e7aa3a92580"
+          },
+          {
+            "set": "iko",
+            "number": "217",
+            "weight": 1,
+            "foil": false,
+            "uuid": "5a87360a-16dc-532d-b272-b765026b202f"
+          }
+        ]
+      },
+      "common": {
+        "allow_duplicates": true,
+        "total_weight": 376,
+        "cards": [
+          {
+            "set": "iko",
+            "number": "1",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d1bedeac-8dfb-5014-930a-7c2d5796f890"
+          },
+          {
+            "set": "iko",
+            "number": "2",
+            "weight": 1,
+            "foil": false,
+            "uuid": "053bc238-3d0a-53d0-ada0-c6284fb70351"
+          },
+          {
+            "set": "iko",
+            "number": "3",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d71d5711-8598-5e61-96a9-72e0c53a9b6a"
+          },
+          {
+            "set": "iko",
+            "number": "4",
+            "weight": 4,
+            "foil": false,
+            "uuid": "89c3ce43-d694-5402-96cd-338e174a926b"
+          },
+          {
+            "set": "iko",
+            "number": "6",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a50cb538-9233-5289-a807-315a59315aca"
+          },
+          {
+            "set": "iko",
+            "number": "9",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d1af5b4e-78d3-576d-af87-ab17648ea361"
+          },
+          {
+            "set": "iko",
+            "number": "14",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d20069ec-c5ac-53ba-8160-1053e2acb6a9"
+          },
+          {
+            "set": "iko",
+            "number": "15",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c1f207e0-471f-51e2-a6c3-30751349f997"
+          },
+          {
+            "set": "iko",
+            "number": "17",
+            "weight": 4,
+            "foil": false,
+            "uuid": "1a50c117-99fb-5b3e-b97f-d83bb950321f"
+          },
+          {
+            "set": "iko",
+            "number": "20",
+            "weight": 4,
+            "foil": false,
+            "uuid": "edeca4ca-2378-5505-9727-26d683c36a82"
+          },
+          {
+            "set": "iko",
+            "number": "23",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9963ab3e-e478-5404-8449-001999905568"
+          },
+          {
+            "set": "iko",
+            "number": "25",
+            "weight": 4,
+            "foil": false,
+            "uuid": "da8641e7-9004-59b3-b525-51ee2e35613a"
+          },
+          {
+            "set": "iko",
+            "number": "26",
+            "weight": 4,
+            "foil": false,
+            "uuid": "3902ae75-aae1-5c86-a0e8-98c12586d3e1"
+          },
+          {
+            "set": "iko",
+            "number": "29",
+            "weight": 4,
+            "foil": false,
+            "uuid": "729f2470-8092-571b-8a75-7f5aa0400c46"
+          },
+          {
+            "set": "iko",
+            "number": "31",
+            "weight": 4,
+            "foil": false,
+            "uuid": "2268d512-fedc-5d06-a15c-3acb312fbe5d"
+          },
+          {
+            "set": "iko",
+            "number": "33",
+            "weight": 4,
+            "foil": false,
+            "uuid": "4236010e-f9e6-5c48-b5b8-13db4b0b56de"
+          },
+          {
+            "set": "iko",
+            "number": "37",
+            "weight": 4,
+            "foil": false,
+            "uuid": "09188393-b9c6-5eee-937d-c163dec589a2"
+          },
+          {
+            "set": "iko",
+            "number": "39",
+            "weight": 4,
+            "foil": false,
+            "uuid": "0c77895d-7bc7-56cd-a53b-a64be05966b2"
+          },
+          {
+            "set": "iko",
+            "number": "40",
+            "weight": 4,
+            "foil": false,
+            "uuid": "511819bc-6693-5487-95ab-0215ab09524a"
+          },
+          {
+            "set": "iko",
+            "number": "44",
+            "weight": 4,
+            "foil": false,
+            "uuid": "45d9f2a4-1ce0-5595-ac37-c4bdebbdffbc"
+          },
+          {
+            "set": "iko",
+            "number": "45",
+            "weight": 4,
+            "foil": false,
+            "uuid": "fdbb8ef6-bc84-5772-9c61-420a8f1d8b97"
+          },
+          {
+            "set": "iko",
+            "number": "46",
+            "weight": 4,
+            "foil": false,
+            "uuid": "db3c347b-506c-5074-bb93-27ffa3f9f550"
+          },
+          {
+            "set": "iko",
+            "number": "47",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a607f3cf-3a34-556d-8530-469c1429f39f"
+          },
+          {
+            "set": "iko",
+            "number": "49",
+            "weight": 4,
+            "foil": false,
+            "uuid": "be6c70b1-01c6-5b10-8c63-3da184a3e53b"
+          },
+          {
+            "set": "iko",
+            "number": "51",
+            "weight": 4,
+            "foil": false,
+            "uuid": "51ecace6-3298-5015-899e-59d77243b64b"
+          },
+          {
+            "set": "iko",
+            "number": "52",
+            "weight": 4,
+            "foil": false,
+            "uuid": "0adc8631-644f-58b7-acaf-8648e1a1305d"
+          },
+          {
+            "set": "iko",
+            "number": "53",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9886384a-d2a0-5f5f-b7f1-418e3854a1b9"
+          },
+          {
+            "set": "iko",
+            "number": "54",
+            "weight": 4,
+            "foil": false,
+            "uuid": "3d5b01a2-d862-5430-bc1d-a54a1aa72716"
+          },
+          {
+            "set": "iko",
+            "number": "55",
+            "weight": 4,
+            "foil": false,
+            "uuid": "27b242b7-a855-5e93-a6ba-3e76ec699027"
+          },
+          {
+            "set": "iko",
+            "number": "56",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c843e078-3cc1-564d-b99b-5cc2fb02502a"
+          },
+          {
+            "set": "iko",
+            "number": "60",
+            "weight": 4,
+            "foil": false,
+            "uuid": "409ad1e6-dc39-5429-b486-8d61f836c036"
+          },
+          {
+            "set": "iko",
+            "number": "62",
+            "weight": 4,
+            "foil": false,
+            "uuid": "0a74790b-dca1-5608-8204-6ade2516551b"
+          },
+          {
+            "set": "iko",
+            "number": "68",
+            "weight": 4,
+            "foil": false,
+            "uuid": "3941e293-975c-563c-bb45-0db114ae306e"
+          },
+          {
+            "set": "iko",
+            "number": "69",
+            "weight": 4,
+            "foil": false,
+            "uuid": "34046de0-b79a-5f3a-a29a-c809405c551b"
+          },
+          {
+            "set": "iko",
+            "number": "71",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a0205859-d1ae-5e1e-bfe2-4259704a67f9"
+          },
+          {
+            "set": "iko",
+            "number": "74",
+            "weight": 4,
+            "foil": false,
+            "uuid": "2ca635de-cfb1-58a3-96e8-1dfb91cb5226"
+          },
+          {
+            "set": "iko",
+            "number": "75",
+            "weight": 4,
+            "foil": false,
+            "uuid": "2476cf61-4054-5b39-8e42-977853fcb38a"
+          },
+          {
+            "set": "iko",
+            "number": "76",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b63ba2bd-dbfd-59f6-82b4-bb7c83428bcc"
+          },
+          {
+            "set": "iko",
+            "number": "79",
+            "weight": 4,
+            "foil": false,
+            "uuid": "8e61fd42-99eb-5a94-8542-28bbcad882b0"
+          },
+          {
+            "set": "iko",
+            "number": "81",
+            "weight": 4,
+            "foil": false,
+            "uuid": "af3367f8-3fe3-5e5d-b4e3-ae2b463b9509"
+          },
+          {
+            "set": "iko",
+            "number": "82",
+            "weight": 4,
+            "foil": false,
+            "uuid": "711bc45f-00bb-59f9-b882-1a520c4d27a6"
+          },
+          {
+            "set": "iko",
+            "number": "83",
+            "weight": 4,
+            "foil": false,
+            "uuid": "404cf848-a6ac-519e-ab6f-b2873f7ebdf9"
+          },
+          {
+            "set": "iko",
+            "number": "85",
+            "weight": 4,
+            "foil": false,
+            "uuid": "43644d4c-dca3-567e-866a-2768ad55e1cb"
+          },
+          {
+            "set": "iko",
+            "number": "89",
+            "weight": 4,
+            "foil": false,
+            "uuid": "bde3d656-05f1-51b5-b219-a25902e5c5cf"
+          },
+          {
+            "set": "iko",
+            "number": "95",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b74c3b04-c822-593b-b557-2011712d9f52"
+          },
+          {
+            "set": "iko",
+            "number": "96",
+            "weight": 4,
+            "foil": false,
+            "uuid": "f872a733-2f8e-5dee-8219-e3ea98cf5563"
+          },
+          {
+            "set": "iko",
+            "number": "99",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d284ed49-e301-5683-9385-bbe8a69bee80"
+          },
+          {
+            "set": "iko",
+            "number": "100",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b89918e0-c401-597f-801e-af5a91c29580"
+          },
+          {
+            "set": "iko",
+            "number": "102",
+            "weight": 4,
+            "foil": false,
+            "uuid": "86a4e4b5-37fb-53af-8913-41c90ecbef1a"
+          },
+          {
+            "set": "iko",
+            "number": "103",
+            "weight": 4,
+            "foil": false,
+            "uuid": "f58458a9-e3ff-53cf-9758-649e1cfce1f4"
+          },
+          {
+            "set": "iko",
+            "number": "107",
+            "weight": 4,
+            "foil": false,
+            "uuid": "787cdfa5-413b-54fe-8dd8-4bd071f24380"
+          },
+          {
+            "set": "iko",
+            "number": "108",
+            "weight": 4,
+            "foil": false,
+            "uuid": "4695331e-f056-50ff-924e-1cf1e1cb0bde"
+          },
+          {
+            "set": "iko",
+            "number": "110",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9f55fa9b-8ec5-5626-8b57-9168118ad13c"
+          },
+          {
+            "set": "iko",
+            "number": "112",
+            "weight": 4,
+            "foil": false,
+            "uuid": "4ec947f3-913e-5f24-965f-0ba554fc715d"
+          },
+          {
+            "set": "iko",
+            "number": "115",
+            "weight": 4,
+            "foil": false,
+            "uuid": "24887078-1ab7-5d40-831e-00d6e2ed4dca"
+          },
+          {
+            "set": "iko",
+            "number": "116",
+            "weight": 4,
+            "foil": false,
+            "uuid": "29eefa63-921a-5ffc-b894-184608814eb8"
+          },
+          {
+            "set": "iko",
+            "number": "119",
+            "weight": 4,
+            "foil": false,
+            "uuid": "80499d53-40ce-5438-a578-467e2b4980ec"
+          },
+          {
+            "set": "iko",
+            "number": "120",
+            "weight": 4,
+            "foil": false,
+            "uuid": "50b63c8c-ebb4-5ba8-8210-af7406bf4823"
+          },
+          {
+            "set": "iko",
+            "number": "122",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d2f35809-877d-565a-8c57-97d78cbdd79f"
+          },
+          {
+            "set": "iko",
+            "number": "123",
+            "weight": 4,
+            "foil": false,
+            "uuid": "625d6d0a-50cf-51e6-add0-b12ed8c7c01b"
+          },
+          {
+            "set": "iko",
+            "number": "124",
+            "weight": 4,
+            "foil": false,
+            "uuid": "00e252b2-7dd3-5ebf-84ca-2f6349cbd13e"
+          },
+          {
+            "set": "iko",
+            "number": "129",
+            "weight": 4,
+            "foil": false,
+            "uuid": "723961d9-0bbc-5e02-b89b-d02e0179e6be"
+          },
+          {
+            "set": "iko",
+            "number": "130",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b777dd8b-155e-5830-9560-c1374c6d6b9f"
+          },
+          {
+            "set": "iko",
+            "number": "131",
+            "weight": 4,
+            "foil": false,
+            "uuid": "32142ce6-5228-5c8b-8c69-d5854f46cf3c"
+          },
+          {
+            "set": "iko",
+            "number": "134",
+            "weight": 4,
+            "foil": false,
+            "uuid": "8838190f-cb0c-5376-824f-893d18f07aeb"
+          },
+          {
+            "set": "iko",
+            "number": "136",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c6f914d2-676d-5a14-950d-5735854670ac"
+          },
+          {
+            "set": "iko",
+            "number": "137",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6a6e7756-f264-5a85-b9f8-1cc2d422b1b0"
+          },
+          {
+            "set": "iko",
+            "number": "138",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b4d76539-5a7b-567b-aa45-513e603d5dad"
+          },
+          {
+            "set": "iko",
+            "number": "142",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d45823a8-9df1-5b4a-83d9-5f837b3af415"
+          },
+          {
+            "set": "iko",
+            "number": "143",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b0dfbceb-48c2-5b56-8090-de2be047eed3"
+          },
+          {
+            "set": "iko",
+            "number": "146",
+            "weight": 4,
+            "foil": false,
+            "uuid": "ae7fa4b6-d018-5ad7-a7e9-5ee48929f26d"
+          },
+          {
+            "set": "iko",
+            "number": "149",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b9c1c37f-00ae-5207-a646-0b0c876f0a7b"
+          },
+          {
+            "set": "iko",
+            "number": "150",
+            "weight": 4,
+            "foil": false,
+            "uuid": "e7b1a653-0eea-52bf-b9db-4fe334a65fe8"
+          },
+          {
+            "set": "iko",
+            "number": "152",
+            "weight": 4,
+            "foil": false,
+            "uuid": "21d51948-8631-569a-9feb-e43cef9bee67"
+          },
+          {
+            "set": "iko",
+            "number": "153",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6e894fba-f57e-5cf0-a101-7567c1d26ff6"
+          },
+          {
+            "set": "iko",
+            "number": "154",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a206b2d5-e1f1-5ee0-b324-ce5ec3600a5b"
+          },
+          {
+            "set": "iko",
+            "number": "157",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9f9b4392-3d30-5a5c-99d2-0d4aa0b5023a"
+          },
+          {
+            "set": "iko",
+            "number": "158",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c947d54e-4642-51a5-a118-f3e6c55db70e"
+          },
+          {
+            "set": "iko",
+            "number": "165",
+            "weight": 4,
+            "foil": false,
+            "uuid": "02c2a74f-2618-5b3b-aa9f-0c95bf63aa0b"
+          },
+          {
+            "set": "iko",
+            "number": "167",
+            "weight": 4,
+            "foil": false,
+            "uuid": "f3735ccb-b2f8-5b83-a987-ca7c275f5a82"
+          },
+          {
+            "set": "iko",
+            "number": "169",
+            "weight": 4,
+            "foil": false,
+            "uuid": "860e1116-2025-53b8-af0f-66b4b9506b59"
+          },
+          {
+            "set": "iko",
+            "number": "170",
+            "weight": 4,
+            "foil": false,
+            "uuid": "52f3bb82-119b-5b69-b311-55e2b26beb80"
+          },
+          {
+            "set": "iko",
+            "number": "171",
+            "weight": 4,
+            "foil": false,
+            "uuid": "4d4201cf-6acb-5f8a-a0bb-2ebb61c6a9e2"
+          },
+          {
+            "set": "iko",
+            "number": "172",
+            "weight": 4,
+            "foil": false,
+            "uuid": "996fc1b6-e384-51b6-bb2b-d8f37397428f"
+          },
+          {
+            "set": "iko",
+            "number": "173",
+            "weight": 4,
+            "foil": false,
+            "uuid": "ce25b8c1-2886-5f35-b48a-74fad6eecd9b"
+          },
+          {
+            "set": "iko",
+            "number": "176",
+            "weight": 4,
+            "foil": false,
+            "uuid": "1bc81524-6b20-5ca9-8494-09b368315759"
+          },
+          {
+            "set": "iko",
+            "number": "243",
+            "weight": 4,
+            "foil": false,
+            "uuid": "acc56d9e-c2ca-5459-bb54-4a99390d9460"
+          },
+          {
+            "set": "iko",
+            "number": "244",
+            "weight": 4,
+            "foil": false,
+            "uuid": "05234d95-db8f-51c6-8693-70af0008e0ba"
+          },
+          {
+            "set": "iko",
+            "number": "246",
+            "weight": 4,
+            "foil": false,
+            "uuid": "5e8c5056-91cd-5b48-8d3f-4e71f9347c55"
+          },
+          {
+            "set": "iko",
+            "number": "247",
+            "weight": 1,
+            "foil": false,
+            "uuid": "c818af25-ca69-596a-8902-1483205fd27d"
+          },
+          {
+            "set": "iko",
+            "number": "249",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9c8b8080-228f-5cec-8ed4-1a3dc93e5fc1"
+          },
+          {
+            "set": "iko",
+            "number": "252",
+            "weight": 4,
+            "foil": false,
+            "uuid": "cbcb76fe-0e86-57ce-a41a-74bdc73bf0ac"
+          },
+          {
+            "set": "iko",
+            "number": "254",
+            "weight": 4,
+            "foil": false,
+            "uuid": "2f71fa70-5939-50ac-aae1-de3ad5615e40"
+          },
+          {
+            "set": "iko",
+            "number": "255",
+            "weight": 4,
+            "foil": false,
+            "uuid": "8f6aeeea-333b-5ea5-9e09-81bdc01a8f80"
+          },
+          {
+            "set": "iko",
+            "number": "256",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6ab08d15-01fd-5401-9348-54c0a679d4dd"
+          },
+          {
+            "set": "iko",
+            "number": "257",
+            "weight": 4,
+            "foil": false,
+            "uuid": "fae4a3bb-b350-56dd-ae3a-d5b5fc93a404"
+          },
+          {
+            "set": "iko",
+            "number": "258",
+            "weight": 4,
+            "foil": false,
+            "uuid": "8ef17795-afce-5f19-8a2c-0e3ac9469174"
+          }
+        ]
+      },
+      "rare_mythic": {
+        "total_weight": 213,
+        "cards": [
+          {
+            "set": "iko",
+            "number": "7",
+            "weight": 4,
+            "foil": false,
+            "uuid": "b178049d-5bb8-581e-8b69-dedc93bdcffc"
+          },
+          {
+            "set": "iko",
+            "number": "21",
+            "weight": 2,
+            "foil": false,
+            "uuid": "39ebc226-262a-58fa-a44a-8db82796b6ef"
+          },
+          {
+            "set": "iko",
+            "number": "24",
+            "weight": 4,
+            "foil": false,
+            "uuid": "a2e2a441-848e-5718-b827-6e81a717e409"
+          },
+          {
+            "set": "iko",
+            "number": "58",
+            "weight": 4,
+            "foil": false,
+            "uuid": "42983ebf-1f1e-5b1d-928e-b2ad932b6683"
+          },
+          {
+            "set": "iko",
+            "number": "66",
+            "weight": 4,
+            "foil": false,
+            "uuid": "ffed3087-c310-5a19-a05c-f87c9e8a0d26"
+          },
+          {
+            "set": "iko",
+            "number": "67",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9bae2632-4472-5fa3-bad8-08cc4d34e878"
+          },
+          {
+            "set": "iko",
+            "number": "70",
+            "weight": 4,
+            "foil": false,
+            "uuid": "62dbc03d-30e1-5159-9a95-e34a93ffbb52"
+          },
+          {
+            "set": "iko",
+            "number": "84",
+            "weight": 4,
+            "foil": false,
+            "uuid": "793cba6b-4f65-5834-b055-b83822576a86"
+          },
+          {
+            "set": "iko",
+            "number": "88",
+            "weight": 4,
+            "foil": false,
+            "uuid": "32ea8570-3565-5ce1-8705-697ce1e7bff6"
+          },
+          {
+            "set": "iko",
+            "number": "92",
+            "weight": 4,
+            "foil": false,
+            "uuid": "3cf92ac2-0ca8-5608-acc6-ae1422595a26"
+          },
+          {
+            "set": "iko",
+            "number": "97",
+            "weight": 4,
+            "foil": false,
+            "uuid": "2bfa0603-2a5c-5c32-b6b3-d0828f643b3e"
+          },
+          {
+            "set": "iko",
+            "number": "114",
+            "weight": 4,
+            "foil": false,
+            "uuid": "df2fd1f3-1b61-53ec-87a2-cc959b65af71"
+          },
+          {
+            "set": "iko",
+            "number": "125",
+            "weight": 2,
+            "foil": false,
+            "uuid": "cc7b9bd8-7943-5ae5-9a2b-ed50e2227966"
+          },
+          {
+            "set": "iko",
+            "number": "127",
+            "weight": 4,
+            "foil": false,
+            "uuid": "ff03a839-b8f5-5a82-b995-d5889491efe3"
+          },
+          {
+            "set": "iko",
+            "number": "139",
+            "weight": 4,
+            "foil": false,
+            "uuid": "672fd934-b146-5bf7-8455-1a19e0500766"
+          },
+          {
+            "set": "iko",
+            "number": "141",
+            "weight": 4,
+            "foil": false,
+            "uuid": "1ed1090b-a684-5560-ae82-946f39d710b1"
+          },
+          {
+            "set": "iko",
+            "number": "148",
+            "weight": 4,
+            "foil": false,
+            "uuid": "2475f50a-a574-5a8a-a6d8-9726a235b82b"
+          },
+          {
+            "set": "iko",
+            "number": "155",
+            "weight": 4,
+            "foil": false,
+            "uuid": "ad472671-1604-5585-8ae8-603a73b41915"
+          },
+          {
+            "set": "iko",
+            "number": "162",
+            "weight": 4,
+            "foil": false,
+            "uuid": "23fa3b37-12b6-53fb-a77d-345b29e0db3f"
+          },
+          {
+            "set": "iko",
+            "number": "168",
+            "weight": 4,
+            "foil": false,
+            "uuid": "57716ae0-695a-5165-836b-7e80a720f655"
+          },
+          {
+            "set": "iko",
+            "number": "175",
+            "weight": 2,
+            "foil": false,
+            "uuid": "193ae10e-2032-5153-994d-567deff6d5da"
+          },
+          {
+            "set": "iko",
+            "number": "179",
+            "weight": 2,
+            "foil": false,
+            "uuid": "575bd36a-9beb-505b-8df8-4447687bfa8f"
+          },
+          {
+            "set": "iko",
+            "number": "182",
+            "weight": 4,
+            "foil": false,
+            "uuid": "5a6e08c6-80af-5b09-852f-d93daae34df4"
+          },
+          {
+            "set": "iko",
+            "number": "184",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d52eafb7-8a90-5ab0-a917-57f457333b69"
+          },
+          {
+            "set": "iko",
+            "number": "185",
+            "weight": 4,
+            "foil": false,
+            "uuid": "8c7efa00-c2a1-5e45-8ca9-8a930dbdd245"
+          },
+          {
+            "set": "iko",
+            "number": "186",
+            "weight": 4,
+            "foil": false,
+            "uuid": "98445397-a664-59a9-a422-e94879cc2ca4"
+          },
+          {
+            "set": "iko",
+            "number": "189",
+            "weight": 4,
+            "foil": false,
+            "uuid": "194b1848-3516-5bf5-8c2f-4c92e090d813"
+          },
+          {
+            "set": "iko",
+            "number": "190",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f3f01bdc-5679-5f7d-94cc-caa5c889f620"
+          },
+          {
+            "set": "iko",
+            "number": "191",
+            "weight": 4,
+            "foil": false,
+            "uuid": "c9959ad6-f277-5374-b1bf-2977d0e679fe"
+          },
+          {
+            "set": "iko",
+            "number": "193",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d9d2e9c0-b1dc-52df-9ae4-b4cbde877399"
+          },
+          {
+            "set": "iko",
+            "number": "195",
+            "weight": 2,
+            "foil": false,
+            "uuid": "34e92a87-95e4-5849-97c4-f2473912b2fa"
+          },
+          {
+            "set": "iko",
+            "number": "197",
+            "weight": 2,
+            "foil": false,
+            "uuid": "6468e77d-1c96-59a8-8ef9-94b8732f1c23"
+          },
+          {
+            "set": "iko",
+            "number": "198",
+            "weight": 4,
+            "foil": false,
+            "uuid": "8be785cd-792e-531e-bce9-d1557ba86884"
+          },
+          {
+            "set": "iko",
+            "number": "201",
+            "weight": 4,
+            "foil": false,
+            "uuid": "aae34a9e-d9d5-5ad3-b0e0-682a68337583"
+          },
+          {
+            "set": "iko",
+            "number": "204",
+            "weight": 4,
+            "foil": false,
+            "uuid": "51357e44-65f8-5a51-8bf6-8334147c27c8"
+          },
+          {
+            "set": "iko",
+            "number": "207",
+            "weight": 4,
+            "foil": false,
+            "uuid": "08ed7fb5-f8df-555b-84e7-f50b5ce00f06"
+          },
+          {
+            "set": "iko",
+            "number": "208",
+            "weight": 4,
+            "foil": false,
+            "uuid": "aa40e2e5-c032-580a-b296-f9359ee12fa8"
+          },
+          {
+            "set": "iko",
+            "number": "209",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a7c56c17-1fe6-5520-bf32-10c4573ad68d"
+          },
+          {
+            "set": "iko",
+            "number": "210",
+            "weight": 4,
+            "foil": false,
+            "uuid": "9e11b64e-86e5-5936-b34c-2e93410110bc"
+          },
+          {
+            "set": "iko",
+            "number": "212",
+            "weight": 4,
+            "foil": false,
+            "uuid": "89cebc6e-20fd-5107-a9dc-675281f145f4"
+          },
+          {
+            "set": "iko",
+            "number": "214",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f07d63b4-4708-56d6-930d-abae98a2d071"
+          },
+          {
+            "set": "iko",
+            "number": "215",
+            "weight": 4,
+            "foil": false,
+            "uuid": "2f045425-0d27-540c-ad03-0c339adc6207"
+          },
+          {
+            "set": "iko",
+            "number": "220",
+            "weight": 2,
+            "foil": false,
+            "uuid": "aed0fad6-b599-5d55-ab16-35391b7716e6"
+          },
+          {
+            "set": "iko",
+            "number": "221",
+            "weight": 4,
+            "foil": false,
+            "uuid": "6f3fc058-f695-5b01-8262-a88b95dd1d5f"
+          },
+          {
+            "set": "iko",
+            "number": "222",
+            "weight": 4,
+            "foil": false,
+            "uuid": "02a724f6-4a37-5321-81a3-a2fb658b4566"
+          },
+          {
+            "set": "iko",
+            "number": "224",
+            "weight": 4,
+            "foil": false,
+            "uuid": "1a9f0cd9-e4fc-5c3d-951e-b7f37fefad78"
+          },
+          {
+            "set": "iko",
+            "number": "225",
+            "weight": 4,
+            "foil": false,
+            "uuid": "90b4baf3-db2a-5171-8df3-2b463509a456"
+          },
+          {
+            "set": "iko",
+            "number": "226",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d15f90a4-afd5-57d0-b303-07e32be36648"
+          },
+          {
+            "set": "iko",
+            "number": "227",
+            "weight": 4,
+            "foil": false,
+            "uuid": "e70f447c-6386-50bf-b376-a4cbb807d125"
+          },
+          {
+            "set": "iko",
+            "number": "228",
+            "weight": 4,
+            "foil": false,
+            "uuid": "310e4b40-8931-5d39-8e63-399d913e7285"
+          },
+          {
+            "set": "iko",
+            "number": "231",
+            "weight": 4,
+            "foil": false,
+            "uuid": "69f1601a-c4b3-5596-a73a-bc8d1955e531"
+          },
+          {
+            "set": "iko",
+            "number": "232",
+            "weight": 4,
+            "foil": false,
+            "uuid": "1b6b455a-34dd-5426-99c5-13f60e9bfcb4"
+          },
+          {
+            "set": "iko",
+            "number": "233",
+            "weight": 4,
+            "foil": false,
+            "uuid": "35f3951f-5ed3-5ede-858d-4c26986cdbe9"
+          },
+          {
+            "set": "iko",
+            "number": "245",
+            "weight": 1,
+            "foil": false,
+            "uuid": "45824e6d-9aad-524c-a537-cd4a245614a5"
+          },
+          {
+            "set": "iko",
+            "number": "248",
+            "weight": 4,
+            "foil": false,
+            "uuid": "4a559698-608b-5d25-8ac1-1ae604e30383"
+          },
+          {
+            "set": "iko",
+            "number": "250",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d110dabf-b35c-5392-b1c8-bb2331a01148"
+          },
+          {
+            "set": "iko",
+            "number": "251",
+            "weight": 4,
+            "foil": false,
+            "uuid": "1d9c469f-5526-5262-ade1-9bcc627d7247"
+          },
+          {
+            "set": "iko",
+            "number": "253",
+            "weight": 4,
+            "foil": false,
+            "uuid": "d570b77b-cd78-55d3-965d-09cd27030416"
+          },
+          {
+            "set": "iko",
+            "number": "259",
+            "weight": 4,
+            "foil": false,
+            "uuid": "7bfbe058-d513-58e2-8892-a4c5cf67e0ca"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "iko"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 212110,
+      "name": "Ikoria: Lair of Behemoths - Theme Booster [Monsters]",
+      "cleanName": "Ikoria Lair of Behemoths Theme Booster Monsters",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/212110_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2603,
+      "url": "https://www.tcgplayer.com/product/212110/magic-ikoria-lair-of-behemoths-ikoria-lair-of-behemoths-theme-booster-monsters",
+      "modifiedOn": "2020-04-07T16:23:19.42",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-05-15T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Theme boosters are perfect for players looking to expand their collection with a specific strategy in mind. These larger booster packs are full of cards all based on a single theme. Players who are looking to build their specific deck but still love the surprise of opening booster packs will love the Theme Booster.\r\n<br>\r\n<br>Contents: \r\n<br>• 35 cards from Ikoria: Lair of Behemoths\r\n<br>• 1 rare or mythic rare"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 212110,
+        "lowPrice": 49.99,
+        "midPrice": 49.99,
+        "highPrice": 49.99,
+        "marketPrice": 20.31,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

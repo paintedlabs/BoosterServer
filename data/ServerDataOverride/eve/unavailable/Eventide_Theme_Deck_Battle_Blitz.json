@@ -1,0 +1,64 @@
+{
+  "uuid": "93370b3e-b617-5331-9773-0c09537cfa87",
+  "name": "Eventide Theme Deck Battle Blitz",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100493",
+    "cardKingdomId": "125508",
+    "cardtraderId": "47282",
+    "mcmId": "245685",
+    "tcgplayerProductId": "175099",
+    "tntId": "179879"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/14af7b5a94e9f30f"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Battle Blitz",
+        "set": "eve"
+      }
+    ]
+  },
+  "setCode": "EVE",
+  "setName": "Eventide",
+  "tcgcsvData": {
+    "product": {
+      "productId": 175099,
+      "name": "Eventide Theme Deck - Battle Blitz",
+      "cleanName": "Eventide Theme Deck Battle Blitz",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/175099_200w.jpg",
+      "categoryId": 1,
+      "groupId": 39,
+      "url": "https://www.tcgplayer.com/product/175099/magic-eventide-eventide-theme-deck-battle-blitz",
+      "modifiedOn": "2019-11-20T16:24:38.943",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "At first, the \"Battle Blitz\" deck looks like a classic red-white deck. It's got some low-cost attackers, it's got some creatures with first strike (or, in the case of Hearthfire Hobgoblin, double strike), and it's got some burn spells. But then it starts getting tricky!\r\n<br>\r\n<br>This deck backs up its aggressive tendencies with a variety of Untap abilities. A creature with an Untap ability must be tapped to use it-which is no problem, since it'll be attacking at the earliest opportunity! Make extra creatures with Patrol Signaler, deal scads of damage with Hateflayer, or pump up your entire attacking team with Duergar Mine-Captain. The Untap ability untaps your creature, so even though it attacked, it'll also be ready to block next turn. Revelsong Horn sounds the final note-at the \"cost\" of priming an Untap ability for use!"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 175099,
+        "lowPrice": 48.99,
+        "midPrice": 48.99,
+        "highPrice": 48.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

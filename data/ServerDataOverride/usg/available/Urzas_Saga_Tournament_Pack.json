@@ -1,0 +1,60 @@
+{
+  "uuid": "96772e6d-0aba-5362-ab10-d5f3f6d23634",
+  "name": "Urzas Saga Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1100268",
+    "cardKingdomId": "1209",
+    "cardtraderId": "45446",
+    "mcmId": "244178",
+    "scgId": "SLD-MTG-PCK-USGTOURNAMENT-EN",
+    "tcgplayerProductId": "127432",
+    "tntId": "90186"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/78feab193f57964e",
+    "tcgplayer": "https://mtgjson.com/links/d9ba6ae9281e73c8"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "usg"
+      }
+    ]
+  },
+  "setCode": "USG",
+  "setName": "Urza's Saga",
+  "tcgcsvData": {
+    "product": {
+      "productId": 127432,
+      "name": "Urza's Saga Tournament Pack",
+      "cleanName": "Urzas Saga Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/127432_200w.jpg",
+      "categoryId": 1,
+      "groupId": 118,
+      "url": "https://www.tcgplayer.com/product/127432/magic-urzas-saga-urzas-saga-tournament-pack",
+      "modifiedOn": "2021-03-18T18:23:48.49",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 127432,
+        "lowPrice": 455,
+        "midPrice": 457.87,
+        "highPrice": 1350,
+        "marketPrice": 458.06,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

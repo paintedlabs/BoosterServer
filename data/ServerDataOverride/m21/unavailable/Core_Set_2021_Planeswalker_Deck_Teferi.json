@@ -1,0 +1,74 @@
+{
+  "uuid": "d65b1bd7-24be-5f34-85ab-d6cb046d99c6",
+  "name": "Core Set 2021 Planeswalker Deck Teferi",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2020-07-03",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1878055",
+    "cardKingdomId": "233869",
+    "cardtraderId": "133972",
+    "csiId": "297729",
+    "mcmId": "467334",
+    "tcgplayerProductId": "215467",
+    "tntId": "1605729"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/00af018b788e43d5"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Teferi, Timeless Voyager",
+        "set": "m21"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2021 Draft Booster Pack",
+        "set": "m21",
+        "uuid": "61ee3ba9-54d4-55e6-8c49-3977d922f30e"
+      }
+    ]
+  },
+  "setCode": "M21",
+  "setName": "Core Set 2021",
+  "tcgcsvData": {
+    "product": {
+      "productId": 215467,
+      "name": "Core Set 2021 - Planeswalker Deck [Teferi]",
+      "cleanName": "Core Set 2021 Planeswalker Deck Teferi",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/215467_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2653,
+      "url": "https://www.tcgplayer.com/product/215467/magic-core-set-2021-core-set-2021-planeswalker-deck-teferi",
+      "modifiedOn": "2020-06-06T16:41:22.993",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-07-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contents:\r\n<br>• 1 ready-to-play 60-card deck featuring a foil planeswalker card\r\n<br>• 1 Core Set 2021 Draft Booster\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card*\r\n<br><em>*Available only in certain regions</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 215467,
+        "lowPrice": 15,
+        "midPrice": 18.82,
+        "highPrice": 24.99,
+        "marketPrice": 15.64,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

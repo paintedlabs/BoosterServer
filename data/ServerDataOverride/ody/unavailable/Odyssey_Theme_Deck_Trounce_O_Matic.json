@@ -1,0 +1,64 @@
+{
+  "uuid": "75b865cf-9202-5699-b7d7-abb0c9ef1eaa",
+  "name": "Odyssey Theme Deck Trounce O Matic",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100956",
+    "cardKingdomId": "1424",
+    "cardtraderId": "45977",
+    "mcmId": "253731",
+    "tcgplayerProductId": "215786",
+    "tntId": "96344"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/55ced7594547cdc2"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Trounce-O-Matic",
+        "set": "ody"
+      }
+    ]
+  },
+  "setCode": "ODY",
+  "setName": "Odyssey",
+  "tcgcsvData": {
+    "product": {
+      "productId": 215786,
+      "name": "Odyssey Theme Deck - Trounce-O-Matic",
+      "cleanName": "Odyssey Theme Deck Trounce O Matic",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/215786_200w.jpg",
+      "categoryId": 1,
+      "groupId": 80,
+      "url": "https://www.tcgplayer.com/product/215786/magic-odyssey-odyssey-theme-deck-trounce-o-matic",
+      "modifiedOn": "2020-06-15T21:36:29.787",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Introducing the Trounce-O-Matic deck! It slices, it dices, it minces... your opponents. If you love win-win situations, this is your kind of deck. Its cheap creatures start out strong and only get stronger when you reach threshold."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 215786,
+        "lowPrice": 38.99,
+        "midPrice": 39,
+        "highPrice": 39,
+        "marketPrice": 39,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

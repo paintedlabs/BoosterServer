@@ -1,0 +1,59 @@
+{
+  "uuid": "ef204ad4-19b5-50db-a21e-ff2f47367cf0",
+  "name": "Hour of Devastation Bundle",
+  "category": "bundle",
+  "releaseDate": "2016-09-07",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1477010",
+    "cardKingdomId": "212829",
+    "cardtraderId": "48559",
+    "csiId": "241726",
+    "mcmId": "292567",
+    "scgId": "SLD-MTG-BUN-HOU-EN",
+    "tcgplayerProductId": "131458",
+    "tntId": "1114737"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/d8a6eedc53e06dcf",
+    "tcgplayer": "https://mtgjson.com/links/4bb8ad69b6cf0d11"
+  },
+  "setCode": "HOU",
+  "setName": "Hour of Devastation",
+  "tcgcsvData": {
+    "product": {
+      "productId": 131458,
+      "name": "Hour of Devastation - Bundle",
+      "cleanName": "Hour of Devastation Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/131458_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1934,
+      "url": "https://www.tcgplayer.com/product/131458/magic-hour-of-devastation-hour-of-devastation-bundle",
+      "modifiedOn": "2017-07-14T17:43:53.677",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each bundle includes a Player's Guide with pictures of all cards in the set as well as ten 15-card booster packs, 20 full-art basic land cards, 60 basic land cards, 1 copy of each token available in the set, and an Hour of Devastation-themed life counter."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 131458,
+        "lowPrice": 65,
+        "midPrice": 70.92,
+        "highPrice": 99.99,
+        "marketPrice": 68,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

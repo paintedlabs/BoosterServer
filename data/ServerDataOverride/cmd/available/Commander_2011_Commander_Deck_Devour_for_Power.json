@@ -1,0 +1,61 @@
+{
+  "uuid": "252f4267-91d4-54f0-b49a-8b65a014d1c4",
+  "name": "Commander 2011 Commander Deck Devour for Power",
+  "category": "deck",
+  "cardCount": 100,
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1100346",
+    "cardKingdomId": "184651",
+    "cardtraderId": "44777",
+    "csiId": "97500",
+    "mcmId": "246720",
+    "scgId": "SLD-MTG-MLT-CMD-EN-DEVOUR",
+    "tcgplayerProductId": "42097",
+    "tntId": "319877"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/625a5fe70e2fdf6e",
+    "tcgplayer": "https://mtgjson.com/links/c587c1102fc4353e"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Devour for Power",
+        "set": "cmd"
+      }
+    ]
+  },
+  "setCode": "CMD",
+  "setName": "Commander 2011",
+  "tcgcsvData": {
+    "product": {
+      "productId": 42097,
+      "name": "Commander - Devour for Power Deck",
+      "cleanName": "Commander Devour for Power Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/42097_200w.jpg",
+      "categoryId": 1,
+      "groupId": 25,
+      "url": "https://www.tcgplayer.com/product/42097/magic-commander-commander-devour-for-power-deck",
+      "modifiedOn": "2014-01-13T19:46:59.91",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 42097,
+        "lowPrice": 234.99,
+        "midPrice": 299.99,
+        "highPrice": 359.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

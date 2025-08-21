@@ -1,0 +1,58 @@
+{
+  "uuid": "e4c3266a-9dc2-56c2-a64e-487641a6ec86",
+  "name": "Exodus Theme Deck Widowmaker",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100498",
+    "cardKingdomId": "1179",
+    "cardtraderId": "45422",
+    "mcmId": "244177",
+    "tcgplayerProductId": "116057",
+    "tntId": "106923"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7d935c8509c155c5"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Widowmaker - Basic Deck",
+        "set": "exo"
+      }
+    ]
+  },
+  "setCode": "EXO",
+  "setName": "Exodus",
+  "tcgcsvData": {
+    "product": {
+      "productId": 116057,
+      "name": "Exodus Theme Deck - Widowmaker",
+      "cleanName": "Exodus Theme Deck Widowmaker",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/116057_200w.jpg",
+      "categoryId": 1,
+      "groupId": 40,
+      "url": "https://www.tcgplayer.com/product/116057/magic-exodus-exodus-theme-deck-widowmaker",
+      "modifiedOn": "2016-04-04T18:57:01.447",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 116057,
+        "lowPrice": 60,
+        "midPrice": 69.99,
+        "highPrice": 99.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

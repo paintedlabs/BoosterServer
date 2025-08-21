@@ -1,0 +1,73 @@
+{
+  "uuid": "9164ff6d-93f7-5069-b67d-06eb82ceca98",
+  "name": "Conflux Intro Pack Bant on the March",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100324",
+    "cardKingdomId": "126576",
+    "cardtraderId": "47347",
+    "mcmId": "244159",
+    "scgId": "SLD-MTG-INT-CFXINTRO-EN-BANT",
+    "tcgplayerProductId": "501419",
+    "tntId": "241999"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8d5874632fd75d42"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Bant on the March",
+        "set": "con"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Conflux Booster Pack",
+        "set": "con",
+        "uuid": "ee25fb77-38eb-56ce-8369-917cd2c0566b"
+      }
+    ]
+  },
+  "setCode": "CON",
+  "setName": "Conflux",
+  "tcgcsvData": {
+    "product": {
+      "productId": 501419,
+      "name": "Conflux - Intro Pack - Bant on the March",
+      "cleanName": "Conflux Intro Pack Bant on the March",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/501419_200w.jpg",
+      "categoryId": 1,
+      "groupId": 26,
+      "url": "https://www.tcgplayer.com/product/501419/magic-conflux-conflux-intro-pack-bant-on-the-march",
+      "modifiedOn": "2023-06-20T14:32:01.517",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Intro Pack contains a 41-card deck featuring 1 foil premium card."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 501419,
+        "lowPrice": 70,
+        "midPrice": 70,
+        "highPrice": 70,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

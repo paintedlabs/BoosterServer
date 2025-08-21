@@ -1,0 +1,73 @@
+{
+  "uuid": "4fd1fa84-5f0c-58c9-a970-58825f08138a",
+  "name": "Worldwake Intro Pack Fangs of the Bloodchief",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100217",
+    "cardKingdomId": "129943",
+    "cardtraderId": "47457",
+    "mcmId": "210200",
+    "scgId": "SLD-MTG-INT-WWKINTRO-EN-FANGS",
+    "tcgplayerProductId": "196798",
+    "tntId": "287103"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f1a9b4c33ce8ffdc"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Fangs of the Bloodchief",
+        "set": "wwk"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Worldwake Booster Pack",
+        "set": "wwk",
+        "uuid": "d40674d1-34ff-5855-8dad-7718eaa462aa"
+      }
+    ]
+  },
+  "setCode": "WWK",
+  "setName": "Worldwake",
+  "tcgcsvData": {
+    "product": {
+      "productId": 196798,
+      "name": "Worldwake Intro Pack - Fangs of the Bloodchief",
+      "cleanName": "Worldwake Intro Pack Fangs of the Bloodchief",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/196798_200w.jpg",
+      "categoryId": 1,
+      "groupId": 122,
+      "url": "https://www.tcgplayer.com/product/196798/magic-worldwake-worldwake-intro-pack-fangs-of-the-bloodchief",
+      "modifiedOn": "2021-03-31T13:20:05.863",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The \"Fangs of the Bloodchief \" deck puts you in control of Zendikar's most insidious predators—Vampires. With their assistance, you'll drain the life right out of your enemies. \r\n<br>\r\n<br>Each intro pack includes:\r\n<br>• 1 Premium card\r\n<br>• 40-card preconstructed deck\r\n<br>• One Worldwake booster pack\r\n<br>• A strategy and mechanics guide\r\n<br>• A learn-to-play insert for new players"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 196798,
+        "lowPrice": 49.99,
+        "midPrice": 59.99,
+        "highPrice": 69.99,
+        "marketPrice": 47.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

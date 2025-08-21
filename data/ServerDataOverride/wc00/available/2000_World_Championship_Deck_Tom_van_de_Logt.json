@@ -1,0 +1,66 @@
+{
+  "uuid": "9bc58176-6066-5b22-9ef1-8672a69aae40",
+  "name": "2000 World Championship Deck Tom van de Logt",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100246",
+    "cardKingdomId": "228824",
+    "cardtraderId": "39907",
+    "csiId": "98411",
+    "mcmId": "250165",
+    "scgId": "SLD-MTG-BXS-WCH2000-EN-TOMVANDELOGT",
+    "tcgplayerProductId": "158292",
+    "tntId": "79202"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d11daa5e48ab139b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Tom van de Logt - Replenish",
+        "set": "wc00"
+      }
+    ]
+  },
+  "setCode": "WC00",
+  "setName": "World Championship Decks 2000",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158292,
+      "name": "World Championship Deck: 2000 Brussels - Tom van de Logt, Quarterfinalist",
+      "cleanName": "World Championship Deck 2000 Brussels Tom van de Logt Quarterfinalist",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158292_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/158292/magic-world-championship-decks-world-championship-deck-2000-brussels-tom-van-de-logt-quarterfinalist",
+      "modifiedOn": "2018-02-07T13:37:12.767",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>\"Tom van de Logt's Replenish deck uses cards like Attunement and Frantic Search to put powerful enchantments into the graveyard. Then he used Replenish to put all of the enchantments back into play at once and pound his opponents.\"</em>\r\n<br>\r\n<br><strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158292,
+        "lowPrice": 535,
+        "midPrice": 549.95,
+        "highPrice": 551.1,
+        "marketPrice": 425.55,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

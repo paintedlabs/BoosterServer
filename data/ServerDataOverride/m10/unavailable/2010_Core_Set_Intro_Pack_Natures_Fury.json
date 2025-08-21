@@ -1,0 +1,67 @@
+{
+  "uuid": "3d19ed31-541e-5507-9df1-dc39f19a950c",
+  "name": "2010 Core Set Intro Pack Natures Fury",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100744",
+    "cardKingdomId": "127046",
+    "cardtraderId": "47402",
+    "mcmId": "271293",
+    "scgId": "SLD-MTG-INT-M10INTRO-EN-NATURES",
+    "tcgplayerProductId": "32534",
+    "tntId": "275091"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b9885976be410f78"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Nature's Fury",
+        "set": "m10"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "2010 Core Set Booster Pack",
+        "set": "m10",
+        "uuid": "f52aeac6-933a-55e2-a973-36421c155ea1"
+      }
+    ]
+  },
+  "setCode": "M10",
+  "setName": "Magic 2010",
+  "tcgcsvData": {
+    "product": {
+      "productId": 32534,
+      "name": "Magic 2010 (M10) - Intro Pack - Nature's Fury",
+      "cleanName": "Magic 2010 M10 Intro Pack Natures Fury",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32534_200w.jpg",
+      "categoryId": 1,
+      "groupId": 68,
+      "url": "https://www.tcgplayer.com/product/32534/magic-magic-2010-m10-magic-2010-m10-intro-pack-natures-fury",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 32534,
+        "lowPrice": 35,
+        "midPrice": 35,
+        "highPrice": 35,
+        "marketPrice": 38.18,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

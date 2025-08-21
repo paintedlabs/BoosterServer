@@ -1,0 +1,74 @@
+{
+  "uuid": "54ac2139-1043-5f7d-9e84-0c18ad249879",
+  "name": "Core Set 2019 Planeswalker Deck Sarkhan",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-07-13",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1511009",
+    "cardKingdomId": "220071",
+    "cardtraderId": "48708",
+    "mcmId": "360015",
+    "scgId": "SLD-MTG-INT-M19PWDECK-EN-SARKHAN",
+    "tcgplayerProductId": "169266",
+    "tntId": "1178935"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f795b976ce723f83"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Sarkhan",
+        "set": "m19"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2019 Booster Pack",
+        "set": "m19",
+        "uuid": "36d4765d-add1-5d6b-8bff-f342ef62a3d0"
+      }
+    ]
+  },
+  "setCode": "M19",
+  "setName": "Core Set 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 169266,
+      "name": "Core Set 2019 - Planeswalker Deck [Sarkhan]",
+      "cleanName": "Core Set 2019 Planeswalker Deck Sarkhan",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/169266_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2250,
+      "url": "https://www.tcgplayer.com/product/169266/magic-core-set-2019-core-set-2019-planeswalker-deck-sarkhan",
+      "modifiedOn": "2018-06-28T03:20:41.09",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-07-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck \r\n<br>• 1 Core 2019 booster pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 169266,
+        "lowPrice": 42.39,
+        "midPrice": 42.39,
+        "highPrice": 47.38,
+        "marketPrice": 42.39,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "uuid": "bb6569f9-ae96-5f75-a150-57b70126d478",
+  "name": "Born of the Gods Prerelease Kit Destined To Lead",
+  "category": "limited_aid_tool",
+  "cardCount": 15,
+  "releaseDate": "2007-01-01",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "1100196",
+    "cardtraderId": "48086",
+    "csiId": "200405",
+    "mcmId": "266422",
+    "tcgplayerProductId": "78290",
+    "tntId": "1182091"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4db666c938e64fee"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Silent Sentinel",
+        "number": "26★",
+        "set": "pbng",
+        "uuid": "1113a0d3-a7b1-54d0-91d9-4300179e49e4"
+      },
+      {
+        "name": "The General",
+        "number": "4a",
+        "set": "thp2",
+        "uuid": "4bb9a0ba-6f07-5120-a294-404c0ecd9825"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease-lead",
+        "set": "bng"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Born of the Gods Booster Pack",
+        "set": "bng",
+        "uuid": "16e12027-2acd-5bfa-81e8-ed3bc5381334"
+      },
+      {
+        "count": 3,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "BNG",
+  "setName": "Born of the Gods",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78290,
+      "name": "Born of the Gods - Destined To Lead (Prerelease)",
+      "cleanName": "Born of the Gods Destined To Lead Prerelease",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78290_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1276,
+      "url": "https://www.tcgplayer.com/product/78290/magic-born-of-the-gods-born-of-the-gods-destined-to-lead-prerelease",
+      "modifiedOn": "2022-12-23T13:35:40.23",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78290,
+        "lowPrice": 25.48,
+        "midPrice": 25.86,
+        "highPrice": 26.24,
+        "marketPrice": 25.11,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "uuid": "11685081-932b-588a-9a58-7b53632af9e4",
+  "name": "Aether Revolt Planeswalker Deck Ajani",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1476822",
+    "cardKingdomId": "210388",
+    "cardtraderId": "48501",
+    "csiId": "228479",
+    "mcmId": "294547",
+    "scgId": "SLD-MTG-INT-AERPWDECK-EN-AJANI",
+    "tcgplayerProductId": "125798",
+    "tntId": "1098352"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/801b1debc4e1024a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ajani, Valiant Protector",
+        "set": "aer"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Aether Revolt Booster Pack",
+        "set": "aer",
+        "uuid": "b32a55d0-c4f8-5c16-b1ab-66ab627a25a2"
+      }
+    ]
+  },
+  "setCode": "AER",
+  "setName": "Aether Revolt",
+  "tcgcsvData": {
+    "product": {
+      "productId": 125798,
+      "name": "Aether Revolt - Planeswalker Deck [Ajani]",
+      "cleanName": "Aether Revolt Planeswalker Deck Ajani",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/125798_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1857,
+      "url": "https://www.tcgplayer.com/product/125798/magic-aether-revolt-aether-revolt-planeswalker-deck-ajani",
+      "modifiedOn": "2017-06-19T17:19:12.367",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring \"Ajani, Valiant Protector\". This deck contains the following:\r\n<br>\r\n<br><b>-</b> 1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card \r\n<br><b>-</b> 2 Aether Revolt booster packs\r\n<br><b>-</b> 1 Strategy insert\r\n<br><b>-</b> 1 Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 125798,
+        "lowPrice": 47.24,
+        "midPrice": 48.62,
+        "highPrice": 50,
+        "marketPrice": 46.83,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

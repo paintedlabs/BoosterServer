@@ -1,0 +1,68 @@
+{
+  "uuid": "a1e82ace-6abf-5521-90ee-abae2335c8c3",
+  "name": "Return to Ravnica Intro Pack Izzet Ingenuity",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2012-10-05",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101081",
+    "cardKingdomId": "188120",
+    "cardtraderId": "47827",
+    "mcmId": "258298",
+    "scgId": "SLD-MTG-INT-RTRINTRO-EN-IZZET",
+    "tcgplayerProductId": "66477",
+    "tntId": "804398"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ae11feb279127988"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Izzet Ingenuity",
+        "set": "rtr"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Return to Ravnica Booster Pack",
+        "set": "rtr",
+        "uuid": "1772b60a-f041-51d9-b86b-dc79d6b65070"
+      }
+    ]
+  },
+  "setCode": "RTR",
+  "setName": "Return to Ravnica",
+  "tcgcsvData": {
+    "product": {
+      "productId": 66477,
+      "name": "Return to Ravnica - Intro Pack - Izzet Ingenuity",
+      "cleanName": "Return to Ravnica Intro Pack Izzet Ingenuity",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/66477_200w.jpg",
+      "categoryId": 1,
+      "groupId": 370,
+      "url": "https://www.tcgplayer.com/product/66477/magic-return-to-ravnica-return-to-ravnica-intro-pack-izzet-ingenuity",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-10-05T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 66477,
+        "lowPrice": 34.99,
+        "midPrice": 38.74,
+        "highPrice": 42.48,
+        "marketPrice": 34.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

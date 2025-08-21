@@ -1,0 +1,78 @@
+{
+  "uuid": "a806e3df-2e43-5af0-8672-1634f88bd615",
+  "name": "New Phyrexia Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100918",
+    "cardKingdomId": "184281",
+    "cardtraderId": "47608",
+    "csiId": "153898",
+    "mcmId": "245809",
+    "scgId": "SLD-MTG-BUN-NPH-EN",
+    "tcgplayerProductId": "39402",
+    "tntId": "319963"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/92b978118ac0d2ce"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "80 basic land cards"
+      },
+      {
+        "name": "New Phyrexia spindown life counter"
+      },
+      {
+        "name": "player's guide"
+      },
+      {
+        "name": "card storage box"
+      },
+      {
+        "name": "two 60-card deck boxes"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 9,
+        "name": "New Phyrexia Booster Pack",
+        "set": "nph",
+        "uuid": "13798a31-0146-563b-aab8-33ae1b104684"
+      }
+    ]
+  },
+  "setCode": "NPH",
+  "setName": "New Phyrexia",
+  "tcgcsvData": {
+    "product": {
+      "productId": 39402,
+      "name": "New Phyrexia - Fat Pack",
+      "cleanName": "New Phyrexia Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/39402_200w.jpg",
+      "categoryId": 1,
+      "groupId": 79,
+      "url": "https://www.tcgplayer.com/product/39402/magic-new-phyrexia-new-phyrexia-fat-pack",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 39402,
+        "lowPrice": 349.95,
+        "midPrice": 364,
+        "highPrice": 364.49,
+        "marketPrice": 349.75,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "uuid": "c5cb3491-d104-598b-95e7-888581b255e8",
+  "name": "2012 Core Set Sample Deck Chandra Nalaar",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "abuId": "1101044",
+    "cardtraderId": "47643",
+    "mcmId": "287575"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Red Deck A",
+                "set": "m12"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Red Deck B",
+                "set": "m12"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "M12",
+  "setName": "Magic 2012"
+}

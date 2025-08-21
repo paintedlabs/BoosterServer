@@ -1,0 +1,85 @@
+{
+  "uuid": "53c23cb9-f55f-5483-a0a0-6a3a3d09918e",
+  "name": "Kamigawa Neon Dynasty Bundle",
+  "category": "bundle",
+  "releaseDate": "2022-02-18",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2122845",
+    "cardKingdomId": "255730",
+    "cardtraderId": "201797",
+    "mcmId": "587699",
+    "scgId": "SLD-MTG-BUN-NEO-EN",
+    "tcgplayerProductId": "257566",
+    "tntId": "1739455"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/973aa964ee948cb2",
+    "tcgplayer": "https://mtgjson.com/links/bfd2669b9ddf3b40"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Invoke Despair",
+        "number": "506",
+        "set": "neo",
+        "uuid": "8c3a2f60-6cd3-557f-9c29-7694b7b526d7"
+      }
+    ],
+    "other": [
+      {
+        "name": "Kamigawa Neon Dynasty Land Bundle"
+      },
+      {
+        "name": "Kamigawa Neon Dynasty Spindown"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Kamigawa Neon Dynasty Set Booster Pack",
+        "set": "neo",
+        "uuid": "793cffee-a608-56fe-a2dc-feccb9af38c5"
+      }
+    ]
+  },
+  "setCode": "NEO",
+  "setName": "Kamigawa: Neon Dynasty",
+  "tcgcsvData": {
+    "product": {
+      "productId": 257566,
+      "name": "Kamigawa: Neon Dynasty - Bundle",
+      "cleanName": "Kamigawa Neon Dynasty Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/257566_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2965,
+      "url": "https://www.tcgplayer.com/product/257566/magic-kamigawa-neon-dynasty-kamigawa-neon-dynasty-bundle",
+      "modifiedOn": "2022-02-18T05:03:44.007",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-02-18T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Kamigawa: Neon Dynasty Bundle contains 8 Kamigawa: Neon Dynasty Set Boosters—the best boosters to open just for fun—plus exclusive accessories, with 40 basic lands (20 traditional foils and 20 nonfoils), 1 traditional foil promo card with Bundle-exclusive alternate art, 1 oversized Spindown life counter, 1 card storage box, and 2 reference cards.\r\n<br>Each Kamigawa: Neon Dynasty Set Booster contains 12 Magic cards, 1 Art Card, and 1 token, ad card, Helper card, or special card from Magic's history (a card from \"The List\"), with a combination of 1–4 cards of rarity Rare or higher, 2–7 Uncommons, 3–8 Common cards, and 1 Land card in every pack.\r\n<br><br>Key Product Features:\r\n<br>• 8 Kamigawa: Neon Dynasty MTG Set Boosters\r\n<br>• 1 foil alt-art promo card\r\n<br>• 40 basic land cards (20 foil + 20 nonfoil)\r\n<br>• Spindown life counter + card storage box\r\n<br>• With cyberpunk cards full of color and chrome—the future is bright in Kamigawa"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 257566,
+        "lowPrice": 99.64,
+        "midPrice": 110.09,
+        "highPrice": 124.93,
+        "marketPrice": 102.34,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

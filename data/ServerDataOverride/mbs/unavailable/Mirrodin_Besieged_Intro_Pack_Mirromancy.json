@@ -1,0 +1,67 @@
+{
+  "uuid": "497ec52e-f232-57f8-acce-74310d128ea6",
+  "name": "Mirrodin Besieged Intro Pack Mirromancy",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100890",
+    "cardKingdomId": "137136",
+    "cardtraderId": "47577",
+    "mcmId": "245277",
+    "scgId": "SLD-MTG-INT-MBSINTRO-EN-MIRROMANCY",
+    "tcgplayerProductId": "39118",
+    "tntId": "299377"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/9554e52b223d15a1"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mirromancy",
+        "set": "mbs"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Mirrodin Besieged Booster Pack",
+        "set": "mbs",
+        "uuid": "ba83ed00-67f1-523d-94be-831d0dd950ad"
+      }
+    ]
+  },
+  "setCode": "MBS",
+  "setName": "Mirrodin Besieged",
+  "tcgcsvData": {
+    "product": {
+      "productId": 39118,
+      "name": "Mirrodin Besieged - Intro Pack - Mirromancy",
+      "cleanName": "Mirrodin Besieged Intro Pack Mirromancy",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/39118_200w.jpg",
+      "categoryId": 1,
+      "groupId": 76,
+      "url": "https://www.tcgplayer.com/product/39118/magic-mirrodin-besieged-mirrodin-besieged-intro-pack-mirromancy",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 39118,
+        "lowPrice": 34.99,
+        "midPrice": 34.99,
+        "highPrice": 34.99,
+        "marketPrice": 31.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

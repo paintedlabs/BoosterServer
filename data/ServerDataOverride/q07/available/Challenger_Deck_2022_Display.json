@@ -1,0 +1,84 @@
+{
+  "uuid": "cc8321c9-7758-5e5b-91ce-fbb2c80f122f",
+  "name": "Challenger Deck 2022 Display",
+  "category": "deck_box",
+  "subtype": "challenger",
+  "identifiers": {
+    "tcgplayerProductId": "263168",
+    "tntId": "1745660"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/423f38c818ca1080"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Challenger Deck 2022 Dimir Control",
+        "set": "q07",
+        "uuid": "291b4274-beee-53d5-b4db-309f05d696a5"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2022 Gruul Stompy",
+        "set": "q07",
+        "uuid": "3486b605-60ec-54af-8ab1-265e1d01c688"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2022 Mono White Aggro",
+        "set": "q07",
+        "uuid": "83cc5488-a136-5153-ac4e-b121e921df4b"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2022 Rakdos Vampires",
+        "set": "q07",
+        "uuid": "ccbdd4bb-508a-5a28-92bb-a71396b166c9"
+      }
+    ]
+  },
+  "setCode": "Q07",
+  "setName": "Challenger Decks 2022",
+  "tcgcsvData": {
+    "product": {
+      "productId": 263168,
+      "name": "Challenger Deck 2022 Display",
+      "cleanName": "Challenger Deck 2022 Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/263168_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/263168/magic-challenger-decks-challenger-deck-2022-display",
+      "modifiedOn": "2022-07-06T13:12:52.833",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "A Challenger Decks Display comes with two of each deck for a total of eight decks. Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166138824"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 263168,
+        "lowPrice": 169.18,
+        "midPrice": 169.18,
+        "highPrice": 169.18,
+        "marketPrice": 147.47,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

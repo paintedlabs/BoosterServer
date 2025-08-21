@@ -1,0 +1,79 @@
+{
+  "uuid": "c9e98362-8c81-5f65-bf35-faeb51d5961f",
+  "name": "Starter Commander Deck Token Triumph",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-12-02",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2275527",
+    "cardKingdomId": "270188",
+    "cardtraderId": "224266",
+    "csiId": "349033",
+    "mcmId": "678623",
+    "miniaturemarketId": "287979",
+    "scgId": "SLD-MTG-MLT-SCD-EN-TOKEN",
+    "tcgplayerProductId": "448433",
+    "tntId": "1770666"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/f9d5c2c933d0c65e",
+    "tcgplayer": "https://mtgjson.com/links/69dce1cfe69f7ff0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Token Triumph",
+        "set": "scd"
+      }
+    ],
+    "other": [
+      {
+        "name": "10 double sided tokens"
+      }
+    ]
+  },
+  "setCode": "SCD",
+  "setName": "Starter Commander Decks",
+  "tcgcsvData": {
+    "product": {
+      "productId": 448433,
+      "name": "Starter Commander Deck - Token Triumph",
+      "cleanName": "Starter Commander Deck Token Triumph",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/448433_200w.jpg",
+      "categoryId": 1,
+      "groupId": 17662,
+      "url": "https://www.tcgplayer.com/product/448433/magic-starter-commander-decks-starter-commander-deck-token-triumph",
+      "modifiedOn": "2022-12-02T05:03:12.74",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-12-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Details pending!\r\n<br>\r\nContents:\r\n<br>\r\n• 99 cards and 1 foil-etched card\r\n<br>\r\n• 10 double-sided tokens\r\n<br>\r\n• 1 deck box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166134543"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 448433,
+        "lowPrice": 21,
+        "midPrice": 30.09,
+        "highPrice": 59.99,
+        "marketPrice": 25.52,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

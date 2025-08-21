@@ -1,0 +1,73 @@
+{
+  "uuid": "df74d8c9-d1a3-5cfc-979b-f2e142bd4974",
+  "name": "Khans of Tarkir Intro Pack Mardu Raiders",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100708",
+    "cardKingdomId": "196182",
+    "cardtraderId": "48194",
+    "mcmId": "269601",
+    "scgId": "SLD-MTG-INT-KTKINTRO-EN-MARDU",
+    "tcgplayerProductId": "93317",
+    "tntId": "1060256"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c60b4d479f2a95c2"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mardu Raiders",
+        "set": "ktk"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Khans of Tarkir Booster Pack",
+        "set": "ktk",
+        "uuid": "82ebffce-506f-50bd-880a-82439e47861c"
+      }
+    ]
+  },
+  "setCode": "KTK",
+  "setName": "Khans of Tarkir",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93317,
+      "name": "Khans of Tarkir - Intro Pack - Mardu Raiders",
+      "cleanName": "Khans of Tarkir Intro Pack Mardu Raiders",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93317_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1356,
+      "url": "https://www.tcgplayer.com/product/93317/magic-khans-of-tarkir-khans-of-tarkir-intro-pack-mardu-raiders",
+      "modifiedOn": "2021-08-05T14:30:14.59",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Khans of Tarkir booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 93317,
+        "lowPrice": 36,
+        "midPrice": 36.54,
+        "highPrice": 37.08,
+        "marketPrice": 44.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

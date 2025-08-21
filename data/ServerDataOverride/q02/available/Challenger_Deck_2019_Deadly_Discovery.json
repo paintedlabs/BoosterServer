@@ -1,0 +1,67 @@
+{
+  "uuid": "9b0d6e07-d002-500e-889e-8f378bdab60b",
+  "name": "Challenger Deck 2019 Deadly Discovery",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2019-04-12",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1567936",
+    "cardKingdomId": "223979",
+    "cardtraderId": "54744",
+    "csiId": "273874",
+    "mcmId": "371227",
+    "scgId": "SLD-MTG-INT-Q02-EN-DEADLY",
+    "tcgplayerProductId": "186434",
+    "tntId": "1470661"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c6743516c3617c5b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Deadly Discovery",
+        "set": "q02"
+      }
+    ]
+  },
+  "setCode": "Q02",
+  "setName": "Challenger Decks 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 186434,
+      "name": "Challenger Deck 2019: Deadly Discovery",
+      "cleanName": "Challenger Deck 2019 Deadly Discovery",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/186434_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/186434/magic-challenger-decks-challenger-deck-2019-deadly-discovery",
+      "modifiedOn": "2019-03-20T16:43:59.943",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains:\r\n<br>• 60-card main deck\r\n<br>• 15-card sideboard\r\n<br>• A box capable of holding 75 sleeved cards\r\n<br>• Spindown life counter\r\n<br>• Quick reference guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 186434,
+        "lowPrice": 17.02,
+        "midPrice": 24,
+        "highPrice": 35.99,
+        "marketPrice": 14.9,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

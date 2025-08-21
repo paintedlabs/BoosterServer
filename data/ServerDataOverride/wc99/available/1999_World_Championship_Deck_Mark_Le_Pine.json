@@ -1,0 +1,66 @@
+{
+  "uuid": "6fe41486-d20b-5402-ab20-e5a31a6feccb",
+  "name": "1999 World Championship Deck Mark Le Pine",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100239",
+    "cardKingdomId": "240326",
+    "cardtraderId": "39902",
+    "csiId": "97886",
+    "mcmId": "250162",
+    "scgId": "SLD-MTG-BXS-WCH1999-EN-MARKLEPINE",
+    "tcgplayerProductId": "158286",
+    "tntId": "91200"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/3d06f90846175793"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mark Le Pine - Sped Red",
+        "set": "wc99"
+      }
+    ]
+  },
+  "setCode": "WC99",
+  "setName": "World Championship Decks 1999",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158286,
+      "name": "World Championship Deck: 1999 Yokohama - Mark Le Pine, Finalist",
+      "cleanName": "World Championship Deck 1999 Yokohama Mark Le Pine Finalist",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158286_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/158286/magic-world-championship-decks-world-championship-deck-1999-yokohama-mark-le-pine-finalist",
+      "modifiedOn": "2018-02-07T13:36:18.907",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>\"Mark Le Pine's aggressive 'Sped Red' deck applied the pressure early with 11 fast creatures before shifting into land-destruction mode. A late-game Cursed Scroll and Hammer of Bogardan would finish off his mana-crippled opponents.\"</em>\r\n<br>\r\n<br><strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158286,
+        "lowPrice": 100,
+        "midPrice": 100,
+        "highPrice": 100,
+        "marketPrice": 97.28,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

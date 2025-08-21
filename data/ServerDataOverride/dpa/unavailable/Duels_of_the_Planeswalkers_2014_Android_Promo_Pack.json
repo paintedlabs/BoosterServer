@@ -1,0 +1,64 @@
+{
+  "uuid": "e75417fa-9a5b-5a72-852b-22d04990b176",
+  "name": "Duels of the Planeswalkers 2014 Android Promo Pack",
+  "category": "booster_pack",
+  "cardCount": 6,
+  "subtype": "promotional",
+  "identifiers": {
+    "cardtraderId": "51096",
+    "mcmId": "262407",
+    "tcgplayerProductId": "77289"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/432185b2b49f7e10"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Scavenging Ooze",
+        "number": "3",
+        "set": "pdp14",
+        "uuid": "b4ea5f31-5506-5595-a2a3-95dac162a8f2"
+      }
+    ],
+    "pack": [
+      {
+        "code": "duelspromo",
+        "set": "m14"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77289,
+      "name": "Duels of the Planeswalkers 2014 Android Promo Pack",
+      "cleanName": "Duels of the Planeswalkers 2014 Android Promo Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77289_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/77289/magic-duels-of-the-planeswalkers-duels-of-the-planeswalkers-2014-android-promo-pack",
+      "modifiedOn": "2020-08-18T18:00:53.927",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77289,
+        "lowPrice": 19.86,
+        "midPrice": 19.86,
+        "highPrice": 19.86,
+        "marketPrice": 18.74,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

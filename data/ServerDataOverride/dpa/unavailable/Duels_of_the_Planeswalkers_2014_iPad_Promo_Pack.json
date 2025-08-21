@@ -1,0 +1,65 @@
+{
+  "uuid": "a2f5a996-8718-537a-adb0-271e5c70a94f",
+  "name": "Duels of the Planeswalkers 2014 iPad Promo Pack",
+  "category": "booster_pack",
+  "cardCount": 6,
+  "subtype": "promotional",
+  "identifiers": {
+    "cardtraderId": "51089",
+    "mcmId": "262409",
+    "tcgplayerProductId": "77290",
+    "tntId": "1660320"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b99fb943dc179533"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Scavenging Ooze",
+        "number": "3",
+        "set": "pdp14",
+        "uuid": "b4ea5f31-5506-5595-a2a3-95dac162a8f2"
+      }
+    ],
+    "pack": [
+      {
+        "code": "duelspromo",
+        "set": "m14"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77290,
+      "name": "Duels of the Planeswalkers 2014 iPad Promo Pack",
+      "cleanName": "Duels of the Planeswalkers 2014 iPad Promo Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77290_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/77290/magic-duels-of-the-planeswalkers-duels-of-the-planeswalkers-2014-ipad-promo-pack",
+      "modifiedOn": "2020-08-18T18:00:57.527",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77290,
+        "lowPrice": 23.49,
+        "midPrice": 24.31,
+        "highPrice": 25.13,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

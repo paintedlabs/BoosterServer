@@ -1,0 +1,92 @@
+{
+  "uuid": "00a77e73-c3b5-5a7a-b4b8-ad3d1be4e754",
+  "name": "The Brothers' War Commander Deck Urzas Iron Alliance",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-11-18",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2261769",
+    "cardKingdomId": "267927",
+    "cardtraderId": "224491",
+    "csiId": "346448",
+    "mcmId": "678528",
+    "scgId": "SLD-MTG-MLT-BRC-EN-URZA",
+    "tcgplayerProductId": "449722",
+    "tntId": "1759342"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/7b4855c1e508c508",
+    "tcgplayer": "https://mtgjson.com/links/85b75345f6fa1dbf"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Urza's Iron Alliance",
+        "set": "brc"
+      }
+    ],
+    "other": [
+      {
+        "name": "Foil Etched Cardstock Display Commander"
+      },
+      {
+        "name": "The Brothers' War Life Wheel"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "The Brothers' War Collector Booster Sample Pack",
+        "set": "bro",
+        "uuid": "9cb54c6c-1363-501f-8395-d94f9a5c4085"
+      }
+    ]
+  },
+  "setCode": "BRC",
+  "setName": "The Brothers' War Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 449722,
+      "name": "The Brothers' War Commander Deck - Urza's Iron Alliance",
+      "cleanName": "The Brothers War Commander Deck Urzas Iron Alliance",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/449722_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3159,
+      "url": "https://www.tcgplayer.com/product/449722/magic-commander-the-brothers-war-the-brothers-war-commander-deck-urzas-iron-alliance",
+      "modifiedOn": "2022-11-18T05:04:15.63",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-11-18T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Brothers’ War Commander Deck set includes 1 ready-to-play deck of 100 Magic cards (2 traditional foil legendary cards, 98 nonfoil cards), a 2-card Collector Booster Sample Pack, 1 foil-etched Display Commander (a thick cardstock copy of the commander card with foil etched into the card’s border and art), 10 double-sided tokens, 1 deck box (can hold 100 sleeved cards), 1 Life Wheel, 1 strategy insert, and 1 reference card.\r\n<br>Contents:\r\n<br>• 100-card ready-to-play The Brothers’ War Commander Deck\r\n<br>• 2-card Collector Booster Sample Pack\r\n<br>• Deck includes 2 traditional foils + 98 nonfoil cards\r\n<br>• 1 foil-etched Display Commander\r\n<br>• 10 double-sided tokens + life tracker and deck box\r\n<br>• Introduces 10 MTG cards not found in the BRO main set"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166150628"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 449722,
+        "lowPrice": 156,
+        "midPrice": 172,
+        "highPrice": 175,
+        "marketPrice": 118.47,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

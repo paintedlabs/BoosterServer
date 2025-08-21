@@ -1,0 +1,77 @@
+{
+  "uuid": "ad5225b6-6422-5fda-8b75-2c0f6bebc655",
+  "name": "Shards of Alara Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "cardKingdomId": "125625",
+    "cardtraderId": "47324",
+    "csiId": "98173",
+    "mcmId": "210160",
+    "scgId": "SLD-MTG-BUN-ALA-EN",
+    "tcgplayerProductId": "78331",
+    "tntId": "183780"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a212305172f4f580"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Shards of Alara Planeswalker's guide to Alara"
+      },
+      {
+        "name": "1 of 5 different card boxes with Shards of Alara artwork"
+      },
+      {
+        "name": "40 card Shards basic land pack"
+      },
+      {
+        "name": "1 Shards Spindown life counter"
+      },
+      {
+        "name": "1 random Pro Tour Player card"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Shards of Alara Booster Pack",
+        "set": "ala",
+        "uuid": "53db9568-de5e-5a95-9882-b3b16ad4931c"
+      }
+    ]
+  },
+  "setCode": "ALA",
+  "setName": "Shards of Alara",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78331,
+      "name": "Shards of Alara - Fat Pack",
+      "cleanName": "Shards of Alara Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78331_200w.jpg",
+      "categoryId": 1,
+      "groupId": 103,
+      "url": "https://www.tcgplayer.com/product/78331/magic-shards-of-alara-shards-of-alara-fat-pack",
+      "modifiedOn": "2014-01-07T15:46:07.143",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78331,
+        "lowPrice": 320,
+        "midPrice": 387.5,
+        "highPrice": 499.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

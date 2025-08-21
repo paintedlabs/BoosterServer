@@ -1,0 +1,72 @@
+{
+  "uuid": "8f18e7a9-2522-5849-9a10-073cb8180c8c",
+  "name": "Eldritch Moon Intro Pack Dangerous Knowledge",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-06-29",
+  "subtype": "intro",
+  "identifiers": {
+    "cardKingdomId": "209450",
+    "cardtraderId": "48435",
+    "mcmId": "290947",
+    "tcgplayerProductId": "118396",
+    "tntId": "1099828"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/6815a5f7fce9ecd4"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dangerous Knowledge",
+        "set": "emn"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Eldritch Moon Booster Pack",
+        "set": "emn",
+        "uuid": "4253efbd-cc76-53e3-a54c-9f4012f3c097"
+      }
+    ]
+  },
+  "setCode": "EMN",
+  "setName": "Eldritch Moon",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118396,
+      "name": "Eldritch Moon - Intro Pack - Dangerous Knowledge",
+      "cleanName": "Eldritch Moon Intro Pack Dangerous Knowledge",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118396_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1790,
+      "url": "https://www.tcgplayer.com/product/118396/magic-eldritch-moon-eldritch-moon-intro-pack-dangerous-knowledge",
+      "modifiedOn": "2021-08-05T14:22:19.72",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Eldritch Moon booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 118396,
+        "lowPrice": 30.95,
+        "midPrice": 32.2,
+        "highPrice": 37.99,
+        "marketPrice": 25,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

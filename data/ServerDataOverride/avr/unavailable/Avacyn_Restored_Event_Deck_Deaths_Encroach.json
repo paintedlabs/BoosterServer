@@ -1,0 +1,76 @@
+{
+  "uuid": "30afe83f-4221-52fb-b968-afa5f5b4330c",
+  "name": "Avacyn Restored Event Deck Deaths Encroach",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "event",
+  "identifiers": {
+    "abuId": "1100121",
+    "cardKingdomId": "187248",
+    "cardtraderId": "47740",
+    "mcmId": "255440",
+    "scgId": "SLD-MTG-INT-AVREVENT-EN-DEATHS",
+    "tcgplayerProductId": "59110",
+    "tntId": "375902"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8832dedd1f90c2d0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Death's Encroach",
+        "set": "avr"
+      }
+    ],
+    "other": [
+      {
+        "name": "Avacyn Restored Deck Box"
+      },
+      {
+        "name": "Avacyn Restored Premium Spin Down"
+      },
+      {
+        "name": "Magic Strategy and Mechanics Guide"
+      }
+    ]
+  },
+  "setCode": "AVR",
+  "setName": "Avacyn Restored",
+  "tcgcsvData": {
+    "product": {
+      "productId": 59110,
+      "name": "Avacyn Restored - Event Deck - Death's Encroach",
+      "cleanName": "Avacyn Restored Event Deck Deaths Encroach",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/59110_200w.jpg",
+      "categoryId": 1,
+      "groupId": 362,
+      "url": "https://www.tcgplayer.com/product/59110/magic-avacyn-restored-avacyn-restored-event-deck-deaths-encroach",
+      "modifiedOn": "2015-12-17T19:30:11.977",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 71445 3"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 59110,
+        "lowPrice": 34.35,
+        "midPrice": 72.99,
+        "highPrice": 74.19,
+        "marketPrice": 34.35,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

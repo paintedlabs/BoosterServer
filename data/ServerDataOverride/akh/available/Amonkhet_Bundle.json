@@ -1,0 +1,80 @@
+{
+  "uuid": "ae0a8ac7-0b9b-5b8e-97eb-a8e166a6753c",
+  "name": "Amonkhet Bundle",
+  "category": "bundle",
+  "releaseDate": "2017-04-28",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1476841",
+    "cardKingdomId": "211629",
+    "cardtraderId": "48527",
+    "csiId": "238913",
+    "mcmId": "292572",
+    "scgId": "SLD-MTG-BUN-AKH-EN",
+    "tcgplayerProductId": "127175",
+    "tntId": "1114736"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/b08c5d9f4b12977c",
+    "tcgplayer": "https://mtgjson.com/links/03fa6a6c31d3083c"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Amonkhet 80-card Basic Land Bundle"
+      },
+      {
+        "name": "20 Double-sided Tokens"
+      },
+      {
+        "name": "Amonkhet Reusable Card Storage Box"
+      },
+      {
+        "name": "Amonkhet Bundle Spindown"
+      },
+      {
+        "name": "Amonkhet Players Guide"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Amonkhet Booster Pack",
+        "set": "akh",
+        "uuid": "bdfaa43d-9ebd-502f-856b-11eadc97b026"
+      }
+    ]
+  },
+  "setCode": "AKH",
+  "setName": "Amonkhet",
+  "tcgcsvData": {
+    "product": {
+      "productId": 127175,
+      "name": "Amonkhet - Bundle",
+      "cleanName": "Amonkhet Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/127175_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1882,
+      "url": "https://www.tcgplayer.com/product/127175/magic-amonkhet-amonkhet-bundle",
+      "modifiedOn": "2017-02-20T16:14:29.37",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-04-28T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 127175,
+        "lowPrice": 124.99,
+        "midPrice": 130.99,
+        "highPrice": 199.99,
+        "marketPrice": 123.52,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

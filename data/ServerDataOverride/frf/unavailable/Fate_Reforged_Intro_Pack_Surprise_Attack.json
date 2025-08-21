@@ -1,0 +1,73 @@
+{
+  "uuid": "794a4ec7-18fc-581e-8f42-df9a80cec6fb",
+  "name": "Fate Reforged Intro Pack Surprise Attack",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100528",
+    "cardKingdomId": "198997",
+    "cardtraderId": "48229",
+    "mcmId": "271561",
+    "scgId": "SLD-MTG-INT-FRFINTRO-EN-SURPRISE",
+    "tcgplayerProductId": "95260",
+    "tntId": "1065451"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/31e7080f7b6bd61f"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Surprise Attack",
+        "set": "frf"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Fate Reforged Booster Pack",
+        "set": "frf",
+        "uuid": "12abbe7b-f87a-5fbf-ab77-1e9edec8cf90"
+      }
+    ]
+  },
+  "setCode": "FRF",
+  "setName": "Fate Reforged",
+  "tcgcsvData": {
+    "product": {
+      "productId": 95260,
+      "name": "Fate Reforged - Intro Pack - Surprise Attack",
+      "cleanName": "Fate Reforged Intro Pack Surprise Attack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/95260_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1497,
+      "url": "https://www.tcgplayer.com/product/95260/magic-fate-reforged-fate-reforged-intro-pack-surprise-attack",
+      "modifiedOn": "2021-08-05T14:07:44.95",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Fate Reforged booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 95260,
+        "lowPrice": 14.92,
+        "midPrice": 15.99,
+        "highPrice": 25.19,
+        "marketPrice": 14.92,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

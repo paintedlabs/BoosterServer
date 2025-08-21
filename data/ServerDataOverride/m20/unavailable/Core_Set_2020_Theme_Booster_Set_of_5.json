@@ -1,0 +1,85 @@
+{
+  "uuid": "5ccb3d71-c3a3-5637-9f38-ec879ac6e5a3",
+  "name": "Core Set 2020 Theme Booster Set of 5",
+  "category": "subset",
+  "subtype": "theme",
+  "identifiers": {
+    "scgId": "SLD-MTG-PCK-M20THEME-EN-SET5",
+    "tcgplayerProductId": "192769"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/1e0a5c3a1202b249"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2020 Theme Booster White",
+        "set": "m20",
+        "uuid": "427d2c9f-4cb5-5357-98ed-0440ae06a56c"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2020 Theme Booster Blue",
+        "set": "m20",
+        "uuid": "e2797841-3456-5c8e-8275-a44e742ea899"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2020 Theme Booster Black",
+        "set": "m20",
+        "uuid": "29611067-1ea7-51a5-a18e-f0558d572283"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2020 Theme Booster Red",
+        "set": "m20",
+        "uuid": "eece8026-fb10-550c-aa60-dc2ab0f6621a"
+      },
+      {
+        "count": 1,
+        "name": "Core Set 2020 Theme Booster Green",
+        "set": "m20",
+        "uuid": "c60ce9de-1165-544a-8c35-6d43c69ae33a"
+      }
+    ]
+  },
+  "setCode": "M20",
+  "setName": "Core Set 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 192769,
+      "name": "Core Set 2020 Theme Booster [Set of 5]",
+      "cleanName": "Core Set 2020 Theme Booster Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/192769_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2441,
+      "url": "https://www.tcgplayer.com/product/192769/magic-core-set-2020-core-set-2020-theme-booster-set-of-5",
+      "modifiedOn": "2020-04-30T17:35:43.75",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Theme Boosters help new and casual expand their collection with colors that they’re already invested in. \r\n<br>Contents: \r\n<br>• 35 cards from Core Set 2020 matching the theme color.\r\n<br>• 1 rare or mythic rare"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 192769,
+        "lowPrice": 24.99,
+        "midPrice": 85.98,
+        "highPrice": 85.99,
+        "marketPrice": 24.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

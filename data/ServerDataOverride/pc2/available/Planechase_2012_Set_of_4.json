@@ -1,0 +1,73 @@
+{
+  "uuid": "544f056a-6ca3-5566-acab-497e101a0711",
+  "name": "Planechase 2012 Set of 4",
+  "category": "subset",
+  "subtype": "planechase",
+  "identifiers": {
+    "abuId": "1100997",
+    "tcgplayerProductId": "59114"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2b329d56a123f624"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Planechase 2012 Deck Chaos Reigns",
+        "set": "pc2",
+        "uuid": "4f793e23-170d-5a3c-8698-f91ace23191f"
+      },
+      {
+        "count": 1,
+        "name": "Planechase 2012 Deck Night of the Ninja",
+        "set": "pc2",
+        "uuid": "f1c4e9f2-a2cc-5faa-9f73-ed599eb423f7"
+      },
+      {
+        "count": 1,
+        "name": "Planechase 2012 Deck Primordial Hunger",
+        "set": "pc2",
+        "uuid": "31be2996-4a94-5af7-bf14-1bee8d5fd368"
+      },
+      {
+        "count": 1,
+        "name": "Planechase 2012 Deck Savage Auras",
+        "set": "pc2",
+        "uuid": "790ace1c-545b-5a28-bc1d-5d444bcbdfb0"
+      }
+    ]
+  },
+  "setCode": "PC2",
+  "setName": "Planechase 2012",
+  "tcgcsvData": {
+    "product": {
+      "productId": 59114,
+      "name": "Planechase 2012 - Set of 4",
+      "cleanName": "Planechase 2012 Set of 4",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/59114_200w.jpg",
+      "categoryId": 1,
+      "groupId": 363,
+      "url": "https://www.tcgplayer.com/product/59114/magic-planechase-2012-planechase-2012-set-of-4",
+      "modifiedOn": "2014-01-07T19:29:32.947",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 59114,
+        "lowPrice": 355,
+        "midPrice": 356.75,
+        "highPrice": 399.98,
+        "marketPrice": 275,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

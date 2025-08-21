@@ -1,0 +1,72 @@
+{
+  "uuid": "6f941e59-dd89-5de8-8507-797774478986",
+  "name": "War of the Spark Planeswalker Deck Display",
+  "category": "deck_box",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "tcgplayerProductId": "185682",
+    "tntId": "1469260"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/1653b23a6c6f2c2c"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 3,
+        "name": "War of the Spark Planeswalker Deck Gideon",
+        "set": "war",
+        "uuid": "8bc6fefa-db82-5fa6-a9ed-432dba8c8915"
+      },
+      {
+        "count": 3,
+        "name": "War of the Spark Planeswalker Deck Jace",
+        "set": "war",
+        "uuid": "e45aa0c7-35b9-59b6-88eb-9bdba320097e"
+      }
+    ]
+  },
+  "setCode": "WAR",
+  "setName": "War of the Spark",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185682,
+      "name": "War of the Spark - Planeswalker Deck Display",
+      "cleanName": "War of the Spark Planeswalker Deck Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185682_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2418,
+      "url": "https://www.tcgplayer.com/product/185682/magic-war-of-the-spark-war-of-the-spark-planeswalker-deck-display",
+      "modifiedOn": "2019-10-07T20:35:33.833",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Decks come in displays of six (two different decks, three copies each).\r\n<br>Each deck's contents contain:\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck \r\n<br>• 2 War of the Spark booster packs \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509757985"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185682,
+        "lowPrice": 145,
+        "midPrice": 145,
+        "highPrice": 145,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

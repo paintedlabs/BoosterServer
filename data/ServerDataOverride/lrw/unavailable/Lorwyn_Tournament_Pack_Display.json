@@ -1,0 +1,72 @@
+{
+  "uuid": "4adc1fe4-e258-5ea2-b5ab-1b21b6dba306",
+  "name": "Lorwyn Tournament Pack Display",
+  "category": "limited_aid_case",
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1107899",
+    "cardKingdomId": "240164",
+    "cardtraderId": "47250",
+    "mcmId": "253864",
+    "scgId": "SLD-MTG-BBX-LRWTOURNAMENT-EN",
+    "tcgplayerProductId": "641599",
+    "tntId": "160533"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/76ad7ef7c8197bc6",
+    "tcgplayer": "https://mtgjson.com/links/97c35eb460ea2972"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 12,
+        "name": "Lorwyn Tournament Pack",
+        "set": "lrw",
+        "uuid": "220a5e02-5213-5d46-a9d1-d322b74f05a6"
+      }
+    ]
+  },
+  "setCode": "LRW",
+  "setName": "Lorwyn",
+  "tcgcsvData": {
+    "product": {
+      "productId": 641599,
+      "name": "Lorwyn - Tournament Pack Display",
+      "cleanName": "Lorwyn Tournament Pack Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/641599_200w.jpg",
+      "categoryId": 1,
+      "groupId": 67,
+      "url": "https://www.tcgplayer.com/product/641599/magic-lorwyn-lorwyn-tournament-pack-display",
+      "modifiedOn": "2025-07-07T18:05:12",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<br>Contains 12 Tournament Packs\r\n<br>Each tournament pack contains 75 cards."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "653569223085"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 641599,
+        "lowPrice": 550,
+        "midPrice": 550,
+        "highPrice": 550,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

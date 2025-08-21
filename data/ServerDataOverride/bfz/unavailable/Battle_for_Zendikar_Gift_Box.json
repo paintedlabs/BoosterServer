@@ -1,0 +1,82 @@
+{
+  "uuid": "9055f4be-b9c8-5ac2-8241-08f428f7c887",
+  "name": "Battle for Zendikar Gift Box",
+  "category": "bundle",
+  "subtype": "gift_bundle",
+  "identifiers": {
+    "cardKingdomId": "203355",
+    "cardtraderId": "48352",
+    "mcmId": "285621",
+    "scgId": "SLD-MTG-BXS-M15GIFT-EN",
+    "tcgplayerProductId": "102717",
+    "tntId": "1081635"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/3865d57abb65dbd6"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Scythe Leopard",
+        "number": "188",
+        "set": "pbfz",
+        "uuid": "356eb430-a007-5983-83c7-52b4a27a7cc3"
+      }
+    ],
+    "other": [
+      {
+        "name": "Battle for Zendikar Storage Box"
+      },
+      {
+        "name": "Illustrated Storage Dividers"
+      },
+      {
+        "name": "Stickers for Customizing the Dividers"
+      },
+      {
+        "name": "Battle for Zendikar 20-card Basic Land Pack"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 5,
+        "name": "Battle for Zendikar Booster Pack",
+        "set": "bfz",
+        "uuid": "37e28375-f5ba-51e8-8e11-b6830a33b669"
+      }
+    ]
+  },
+  "setCode": "BFZ",
+  "setName": "Battle for Zendikar",
+  "tcgcsvData": {
+    "product": {
+      "productId": 102717,
+      "name": "Battle for Zendikar Gift Box",
+      "cleanName": "Battle for Zendikar Gift Box",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/102717_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2084,
+      "url": "https://www.tcgplayer.com/product/102717/magic-gift-boxes-and-promos-battle-for-zendikar-gift-box",
+      "modifiedOn": "2017-10-23T15:04:55.203",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 102717,
+        "lowPrice": 89.88,
+        "midPrice": 96.01,
+        "highPrice": 100,
+        "marketPrice": 78.31,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

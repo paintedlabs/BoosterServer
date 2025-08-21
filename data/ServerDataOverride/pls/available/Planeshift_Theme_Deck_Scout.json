@@ -1,0 +1,58 @@
+{
+  "uuid": "3a71f6dc-95b9-53e4-82c2-991526c76169",
+  "name": "Planeshift Theme Deck Scout",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1101007",
+    "cardKingdomId": "1298",
+    "cardtraderId": "45764",
+    "mcmId": "253744",
+    "tcgplayerProductId": "93348",
+    "tntId": "106943"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c59ad07803d0efac"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Scout",
+        "set": "pls"
+      }
+    ]
+  },
+  "setCode": "PLS",
+  "setName": "Planeshift",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93348,
+      "name": "Planeshift - Scout Theme Deck",
+      "cleanName": "Planeshift Scout Theme Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93348_200w.jpg",
+      "categoryId": 1,
+      "groupId": 85,
+      "url": "https://www.tcgplayer.com/product/93348/magic-planeshift-planeshift-scout-theme-deck",
+      "modifiedOn": "2022-12-23T13:32:59.85",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 93348,
+        "lowPrice": 29,
+        "midPrice": 38.98,
+        "highPrice": 50.4,
+        "marketPrice": 40,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

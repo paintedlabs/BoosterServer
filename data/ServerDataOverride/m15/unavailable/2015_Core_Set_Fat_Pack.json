@@ -1,0 +1,82 @@
+{
+  "uuid": "d9837cf1-c196-57e4-b7c2-82696f2eb8a7",
+  "name": "2015 Core Set Fat Pack",
+  "category": "bundle",
+  "releaseDate": "2014-07-18",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100827",
+    "cardKingdomId": "194905",
+    "cardtraderId": "48147",
+    "csiId": "199283",
+    "mcmId": "267172",
+    "scgId": "SLD-MTG-BUN-M15-EN",
+    "tcgplayerProductId": "90790",
+    "tntId": "1056446"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b17aba73ba25b468"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "M15 Player's Guide and Visual Encyclopedia"
+      },
+      {
+        "name": "M15 Fat Pack 80-card Land Bundle"
+      },
+      {
+        "name": "Special Edition Life Counter"
+      },
+      {
+        "name": "Two Deck Boxes"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 9,
+        "name": "2015 Core Set Booster Pack",
+        "set": "m15",
+        "uuid": "0643f6ea-0eab-5f7d-8b6a-4ade23f44afd"
+      }
+    ]
+  },
+  "setCode": "M15",
+  "setName": "Magic 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 90790,
+      "name": "Magic 2015 (M15) - Fat Pack",
+      "cleanName": "Magic 2015 M15 Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/90790_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1293,
+      "url": "https://www.tcgplayer.com/product/90790/magic-magic-2015-m15-magic-2015-m15-fat-pack",
+      "modifiedOn": "2014-06-25T14:51:31.29",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2014-07-18T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Player's guide with complete visual encyclopedia for the Magic 2015 Core Set\r\n9 Magic 2015 Core Set 15-card booster packs\r\n80-card basic land pack\r\nSpecial-edition Spindown Life Counter\r\n2 deck boxes"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 90790,
+        "lowPrice": 51.49,
+        "midPrice": 62.47,
+        "highPrice": 79.99,
+        "marketPrice": 58.45,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

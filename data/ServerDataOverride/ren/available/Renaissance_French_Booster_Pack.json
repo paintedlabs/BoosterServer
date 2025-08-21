@@ -1,0 +1,53 @@
+{
+  "uuid": "21e61c60-d9a9-5760-9b1d-2aa1acbbec93",
+  "name": "Renaissance French Booster Pack",
+  "category": "booster_pack",
+  "subtype": "default",
+  "identifiers": {
+    "cardtraderId": "43667",
+    "mcmId": "210059",
+    "tcgplayerProductId": "182048",
+    "tntId": "119235"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b14abfe6175d705b"
+  },
+  "setCode": "REN",
+  "setName": "Renaissance",
+  "tcgcsvData": {
+    "product": {
+      "productId": 182048,
+      "name": "Renaissance - French Booster Pack",
+      "cleanName": "Renaissance French Booster Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/182048_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2379,
+      "url": "https://www.tcgplayer.com/product/182048/magic-renaissance-renaissance-french-booster-pack",
+      "modifiedOn": "2018-12-17T14:23:48.383",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains 8 random cards in French."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 182048,
+        "lowPrice": 76.99,
+        "midPrice": 85.49,
+        "highPrice": 100,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

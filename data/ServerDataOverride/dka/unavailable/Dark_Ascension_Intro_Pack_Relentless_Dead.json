@@ -1,0 +1,74 @@
+{
+  "uuid": "53b140f9-714c-5e8d-9faf-5fbfb6416fe5",
+  "name": "Dark Ascension Intro Pack Relentless Dead",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2012-02-03",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100374",
+    "cardKingdomId": "186295",
+    "cardtraderId": "47703",
+    "mcmId": "252507",
+    "scgId": "SLD-MTG-INT-DKAINTRO-EN-RELENTLESS",
+    "tcgplayerProductId": "57626",
+    "tntId": "329607"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/786890512118c7a1"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Relentless Dead",
+        "set": "dka"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Dark Ascension Booster Pack",
+        "set": "dka",
+        "uuid": "e52ef13e-32e0-5b18-853d-4c36283f4743"
+      }
+    ]
+  },
+  "setCode": "DKA",
+  "setName": "Dark Ascension",
+  "tcgcsvData": {
+    "product": {
+      "productId": 57626,
+      "name": "Dark Ascension - Intro Pack - Relentless Dead",
+      "cleanName": "Dark Ascension Intro Pack Relentless Dead",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/57626_200w.jpg",
+      "categoryId": 1,
+      "groupId": 125,
+      "url": "https://www.tcgplayer.com/product/57626/magic-dark-ascension-dark-ascension-intro-pack-relentless-dead",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-02-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "653569695363"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 57626,
+        "lowPrice": 30.28,
+        "midPrice": 39.98,
+        "highPrice": 129.99,
+        "marketPrice": 39.98,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

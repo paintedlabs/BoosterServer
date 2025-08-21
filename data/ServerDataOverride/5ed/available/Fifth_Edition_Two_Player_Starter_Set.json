@@ -1,0 +1,88 @@
+{
+  "uuid": "b1f3c0a4-01b7-59ee-8145-ca669bb49f40",
+  "name": "Fifth Edition Two Player Starter Set",
+  "category": "multiple_decks",
+  "cardCount": 60,
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "abuId": "1100038",
+    "cardKingdomId": "186283",
+    "cardtraderId": "45280",
+    "mcmId": "254937",
+    "tcgplayerProductId": "232842"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ab3cd89e908d7ce2"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Deck A",
+        "set": "5ed"
+      },
+      {
+        "name": "Deck B",
+        "set": "5ed"
+      }
+    ],
+    "other": [
+      {
+        "name": "Oversized Rulebook"
+      },
+      {
+        "name": "Play Guide"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Fifth Edition Booster Pack",
+        "set": "5ed",
+        "uuid": "93389a2e-9a5e-5ef4-9afe-60898199b905"
+      }
+    ]
+  },
+  "setCode": "5ED",
+  "setName": "Fifth Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 232842,
+      "name": "Fifth Edition - Two-Player Starter Set",
+      "cleanName": "Fifth Edition Two Player Starter Set",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232842_200w.jpg",
+      "categoryId": 1,
+      "groupId": 44,
+      "url": "https://www.tcgplayer.com/product/232842/magic-fifth-edition-fifth-edition-two-player-starter-set",
+      "modifiedOn": "2021-02-17T00:05:58.133",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "This set is designed for experienced Magic the Gathering Portal players looking to add new strategies and play options to their game. You can play these decks out of the box or combine them with other MTG cards. This set contains: Two 30-card ready-to-play decks of Fifth Edition cards, an oversized rulebook for easy reference, a play guide to walk you through the first game, and one 15-card Fifth Edition Booster Pack!"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "742818160094"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 232842,
+        "lowPrice": 149.99,
+        "midPrice": 199.98,
+        "highPrice": 199.99,
+        "marketPrice": 92.33,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

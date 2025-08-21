@@ -1,0 +1,84 @@
+{
+  "uuid": "05718a06-a654-5d05-addd-e897c89e5a47",
+  "name": "Ravnica Allegiance Prerelease Pack Set of 5",
+  "category": "subset",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "tcgplayerProductId": "183591"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/bbc80c83921057b1"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Prerelease Pack Azorius",
+        "set": "rna",
+        "uuid": "c2655f35-703f-5c4f-9d81-6397a59d19e7"
+      },
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Prerelease Pack Gruul",
+        "set": "rna",
+        "uuid": "a88e15ef-accc-5d00-aeca-594b9e911408"
+      },
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Prerelease Pack Orzhov",
+        "set": "rna",
+        "uuid": "a0210dab-2dc6-5634-9d26-e17799cbfc18"
+      },
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Prerelease Pack Rakdos",
+        "set": "rna",
+        "uuid": "fd0012dc-5489-5438-b092-41ca5a183e53"
+      },
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Prerelease Pack Simic",
+        "set": "rna",
+        "uuid": "7c405c7a-f2bb-5fbe-9e72-a902245a16ab"
+      }
+    ]
+  },
+  "setCode": "RNA",
+  "setName": "Ravnica Allegiance",
+  "tcgcsvData": {
+    "product": {
+      "productId": 183591,
+      "name": "Ravnica Allegiance - Prerelease Pack [Set of 5]",
+      "cleanName": "Ravnica Allegiance Prerelease Pack Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/183591_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2366,
+      "url": "https://www.tcgplayer.com/product/183591/magic-ravnica-allegiance-ravnica-allegiance-prerelease-pack-set-of-5",
+      "modifiedOn": "2019-02-05T15:39:49.427",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<br><strong>Set of 5 contains 1 Prerelease Pack from each Guild.</strong>\r\n<br>Each Prerelease Pack contains:\r\n<br>• 5 Ravnica Allegiance booster packs \r\n<br>• 1 Seeded booster (Matching Guilds) with 14 cards \r\n<br>• 1 of 5 Guild inserts \r\n<br>• 1 Code Card \r\n<br>• 1 Spindown life counter"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 183591,
+        "lowPrice": 143.99,
+        "midPrice": 144.75,
+        "highPrice": 299.99,
+        "marketPrice": 143.68,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

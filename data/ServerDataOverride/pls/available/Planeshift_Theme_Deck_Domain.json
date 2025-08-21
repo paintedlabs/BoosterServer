@@ -1,0 +1,58 @@
+{
+  "uuid": "93d9df41-42f9-56b2-bc45-cd6bd30e13dd",
+  "name": "Planeshift Theme Deck Domain",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1101005",
+    "cardKingdomId": "1296",
+    "cardtraderId": "45761",
+    "mcmId": "253743",
+    "tcgplayerProductId": "93347",
+    "tntId": "106933"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2957b986b14eeb27"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Domain",
+        "set": "pls"
+      }
+    ]
+  },
+  "setCode": "PLS",
+  "setName": "Planeshift",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93347,
+      "name": "Planeshift - Domain Theme Deck",
+      "cleanName": "Planeshift Domain Theme Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93347_200w.jpg",
+      "categoryId": 1,
+      "groupId": 85,
+      "url": "https://www.tcgplayer.com/product/93347/magic-planeshift-planeshift-domain-theme-deck",
+      "modifiedOn": "2022-12-23T13:32:54.15",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 93347,
+        "lowPrice": 65,
+        "midPrice": 76.99,
+        "highPrice": 125.99,
+        "marketPrice": 119.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

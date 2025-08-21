@@ -1,0 +1,67 @@
+{
+  "uuid": "3d19af4b-46f4-5ba0-ada3-e04691e4633e",
+  "name": "New Phyrexia Intro Pack Artful Destruction",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100919",
+    "cardKingdomId": "184457",
+    "cardtraderId": "47609",
+    "mcmId": "246236",
+    "scgId": "SLD-MTG-INT-NPHINTRO-EN-ARTFUL",
+    "tcgplayerProductId": "39408",
+    "tntId": "319974"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d10ae2d55974a7c8"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Artful Destruction",
+        "set": "nph"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "New Phyrexia Booster Pack",
+        "set": "nph",
+        "uuid": "13798a31-0146-563b-aab8-33ae1b104684"
+      }
+    ]
+  },
+  "setCode": "NPH",
+  "setName": "New Phyrexia",
+  "tcgcsvData": {
+    "product": {
+      "productId": 39408,
+      "name": "New Phyrexia - Intro Pack - Artful Destruction",
+      "cleanName": "New Phyrexia Intro Pack Artful Destruction",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/39408_200w.jpg",
+      "categoryId": 1,
+      "groupId": 79,
+      "url": "https://www.tcgplayer.com/product/39408/magic-new-phyrexia-new-phyrexia-intro-pack-artful-destruction",
+      "modifiedOn": "2021-07-15T17:53:42.323",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 39408,
+        "lowPrice": 44.99,
+        "midPrice": 77.98,
+        "highPrice": 79.99,
+        "marketPrice": 44.98,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

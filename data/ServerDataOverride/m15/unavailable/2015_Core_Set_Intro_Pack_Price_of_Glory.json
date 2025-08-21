@@ -1,0 +1,81 @@
+{
+  "uuid": "2451ca6a-58d5-5cd6-967f-a20efa0ea6cf",
+  "name": "2015 Core Set Intro Pack Price of Glory",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100833",
+    "cardKingdomId": "195223",
+    "cardtraderId": "48151",
+    "mcmId": "267969",
+    "scgId": "SLD-MTG-INT-M15INTRO-EN-PRICE",
+    "tcgplayerProductId": "91074",
+    "tntId": "1057454"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0c41fcc044ad956e"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Price Of Glory",
+        "set": "m15"
+      }
+    ],
+    "other": [
+      {
+        "name": "Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn to Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2015 Core Set Booster Pack",
+        "set": "m15",
+        "uuid": "0643f6ea-0eab-5f7d-8b6a-4ade23f44afd"
+      }
+    ]
+  },
+  "setCode": "M15",
+  "setName": "Magic 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 91074,
+      "name": "Magic 2015 (M15) - Intro Pack - Price of Glory",
+      "cleanName": "Magic 2015 M15 Intro Pack Price of Glory",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/91074_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1293,
+      "url": "https://www.tcgplayer.com/product/91074/magic-magic-2015-m15-magic-2015-m15-intro-pack-price-of-glory",
+      "modifiedOn": "2021-08-05T16:38:14.983",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Magic 2015 (M15) booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 91074,
+        "lowPrice": 33,
+        "midPrice": 33,
+        "highPrice": 33,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

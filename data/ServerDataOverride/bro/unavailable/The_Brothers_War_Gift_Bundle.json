@@ -1,0 +1,99 @@
+{
+  "uuid": "339add5b-2f64-595a-8a2f-b492e759318a",
+  "name": "The Brothers' War Gift Bundle",
+  "category": "bundle",
+  "releaseDate": "2022-11-18",
+  "subtype": "gift_bundle",
+  "identifiers": {
+    "abuId": "2275528",
+    "cardKingdomId": "267913",
+    "cardtraderId": "219841",
+    "mcmId": "677809",
+    "scgId": "SLD-MTG-BUN-BROGIFT-EN",
+    "tcgplayerProductId": "448633",
+    "tntId": "1770678"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/b993f4ca50983399",
+    "tcgplayer": "https://mtgjson.com/links/a4c1fe12175fd929"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Queen Kayla bin-Kroog",
+        "number": "379",
+        "set": "bro",
+        "uuid": "9862ad68-fe97-55e9-9884-9dc2c236eef1"
+      }
+    ],
+    "other": [
+      {
+        "name": "The Brothers' War Gift Bundle Land Pack"
+      },
+      {
+        "name": "Foil Mythic Rare Transformers Card"
+      },
+      {
+        "name": "The Brothers' War Spindown Die"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "The Brothers' War Collector Booster Pack",
+        "set": "bro",
+        "uuid": "5d7ab4f0-6325-59ad-953c-b218569caa2a"
+      },
+      {
+        "count": 8,
+        "name": "The Brothers' War Set Booster Pack",
+        "set": "bro",
+        "uuid": "104d4709-8535-5fdd-8dda-51b069cc4c0a"
+      }
+    ]
+  },
+  "setCode": "BRO",
+  "setName": "The Brothers' War",
+  "tcgcsvData": {
+    "product": {
+      "productId": 448633,
+      "name": "The Brothers' War - Gift Bundle",
+      "cleanName": "The Brothers War Gift Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/448633_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3157,
+      "url": "https://www.tcgplayer.com/product/448633/magic-the-brothers-war-the-brothers-war-gift-bundle",
+      "modifiedOn": "2022-12-02T05:03:12.897",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-11-18T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Celebrate *The Brothers' War* with a deluxe bundle full of exclusive accessories and cards that will transport fans back to beloved styles and storylines from 1990s *Magic*. On top of the usual Bundle goodies, the Gift Bundle contains a 15-card Collector Booster, including cards with special card treatments, 10–11 shining foil cards, and a total of 6 cards of rarity Rare or higher.\r\n<br>\r\nThe Gift Bundle also contains 1 Traditional Foil Transformers Mythic Rare card, 8 *The Brothers’ War* Set Boosters, 40 basic lands (20 traditional foils and 20 nonfoils), 1 traditional foil alternate-art promo card, 1 exclusive oversized Spindown life counter, 1 special Gift Edition foil card storage box, and 2 reference cards.\r\n<br>\r\nContents:\r\n<br>\r\n• Deluxe Gift Bundle for a set full of 1990s Magic nostalgia, powerful artifacts, and giant robots\r\n<br>\r\n• 8 The Brothers’ War MTG Set Boosters—the best boosters to open just for fun\r\n<br>\r\n• 1 Collector Booster full of Rare cards, shining foils, and special card treatments\r\n<br>\r\n• 1 foil Transformers Mythic Rare card + 1 foil promo card with bundle-exclusive art\r\n<br>\r\n• 40 basic land cards (20 foil + 20 nonfoil)\r\n<br>\r\n• Special Gift Bundle Spindown life counter + foil card storage box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166151267"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 448633,
+        "lowPrice": 89.5,
+        "midPrice": 117.43,
+        "highPrice": 175,
+        "marketPrice": 97.57,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

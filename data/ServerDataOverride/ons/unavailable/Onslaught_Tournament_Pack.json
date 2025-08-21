@@ -1,0 +1,66 @@
+{
+  "uuid": "de0877c3-6604-50cc-a2e5-50d47d05fa29",
+  "name": "Onslaught Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1100952",
+    "cardKingdomId": "1508",
+    "cardtraderId": "46320",
+    "mcmId": "248483",
+    "scgId": "SLD-MTG-PCK-ONSTOURNAMENT-EN",
+    "tcgplayerProductId": "167795",
+    "tntId": "104435"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/fe87ca57d2e9db5f",
+    "tcgplayer": "https://mtgjson.com/links/c6b16c4e12418f1d"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "ons"
+      }
+    ]
+  },
+  "setCode": "ONS",
+  "setName": "Onslaught",
+  "tcgcsvData": {
+    "product": {
+      "productId": 167795,
+      "name": "Onslaught Tournament Pack",
+      "cleanName": "Onslaught Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/167795_200w.jpg",
+      "categoryId": 1,
+      "groupId": 81,
+      "url": "https://www.tcgplayer.com/product/167795/magic-onslaught-onslaught-tournament-pack",
+      "modifiedOn": "2018-05-24T15:05:41.903",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "076930177709"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 167795,
+        "lowPrice": 154.99,
+        "midPrice": 159.49,
+        "highPrice": 224.99,
+        "marketPrice": 158.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

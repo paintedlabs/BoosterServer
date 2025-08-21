@@ -1,0 +1,67 @@
+{
+  "uuid": "3b213ab4-afd0-5a3b-b42a-0720d1aa4c44",
+  "name": "New Phyrexia Intro Pack Devouring Skies",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100920",
+    "cardKingdomId": "184458",
+    "cardtraderId": "47610",
+    "mcmId": "246237",
+    "scgId": "SLD-MTG-INT-NPHINTRO-EN-DEVOURING",
+    "tcgplayerProductId": "39407",
+    "tntId": "319973"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2799d5f6e64ba104"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Devouring Skies",
+        "set": "nph"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "New Phyrexia Booster Pack",
+        "set": "nph",
+        "uuid": "13798a31-0146-563b-aab8-33ae1b104684"
+      }
+    ]
+  },
+  "setCode": "NPH",
+  "setName": "New Phyrexia",
+  "tcgcsvData": {
+    "product": {
+      "productId": 39407,
+      "name": "New Phyrexia - Intro Pack - Devouring Skies",
+      "cleanName": "New Phyrexia Intro Pack Devouring Skies",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/39407_200w.jpg",
+      "categoryId": 1,
+      "groupId": 79,
+      "url": "https://www.tcgplayer.com/product/39407/magic-new-phyrexia-new-phyrexia-intro-pack-devouring-skies",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 39407,
+        "lowPrice": 48.98,
+        "midPrice": 63.62,
+        "highPrice": 79.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

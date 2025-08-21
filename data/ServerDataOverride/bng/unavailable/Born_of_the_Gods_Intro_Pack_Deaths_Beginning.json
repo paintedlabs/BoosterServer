@@ -1,0 +1,75 @@
+{
+  "uuid": "a36e4cd7-c36f-5f10-9ffd-df40dee5566a",
+  "name": "Born of the Gods Intro Pack Deaths Beginning",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2007-01-01",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100194",
+    "cardKingdomId": "193248",
+    "cardtraderId": "48078",
+    "csiId": "200463",
+    "mcmId": "266085",
+    "scgId": "SLD-MTG-INT-BNGINTRO-EN-DEATHS",
+    "tcgplayerProductId": "78748",
+    "tntId": "1050542"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8b9b5c4a80830bb1"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Death's Beginning",
+        "set": "bng"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Born of the Gods Booster Pack",
+        "set": "bng",
+        "uuid": "16e12027-2acd-5bfa-81e8-ed3bc5381334"
+      }
+    ]
+  },
+  "setCode": "BNG",
+  "setName": "Born of the Gods",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78748,
+      "name": "Born of the Gods - Intro Pack - Death's Beginning",
+      "cleanName": "Born of the Gods Intro Pack Deaths Beginning",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78748_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1276,
+      "url": "https://www.tcgplayer.com/product/78748/magic-born-of-the-gods-born-of-the-gods-intro-pack-deaths-beginning",
+      "modifiedOn": "2021-08-05T13:56:35.903",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• A 60-card preconstructed deck\r\n<br>• 2 Born of the Gods booster packs\r\n<br>• A strategy and mechanics guide\r\n<br>• A learn-to-play insert for new players"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 78748,
+        "lowPrice": 18.96,
+        "midPrice": 19.99,
+        "highPrice": 29.99,
+        "marketPrice": 18.96,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

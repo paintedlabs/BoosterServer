@@ -1,0 +1,79 @@
+{
+  "uuid": "a3e4cfc8-ace6-5518-affc-1331aa2c5ac3",
+  "name": "Starter Commander Deck Grave Danger",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-12-02",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2275524",
+    "cardKingdomId": "270185",
+    "cardtraderId": "224263",
+    "csiId": "349029",
+    "mcmId": "678614",
+    "miniaturemarketId": "287976",
+    "scgId": "SLD-MTG-MLT-SCD-EN-GRAVE",
+    "tcgplayerProductId": "448432",
+    "tntId": "1770668"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/f37dba7bb3e5c8ef",
+    "tcgplayer": "https://mtgjson.com/links/95f518089053e5c4"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Grave Danger",
+        "set": "scd"
+      }
+    ],
+    "other": [
+      {
+        "name": "10 double sided tokens"
+      }
+    ]
+  },
+  "setCode": "SCD",
+  "setName": "Starter Commander Decks",
+  "tcgcsvData": {
+    "product": {
+      "productId": 448432,
+      "name": "Starter Commander Deck - Grave Danger",
+      "cleanName": "Starter Commander Deck Grave Danger",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/448432_200w.jpg",
+      "categoryId": 1,
+      "groupId": 17662,
+      "url": "https://www.tcgplayer.com/product/448432/magic-starter-commander-decks-starter-commander-deck-grave-danger",
+      "modifiedOn": "2022-12-02T05:03:12.74",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-12-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Details pending!\r\n<br>\r\nContents:\r\n<br>\r\n• 99 cards and 1 foil-etched card\r\n<br>\r\n• 10 double-sided tokens\r\n<br>\r\n• 1 deck box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166134543"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 448432,
+        "lowPrice": 24.51,
+        "midPrice": 40,
+        "highPrice": 73.73,
+        "marketPrice": 28.83,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

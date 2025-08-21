@@ -1,0 +1,68 @@
+{
+  "uuid": "3c0d75d4-f458-56fc-b0e9-2e82f244d26f",
+  "name": "2014 Core Set Intro Pack Lightforce",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100802",
+    "cardKingdomId": "190589",
+    "cardtraderId": "47991",
+    "csiId": "192759",
+    "mcmId": "263025",
+    "scgId": "SLD-MTG-INT-M14INTRO-EN-LIGHTFORCE",
+    "tcgplayerProductId": "70076",
+    "tntId": "1028753"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f2d4fa36b9501786"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Lightforce",
+        "set": "m14"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2014 Core Set Booster Pack",
+        "set": "m14",
+        "uuid": "bef6b6e1-0a89-5b8d-b04b-64683af2b06b"
+      }
+    ]
+  },
+  "setCode": "M14",
+  "setName": "Magic 2014",
+  "tcgcsvData": {
+    "product": {
+      "productId": 70076,
+      "name": "Magic 2014 (M14) - Intro Pack - Lightforce",
+      "cleanName": "Magic 2014 M14 Intro Pack Lightforce",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/70076_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1113,
+      "url": "https://www.tcgplayer.com/product/70076/magic-magic-2014-m14-magic-2014-m14-intro-pack-lightforce",
+      "modifiedOn": "2014-01-31T21:19:21.627",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 70076,
+        "lowPrice": 14.99,
+        "midPrice": 16.99,
+        "highPrice": 34.99,
+        "marketPrice": 16.45,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

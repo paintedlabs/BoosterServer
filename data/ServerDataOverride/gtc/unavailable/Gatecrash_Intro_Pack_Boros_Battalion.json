@@ -1,0 +1,68 @@
+{
+  "uuid": "a0e65d7c-ae6b-5b2d-88f2-403cee9a3d0f",
+  "name": "Gatecrash Intro Pack Boros Battalion",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2013-02-01",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100565",
+    "cardKingdomId": "188887",
+    "cardtraderId": "47886",
+    "mcmId": "259873",
+    "scgId": "SLD-MTG-INT-GTCINTRO-EN-BOROS",
+    "tcgplayerProductId": "67388",
+    "tntId": "1012436"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f692f5860639ebb0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Boros Battalion",
+        "set": "gtc"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Gatecrash Booster Pack",
+        "set": "gtc",
+        "uuid": "11a63195-ea42-5624-95e9-206d788c9650"
+      }
+    ]
+  },
+  "setCode": "GTC",
+  "setName": "Gatecrash",
+  "tcgcsvData": {
+    "product": {
+      "productId": 67388,
+      "name": "Gatecrash - Intro Pack - Boros Battalion",
+      "cleanName": "Gatecrash Intro Pack Boros Battalion",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/67388_200w.jpg",
+      "categoryId": 1,
+      "groupId": 569,
+      "url": "https://www.tcgplayer.com/product/67388/magic-gatecrash-gatecrash-intro-pack-boros-battalion",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2013-02-01T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 67388,
+        "lowPrice": 34.95,
+        "midPrice": 37.47,
+        "highPrice": 39.99,
+        "marketPrice": 27.98,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

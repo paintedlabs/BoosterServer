@@ -1,0 +1,74 @@
+{
+  "uuid": "65ddf478-6441-56a4-baf5-cce456d3286e",
+  "name": "Dark Ascension Intro Pack Dark Sacrifice",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2012-02-03",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100360",
+    "cardKingdomId": "186292",
+    "cardtraderId": "47706",
+    "mcmId": "252508",
+    "scgId": "SLD-MTG-INT-DKAINTRO-EN-DARK",
+    "tcgplayerProductId": "57627",
+    "tntId": "329608"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/74189c0ed7c93267"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dark Sacrifice",
+        "set": "dka"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Dark Ascension Booster Pack",
+        "set": "dka",
+        "uuid": "e52ef13e-32e0-5b18-853d-4c36283f4743"
+      }
+    ]
+  },
+  "setCode": "DKA",
+  "setName": "Dark Ascension",
+  "tcgcsvData": {
+    "product": {
+      "productId": 57627,
+      "name": "Dark Ascension - Intro Pack - Dark Sacrifice",
+      "cleanName": "Dark Ascension Intro Pack Dark Sacrifice",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/57627_200w.jpg",
+      "categoryId": 1,
+      "groupId": 125,
+      "url": "https://www.tcgplayer.com/product/57627/magic-dark-ascension-dark-ascension-intro-pack-dark-sacrifice",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-02-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "653569695363"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 57627,
+        "lowPrice": 34.99,
+        "midPrice": 42.49,
+        "highPrice": 49.99,
+        "marketPrice": 34.86,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

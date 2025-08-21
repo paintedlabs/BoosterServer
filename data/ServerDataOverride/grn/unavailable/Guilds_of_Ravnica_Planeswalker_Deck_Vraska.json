@@ -1,0 +1,74 @@
+{
+  "uuid": "ceb9dc37-df20-5ea6-884d-c41ecf4b7a4d",
+  "name": "Guilds of Ravnica Planeswalker Deck Vraska",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2018-10-05",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1534102",
+    "cardKingdomId": "221370",
+    "cardtraderId": "48730",
+    "mcmId": "363629",
+    "scgId": "SLD-MTG-INT-GRNPWDECK-EN-VRASKA",
+    "tcgplayerProductId": "176691",
+    "tntId": "1188184"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7eafc945ca94f74d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Vraska, Regal Gorgon",
+        "set": "grn"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Booster Pack",
+        "set": "grn",
+        "uuid": "dbecee60-807c-5627-9090-d2114a897fcd"
+      }
+    ]
+  },
+  "setCode": "GRN",
+  "setName": "Guilds of Ravnica",
+  "tcgcsvData": {
+    "product": {
+      "productId": 176691,
+      "name": "Guilds of Ravnica - Planeswalker Deck [Vraska]",
+      "cleanName": "Guilds of Ravnica Planeswalker Deck Vraska",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/176691_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2290,
+      "url": "https://www.tcgplayer.com/product/176691/magic-guilds-of-ravnica-guilds-of-ravnica-planeswalker-deck-vraska",
+      "modifiedOn": "2018-09-19T17:43:43.35",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-10-05T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck\r\n<br>• 2 Guilds of Ravnica booster packs \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert\r\n<br><br>More information coming soon..."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 176691,
+        "lowPrice": 24.99,
+        "midPrice": 29.97,
+        "highPrice": 29.97,
+        "marketPrice": 28.28,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

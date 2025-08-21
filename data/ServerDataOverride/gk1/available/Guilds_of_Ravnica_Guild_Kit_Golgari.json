@@ -1,0 +1,82 @@
+{
+  "uuid": "e7da1b23-c0b2-50b5-bfeb-fa87d9dec129",
+  "name": "Guilds of Ravnica Guild Kit Golgari",
+  "category": "kit",
+  "cardCount": 60,
+  "releaseDate": "2018-11-02",
+  "subtype": "guild_kit",
+  "identifiers": {
+    "abuId": "1537071",
+    "cardKingdomId": "222340",
+    "cardtraderId": "169307",
+    "csiId": "263962",
+    "mcmId": "364606",
+    "scgId": "SLD-MTG-BXS-GK1-EN-GOLGARI",
+    "tcgplayerProductId": "173368",
+    "tntId": "1194092"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/4ad0465ff63f7a38",
+    "tcgplayer": "https://mtgjson.com/links/342c5bfc113e0a8a"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Golgari",
+        "set": "gk1"
+      }
+    ],
+    "other": [
+      {
+        "name": "Guild Kit Spindown"
+      },
+      {
+        "name": "Official Golgari Guild Pin"
+      },
+      {
+        "name": "Golgari Symbol Sticker"
+      },
+      {
+        "name": "Insert With Mission Instructions"
+      }
+    ]
+  },
+  "setCode": "GK1",
+  "setName": "GRN Guild Kit",
+  "tcgcsvData": {
+    "product": {
+      "productId": 173368,
+      "name": "Guilds of Ravnica - Guild Kit: Golgari",
+      "cleanName": "Guilds of Ravnica Guild Kit Golgari",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/173368_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2334,
+      "url": "https://www.tcgplayer.com/product/173368/magic-guilds-of-ravnica-guild-kits-guilds-of-ravnica-guild-kit-golgari",
+      "modifiedOn": "2018-09-26T15:32:35.107",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-11-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "On Ravnica, whoever you are—soldier or scientist, merchant or spy—your guild is the core of your identity. It provides structure and greater purpose. Now, the time has come to defend it.\r\n<br>\r\n<br>Contains:\r\n<br>• 1 ready-to-play 60-card Golgari (black/green) deck\r\n<br>• 1 Spindown life counter\r\n<br>• 1 official Golgari guild pin\r\n<br>• 1 Golgari guild symbol sticker\r\n<br>• 1 insert with mission instructions"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 173368,
+        "lowPrice": 39.9,
+        "midPrice": 42.4,
+        "highPrice": 44.89,
+        "marketPrice": 41.15,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

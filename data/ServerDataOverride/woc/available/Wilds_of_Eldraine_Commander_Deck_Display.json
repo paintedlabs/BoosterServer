@@ -1,0 +1,72 @@
+{
+  "uuid": "4d7cf9d1-f15e-5f93-9639-27afec1ce0b5",
+  "name": "Wilds of Eldraine Commander Deck Display",
+  "category": "deck_box",
+  "releaseDate": "2023-09-08",
+  "subtype": "commander",
+  "identifiers": {
+    "tcgplayerProductId": "509473"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f4b8af16c91a04f9"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Wilds of Eldraine Commander Deck Fae Dominion",
+        "set": "woc",
+        "uuid": "ddfe3fb9-b57f-526c-ba3a-442e1448f718"
+      },
+      {
+        "count": 2,
+        "name": "Wilds of Eldraine Commander Deck Virtue and Valor",
+        "set": "woc",
+        "uuid": "63462fa8-3fe9-5f0b-a2e7-cea857c514b0"
+      }
+    ]
+  },
+  "setCode": "WOC",
+  "setName": "Wilds of Eldraine Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 509473,
+      "name": "Wilds of Eldraine Commander Deck Case",
+      "cleanName": "Wilds of Eldraine Commander Deck Case",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/509473_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23164,
+      "url": "https://www.tcgplayer.com/product/509473/magic-commander-wilds-of-eldraine-wilds-of-eldraine-commander-deck-case",
+      "modifiedOn": "2023-09-08T04:04:06.96",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2023-09-01T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Wilds of Eldraine Commander Deck Case contains 2 of each deck."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166232034"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 509473,
+        "lowPrice": 579.99,
+        "midPrice": 579.99,
+        "highPrice": 579.99,
+        "marketPrice": 310.7,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

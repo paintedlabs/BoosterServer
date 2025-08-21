@@ -1,0 +1,69 @@
+{
+  "uuid": "8766a4ac-3e42-5bab-a793-ab06b385850e",
+  "name": "Gatecrash Intro Pack Orzhov Oppression",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2013-02-01",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100571",
+    "cardKingdomId": "188884",
+    "cardtraderId": "47889",
+    "csiId": "192768",
+    "mcmId": "259876",
+    "scgId": "SLD-MTG-INT-GTCINTRO-EN-ORZHOV",
+    "tcgplayerProductId": "67385",
+    "tntId": "1012439"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/3b3ef14b155ed2f6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Orzhov Oppression",
+        "set": "gtc"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Gatecrash Booster Pack",
+        "set": "gtc",
+        "uuid": "11a63195-ea42-5624-95e9-206d788c9650"
+      }
+    ]
+  },
+  "setCode": "GTC",
+  "setName": "Gatecrash",
+  "tcgcsvData": {
+    "product": {
+      "productId": 67385,
+      "name": "Gatecrash - Intro Pack - Orzhov Oppression",
+      "cleanName": "Gatecrash Intro Pack Orzhov Oppression",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/67385_200w.jpg",
+      "categoryId": 1,
+      "groupId": 569,
+      "url": "https://www.tcgplayer.com/product/67385/magic-gatecrash-gatecrash-intro-pack-orzhov-oppression",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2013-02-01T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 67385,
+        "lowPrice": 22.98,
+        "midPrice": 23.48,
+        "highPrice": 49.99,
+        "marketPrice": 21.49,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

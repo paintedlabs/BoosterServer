@@ -1,0 +1,72 @@
+{
+  "uuid": "ec6e6678-3869-57ab-ab9a-d210e16fbaa9",
+  "name": "Fifth Edition Starter Deck",
+  "category": "limited_aid_tool",
+  "cardCount": 60,
+  "subtype": "starter_deck",
+  "identifiers": {
+    "abuId": "1100052",
+    "cardKingdomId": "1171",
+    "cardtraderId": "45279",
+    "csiId": "97623",
+    "mcmId": "248497",
+    "scgId": "SLD-MTG-PCK-5EDSTARTER-EN",
+    "tcgplayerProductId": "139148",
+    "tntId": "79225"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/0cb3fd2acd206fe0",
+    "tcgplayer": "https://mtgjson.com/links/8eedfce9938eba36"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Fifth Edition Starter Rule Book"
+      }
+    ],
+    "pack": [
+      {
+        "code": "starter",
+        "set": "5ed"
+      }
+    ]
+  },
+  "setCode": "5ED",
+  "setName": "Fifth Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 139148,
+      "name": "Fifth Edition - Starter Deck",
+      "cleanName": "Fifth Edition Starter Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/139148_200w.jpg",
+      "categoryId": 1,
+      "groupId": 44,
+      "url": "https://www.tcgplayer.com/product/139148/magic-fifth-edition-fifth-edition-starter-deck",
+      "modifiedOn": "2019-02-08T21:18:11.04",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "742818065245"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 139148,
+        "lowPrice": 138,
+        "midPrice": 149.95,
+        "highPrice": 176.99,
+        "marketPrice": 149.9,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

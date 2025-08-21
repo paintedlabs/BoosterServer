@@ -1,0 +1,58 @@
+{
+  "uuid": "15cd126e-07d6-5c5c-9d05-1da9f650e458",
+  "name": "Planeshift Theme Deck Barrage",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100998",
+    "cardKingdomId": "1297",
+    "cardtraderId": "45762",
+    "mcmId": "253741",
+    "tcgplayerProductId": "93345",
+    "tntId": "106947"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c2098a212169555c"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Barrage",
+        "set": "pls"
+      }
+    ]
+  },
+  "setCode": "PLS",
+  "setName": "Planeshift",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93345,
+      "name": "Planeshift - Barrage Theme Deck",
+      "cleanName": "Planeshift Barrage Theme Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93345_200w.jpg",
+      "categoryId": 1,
+      "groupId": 85,
+      "url": "https://www.tcgplayer.com/product/93345/magic-planeshift-planeshift-barrage-theme-deck",
+      "modifiedOn": "2022-12-23T13:32:44.257",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 93345,
+        "lowPrice": 22,
+        "midPrice": 31.98,
+        "highPrice": 49.99,
+        "marketPrice": 31.67,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

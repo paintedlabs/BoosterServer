@@ -1,0 +1,87 @@
+{
+  "uuid": "06e5e5b7-e14e-508f-86d4-5e98b3400a83",
+  "name": "Commander 2020 Commander Deck Ruthless Regiment",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2020-05-15",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1829901",
+    "cardKingdomId": "232116",
+    "cardtraderId": "107982",
+    "csiId": "294237",
+    "mcmId": "441358",
+    "scgId": "SLD-MTG-MLT-C20-EN-RUTHLESS",
+    "tcgplayerProductId": "210821",
+    "tntId": "1655973"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/c90c7fe81b72a0a3",
+    "tcgplayer": "https://mtgjson.com/links/f486a9633324ea3d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ruthless Regiment",
+        "set": "c20"
+      }
+    ],
+    "other": [
+      {
+        "name": "Commander 2020 Life Wheel"
+      },
+      {
+        "name": "Foil Oversized Commander Card"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      },
+      {
+        "name": "Deck Box"
+      }
+    ]
+  },
+  "setCode": "C20",
+  "setName": "Commander 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 210821,
+      "name": "Commander 2020 Deck - Ruthless Regiment",
+      "cleanName": "Commander 2020 Deck Ruthless Regiment",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/210821_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2634,
+      "url": "https://www.tcgplayer.com/product/210821/magic-commander-2020-commander-2020-deck-ruthless-regiment",
+      "modifiedOn": "2020-05-08T22:44:00.59",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-05-15T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each 100-preconstructed deck features a theme centered around Ikoria: Lair of Behemoths."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509943579"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 210821,
+        "lowPrice": 43.02,
+        "midPrice": 54.98,
+        "highPrice": 100,
+        "marketPrice": 51.29,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

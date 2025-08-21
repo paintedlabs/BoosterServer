@@ -1,0 +1,67 @@
+{
+  "uuid": "6f25c48c-a690-5842-9d29-9ffb1495c919",
+  "name": "Challenger Deck 2018 Counter Surge",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2018-02-23",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1495921",
+    "cardKingdomId": "217620",
+    "cardtraderId": "54738",
+    "csiId": "254892",
+    "mcmId": "318971",
+    "scgId": "SLD-MTG-INT-Q01-EN-COUNTER",
+    "tcgplayerProductId": "161415",
+    "tntId": "1159420"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0daf85fe913e98a6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Counter Surge",
+        "set": "q01"
+      }
+    ]
+  },
+  "setCode": "Q01",
+  "setName": "Challenger Decks 2018",
+  "tcgcsvData": {
+    "product": {
+      "productId": 161415,
+      "name": "Challenger Deck 2018: Counter Surge",
+      "cleanName": "Challenger Deck 2018 Counter Surge",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/161415_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/161415/magic-challenger-decks-challenger-deck-2018-counter-surge",
+      "modifiedOn": "2019-02-14T16:49:24.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains:\r\n<br>• 60-card main deck\r\n<br>• 15-card sideboard\r\n<br>• A box capable of holding 75 sleeved cards\r\n<br>• Spindown life counter\r\n<br>• Quick reference guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 161415,
+        "lowPrice": 19.99,
+        "midPrice": 29.99,
+        "highPrice": 48.99,
+        "marketPrice": 26.52,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

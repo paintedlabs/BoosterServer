@@ -1,0 +1,78 @@
+{
+  "uuid": "5d45f846-9dba-54ec-aba5-1cf87b004c22",
+  "name": "Magic Origins Prerelease Kit Set of 5",
+  "category": "subset",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "tcgplayerProductId": "101312"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/89811a1d4b770327"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Magic Origins Prerelease Kit Chandra",
+        "set": "ori",
+        "uuid": "4dc06bf7-d1fe-5650-8f34-95ce73446632"
+      },
+      {
+        "count": 1,
+        "name": "Magic Origins Prerelease Kit Gideon",
+        "set": "ori",
+        "uuid": "c2ccaf0c-a115-5d1b-b935-2efba125f8b4"
+      },
+      {
+        "count": 1,
+        "name": "Magic Origins Prerelease Kit Jace",
+        "set": "ori",
+        "uuid": "9823e19d-cba6-5ffa-8ea8-98126e0b0d7a"
+      },
+      {
+        "count": 1,
+        "name": "Magic Origins Prerelease Kit Liliana",
+        "set": "ori",
+        "uuid": "b567038a-2a78-5f92-a408-4559a2815654"
+      },
+      {
+        "count": 1,
+        "name": "Magic Origins Prerelease Kit Nissa",
+        "set": "ori",
+        "uuid": "0a673cb1-1938-595d-9824-b02ee14f52ca"
+      }
+    ]
+  },
+  "setCode": "ORI",
+  "setName": "Magic Origins",
+  "tcgcsvData": {
+    "product": {
+      "productId": 101312,
+      "name": "Magic Origins Prerelease Kit - Set of 5",
+      "cleanName": "Magic Origins Prerelease Kit Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/101312_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1512,
+      "url": "https://www.tcgplayer.com/product/101312/magic-magic-origins-magic-origins-prerelease-kit-set-of-5",
+      "modifiedOn": "2015-07-20T12:28:20.633",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 101312,
+        "lowPrice": 299.99,
+        "midPrice": 299.99,
+        "highPrice": 299.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

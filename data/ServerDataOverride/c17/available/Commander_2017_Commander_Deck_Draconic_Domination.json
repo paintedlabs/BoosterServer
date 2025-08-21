@@ -1,0 +1,68 @@
+{
+  "uuid": "a92e9f52-f3a2-5db6-9e4c-c88fd4ec0c8e",
+  "name": "Commander 2017 Commander Deck Draconic Domination",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2017-08-25",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1476995",
+    "cardKingdomId": "213481",
+    "cardtraderId": "44563",
+    "csiId": "242591",
+    "mcmId": "300285",
+    "scgId": "SLD-MTG-MLT-C17-EN-DRACONIC",
+    "tcgplayerProductId": "139782",
+    "tntId": "1126925"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/e14569da85b93a98",
+    "tcgplayer": "https://mtgjson.com/links/ae4162957247ac0e"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Draconic Domination",
+        "set": "c17"
+      }
+    ]
+  },
+  "setCode": "C17",
+  "setName": "Commander 2017",
+  "tcgcsvData": {
+    "product": {
+      "productId": 139782,
+      "name": "Commander 2017 Deck - Draconic Domination",
+      "cleanName": "Commander 2017 Deck Draconic Domination",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/139782_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2009,
+      "url": "https://www.tcgplayer.com/product/139782/magic-commander-2017-commander-2017-deck-draconic-domination",
+      "modifiedOn": "2017-08-17T17:33:04.13",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-08-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "When time began, the Ur-Dragon began with it. As the primordial ancestor and lifeblood of all dragons, the Ur-Dragon imbues strength into dragons from every corner of the Multiverse so that they may rain endless fire and destruction upon the enemies of dragonkind."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 139782,
+        "lowPrice": 396.03,
+        "midPrice": 403.24,
+        "highPrice": 420.69,
+        "marketPrice": 396.49,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

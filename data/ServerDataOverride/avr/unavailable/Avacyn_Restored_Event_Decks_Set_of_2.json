@@ -1,0 +1,68 @@
+{
+  "uuid": "6484ca58-420b-5f82-96ef-226df4a25610",
+  "name": "Avacyn Restored Event Decks Set of 2",
+  "category": "subset",
+  "subtype": "event",
+  "identifiers": {
+    "cardtraderId": "47742",
+    "mcmId": "255441",
+    "tcgplayerProductId": "59111"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8eefdd694c586f41"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Avacyn Restored Event Deck Deaths Encroach",
+        "set": "avr",
+        "uuid": "30afe83f-4221-52fb-b968-afa5f5b4330c"
+      },
+      {
+        "count": 1,
+        "name": "Avacyn Restored Event Deck Humanitys Vengeance",
+        "set": "avr",
+        "uuid": "5e3d62d2-6686-5481-963d-65dac6e425b1"
+      }
+    ]
+  },
+  "setCode": "AVR",
+  "setName": "Avacyn Restored",
+  "tcgcsvData": {
+    "product": {
+      "productId": 59111,
+      "name": "Avacyn Restored - Event Deck - Set of Two",
+      "cleanName": "Avacyn Restored Event Deck Set of Two",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/59111_200w.jpg",
+      "categoryId": 1,
+      "groupId": 362,
+      "url": "https://www.tcgplayer.com/product/59111/magic-avacyn-restored-avacyn-restored-event-deck-set-of-two",
+      "modifiedOn": "2015-12-17T19:30:23.693",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 71445 3"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 59111,
+        "lowPrice": 74.99,
+        "midPrice": 74.99,
+        "highPrice": 74.99,
+        "marketPrice": 76.66,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

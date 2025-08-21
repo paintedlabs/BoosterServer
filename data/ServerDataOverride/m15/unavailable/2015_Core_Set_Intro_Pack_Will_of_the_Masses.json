@@ -1,0 +1,81 @@
+{
+  "uuid": "c0f43ef6-8c8c-5643-9877-f8dfc364802a",
+  "name": "2015 Core Set Intro Pack Will of the Masses",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100835",
+    "cardKingdomId": "195221",
+    "cardtraderId": "48152",
+    "mcmId": "267973",
+    "scgId": "SLD-MTG-INT-M15INTRO-EN-WILL",
+    "tcgplayerProductId": "91078",
+    "tntId": "1057453"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/6f745f8e2e81850d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Will Of The Masses",
+        "set": "m15"
+      }
+    ],
+    "other": [
+      {
+        "name": "Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn to Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2015 Core Set Booster Pack",
+        "set": "m15",
+        "uuid": "0643f6ea-0eab-5f7d-8b6a-4ade23f44afd"
+      }
+    ]
+  },
+  "setCode": "M15",
+  "setName": "Magic 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 91078,
+      "name": "Magic 2015 (M15) - Intro Pack - Will of the Masses",
+      "cleanName": "Magic 2015 M15 Intro Pack Will of the Masses",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/91078_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1293,
+      "url": "https://www.tcgplayer.com/product/91078/magic-magic-2015-m15-magic-2015-m15-intro-pack-will-of-the-masses",
+      "modifiedOn": "2021-08-05T16:37:24.8",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Magic 2015 (M15) booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 91078,
+        "lowPrice": 25.19,
+        "midPrice": 27.42,
+        "highPrice": 29.65,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

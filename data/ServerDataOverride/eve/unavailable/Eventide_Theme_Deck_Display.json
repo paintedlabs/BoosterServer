@@ -1,0 +1,277 @@
+{
+  "uuid": "a4082250-6a21-565d-992a-ed1bb74c10bc",
+  "name": "Eventide Theme Deck Display",
+  "category": "deck_box",
+  "subtype": "theme",
+  "identifiers": {
+    "cardtraderId": "47288",
+    "mcmId": "210207",
+    "tcgplayerProductId": "644353",
+    "tntId": "179880"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/60de3f2e3ae2024d"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Eventide Theme Deck Battle Blitz",
+        "set": "eve",
+        "uuid": "93370b3e-b617-5331-9773-0c09537cfa87"
+      },
+      {
+        "count": 2,
+        "name": "Eventide Theme Deck Death March",
+        "set": "eve",
+        "uuid": "07ba9389-3d06-5a71-8d14-ffb1db7f3b50"
+      },
+      {
+        "count": 2,
+        "name": "Eventide Theme Deck Life Drain",
+        "set": "eve",
+        "uuid": "2918db4d-2ca5-5a82-946b-2c9b236a53e7"
+      },
+      {
+        "count": 2,
+        "name": "Eventide Theme Deck Sidestep",
+        "set": "eve",
+        "uuid": "75d64d7f-a3a1-54fc-abf3-298fbba34336"
+      },
+      {
+        "count": 2,
+        "name": "Eventide Theme Deck Superabundance",
+        "set": "eve",
+        "uuid": "d757ea36-27bb-5e56-b929-254fa742c7ea"
+      }
+    ],
+    "variable": [
+      {
+        "configs": [
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Battle Blitz",
+                "set": "eve",
+                "uuid": "93370b3e-b617-5331-9773-0c09537cfa87"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Death March",
+                "set": "eve",
+                "uuid": "07ba9389-3d06-5a71-8d14-ffb1db7f3b50"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Battle Blitz",
+                "set": "eve",
+                "uuid": "93370b3e-b617-5331-9773-0c09537cfa87"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Life Drain",
+                "set": "eve",
+                "uuid": "2918db4d-2ca5-5a82-946b-2c9b236a53e7"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Battle Blitz",
+                "set": "eve",
+                "uuid": "93370b3e-b617-5331-9773-0c09537cfa87"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Sidestep",
+                "set": "eve",
+                "uuid": "75d64d7f-a3a1-54fc-abf3-298fbba34336"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Battle Blitz",
+                "set": "eve",
+                "uuid": "93370b3e-b617-5331-9773-0c09537cfa87"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Superabundance",
+                "set": "eve",
+                "uuid": "d757ea36-27bb-5e56-b929-254fa742c7ea"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Death March",
+                "set": "eve",
+                "uuid": "07ba9389-3d06-5a71-8d14-ffb1db7f3b50"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Life Drain",
+                "set": "eve",
+                "uuid": "2918db4d-2ca5-5a82-946b-2c9b236a53e7"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Death March",
+                "set": "eve",
+                "uuid": "07ba9389-3d06-5a71-8d14-ffb1db7f3b50"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Sidestep",
+                "set": "eve",
+                "uuid": "75d64d7f-a3a1-54fc-abf3-298fbba34336"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Death March",
+                "set": "eve",
+                "uuid": "07ba9389-3d06-5a71-8d14-ffb1db7f3b50"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Superabundance",
+                "set": "eve",
+                "uuid": "d757ea36-27bb-5e56-b929-254fa742c7ea"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Life Drain",
+                "set": "eve",
+                "uuid": "2918db4d-2ca5-5a82-946b-2c9b236a53e7"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Sidestep",
+                "set": "eve",
+                "uuid": "75d64d7f-a3a1-54fc-abf3-298fbba34336"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Life Drain",
+                "set": "eve",
+                "uuid": "2918db4d-2ca5-5a82-946b-2c9b236a53e7"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Superabundance",
+                "set": "eve",
+                "uuid": "d757ea36-27bb-5e56-b929-254fa742c7ea"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "sealed": [
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Sidestep",
+                "set": "eve",
+                "uuid": "75d64d7f-a3a1-54fc-abf3-298fbba34336"
+              },
+              {
+                "count": 1,
+                "name": "Eventide Theme Deck Superabundance",
+                "set": "eve",
+                "uuid": "d757ea36-27bb-5e56-b929-254fa742c7ea"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "EVE",
+  "setName": "Eventide"
+}

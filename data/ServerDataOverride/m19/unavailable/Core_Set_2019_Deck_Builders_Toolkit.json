@@ -1,0 +1,98 @@
+{
+  "uuid": "386d5ab9-b385-574c-9d8c-f63cd9e66866",
+  "name": "Core Set 2019 Deck Builders Toolkit",
+  "category": "kit",
+  "cardCount": 225,
+  "releaseDate": "2018-07-13",
+  "subtype": "deck_builders_toolkit",
+  "identifiers": {
+    "abuId": "1511001",
+    "cardKingdomId": "219802",
+    "cardtraderId": "48710",
+    "csiId": "244848",
+    "mcmId": "319293",
+    "scgId": "SLD-MTG-INT-M19TOOLKIT-EN",
+    "tcgplayerProductId": "166553",
+    "tntId": "1181273"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a99b5a9d352cd481"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Deck Builder's Toolkit",
+        "set": "m19"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2019 Booster Pack",
+        "set": "m19",
+        "uuid": "36d4765d-add1-5d6b-8bff-f342ef62a3d0"
+      },
+      {
+        "count": 1,
+        "name": "Ixalan Booster Pack",
+        "set": "xln",
+        "uuid": "1ffd541f-99e2-509e-9c9e-49f383f03484"
+      },
+      {
+        "count": 1,
+        "name": "Rivals of Ixalan Booster Pack",
+        "set": "rix",
+        "uuid": "307394ca-be46-5a6c-a688-2f351a3f75db"
+      },
+      {
+        "count": 1,
+        "name": "Dominaria Booster Pack",
+        "set": "dom",
+        "uuid": "2bfb8f04-072c-56e7-aa78-6ff5771c1db3"
+      }
+    ]
+  },
+  "setCode": "M19",
+  "setName": "Core Set 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 166553,
+      "name": "Core Set 2019 - Deck Builder's Toolkit",
+      "cleanName": "Core Set 2019 Deck Builders Toolkit",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/166553_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2250,
+      "url": "https://www.tcgplayer.com/product/166553/magic-core-set-2019-core-set-2019-deck-builders-toolkit",
+      "modifiedOn": "2018-05-14T17:59:08.963",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-07-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Deck Builder’s Toolkit jumpstarts a new player’s collection and introduces them to deckbuilding.\r\n<br><br>\r\n<strong>Contents:</strong>\r\n<br>• 125 semi-randomized cards \r\n<br>• Four 15-card booster packs from recent Magic sets \r\n<br>• 100 basic land cards \r\n<br>• Deck Builder's Guide to creating the best Magic decks \r\n<br>• Magic rules reference card \r\n<br>• Full-art reusable card storage box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509688203"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 166553,
+        "lowPrice": 45.99,
+        "midPrice": 47.99,
+        "highPrice": 49.99,
+        "marketPrice": 48.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

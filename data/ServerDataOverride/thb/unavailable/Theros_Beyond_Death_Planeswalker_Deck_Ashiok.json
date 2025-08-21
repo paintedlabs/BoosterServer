@@ -1,0 +1,75 @@
+{
+  "uuid": "cf7400d3-0127-5cb9-912f-b2b9df4d68fc",
+  "name": "Theros Beyond Death Planeswalker Deck Ashiok",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2020-01-24",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1807650",
+    "cardKingdomId": "230632",
+    "cardtraderId": "104648",
+    "csiId": "287293",
+    "mcmId": "432509",
+    "scgId": "SLD-MTG-INT-THBPWDECK-EN-B",
+    "tcgplayerProductId": "206255",
+    "tntId": "1605721"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f99c148c6e7b9f8e"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ashiok",
+        "set": "thb"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Theros Beyond Death Draft Booster Pack",
+        "set": "thb",
+        "uuid": "089080a6-6828-50c3-9101-7dde35781608"
+      }
+    ]
+  },
+  "setCode": "THB",
+  "setName": "Theros Beyond Death",
+  "tcgcsvData": {
+    "product": {
+      "productId": 206255,
+      "name": "Theros Beyond Death - Planeswalker Deck [Ashiok]",
+      "cleanName": "Theros Beyond Death Planeswalker Deck Ashiok",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/206255_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2568,
+      "url": "https://www.tcgplayer.com/product/206255/magic-theros-beyond-death-theros-beyond-death-planeswalker-deck-ashiok",
+      "modifiedOn": "2019-12-20T18:52:26.083",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-01-24T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Decks are ready to play right out of the box and familiarize players with the characters, mechanics, and setting of Theros Beyond Death. They offer a great opportunity for players who are interested in Magic to learn the game.\r\n<br><br>\r\nContents: \r\n<br>• 1 ready-to-play 60-card deck featuring a foil planeswalker card\r\n<br>• 2 Theros Beyond Death Draft Boosters\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card*\r\n*Available only in certain regions"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 206255,
+        "lowPrice": 18.95,
+        "midPrice": 21.95,
+        "highPrice": 49.95,
+        "marketPrice": 22.06,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

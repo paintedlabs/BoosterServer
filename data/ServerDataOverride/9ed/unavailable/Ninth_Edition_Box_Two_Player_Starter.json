@@ -1,0 +1,98 @@
+{
+  "uuid": "23942956-0a50-5fed-8c85-b7000d2838b4",
+  "name": "Ninth Edition Box Two Player Starter",
+  "category": "multiple_decks",
+  "cardCount": 80,
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "abuId": "1100082",
+    "cardtraderId": "46948",
+    "mcmId": "254939",
+    "tcgplayerProductId": "81799",
+    "tntId": "123098"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/06d6c2b51b096c1d"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Serra Angel",
+        "number": "43★",
+        "set": "9ed",
+        "uuid": "646a6755-dda4-5c76-b737-10f42738fb54"
+      }
+    ],
+    "deck": [
+      {
+        "name": "Gold Deck",
+        "set": "9ed"
+      },
+      {
+        "name": "Gold Pack",
+        "set": "9ed"
+      },
+      {
+        "name": "Silver Deck",
+        "set": "9ed"
+      },
+      {
+        "name": "Silver Pack",
+        "set": "9ed"
+      }
+    ],
+    "other": [
+      {
+        "name": "Two Play Guides"
+      },
+      {
+        "name": "Magic Rule Book"
+      },
+      {
+        "name": "Two Playmats"
+      },
+      {
+        "name": "CD-ROM with Tutorials"
+      }
+    ]
+  },
+  "setCode": "9ED",
+  "setName": "Ninth Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 81799,
+      "name": "9th Edition Box Set - Core Game",
+      "cleanName": "9th Edition Box Set Core Game",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/81799_200w.jpg",
+      "categoryId": 1,
+      "groupId": 4,
+      "url": "https://www.tcgplayer.com/product/81799/magic-9th-edition-9th-edition-box-set-core-game",
+      "modifiedOn": "2022-12-26T18:27:58.063",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "* 80 Ninth Edition cards divided into 2 decks and 1 Advanced Booster Pack (2 x 33 + 1 x 14)\r\n* 1 standard foil Ninth Edition Serra Angel card\r\n* 1 enhanced rule book with 9th Edition rules\r\n* 1 CD which contains 2 explanatory test games, an online rule book, and the Magic: The Gathering Online software (English version only)\r\n* 2 player guides which cover 1 demo game\r\n* 2 playmats to explain the different game zones\r\n* 2 cardboard life counters\r\n* 1 consumer response card to provide feedback (English version only)\r\n* 1 leaftlet carrying an activation code to receive a Core Game box set for Magic: The Gathering Online (English version only)"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 81799,
+        "lowPrice": 50,
+        "midPrice": 50,
+        "highPrice": 50,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

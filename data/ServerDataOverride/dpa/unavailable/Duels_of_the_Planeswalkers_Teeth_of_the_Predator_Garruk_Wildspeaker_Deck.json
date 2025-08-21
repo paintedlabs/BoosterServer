@@ -1,0 +1,68 @@
+{
+  "uuid": "3dc9a690-8698-50c2-b4ae-01183ad994ee",
+  "name": "Duels of the Planeswalkers Teeth of the Predator Garruk Wildspeaker Deck",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1100460",
+    "cardKingdomId": "131150",
+    "cardtraderId": "47498",
+    "csiId": "97565",
+    "mcmId": "240421",
+    "scgId": "SLD-MTG-INT-DPADECK-EN-GARRUK",
+    "tcgplayerProductId": "77282",
+    "tntId": "294700"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/106d49b66feac0d6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Teeth of the Predator",
+        "set": "dpa"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "2010 Core Set Booster Pack",
+        "set": "m10",
+        "uuid": "f52aeac6-933a-55e2-a973-36421c155ea1"
+      }
+    ]
+  },
+  "setCode": "DPA",
+  "setName": "Duels of the Planeswalkers",
+  "tcgcsvData": {
+    "product": {
+      "productId": 77282,
+      "name": "DotP - Teeth of the Predator Garruk Wildspeaker Deck",
+      "cleanName": "DotP Teeth of the Predator Garruk Wildspeaker Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/77282_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1274,
+      "url": "https://www.tcgplayer.com/product/77282/magic-duels-of-the-planeswalkers-dotp-teeth-of-the-predator-garruk-wildspeaker-deck",
+      "modifiedOn": "2017-09-22T17:21:07.9",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 77282,
+        "lowPrice": 50.1,
+        "midPrice": 52.55,
+        "highPrice": 54.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

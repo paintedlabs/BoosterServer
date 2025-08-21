@@ -1,0 +1,69 @@
+{
+  "uuid": "e36a7e2a-3ce9-5e40-88de-625288b26b3f",
+  "name": "2015 Core Set Clash Pack",
+  "category": "multiple_decks",
+  "cardCount": 120,
+  "subtype": "clash",
+  "identifiers": {
+    "abuId": "1100823",
+    "cardKingdomId": "195224",
+    "cardtraderId": "48153",
+    "mcmId": "267989",
+    "scgId": "SLD-MTG-INT-M15CLASH-EN-FATE",
+    "tcgplayerProductId": "90793",
+    "tntId": "1057421"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/a8c115fa687e532c"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Fate",
+        "set": "m15"
+      },
+      {
+        "name": "Fury",
+        "set": "m15"
+      }
+    ]
+  },
+  "setCode": "M15",
+  "setName": "Magic 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 90793,
+      "name": "Magic 2015 (M15) - Clash Pack",
+      "cleanName": "Magic 2015 M15 Clash Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/90793_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1293,
+      "url": "https://www.tcgplayer.com/product/90793/magic-magic-2015-m15-magic-2015-m15-clash-pack",
+      "modifiedOn": "2014-07-24T13:39:13.56",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "2 ready-to-play 60-card decks (with 10 rare cards!)\r\n6 alternate-art, premium cards\r\nStrategy insert\r\nMagic rules reference card\r\nDeck box"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 90793,
+        "lowPrice": 35,
+        "midPrice": 44.95,
+        "highPrice": 88.95,
+        "marketPrice": 36.13,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

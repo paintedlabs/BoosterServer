@@ -1,0 +1,250 @@
+{
+  "uuid": "d3771866-75ec-526c-a6b6-a9dca10e33ad",
+  "name": "Gatecrash Booster Battle Pack",
+  "category": "multiple_decks",
+  "subtype": "battle_pack",
+  "identifiers": {
+    "abuId": "1100554",
+    "cardtraderId": "47891",
+    "mcmId": "260417",
+    "tcgplayerProductId": "172938",
+    "tntId": "1011702"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/251426c83578e993"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Gatecrash Booster Pack",
+        "set": "gtc",
+        "uuid": "11a63195-ea42-5624-95e9-206d788c9650"
+      }
+    ],
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Boros",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Dimir",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Boros",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Gruul",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Boros",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Orzhov",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Boros",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Simic",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Dimir",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Gruul",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Dimir",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Orzhov",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Dimir",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Simic",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Gruul",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Orzhov",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Gruul",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Simic",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Booster Battle Pack Orzhov",
+                "set": "gtc"
+              },
+              {
+                "name": "Booster Battle Pack Simic",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 10
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "GTC",
+  "setName": "Gatecrash",
+  "tcgcsvData": {
+    "product": {
+      "productId": 172938,
+      "name": "Gatecrash - Booster Battle Pack",
+      "cleanName": "Gatecrash Booster Battle Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/172938_200w.jpg",
+      "categoryId": 1,
+      "groupId": 569,
+      "url": "https://www.tcgplayer.com/product/172938/magic-gatecrash-gatecrash-booster-battle-pack",
+      "modifiedOn": "2018-07-30T16:48:14.69",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Gatecrash Booster Battle pack contains everything you need for a two-player game of Magic. There are two Gatecrash booster packs and two semi-randomized \"decks\" of 22 cards. Each one is associated with one of the Gatecrash guilds: Orzhov, Dimir, Gruul, Boros, and Simic. Each player takes one, then opens a booster pack and selects up to five cards to add. Then each player has a deck of 22 to 27 cards. And then the battling begins!"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 172938,
+        "lowPrice": 18.5,
+        "midPrice": 20.24,
+        "highPrice": 21.97,
+        "marketPrice": 17.96,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

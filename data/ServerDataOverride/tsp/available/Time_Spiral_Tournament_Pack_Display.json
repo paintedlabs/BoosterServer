@@ -1,0 +1,67 @@
+{
+  "uuid": "6a1adb95-d9c1-559c-b71a-51869605aa19",
+  "name": "Time Spiral Tournament Pack Display",
+  "category": "limited_aid_case",
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1108019",
+    "cardKingdomId": "240228",
+    "cardtraderId": "47164",
+    "mcmId": "253863",
+    "scgId": "SLD-MTG-BBX-TSPTOURNAMENT-EN",
+    "tcgplayerProductId": "453053",
+    "tntId": "141933"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/2ec6caeeb316be45",
+    "tcgplayer": "https://mtgjson.com/links/635c72a1b6d98932"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 12,
+        "name": "Time Spiral Tournament Pack",
+        "set": "tsp",
+        "uuid": "030eab89-c5f9-575d-940b-a5711cb224e9"
+      }
+    ]
+  },
+  "setCode": "TSP",
+  "setName": "Time Spiral",
+  "tcgcsvData": {
+    "product": {
+      "productId": 453053,
+      "name": "Time Spiral Tournament Pack Display",
+      "cleanName": "Time Spiral Tournament Pack Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/453053_200w.jpg",
+      "categoryId": 1,
+      "groupId": 110,
+      "url": "https://www.tcgplayer.com/product/453053/magic-time-spiral-time-spiral-tournament-pack-display",
+      "modifiedOn": "2025-07-07T12:10:42.467",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<br>Contains 12 Tournament Packs\r\n<br>Each tournament pack contains 75 cards."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 453053,
+        "lowPrice": 1014.95,
+        "midPrice": 1200.95,
+        "highPrice": 1500,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

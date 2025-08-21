@@ -1,0 +1,88 @@
+{
+  "uuid": "c2974b81-2006-59c4-bc63-e4fe2fb3e969",
+  "name": "Fallout Commander Deck Science",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2024-03-08",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2470263",
+    "cardKingdomId": "291466",
+    "cardtraderId": "265028",
+    "csiId": "374367",
+    "mcmId": "745335",
+    "miniaturemarketId": "296508",
+    "scgId": "SLD-MTG-MLT-PIP-EN-SCIENCE",
+    "tcgplayerProductId": "522905",
+    "tntId": "1801791"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/e5ff2a7deb25cf1d",
+    "tcgplayer": "https://mtgjson.com/links/0bd394b630ee09d2"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Science!",
+        "set": "pip"
+      }
+    ],
+    "other": [
+      {
+        "name": "Foil etched display commander"
+      },
+      {
+        "name": "10 double sided tokens"
+      },
+      {
+        "name": "life wheel"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Fallout Collector Booster Sample Pack",
+        "set": "pip",
+        "uuid": "7a584835-af39-59bb-826f-32152df22ca5"
+      }
+    ]
+  },
+  "setCode": "PIP",
+  "setName": "Fallout",
+  "tcgcsvData": {
+    "product": {
+      "productId": 522905,
+      "name": "Universes Beyond: Fallout - Science! Commander Deck",
+      "cleanName": "Universes Beyond Fallout Science Commander Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/522905_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23337,
+      "url": "https://www.tcgplayer.com/product/522905/magic-universes-beyond-fallout-universes-beyond-fallout-science-commander-deck",
+      "modifiedOn": "2024-03-08T05:03:35.12",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2024-03-08T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Finally, we have our Science! deck, which focuses on high-tech energy weapons, scientists, synths, and pre-war robots. With Dr. Madison Li as your commander, you will play artifacts to generate energy, a returning mechanic fit for Fallout."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 522905,
+        "lowPrice": 30,
+        "midPrice": 44.91,
+        "highPrice": 85,
+        "marketPrice": 35.2,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

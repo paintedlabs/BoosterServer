@@ -1,0 +1,68 @@
+{
+  "uuid": "79ee20bd-bf0e-58dc-b867-80df4393596f",
+  "name": "Duel Deck Jace vs Chandra",
+  "category": "multiple_decks",
+  "subtype": "duel",
+  "identifiers": {
+    "abuId": "1100632",
+    "cardKingdomId": "110085",
+    "cardtraderId": "47375",
+    "csiId": "97705",
+    "mcmId": "240364",
+    "scgId": "SLD-MTG-BXS-DD2-EN",
+    "tcgplayerProductId": "32804",
+    "tntId": "231074"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/9a7c2c195e983a8f",
+    "tcgplayer": "https://mtgjson.com/links/33c2b8aeae24a084"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Duel Deck Jace vs Chandra Chandra Deck",
+        "set": "dd2",
+        "uuid": "0146a152-259a-5fb4-a591-ee1dbd799920"
+      },
+      {
+        "count": 1,
+        "name": "Duel Deck Jace vs Chandra Jace Deck",
+        "set": "dd2",
+        "uuid": "3ab90ff9-049d-572c-b5a1-5b6b7e1e5911"
+      }
+    ]
+  },
+  "setCode": "DD2",
+  "setName": "Duel Decks: Jace vs. Chandra",
+  "tcgcsvData": {
+    "product": {
+      "productId": 32804,
+      "name": "Duel Decks: Jace vs. Chandra - Box Set",
+      "cleanName": "Duel Decks Jace vs Chandra Box Set",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32804_200w.jpg",
+      "categoryId": 1,
+      "groupId": 35,
+      "url": "https://www.tcgplayer.com/product/32804/magic-duel-decks-jace-vs-chandra-duel-decks-jace-vs-chandra-box-set",
+      "modifiedOn": "2015-10-15T16:28:06.473",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 32804,
+        "lowPrice": 55,
+        "midPrice": 70.33,
+        "highPrice": 72.99,
+        "marketPrice": 72.1,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

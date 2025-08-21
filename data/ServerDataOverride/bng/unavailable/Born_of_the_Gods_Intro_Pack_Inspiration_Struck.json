@@ -1,0 +1,74 @@
+{
+  "uuid": "ba54559f-d5b6-5ace-8987-eede2a71b6fb",
+  "name": "Born of the Gods Intro Pack Inspiration Struck",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2007-01-01",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100203",
+    "cardKingdomId": "193249",
+    "cardtraderId": "48082",
+    "mcmId": "266084",
+    "scgId": "SLD-MTG-INT-BNGINTRO-EN-INSPIRATION",
+    "tcgplayerProductId": "78747",
+    "tntId": "1050541"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/5cacaf92d4f61edf"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Inspiration-Struck",
+        "set": "bng"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Born of the Gods Booster Pack",
+        "set": "bng",
+        "uuid": "16e12027-2acd-5bfa-81e8-ed3bc5381334"
+      }
+    ]
+  },
+  "setCode": "BNG",
+  "setName": "Born of the Gods",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78747,
+      "name": "Born of the Gods - Intro Pack - Inspiration-Struck",
+      "cleanName": "Born of the Gods Intro Pack Inspiration Struck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78747_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1276,
+      "url": "https://www.tcgplayer.com/product/78747/magic-born-of-the-gods-born-of-the-gods-intro-pack-inspiration-struck",
+      "modifiedOn": "2021-08-05T13:57:45.05",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• A 60-card preconstructed deck\r\n<br>• 2 Born of the Gods booster packs\r\n<br>• A strategy and mechanics guide\r\n<br>• A learn-to-play insert for new players"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 78747,
+        "lowPrice": 12,
+        "midPrice": 21.94,
+        "highPrice": 32.19,
+        "marketPrice": 12,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

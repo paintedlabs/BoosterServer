@@ -1,0 +1,67 @@
+{
+  "uuid": "5eb3f308-3540-5471-8f49-0ecd3f6f03c0",
+  "name": "2003 World Championship Deck Wolfgang Eder",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100260",
+    "cardKingdomId": "240336",
+    "cardtraderId": "39919",
+    "csiId": "97877",
+    "mcmId": "250177",
+    "scgId": "SLD-MTG-BXS-WCH2003-EN-WOLFGANGEDER",
+    "tcgplayerProductId": "158308",
+    "tntId": "112091"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/9196802a8f60d3f7",
+    "tcgplayer": "https://mtgjson.com/links/1ccb478d12d158fc"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Wolfgang Eder - Goblin Bidding",
+        "set": "wc03"
+      }
+    ]
+  },
+  "setCode": "WC03",
+  "setName": "World Championship Decks 2003",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158308,
+      "name": "World Championship Deck: 2003 Berlin - Wolfgang Eder, Quarterfinalist",
+      "cleanName": "World Championship Deck 2003 Berlin Wolfgang Eder Quarterfinalist",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158308_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/158308/magic-world-championship-decks-world-championship-deck-2003-berlin-wolfgang-eder-quarterfinalist",
+      "modifiedOn": "2018-02-06T14:56:37.66",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>\"Wolfgang Eder introduced the black-red 'Goblin Bidding' deck to the world at the European Championships. The typical Goblin hoard deck gets an incredible midgame play in Patriarch's Bidding, which brings every Goblin in the graveyard back in to play.\"</em>\r\n<br>\r\n<br><strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158308,
+        "lowPrice": 245.3,
+        "midPrice": 302.65,
+        "highPrice": 360,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

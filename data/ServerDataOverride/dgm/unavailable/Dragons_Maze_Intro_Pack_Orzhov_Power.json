@@ -1,0 +1,74 @@
+{
+  "uuid": "29b53671-e076-5b4b-b03d-601846ccc860",
+  "name": "Dragons Maze Intro Pack Orzhov Power",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100416",
+    "cardKingdomId": "189629",
+    "cardtraderId": "47945",
+    "csiId": "192761",
+    "mcmId": "261682",
+    "scgId": "SLD-MTG-INT-DGMINTRO-EN-ORZHOV",
+    "tcgplayerProductId": "68029",
+    "tntId": "1026691"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0fedd4a487ff7c34"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Orzhov Power",
+        "set": "dgm"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Dragons Maze Booster Pack",
+        "set": "dgm",
+        "uuid": "b9c1d8bb-29d1-5572-b3c3-26363ecfdada"
+      }
+    ]
+  },
+  "setCode": "DGM",
+  "setName": "Dragon's Maze",
+  "tcgcsvData": {
+    "product": {
+      "productId": 68029,
+      "name": "Dragon's Maze - Intro Pack - Orzhov Power",
+      "cleanName": "Dragons Maze Intro Pack Orzhov Power",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/68029_200w.jpg",
+      "categoryId": 1,
+      "groupId": 570,
+      "url": "https://www.tcgplayer.com/product/68029/magic-dragons-maze-dragons-maze-intro-pack-orzhov-power",
+      "modifiedOn": "2014-01-06T17:28:16",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 82207 3"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 68029,
+        "lowPrice": 32.57,
+        "midPrice": 33.79,
+        "highPrice": 34.59,
+        "marketPrice": 34.59,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

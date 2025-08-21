@@ -1,0 +1,75 @@
+{
+  "uuid": "7cd4cff1-cbd9-5201-9d65-13cea278c479",
+  "name": "Theros Beyond Death Planeswalker Deck Elspeth",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2020-01-24",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1797818",
+    "cardKingdomId": "230633",
+    "cardtraderId": "104649",
+    "csiId": "287292",
+    "mcmId": "432504",
+    "scgId": "SLD-MTG-INT-THBPWDECK-EN-A",
+    "tcgplayerProductId": "206256",
+    "tntId": "1605722"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/8780f4bfb0b42431"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Elspeth",
+        "set": "thb"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Theros Beyond Death Draft Booster Pack",
+        "set": "thb",
+        "uuid": "089080a6-6828-50c3-9101-7dde35781608"
+      }
+    ]
+  },
+  "setCode": "THB",
+  "setName": "Theros Beyond Death",
+  "tcgcsvData": {
+    "product": {
+      "productId": 206256,
+      "name": "Theros Beyond Death - Planeswalker Deck [Elspeth]",
+      "cleanName": "Theros Beyond Death Planeswalker Deck Elspeth",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/206256_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2568,
+      "url": "https://www.tcgplayer.com/product/206256/magic-theros-beyond-death-theros-beyond-death-planeswalker-deck-elspeth",
+      "modifiedOn": "2019-12-20T18:52:34.923",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-01-24T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Decks are ready to play right out of the box and familiarize players with the characters, mechanics, and setting of Theros Beyond Death. They offer a great opportunity for players who are interested in Magic to learn the game.\r\n<br><br>\r\nContents: \r\n<br>• 1 ready-to-play 60-card deck featuring a foil planeswalker card\r\n<br>• 2 Theros Beyond Death Draft Boosters\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card*\r\n*Available only in certain regions"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 206256,
+        "lowPrice": 12.59,
+        "midPrice": 18.42,
+        "highPrice": 22,
+        "marketPrice": 14.88,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

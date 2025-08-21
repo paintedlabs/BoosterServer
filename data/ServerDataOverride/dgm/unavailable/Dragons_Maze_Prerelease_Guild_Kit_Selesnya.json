@@ -1,0 +1,101 @@
+{
+  "uuid": "f7dc1763-2f78-530d-acae-416f2308236a",
+  "name": "Dragons Maze Prerelease Guild Kit Selesnya",
+  "category": "limited_aid_tool",
+  "cardCount": 30,
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "cardtraderId": "47957",
+    "mcmId": "261875",
+    "tcgplayerProductId": "183295"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/cd82e37f2a86cc52"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "prerelease-selesnya",
+        "set": "rtr"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 4,
+        "name": "Dragons Maze Booster Pack",
+        "set": "dgm",
+        "uuid": "b9c1d8bb-29d1-5572-b3c3-26363ecfdada"
+      }
+    ],
+    "variable": [
+      {
+        "configs": [
+          {
+            "pack": [
+              {
+                "code": "prerelease-orzhov",
+                "set": "gtc"
+              },
+              {
+                "code": "prerelease-gruul",
+                "set": "gtc"
+              },
+              {
+                "code": "prerelease-boros",
+                "set": "gtc"
+              },
+              {
+                "code": "prerelease-simic",
+                "set": "gtc"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "DGM",
+  "setName": "Dragon's Maze",
+  "tcgcsvData": {
+    "product": {
+      "productId": 183295,
+      "name": "Dragon's Maze - Prerelease Guild Kit (Selesnya)",
+      "cleanName": "Dragons Maze Prerelease Guild Kit Selesnya",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/183295_200w.jpg",
+      "categoryId": 1,
+      "groupId": 570,
+      "url": "https://www.tcgplayer.com/product/183295/magic-dragons-maze-dragons-maze-prerelease-guild-kit-selesnya",
+      "modifiedOn": "2022-08-19T15:12:15.553",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contains:\r\n<br>• One Return to Ravnica Guild Booster Pack\r\n<br>• Four Dragon's Maze Booster Packs\r\n<br>• One Gatecrash Guild Booster Pack"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 183295,
+        "lowPrice": 39.99,
+        "midPrice": 40.59,
+        "highPrice": 41.19,
+        "marketPrice": 29.95,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

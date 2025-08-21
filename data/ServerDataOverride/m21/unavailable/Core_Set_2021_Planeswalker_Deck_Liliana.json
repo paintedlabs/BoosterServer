@@ -1,0 +1,74 @@
+{
+  "uuid": "639e32d8-aa88-5c64-9f1f-455c4bde54fd",
+  "name": "Core Set 2021 Planeswalker Deck Liliana",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2020-07-03",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1878057",
+    "cardKingdomId": "233870",
+    "cardtraderId": "133973",
+    "csiId": "297730",
+    "mcmId": "467339",
+    "tcgplayerProductId": "215464",
+    "tntId": "1605728"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/138e803f55d699d2"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Liliana, Death Mage",
+        "set": "m21"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2021 Draft Booster Pack",
+        "set": "m21",
+        "uuid": "61ee3ba9-54d4-55e6-8c49-3977d922f30e"
+      }
+    ]
+  },
+  "setCode": "M21",
+  "setName": "Core Set 2021",
+  "tcgcsvData": {
+    "product": {
+      "productId": 215464,
+      "name": "Core Set 2021 - Planeswalker Deck [Liliana]",
+      "cleanName": "Core Set 2021 Planeswalker Deck Liliana",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/215464_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2653,
+      "url": "https://www.tcgplayer.com/product/215464/magic-core-set-2021-core-set-2021-planeswalker-deck-liliana",
+      "modifiedOn": "2020-06-06T16:41:06.77",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-07-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contents:\r\n<br>• 1 ready-to-play 60-card deck featuring a foil planeswalker card\r\n<br>• 1 Core Set 2021 Draft Booster\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card*\r\n<br><em>*Available only in certain regions</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 215464,
+        "lowPrice": 17.99,
+        "midPrice": 32.97,
+        "highPrice": 44.99,
+        "marketPrice": 23.92,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

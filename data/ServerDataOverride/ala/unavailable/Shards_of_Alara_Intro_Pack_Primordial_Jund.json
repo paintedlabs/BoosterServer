@@ -1,0 +1,67 @@
+{
+  "uuid": "4a3ca7c6-f912-54b4-90ab-be34089ff5e0",
+  "name": "Shards of Alara Intro Pack Primordial Jund",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101163",
+    "cardKingdomId": "126135",
+    "cardtraderId": "47329",
+    "mcmId": "244172",
+    "scgId": "SLD-MTG-INT-ALAINTRO-EN-JUND",
+    "tcgplayerProductId": "278897",
+    "tntId": "183789"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/5f24f8fc61e6905b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Primordial Jund",
+        "set": "ala"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Shards of Alara Booster Pack",
+        "set": "ala",
+        "uuid": "53db9568-de5e-5a95-9882-b3b16ad4931c"
+      }
+    ]
+  },
+  "setCode": "ALA",
+  "setName": "Shards of Alara",
+  "tcgcsvData": {
+    "product": {
+      "productId": 278897,
+      "name": "Shards of Alara - Intro Pack - Primordial Jund",
+      "cleanName": "Shards of Alara Intro Pack Primordial Jund",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/278897_200w.jpg",
+      "categoryId": 1,
+      "groupId": 103,
+      "url": "https://www.tcgplayer.com/product/278897/magic-shards-of-alara-shards-of-alara-intro-pack-primordial-jund",
+      "modifiedOn": "2022-07-06T20:54:32.08",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 278897,
+        "lowPrice": 39.99,
+        "midPrice": 39.99,
+        "highPrice": 39.99,
+        "marketPrice": 38.98,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

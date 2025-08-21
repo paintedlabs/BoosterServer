@@ -1,0 +1,85 @@
+{
+  "uuid": "1d18989d-cf60-527c-8343-e66267520527",
+  "name": "Challenger Deck 2020 Display",
+  "category": "deck_box",
+  "releaseDate": "2019-04-12",
+  "subtype": "challenger",
+  "identifiers": {
+    "tcgplayerProductId": "209425",
+    "tntId": "1710057"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b2407231046a4f02"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Challenger Deck 2020 Allied Fires",
+        "set": "q04",
+        "uuid": "f900867d-05eb-56bc-a5af-4e61ddb85fe1"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2020 Cavalcade Charge",
+        "set": "q04",
+        "uuid": "80133799-1750-588b-84e1-0ed143a3c2b5"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2020 Final Adventure",
+        "set": "q04",
+        "uuid": "468bc4c6-9ccc-526d-8dab-8f0d5ab7cdd7"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2020 Flash of Ferocity",
+        "set": "q04",
+        "uuid": "d0b31bb5-4cea-555c-a63d-512ffa4774ea"
+      }
+    ]
+  },
+  "setCode": "Q04",
+  "setName": "Challenger Decks 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 209425,
+      "name": "Challenger Deck 2020 Display",
+      "cleanName": "Challenger Deck 2020 Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/209425_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/209425/magic-challenger-decks-challenger-deck-2020-display",
+      "modifiedOn": "2020-03-30T18:05:47.643",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each display contains 8 total Challenger Decks <em>(2 of each variant)</em>."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509925612"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 209425,
+        "lowPrice": 105.49,
+        "midPrice": 117.72,
+        "highPrice": 129.94,
+        "marketPrice": 101.04,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

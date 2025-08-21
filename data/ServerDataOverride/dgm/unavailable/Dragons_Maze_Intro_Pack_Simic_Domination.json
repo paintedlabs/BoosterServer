@@ -1,0 +1,74 @@
+{
+  "uuid": "31fc3902-b33f-5ffd-a72d-32bed0e46c23",
+  "name": "Dragons Maze Intro Pack Simic Domination",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100409",
+    "cardKingdomId": "189632",
+    "cardtraderId": "47946",
+    "csiId": "192762",
+    "mcmId": "261685",
+    "scgId": "SLD-MTG-INT-DGMINTRO-EN-SIMIC",
+    "tcgplayerProductId": "68032",
+    "tntId": "1026694"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/3f95d3428d8da780"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Simic Domination",
+        "set": "dgm"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Dragons Maze Booster Pack",
+        "set": "dgm",
+        "uuid": "b9c1d8bb-29d1-5572-b3c3-26363ecfdada"
+      }
+    ]
+  },
+  "setCode": "DGM",
+  "setName": "Dragon's Maze",
+  "tcgcsvData": {
+    "product": {
+      "productId": 68032,
+      "name": "Dragon's Maze - Intro Pack - Simic Domination",
+      "cleanName": "Dragons Maze Intro Pack Simic Domination",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/68032_200w.jpg",
+      "categoryId": 1,
+      "groupId": 570,
+      "url": "https://www.tcgplayer.com/product/68032/magic-dragons-maze-dragons-maze-intro-pack-simic-domination",
+      "modifiedOn": "2014-01-06T17:28:26.29",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 82207 3"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 68032,
+        "lowPrice": 15.18,
+        "midPrice": 17.93,
+        "highPrice": 24.99,
+        "marketPrice": 17.01,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

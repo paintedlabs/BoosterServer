@@ -1,0 +1,86 @@
+{
+  "uuid": "49b970e1-e9cf-5d66-bda3-5fdd3d3e93d8",
+  "name": "2015 Core Set Intro Pack Display",
+  "category": "deck_box",
+  "subtype": "intro",
+  "identifiers": {
+    "cardtraderId": "48165",
+    "mcmId": "267975",
+    "tcgplayerProductId": "90788"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/74afe001d323106c"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2015 Core Set Intro Pack Flames of the Dragon",
+        "set": "m15",
+        "uuid": "343f50c0-109b-5928-875e-bc7bff2a842c"
+      },
+      {
+        "count": 2,
+        "name": "2015 Core Set Intro Pack Hit the Ground Running",
+        "set": "m15",
+        "uuid": "0d740982-d6fb-5e4b-be8b-efd477ca0c39"
+      },
+      {
+        "count": 2,
+        "name": "2015 Core Set Intro Pack Infernal Intervention",
+        "set": "m15",
+        "uuid": "3946125d-e1b6-5033-939a-df1d77b7b888"
+      },
+      {
+        "count": 2,
+        "name": "2015 Core Set Intro Pack Price of Glory",
+        "set": "m15",
+        "uuid": "2451ca6a-58d5-5cd6-967f-a20efa0ea6cf"
+      },
+      {
+        "count": 2,
+        "name": "2015 Core Set Intro Pack Will of the Masses",
+        "set": "m15",
+        "uuid": "c0f43ef6-8c8c-5643-9877-f8dfc364802a"
+      }
+    ]
+  },
+  "setCode": "M15",
+  "setName": "Magic 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 90788,
+      "name": "Magic 2015 (M15) - Intro Pack Display",
+      "cleanName": "Magic 2015 M15 Intro Pack Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/90788_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1293,
+      "url": "https://www.tcgplayer.com/product/90788/magic-magic-2015-m15-magic-2015-m15-intro-pack-display",
+      "modifiedOn": "2021-08-05T16:38:27.28",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Sealed intro pack display box"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 90788,
+        "lowPrice": 179.99,
+        "midPrice": 179.99,
+        "highPrice": 179.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

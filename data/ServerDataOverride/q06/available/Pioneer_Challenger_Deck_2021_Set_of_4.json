@@ -1,0 +1,87 @@
+{
+  "uuid": "c703f1aa-3e3e-501a-bd71-06974975d0c5",
+  "name": "Pioneer Challenger Deck 2021 Set of 4",
+  "category": "subset",
+  "releaseDate": "2019-04-12",
+  "subtype": "challenger",
+  "identifiers": {
+    "cardtraderId": "166702",
+    "csiId": "323566",
+    "mcmId": "576515",
+    "tcgplayerProductId": "247374"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/70a6ad093cec77f4"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Pioneer Challenger Deck 2021 Azorius Spirits",
+        "set": "q06",
+        "uuid": "d8dddd6e-2a67-50fa-b742-c9e96744a14d"
+      },
+      {
+        "count": 1,
+        "name": "Pioneer Challenger Deck 2021 Lotus Field Combo",
+        "set": "q06",
+        "uuid": "c654b999-069f-5af8-8e41-87d6282f9dfd"
+      },
+      {
+        "count": 1,
+        "name": "Pioneer Challenger Deck 2021 Mono Red Burn",
+        "set": "q06",
+        "uuid": "0e4f2f42-05f6-588d-869d-7069bcbc0a54"
+      },
+      {
+        "count": 1,
+        "name": "Pioneer Challenger Deck 2021 Orzhov Auras",
+        "set": "q06",
+        "uuid": "767f98c1-2ddd-5984-82aa-25d79c92d4d3"
+      }
+    ]
+  },
+  "setCode": "Q06",
+  "setName": "Pioneer Challenger Decks 2021",
+  "tcgcsvData": {
+    "product": {
+      "productId": 247374,
+      "name": "Pioneer Challenger Deck 2021 (Set of 4)",
+      "cleanName": "Pioneer Challenger Deck 2021 Set of 4",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/247374_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/247374/magic-challenger-decks-pioneer-challenger-deck-2021-set-of-4",
+      "modifiedOn": "2021-10-15T04:03:10.69",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "A Challenger Decks (set of 4) comes with one of each deck. Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509925612"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 247374,
+        "lowPrice": 149.99,
+        "midPrice": 155.96,
+        "highPrice": 199.99,
+        "marketPrice": 129.88,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

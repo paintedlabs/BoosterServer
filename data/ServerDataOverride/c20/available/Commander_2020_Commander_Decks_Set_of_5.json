@@ -1,0 +1,97 @@
+{
+  "uuid": "a0c0d3ce-dbac-5b5b-ad93-c4d139053f1e",
+  "name": "Commander 2020 Commander Decks Set of 5",
+  "category": "subset",
+  "releaseDate": "2020-05-15",
+  "subtype": "commander",
+  "identifiers": {
+    "cardKingdomId": "232119",
+    "cardtraderId": "107984",
+    "csiId": "294240",
+    "mcmId": "427021",
+    "scgId": "SLD-MTG-MLT-C20-EN-SET5",
+    "tcgplayerProductId": "210830",
+    "tntId": "1655626"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/d503fbc9cf99e754",
+    "tcgplayer": "https://mtgjson.com/links/dabb2ca9c7dc158f"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander 2020 Commander Deck Arcane Maelstrom",
+        "set": "c20",
+        "uuid": "b3a6def6-6753-5337-913e-fd9b12ca2853"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2020 Commander Deck Enhanced Evolution",
+        "set": "c20",
+        "uuid": "e222d962-d657-5196-847d-17b058fc611c"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2020 Commander Deck Ruthless Regiment",
+        "set": "c20",
+        "uuid": "06e5e5b7-e14e-508f-86d4-5e98b3400a83"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2020 Commander Deck Symbiotic Swarm",
+        "set": "c20",
+        "uuid": "de32390a-b029-5686-a778-f4fa8847ab5a"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2020 Commander Deck Timeless Wisdom",
+        "set": "c20",
+        "uuid": "c284f5ec-c761-559e-b53e-68d94e93d109"
+      }
+    ]
+  },
+  "setCode": "C20",
+  "setName": "Commander 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 210830,
+      "name": "Commander 2020 - Set of 5",
+      "cleanName": "Commander 2020 Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/210830_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2634,
+      "url": "https://www.tcgplayer.com/product/210830/magic-commander-2020-commander-2020-set-of-5",
+      "modifiedOn": "2020-05-08T22:45:00.02",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-05-15T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Collect one of each of the 5 Commander 2020 decks themed around Ikoria: Lair of Behemoths."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509943586"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 210830,
+        "lowPrice": 219.99,
+        "midPrice": 244.72,
+        "highPrice": 9999.99,
+        "marketPrice": 230.67,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "uuid": "4c151eb7-5bc8-5d09-8a90-7ee288a8c174",
+  "name": "Guilds of Ravnica Guild Kit Dimir",
+  "category": "kit",
+  "cardCount": 60,
+  "releaseDate": "2018-11-02",
+  "subtype": "guild_kit",
+  "identifiers": {
+    "abuId": "1537070",
+    "cardKingdomId": "222338",
+    "cardtraderId": "169306",
+    "csiId": "263961",
+    "mcmId": "364604",
+    "scgId": "SLD-MTG-BXS-GK1-EN-DIMIR",
+    "tcgplayerProductId": "173367",
+    "tntId": "1194098"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/965624c251878c96",
+    "tcgplayer": "https://mtgjson.com/links/4e23adf126fcc3ff"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dimir",
+        "set": "gk1"
+      }
+    ],
+    "other": [
+      {
+        "name": "Guild Kit Spindown"
+      },
+      {
+        "name": "Official Dimir Guild Pin"
+      },
+      {
+        "name": "Dimir Symbol Sticker"
+      },
+      {
+        "name": "Insert With Mission Instructions"
+      }
+    ]
+  },
+  "setCode": "GK1",
+  "setName": "GRN Guild Kit",
+  "tcgcsvData": {
+    "product": {
+      "productId": 173367,
+      "name": "Guilds of Ravnica - Guild Kit: Dimir",
+      "cleanName": "Guilds of Ravnica Guild Kit Dimir",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/173367_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2334,
+      "url": "https://www.tcgplayer.com/product/173367/magic-guilds-of-ravnica-guild-kits-guilds-of-ravnica-guild-kit-dimir",
+      "modifiedOn": "2018-09-26T15:32:20.72",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-11-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "On Ravnica, whoever you are—soldier or scientist, merchant or spy—your guild is the core of your identity. It provides structure and greater purpose. Now, the time has come to defend it.\r\n<br>\r\n<br>Contains:\r\n<br>• 1 ready-to-play 60-card Dimir (blue/black) deck\r\n<br>• 1 Spindown life counter\r\n<br>• 1 official Dimir guild pin\r\n<br>• 1 Dimir guild symbol sticker\r\n<br>• 1 insert with mission instructions"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 173367,
+        "lowPrice": 33.2,
+        "midPrice": 34.94,
+        "highPrice": 49.99,
+        "marketPrice": 30.18,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

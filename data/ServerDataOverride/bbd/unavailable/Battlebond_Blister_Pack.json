@@ -1,0 +1,65 @@
+{
+  "uuid": "73401c64-5e13-5cbc-b961-7bb7f32b7e7e",
+  "name": "Battlebond Blister Pack",
+  "category": "limited_aid_tool",
+  "subtype": "sealed_set",
+  "identifiers": {
+    "tcgplayerProductId": "175239"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/32682ca3a95f103f"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Battlebond Booster Pack",
+        "set": "bbd",
+        "uuid": "7483f37d-039c-5f4a-ae7c-b2a191d6f5fd"
+      }
+    ]
+  },
+  "setCode": "BBD",
+  "setName": "Battlebond",
+  "tcgcsvData": {
+    "product": {
+      "productId": 175239,
+      "name": "Battlebond Blister Pack - Includes 6 Battlebond Booster Packs",
+      "cleanName": "Battlebond Blister Pack Includes 6 Battlebond Booster Packs",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/175239_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2245,
+      "url": "https://www.tcgplayer.com/product/175239/magic-battlebond-battlebond-blister-pack-includes-6-battlebond-booster-packs",
+      "modifiedOn": "2018-09-04T20:23:14.263",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Blister pack for Battlebond that includes 6 sealed booster packs."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "689355167516"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 175239,
+        "lowPrice": 51.99,
+        "midPrice": 70.99,
+        "highPrice": 9999.99,
+        "marketPrice": 51.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

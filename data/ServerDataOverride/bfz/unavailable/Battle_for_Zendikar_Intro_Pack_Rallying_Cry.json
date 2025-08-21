@@ -1,0 +1,73 @@
+{
+  "uuid": "38f4a6ac-93ee-5d8a-a26e-0f02b9c8fdad",
+  "name": "Battle for Zendikar Intro Pack Rallying Cry",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100152",
+    "cardKingdomId": "202476",
+    "cardtraderId": "48347",
+    "csiId": "213629",
+    "mcmId": "284350",
+    "tcgplayerProductId": "102719",
+    "tntId": "1079425"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f0bde9eb033a51c9"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Rallying Cry",
+        "set": "bfz"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Battle for Zendikar Booster Pack",
+        "set": "bfz",
+        "uuid": "37e28375-f5ba-51e8-8e11-b6830a33b669"
+      }
+    ]
+  },
+  "setCode": "BFZ",
+  "setName": "Battle for Zendikar",
+  "tcgcsvData": {
+    "product": {
+      "productId": 102719,
+      "name": "Battle for Zendikar - Intro Pack - Rallying Cry",
+      "cleanName": "Battle for Zendikar Intro Pack Rallying Cry",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/102719_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1645,
+      "url": "https://www.tcgplayer.com/product/102719/magic-battle-for-zendikar-battle-for-zendikar-intro-pack-rallying-cry",
+      "modifiedOn": "2021-08-05T13:52:08.757",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Battle for Zendikar booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 102719,
+        "lowPrice": 15,
+        "midPrice": 22.99,
+        "highPrice": 24.98,
+        "marketPrice": 21.04,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

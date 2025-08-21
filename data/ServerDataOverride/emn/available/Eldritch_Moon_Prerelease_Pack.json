@@ -1,0 +1,503 @@
+{
+  "uuid": "083ca310-ed1d-5b7f-9a76-8dca838d6cd3",
+  "name": "Eldritch Moon Prerelease Pack",
+  "category": "limited_aid_tool",
+  "releaseDate": "2016-06-20",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "1107851",
+    "cardKingdomId": "208089",
+    "cardtraderId": "48438",
+    "mcmId": "290909",
+    "tcgplayerProductId": "120775"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/545d09d8ffcaf7eb"
+  },
+  "setCode": "EMN",
+  "setName": "Eldritch Moon",
+  "extendedData": {
+    "code": "emn-prerelease",
+    "boosters": [
+      {
+        "sheets": {
+          "prerelease_promo": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "prerelease_promo": {
+        "total_weight": 108,
+        "cards": [
+          {
+            "set": "pemn",
+            "number": "2s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "2b25cb0a-064c-545a-bd50-41b8d6d1c9e9"
+          },
+          {
+            "set": "pemn",
+            "number": "3s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e5b4b25d-a1a4-5e8a-a2c6-676282d8e9ee"
+          },
+          {
+            "set": "pemn",
+            "number": "5s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7269d93e-e220-5e6d-951b-3b01cca4eea0"
+          },
+          {
+            "set": "pemn",
+            "number": "6s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "2c80e1c5-90b0-5d68-ad4f-4ceb1a4e5e42"
+          },
+          {
+            "set": "pemn",
+            "number": "7s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b9ed9a16-5391-5a11-bf63-f2a4e6e44835"
+          },
+          {
+            "set": "pemn",
+            "number": "15as",
+            "weight": 2,
+            "foil": true,
+            "uuid": "45272fb2-2ad7-5057-ae0a-8af19aca0bca"
+          },
+          {
+            "set": "pemn",
+            "number": "17s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "db873f54-6072-5dad-9ac5-dc91e245d64d"
+          },
+          {
+            "set": "pemn",
+            "number": "20s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ca45e7d2-a1c7-50d0-abc7-d7b7286dbb1b"
+          },
+          {
+            "set": "pemn",
+            "number": "28s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "46b6d569-0deb-58e3-af91-f4652dd709bc"
+          },
+          {
+            "set": "pemn",
+            "number": "37s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f2d25152-0adb-5715-b249-88b4708e822e"
+          },
+          {
+            "set": "pemn",
+            "number": "39s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2001a0e4-fb7e-53e2-b178-ea69343b8000"
+          },
+          {
+            "set": "pemn",
+            "number": "40s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9b8d2227-8f73-57b3-8672-e9a74c297ccf"
+          },
+          {
+            "set": "pemn",
+            "number": "41s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "49a6ea88-022d-5816-ad17-f5db35f87296"
+          },
+          {
+            "set": "pemn",
+            "number": "46s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "33c3de3f-1662-522c-aa27-3a658ffbf48e"
+          },
+          {
+            "set": "pemn",
+            "number": "47s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "01ab5102-ae98-57d6-aa06-4028f75eb835"
+          },
+          {
+            "set": "pemn",
+            "number": "51s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2306bde2-5282-5e51-b79a-428be9c6c300"
+          },
+          {
+            "set": "pemn",
+            "number": "56sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f24f3ca0-0a08-5818-b3a1-735dbc60e3fe"
+          },
+          {
+            "set": "pemn",
+            "number": "64s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "734e9eb3-d86b-564d-9553-4ffb48b5e13a"
+          },
+          {
+            "set": "pemn",
+            "number": "65s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "e2afa001-e0d1-581d-a0cf-4c6b8b7d3c8e"
+          },
+          {
+            "set": "pemn",
+            "number": "69s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "5d47b821-7715-55a7-ac0b-266abffc67f5"
+          },
+          {
+            "set": "pemn",
+            "number": "70s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "160f201e-2775-506b-8c24-c4d4360a9c7c"
+          },
+          {
+            "set": "pemn",
+            "number": "72s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1377c433-bb63-58e1-8f50-68f5c74792a5"
+          },
+          {
+            "set": "pemn",
+            "number": "75s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2d10a068-d92b-5db4-b099-e636db2be5fe"
+          },
+          {
+            "set": "pemn",
+            "number": "80s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "3a9b35b0-f19b-523a-82f2-2d9a2440e7de"
+          },
+          {
+            "set": "pemn",
+            "number": "85s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d55530ec-687c-5d63-9389-748c03634770"
+          },
+          {
+            "set": "pemn",
+            "number": "86s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "64286a75-a9db-53b7-bc32-917d332a0a82"
+          },
+          {
+            "set": "pemn",
+            "number": "87s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "fe91407a-43b0-5df5-8cf8-11e8b1d6e4cb"
+          },
+          {
+            "set": "pemn",
+            "number": "93s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "8dfb08c9-cc3f-512d-b59c-4c816a4133f4"
+          },
+          {
+            "set": "pemn",
+            "number": "98s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "de3ad44e-6ca3-5f3b-a8fc-be3719d45cae"
+          },
+          {
+            "set": "pemn",
+            "number": "99s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b9aea6f3-d201-5aeb-82a0-9b8e965b08f4"
+          },
+          {
+            "set": "pemn",
+            "number": "106s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "85c850db-0d3a-5a12-b75f-87d9a111d44c"
+          },
+          {
+            "set": "pemn",
+            "number": "109s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "6c7a6f63-cd1e-5d53-a6f3-cf1a27bb7a64"
+          },
+          {
+            "set": "pemn",
+            "number": "111sa",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f150f866-4375-56d2-97e7-5bac1c94941c"
+          },
+          {
+            "set": "pemn",
+            "number": "117s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2bb02b5d-b16c-544c-ae09-7409c58d43a7"
+          },
+          {
+            "set": "pemn",
+            "number": "118s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a0c81128-ae07-5a8f-a4a1-021e30913053"
+          },
+          {
+            "set": "pemn",
+            "number": "123s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "53b608c1-2970-5538-b414-1ae881629b0a"
+          },
+          {
+            "set": "pemn",
+            "number": "130as",
+            "weight": 2,
+            "foil": true,
+            "uuid": "357336ce-6af5-5b5f-9738-7cc1f04d6ec1"
+          },
+          {
+            "set": "pemn",
+            "number": "131s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2ac1c982-b1de-506a-af64-aea5e1b17811"
+          },
+          {
+            "set": "pemn",
+            "number": "132s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c9c78788-af30-5c83-99e6-521e005a628d"
+          },
+          {
+            "set": "pemn",
+            "number": "136s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ee6c6b5f-b6ec-5197-b6aa-7d9ed1cbeaab"
+          },
+          {
+            "set": "pemn",
+            "number": "137s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "0785b5d6-bbb7-59f4-9a5d-bfd12ba53767"
+          },
+          {
+            "set": "pemn",
+            "number": "146s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "c4f94f48-f8ae-508f-9690-014d2ecde449"
+          },
+          {
+            "set": "pemn",
+            "number": "155s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6430da9a-ee2f-550e-9f44-5f86852c844c"
+          },
+          {
+            "set": "pemn",
+            "number": "156s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b56fae81-4800-505a-8930-70b30f1b757b"
+          },
+          {
+            "set": "pemn",
+            "number": "162s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "91ab8bbf-f1db-5362-a774-b4dd8331c677"
+          },
+          {
+            "set": "pemn",
+            "number": "165s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "afaa8c36-ea72-52cb-90aa-622af96122b5"
+          },
+          {
+            "set": "pemn",
+            "number": "170s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a467d909-5012-5265-b497-7f7feaad5ca4"
+          },
+          {
+            "set": "pemn",
+            "number": "171s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "12909d1e-6d45-5387-9313-a9d60c0fd7c3"
+          },
+          {
+            "set": "pemn",
+            "number": "176s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "196f1b9d-5175-5547-a383-e0a8ae6d7b70"
+          },
+          {
+            "set": "pemn",
+            "number": "181s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b2218831-0475-5c23-92b0-6baadb7cf5df"
+          },
+          {
+            "set": "pemn",
+            "number": "183s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "1d433c8c-4764-59be-a975-6c056e45836e"
+          },
+          {
+            "set": "pemn",
+            "number": "184s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "46c16de6-f819-5178-aa81-4ef85015b393"
+          },
+          {
+            "set": "pemn",
+            "number": "185s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "df6ec7ec-3336-5617-b55f-66008ac474fb"
+          },
+          {
+            "set": "pemn",
+            "number": "189s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "df8dc24e-577a-5b69-ab18-04c34a186ae1"
+          },
+          {
+            "set": "pemn",
+            "number": "190s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "225d3d70-8bca-56f6-a775-ae1c5c61d9c2"
+          },
+          {
+            "set": "pemn",
+            "number": "191sa",
+            "weight": 1,
+            "foil": true,
+            "uuid": "2e2e99a0-d76d-5b14-a544-75423e8dac21"
+          },
+          {
+            "set": "pemn",
+            "number": "197s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "bec72c40-43c5-5326-a177-06d5849188e8"
+          },
+          {
+            "set": "pemn",
+            "number": "199s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d62b9272-bfbe-5866-8d46-652b436e792e"
+          },
+          {
+            "set": "pemn",
+            "number": "200s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "a56b6ac9-40db-5798-8ab6-440af5b2c14f"
+          },
+          {
+            "set": "pemn",
+            "number": "203s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "44de88f8-082e-522f-b2ba-8f05e527a051"
+          },
+          {
+            "set": "pemn",
+            "number": "204s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "cd64fa60-1cac-5a26-a37a-9bd33742bbe9"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "pemn"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 120775,
+      "name": "Eldritch Moon - Prerelease Pack",
+      "cleanName": "Eldritch Moon Prerelease Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/120775_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1790,
+      "url": "https://www.tcgplayer.com/product/120775/magic-eldritch-moon-eldritch-moon-prerelease-pack",
+      "modifiedOn": "2021-07-07T13:50:44.523",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Eldritch Moon Prerelease Pack comes with the following:\r\n<br>\r\n<br>• 4 Eldritch Moon Booster Packs\r\n<br>• 2 Shadows over Innistrad Booster Packs\r\n<br>• 1 spindown d20\r\n<br>• 1 random Eldritch Moon Prerelease Promo and 1 <a href=\"http://shop.tcgplayer.com/magic/prerelease-cards/zombie-token-double-sided\">Zombie Token (Double-sided)</a>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 120775,
+        "lowPrice": 59.95,
+        "midPrice": 68.99,
+        "highPrice": 84.99,
+        "marketPrice": 68.91,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

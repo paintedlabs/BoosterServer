@@ -1,0 +1,68 @@
+{
+  "uuid": "b1b7c4a8-d09b-5dbb-9cee-66bdd73347c2",
+  "name": "Return to Ravnica Intro Pack Golgari Growth",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2012-10-05",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101080",
+    "cardKingdomId": "188119",
+    "cardtraderId": "47826",
+    "mcmId": "258300",
+    "scgId": "SLD-MTG-INT-RTRINTRO-EN-GOLGARI",
+    "tcgplayerProductId": "66479",
+    "tntId": "804400"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2c70f80a73c607ef"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Golgari Growth",
+        "set": "rtr"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Return to Ravnica Booster Pack",
+        "set": "rtr",
+        "uuid": "1772b60a-f041-51d9-b86b-dc79d6b65070"
+      }
+    ]
+  },
+  "setCode": "RTR",
+  "setName": "Return to Ravnica",
+  "tcgcsvData": {
+    "product": {
+      "productId": 66479,
+      "name": "Return to Ravnica - Intro Pack - Golgari Growth",
+      "cleanName": "Return to Ravnica Intro Pack Golgari Growth",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/66479_200w.jpg",
+      "categoryId": 1,
+      "groupId": 370,
+      "url": "https://www.tcgplayer.com/product/66479/magic-return-to-ravnica-return-to-ravnica-intro-pack-golgari-growth",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2012-10-05T00:00:00",
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 66479,
+        "lowPrice": 49.88,
+        "midPrice": 49.89,
+        "highPrice": 49.9,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

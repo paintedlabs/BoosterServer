@@ -1,0 +1,74 @@
+{
+  "uuid": "1f778b30-fced-5a87-8b15-bd8d8f629a27",
+  "name": "Core Set 2021 Planeswalker Deck Basri",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2020-07-03",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1878053",
+    "cardKingdomId": "233868",
+    "cardtraderId": "133971",
+    "csiId": "297728",
+    "mcmId": "467329",
+    "tcgplayerProductId": "215468",
+    "tntId": "1605725"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/55694d779ef3727d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Basri, Devoted Paladin",
+        "set": "m21"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2021 Draft Booster Pack",
+        "set": "m21",
+        "uuid": "61ee3ba9-54d4-55e6-8c49-3977d922f30e"
+      }
+    ]
+  },
+  "setCode": "M21",
+  "setName": "Core Set 2021",
+  "tcgcsvData": {
+    "product": {
+      "productId": 215468,
+      "name": "Core Set 2021 - Planeswalker Deck [Basri]",
+      "cleanName": "Core Set 2021 Planeswalker Deck Basri",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/215468_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2653,
+      "url": "https://www.tcgplayer.com/product/215468/magic-core-set-2021-core-set-2021-planeswalker-deck-basri",
+      "modifiedOn": "2020-06-06T16:40:50.017",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-07-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contents:\r\n<br>• 1 ready-to-play 60-card deck featuring a foil planeswalker card\r\n<br>• 1 Core Set 2021 Draft Booster\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card*\r\n<br><em>*Available only in certain regions</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 215468,
+        "lowPrice": 16.75,
+        "midPrice": 19.99,
+        "highPrice": 22,
+        "marketPrice": 14.93,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

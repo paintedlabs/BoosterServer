@@ -1,0 +1,65 @@
+{
+  "uuid": "24395f29-3479-58e9-a398-00f1816ed914",
+  "name": "Scourge Theme Deck Goblin Mob",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1101120",
+    "cardKingdomId": "1540",
+    "cardtraderId": "46498",
+    "mcmId": "253708",
+    "scgId": "SLD-MTG-INT-SCGTHEME-JA-GOBLIN",
+    "tcgplayerProductId": "174318",
+    "tntId": "108326"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/78e98c2cab7173f4"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Goblin Mob",
+        "set": "scg"
+      }
+    ]
+  },
+  "setCode": "SCG",
+  "setName": "Scourge",
+  "tcgcsvData": {
+    "product": {
+      "productId": 174318,
+      "name": "Scourge Theme Deck - Goblin Mob",
+      "cleanName": "Scourge Theme Deck Goblin Mob",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/174318_200w.jpg",
+      "categoryId": 1,
+      "groupId": 101,
+      "url": "https://www.tcgplayer.com/product/174318/magic-scourge-scourge-theme-deck-goblin-mob",
+      "modifiedOn": "2019-11-20T16:41:16.393",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Welcome to the wonderful world of Goblins. This deck is definitely not about the long game-it's about playing creatures quickly and attacking with them. With over twenty creatures that cost three mana or less, you should be able to get out a horde of the little monsters before your opponent has much of a defense set up."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 174318,
+        "lowPrice": 119.99,
+        "midPrice": 119.99,
+        "highPrice": 119.99,
+        "marketPrice": 129.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "uuid": "0eae7c3b-a536-5130-bc7a-63c986b557cd",
+  "name": "The Brothers' War Commander Deck Display",
+  "category": "deck_box",
+  "releaseDate": "2022-11-18",
+  "subtype": "commander",
+  "identifiers": {
+    "tcgplayerProductId": "450084"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2ba7956cc6b2d9bd"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "The Brothers' War Commander Deck Urzas Iron Alliance",
+        "set": "brc",
+        "uuid": "00a77e73-c3b5-5a7a-b4b8-ad3d1be4e754"
+      },
+      {
+        "count": 2,
+        "name": "The Brothers' War Commander Deck Mishras Burnished Banner",
+        "set": "brc",
+        "uuid": "6edfabcd-4df0-5f4c-82c1-ea7d54fdb058"
+      }
+    ]
+  },
+  "setCode": "BRC",
+  "setName": "The Brothers' War Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 450084,
+      "name": "The Brothers' War - Commander Deck Display",
+      "cleanName": "The Brothers War Commander Deck Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/450084_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3159,
+      "url": "https://www.tcgplayer.com/product/450084/magic-commander-the-brothers-war-the-brothers-war-commander-deck-display",
+      "modifiedOn": "2022-11-18T05:04:15.63",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-11-18T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Brothers' War - Commander Deck Display contains 4 The Brothers' War Commander decks."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166150635"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 450084,
+        "lowPrice": 549.49,
+        "midPrice": 549.49,
+        "highPrice": 549.49,
+        "marketPrice": 248.77,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

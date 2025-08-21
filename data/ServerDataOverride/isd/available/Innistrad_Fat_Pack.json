@@ -1,0 +1,81 @@
+{
+  "uuid": "67b41610-4941-50ce-968b-0be5fcc3b663",
+  "name": "Innistrad Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1107881",
+    "cardKingdomId": "185513",
+    "cardtraderId": "47674",
+    "csiId": "153875",
+    "mcmId": "250570",
+    "scgId": "SLD-MTG-BUN-ISD-EN",
+    "tcgplayerProductId": "47788",
+    "tntId": "319958"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b0911098935d12f5"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Innistrad Players Guide"
+      },
+      {
+        "name": "70-card Basic Land Bundle"
+      },
+      {
+        "name": "Innistrad Spindown Life Counter"
+      },
+      {
+        "name": "Two 60-card Deck Boxes"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 9,
+        "name": "Innistrad Booster Pack",
+        "set": "isd",
+        "uuid": "b1a6cf3f-d005-5dfa-a593-677ca5401563"
+      }
+    ]
+  },
+  "setCode": "ISD",
+  "setName": "Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 47788,
+      "name": "Innistrad - Fat Pack",
+      "cleanName": "Innistrad Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/47788_200w.jpg",
+      "categoryId": 1,
+      "groupId": 59,
+      "url": "https://www.tcgplayer.com/product/47788/magic-innistrad-innistrad-fat-pack",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "653569664444"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 47788,
+        "lowPrice": 299.95,
+        "midPrice": 399.97,
+        "highPrice": 499.99,
+        "marketPrice": 283.56,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

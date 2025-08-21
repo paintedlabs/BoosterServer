@@ -1,0 +1,76 @@
+{
+  "uuid": "5ebd9311-3598-5473-acdd-5c5ae603f366",
+  "name": "Hour of Devastation Planeswalker Deck Nicol Bolas",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2017-07-14",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1477011",
+    "cardKingdomId": "212882",
+    "cardtraderId": "48560",
+    "csiId": "232590",
+    "mcmId": "298473",
+    "scgId": "SLD-MTG-INT-HOUPWDECK-EN-BOLAS",
+    "tcgplayerProductId": "134894",
+    "tntId": "1102283"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/39cacfbd7b7f7b4a",
+    "tcgplayer": "https://mtgjson.com/links/ea24ac92910f5aaa"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Nicol Bolas, the Deceiver",
+        "set": "hou"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Hour of Devastation Booster Pack",
+        "set": "hou",
+        "uuid": "e3af734e-d2eb-557b-9187-cd487d9ae46c"
+      }
+    ]
+  },
+  "setCode": "HOU",
+  "setName": "Hour of Devastation",
+  "tcgcsvData": {
+    "product": {
+      "productId": 134894,
+      "name": "Hour of Devastation - Planeswalker Deck [Nicol Bolas]",
+      "cleanName": "Hour of Devastation Planeswalker Deck Nicol Bolas",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/134894_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1934,
+      "url": "https://www.tcgplayer.com/product/134894/magic-hour-of-devastation-hour-of-devastation-planeswalker-deck-nicol-bolas",
+      "modifiedOn": "2017-06-22T17:04:39.96",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-07-14T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring <a href=\"http://shop.tcgplayer.com/magic/hour-of-devastation/nicol-bolas-the-deceiver\">\"Nicol Bolas, the Deceiver\"</a>. This deck contains the following:\r\n<br><ul>\r\n    <li>1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card </li>\r\n    <li>2 Hour of Devastation booster packs</li>\r\n    <li>1 Strategy insert</li>\r\n    <li>1 Magic learn-to-play guide</li>\r\n</ul>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 134894,
+        "lowPrice": 75.99,
+        "midPrice": 88.88,
+        "highPrice": 149.99,
+        "marketPrice": 82.66,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

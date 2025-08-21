@@ -1,0 +1,65 @@
+{
+  "uuid": "65a22799-9165-5a62-b7f6-1c175b131a24",
+  "name": "Innistrad Event Deck Hold the Line",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "event",
+  "identifiers": {
+    "abuId": "1100598",
+    "cardKingdomId": "186162",
+    "cardtraderId": "47681",
+    "mcmId": "251811",
+    "scgId": "SLD-MTG-INT-ISDEVENT-EN-HOLD",
+    "tcgplayerProductId": "56988",
+    "tntId": "323596"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/7d70f71ba140ffae"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Hold The Line",
+        "set": "isd"
+      }
+    ]
+  },
+  "setCode": "ISD",
+  "setName": "Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 56988,
+      "name": "Innistrad - Event Deck - Hold the Line",
+      "cleanName": "Innistrad Event Deck Hold the Line",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/56988_200w.jpg",
+      "categoryId": 1,
+      "groupId": 59,
+      "url": "https://www.tcgplayer.com/product/56988/magic-innistrad-innistrad-event-deck-hold-the-line",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 53569 66446 8"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 56988,
+        "lowPrice": 33.15,
+        "midPrice": 36.56,
+        "highPrice": 39.99,
+        "marketPrice": 34.05,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

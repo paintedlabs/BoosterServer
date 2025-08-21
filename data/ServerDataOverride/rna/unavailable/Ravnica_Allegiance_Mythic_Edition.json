@@ -1,0 +1,144 @@
+{
+  "uuid": "05c8a300-b744-5da2-882d-71318a32be82",
+  "name": "Ravnica Allegiance Mythic Edition",
+  "category": "bundle",
+  "cardCount": 8,
+  "releaseDate": "2019-01-14",
+  "subtype": "premium",
+  "identifiers": {
+    "cardKingdomId": "223910",
+    "cardtraderId": "49877",
+    "csiId": "272206",
+    "mcmId": "368641",
+    "scgId": "SLD-MTG-BXS-MED_RNA-EN",
+    "tcgplayerProductId": "183453",
+    "tntId": "1458689"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/581f037f5065d1d8",
+    "tcgplayer": "https://mtgjson.com/links/91722f41e097257f"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Karn, Scion of Urza",
+        "number": "RA1",
+        "set": "med",
+        "uuid": "26e3b92f-c681-5259-8a7c-e47358448a70"
+      },
+      {
+        "foil": true,
+        "name": "Tamiyo, the Moon Sage",
+        "number": "RA2",
+        "set": "med",
+        "uuid": "36ba29c1-a992-524c-aafc-3a0f0e50ff40"
+      },
+      {
+        "foil": true,
+        "name": "Sorin Markov",
+        "number": "RA3",
+        "set": "med",
+        "uuid": "aec8de3b-831a-5f8e-a908-486d17c4521a"
+      },
+      {
+        "foil": true,
+        "name": "Jaya Ballard",
+        "number": "RA4",
+        "set": "med",
+        "uuid": "44fe6324-8496-5079-a819-a801fc1e48b5"
+      },
+      {
+        "foil": true,
+        "name": "Ajani, Mentor of Heroes",
+        "number": "RA5",
+        "set": "med",
+        "uuid": "894bd936-fe9e-5625-8b76-47ecc92496ec"
+      },
+      {
+        "foil": true,
+        "name": "Dack Fayden",
+        "number": "RA6",
+        "set": "med",
+        "uuid": "17ab371f-f824-53c6-bd56-d3c7b788ac2d"
+      },
+      {
+        "foil": true,
+        "name": "Domri, Chaos Bringer",
+        "number": "RA7",
+        "set": "med",
+        "uuid": "6b81a2de-ebb5-53f0-b5f0-9b7f647e8031"
+      },
+      {
+        "foil": true,
+        "name": "Kaya, Orzhov Usurper",
+        "number": "RA8",
+        "set": "med",
+        "uuid": "55d38d39-7f03-5d18-a8ba-f8622e219619"
+      }
+    ],
+    "other": [
+      {
+        "name": "Construct Token"
+      },
+      {
+        "name": "Dack Fayden Emblem"
+      },
+      {
+        "name": "Domri, Chaos Bringer Emblem"
+      },
+      {
+        "name": "Jaya Ballard Emblem"
+      },
+      {
+        "name": "Tamiyo, the Moon Sage Emblem"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 24,
+        "name": "Ravnica Allegiance Booster Pack",
+        "set": "rna",
+        "uuid": "7987f0d7-43b4-59c7-80fd-2c34507af71d"
+      }
+    ]
+  },
+  "setCode": "RNA",
+  "setName": "Ravnica Allegiance",
+  "tcgcsvData": {
+    "product": {
+      "productId": 183453,
+      "name": "Ravnica Allegiance: Mythic Edition",
+      "cleanName": "Ravnica Allegiance Mythic Edition",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/183453_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2386,
+      "url": "https://www.tcgplayer.com/product/183453/magic-mythic-edition-ravnica-allegiance-ravnica-allegiance-mythic-edition",
+      "modifiedOn": "2019-06-10T12:14:07.37",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Draft-sized (24 pack) box of Ravnica Allegiance, with the twist that eight packs (they'll be clearly marked) will each come with one of 8 different foil planeswalker cards inside the pack (plus the normal rare or mythic rare card). You will know which packs have these special planeswalkers, so this can make for an exciting Draft experience. <em>There will be limited quantities of Ravnica Allegiance Mythic Edition</em>."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 183453,
+        "lowPrice": 171,
+        "midPrice": 220,
+        "highPrice": 375,
+        "marketPrice": 171.68,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

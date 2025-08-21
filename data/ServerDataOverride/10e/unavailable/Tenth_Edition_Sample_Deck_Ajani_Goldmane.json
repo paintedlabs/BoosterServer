@@ -1,0 +1,49 @@
+{
+  "uuid": "3210bf43-80f4-5ae4-be77-f65848791205",
+  "name": "Tenth Edition Sample Deck Ajani Goldmane",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47395",
+    "mcmId": "287565"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "White Deck A",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "White Deck B",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "10E",
+  "setName": "Tenth Edition"
+}

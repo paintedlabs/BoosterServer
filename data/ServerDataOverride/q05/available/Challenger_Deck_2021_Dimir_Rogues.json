@@ -1,0 +1,71 @@
+{
+  "uuid": "a680a179-aa91-5c01-9f83-6265131cfdfe",
+  "name": "Challenger Deck 2021 Dimir Rogues",
+  "category": "deck",
+  "cardCount": 75,
+  "releaseDate": "2021-02-17",
+  "subtype": "challenger",
+  "identifiers": {
+    "abuId": "1996871",
+    "cardKingdomId": "241979",
+    "cardtraderId": "152953",
+    "csiId": "312085",
+    "mcmId": "540226",
+    "tcgplayerProductId": "232758",
+    "tntId": "1699155"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0fad5fd9bdc34f73"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dimir Rogue",
+        "set": "q05"
+      }
+    ]
+  },
+  "setCode": "Q05",
+  "setName": "Challenger Decks 2021",
+  "tcgcsvData": {
+    "product": {
+      "productId": 232758,
+      "name": "Challenger Deck 2021: Dimir Rogues",
+      "cleanName": "Challenger Deck 2021 Dimir Rogues",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/232758_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/232758/magic-challenger-decks-challenger-deck-2021-dimir-rogues",
+      "modifiedOn": "2021-03-26T04:03:11.753",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-04-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each deck contains 75-card preconstructed deck.\r\n<br>• 60-card deck\r\n<br>• 15-card sideboard\r\n<br>• 5 double-sided tokens\r\n<br>• 1 deck box (holds 75 sleeved cards)"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509997053"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 232758,
+        "lowPrice": 20,
+        "midPrice": 27.99,
+        "highPrice": 37.72,
+        "marketPrice": 19.48,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

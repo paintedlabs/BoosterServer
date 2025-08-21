@@ -1,0 +1,92 @@
+{
+  "uuid": "8a3edff4-362e-512a-a155-2aa8f6b411c5",
+  "name": "Guilds of Ravnica Guild Kits Set of 5",
+  "category": "subset",
+  "releaseDate": "2018-11-02",
+  "subtype": "guild_kit",
+  "identifiers": {
+    "abuId": "1537073",
+    "cardKingdomId": "222343",
+    "cardtraderId": "164554",
+    "mcmId": "365471",
+    "scgId": "SLD-MTG-BXS-GK1-EN-SET5",
+    "tcgplayerProductId": "176683",
+    "tntId": "1359392"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/d351820226c6a382",
+    "tcgplayer": "https://mtgjson.com/links/8c6b15f23861c036"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Guild Kit Boros",
+        "set": "gk1",
+        "uuid": "5a9868f9-7ff5-5386-8e3c-592b909f98f3"
+      },
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Guild Kit Dimir",
+        "set": "gk1",
+        "uuid": "4c151eb7-5bc8-5d09-8a90-7ee288a8c174"
+      },
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Guild Kit Golgari",
+        "set": "gk1",
+        "uuid": "e7da1b23-c0b2-50b5-bfeb-fa87d9dec129"
+      },
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Guild Kit Izzet",
+        "set": "gk1",
+        "uuid": "84ac02a9-323d-55f4-8d6b-9d390094b894"
+      },
+      {
+        "count": 1,
+        "name": "Guilds of Ravnica Guild Kit Selesnya",
+        "set": "gk1",
+        "uuid": "0fe78218-2825-5bac-aab4-3c1a5cf9c37f"
+      }
+    ]
+  },
+  "setCode": "GK1",
+  "setName": "GRN Guild Kit",
+  "tcgcsvData": {
+    "product": {
+      "productId": 176683,
+      "name": "Guilds of Ravnica - Guild Kits [Set of 5]",
+      "cleanName": "Guilds of Ravnica Guild Kits Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/176683_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2334,
+      "url": "https://www.tcgplayer.com/product/176683/magic-guilds-of-ravnica-guild-kits-guilds-of-ravnica-guild-kits-set-of-5",
+      "modifiedOn": "2018-09-26T15:42:18.42",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-11-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Guilds of Ravnica Guild Kit All 5 Decks - Selesnya, Boros, Golgari, Izzet, Dimir.\r\n<br><br>\r\nIt wouldn't be a return to Ravnica without letting players play as their favorite guilds. Guild Kits will feature a 60-card deck flavored after your favorite guild, plus guild schwag like pins, stickers, and Spindown life counters. Play as any one of the Guilds of Ravnica guilds with the Guilds of Ravnica Guild Kits releasing on November 2, 2018."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 176683,
+        "lowPrice": 204.95,
+        "midPrice": 216.98,
+        "highPrice": 229,
+        "marketPrice": 195.81,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

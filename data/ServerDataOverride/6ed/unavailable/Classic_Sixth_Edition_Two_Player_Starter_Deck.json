@@ -1,0 +1,76 @@
+{
+  "uuid": "8b18a7df-17b2-557c-bb4d-aa66ad5afd8f",
+  "name": "Classic Sixth Edition Two Player Starter Deck",
+  "category": "multiple_decks",
+  "cardCount": 80,
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "abuId": "1100053",
+    "cardKingdomId": "1157",
+    "cardtraderId": "45477",
+    "mcmId": "253632",
+    "tcgplayerProductId": "184222",
+    "tntId": "113535"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/bb8f05fbd4bd7164"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Deck A",
+        "set": "6ed"
+      },
+      {
+        "name": "Deck B",
+        "set": "6ed"
+      }
+    ],
+    "other": [
+      {
+        "name": "Rulebook"
+      },
+      {
+        "name": "Play Guide"
+      }
+    ]
+  },
+  "setCode": "6ED",
+  "setName": "Classic Sixth Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 184222,
+      "name": "Classic Sixth Edition - Two-Player Starter Deck",
+      "cleanName": "Classic Sixth Edition Two Player Starter Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/184222_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23,
+      "url": "https://www.tcgplayer.com/product/184222/magic-classic-sixth-edition-classic-sixth-edition-two-player-starter-deck",
+      "modifiedOn": "2019-01-29T21:42:04.923",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Magic: The Gathering - Classic game has everything you need to step up to advanced-level Magic play. Players familiar with starter-level products, including Magic: The Gathering-Portal and Portal Second Age, will find new strategies and play options in the Classic game. You can play these decks right out of the box or combine them with other Magic: The Gathering cards. \r\n<br><br>Contents:\r\n<br>• Two 40-card, ready-to-play decks of Classic cards\r\n<br>• An easy-reference rulebook\r\n<br>• A play guide to walk you through your first advanced level game"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 184222,
+        "lowPrice": 65,
+        "midPrice": 124.54,
+        "highPrice": 184.07,
+        "marketPrice": 67.87,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "uuid": "3f1c2aba-e5f1-5ef8-8fd8-f5942fbd5aff",
+  "name": "Tenth Edition Sample Deck Liliana Vess",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47399",
+    "mcmId": "287569"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "Black Deck A",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "Black Deck B",
+                "set": "10e"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "10E",
+  "setName": "Tenth Edition"
+}

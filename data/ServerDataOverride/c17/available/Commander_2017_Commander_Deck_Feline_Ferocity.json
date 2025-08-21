@@ -1,0 +1,68 @@
+{
+  "uuid": "ad66640b-ed92-5eb5-b603-ff2130d6af92",
+  "name": "Commander 2017 Commander Deck Feline Ferocity",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2017-08-25",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1476996",
+    "cardKingdomId": "213480",
+    "cardtraderId": "44564",
+    "csiId": "242592",
+    "mcmId": "300286",
+    "scgId": "SLD-MTG-MLT-C17-EN-FELINE",
+    "tcgplayerProductId": "139780",
+    "tntId": "1126924"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/ae64da29bc2524e7",
+    "tcgplayer": "https://mtgjson.com/links/f702c0c781c492a9"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Feline Ferocity",
+        "set": "c17"
+      }
+    ]
+  },
+  "setCode": "C17",
+  "setName": "Commander 2017",
+  "tcgcsvData": {
+    "product": {
+      "productId": 139780,
+      "name": "Commander 2017 Deck - Feline Ferocity",
+      "cleanName": "Commander 2017 Deck Feline Ferocity",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/139780_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2009,
+      "url": "https://www.tcgplayer.com/product/139780/magic-commander-2017-commander-2017-deck-feline-ferocity",
+      "modifiedOn": "2017-08-17T17:33:36.38",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-08-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Arahbo, Roar of the World is a majestic leader and father to cats across all planes of the Multiverse. His deafening voice empowers his ferocious feline allies to claw through enemy forces and crush those who dare challenge his ancient might."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 139780,
+        "lowPrice": 229.99,
+        "midPrice": 261.99,
+        "highPrice": 399.99,
+        "marketPrice": 225.53,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

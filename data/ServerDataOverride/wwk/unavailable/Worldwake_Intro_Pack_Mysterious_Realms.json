@@ -1,0 +1,73 @@
+{
+  "uuid": "1a9e97c4-91bd-5f6b-82b4-d35142da19a1",
+  "name": "Worldwake Intro Pack Mysterious Realms",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1107792",
+    "cardKingdomId": "129944",
+    "cardtraderId": "47459",
+    "mcmId": "210201",
+    "scgId": "SLD-MTG-INT-WWKINTRO-EN-MYSTERIOUS",
+    "tcgplayerProductId": "196800",
+    "tntId": "287104"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/246d988ac17cbed6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mysterious Realms",
+        "set": "wwk"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Worldwake Booster Pack",
+        "set": "wwk",
+        "uuid": "d40674d1-34ff-5855-8dad-7718eaa462aa"
+      }
+    ]
+  },
+  "setCode": "WWK",
+  "setName": "Worldwake",
+  "tcgcsvData": {
+    "product": {
+      "productId": 196800,
+      "name": "Worldwake Intro Pack - Mysterious Realms",
+      "cleanName": "Worldwake Intro Pack Mysterious Realms",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/196800_200w.jpg",
+      "categoryId": 1,
+      "groupId": 122,
+      "url": "https://www.tcgplayer.com/product/196800/magic-worldwake-worldwake-intro-pack-mysterious-realms",
+      "modifiedOn": "2021-03-31T13:20:27.637",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "With the \"Mysterious Realms\" deck, you'll unleash fearsome creatures summoned from the wilds of Zendikar upon your hapless enemies.\r\n<br>\r\n<br>Each intro pack includes:\r\n<br>• 1 Premium card\r\n<br>• 40-card preconstructed deck\r\n<br>• One Worldwake booster pack\r\n<br>• A strategy and mechanics guide\r\n<br>• A learn-to-play insert for new players"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 196800,
+        "lowPrice": 39.99,
+        "midPrice": 69.99,
+        "highPrice": 80,
+        "marketPrice": 39.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

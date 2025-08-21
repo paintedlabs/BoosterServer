@@ -1,0 +1,82 @@
+{
+  "uuid": "526cc71b-c0d0-5490-94f4-8359a12fe85c",
+  "name": "Commander 2019 Commander Deck Primal Genesis",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2019-08-23",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1588393",
+    "cardKingdomId": "226724",
+    "cardtraderId": "59155",
+    "csiId": "277482",
+    "mcmId": "390292",
+    "scgId": "SLD-MTG-MLT-C19-EN-PRIMAL",
+    "tcgplayerProductId": "196282",
+    "tntId": "1543883"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/b3455f2016790ddf",
+    "tcgplayer": "https://mtgjson.com/links/0d6aa582d06c2601"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Primal Genesis",
+        "set": "c19"
+      }
+    ],
+    "other": [
+      {
+        "name": "Foil Oversized Commander"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      },
+      {
+        "name": "Reference Card and Strategy Insert"
+      },
+      {
+        "name": "Deck Box"
+      }
+    ]
+  },
+  "setCode": "C19",
+  "setName": "Commander 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 196282,
+      "name": "Commander 2019 Deck - Primal Genesis",
+      "cleanName": "Commander 2019 Deck Primal Genesis",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/196282_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2481,
+      "url": "https://www.tcgplayer.com/product/196282/magic-commander-2019-commander-2019-deck-primal-genesis",
+      "modifiedOn": "2019-08-08T19:20:40.783",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-08-23T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Naya (Red-Green-White) Populate deck \"Primal Genesis\" featuring Ghired, Conclave Exile."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 196282,
+        "lowPrice": 36.94,
+        "midPrice": 45.09,
+        "highPrice": 65.99,
+        "marketPrice": 43.46,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "uuid": "1908f8ab-610e-527f-b93e-18835919ce26",
+  "name": "Oath of the Gatewatch Intro Pack Vicious Cycle",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100945",
+    "cardKingdomId": "205068",
+    "cardtraderId": "48381",
+    "mcmId": "287199",
+    "tcgplayerProductId": "110708",
+    "tntId": "1088360"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4dfe5ca114f94c2d"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Vicious Cycle",
+        "set": "ogw"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Oath of the Gatewatch Booster Pack",
+        "set": "ogw",
+        "uuid": "a80b98ae-3781-5077-83a9-31907bd528e4"
+      }
+    ]
+  },
+  "setCode": "OGW",
+  "setName": "Oath of the Gatewatch",
+  "tcgcsvData": {
+    "product": {
+      "productId": 110708,
+      "name": "Oath of the Gatewatch Intro Pack - Black",
+      "cleanName": "Oath of the Gatewatch Intro Pack Black",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/110708_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1693,
+      "url": "https://www.tcgplayer.com/product/110708/magic-oath-of-the-gatewatch-oath-of-the-gatewatch-intro-pack-black",
+      "modifiedOn": "2022-11-10T15:02:30.937",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 110708,
+        "lowPrice": 17.99,
+        "midPrice": 24.98,
+        "highPrice": 25.71,
+        "marketPrice": 23.22,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

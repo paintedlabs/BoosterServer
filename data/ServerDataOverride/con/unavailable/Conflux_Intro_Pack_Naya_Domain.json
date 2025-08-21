@@ -1,0 +1,73 @@
+{
+  "uuid": "50619c98-2442-5dc6-8a8e-55c845ecca1a",
+  "name": "Conflux Intro Pack Naya Domain",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100355",
+    "cardKingdomId": "126579",
+    "cardtraderId": "47350",
+    "mcmId": "244163",
+    "scgId": "SLD-MTG-INT-CFXINTRO-EN-NAYA",
+    "tcgplayerProductId": "501421",
+    "tntId": "242003"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/99f342e08fd75ccb"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Naya Domain",
+        "set": "con"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Conflux Booster Pack",
+        "set": "con",
+        "uuid": "ee25fb77-38eb-56ce-8369-917cd2c0566b"
+      }
+    ]
+  },
+  "setCode": "CON",
+  "setName": "Conflux",
+  "tcgcsvData": {
+    "product": {
+      "productId": 501421,
+      "name": "Conflux - Intro Pack - Naya Domain",
+      "cleanName": "Conflux Intro Pack Naya Domain",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/501421_200w.jpg",
+      "categoryId": 1,
+      "groupId": 26,
+      "url": "https://www.tcgplayer.com/product/501421/magic-conflux-conflux-intro-pack-naya-domain",
+      "modifiedOn": "2023-06-20T14:37:04.05",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Intro Pack contains a 41-card deck featuring 1 foil premium card."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 501421,
+        "lowPrice": 70,
+        "midPrice": 70,
+        "highPrice": 70,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

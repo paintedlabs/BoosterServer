@@ -1,0 +1,73 @@
+{
+  "uuid": "5bf62292-fd06-50e6-82f2-726c7c04cce4",
+  "name": "Fate Reforged Intro Pack Unflinching Assault",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100523",
+    "cardKingdomId": "198993",
+    "cardtraderId": "48225",
+    "mcmId": "271557",
+    "scgId": "SLD-MTG-INT-FRFINTRO-EN-UNFLINCHING",
+    "tcgplayerProductId": "95262",
+    "tntId": "1065447"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b8655b0d34353c40"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Unflinching Assault",
+        "set": "frf"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Fate Reforged Booster Pack",
+        "set": "frf",
+        "uuid": "12abbe7b-f87a-5fbf-ab77-1e9edec8cf90"
+      }
+    ]
+  },
+  "setCode": "FRF",
+  "setName": "Fate Reforged",
+  "tcgcsvData": {
+    "product": {
+      "productId": 95262,
+      "name": "Fate Reforged - Intro Pack - Unflinching Assault",
+      "cleanName": "Fate Reforged Intro Pack Unflinching Assault",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/95262_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1497,
+      "url": "https://www.tcgplayer.com/product/95262/magic-fate-reforged-fate-reforged-intro-pack-unflinching-assault",
+      "modifiedOn": "2021-08-05T14:09:27.097",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Fate Reforged booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 95262,
+        "lowPrice": 18.12,
+        "midPrice": 18.94,
+        "highPrice": 25,
+        "marketPrice": 18.89,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

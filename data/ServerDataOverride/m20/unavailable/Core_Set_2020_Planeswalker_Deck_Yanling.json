@@ -1,0 +1,75 @@
+{
+  "uuid": "899d7a93-0e77-5375-9813-099591dcbd4e",
+  "name": "Core Set 2020 Planeswalker Deck Yanling",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2019-07-12",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1580841",
+    "cardKingdomId": "225559",
+    "cardtraderId": "169302",
+    "csiId": "276714",
+    "mcmId": "378282",
+    "scgId": "SLD-MTG-INT-M20PWDECK-EN-YANLING",
+    "tcgplayerProductId": "192513",
+    "tntId": "1480288"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/31465c1d8de9c2d0"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Mu Yanling, Celestial Wind",
+        "set": "m20"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2020 Booster Pack",
+        "set": "m20",
+        "uuid": "98ee4589-78f8-5b48-ac57-ef50d8ff8f1c"
+      }
+    ]
+  },
+  "setCode": "M20",
+  "setName": "Core Set 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 192513,
+      "name": "Core Set 2020 - Planeswalker Deck [Yanling]",
+      "cleanName": "Core Set 2020 Planeswalker Deck Yanling",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/192513_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2441,
+      "url": "https://www.tcgplayer.com/product/192513/magic-core-set-2020-core-set-2020-planeswalker-deck-yanling",
+      "modifiedOn": "2019-06-27T13:04:21.92",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-07-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 preconstructed 60-card deck \r\n<br>• 1 Core 2020 booster pack \r\n<br>• 1 Magic reference guide\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card <em>(varies by region)</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 192513,
+        "lowPrice": 34.97,
+        "midPrice": 36,
+        "highPrice": 42.99,
+        "marketPrice": 36,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

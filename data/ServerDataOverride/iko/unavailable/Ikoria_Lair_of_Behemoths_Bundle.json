@@ -1,0 +1,97 @@
+{
+  "uuid": "29290864-bbc9-5877-9bd0-1341d3eed9e0",
+  "name": "Ikoria Lair of Behemoths Bundle",
+  "category": "bundle",
+  "releaseDate": "2020-05-15",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1829790",
+    "cardKingdomId": "232126",
+    "cardtraderId": "108000",
+    "csiId": "294223",
+    "mcmId": "410984",
+    "scgId": "SLD-MTG-BUN-IKO-EN",
+    "tcgplayerProductId": "208278",
+    "tntId": "1605702"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/aad754818a93a768",
+    "tcgplayer": "https://mtgjson.com/links/79711744af505c25"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Colossification",
+        "number": "364",
+        "set": "iko",
+        "uuid": "e498d8c9-6429-5948-9b7f-407bd3b89668"
+      }
+    ],
+    "other": [
+      {
+        "name": "20 foil basic lands"
+      },
+      {
+        "name": "20 nonfoil basic lands"
+      },
+      {
+        "name": "Ikoria oversized spindown"
+      },
+      {
+        "name": "Reusable card storage box"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Ikoria Lair of Behemoths Draft Booster Pack",
+        "set": "iko",
+        "uuid": "49e7b63c-98e8-5334-88ae-4014ed75fcac"
+      }
+    ]
+  },
+  "setCode": "IKO",
+  "setName": "Ikoria: Lair of Behemoths",
+  "tcgcsvData": {
+    "product": {
+      "productId": 208278,
+      "name": "Ikoria: Lair of Behemoths - Bundle",
+      "cleanName": "Ikoria Lair of Behemoths Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/208278_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2603,
+      "url": "https://www.tcgplayer.com/product/208278/magic-ikoria-lair-of-behemoths-ikoria-lair-of-behemoths-bundle",
+      "modifiedOn": "2020-04-05T20:20:46.457",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2020-05-15T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contents: \r\n<br>• 10 Ikoria: Lair of BehemothsDraft Boostesr\r\n<br>• 20 foil land pack\r\n<br>• 20 regular land pack\r\n<br>• 1 foil promo card\r\n<br>• 1 oversized Spindown life counter (1.5\")\r\n<br>• 2 reference cards"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "6 30509 90503 4"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 208278,
+        "lowPrice": 85.65,
+        "midPrice": 89.99,
+        "highPrice": 199.99,
+        "marketPrice": 85.42,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

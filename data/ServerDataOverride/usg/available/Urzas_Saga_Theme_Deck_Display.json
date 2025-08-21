@@ -1,0 +1,86 @@
+{
+  "uuid": "10ed7e34-d80c-5e05-a3cb-e2d9c63e35c2",
+  "name": "Urzas Saga Theme Deck Display",
+  "category": "deck_box",
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1476963",
+    "cardtraderId": "45447",
+    "mcmId": "210243",
+    "tcgplayerProductId": "629829"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/d9b843d19c1f2583"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 3,
+        "name": "Urzas Saga Theme Deck Sleeper",
+        "set": "usg",
+        "uuid": "4656cb47-34b8-5dff-93bd-577f0e7e01f7"
+      },
+      {
+        "count": 3,
+        "name": "Urzas Saga Theme Deck Special Delivery",
+        "set": "usg",
+        "uuid": "24c34c41-34ac-55ba-a4ff-ac9ee44f0366"
+      },
+      {
+        "count": 3,
+        "name": "Urzas Saga Theme Deck The Plague",
+        "set": "usg",
+        "uuid": "13e34096-9752-5d9f-9658-0ecd712e60cc"
+      },
+      {
+        "count": 3,
+        "name": "Urzas Saga Theme Deck Tombstone",
+        "set": "usg",
+        "uuid": "c7fb49ad-09ce-50bc-b8f6-552e0a96b994"
+      }
+    ]
+  },
+  "setCode": "USG",
+  "setName": "Urza's Saga",
+  "tcgcsvData": {
+    "product": {
+      "productId": 629829,
+      "name": "Urza's Saga Theme Deck Display",
+      "cleanName": "Urzas Saga Theme Deck Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/629829_200w.jpg",
+      "categoryId": 1,
+      "groupId": 118,
+      "url": "https://www.tcgplayer.com/product/629829/magic-urzas-saga-urzas-saga-theme-deck-display",
+      "modifiedOn": "2025-04-28T19:24:37.823",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Urza's Saga Theme Deck Display contains three of each of the Urza's Saga 60-card preconstructed theme decks:\r\n<br>\r\n<br>• 3x Sleeper\r\n<br>• 3x Special Delivery\r\n<br>• 3x The Plague\r\n<br>• 3x Tombstone"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "742818060196"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 629829,
+        "lowPrice": 1500,
+        "midPrice": 1500,
+        "highPrice": 1500,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

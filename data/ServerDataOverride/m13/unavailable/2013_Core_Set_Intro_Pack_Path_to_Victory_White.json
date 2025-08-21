@@ -1,0 +1,67 @@
+{
+  "uuid": "88c41f57-8834-57cc-8b7b-f386c34a5a25",
+  "name": "2013 Core Set Intro Pack Path to Victory White",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100782",
+    "cardKingdomId": "187704",
+    "cardtraderId": "47777",
+    "mcmId": "256762",
+    "scgId": "SLD-MTG-INT-M13INTRO-EN-PATH",
+    "tcgplayerProductId": "97813",
+    "tntId": "383297"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/cb4369738ea267cd"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Path to Victory",
+        "set": "m13"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2013 Core Set Booster Pack",
+        "set": "m13",
+        "uuid": "294f45ab-a696-59c1-83be-53d286ede856"
+      }
+    ]
+  },
+  "setCode": "M13",
+  "setName": "Magic 2013",
+  "tcgcsvData": {
+    "product": {
+      "productId": 97813,
+      "name": "Magic 2013 Intro Pack - Path to Victory (White)",
+      "cleanName": "Magic 2013 Intro Pack Path to Victory White",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/97813_200w.jpg",
+      "categoryId": 1,
+      "groupId": 364,
+      "url": "https://www.tcgplayer.com/product/97813/magic-magic-2013-m13-magic-2013-intro-pack-path-to-victory-white",
+      "modifiedOn": "2015-04-13T15:58:33.077",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 97813,
+        "lowPrice": 27.5,
+        "midPrice": 30,
+        "highPrice": 30.98,
+        "marketPrice": 24.83,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "uuid": "0769e6e2-0895-57e2-834b-799ca4d1d120",
+  "name": "War of the Spark Theme Booster Pack Set of 5",
+  "category": "subset",
+  "releaseDate": "2019-05-03",
+  "subtype": "theme",
+  "identifiers": {
+    "scgId": "SLD-MTG-PCK-WARTHEME-EN-SET5",
+    "tcgplayerProductId": "188644"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b2e586bbd3c5fe8c"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "War of the Spark Theme Booster Pack White",
+        "set": "war",
+        "uuid": "585e2a3d-6a84-5f8f-8cb8-a81316dd072f"
+      },
+      {
+        "count": 1,
+        "name": "War of the Spark Theme Booster Pack Blue",
+        "set": "war",
+        "uuid": "d18e655c-ce0a-50d3-9883-efd20803114a"
+      },
+      {
+        "count": 1,
+        "name": "War of the Spark Theme Booster Pack Black",
+        "set": "war",
+        "uuid": "dda73ce5-6049-5a22-8d8e-3555a578450b"
+      },
+      {
+        "count": 1,
+        "name": "War of the Spark Theme Booster Pack Red",
+        "set": "war",
+        "uuid": "5987a43b-1497-5004-ba30-b6b3d4b3afee"
+      },
+      {
+        "count": 1,
+        "name": "War of the Spark Theme Booster Pack Green",
+        "set": "war",
+        "uuid": "30dc68c6-fd54-57cc-a1c4-209e659e647c"
+      }
+    ]
+  },
+  "setCode": "WAR",
+  "setName": "War of the Spark",
+  "tcgcsvData": {
+    "product": {
+      "productId": 188644,
+      "name": "War of the Spark - Theme Booster Pack [Set of 5]",
+      "cleanName": "War of the Spark Theme Booster Pack Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/188644_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2418,
+      "url": "https://www.tcgplayer.com/product/188644/magic-war-of-the-spark-war-of-the-spark-theme-booster-pack-set-of-5",
+      "modifiedOn": "2019-04-19T19:23:32.997",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-05-03T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Theme Boosters help new and casual expand their collection with colors that they’re already invested in.\r\n<br>35 cards, including 1 Rare or Mythic Rare. Some packs even contain a foil card!\r\n<br>One color per pack! Build a deck on demand for the way you like to play Magic."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 188644,
+        "lowPrice": 24.99,
+        "midPrice": 24.99,
+        "highPrice": 24.99,
+        "marketPrice": 24.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "uuid": "75fe0be5-4e0d-5865-bd62-2418249933ac",
+  "name": "Alara Reborn Intro Pack Dead Ahead",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100096",
+    "cardKingdomId": "127027",
+    "cardtraderId": "47365",
+    "mcmId": "244166",
+    "scgId": "SLD-MTG-INT-ARBINTRO-EN-DEAD",
+    "tcgplayerProductId": "96433",
+    "tntId": "247406"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c6c9a16371355dc5"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dead Ahead",
+        "set": "arb"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Alara Reborn Booster Pack",
+        "set": "arb",
+        "uuid": "77285ba5-fa21-5d46-8037-8da7222bacd9"
+      }
+    ]
+  },
+  "setCode": "ARB",
+  "setName": "Alara Reborn",
+  "tcgcsvData": {
+    "product": {
+      "productId": 96433,
+      "name": "Alara Reborn - Intro Pack - Dead Ahead",
+      "cleanName": "Alara Reborn Intro Pack Dead Ahead",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/96433_200w.jpg",
+      "categoryId": 1,
+      "groupId": 5,
+      "url": "https://www.tcgplayer.com/product/96433/magic-alara-reborn-alara-reborn-intro-pack-dead-ahead",
+      "modifiedOn": "2021-08-05T13:28:39.513",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 96433,
+        "lowPrice": 40,
+        "midPrice": 40,
+        "highPrice": 40,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

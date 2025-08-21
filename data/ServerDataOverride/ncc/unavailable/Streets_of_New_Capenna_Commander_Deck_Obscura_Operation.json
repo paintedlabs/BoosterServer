@@ -1,0 +1,93 @@
+{
+  "uuid": "d0dfec66-d58a-5e71-910c-09424f9f5a42",
+  "name": "Streets of New Capenna Commander Deck Obscura Operation",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-04-29",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2179037",
+    "cardKingdomId": "258197",
+    "cardtraderId": "208726",
+    "csiId": "333092",
+    "mcmId": "611291",
+    "miniaturemarketId": "283457",
+    "scgId": "SLD-MTG-MLT-NCC-EN-OBSCURA",
+    "tcgplayerProductId": "265392",
+    "tntId": "1743751"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/590b3246d17bdaf2",
+    "tcgplayer": "https://mtgjson.com/links/b473e989df9c3cd3"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Obscura Operation",
+        "set": "ncc"
+      }
+    ],
+    "other": [
+      {
+        "name": "10 Double Sided Tokens"
+      },
+      {
+        "name": "Streets of New Capenna Life Wheel"
+      },
+      {
+        "name": "Foil Etched Cardstock Display Commander"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Streets of New Capenna Collector Booster Sample Pack",
+        "set": "snc",
+        "uuid": "b04ae6cd-0c32-52e1-ad57-40d1cc8d26ef"
+      }
+    ]
+  },
+  "setCode": "NCC",
+  "setName": "New Capenna Commander",
+  "tcgcsvData": {
+    "product": {
+      "productId": 265392,
+      "name": "Streets of New Capenna Commander Deck - Obscura Operation",
+      "cleanName": "Streets of New Capenna Commander Deck Obscura Operation",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/265392_200w.jpg",
+      "categoryId": 1,
+      "groupId": 3031,
+      "url": "https://www.tcgplayer.com/product/265392/magic-commander-streets-of-new-capenna-streets-of-new-capenna-commander-deck-obscura-operation",
+      "modifiedOn": "2022-04-29T04:03:42.517",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-04-29T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Obscura Operation Streets of New Capenna Commander Deck set includes 1 ready-to-play deck of 100 Magic cards (2 traditional foil, 98 nonfoil), 1 foil-etched Display Commander (a thick cardstock copy of the commander card with textured foil etched into the card’s border and art), 10 double-sided tokens, 1 deck box (can hold 100 sleeved cards), 1 life tracker, and 1 reference card.\r\n<br><strong>Key Features:</strong>\r\n<br>• 100-card ready-to-play Streets of New Capenna Commander deck\r\n<br>• Deck includes 2 traditional foils + 98 nonfoil cards\r\n<br>• 1 foil-etched Display Commander\r\n<br>• 10 double-sided tokens + life tracker and deck box\r\n<br>• Introduces 15 MTG cards not found in the main set"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166121468"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 265392,
+        "lowPrice": 42.87,
+        "midPrice": 55.87,
+        "highPrice": 67.49,
+        "marketPrice": 42.87,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

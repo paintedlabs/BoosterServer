@@ -1,0 +1,81 @@
+{
+  "uuid": "3946125d-e1b6-5033-939a-df1d77b7b888",
+  "name": "2015 Core Set Intro Pack Infernal Intervention",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100831",
+    "cardKingdomId": "195219",
+    "cardtraderId": "48150",
+    "mcmId": "267971",
+    "scgId": "SLD-MTG-INT-M15INTRO-EN-INFERNAL",
+    "tcgplayerProductId": "91076",
+    "tntId": "1057456"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/bc86c588f25772cf"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Infernal Intervention",
+        "set": "m15"
+      }
+    ],
+    "other": [
+      {
+        "name": "Strategy and Mechanics Guide"
+      },
+      {
+        "name": "Learn to Play Insert"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2015 Core Set Booster Pack",
+        "set": "m15",
+        "uuid": "0643f6ea-0eab-5f7d-8b6a-4ade23f44afd"
+      }
+    ]
+  },
+  "setCode": "M15",
+  "setName": "Magic 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 91076,
+      "name": "Magic 2015 (M15) - Intro Pack - Infernal Intervention",
+      "cleanName": "Magic 2015 M15 Intro Pack Infernal Intervention",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/91076_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1293,
+      "url": "https://www.tcgplayer.com/product/91076/magic-magic-2015-m15-magic-2015-m15-intro-pack-infernal-intervention",
+      "modifiedOn": "2021-08-05T16:36:34.467",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Magic 2015 (M15) booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 91076,
+        "lowPrice": 24.93,
+        "midPrice": 24.93,
+        "highPrice": 24.93,
+        "marketPrice": 24.93,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

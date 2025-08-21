@@ -1,0 +1,88 @@
+{
+  "uuid": "edba8500-8a2e-5a2a-b419-488b78d92d52",
+  "name": "Born of the Gods Prerelease Kit Destined To Conquer",
+  "category": "limited_aid_tool",
+  "cardCount": 15,
+  "releaseDate": "2007-01-01",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "1100208",
+    "cardtraderId": "48084",
+    "csiId": "200406",
+    "mcmId": "266426",
+    "tcgplayerProductId": "78293",
+    "tntId": "1182089"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/60defcb641ed507e"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Forgestoker Dragon",
+        "number": "98★",
+        "set": "pbng",
+        "uuid": "687cc5e3-148a-58a1-9179-b7f759107ba1"
+      },
+      {
+        "name": "The Warmonger",
+        "number": "4d",
+        "set": "thp2",
+        "uuid": "658bcd2b-d34b-5ce1-928c-4853ff513f72"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease-conquer",
+        "set": "bng"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Born of the Gods Booster Pack",
+        "set": "bng",
+        "uuid": "16e12027-2acd-5bfa-81e8-ed3bc5381334"
+      },
+      {
+        "count": 3,
+        "name": "Theros Booster Pack",
+        "set": "ths",
+        "uuid": "7bba9d52-6334-538e-af18-23bda395adb4"
+      }
+    ]
+  },
+  "setCode": "BNG",
+  "setName": "Born of the Gods",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78293,
+      "name": "Born of the Gods - Destined To Conquer (Prerelease)",
+      "cleanName": "Born of the Gods Destined To Conquer Prerelease",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78293_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1276,
+      "url": "https://www.tcgplayer.com/product/78293/magic-born-of-the-gods-born-of-the-gods-destined-to-conquer-prerelease",
+      "modifiedOn": "2022-12-23T13:35:29.473",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78293,
+        "lowPrice": 60,
+        "midPrice": 65,
+        "highPrice": 69.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

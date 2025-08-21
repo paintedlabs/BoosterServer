@@ -1,0 +1,67 @@
+{
+  "uuid": "2b651e97-8239-5ccb-bcf9-5f88d09b2868",
+  "name": "Shadowmoor Tournament Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 75,
+  "releaseDate": "2007-01-01",
+  "subtype": "tournament_deck",
+  "identifiers": {
+    "abuId": "1107997",
+    "cardKingdomId": "124496",
+    "cardtraderId": "47308",
+    "mcmId": "248485",
+    "scgId": "SLD-MTG-PCK-SHMTOURNAMENT-EN",
+    "tcgplayerProductId": "185147",
+    "tntId": "178633"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/99687ee23f888aff",
+    "tcgplayer": "https://mtgjson.com/links/39483630873c470e"
+  },
+  "contents": {
+    "pack": [
+      {
+        "code": "tournament",
+        "set": "shm"
+      }
+    ]
+  },
+  "setCode": "SHM",
+  "setName": "Shadowmoor",
+  "tcgcsvData": {
+    "product": {
+      "productId": 185147,
+      "name": "Shadowmoor Tournament Pack",
+      "cleanName": "Shadowmoor Tournament Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/185147_200w.jpg",
+      "categoryId": 1,
+      "groupId": 102,
+      "url": "https://www.tcgplayer.com/product/185147/magic-shadowmoor-shadowmoor-tournament-pack",
+      "modifiedOn": "2019-02-16T17:53:55.323",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each Shadowmoor tounrnament pack contains 75 cards including 3 rare, 10 uncommon, 33 common and 29 basic land.<em>(Foils are randomly inserted)</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 185147,
+        "lowPrice": 74.98,
+        "midPrice": 74.99,
+        "highPrice": 113.54,
+        "marketPrice": 74.98,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

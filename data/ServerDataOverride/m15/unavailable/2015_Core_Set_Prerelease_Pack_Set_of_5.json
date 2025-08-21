@@ -1,0 +1,87 @@
+{
+  "uuid": "b1bd19c7-d7aa-5f76-9659-f6f5aafccd3e",
+  "name": "2015 Core Set Prerelease Pack Set of 5",
+  "category": "subset",
+  "releaseDate": "2015-03-02",
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "cardtraderId": "48167",
+    "mcmId": "273052",
+    "tcgplayerProductId": "199941"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/80180e14feb2bcb7"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "2015 Core Set Prerelease Hunt with Ambition",
+        "set": "m15",
+        "uuid": "58a41feb-1665-5aac-aeef-5aa510e04d08"
+      },
+      {
+        "count": 1,
+        "name": "2015 Core Set Prerelease Hunt with Ferocity",
+        "set": "m15",
+        "uuid": "38e48e51-4cbc-5a51-a645-01fab1818896"
+      },
+      {
+        "count": 1,
+        "name": "2015 Core Set Prerelease Hunt with Guile",
+        "set": "m15",
+        "uuid": "dfe2c0ec-aac2-572a-8e64-24917eaa9c18"
+      },
+      {
+        "count": 1,
+        "name": "2015 Core Set Prerelease Hunt with Strength",
+        "set": "m15",
+        "uuid": "f226425f-7656-50b2-b1cf-929cece21c23"
+      },
+      {
+        "count": 1,
+        "name": "2015 Core Set Prerelease Hunt with Valor",
+        "set": "m15",
+        "uuid": "d0084be5-1f85-5577-91bb-3d42fdffc509"
+      }
+    ]
+  },
+  "setCode": "M15",
+  "setName": "Magic 2015",
+  "tcgcsvData": {
+    "product": {
+      "productId": 199941,
+      "name": "M15 Prerelease Pack - Set of 5",
+      "cleanName": "M15 Prerelease Pack Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/199941_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1293,
+      "url": "https://www.tcgplayer.com/product/199941/magic-magic-2015-m15-m15-prerelease-pack-set-of-5",
+      "modifiedOn": "2019-09-25T19:27:56.947",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contains one of each M15 Prerelease Pack."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 199941,
+        "lowPrice": 399.99,
+        "midPrice": 399.99,
+        "highPrice": 399.99,
+        "marketPrice": 154.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

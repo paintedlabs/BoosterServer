@@ -1,0 +1,73 @@
+{
+  "uuid": "f964f260-ce68-5cdd-8597-561d13f9f6c8",
+  "name": "Innistrad Intro Pack Eldritch Onslaught",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100603",
+    "cardKingdomId": "185709",
+    "cardtraderId": "47679",
+    "mcmId": "250772",
+    "scgId": "SLD-MTG-INT-ISDINTRO-EN-ELDRITCH",
+    "tcgplayerProductId": "56211",
+    "tntId": "321618"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f721997d567fe5f5"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Eldritch Onslaught",
+        "set": "isd"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Innistrad Booster Pack",
+        "set": "isd",
+        "uuid": "b1a6cf3f-d005-5dfa-a593-677ca5401563"
+      }
+    ]
+  },
+  "setCode": "ISD",
+  "setName": "Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 56211,
+      "name": "Innistrad - Intro Pack - Eldritch Onslaught",
+      "cleanName": "Innistrad Intro Pack Eldritch Onslaught",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/56211_200w.jpg",
+      "categoryId": 1,
+      "groupId": 59,
+      "url": "https://www.tcgplayer.com/product/56211/magic-innistrad-innistrad-intro-pack-eldritch-onslaught",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<a href=\"http://magic.tcgplayer.com/db/deck.asp?deck_id=920049\">Decklist</a><BR>Window Card - Sturmgeist"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 56211,
+        "lowPrice": 58.7,
+        "midPrice": 59.7,
+        "highPrice": 60.69,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

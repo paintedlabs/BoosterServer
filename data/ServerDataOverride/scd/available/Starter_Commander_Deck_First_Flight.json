@@ -1,0 +1,79 @@
+{
+  "uuid": "bd1bb123-37d6-5961-ad5b-f14453add9b0",
+  "name": "Starter Commander Deck First Flight",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2022-12-02",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "2275523",
+    "cardKingdomId": "270176",
+    "cardtraderId": "224262",
+    "csiId": "349028",
+    "mcmId": "678611",
+    "miniaturemarketId": "287975",
+    "scgId": "SLD-MTG-MLT-SCD-EN-FLIGHT",
+    "tcgplayerProductId": "448434",
+    "tntId": "1770665"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/a7f469d54a91f013",
+    "tcgplayer": "https://mtgjson.com/links/99e8a5ae830cb5c6"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "First Flight",
+        "set": "scd"
+      }
+    ],
+    "other": [
+      {
+        "name": "10 double sided tokens"
+      }
+    ]
+  },
+  "setCode": "SCD",
+  "setName": "Starter Commander Decks",
+  "tcgcsvData": {
+    "product": {
+      "productId": 448434,
+      "name": "Starter Commander Deck - First Flight",
+      "cleanName": "Starter Commander Deck First Flight",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/448434_200w.jpg",
+      "categoryId": 1,
+      "groupId": 17662,
+      "url": "https://www.tcgplayer.com/product/448434/magic-starter-commander-decks-starter-commander-deck-first-flight",
+      "modifiedOn": "2022-12-02T05:03:12.74",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2022-12-02T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Details pending!\r\n<br>\r\nContents:\r\n<br>\r\n• 99 cards and 1 foil-etched card\r\n<br>\r\n• 10 double-sided tokens\r\n<br>\r\n• 1 deck box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166134543"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 448434,
+        "lowPrice": 18.65,
+        "midPrice": 28.66,
+        "highPrice": 49.99,
+        "marketPrice": 22.34,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

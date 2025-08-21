@@ -1,0 +1,67 @@
+{
+  "uuid": "938af06f-e0a3-5f9d-a113-0f227b493786",
+  "name": "Alara Reborn Intro Pack Eternal Siege",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100097",
+    "cardKingdomId": "127028",
+    "cardtraderId": "47366",
+    "mcmId": "244168",
+    "scgId": "SLD-MTG-INT-ARBINTRO-EN-ETERNAL",
+    "tcgplayerProductId": "96430",
+    "tntId": "247405"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/024bfc2f1a0686fd"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Eternal Siege",
+        "set": "arb"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Alara Reborn Booster Pack",
+        "set": "arb",
+        "uuid": "77285ba5-fa21-5d46-8037-8da7222bacd9"
+      }
+    ]
+  },
+  "setCode": "ARB",
+  "setName": "Alara Reborn",
+  "tcgcsvData": {
+    "product": {
+      "productId": 96430,
+      "name": "Alara Reborn - Intro Pack - Eternal Siege",
+      "cleanName": "Alara Reborn Intro Pack Eternal Siege",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/96430_200w.jpg",
+      "categoryId": 1,
+      "groupId": 5,
+      "url": "https://www.tcgplayer.com/product/96430/magic-alara-reborn-alara-reborn-intro-pack-eternal-siege",
+      "modifiedOn": "2021-08-05T13:28:44.083",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 96430,
+        "lowPrice": 50,
+        "midPrice": 55,
+        "highPrice": 59.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

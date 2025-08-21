@@ -1,0 +1,73 @@
+{
+  "uuid": "9e07e701-24b0-5987-9d2e-440673cc9b63",
+  "name": "Shadows over Innistrad Intro Pack Angelic Fury",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-03-15",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101151",
+    "cardKingdomId": "227626",
+    "cardtraderId": "48403",
+    "mcmId": "288894",
+    "tcgplayerProductId": "112959",
+    "tntId": "1092934"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/c1fb98eb59cfed14"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Angelic Fury",
+        "set": "soi"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Shadows over Innistrad Booster Pack",
+        "set": "soi",
+        "uuid": "a06fe76f-0b7f-59cc-b2b9-04b4c436df10"
+      }
+    ]
+  },
+  "setCode": "SOI",
+  "setName": "Shadows over Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 112959,
+      "name": "Shadows over Innistrad Intro Pack - Angelic Fury (R)",
+      "cleanName": "Shadows over Innistrad Intro Pack Angelic Fury R",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/112959_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1708,
+      "url": "https://www.tcgplayer.com/product/112959/magic-shadows-over-innistrad-shadows-over-innistrad-intro-pack-angelic-fury-r",
+      "modifiedOn": "2018-08-10T13:45:47.683",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Intro packs are the perfect first purchase for a new Magic player.\r\n<br>Contains:\r\n<br>• Ready-to-play 60-card deck featuring a foil premium card\r\n<br>• 2 Shadows over Innistrad 15-card booster packs\r\n<br>• Strategy Insert\r\n<br>• Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 112959,
+        "lowPrice": 30,
+        "midPrice": 35.44,
+        "highPrice": 35.47,
+        "marketPrice": 31.62,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

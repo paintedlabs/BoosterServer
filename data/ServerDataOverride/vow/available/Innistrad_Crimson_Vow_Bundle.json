@@ -1,0 +1,89 @@
+{
+  "uuid": "0aa4e87b-33c5-5bae-aa44-cf4fcae061ab",
+  "name": "Innistrad Crimson Vow Bundle",
+  "category": "bundle",
+  "releaseDate": "2021-11-19",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2111076",
+    "cardKingdomId": "252148",
+    "cardtraderId": "164067",
+    "mcmId": "573800",
+    "scgId": "SLD-MTG-BUN-VOW-EN",
+    "tcgplayerProductId": "246455",
+    "tntId": "1732861"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/ded3be22509cc06e",
+    "tcgplayer": "https://mtgjson.com/links/781d654740b3718a"
+  },
+  "contents": {
+    "card": [
+      {
+        "name": "Sigarda's Summons",
+        "number": "404",
+        "set": "vow",
+        "uuid": "54d3d08b-8bba-5e26-96e3-b788e166aded"
+      }
+    ],
+    "other": [
+      {
+        "name": "Innistrad Crimson Vow Land Bundle"
+      },
+      {
+        "name": "Innistrad Crimson Vow Spindown"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Innistrad Crimson Vow Set Booster Pack",
+        "set": "vow",
+        "uuid": "71048738-4d74-5f1c-8dc2-5b16f996cbc6"
+      }
+    ]
+  },
+  "setCode": "VOW",
+  "setName": "Innistrad: Crimson Vow",
+  "tcgcsvData": {
+    "product": {
+      "productId": 246455,
+      "name": "Innistrad: Crimson Vow - Bundle",
+      "cleanName": "Innistrad Crimson Vow Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/246455_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2862,
+      "url": "https://www.tcgplayer.com/product/246455/magic-innistrad-crimson-vow-innistrad-crimson-vow-bundle",
+      "modifiedOn": "2021-11-19T05:03:32.157",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-11-19T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>KEY PRODUCT FEATURES:</strong>\r\n<br>• 8 Innistrad: Crimson Vow MTG Set Boosters\r\n<br>• 1 foil alt-art promo card\r\n<br>• 40 basic land cards (20 foil + 20 nonfoil)\r\n<br>• Spindown life counter + card storage box\r\n<br>• Return to the gothic horror plane of Innistrad for a sumptuous vampire wedding—as honored guest or delicious entrée\r\n<br><br><strong>DESCRIPTION:</strong>\r\n<br>The Innistrad: Crimson Vow Bundle contains 8 Innistrad: Crimson Vow Set Boosters—the best boosters to open just for fun—plus exclusive accessories, with 40 basic lands (20 traditional foils and 20 nonfoils), 1 traditional foil alt-art promo card, 1 exclusive oversized Spindown life counter, 1 card storage box, and 2 reference cards. Each Innistrad: Crimson Vow Set Booster contains 12 Magic cards, 1 Art Card, and 1 token, ad card, Helper card, or special card from Magic's history (a card from \"The List\"), with a combination of 1–4 Rares and/or Mythic Rares, 2–7 Uncommons, 3–8 Commons, and 1 Land card in every pack."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509993864"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 246455,
+        "lowPrice": 64.95,
+        "midPrice": 66.68,
+        "highPrice": 67.99,
+        "marketPrice": 66.18,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

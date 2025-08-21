@@ -1,0 +1,68 @@
+{
+  "uuid": "95c020f2-9700-51a5-acef-472d77922b9c",
+  "name": "2013 Core Set Intro Pack Depths of Power Blue",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100777",
+    "cardKingdomId": "187705",
+    "cardtraderId": "47775",
+    "csiId": "279856",
+    "mcmId": "256763",
+    "scgId": "SLD-MTG-INT-M13INTRO-EN-DEPTHS",
+    "tcgplayerProductId": "97814",
+    "tntId": "383298"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4ec9e95d9a0b23d2"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Depths of Power",
+        "set": "m13"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "2013 Core Set Booster Pack",
+        "set": "m13",
+        "uuid": "294f45ab-a696-59c1-83be-53d286ede856"
+      }
+    ]
+  },
+  "setCode": "M13",
+  "setName": "Magic 2013",
+  "tcgcsvData": {
+    "product": {
+      "productId": 97814,
+      "name": "Magic 2013 Intro Pack - Depths of Power (Blue)",
+      "cleanName": "Magic 2013 Intro Pack Depths of Power Blue",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/97814_200w.jpg",
+      "categoryId": 1,
+      "groupId": 364,
+      "url": "https://www.tcgplayer.com/product/97814/magic-magic-2013-m13-magic-2013-intro-pack-depths-of-power-blue",
+      "modifiedOn": "2015-04-13T15:59:13.273",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 97814,
+        "lowPrice": 19.2,
+        "midPrice": 30,
+        "highPrice": 34.99,
+        "marketPrice": 23.78,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

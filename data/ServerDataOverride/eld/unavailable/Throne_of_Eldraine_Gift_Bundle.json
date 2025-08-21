@@ -1,0 +1,103 @@
+{
+  "uuid": "0a673c6e-1a8f-5ba9-be12-54d697ea2cf2",
+  "name": "Throne of Eldraine Gift Bundle",
+  "category": "bundle",
+  "releaseDate": "2019-10-04",
+  "subtype": "gift_bundle",
+  "identifiers": {
+    "abuId": "1795667",
+    "cardKingdomId": "228584",
+    "cardtraderId": "60151",
+    "csiId": "286355",
+    "mcmId": "405594",
+    "scgId": "SLD-MTG-BUN-ELDGIFT-EN",
+    "tcgplayerProductId": "200610",
+    "tntId": "1612151"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/f36cc1393d724549",
+    "tcgplayer": "https://mtgjson.com/links/eb5039cbb1bc7d86"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Piper of the Swarm",
+        "number": "392",
+        "set": "eld",
+        "uuid": "37fdc0d7-976d-5e5e-af6c-ee6b50795454"
+      }
+    ],
+    "other": [
+      {
+        "name": "20 foil basic lands"
+      },
+      {
+        "name": "20 nonfoil basic lands"
+      },
+      {
+        "name": "Throne of Eldraine oversized spindown"
+      },
+      {
+        "name": "Reusable card storage box"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Throne of Eldraine Draft Booster Pack",
+        "set": "eld",
+        "uuid": "21d471fb-dfea-5778-99ff-65a3e2264501"
+      },
+      {
+        "count": 1,
+        "name": "Throne of Eldraine Collector Booster Pack",
+        "set": "eld",
+        "uuid": "61cb35b0-215b-5d52-bcd9-6f55e1769ab2"
+      }
+    ]
+  },
+  "setCode": "ELD",
+  "setName": "Throne of Eldraine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 200610,
+      "name": "Throne of Eldraine - Bundle Gift Edition",
+      "cleanName": "Throne of Eldraine Bundle Gift Edition",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/200610_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2494,
+      "url": "https://www.tcgplayer.com/product/200610/magic-throne-of-eldraine-throne-of-eldraine-bundle-gift-edition",
+      "modifiedOn": "2019-10-11T18:52:16.467",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-10-04T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "With special packaging, a Collector Booster, and a unique foil alternate art promo card, <em>Throne of Eldraine</em> Bundle Gift Edition is the go-to choice for shoppers looking to purchase a gift for their favorite Magic fan.\r\n<br>\r\n<br>• 1 Collector Booster\r\n<br>• 1 special oversized Spindown life counter\r\n<br>• 10 <em>Throne of Eldraine</em> Draft Booster packs\r\n<br>• 20 regular basic lands\r\n<br>• 20 foil basic lands\r\n<br>• 1 foil alt-art bundle promo card"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509897247"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 200610,
+        "lowPrice": 87.04,
+        "midPrice": 100.01,
+        "highPrice": 170,
+        "marketPrice": 87.04,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

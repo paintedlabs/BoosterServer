@@ -1,0 +1,94 @@
+{
+  "uuid": "f867d2e7-7f4d-551b-90f3-c83bdfeb9666",
+  "name": "Core Set 2020 Bundle",
+  "category": "bundle",
+  "releaseDate": "2019-07-12",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1580463",
+    "cardKingdomId": "225517",
+    "cardtraderId": "57967",
+    "csiId": "276711",
+    "mcmId": "371535",
+    "scgId": "SLD-MTG-BUN-M20-EN",
+    "tcgplayerProductId": "188213",
+    "tntId": "1480298"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/a63c178cd93660f8",
+    "tcgplayer": "https://mtgjson.com/links/716348277dbf000d"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Chandra's Regulator",
+        "number": "131",
+        "set": "pm20",
+        "uuid": "d0d49b2e-886f-5bf3-9907-e044e0250bc8"
+      }
+    ],
+    "other": [
+      {
+        "name": "Core Set 2020 40-card Basic Land Bundle"
+      },
+      {
+        "name": "Core Set 2020 Spindown"
+      },
+      {
+        "name": "Reusable Storage Box"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Core Set 2020 Booster Pack",
+        "set": "m20",
+        "uuid": "98ee4589-78f8-5b48-ac57-ef50d8ff8f1c"
+      }
+    ]
+  },
+  "setCode": "M20",
+  "setName": "Core Set 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 188213,
+      "name": "Core Set 2020 - Bundle",
+      "cleanName": "Core Set 2020 Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/188213_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2441,
+      "url": "https://www.tcgplayer.com/product/188213/magic-core-set-2020-core-set-2020-bundle",
+      "modifiedOn": "2019-06-17T15:56:09.777",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-07-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 10 Core Set 2020 booster packs\r\n<br>• 20 foil land pack\r\n<br>• 20 regular land pack\r\n<br>• 2 reference cards\r\n<br>• 1 foil promo card\r\n<br>• 1 oversized Spindown life counter\r\n<br>• 1 reusable card storage box"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509774517"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 188213,
+        "lowPrice": 53.95,
+        "midPrice": 60.62,
+        "highPrice": 89.99,
+        "marketPrice": 54.42,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

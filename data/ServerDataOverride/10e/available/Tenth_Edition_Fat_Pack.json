@@ -1,0 +1,78 @@
+{
+  "uuid": "2f781c42-099e-5307-a511-e8ea67b4c13c",
+  "name": "Tenth Edition Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1107725",
+    "cardKingdomId": "122711",
+    "cardtraderId": "47219",
+    "csiId": "97283",
+    "mcmId": "210165",
+    "scgId": "SLD-MTG-BUN-10E-EN",
+    "tcgplayerProductId": "78300",
+    "tntId": "155094"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/10e156a4ba4bb571"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Tenth Edition 40-card Basic Land Bundle"
+      },
+      {
+        "name": "Tenth Edition Special Life Counter"
+      },
+      {
+        "name": "Pro-tour player highlight card"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Tenth Edition Booster Pack",
+        "set": "10e",
+        "uuid": "c690e178-661d-5e17-9b29-a5bf6319a844"
+      }
+    ]
+  },
+  "setCode": "10E",
+  "setName": "Tenth Edition",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78300,
+      "name": "10th Edition - Fat Pack",
+      "cleanName": "10th Edition Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78300_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1,
+      "url": "https://www.tcgplayer.com/product/78300/magic-10th-edition-10th-edition-fat-pack",
+      "modifiedOn": "2019-12-26T20:55:08.887",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• A player's guide with a complete visual encyclopedia of the set\r\n<br>• Two card boxes with a panoramic art by Kev Walker, and six color-coded card dividers\r\n<br>• Six Tenth Edition boosters\r\n<br>• A pack of 40 Tenth Edition basic lands\r\n<br>• A Tenth Edition Spindown life counter <em>(only available in this fat pack)</em>\r\n<br>• One random Pro Tour Player card"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 78300,
+        "lowPrice": 784.95,
+        "midPrice": 792.47,
+        "highPrice": 799.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

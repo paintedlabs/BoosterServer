@@ -1,0 +1,73 @@
+{
+  "uuid": "984ace3f-d497-5b31-8af8-e2ad40985be1",
+  "name": "Shadows over Innistrad Intro Pack Horrific Visions",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-03-15",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1101153",
+    "cardKingdomId": "227627",
+    "cardtraderId": "48405",
+    "mcmId": "288895",
+    "tcgplayerProductId": "112958",
+    "tntId": "1092935"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/58d603033e92ab5b"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Horrific Visions",
+        "set": "soi"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Shadows over Innistrad Booster Pack",
+        "set": "soi",
+        "uuid": "a06fe76f-0b7f-59cc-b2b9-04b4c436df10"
+      }
+    ]
+  },
+  "setCode": "SOI",
+  "setName": "Shadows over Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 112958,
+      "name": "Shadows over Innistrad Intro Pack - Horrific Visions (G)",
+      "cleanName": "Shadows over Innistrad Intro Pack Horrific Visions G",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/112958_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1708,
+      "url": "https://www.tcgplayer.com/product/112958/magic-shadows-over-innistrad-shadows-over-innistrad-intro-pack-horrific-visions-g",
+      "modifiedOn": "2018-08-10T13:39:18.717",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Intro packs are the perfect first purchase for a new Magic player.\r\n<br>Contains:\r\n<br>• Ready-to-play 60-card deck featuring a foil premium card\r\n<br>• 2 Shadows over Innistrad 15-card booster packs\r\n<br>• Strategy Insert\r\n<br>• Magic learn-to-play guide"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 112958,
+        "lowPrice": 21,
+        "midPrice": 25.17,
+        "highPrice": 25.17,
+        "marketPrice": 25.19,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

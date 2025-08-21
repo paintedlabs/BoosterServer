@@ -1,0 +1,81 @@
+{
+  "uuid": "a51bab7c-0652-5444-abdf-e7ce5c252a40",
+  "name": "Gatecrash Intro Pack Set of 5",
+  "category": "subset",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100573",
+    "cardtraderId": "47902",
+    "mcmId": "259878",
+    "tcgplayerProductId": "67384"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/2ce8a3023984400e"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Gatecrash Intro Pack Boros Battalion",
+        "set": "gtc",
+        "uuid": "a0e65d7c-ae6b-5b2d-88f2-403cee9a3d0f"
+      },
+      {
+        "count": 1,
+        "name": "Gatecrash Intro Pack Dimir Dementia",
+        "set": "gtc",
+        "uuid": "b1f3ba9c-b013-5e38-9901-2d6a11791674"
+      },
+      {
+        "count": 1,
+        "name": "Gatecrash Intro Pack Gruul Goliaths",
+        "set": "gtc",
+        "uuid": "0a1fbf64-abc5-5602-b2bc-7f42dcef4af0"
+      },
+      {
+        "count": 1,
+        "name": "Gatecrash Intro Pack Orzhov Oppression",
+        "set": "gtc",
+        "uuid": "8766a4ac-3e42-5bab-a793-ab06b385850e"
+      },
+      {
+        "count": 1,
+        "name": "Gatecrash Intro Pack Simic Synthesis",
+        "set": "gtc",
+        "uuid": "2fb0453a-e1fc-55e2-ab77-42aa9a2aec40"
+      }
+    ]
+  },
+  "setCode": "GTC",
+  "setName": "Gatecrash",
+  "tcgcsvData": {
+    "product": {
+      "productId": 67384,
+      "name": "Gatecrash - Intro Pack [Set of 5]",
+      "cleanName": "Gatecrash Intro Pack Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/67384_200w.jpg",
+      "categoryId": 1,
+      "groupId": 569,
+      "url": "https://www.tcgplayer.com/product/67384/magic-gatecrash-gatecrash-intro-pack-set-of-5",
+      "modifiedOn": "2021-08-05T14:16:22.607",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 67384,
+        "lowPrice": 119.93,
+        "midPrice": 119.96,
+        "highPrice": 127.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

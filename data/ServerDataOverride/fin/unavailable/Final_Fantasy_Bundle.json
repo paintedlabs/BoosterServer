@@ -1,0 +1,91 @@
+{
+  "uuid": "be85f711-c6f1-5d61-9fe0-a9463deffa0f",
+  "name": "Final Fantasy Bundle",
+  "category": "bundle",
+  "cardCount": 2,
+  "releaseDate": "2025-06-13",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2594498",
+    "cardKingdomId": "312843",
+    "cardtraderId": "322077",
+    "mcmId": "812575",
+    "miniaturemarketId": "305710",
+    "scgId": "SLD-MTG-BUN-FIN-EN",
+    "tcgplayerProductId": "618897"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/25ead94c651c8cf5",
+    "tcgplayer": "https://mtgjson.com/links/9414be657419b469"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "32 Full Art Basic Land Pack"
+      },
+      {
+        "name": "Final Fantasy Spindown"
+      },
+      {
+        "name": "Final Fantasy Card Storage Box"
+      }
+    ],
+    "pack": [
+      {
+        "code": "bundle-promo",
+        "set": "fin"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 9,
+        "name": "Final Fantasy Play Booster Pack",
+        "set": "fin",
+        "uuid": "887ca34d-e193-5f86-8d6b-9353f7b5dd83"
+      }
+    ]
+  },
+  "setCode": "FIN",
+  "setName": "Final Fantasy",
+  "tcgcsvData": {
+    "product": {
+      "productId": 618897,
+      "name": "FINAL FANTASY - Bundle",
+      "cleanName": "FINAL FANTASY Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/618897_200w.jpg",
+      "categoryId": 1,
+      "groupId": 24219,
+      "url": "https://www.tcgplayer.com/product/618897/magic-final-fantasy-final-fantasy-bundle",
+      "modifiedOn": "2025-06-13T04:11:45.897",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2025-06-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The entire FINAL FANTASY saga is here! Your players will step into the worlds of the beloved FINAL FANTASY RPG series' sixteen mainline games. They'll cast powerful spells, call upon classic summons, and even visit their favorite locations on the back of a Chocobo. Countless elements from the games are here for players to weave together their own stories.\r\n<br>\r\nThe Bundle is a great gift for Magic superfans and newcomers alike who visit your store. They contain a little bit of everything to get a player's collection off the ground, plus an oversized Spindown life counter themed after the set.\r\n<br>Contents:\r\n<br>• 9 Magic: The Gathering—FINAL FANTASY Play Boosters; each Play Booster contains 14 Magic: The Gathering cards\r\n<br>• 2 Traditional Foil Extended- Art cards\r\n<br>• 16 Traditional Foil Basic Land cards\r\n<br>• 16 nonfoil Basic Land cards\r\n<br>• 1 oversized Spindown life counter\r\n<br>• 1 card storage box\r\n<br>• 2 reference cards\r\n<br>• Each Play Booster contains:\r\n<br>• 14 Magic: The Gathering cards\r\n<br>• 1-4 cards of rarity Rare of higher\r\n<br>• 3-6 Uncommon cards\r\n<br>• 6-9 Common cards\r\n<br>• 1 Land card (Traditional Foil Land replaces a Land in 20% of boosters)\r\n<br>• 1 card of any rarity is Traditional Foil; Foil Borderless Mythic Rare in 1% of boosters"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166271057"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 618897,
+        "lowPrice": 83.99,
+        "midPrice": 100,
+        "highPrice": 329.99,
+        "marketPrice": 92.96,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

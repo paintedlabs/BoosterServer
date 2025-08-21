@@ -1,0 +1,649 @@
+{
+  "uuid": "eb4c4297-231d-5116-801b-7dc3612a196f",
+  "name": "Return to Ravnica Prerelease Pack Golgari",
+  "category": "limited_aid_tool",
+  "cardCount": 16,
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "cardtraderId": "47834",
+    "mcmId": "259208",
+    "tcgplayerProductId": "190187",
+    "tntId": "1660295"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/5d920f102bdd9e36"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Corpsejack Menace",
+        "number": "152★",
+        "set": "prtr",
+        "uuid": "1dfa9686-e3a8-5207-892e-b8ef244e7ce3"
+      }
+    ],
+    "other": [
+      {
+        "name": "Return to Ravnica Spindown Life Counter"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease-golgari",
+        "set": "rtr"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 5,
+        "name": "Return to Ravnica Booster Pack",
+        "set": "rtr",
+        "uuid": "1772b60a-f041-51d9-b86b-dc79d6b65070"
+      }
+    ]
+  },
+  "setCode": "RTR",
+  "setName": "Return to Ravnica",
+  "extendedData": {
+    "code": "rtr-prerelease-golgari",
+    "boosters": [
+      {
+        "sheets": {
+          "common": 11,
+          "uncommon": 3,
+          "rare_mythic": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "common": {
+        "total_weight": 31,
+        "cards": [
+          {
+            "set": "rtr",
+            "number": "58",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8c223cb8-e9cc-54c4-9d9a-c9ff29103b79"
+          },
+          {
+            "set": "rtr",
+            "number": "59",
+            "weight": 1,
+            "foil": false,
+            "uuid": "64054348-27a8-53d5-a61c-ea3263ec7cf4"
+          },
+          {
+            "set": "rtr",
+            "number": "60",
+            "weight": 1,
+            "foil": false,
+            "uuid": "84255e6d-df65-53cc-b53c-87b89778a4e5"
+          },
+          {
+            "set": "rtr",
+            "number": "64",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f52d2840-3c97-54d6-9c86-bf84aae433d1"
+          },
+          {
+            "set": "rtr",
+            "number": "66",
+            "weight": 1,
+            "foil": false,
+            "uuid": "24d562ca-b8e4-534b-a6ee-ac6f464940d3"
+          },
+          {
+            "set": "rtr",
+            "number": "69",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a0e81854-3b73-55da-b708-cfc310a94099"
+          },
+          {
+            "set": "rtr",
+            "number": "70",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fb261cd7-14cc-5029-8d16-88ea883222c9"
+          },
+          {
+            "set": "rtr",
+            "number": "72",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0a55694e-2e6b-5463-b10f-04cfa2aa9b56"
+          },
+          {
+            "set": "rtr",
+            "number": "74",
+            "weight": 1,
+            "foil": false,
+            "uuid": "758b9b10-7a81-5e02-8c3c-e1f97824c599"
+          },
+          {
+            "set": "rtr",
+            "number": "75",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a4381290-926d-57bb-abdd-2d91f5247cc1"
+          },
+          {
+            "set": "rtr",
+            "number": "78",
+            "weight": 1,
+            "foil": false,
+            "uuid": "fad7dda1-2e5e-5785-a5d5-ae28bd47c9c9"
+          },
+          {
+            "set": "rtr",
+            "number": "80",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ad5cab67-211c-59e0-830d-700012fb0a29"
+          },
+          {
+            "set": "rtr",
+            "number": "113",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0df57484-69dd-5e5a-9a49-2c019d1c3590"
+          },
+          {
+            "set": "rtr",
+            "number": "115",
+            "weight": 1,
+            "foil": false,
+            "uuid": "be3665a5-1190-5a2a-b998-77c5383adedb"
+          },
+          {
+            "set": "rtr",
+            "number": "116",
+            "weight": 1,
+            "foil": false,
+            "uuid": "12b932bc-bad5-5c4c-bcab-081e9cdd2b98"
+          },
+          {
+            "set": "rtr",
+            "number": "118",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9d8b71ef-83cc-527a-8f3b-56cb4f40fda2"
+          },
+          {
+            "set": "rtr",
+            "number": "119",
+            "weight": 1,
+            "foil": false,
+            "uuid": "00e4745d-cedf-5173-856f-c73edee25cd1"
+          },
+          {
+            "set": "rtr",
+            "number": "122",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bfac6c0b-94c9-5356-b827-e2f225aea6a5"
+          },
+          {
+            "set": "rtr",
+            "number": "124",
+            "weight": 1,
+            "foil": false,
+            "uuid": "be87d656-d71f-587e-af69-6ea3fa6a4e88"
+          },
+          {
+            "set": "rtr",
+            "number": "125",
+            "weight": 1,
+            "foil": false,
+            "uuid": "495ac685-41cc-5658-8854-6d095e77a02d"
+          },
+          {
+            "set": "rtr",
+            "number": "129",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f18a3687-0be5-5fbd-8da2-9f26dc4802b5"
+          },
+          {
+            "set": "rtr",
+            "number": "132",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e7aff0b6-ca88-5e74-ba87-2a0bd464af82"
+          },
+          {
+            "set": "rtr",
+            "number": "136",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ffd3b061-b52f-521e-b9f9-a3cd10aff163"
+          },
+          {
+            "set": "rtr",
+            "number": "137",
+            "weight": 1,
+            "foil": false,
+            "uuid": "4f9c21bd-3be1-5ead-b62f-c2c1dbc651ab"
+          },
+          {
+            "set": "rtr",
+            "number": "138",
+            "weight": 1,
+            "foil": false,
+            "uuid": "d7594213-b078-5fe3-91a5-0e3f4561af3f"
+          },
+          {
+            "set": "rtr",
+            "number": "165",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9d3a4196-3813-5c64-832c-601ecd58db60"
+          },
+          {
+            "set": "rtr",
+            "number": "198",
+            "weight": 1,
+            "foil": false,
+            "uuid": "25a0576e-ee90-5fb7-aabe-8c62c01593f6"
+          },
+          {
+            "set": "rtr",
+            "number": "205",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3e0da6f3-6cc2-56ab-990f-e5348cd51e4d"
+          },
+          {
+            "set": "rtr",
+            "number": "216",
+            "weight": 1,
+            "foil": false,
+            "uuid": "51d539bb-b34f-530e-9c12-9b865503ceef"
+          },
+          {
+            "set": "rtr",
+            "number": "239",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a6110455-8f32-5819-9c2c-4f934d80b38c"
+          },
+          {
+            "set": "rtr",
+            "number": "249",
+            "weight": 1,
+            "foil": false,
+            "uuid": "40f96673-3900-592d-bffd-d15665a25898"
+          }
+        ]
+      },
+      "uncommon": {
+        "total_weight": 27,
+        "cards": [
+          {
+            "set": "rtr",
+            "number": "57",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e9640ade-9c2d-501c-94c8-d4159e1189ca"
+          },
+          {
+            "set": "rtr",
+            "number": "61",
+            "weight": 1,
+            "foil": false,
+            "uuid": "19f419d9-d172-5efd-a9ba-1ff0240bca11"
+          },
+          {
+            "set": "rtr",
+            "number": "76",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ebaaac19-e2f1-5d66-9de1-5499df8bad51"
+          },
+          {
+            "set": "rtr",
+            "number": "77",
+            "weight": 1,
+            "foil": false,
+            "uuid": "04dca176-da8b-54f9-9171-785764829113"
+          },
+          {
+            "set": "rtr",
+            "number": "79",
+            "weight": 1,
+            "foil": false,
+            "uuid": "bae292a3-7418-55a6-991c-518088119ec1"
+          },
+          {
+            "set": "rtr",
+            "number": "82",
+            "weight": 1,
+            "foil": false,
+            "uuid": "741491a6-daa6-5480-b0a0-f57e4baf77fb"
+          },
+          {
+            "set": "rtr",
+            "number": "84",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8f14290c-36e5-5a90-a1dd-bf976db4bb0e"
+          },
+          {
+            "set": "rtr",
+            "number": "114",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9a1025f8-82fa-5ca9-bf63-05f98b8353f5"
+          },
+          {
+            "set": "rtr",
+            "number": "117",
+            "weight": 1,
+            "foil": false,
+            "uuid": "80b5b104-02a6-5b14-befa-a672aad9ae7d"
+          },
+          {
+            "set": "rtr",
+            "number": "126",
+            "weight": 1,
+            "foil": false,
+            "uuid": "58ad4f24-d439-5afc-ba4c-81e21b786bae"
+          },
+          {
+            "set": "rtr",
+            "number": "127",
+            "weight": 1,
+            "foil": false,
+            "uuid": "9d4e2346-db5f-5d97-ab1c-7bd3156ee761"
+          },
+          {
+            "set": "rtr",
+            "number": "131",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3b7bb5b6-a397-5d6a-b28e-19659eba65e8"
+          },
+          {
+            "set": "rtr",
+            "number": "133",
+            "weight": 1,
+            "foil": false,
+            "uuid": "0daaac60-9627-5ade-b0de-644109b1ad25"
+          },
+          {
+            "set": "rtr",
+            "number": "134",
+            "weight": 1,
+            "foil": false,
+            "uuid": "62071fce-5cb6-58a4-982e-cf70f216fa2c"
+          },
+          {
+            "set": "rtr",
+            "number": "135",
+            "weight": 1,
+            "foil": false,
+            "uuid": "7c74fa2a-0972-5f1b-a69c-a0ee197df30f"
+          },
+          {
+            "set": "rtr",
+            "number": "158",
+            "weight": 1,
+            "foil": false,
+            "uuid": "ad0cd4da-3122-5b50-a625-e0b1c1678cb1"
+          },
+          {
+            "set": "rtr",
+            "number": "164",
+            "weight": 1,
+            "foil": false,
+            "uuid": "295c7e0b-9513-5745-9016-ae1a11ae52bd"
+          },
+          {
+            "set": "rtr",
+            "number": "176",
+            "weight": 1,
+            "foil": false,
+            "uuid": "26db2038-94f2-5275-a76f-858d0a5f8cd8"
+          },
+          {
+            "set": "rtr",
+            "number": "191",
+            "weight": 1,
+            "foil": false,
+            "uuid": "a32a9c14-b4ce-5169-bdc1-d4340a7ca2db"
+          },
+          {
+            "set": "rtr",
+            "number": "204",
+            "weight": 1,
+            "foil": false,
+            "uuid": "91c7d237-7aee-5e22-a790-6e5d7a4ec652"
+          },
+          {
+            "set": "rtr",
+            "number": "222",
+            "weight": 1,
+            "foil": false,
+            "uuid": "3c1d4f62-a592-5ded-ac9e-f876097e6ef4"
+          },
+          {
+            "set": "rtr",
+            "number": "227",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f7489abf-d449-5475-b35c-5056d8bd1ba7"
+          },
+          {
+            "set": "rtr",
+            "number": "228",
+            "weight": 1,
+            "foil": false,
+            "uuid": "e9f14529-25ce-56cd-bdee-22e3eca7c9ca"
+          },
+          {
+            "set": "rtr",
+            "number": "229",
+            "weight": 1,
+            "foil": false,
+            "uuid": "1acf866f-bbcb-531f-94fc-fd07165b1bf3"
+          },
+          {
+            "set": "rtr",
+            "number": "234",
+            "weight": 1,
+            "foil": false,
+            "uuid": "f1817e1d-df5a-57ef-b4c2-3cd78261a7cd"
+          },
+          {
+            "set": "rtr",
+            "number": "235",
+            "weight": 1,
+            "foil": false,
+            "uuid": "104dfd9f-21b2-5e94-9739-48aa5d35fc02"
+          },
+          {
+            "set": "rtr",
+            "number": "245",
+            "weight": 1,
+            "foil": false,
+            "uuid": "85699155-7a97-5a3d-8fb3-817e1fcf34b6"
+          }
+        ]
+      },
+      "rare_mythic": {
+        "total_weight": 35,
+        "cards": [
+          {
+            "set": "rtr",
+            "number": "63",
+            "weight": 2,
+            "foil": false,
+            "uuid": "4f6a7de7-3a17-58d1-862f-ee07b3053a72"
+          },
+          {
+            "set": "rtr",
+            "number": "67",
+            "weight": 2,
+            "foil": false,
+            "uuid": "ab2e7086-04c8-53f6-8ba6-1b85a4fef606"
+          },
+          {
+            "set": "rtr",
+            "number": "73",
+            "weight": 2,
+            "foil": false,
+            "uuid": "9f208978-8567-5188-a3ee-b30fad0a0ef4"
+          },
+          {
+            "set": "rtr",
+            "number": "83",
+            "weight": 2,
+            "foil": false,
+            "uuid": "65617e56-4d64-561c-a6b2-3024737a0b8a"
+          },
+          {
+            "set": "rtr",
+            "number": "120",
+            "weight": 2,
+            "foil": false,
+            "uuid": "03db94d3-2c73-50c6-81fb-14e497990dad"
+          },
+          {
+            "set": "rtr",
+            "number": "121",
+            "weight": 2,
+            "foil": false,
+            "uuid": "ae6fd184-c286-5b53-a50f-d0b01b9025a8"
+          },
+          {
+            "set": "rtr",
+            "number": "130",
+            "weight": 2,
+            "foil": false,
+            "uuid": "1c9c846a-9e28-5570-bd35-7cd321a11d46"
+          },
+          {
+            "set": "rtr",
+            "number": "139",
+            "weight": 2,
+            "foil": false,
+            "uuid": "a7df1656-dff2-532a-89ab-a53fa444ede6"
+          },
+          {
+            "set": "rtr",
+            "number": "141",
+            "weight": 2,
+            "foil": false,
+            "uuid": "62f644b3-742d-5aaf-a3a0-3e574fe96beb"
+          },
+          {
+            "set": "rtr",
+            "number": "152",
+            "weight": 2,
+            "foil": false,
+            "uuid": "4ba8d403-aca7-597b-a448-98fe891dfe0f"
+          },
+          {
+            "set": "rtr",
+            "number": "174",
+            "weight": 1,
+            "foil": false,
+            "uuid": "8700a1ac-6c89-57b1-b0fd-ac27c8c446c6"
+          },
+          {
+            "set": "rtr",
+            "number": "175",
+            "weight": 2,
+            "foil": false,
+            "uuid": "8f111c1b-ae7f-574d-b8a1-710ec873b78e"
+          },
+          {
+            "set": "rtr",
+            "number": "177",
+            "weight": 2,
+            "foil": false,
+            "uuid": "42b4f76e-fef7-5a62-81ed-c0530eafc2c7"
+          },
+          {
+            "set": "rtr",
+            "number": "213",
+            "weight": 2,
+            "foil": false,
+            "uuid": "407ac6a4-cb3c-54f9-beb0-08e7e5d81c84"
+          },
+          {
+            "set": "rtr",
+            "number": "226",
+            "weight": 2,
+            "foil": false,
+            "uuid": "94e92c02-a660-50b9-9fd0-601bcc547837"
+          },
+          {
+            "set": "rtr",
+            "number": "231",
+            "weight": 2,
+            "foil": false,
+            "uuid": "0c090097-dc52-5593-bad4-f0397994e1ba"
+          },
+          {
+            "set": "rtr",
+            "number": "236",
+            "weight": 2,
+            "foil": false,
+            "uuid": "f0d80ec2-2f6e-57e0-bbb1-232624482086"
+          },
+          {
+            "set": "rtr",
+            "number": "243",
+            "weight": 2,
+            "foil": false,
+            "uuid": "05e270c9-fac0-5bd8-8654-3ff9e1ddd957"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "rtr"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 190187,
+      "name": "Return to Ravnica - Prerelease Pack (Golgari)",
+      "cleanName": "Return to Ravnica Prerelease Pack Golgari",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/190187_200w.jpg",
+      "categoryId": 1,
+      "groupId": 370,
+      "url": "https://www.tcgplayer.com/product/190187/magic-return-to-ravnica-return-to-ravnica-prerelease-pack-golgari",
+      "modifiedOn": "2021-07-07T14:01:54.523",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each sealed Prerelease Pack contains:\r\n<br>• 5 packs of Return to Ravnica\r\n<br>• 1 guild Prerelease pack of Return to Ravnica\r\n<br>• 1 special guild-based Prerelease foil\r\n<br>• 1 guild symbol sticker\r\n<br>• 1 guild Spindown life counter\r\n<br>• 1 letter from your guild leader\r\n<br>• 1 achievements card"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 190187,
+        "lowPrice": 54.99,
+        "midPrice": 54.99,
+        "highPrice": 54.99,
+        "marketPrice": 56.32,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

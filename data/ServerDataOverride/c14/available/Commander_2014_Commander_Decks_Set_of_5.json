@@ -1,0 +1,88 @@
+{
+  "uuid": "f02ac1ec-5b58-52a6-a624-efe62daa348f",
+  "name": "Commander 2014 Commander Decks Set of 5",
+  "category": "subset",
+  "subtype": "commander",
+  "identifiers": {
+    "cardtraderId": "44763",
+    "mcmId": "269854",
+    "scgId": "SLD-MTG-MLT-C14-EN-SET5",
+    "tcgplayerProductId": "94098",
+    "tntId": "1062542"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/473299ce603bde98"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Commander 2014 Commander Deck Built from Scratch",
+        "set": "c14",
+        "uuid": "19886b77-511f-59f3-8588-d7b0574fd9ba"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2014 Commander Deck Forged in Stone",
+        "set": "c14",
+        "uuid": "ec5ad6d4-81f1-5b6b-be59-f46ffdae2fd0"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2014 Commander Deck Guided by Nature",
+        "set": "c14",
+        "uuid": "fd4a9abf-cf6d-5abc-a77b-65d9b92d8eff"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2014 Commander Deck Peer Through Time",
+        "set": "c14",
+        "uuid": "cf9bb01b-4814-54a9-a0d6-0a8c404fb104"
+      },
+      {
+        "count": 1,
+        "name": "Commander 2014 Commander Deck Sworn to Darkness",
+        "set": "c14",
+        "uuid": "8f7348d1-9f9a-5cda-b0d8-963ba2c6fcf3"
+      }
+    ]
+  },
+  "setCode": "C14",
+  "setName": "Commander 2014",
+  "tcgcsvData": {
+    "product": {
+      "productId": 94098,
+      "name": "Commander 2014 - Set of 5",
+      "cleanName": "Commander 2014 Set of 5",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/94098_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1476,
+      "url": "https://www.tcgplayer.com/product/94098/magic-commander-2014-commander-2014-set-of-5",
+      "modifiedOn": "2016-10-21T13:33:40.86",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "1 of each of the 5 Sealed Commander 2014 Preconstructed Decks"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 94098,
+        "lowPrice": 518.72,
+        "midPrice": 518.74,
+        "highPrice": 518.75,
+        "marketPrice": 462.49,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

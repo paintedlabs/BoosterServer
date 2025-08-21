@@ -1,0 +1,67 @@
+{
+  "uuid": "4db4341c-0aee-5cd7-bc35-775935350f99",
+  "name": "2000 World Championship Deck Jon Finkel",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100243",
+    "cardKingdomId": "228799",
+    "cardtraderId": "39905",
+    "csiId": "98407",
+    "mcmId": "250167",
+    "scgId": "SLD-MTG-BXS-WCH2000-EN-JONFINKEL",
+    "tcgplayerProductId": "158290",
+    "tntId": "79199"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/a8f5612bc1f138b2",
+    "tcgplayer": "https://mtgjson.com/links/41d90e4e5bb460ef"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Jon Finkel - Mono-Blue Tinker",
+        "set": "wc00"
+      }
+    ]
+  },
+  "setCode": "WC00",
+  "setName": "World Championship Decks 2000",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158290,
+      "name": "World Championship Deck: 2000 Brussels - Jon Finkel, World Champion",
+      "cleanName": "World Championship Deck 2000 Brussels Jon Finkel World Champion",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158290_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/158290/magic-world-championship-decks-world-championship-deck-2000-brussels-jon-finkel-world-champion",
+      "modifiedOn": "2018-02-07T13:36:55.99",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>\"Jon Finkel's explosive, mono-blue deck used artifacts such as Grim Monolith, Metalworker, and Voltaic Key to generate huge amounts of mana. The mana, in turn, put large creatures into play to finish off stunned opponents.\"</em>\r\n<br>\r\n<br><strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158290,
+        "lowPrice": 205,
+        "midPrice": 283.5,
+        "highPrice": 458.7,
+        "marketPrice": 197.98,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

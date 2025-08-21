@@ -1,0 +1,78 @@
+{
+  "uuid": "13044115-319f-5366-8311-60fd88e29aeb",
+  "name": "Challenger Deck 2018 Display",
+  "category": "deck_box",
+  "subtype": "challenger",
+  "identifiers": {
+    "tcgplayerProductId": "161416"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/41aef649cab3bf26"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Challenger Deck 2018 Counter Surge",
+        "set": "q01",
+        "uuid": "6f25c48c-a690-5842-9d29-9ffb1495c919"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2018 Hazoret Aggro",
+        "set": "q01",
+        "uuid": "21f90d20-1427-5e2b-8a25-c30fa77d8998"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2018 Second Sun Control",
+        "set": "q01",
+        "uuid": "55a2ef53-0387-5f64-a9a6-b7d0e4806409"
+      },
+      {
+        "count": 2,
+        "name": "Challenger Deck 2018 Vehicle Rush",
+        "set": "q01",
+        "uuid": "c693cb5b-1236-5581-8e99-a7acdb515bca"
+      }
+    ]
+  },
+  "setCode": "Q01",
+  "setName": "Challenger Decks 2018",
+  "tcgcsvData": {
+    "product": {
+      "productId": 161416,
+      "name": "Challenger Deck 2018 Display",
+      "cleanName": "Challenger Deck 2018 Display",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/161416_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2203,
+      "url": "https://www.tcgplayer.com/product/161416/magic-challenger-decks-challenger-deck-2018-display",
+      "modifiedOn": "2019-02-27T16:17:45.427",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "A Challenger Decks Display comes with two of each deck for a total of eight decks. This display contains the following decks:\r\n<br>\r\n<br>• <a href=\"https://shop.tcgplayer.com/magic/challenger-decks/challenger-deck-counter-surge\">Counter Surge</a>\r\n<br>• <a href=\"https://shop.tcgplayer.com/magic/challenger-decks/challenger-deck-hazoret-aggro\">Hazoret Aggro</a>\r\n<br>• <a href=\"https://shop.tcgplayer.com/magic/challenger-decks/challenger-deck-second-sun-control\">Second Sun Control</a>\r\n<br>• <a href=\"https://shop.tcgplayer.com/magic/challenger-decks/challenger-deck-vehicle-rush\">Vehicle Rush</a>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 161416,
+        "lowPrice": 162.96,
+        "midPrice": 176.95,
+        "highPrice": 178.99,
+        "marketPrice": 178.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

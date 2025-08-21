@@ -1,0 +1,64 @@
+{
+  "uuid": "1339e4c9-57dd-5469-90ec-4e49aa44aabd",
+  "name": "Odyssey Theme Deck Liftoff",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "theme",
+  "identifiers": {
+    "abuId": "1100947",
+    "cardKingdomId": "1427",
+    "cardtraderId": "45974",
+    "mcmId": "253728",
+    "tcgplayerProductId": "215784",
+    "tntId": "96338"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/f498a6162d8c5519"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Liftoff",
+        "set": "ody"
+      }
+    ]
+  },
+  "setCode": "ODY",
+  "setName": "Odyssey",
+  "tcgcsvData": {
+    "product": {
+      "productId": 215784,
+      "name": "Odyssey Theme Deck - Liftoff",
+      "cleanName": "Odyssey Theme Deck Liftoff",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/215784_200w.jpg",
+      "categoryId": 1,
+      "groupId": 80,
+      "url": "https://www.tcgplayer.com/product/215784/magic-odyssey-odyssey-theme-deck-liftoff",
+      "modifiedOn": "2020-06-15T21:35:29.633",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Liftoff deck is for players who like to be in control. If you think you can outplay and outthink anyone who sits down across from you, this is the right deck for you. However, if you like ultra-aggressive games where you attack every turn until someone wins, you should probably trade Liftoff for another deck."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 215784,
+        "lowPrice": 64.98,
+        "midPrice": 64.99,
+        "highPrice": 64.99,
+        "marketPrice": 59.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

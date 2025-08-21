@@ -1,0 +1,75 @@
+{
+  "uuid": "0c47809b-6fb9-5f53-9d28-f9f868de627b",
+  "name": "Ixalan Planeswalker Deck Jace",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2017-09-04",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1476991",
+    "cardKingdomId": "213984",
+    "cardtraderId": "48577",
+    "csiId": "241700",
+    "mcmId": "301282",
+    "scgId": "SLD-MTG-INT-XLNPWDECK-EN-JACE",
+    "tcgplayerProductId": "144693",
+    "tntId": "1115668"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/6c596be7be759f00"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Jace, Ingenious Mind Mage",
+        "set": "xln"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Ixalan Booster Pack",
+        "set": "xln",
+        "uuid": "1ffd541f-99e2-509e-9c9e-49f383f03484"
+      }
+    ]
+  },
+  "setCode": "XLN",
+  "setName": "Ixalan",
+  "tcgcsvData": {
+    "product": {
+      "productId": 144693,
+      "name": "Ixalan - Planeswalker Deck [Jace]",
+      "cleanName": "Ixalan Planeswalker Deck Jace",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/144693_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2043,
+      "url": "https://www.tcgplayer.com/product/144693/magic-ixalan-ixalan-planeswalker-deck-jace",
+      "modifiedOn": "2018-02-27T10:26:55.34",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Planeswalker Deck featuring <a href=\"http://shop.tcgplayer.com/magic/ixalan/jace-ingenious-mind-mage\">\"Jace, Ingenious Mind-Mage\"</a>. This deck contains the following:\r\n<br><ul>\r\n    <li>1 Ready-to-play 60-card deck, featuring a foil premium Planeswalker card </li>\r\n    <li>2 Ixalan booster packs</li>\r\n    <li>1 Strategy insert</li>\r\n    <li>1 Magic learn-to-play guide</li>\r\n</ul>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 144693,
+        "lowPrice": 25,
+        "midPrice": 29.49,
+        "highPrice": 36.69,
+        "marketPrice": 29.17,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

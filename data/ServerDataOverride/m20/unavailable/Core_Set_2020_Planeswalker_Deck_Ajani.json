@@ -1,0 +1,75 @@
+{
+  "uuid": "7a941771-db73-5364-b7c5-231cc451a9b2",
+  "name": "Core Set 2020 Planeswalker Deck Ajani",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2019-07-12",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1580842",
+    "cardKingdomId": "225555",
+    "cardtraderId": "169300",
+    "csiId": "276713",
+    "mcmId": "378279",
+    "scgId": "SLD-MTG-INT-M20PWDECK-EN-AJANI",
+    "tcgplayerProductId": "192509",
+    "tntId": "1480287"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/4918a84023950d67"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Ajani, Inspiring Leader",
+        "set": "m20"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Core Set 2020 Booster Pack",
+        "set": "m20",
+        "uuid": "98ee4589-78f8-5b48-ac57-ef50d8ff8f1c"
+      }
+    ]
+  },
+  "setCode": "M20",
+  "setName": "Core Set 2020",
+  "tcgcsvData": {
+    "product": {
+      "productId": 192509,
+      "name": "Core Set 2020 - Planeswalker Deck [Ajani]",
+      "cleanName": "Core Set 2020 Planeswalker Deck Ajani",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/192509_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2441,
+      "url": "https://www.tcgplayer.com/product/192509/magic-core-set-2020-core-set-2020-planeswalker-deck-ajani",
+      "modifiedOn": "2019-06-27T13:03:33.437",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-07-12T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 preconstructed 60-card deck \r\n<br>• 1 Core 2020 booster pack \r\n<br>• 1 Magic reference guide\r\n<br>• 1 strategy insert\r\n<br>• 1 MTG Arena code card <em>(varies by region)</em>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 192509,
+        "lowPrice": 37.99,
+        "midPrice": 39.98,
+        "highPrice": 59.99,
+        "marketPrice": 40.74,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

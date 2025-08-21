@@ -1,0 +1,49 @@
+{
+  "uuid": "4703ab73-cf03-5512-9b61-823aa1711cbd",
+  "name": "2011 Core Set Sample Deck Ajani Goldmane",
+  "category": "deck",
+  "subtype": "starter_deck",
+  "identifiers": {
+    "cardtraderId": "47516",
+    "mcmId": "287570"
+  },
+  "purchaseUrls": {},
+  "contents": {
+    "variable": [
+      {
+        "configs": [
+          {
+            "deck": [
+              {
+                "name": "White Deck A",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          },
+          {
+            "deck": [
+              {
+                "name": "White Deck B",
+                "set": "m11"
+              }
+            ],
+            "variable_config": [
+              {
+                "chance": 1,
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "setCode": "M11",
+  "setName": "Magic 2011"
+}

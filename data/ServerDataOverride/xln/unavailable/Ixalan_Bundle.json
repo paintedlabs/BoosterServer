@@ -1,0 +1,94 @@
+{
+  "uuid": "09500525-6283-5ea1-9e0c-e4b1496faad4",
+  "name": "Ixalan Bundle",
+  "category": "bundle",
+  "releaseDate": "2017-09-29",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1476989",
+    "cardKingdomId": "213871",
+    "cardtraderId": "48575",
+    "csiId": "241727",
+    "mcmId": "297872",
+    "scgId": "SLD-MTG-BUN-XLN-EN",
+    "tcgplayerProductId": "141986",
+    "tntId": "1115673"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/81e730195cc560e1",
+    "tcgplayer": "https://mtgjson.com/links/0d8093c019027431"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "1 Card box"
+      },
+      {
+        "name": "1 Player’s Guide with visual encyclopedia for Ixalan"
+      },
+      {
+        "name": "80 Basic land cards"
+      },
+      {
+        "name": "1 Magic learn-to-play guide"
+      },
+      {
+        "name": "1 Spindown life counter"
+      },
+      {
+        "name": "2 Deck boxes"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Ixalan Booster Pack",
+        "set": "xln",
+        "uuid": "1ffd541f-99e2-509e-9c9e-49f383f03484"
+      }
+    ]
+  },
+  "setCode": "XLN",
+  "setName": "Ixalan",
+  "tcgcsvData": {
+    "product": {
+      "productId": 141986,
+      "name": "Ixalan - Bundle",
+      "cleanName": "Ixalan Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/141986_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2043,
+      "url": "https://www.tcgplayer.com/product/141986/magic-ixalan-ixalan-bundle",
+      "modifiedOn": "2017-09-06T13:39:02.953",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2017-09-29T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "The Ixalan Bundle lets engaged players dive into the new set, with boosters to help update their decks for the new Standard environment, plus a Player’s Guide complete with a set overview and a visual encyclopedia of every card in the set.\r\n<br>\r\n<br>Contents: \r\n<br>• 10 Ixalan booster packs \r\n<br>• 1 Card box \r\n<br>• 1 Player’s Guide with visual encyclopedia for Ixalan \r\n<br>• 80 Basic land cards \r\n<br>• 1 Magic learn-to-play guide \r\n<br>• 1 Spindown life counter \r\n<br>• 2 Deck boxes</br>"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509545780"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 141986,
+        "lowPrice": 64.95,
+        "midPrice": 68.85,
+        "highPrice": 79.99,
+        "marketPrice": 66.86,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

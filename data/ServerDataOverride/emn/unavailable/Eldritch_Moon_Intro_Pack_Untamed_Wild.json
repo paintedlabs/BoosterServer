@@ -1,0 +1,73 @@
+{
+  "uuid": "45dd304f-16b5-5877-a1d2-6a05e5d9bc66",
+  "name": "Eldritch Moon Intro Pack Untamed Wild",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2016-06-29",
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100483",
+    "cardKingdomId": "209452",
+    "cardtraderId": "48434",
+    "mcmId": "290948",
+    "tcgplayerProductId": "118398",
+    "tntId": "1099830"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/3e1bf561e2572ab8"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Untamed Wild",
+        "set": "emn"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Eldritch Moon Booster Pack",
+        "set": "emn",
+        "uuid": "4253efbd-cc76-53e3-a54c-9f4012f3c097"
+      }
+    ]
+  },
+  "setCode": "EMN",
+  "setName": "Eldritch Moon",
+  "tcgcsvData": {
+    "product": {
+      "productId": 118398,
+      "name": "Eldritch Moon - Intro Pack - Untamed Wild",
+      "cleanName": "Eldritch Moon Intro Pack Untamed Wild",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/118398_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1790,
+      "url": "https://www.tcgplayer.com/product/118398/magic-eldritch-moon-eldritch-moon-intro-pack-untamed-wild",
+      "modifiedOn": "2021-08-05T14:23:02.057",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Eldritch Moon booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 118398,
+        "lowPrice": 20,
+        "midPrice": 24.67,
+        "highPrice": 28,
+        "marketPrice": 24.9,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

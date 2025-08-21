@@ -1,0 +1,81 @@
+{
+  "uuid": "56b685e8-e2da-560c-ad7e-1f99a0e88457",
+  "name": "Worldwake Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100202",
+    "cardKingdomId": "129939",
+    "cardtraderId": "47455",
+    "csiId": "98432",
+    "mcmId": "210196",
+    "scgId": "SLD-MTG-BUN-WWK-EN",
+    "tcgplayerProductId": "78334",
+    "tntId": "287100"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/be41a8cdb8d9ee97"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "One card box with panoramic art"
+      },
+      {
+        "name": "The Worldwake Player's Guide"
+      },
+      {
+        "name": "A learn-to-play insert"
+      },
+      {
+        "name": "An excerpt from In the Teeth of Akoum"
+      },
+      {
+        "name": "An exclusive Worldwake Spindown Life Counter"
+      },
+      {
+        "name": "40 Zendikar extended art basic lands"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Worldwake Booster Pack",
+        "set": "wwk",
+        "uuid": "d40674d1-34ff-5855-8dad-7718eaa462aa"
+      }
+    ]
+  },
+  "setCode": "WWK",
+  "setName": "Worldwake",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78334,
+      "name": "Worldwake - Fat Pack",
+      "cleanName": "Worldwake Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78334_200w.jpg",
+      "categoryId": 1,
+      "groupId": 122,
+      "url": "https://www.tcgplayer.com/product/78334/magic-worldwake-worldwake-fat-pack",
+      "modifiedOn": "2019-10-11T12:17:48.017",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78334,
+        "lowPrice": 396.99,
+        "midPrice": 456.62,
+        "highPrice": 599.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

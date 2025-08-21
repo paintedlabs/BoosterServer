@@ -1,0 +1,94 @@
+{
+  "uuid": "dc10bb05-0029-5e3a-8e0f-93795dfc26ea",
+  "name": "Strixhaven School of Mages Bundle",
+  "category": "bundle",
+  "releaseDate": "2021-04-23",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "2012071",
+    "cardKingdomId": "243707",
+    "cardtraderId": "153201",
+    "csiId": "312182",
+    "mcmId": "540461",
+    "scgId": "SLD-MTG-BUN-STX-EN",
+    "tcgplayerProductId": "233245",
+    "tntId": "1699176"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/21806e85c6d0583d",
+    "tcgplayer": "https://mtgjson.com/links/1fb2a60e46670184"
+  },
+  "contents": {
+    "card": [
+      {
+        "foil": true,
+        "name": "Archmage Emeritus",
+        "number": "377",
+        "set": "stx",
+        "uuid": "79636fc8-4089-5a80-ac3a-9d78569b8acf"
+      }
+    ],
+    "other": [
+      {
+        "name": "Strixhaven 40-card Basic Land Bundle"
+      },
+      {
+        "name": "Strixhaven Premium Spindown"
+      },
+      {
+        "name": "Strixhaven Card Storage Box"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Strixhaven School of Mages Draft Booster Pack",
+        "set": "stx",
+        "uuid": "141e45d1-be58-5312-82ad-3cd774a567cb"
+      }
+    ]
+  },
+  "setCode": "STX",
+  "setName": "Strixhaven: School of Mages",
+  "tcgcsvData": {
+    "product": {
+      "productId": 233245,
+      "name": "Strixhaven: School of Mages - Bundle",
+      "cleanName": "Strixhaven School of Mages Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/233245_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2773,
+      "url": "https://www.tcgplayer.com/product/233245/magic-strixhaven-school-of-mages-strixhaven-school-of-mages-bundle",
+      "modifiedOn": "2021-04-23T04:03:28.35",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2021-04-23T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>KEY PRODUCT FEATURES</strong>\r\n<br><br>• 10 <em>Strixhaven</em> (STX) Magic: The Gathering Draft Booster Packs\r\n<br>• Exclusive foil alt-art promo card—Archmage Emeritus\r\n<br>• 40 basic lands (20 foil & 20 nonfoil)\r\n<br>• Spindown life counter and MTG card storage box\r\n<br>• Choose your college at the most prestigious university for magical learning in Magic's Multiverse\r\n<br><br><strong>CONTENTS</strong>\r\n<br><br>The <em>Strixhaven: School of Mages</em> Bundle contains 10 <em>Strixhaven</em> Draft Boosters, 2 land packs with 40 basic lands from the Strixhaven setting (20 in foil and 20 nonfoil), 1 foil alt-art promo card, 1 oversized Spindown life counter, 1 card storage box, and 2 reference cards.\r\nEach of the 10 <em>Strixhaven</em> Draft Boosters contain 15 Magic cards and 1 ad/token or Helper Card (for use with Double-Faced Cards). \r\n<br><br>\r\nEach pack contains 1 Mystical Archive card (Uncommon, Rare, or Mythic Rare), 1 Lesson card (Common, Rare, or Mythic Rare), 1 Rare or Mythic Rare, 3 Uncommons, and 9 Commons. A foil card of any rarity replaces a Common in 33% of <em>Strixhaven</em> Draft Boosters, and a foil Mystical Archive Mythic Rare can be found in <1% of packs."
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509975631"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 233245,
+        "lowPrice": 49.97,
+        "midPrice": 59.97,
+        "highPrice": 70,
+        "marketPrice": 56.63,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

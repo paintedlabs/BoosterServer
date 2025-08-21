@@ -1,0 +1,77 @@
+{
+  "uuid": "c1d6cc2c-f892-5705-9979-de9ef54a0c7e",
+  "name": "Assassins Creed Starter Kit",
+  "category": "multiple_decks",
+  "cardCount": 120,
+  "releaseDate": "2024-07-05",
+  "subtype": "two_player_starter",
+  "identifiers": {
+    "abuId": "2509383",
+    "cardKingdomId": "297397",
+    "cardtraderId": "280373",
+    "mcmId": "758500",
+    "miniaturemarketId": "299664",
+    "scgId": "SLD-MTG-INT-ACRSTARTER-EN",
+    "tcgplayerProductId": "541230",
+    "tntId": "1808837"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/31c41a365dfbc94f",
+    "tcgplayer": "https://mtgjson.com/links/42063d21d08aa227"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Brotherhood Agents",
+        "set": "acr"
+      },
+      {
+        "name": "Ancient Arsenal",
+        "set": "acr"
+      }
+    ]
+  },
+  "setCode": "ACR",
+  "setName": "Assassin's Creed",
+  "tcgcsvData": {
+    "product": {
+      "productId": 541230,
+      "name": "Universes Beyond: Assassin's Creed - Starter Kit",
+      "cleanName": "Universes Beyond Assassins Creed Starter Kit",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/541230_200w.jpg",
+      "categoryId": 1,
+      "groupId": 23446,
+      "url": "https://www.tcgplayer.com/product/541230/magic-universes-beyond-assassins-creed-universes-beyond-assassins-creed-starter-kit",
+      "modifiedOn": "2024-07-05T04:03:21.343",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2024-07-05T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Assassin's Creed® emerges from the shadows to join Magic: The Gathering! Your community will freerun through ancient locales with their favorite Assassins and take a leap of faith—the past is theirs to explore.\r\n<br>\r\nStarter Kits contain everything your players need for their first game of Magic. Learn the essentials or teach friends and family with the included Play Guide booklet, then enter the fray with two pre-built 60-card decks. After the fun, the decks can be tucked safely in the included deck boxes.\r\n<br>\r\nContents:\r\n<br>\r\n• 2 ready-to-play 60-card decks: 1 red-white deck and 1 blue-black deck\r\n<br>\r\n• 2 Mythic Rare cards (1 per deck)\r\n<br>\r\n• 8 Rare cards (4 per deck)\r\n<br>\r\n• 2 deck boxes (1 per deck)\r\n<br>\r\n• 1 Magic: The Gathering play guide"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "195166261362"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 541230,
+        "lowPrice": 24.99,
+        "midPrice": 29.94,
+        "highPrice": 79.99,
+        "marketPrice": 28.88,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

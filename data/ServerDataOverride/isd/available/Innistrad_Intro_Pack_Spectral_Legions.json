@@ -1,0 +1,73 @@
+{
+  "uuid": "d9e621bf-a9d3-5568-9097-1f6099a8ea22",
+  "name": "Innistrad Intro Pack Spectral Legions",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100605",
+    "cardKingdomId": "185711",
+    "cardtraderId": "47680",
+    "mcmId": "250771",
+    "scgId": "SLD-MTG-INT-ISDINTRO-EN-SPECTRAL",
+    "tcgplayerProductId": "56210",
+    "tntId": "321614"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/0fe117d3090e8a19"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Spectral Legions",
+        "set": "isd"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Innistrad Booster Pack",
+        "set": "isd",
+        "uuid": "b1a6cf3f-d005-5dfa-a593-677ca5401563"
+      }
+    ]
+  },
+  "setCode": "ISD",
+  "setName": "Innistrad",
+  "tcgcsvData": {
+    "product": {
+      "productId": 56210,
+      "name": "Innistrad - Intro Pack - Spectral Legions",
+      "cleanName": "Innistrad Intro Pack Spectral Legions",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/56210_200w.jpg",
+      "categoryId": 1,
+      "groupId": 59,
+      "url": "https://www.tcgplayer.com/product/56210/magic-innistrad-innistrad-intro-pack-spectral-legions",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<a href=\"http://magic.tcgplayer.com/db/deck.asp?deck_id=920046\">Decklist</a><BR>Window Card - Angel of Flight Alabaster"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 56210,
+        "lowPrice": 36.1,
+        "midPrice": 40.27,
+        "highPrice": 44.44,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

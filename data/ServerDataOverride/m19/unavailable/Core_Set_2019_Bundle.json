@@ -1,0 +1,91 @@
+{
+  "uuid": "9e687586-1905-5baa-9fd7-5e7271821213",
+  "name": "Core Set 2019 Bundle",
+  "category": "bundle",
+  "releaseDate": "2018-07-13",
+  "subtype": "default",
+  "identifiers": {
+    "abuId": "1502741",
+    "cardKingdomId": "219798",
+    "cardtraderId": "48703",
+    "csiId": "244845",
+    "mcmId": "299342",
+    "scgId": "SLD-MTG-BUN-M19-EN",
+    "tcgplayerProductId": "166562",
+    "tntId": "1178162"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/bebfbed4ac18cd97",
+    "tcgplayer": "https://mtgjson.com/links/d8b204f9f9688328"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Basic Land Pack"
+      },
+      {
+        "name": "Reusable Card Storage Box"
+      },
+      {
+        "name": "Player's Guide"
+      },
+      {
+        "name": "Core Set 2019 Spindown Life Counter"
+      },
+      {
+        "name": "Rules Reference Card"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 10,
+        "name": "Core Set 2019 Booster Pack",
+        "set": "m19",
+        "uuid": "36d4765d-add1-5d6b-8bff-f342ef62a3d0"
+      }
+    ]
+  },
+  "setCode": "M19",
+  "setName": "Core Set 2019",
+  "tcgcsvData": {
+    "product": {
+      "productId": 166562,
+      "name": "Core Set 2019 - Bundle",
+      "cleanName": "Core Set 2019 Bundle",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/166562_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2250,
+      "url": "https://www.tcgplayer.com/product/166562/magic-core-set-2019-core-set-2019-bundle",
+      "modifiedOn": "2018-05-14T17:58:59.403",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-07-13T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 10 Core 2019 booster packs \r\n<br>• 1 card box \r\n<br>• 1 player’s guide \r\n<br>• 1 80-card land pack \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 Spindown™ life counter"
+        },
+        {
+          "name": "UPC",
+          "displayName": "UPC",
+          "value": "630509661220"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 166562,
+        "lowPrice": 46.95,
+        "midPrice": 53.98,
+        "highPrice": 89.99,
+        "marketPrice": 53.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

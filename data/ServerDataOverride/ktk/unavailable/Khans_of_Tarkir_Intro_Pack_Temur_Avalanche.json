@@ -1,0 +1,73 @@
+{
+  "uuid": "fb7d6852-a25f-5312-b508-d3cc13d65654",
+  "name": "Khans of Tarkir Intro Pack Temur Avalanche",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100714",
+    "cardKingdomId": "196183",
+    "cardtraderId": "48195",
+    "mcmId": "269603",
+    "scgId": "SLD-MTG-INT-KTKINTRO-EN-TEMUR",
+    "tcgplayerProductId": "93319",
+    "tntId": "1060257"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/ad05dafe1d970181"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Temur Avalanche",
+        "set": "ktk"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Khans of Tarkir Booster Pack",
+        "set": "ktk",
+        "uuid": "82ebffce-506f-50bd-880a-82439e47861c"
+      }
+    ]
+  },
+  "setCode": "KTK",
+  "setName": "Khans of Tarkir",
+  "tcgcsvData": {
+    "product": {
+      "productId": 93319,
+      "name": "Khans of Tarkir - Intro Pack - Temur Avalanche",
+      "cleanName": "Khans of Tarkir Intro Pack Temur Avalanche",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/93319_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1356,
+      "url": "https://www.tcgplayer.com/product/93319/magic-khans-of-tarkir-khans-of-tarkir-intro-pack-temur-avalanche",
+      "modifiedOn": "2021-08-05T14:30:52.06",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck <em>(including 1 premium foil rare and one non-premium rare)</em>, two Khans of Tarkir booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 93319,
+        "lowPrice": 44.39,
+        "midPrice": 44.44,
+        "highPrice": 45.72,
+        "marketPrice": 39.99,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

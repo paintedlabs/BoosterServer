@@ -1,0 +1,66 @@
+{
+  "uuid": "5169ca8e-6665-5716-80ae-b33d6308a684",
+  "name": "2000 World Championship Deck Nicolas Labarre",
+  "category": "deck",
+  "cardCount": 75,
+  "subtype": "championship",
+  "identifiers": {
+    "abuId": "1100244",
+    "cardKingdomId": "228801",
+    "cardtraderId": "39908",
+    "csiId": "98408",
+    "mcmId": "250164",
+    "scgId": "SLD-MTG-BXS-WCH2000-EN-NICOLASLABARRE",
+    "tcgplayerProductId": "158293",
+    "tntId": "79201"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/e8af1b080f980886"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Nicolas Labarre - Chimera",
+        "set": "wc00"
+      }
+    ]
+  },
+  "setCode": "WC00",
+  "setName": "World Championship Decks 2000",
+  "tcgcsvData": {
+    "product": {
+      "productId": 158293,
+      "name": "World Championship Deck: 2000 Brussels - Nicolas Labarre, Quarterfinalist",
+      "cleanName": "World Championship Deck 2000 Brussels Nicolas Labarre Quarterfinalist",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/158293_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2198,
+      "url": "https://www.tcgplayer.com/product/158293/magic-world-championship-decks-world-championship-deck-2000-brussels-nicolas-labarre-quarterfinalist",
+      "modifiedOn": "2018-02-07T13:37:05.607",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<em>\"Nicolas Labarre's combo deck, called Chimera, used searching cards to fetch Fecundity, Saproling Cluster, and Ashnod's Alter so he could generate unlimited mana. With this mana Labarre used Blaze or Whetstone to plow right over his opponents.\"</em>\r\n<br>\r\n<br><strong>NOTE: The cards in this deck are gold-bordered with an alternate card backing and are printed with the player's signature. They are NOT tournament legal.</strong>"
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 158293,
+        "lowPrice": 395.95,
+        "midPrice": 496.9,
+        "highPrice": 597.85,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

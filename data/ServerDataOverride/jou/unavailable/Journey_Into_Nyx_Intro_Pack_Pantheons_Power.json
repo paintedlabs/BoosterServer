@@ -1,0 +1,73 @@
+{
+  "uuid": "497e2450-ef8a-541f-97db-5d8111c4eb82",
+  "name": "Journey Into Nyx Intro Pack Pantheons Power",
+  "category": "deck",
+  "cardCount": 60,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100654",
+    "cardKingdomId": "193938",
+    "cardtraderId": "48106",
+    "mcmId": "266589",
+    "scgId": "SLD-MTG-INT-JOUINTRO-EN-PANTHEONS",
+    "tcgplayerProductId": "82551",
+    "tntId": "1053726"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/3d8af58249236b34"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Pantheon's Power",
+        "set": "jou"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 2,
+        "name": "Journey Into Nyx Booster Pack",
+        "set": "jou",
+        "uuid": "ef8281b6-54ab-578a-baec-62f5c79977c0"
+      }
+    ]
+  },
+  "setCode": "JOU",
+  "setName": "Journey into Nyx",
+  "tcgcsvData": {
+    "product": {
+      "productId": 82551,
+      "name": "Journey Into Nyx - Intro Pack - Pantheon's Power",
+      "cleanName": "Journey Into Nyx Intro Pack Pantheons Power",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/82551_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1277,
+      "url": "https://www.tcgplayer.com/product/82551/magic-journey-into-nyx-journey-into-nyx-intro-pack-pantheons-power",
+      "modifiedOn": "2021-08-05T14:28:00.147",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each pack contains a 60-card preconstructed deck, two Journey Into Nyx booster packs, a strategy guide and a learn-to-play insert for new players."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 82551,
+        "lowPrice": 16.95,
+        "midPrice": 27.9,
+        "highPrice": 27.95,
+        "marketPrice": 21.34,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

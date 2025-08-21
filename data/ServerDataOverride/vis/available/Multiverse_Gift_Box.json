@@ -1,0 +1,56 @@
+{
+  "uuid": "bd2b71ea-b3a6-5781-92a8-fb04e66811d5",
+  "name": "Multiverse Gift Box",
+  "category": "bundle",
+  "subtype": "gift_bundle",
+  "identifiers": {
+    "abuId": "1100906",
+    "cardKingdomId": "124153",
+    "cardtraderId": "40952",
+    "mcmId": "265383",
+    "scgId": "SLD-MTG-BXS-GFTMULTIVERSE-EN",
+    "tcgplayerProductId": "81796",
+    "tntId": "100510"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/075f8b6b5c93440c"
+  },
+  "setCode": "VIS",
+  "setName": "Visions",
+  "tcgcsvData": {
+    "product": {
+      "productId": 81796,
+      "name": "Multiverse Gift Box",
+      "cleanName": "Multiverse Gift Box",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/81796_200w.jpg",
+      "categoryId": 1,
+      "groupId": 19,
+      "url": "https://www.tcgplayer.com/product/81796/magic-box-sets-multiverse-gift-box",
+      "modifiedOn": "2021-03-09T14:56:44.507",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Contains a French Homelands booster, an Italian Alliances booster, a German Renaissance booster, a Japanese Chronicles booster, 2 English Visions boosters."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 81796,
+        "lowPrice": 449.99,
+        "midPrice": 450,
+        "highPrice": 550,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

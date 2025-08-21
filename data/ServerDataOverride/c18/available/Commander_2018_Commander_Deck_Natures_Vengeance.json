@@ -1,0 +1,82 @@
+{
+  "uuid": "3f27b3f1-cbc8-5a8f-82c0-07c80e59863a",
+  "name": "Commander 2018 Commander Deck Natures Vengeance",
+  "category": "deck",
+  "cardCount": 100,
+  "releaseDate": "2018-08-10",
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1521718",
+    "cardKingdomId": "220769",
+    "cardtraderId": "44505",
+    "csiId": "254575",
+    "mcmId": "361703",
+    "scgId": "SLD-MTG-MLT-C18-EN-NATURES",
+    "tcgplayerProductId": "170284",
+    "tntId": "1182242"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/d5d285d6c841cf79",
+    "tcgplayer": "https://mtgjson.com/links/a7df9784fb1b37c1"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Nature's Vengeance",
+        "set": "c18"
+      }
+    ],
+    "other": [
+      {
+        "name": "Foil Oversized Commander"
+      },
+      {
+        "name": "10 Double Sided Tokens"
+      },
+      {
+        "name": "Reference Card and Strategy Insert"
+      },
+      {
+        "name": "Deck Box"
+      }
+    ]
+  },
+  "setCode": "C18",
+  "setName": "Commander 2018",
+  "tcgcsvData": {
+    "product": {
+      "productId": 170284,
+      "name": "Commander 2018 Deck - Nature's Vengeance",
+      "cleanName": "Commander 2018 Deck Natures Vengeance",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/170284_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2251,
+      "url": "https://www.tcgplayer.com/product/170284/magic-commander-2018-commander-2018-deck-natures-vengeance",
+      "modifiedOn": "2018-07-27T19:34:21.49",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2018-08-10T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Jund (Black-Red-Green) Lands \"Nature's Vengeance\""
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 170284,
+        "lowPrice": 65,
+        "midPrice": 74.99,
+        "highPrice": 89.99,
+        "marketPrice": 68.76,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

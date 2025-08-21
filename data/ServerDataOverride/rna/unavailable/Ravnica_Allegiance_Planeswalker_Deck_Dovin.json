@@ -1,0 +1,75 @@
+{
+  "uuid": "2f9f6ac4-8a94-529c-8a0b-a5dd0e2e141d",
+  "name": "Ravnica Allegiance Planeswalker Deck Dovin",
+  "category": "deck",
+  "cardCount": 60,
+  "releaseDate": "2019-01-25",
+  "subtype": "planeswalker",
+  "identifiers": {
+    "abuId": "1553802",
+    "cardKingdomId": "223062",
+    "cardtraderId": "48901",
+    "csiId": "266868",
+    "mcmId": "367806",
+    "scgId": "SLD-MTG-INT-RNAPWDECK-EN-DOVIN",
+    "tcgplayerProductId": "182134",
+    "tntId": "1419456"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/edb8722bde7bcd64"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Dovin, Architect of Law",
+        "set": "rna"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Ravnica Allegiance Booster Pack",
+        "set": "rna",
+        "uuid": "7987f0d7-43b4-59c7-80fd-2c34507af71d"
+      }
+    ]
+  },
+  "setCode": "RNA",
+  "setName": "Ravnica Allegiance",
+  "tcgcsvData": {
+    "product": {
+      "productId": 182134,
+      "name": "Ravnica Allegiance - Planeswalker Deck [Dovin]",
+      "cleanName": "Ravnica Allegiance Planeswalker Deck Dovin",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/182134_200w.jpg",
+      "categoryId": 1,
+      "groupId": 2366,
+      "url": "https://www.tcgplayer.com/product/182134/magic-ravnica-allegiance-ravnica-allegiance-planeswalker-deck-dovin",
+      "modifiedOn": "2019-01-16T20:07:14.17",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": "2019-01-25T00:00:00",
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "<strong>Contents:</strong>\r\n<br>• 1 premium card \r\n<br>• 1 60-card deck\r\n<br>• 2 Guilds of Ravnica booster packs \r\n<br>• 1 learn-to-play insert \r\n<br>• 1 strategy insert\r\n<br><br>More information coming soon..."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 182134,
+        "lowPrice": 13.95,
+        "midPrice": 19.99,
+        "highPrice": 29.99,
+        "marketPrice": 14.53,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "uuid": "1f44c701-d6d4-55a8-a2ea-0281d8672ed3",
+  "name": "March of the Machine Bundle Case",
+  "category": "bundle_case",
+  "subtype": "default",
+  "identifiers": {
+    "tcgplayerProductId": "475587"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/beb2db76a3665775"
+  },
+  "contents": {
+    "sealed": [
+      {
+        "count": 6,
+        "name": "March of the Machine Bundle",
+        "set": "mom",
+        "uuid": "9ae9feb8-beb6-51ce-be04-4e6c641f9fe1"
+      }
+    ]
+  },
+  "setCode": "MOM",
+  "setName": "March of the Machine",
+  "tcgcsvData": {
+    "product": {
+      "productId": 475587,
+      "name": "March of the Machine - Bundle Case",
+      "cleanName": "March of the Machine Bundle Case",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/475587_200w.jpg",
+      "categoryId": 1,
+      "groupId": 22875,
+      "url": "https://www.tcgplayer.com/product/475587/magic-march-of-the-machine-march-of-the-machine-bundle-case",
+      "modifiedOn": "2023-04-27T19:12:30.383",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Each unopened case contains 6 March of the Machine Bundles."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 475587,
+        "lowPrice": 299.98,
+        "midPrice": 299.98,
+        "highPrice": 299.98,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

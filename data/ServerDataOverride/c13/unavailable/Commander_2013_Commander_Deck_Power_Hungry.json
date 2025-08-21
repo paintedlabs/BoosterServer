@@ -1,0 +1,61 @@
+{
+  "uuid": "bfbb0676-e1f0-5612-a491-255c31b93bad",
+  "name": "Commander 2013 Commander Deck Power Hungry",
+  "category": "deck",
+  "cardCount": 100,
+  "subtype": "commander",
+  "identifiers": {
+    "abuId": "1107826",
+    "cardKingdomId": "191764",
+    "cardtraderId": "44764",
+    "csiId": "196664",
+    "mcmId": "264387",
+    "scgId": "SLD-MTG-MLT-C13-EN-POWER",
+    "tcgplayerProductId": "71512",
+    "tntId": "1045847"
+  },
+  "purchaseUrls": {
+    "cardKingdom": "https://mtgjson.com/links/6f7694a9a2dd3117",
+    "tcgplayer": "https://mtgjson.com/links/75390811dfc6cefe"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "Power Hungry",
+        "set": "c13"
+      }
+    ]
+  },
+  "setCode": "C13",
+  "setName": "Commander 2013",
+  "tcgcsvData": {
+    "product": {
+      "productId": 71512,
+      "name": "Commander 2013 - Power Hungry Deck",
+      "cleanName": "Commander 2013 Power Hungry Deck",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/71512_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1164,
+      "url": "https://www.tcgplayer.com/product/71512/magic-commander-2013-commander-2013-power-hungry-deck",
+      "modifiedOn": "2017-04-06T19:39:09.527",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 71512,
+        "lowPrice": 81.25,
+        "midPrice": 94.99,
+        "highPrice": 149.99,
+        "marketPrice": 87.07,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

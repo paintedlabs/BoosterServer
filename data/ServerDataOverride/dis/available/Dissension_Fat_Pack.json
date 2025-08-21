@@ -1,0 +1,81 @@
+{
+  "uuid": "bd95f08a-d3a7-51ae-89fe-44df2a19bb10",
+  "name": "Dissension Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1100390",
+    "cardKingdomId": "120120",
+    "cardtraderId": "47100",
+    "csiId": "97529",
+    "mcmId": "210170",
+    "scgId": "SLD-MTG-BUN-DIS-EN",
+    "tcgplayerProductId": "78309",
+    "tntId": "155110"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/73c4b08210f143a3"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Dissension Player's Guide and Visual Encyclopedia"
+      },
+      {
+        "name": "2 Card Boxes and 6 Dividers"
+      },
+      {
+        "name": "40-card Ravnica Basic Land Pack"
+      },
+      {
+        "name": "Dissension Life Counter"
+      },
+      {
+        "name": "Random Pro Tour Player Card"
+      },
+      {
+        "name": "Dissension Novel"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 6,
+        "name": "Dissension Booster Pack",
+        "set": "dis",
+        "uuid": "5de3d6fd-9c11-5d79-a9ea-8ec1d866a9db"
+      }
+    ]
+  },
+  "setCode": "DIS",
+  "setName": "Dissension",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78309,
+      "name": "Dissension - Fat Pack",
+      "cleanName": "Dissension Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78309_200w.jpg",
+      "categoryId": 1,
+      "groupId": 28,
+      "url": "https://www.tcgplayer.com/product/78309/magic-dissension-dissension-fat-pack",
+      "modifiedOn": "2014-01-07T15:31:11.78",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78309,
+        "lowPrice": 169.69,
+        "midPrice": 179.99,
+        "highPrice": 279.98,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "uuid": "3cfd014c-2737-5df2-8c9c-d0087bc6d819",
+  "name": "Zendikar Intro Pack Green The Adventurers",
+  "category": "deck",
+  "cardCount": 41,
+  "subtype": "intro",
+  "identifiers": {
+    "abuId": "1100214",
+    "cardKingdomId": "127774",
+    "cardtraderId": "47434",
+    "mcmId": "210150",
+    "scgId": "SLD-MTG-INT-ZENINTRO-EN-ADVENTURERS",
+    "tcgplayerProductId": "32798",
+    "tntId": "279891"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/b05e98b3b54cb008"
+  },
+  "contents": {
+    "deck": [
+      {
+        "name": "The Adventurers",
+        "set": "zen"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 1,
+        "name": "Zendikar Booster Pack",
+        "set": "zen",
+        "uuid": "a2630e5d-f1ae-53b8-b5e2-938d77123f73"
+      }
+    ]
+  },
+  "setCode": "ZEN",
+  "setName": "Zendikar",
+  "tcgcsvData": {
+    "product": {
+      "productId": 32798,
+      "name": "Zendikar - Intro Pack - Green - The Adventurers",
+      "cleanName": "Zendikar Intro Pack Green The Adventurers",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/32798_200w.jpg",
+      "categoryId": 1,
+      "groupId": 124,
+      "url": "https://www.tcgplayer.com/product/32798/magic-zendikar-zendikar-intro-pack-green-the-adventurers",
+      "modifiedOn": "2013-05-09T12:13:41.653",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": [
+        {
+          "name": "OracleText",
+          "displayName": "Rules Text Contains",
+          "value": "Zendikar is a new world for Magic: The Gathering, and is the first set in the Zendikar block. It features 249 black-bordered cards, including randomly inserted premium versions of all cards in the set. It will be available in booster packs, intro packs, and fat packs.<br><br><strong>Deadly Perils, Priceless Treasures </strong><br>Enter a plane filled with lethal risks and priceless rewards. On Zendikar, mana works in ways never before experienced. This mana is Zendikar's unique treasure, one that planeswalkers from across the Multiverse risk their lives to acquire. Dare to join them.<br><br>Zendikar is a world of adventure and reward for those with the courage to brave its perils."
+        }
+      ]
+    },
+    "prices": [
+      {
+        "productId": 32798,
+        "lowPrice": 41.99,
+        "midPrice": 41.99,
+        "highPrice": 47.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

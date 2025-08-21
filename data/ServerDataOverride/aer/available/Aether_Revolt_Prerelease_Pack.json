@@ -1,0 +1,478 @@
+{
+  "uuid": "fa5191f0-6d7e-546c-bb7e-b181d4e5782c",
+  "name": "Aether Revolt Prerelease Pack",
+  "category": "limited_aid_tool",
+  "cardCount": 1,
+  "subtype": "prerelease_kit",
+  "identifiers": {
+    "abuId": "1476825",
+    "cardKingdomId": "210972",
+    "cardtraderId": "48503",
+    "mcmId": "294545",
+    "tcgplayerProductId": "127203"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/cd3008e6d54edf34"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Aether Revolt Prerelease Spindown"
+      },
+      {
+        "name": "Deck Box"
+      }
+    ],
+    "pack": [
+      {
+        "code": "prerelease",
+        "set": "aer"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 4,
+        "name": "Aether Revolt Booster Pack",
+        "set": "aer",
+        "uuid": "b32a55d0-c4f8-5c16-b1ab-66ab627a25a2"
+      },
+      {
+        "count": 2,
+        "name": "Kaladesh Booster Pack",
+        "set": "kld",
+        "uuid": "cf0f8060-bd6a-5d26-994c-202112e5177c"
+      }
+    ]
+  },
+  "setCode": "AER",
+  "setName": "Aether Revolt",
+  "extendedData": {
+    "code": "aer-prerelease",
+    "boosters": [
+      {
+        "sheets": {
+          "prerelease_promo": 1
+        },
+        "weight": 1
+      }
+    ],
+    "sheets": {
+      "prerelease_promo": {
+        "total_weight": 96,
+        "cards": [
+          {
+            "set": "paer",
+            "number": "4s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "189b7edd-d833-5a3e-ae0e-4e0ae749bb3d"
+          },
+          {
+            "set": "paer",
+            "number": "9s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f5bd3b88-97a4-54e6-b221-21844e5528fe"
+          },
+          {
+            "set": "paer",
+            "number": "11s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4f96abc8-90f2-553f-ba40-076be8e2f7d5"
+          },
+          {
+            "set": "paer",
+            "number": "18s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "cfda5c6d-6319-504f-9e50-88be76b08d91"
+          },
+          {
+            "set": "paer",
+            "number": "22s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ef153845-6f3e-5aba-beae-73dd23a94356"
+          },
+          {
+            "set": "paer",
+            "number": "23s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7efd1f43-bda0-5a67-be2b-8edd2b7ea6d4"
+          },
+          {
+            "set": "paer",
+            "number": "24s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "493567a5-888d-5748-8f26-c84c0566b8ee"
+          },
+          {
+            "set": "paer",
+            "number": "27s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "058cd1e1-fba9-5841-8201-941eb11d66f5"
+          },
+          {
+            "set": "paer",
+            "number": "28s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "701284f1-9c67-59ef-9987-3f94c868abbf"
+          },
+          {
+            "set": "paer",
+            "number": "29s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9340f357-5a89-5b87-b2da-ea2ebd142eec"
+          },
+          {
+            "set": "paer",
+            "number": "31s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6bd232c1-6af1-58e1-b603-50987a3130f3"
+          },
+          {
+            "set": "paer",
+            "number": "38s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "bb7a8c17-4de7-5e97-ab2f-fda6e7304106"
+          },
+          {
+            "set": "paer",
+            "number": "41s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "93c8dcdd-0a78-532c-8cd5-d41a1eac333e"
+          },
+          {
+            "set": "paer",
+            "number": "49s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9752f786-bd01-56f4-9552-5bbde8dc1a0c"
+          },
+          {
+            "set": "paer",
+            "number": "53s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "440758e9-4509-5f4e-812a-0257c3040afe"
+          },
+          {
+            "set": "paer",
+            "number": "62s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "003e2e75-6d65-5420-aeb3-922630625ee9"
+          },
+          {
+            "set": "paer",
+            "number": "64s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "3638d12c-1cc0-5167-8a20-712819a75a5b"
+          },
+          {
+            "set": "paer",
+            "number": "66s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "ca2a4551-04e8-5a97-b5b5-2c5a3a859ad9"
+          },
+          {
+            "set": "paer",
+            "number": "71s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "36b43e9b-bd2b-50cd-a36c-53744341baa8"
+          },
+          {
+            "set": "paer",
+            "number": "74s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1709b1d1-77a6-54c5-b315-fe2a15c61525"
+          },
+          {
+            "set": "paer",
+            "number": "75s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f242e830-75b4-5d81-8a4d-6367d7058a99"
+          },
+          {
+            "set": "paer",
+            "number": "81s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "b5217b79-18c1-5180-8e3a-12801dabaf09"
+          },
+          {
+            "set": "paer",
+            "number": "85s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "0f7eba33-d5c9-58ae-81de-2fced471e86a"
+          },
+          {
+            "set": "paer",
+            "number": "87s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d94fa38a-fcdb-5ae1-9679-17c6dd9f8706"
+          },
+          {
+            "set": "paer",
+            "number": "88s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "86e516f4-049d-5de7-8ae5-43b3f88b7bc1"
+          },
+          {
+            "set": "paer",
+            "number": "90s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "a034b283-defb-53b4-bfc9-a16c12d7d16c"
+          },
+          {
+            "set": "paer",
+            "number": "91s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "9ef83d18-0c3c-5893-9136-f04d7c88fb8f"
+          },
+          {
+            "set": "paer",
+            "number": "93s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "f2a41b2e-e7f4-56ff-a32b-e06f626fbd0d"
+          },
+          {
+            "set": "paer",
+            "number": "96s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "2fbf8a66-e35a-58fb-90a1-19d6f23740a2"
+          },
+          {
+            "set": "paer",
+            "number": "104s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "ed1b93a6-777a-547f-b122-e2139880be50"
+          },
+          {
+            "set": "paer",
+            "number": "105s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6fb8607e-af46-5b40-9d1b-469d9064cf3a"
+          },
+          {
+            "set": "paer",
+            "number": "107s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "d1718529-48ba-54ae-85a6-b19fc7eb4c09"
+          },
+          {
+            "set": "paer",
+            "number": "108s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "39db2c4f-ba4e-5c7d-be0e-43c984ab17ba"
+          },
+          {
+            "set": "paer",
+            "number": "109s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "0ea6f726-f176-5748-9618-b30940d03cbf"
+          },
+          {
+            "set": "paer",
+            "number": "122s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "bc4d4bff-4472-563e-bc27-ce11f8eff075"
+          },
+          {
+            "set": "paer",
+            "number": "123s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7970732e-6dd2-557a-a258-eb0ae6af7cf2"
+          },
+          {
+            "set": "paer",
+            "number": "127s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "226a36e7-1b0f-57b2-84c0-d4245dc90fbc"
+          },
+          {
+            "set": "paer",
+            "number": "128s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "6bf314ad-bf84-5bda-b790-022be5b01cce"
+          },
+          {
+            "set": "paer",
+            "number": "131s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "abc77305-53bf-50c2-a2ae-16e4afef49ab"
+          },
+          {
+            "set": "paer",
+            "number": "137s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "7e39ff47-b628-5964-922d-8916fe9d48ec"
+          },
+          {
+            "set": "paer",
+            "number": "142s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "72104566-34d0-579b-9f8e-7fae44311bca"
+          },
+          {
+            "set": "paer",
+            "number": "152s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "793f45b2-3ffb-5a37-b0d8-09896d5735a8"
+          },
+          {
+            "set": "paer",
+            "number": "153s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "770bdda0-5c45-5421-9dfa-88fd1059f58d"
+          },
+          {
+            "set": "paer",
+            "number": "154s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "92ef2a9a-85ae-56e4-a3fc-5ac52834de1c"
+          },
+          {
+            "set": "paer",
+            "number": "160s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "4eb90244-55f8-5822-a03f-8e216c37f229"
+          },
+          {
+            "set": "paer",
+            "number": "162s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "7a3650ed-d4e9-5e90-a129-a90978454a64"
+          },
+          {
+            "set": "paer",
+            "number": "163s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "28a6672a-b71b-5971-8bac-37c2d8475240"
+          },
+          {
+            "set": "paer",
+            "number": "164s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "66182d86-f955-5c45-bae4-6d54160f9017"
+          },
+          {
+            "set": "paer",
+            "number": "169s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "579e2c7b-7bba-5885-bf2f-7e791f45f0aa"
+          },
+          {
+            "set": "paer",
+            "number": "170s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "095904ce-eeb6-5838-8c00-dc4d96957f40"
+          },
+          {
+            "set": "paer",
+            "number": "171s",
+            "weight": 1,
+            "foil": true,
+            "uuid": "599cab2c-af4d-5a1d-85a3-dbe136d39a79"
+          },
+          {
+            "set": "paer",
+            "number": "175s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "151513b1-2a37-5116-ab3f-8d62f1a19689"
+          },
+          {
+            "set": "paer",
+            "number": "181s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "1a30afa7-78cf-54ea-8ca9-f74c8b5d929b"
+          },
+          {
+            "set": "paer",
+            "number": "184s",
+            "weight": 2,
+            "foil": true,
+            "uuid": "cae4c273-c58a-5686-93ea-48303d8ec31e"
+          }
+        ]
+      }
+    },
+    "source_set_codes": [
+      "paer"
+    ]
+  },
+  "tcgcsvData": {
+    "product": {
+      "productId": 127203,
+      "name": "Aether Revolt - Prerelease Pack",
+      "cleanName": "Aether Revolt Prerelease Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/127203_200w.jpg",
+      "categoryId": 1,
+      "groupId": 1857,
+      "url": "https://www.tcgplayer.com/product/127203/magic-aether-revolt-aether-revolt-prerelease-pack",
+      "modifiedOn": "2019-10-20T23:50:56.603",
+      "imageCount": 1,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 127203,
+        "lowPrice": 48.79,
+        "midPrice": 58.99,
+        "highPrice": 61.9,
+        "marketPrice": 46.58,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}

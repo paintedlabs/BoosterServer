@@ -1,0 +1,78 @@
+{
+  "uuid": "2c0912c5-2331-5a4e-ba31-cf9c6905a931",
+  "name": "Eventide Fat Pack",
+  "category": "bundle",
+  "subtype": "fat_pack",
+  "identifiers": {
+    "abuId": "1107853",
+    "cardKingdomId": "125097",
+    "cardtraderId": "47281",
+    "csiId": "97599",
+    "mcmId": "210161",
+    "scgId": "SLD-MTG-BUN-EVE-EN",
+    "tcgplayerProductId": "78310",
+    "tntId": "179881"
+  },
+  "purchaseUrls": {
+    "tcgplayer": "https://mtgjson.com/links/257613795d498098"
+  },
+  "contents": {
+    "other": [
+      {
+        "name": "Eventide Spindown"
+      },
+      {
+        "name": "40 basic land bundle"
+      },
+      {
+        "name": "Card storage box"
+      },
+      {
+        "name": "Eventide Novel"
+      },
+      {
+        "name": "Random Pro Tour Player Card"
+      }
+    ],
+    "sealed": [
+      {
+        "count": 8,
+        "name": "Eventide Booster Pack",
+        "set": "eve",
+        "uuid": "958923aa-aeb8-5fae-850d-944f32e00879"
+      }
+    ]
+  },
+  "setCode": "EVE",
+  "setName": "Eventide",
+  "tcgcsvData": {
+    "product": {
+      "productId": 78310,
+      "name": "Eventide - Fat Pack",
+      "cleanName": "Eventide Fat Pack",
+      "imageUrl": "https://tcgplayer-cdn.tcgplayer.com/product/78310_200w.jpg",
+      "categoryId": 1,
+      "groupId": 39,
+      "url": "https://www.tcgplayer.com/product/78310/magic-eventide-eventide-fat-pack",
+      "modifiedOn": "2014-01-07T15:31:25.32",
+      "imageCount": 0,
+      "presaleInfo": {
+        "isPresale": false,
+        "releasedOn": null,
+        "note": null
+      },
+      "extendedData": []
+    },
+    "prices": [
+      {
+        "productId": 78310,
+        "lowPrice": 699.99,
+        "midPrice": 699.99,
+        "highPrice": 699.99,
+        "marketPrice": null,
+        "directLowPrice": null,
+        "subTypeName": "Normal"
+      }
+    ]
+  }
+}
