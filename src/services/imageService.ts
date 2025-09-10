@@ -105,33 +105,45 @@ export class MTGImageService implements ImageService {
       .filter(Boolean) as string[];
 
     const uniqueSetCodes = [...new Set(setCodes)];
+    
+    logger.info(`Starting background caching of ${uniqueSetCodes.length} set images...`);
+    
+    const BATCH_SIZE = 5;
+    let processed = 0;
 
-    for (const code of uniqueSetCodes) {
-      if (!code) continue;
+    for (let i = 0; i < uniqueSetCodes.length; i += BATCH_SIZE) {
+      const batch = uniqueSetCodes.slice(i, i + BATCH_SIZE);
+      
+      await Promise.all(batch.map(async (code) => {
+        if (!code) return;
 
-      const localPng = path.join(setsDir, `${code.toLowerCase()}.png`);
-      if (fs.existsSync(localPng)) {
-        logger.debug(`Set image already cached for ${code}`);
-        continue;
-      }
-
-      const url = `https://svgs.scryfall.io/sets/${code.toLowerCase()}.svg`;
-      logger.info(`Fetching set svg from: ${url}`);
-
-      try {
-        const resp = await fetch(url);
-        if (!resp.ok) {
-          logger.error(`Failed to fetch SVG for set ${code}`);
-          continue;
+        const localPng = path.join(setsDir, `${code.toLowerCase()}.png`);
+        if (fs.existsSync(localPng)) {
+          return;
         }
 
-        const svgBuffer = await resp.buffer();
-        const pngBuffer = await sharp(svgBuffer).png().toBuffer();
-        fs.writeFileSync(localPng, pngBuffer);
-        logger.info(`Cached set image for ${code}`);
-      } catch (err) {
-        logger.error(`Error fetching/converting set ${code}`, err);
+        const url = `https://svgs.scryfall.io/sets/${code.toLowerCase()}.svg`;
+        try {
+          const resp = await fetch(url);
+          if (!resp.ok) {
+            logger.warn(`Failed to fetch SVG for set ${code}: ${resp.status}`);
+            return;
+          }
+
+          const svgBuffer = await resp.buffer();
+          const pngBuffer = await sharp(svgBuffer).png().toBuffer();
+          fs.writeFileSync(localPng, pngBuffer);
+        } catch (err) {
+          logger.warn(`Error caching set image for ${code}:`, err);
+        }
+      }));
+      
+      processed += batch.length;
+      if (processed % 20 === 0) {
+        logger.info(`Cached ${processed}/${uniqueSetCodes.length} set images...`);
       }
     }
+    
+    logger.info(`Completed caching ${uniqueSetCodes.length} set images`);
   }
 }

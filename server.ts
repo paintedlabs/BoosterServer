@@ -638,28 +638,43 @@ async function ensureSetSvgsCached() {
   const setsDir = path.join(__dirname, "cache", "sets");
   fs.mkdirSync(setsDir, { recursive: true });
   const codes = Object.keys(allPrintings.data);
-  for (const code of codes) {
-    const localPng = path.join(setsDir, `${code.toLowerCase()}.png`);
-    if (fs.existsSync(localPng)) {
-      console.log(`Set image already cached for ${code}`);
-      continue;
-    }
-    const url = `https://svgs.scryfall.io/sets/${code.toLowerCase()}.svg`;
-    console.log(`Fetching set svg from: ${url}`);
-    try {
-      const resp = await fetch(url);
-      if (!resp.ok) {
-        console.error(`Failed to fetch SVG for set ${code}`);
-        continue;
+  
+  console.log(`Starting background caching of ${codes.length} set images...`);
+  
+  const BATCH_SIZE = 5;
+  let processed = 0;
+  
+  for (let i = 0; i < codes.length; i += BATCH_SIZE) {
+    const batch = codes.slice(i, i + BATCH_SIZE);
+    
+    await Promise.all(batch.map(async (code) => {
+      const localPng = path.join(setsDir, `${code.toLowerCase()}.png`);
+      if (fs.existsSync(localPng)) {
+        return;
       }
-      const svgBuffer = await resp.buffer();
-      const pngBuffer = await sharp(svgBuffer).png().toBuffer();
-      fs.writeFileSync(localPng, pngBuffer);
-      console.log(`Cached set image for ${code}`);
-    } catch (err) {
-      console.error(`Error fetching/converting set ${code}`, err);
+      
+      const url = `https://svgs.scryfall.io/sets/${code.toLowerCase()}.svg`;
+      try {
+        const resp = await fetch(url);
+        if (!resp.ok) {
+          console.warn(`Failed to fetch SVG for set ${code}: ${resp.status}`);
+          return;
+        }
+        const svgBuffer = await resp.buffer();
+        const pngBuffer = await sharp(svgBuffer).png().toBuffer();
+        fs.writeFileSync(localPng, pngBuffer);
+      } catch (err) {
+        console.warn(`Error caching set image for ${code}:`, err);
+      }
+    }));
+    
+    processed += batch.length;
+    if (processed % 20 === 0) {
+      console.log(`Cached ${processed}/${codes.length} set images...`);
     }
   }
+  
+  console.log(`Completed caching ${codes.length} set images`);
 }
 
 app.get("/setimages/:setCode", (req: Request, res: Response) => {
@@ -688,7 +703,10 @@ async function main() {
     console.log(`Loaded ${extendedDataArray.length} sealed products.`);
 
     await buildCombinedCards();
-    await ensureSetSvgsCached();
+    
+    ensureSetSvgsCached().catch(err => {
+      console.error("Background set image caching failed:", err);
+    });
 
     app.listen(PORT, () => {
       const networkInterfaces = os.networkInterfaces();
