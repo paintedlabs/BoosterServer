@@ -159,3 +159,5 @@ Uses Winston for structured logging:
 ## License
 
 MIT License
+
+<!-- Test comment for verifying PR workflow -->
